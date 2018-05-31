@@ -26,21 +26,140 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        MainPanel = new javax.swing.JPanel();
+        CaesarPanel = new javax.swing.JPanel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        SubstitutionCiphers = new javax.swing.JMenu();
+        Caesar = new javax.swing.JMenuItem();
+        Atbash = new javax.swing.JMenuItem();
+        Vigenere = new javax.swing.JMenuItem();
+        BlockCiphers = new javax.swing.JMenu();
+        Feistel = new javax.swing.JMenuItem();
+        RC5 = new javax.swing.JMenuItem();
+        Blowfish = new javax.swing.JMenuItem();
+        StreamCiphers = new javax.swing.JMenu();
+        Entropy = new javax.swing.JMenu();
+        EncryptionModes = new javax.swing.JMenu();
+        ECB = new javax.swing.JMenuItem();
+        CBC = new javax.swing.JMenuItem();
+        CTR = new javax.swing.JMenuItem();
+        Help = new javax.swing.JMenu();
+        Dev = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        MainPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        CaesarPanel.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout CaesarPanelLayout = new javax.swing.GroupLayout(CaesarPanel);
+        CaesarPanel.setLayout(CaesarPanelLayout);
+        CaesarPanelLayout.setHorizontalGroup(
+            CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 859, Short.MAX_VALUE)
+        );
+        CaesarPanelLayout.setVerticalGroup(
+            CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 516, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
+        MainPanel.setLayout(MainPanelLayout);
+        MainPanelLayout.setHorizontalGroup(
+            MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CaesarPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        MainPanelLayout.setVerticalGroup(
+            MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CaesarPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        SubstitutionCiphers.setText("Substitution Ciphers");
+
+        Caesar.setText("Caesar Cipher");
+        Caesar.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentAdded(java.awt.event.ContainerEvent evt) {
+                CaesarComponentAdded(evt);
+            }
+        });
+        SubstitutionCiphers.add(Caesar);
+
+        Atbash.setText("Atbash Cipher");
+        Atbash.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtbashActionPerformed(evt);
+            }
+        });
+        SubstitutionCiphers.add(Atbash);
+
+        Vigenere.setText("Vigenere Cipher");
+        SubstitutionCiphers.add(Vigenere);
+
+        jMenuBar1.add(SubstitutionCiphers);
+
+        BlockCiphers.setText("Block Ciphers");
+
+        Feistel.setText("Feistel Network");
+        BlockCiphers.add(Feistel);
+
+        RC5.setText("RC5");
+        BlockCiphers.add(RC5);
+
+        Blowfish.setText("Blowfish");
+        BlockCiphers.add(Blowfish);
+
+        jMenuBar1.add(BlockCiphers);
+
+        StreamCiphers.setText("Stream Ciphers");
+        jMenuBar1.add(StreamCiphers);
+
+        Entropy.setText("Entropy");
+        jMenuBar1.add(Entropy);
+
+        EncryptionModes.setText("Encryption Modes");
+
+        ECB.setText("ECB");
+        EncryptionModes.add(ECB);
+
+        CBC.setText("CBC");
+        EncryptionModes.add(CBC);
+
+        CTR.setText("CTR");
+        EncryptionModes.add(CTR);
+
+        jMenuBar1.add(EncryptionModes);
+
+        Help.setText("Help");
+
+        Dev.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        Dev.setText("Developers");
+        Help.add(Dev);
+
+        jMenuBar1.add(Help);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void AtbashActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AtbashActionPerformed
+
+    private void CaesarComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_CaesarComponentAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CaesarComponentAdded
 
     /**
      * @param args the command line arguments
@@ -78,5 +197,24 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem Atbash;
+    private javax.swing.JMenu BlockCiphers;
+    private javax.swing.JMenuItem Blowfish;
+    private javax.swing.JMenuItem CBC;
+    private javax.swing.JMenuItem CTR;
+    private javax.swing.JMenuItem Caesar;
+    private javax.swing.JPanel CaesarPanel;
+    private javax.swing.JMenuItem Dev;
+    private javax.swing.JMenuItem ECB;
+    private javax.swing.JMenu EncryptionModes;
+    private javax.swing.JMenu Entropy;
+    private javax.swing.JMenuItem Feistel;
+    private javax.swing.JMenu Help;
+    private javax.swing.JPanel MainPanel;
+    private javax.swing.JMenuItem RC5;
+    private javax.swing.JMenu StreamCiphers;
+    private javax.swing.JMenu SubstitutionCiphers;
+    private javax.swing.JMenuItem Vigenere;
+    private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
