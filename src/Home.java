@@ -27,6 +27,7 @@ public class Home extends javax.swing.JFrame {
     private void initComponents() {
 
         MainPanel = new javax.swing.JPanel();
+        WelcomePanel = new javax.swing.JPanel();
         CaesarPanel = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         SubstitutionCiphers = new javax.swing.JMenu();
@@ -49,30 +50,26 @@ public class Home extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         MainPanel.setBackground(new java.awt.Color(255, 255, 255));
+        MainPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        CaesarPanel.setBackground(new java.awt.Color(204, 204, 255));
+        WelcomePanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout CaesarPanelLayout = new javax.swing.GroupLayout(CaesarPanel);
-        CaesarPanel.setLayout(CaesarPanelLayout);
-        CaesarPanelLayout.setHorizontalGroup(
-            CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 859, Short.MAX_VALUE)
+        javax.swing.GroupLayout WelcomePanelLayout = new javax.swing.GroupLayout(WelcomePanel);
+        WelcomePanel.setLayout(WelcomePanelLayout);
+        WelcomePanelLayout.setHorizontalGroup(
+            WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 860, Short.MAX_VALUE)
         );
-        CaesarPanelLayout.setVerticalGroup(
-            CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 516, Short.MAX_VALUE)
+        WelcomePanelLayout.setVerticalGroup(
+            WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 520, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
-        MainPanel.setLayout(MainPanelLayout);
-        MainPanelLayout.setHorizontalGroup(
-            MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(CaesarPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        MainPanelLayout.setVerticalGroup(
-            MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(CaesarPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        MainPanel.add(WelcomePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
+
+        CaesarPanel.setBackground(new java.awt.Color(204, 255, 204));
+        CaesarPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        MainPanel.add(CaesarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
 
         SubstitutionCiphers.setText("Substitution Ciphers");
 
@@ -80,6 +77,11 @@ public class Home extends javax.swing.JFrame {
         Caesar.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentAdded(java.awt.event.ContainerEvent evt) {
                 CaesarComponentAdded(evt);
+            }
+        });
+        Caesar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CaesarActionPerformed(evt);
             }
         });
         SubstitutionCiphers.add(Caesar);
@@ -161,6 +163,18 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CaesarComponentAdded
 
+    private void CaesarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaesarActionPerformed
+        
+    MainPanel.removeAll();
+    MainPanel.repaint();
+    MainPanel.revalidate();
+
+    MainPanel.add(CaesarPanel);
+    MainPanel.repaint();
+    MainPanel.revalidate();
+    
+    }//GEN-LAST:event_CaesarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -215,6 +229,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu StreamCiphers;
     private javax.swing.JMenu SubstitutionCiphers;
     private javax.swing.JMenuItem Vigenere;
+    private javax.swing.JPanel WelcomePanel;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
