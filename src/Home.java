@@ -28,7 +28,10 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel = new javax.swing.JPanel();
         WelcomePanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         CaesarPanel = new javax.swing.JPanel();
+        AtbashPanel = new javax.swing.JPanel();
+        VigenerePanel = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         SubstitutionCiphers = new javax.swing.JMenu();
         Caesar = new javax.swing.JMenuItem();
@@ -54,22 +57,39 @@ public class Home extends javax.swing.JFrame {
 
         WelcomePanel.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel1.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
+        jLabel1.setText("Welcome to the FSU Cryptography Module");
+
         javax.swing.GroupLayout WelcomePanelLayout = new javax.swing.GroupLayout(WelcomePanel);
         WelcomePanel.setLayout(WelcomePanelLayout);
         WelcomePanelLayout.setHorizontalGroup(
             WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 860, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WelcomePanelLayout.createSequentialGroup()
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 820, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17))
         );
         WelcomePanelLayout.setVerticalGroup(
             WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
+            .addGroup(WelcomePanelLayout.createSequentialGroup()
+                .addGap(107, 107, 107)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(356, Short.MAX_VALUE))
         );
 
         MainPanel.add(WelcomePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
 
-        CaesarPanel.setBackground(new java.awt.Color(204, 255, 204));
+        CaesarPanel.setBackground(new java.awt.Color(204, 204, 255));
         CaesarPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         MainPanel.add(CaesarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
+
+        AtbashPanel.setBackground(new java.awt.Color(204, 255, 204));
+        AtbashPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        MainPanel.add(AtbashPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
+
+        VigenerePanel.setBackground(new java.awt.Color(255, 204, 204));
+        VigenerePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        MainPanel.add(VigenerePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
 
         SubstitutionCiphers.setText("Substitution Ciphers");
 
@@ -95,6 +115,11 @@ public class Home extends javax.swing.JFrame {
         SubstitutionCiphers.add(Atbash);
 
         Vigenere.setText("Vigenere Cipher");
+        Vigenere.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VigenereActionPerformed(evt);
+            }
+        });
         SubstitutionCiphers.add(Vigenere);
 
         jMenuBar1.add(SubstitutionCiphers);
@@ -156,7 +181,13 @@ public class Home extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void AtbashActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashActionPerformed
-        // TODO add your handling code here:
+    MainPanel.removeAll();
+    MainPanel.repaint();
+    MainPanel.revalidate();
+
+    MainPanel.add(AtbashPanel);
+    MainPanel.repaint();
+    MainPanel.revalidate();
     }//GEN-LAST:event_AtbashActionPerformed
 
     private void CaesarComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_CaesarComponentAdded
@@ -174,6 +205,16 @@ public class Home extends javax.swing.JFrame {
     MainPanel.revalidate();
     
     }//GEN-LAST:event_CaesarActionPerformed
+
+    private void VigenereActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VigenereActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(VigenerePanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_VigenereActionPerformed
 
     /**
      * @param args the command line arguments
@@ -212,6 +253,7 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Atbash;
+    private javax.swing.JPanel AtbashPanel;
     private javax.swing.JMenu BlockCiphers;
     private javax.swing.JMenuItem Blowfish;
     private javax.swing.JMenuItem CBC;
@@ -229,7 +271,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu StreamCiphers;
     private javax.swing.JMenu SubstitutionCiphers;
     private javax.swing.JMenuItem Vigenere;
+    private javax.swing.JPanel VigenerePanel;
     private javax.swing.JPanel WelcomePanel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
