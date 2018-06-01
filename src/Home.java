@@ -33,8 +33,11 @@ public class Home extends javax.swing.JFrame {
         MainPanel = new javax.swing.JPanel();
         WelcomePanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         CaesarPanel = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         AtbashPanel = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         VigenerePanel = new javax.swing.JPanel();
         ECBPanel = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
@@ -69,31 +72,49 @@ public class Home extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
         jLabel1.setText("Welcome to the FSU Cryptography Module");
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/fsu-seal-full-color.png"))); // NOI18N
+
         javax.swing.GroupLayout WelcomePanelLayout = new javax.swing.GroupLayout(WelcomePanel);
         WelcomePanel.setLayout(WelcomePanelLayout);
         WelcomePanelLayout.setHorizontalGroup(
             WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WelcomePanelLayout.createSequentialGroup()
+            .addGroup(WelcomePanelLayout.createSequentialGroup()
                 .addContainerGap(23, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 820, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
+            .addGroup(WelcomePanelLayout.createSequentialGroup()
+                .addGap(300, 300, 300)
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         WelcomePanelLayout.setVerticalGroup(
             WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(WelcomePanelLayout.createSequentialGroup()
                 .addGap(107, 107, 107)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(356, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(65, Short.MAX_VALUE))
         );
 
         MainPanel.add(WelcomePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         CaesarPanel.setBackground(new java.awt.Color(204, 204, 255));
         CaesarPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel5.setText("Let's practice breaking a Caesar Cipher!");
+        CaesarPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
+
         MainPanel.add(CaesarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
 
         AtbashPanel.setBackground(new java.awt.Color(204, 255, 204));
         AtbashPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel6.setText("Let's practice breaking an Atbash Cipher!");
+        AtbashPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
+
         MainPanel.add(AtbashPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
 
         VigenerePanel.setBackground(new java.awt.Color(255, 204, 204));
@@ -346,7 +367,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
