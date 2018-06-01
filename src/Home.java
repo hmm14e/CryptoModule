@@ -31,9 +31,9 @@ public class Home extends javax.swing.JFrame {
     private void initComponents() {
 
         MainPanel = new javax.swing.JPanel();
-        CaesarPanel = new javax.swing.JPanel();
         WelcomePanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        CaesarPanel = new javax.swing.JPanel();
         AtbashPanel = new javax.swing.JPanel();
         VigenerePanel = new javax.swing.JPanel();
         ECBPanel = new javax.swing.JPanel();
@@ -64,9 +64,6 @@ public class Home extends javax.swing.JFrame {
         MainPanel.setBackground(new java.awt.Color(255, 255, 255));
         MainPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        CaesarPanel.setBackground(new java.awt.Color(204, 204, 255));
-        CaesarPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
         WelcomePanel.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
@@ -89,8 +86,10 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(356, Short.MAX_VALUE))
         );
 
-        CaesarPanel.add(WelcomePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        MainPanel.add(WelcomePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
+        CaesarPanel.setBackground(new java.awt.Color(204, 204, 255));
+        CaesarPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         MainPanel.add(CaesarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
 
         AtbashPanel.setBackground(new java.awt.Color(204, 255, 204));
