@@ -1,4 +1,5 @@
 
+
 import java.awt.Component;
 import java.util.Objects;
 
@@ -40,10 +41,18 @@ public class Home extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         VigenerePanel = new javax.swing.JPanel();
         ECBPanel = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        ECB_Picture = new javax.swing.JLabel();
         Answer1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        ECB_Button = new javax.swing.JButton();
+        Q1 = new javax.swing.JLabel();
+        Correct_ECB = new javax.swing.JPanel();
+        Correct_Pic = new javax.swing.JLabel();
+        Correct1 = new javax.swing.JLabel();
+        FeistelPanel = new javax.swing.JPanel();
+        Feistel_Pic = new javax.swing.JLabel();
+        Feistel_Intro = new javax.swing.JLabel();
+        Feistel_Entry = new javax.swing.JTextField();
+        Feistel_Button = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         SubstitutionCiphers = new javax.swing.JMenu();
         Caesar = new javax.swing.JMenuItem();
@@ -124,11 +133,10 @@ public class Home extends javax.swing.JFrame {
         ECBPanel.setBackground(new java.awt.Color(255, 255, 255));
         ECBPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/ECB.png"))); // NOI18N
-        jLabel4.setText("jLabel4");
-        ECBPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 420, -1));
+        ECB_Picture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/ECB.png"))); // NOI18N
+        ECB_Picture.setText("jLabel4");
+        ECBPanel.add(ECB_Picture, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 420, -1));
 
-        Answer1.setText("jTextField1");
         Answer1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Answer1ActionPerformed(evt);
@@ -136,19 +144,83 @@ public class Home extends javax.swing.JFrame {
         });
         ECBPanel.add(Answer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 450, 170, 30));
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        ECB_Button.setText("Enter");
+        ECB_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ECB_ButtonActionPerformed(evt);
             }
         });
-        ECBPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, 80, 30));
+        ECBPanel.add(ECB_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, 80, 30));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("What does the following picture enrypted with 3DES ECB say?");
-        ECBPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, -1, 30));
+        Q1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Q1.setText("What does the following picture enrypted with 3DES ECB say?");
+        ECBPanel.add(Q1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, -1, 30));
 
         MainPanel.add(ECBPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
+
+        Correct_ECB.setBackground(new java.awt.Color(255, 255, 255));
+
+        Correct_Pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Test.png"))); // NOI18N
+        Correct_Pic.setText("jLabel2");
+
+        Correct1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        Correct1.setForeground(new java.awt.Color(51, 255, 51));
+        Correct1.setText("CORRECT!");
+
+        javax.swing.GroupLayout Correct_ECBLayout = new javax.swing.GroupLayout(Correct_ECB);
+        Correct_ECB.setLayout(Correct_ECBLayout);
+        Correct_ECBLayout.setHorizontalGroup(
+            Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Correct_ECBLayout.createSequentialGroup()
+                .addGroup(Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Correct_ECBLayout.createSequentialGroup()
+                        .addGap(215, 215, 215)
+                        .addComponent(Correct_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(Correct_ECBLayout.createSequentialGroup()
+                        .addGap(348, 348, 348)
+                        .addComponent(Correct1)))
+                .addContainerGap(161, Short.MAX_VALUE))
+        );
+        Correct_ECBLayout.setVerticalGroup(
+            Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Correct_ECBLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Correct1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Correct_Pic)
+                .addGap(103, 103, 103))
+        );
+
+        MainPanel.add(Correct_ECB, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
+
+        FeistelPanel.setBackground(new java.awt.Color(255, 255, 255));
+        FeistelPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Feistel_Pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/feistel.jpg"))); // NOI18N
+        Feistel_Pic.setText("jLabel2");
+        FeistelPanel.add(Feistel_Pic, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 450, 410));
+
+        Feistel_Intro.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        Feistel_Intro.setText("What is the final 8 bit value?");
+        FeistelPanel.add(Feistel_Intro, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
+
+        Feistel_Entry.setText("Answer Here!");
+        Feistel_Entry.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Feistel_EntryActionPerformed(evt);
+            }
+        });
+        FeistelPanel.add(Feistel_Entry, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 270, 90, 30));
+
+        Feistel_Button.setText("Enter");
+        Feistel_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Feistel_ButtonActionPerformed(evt);
+            }
+        });
+        FeistelPanel.add(Feistel_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 270, -1, 30));
+
+        MainPanel.add(FeistelPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
 
         SubstitutionCiphers.setText("Substitution Ciphers");
 
@@ -186,6 +258,11 @@ public class Home extends javax.swing.JFrame {
         BlockCiphers.setText("Block Ciphers");
 
         Feistel.setText("Feistel Network");
+        Feistel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeistelActionPerformed(evt);
+            }
+        });
         BlockCiphers.add(Feistel);
 
         RC5.setText("RC5");
@@ -285,7 +362,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        Component add = MainPanel.add(ECBPanel);
+        MainPanel.add(ECBPanel);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_ECBActionPerformed
@@ -294,18 +371,59 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Answer1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void ECB_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECB_ButtonActionPerformed
         String val1 = Answer1.getText();
         String val2 = "NEVER USE ECB";
         
         if(Objects.equals(val1, val2))
-            System.out.println("TRUE");
-        
+        {
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(Correct_ECB);
+            MainPanel.repaint();
+            MainPanel.revalidate();
+        }
         else
             System.out.println("FALSE");
         
         System.out.println(val1);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_ECB_ButtonActionPerformed
+
+    private void FeistelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(FeistelPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();
+    }//GEN-LAST:event_FeistelActionPerformed
+
+    private void Feistel_EntryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_EntryActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Feistel_EntryActionPerformed
+
+    private void Feistel_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_ButtonActionPerformed
+        String val1 = Feistel_Entry.getText();
+        String val2 = "01010100";
+        
+        if(Objects.equals(val1, val2))
+        {
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(Correct_ECB);
+            MainPanel.repaint();
+            MainPanel.revalidate();
+        }
+        else
+            System.out.println("FALSE");
+        
+        System.out.println(val1);
+    }//GEN-LAST:event_Feistel_ButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -350,25 +468,33 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem CTR;
     private javax.swing.JMenuItem Caesar;
     private javax.swing.JPanel CaesarPanel;
+    private javax.swing.JLabel Correct1;
+    private javax.swing.JPanel Correct_ECB;
+    private javax.swing.JLabel Correct_Pic;
     private javax.swing.JMenuItem Dev;
     private javax.swing.JMenuItem ECB;
     private javax.swing.JPanel ECBPanel;
+    private javax.swing.JButton ECB_Button;
+    private javax.swing.JLabel ECB_Picture;
     private javax.swing.JMenu EncryptionModes;
     private javax.swing.JMenu Entropy;
     private javax.swing.JMenuItem Feistel;
+    private javax.swing.JPanel FeistelPanel;
+    private javax.swing.JButton Feistel_Button;
+    private javax.swing.JTextField Feistel_Entry;
+    private javax.swing.JLabel Feistel_Intro;
+    private javax.swing.JLabel Feistel_Pic;
     private javax.swing.JMenu Help;
     private javax.swing.JPanel MainPanel;
+    private javax.swing.JLabel Q1;
     private javax.swing.JMenuItem RC5;
     private javax.swing.JMenu StreamCiphers;
     private javax.swing.JMenu SubstitutionCiphers;
     private javax.swing.JMenuItem Vigenere;
     private javax.swing.JPanel VigenerePanel;
     private javax.swing.JPanel WelcomePanel;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JMenuBar jMenuBar1;
