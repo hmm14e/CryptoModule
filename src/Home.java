@@ -66,6 +66,7 @@ public class Home extends javax.swing.JFrame {
         Feistel_Entry = new javax.swing.JTextField();
         Feistel_Button = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
+        Home = new javax.swing.JMenu();
         SubstitutionCiphers = new javax.swing.JMenu();
         Caesar = new javax.swing.JMenuItem();
         Atbash = new javax.swing.JMenuItem();
@@ -290,6 +291,14 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(FeistelPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
 
+        Home.setText("Home");
+        Home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HomeActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(Home);
+
         SubstitutionCiphers.setText("Substitution Ciphers");
 
         Caesar.setText("Caesar Cipher");
@@ -505,6 +514,16 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Submission2ActionPerformed
 
+    private void HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(WelcomePanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_HomeActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -570,6 +589,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Feistel_Intro;
     private javax.swing.JLabel Feistel_Pic;
     private javax.swing.JMenu Help;
+    private javax.swing.JMenu Home;
     private javax.swing.JPanel MainPanel;
     private javax.swing.JLabel Q1;
     private javax.swing.JMenuItem RC5;
