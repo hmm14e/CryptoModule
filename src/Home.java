@@ -35,10 +35,21 @@ public class Home extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         CaesarPanel = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        CaesarTitle = new javax.swing.JLabel();
+        Ciphertext_Caesar = new javax.swing.JLabel();
+        Warning = new javax.swing.JLabel();
+        Submission = new javax.swing.JTextField();
+        Submit = new javax.swing.JButton();
         AtbashPanel = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
+        AtbashTitle = new javax.swing.JLabel();
+        Submission1 = new javax.swing.JTextField();
+        Submit1 = new javax.swing.JButton();
+        Warning3 = new javax.swing.JLabel();
         VigenerePanel = new javax.swing.JPanel();
+        VigenereTitle = new javax.swing.JLabel();
+        Submission2 = new javax.swing.JTextField();
+        Submit2 = new javax.swing.JButton();
+        Warning4 = new javax.swing.JLabel();
         ECBPanel = new javax.swing.JPanel();
         ECB_Picture = new javax.swing.JLabel();
         Answer1 = new javax.swing.JTextField();
@@ -110,23 +121,71 @@ public class Home extends javax.swing.JFrame {
         CaesarPanel.setBackground(new java.awt.Color(204, 204, 255));
         CaesarPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jLabel5.setText("Let's practice breaking a Caesar Cipher!");
-        CaesarPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
+        CaesarTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        CaesarTitle.setText("Let's practice breaking a Caesar Cipher!");
+        CaesarPanel.add(CaesarTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
+
+        Ciphertext_Caesar.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        Ciphertext_Caesar.setText("Phrase: vogvizvetv zj kyv kvrtyvi fw rcc kyzexj ");
+        CaesarPanel.add(Ciphertext_Caesar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
+
+        Warning.setText("Please write a script to decrypt the following ciphertext. Instructors may ask students to demo or submit their code. ");
+        CaesarPanel.add(Warning, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
+
+        Submission.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SubmissionActionPerformed(evt);
+            }
+        });
+        CaesarPanel.add(Submission, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 450, 40));
+
+        Submit.setText("Submit");
+        CaesarPanel.add(Submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, -1, -1));
 
         MainPanel.add(CaesarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
 
         AtbashPanel.setBackground(new java.awt.Color(204, 255, 204));
         AtbashPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jLabel6.setText("Let's practice breaking an Atbash Cipher!");
-        AtbashPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
+        AtbashTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        AtbashTitle.setText("Let's practice breaking an Atbash Cipher!");
+        AtbashPanel.add(AtbashTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
+
+        Submission1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Submission1ActionPerformed(evt);
+            }
+        });
+        AtbashPanel.add(Submission1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 450, 40));
+
+        Submit1.setText("Submit");
+        AtbashPanel.add(Submit1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, -1, -1));
+
+        Warning3.setText("Please write a script to decrypt the following ciphertext. Instructors may ask students to demo or submit their code. ");
+        AtbashPanel.add(Warning3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
 
         MainPanel.add(AtbashPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
 
         VigenerePanel.setBackground(new java.awt.Color(255, 204, 204));
         VigenerePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        VigenereTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        VigenereTitle.setText("Let's practice breaking a Vigenere Cipher!");
+        VigenerePanel.add(VigenereTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
+
+        Submission2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Submission2ActionPerformed(evt);
+            }
+        });
+        VigenerePanel.add(Submission2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 450, 40));
+
+        Submit2.setText("Submit");
+        VigenerePanel.add(Submit2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, -1, -1));
+
+        Warning4.setText("Please write a script to decrypt the following ciphertext. Instructors may ask students to demo or submit their code. ");
+        VigenerePanel.add(Warning4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
+
         MainPanel.add(VigenerePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
 
         ECBPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -424,6 +483,18 @@ public class Home extends javax.swing.JFrame {
         System.out.println(val1);
     }//GEN-LAST:event_Feistel_ButtonActionPerformed
 
+    private void SubmissionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmissionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SubmissionActionPerformed
+
+    private void Submission1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submission1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Submission1ActionPerformed
+
+    private void Submission2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submission2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Submission2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -461,12 +532,15 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField Answer1;
     private javax.swing.JMenuItem Atbash;
     private javax.swing.JPanel AtbashPanel;
+    private javax.swing.JLabel AtbashTitle;
     private javax.swing.JMenu BlockCiphers;
     private javax.swing.JMenuItem Blowfish;
     private javax.swing.JMenuItem CBC;
     private javax.swing.JMenuItem CTR;
     private javax.swing.JMenuItem Caesar;
     private javax.swing.JPanel CaesarPanel;
+    private javax.swing.JLabel CaesarTitle;
+    private javax.swing.JLabel Ciphertext_Caesar;
     private javax.swing.JLabel Correct1;
     private javax.swing.JPanel Correct_ECB;
     private javax.swing.JLabel Correct_Pic;
@@ -488,14 +562,22 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Q1;
     private javax.swing.JMenuItem RC5;
     private javax.swing.JMenu StreamCiphers;
+    private javax.swing.JTextField Submission;
+    private javax.swing.JTextField Submission1;
+    private javax.swing.JTextField Submission2;
+    private javax.swing.JButton Submit;
+    private javax.swing.JButton Submit1;
+    private javax.swing.JButton Submit2;
     private javax.swing.JMenu SubstitutionCiphers;
     private javax.swing.JMenuItem Vigenere;
     private javax.swing.JPanel VigenerePanel;
+    private javax.swing.JLabel VigenereTitle;
+    private javax.swing.JLabel Warning;
+    private javax.swing.JLabel Warning3;
+    private javax.swing.JLabel Warning4;
     private javax.swing.JPanel WelcomePanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
