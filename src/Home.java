@@ -1,6 +1,7 @@
 
 import java.awt.Component;
 import java.util.Objects;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -40,6 +41,7 @@ public class Home extends javax.swing.JFrame {
         Ciphertext_Caesar = new javax.swing.JLabel();
         Submission = new javax.swing.JTextField();
         Submit = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         AtbashPanel = new javax.swing.JPanel();
         AtbashTitle = new javax.swing.JLabel();
         Warning1 = new javax.swing.JLabel();
@@ -138,6 +140,13 @@ public class Home extends javax.swing.JFrame {
         });
 
         Submit.setText("Submit");
+        Submit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SubmitActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Enter the plaintext answer in lowercase");
 
         javax.swing.GroupLayout CaesarPanelLayout = new javax.swing.GroupLayout(CaesarPanel);
         CaesarPanel.setLayout(CaesarPanelLayout);
@@ -158,6 +167,9 @@ public class Home extends javax.swing.JFrame {
             .addGroup(CaesarPanelLayout.createSequentialGroup()
                 .addGap(340, 340, 340)
                 .addComponent(Submit))
+            .addGroup(CaesarPanelLayout.createSequentialGroup()
+                .addGap(283, 283, 283)
+                .addComponent(jLabel1))
         );
         CaesarPanelLayout.setVerticalGroup(
             CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,7 +180,9 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Warning)
                 .addGap(84, 84, 84)
                 .addComponent(Ciphertext_Caesar)
-                .addGap(90, 90, 90)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1)
+                .addGap(62, 62, 62)
                 .addComponent(Submission, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(Submit))
@@ -637,7 +651,9 @@ public class Home extends javax.swing.JFrame {
         
         System.out.println(val1);
     }//GEN-LAST:event_Feistel_ButtonActionPerformed
-
+/*-----------------------------------------------*/
+/*THESE ARE BUILT IN PRIMITIVES FOR THE TEXTFIELDS*/
+/*-----------------------------------------------*/
     private void SubmissionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmissionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SubmissionActionPerformed
@@ -649,7 +665,10 @@ public class Home extends javax.swing.JFrame {
     private void Submission2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submission2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Submission2ActionPerformed
-
+/*-----------------------------------------------*/
+/*------END OF PRIMITIVES------------------------*/
+/*-----------------------------------------------*/
+    
     private void HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
@@ -659,6 +678,16 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_HomeActionPerformed
+
+    private void SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitActionPerformed
+        String val1 = Submission.getText();
+        String val2 = "experience is the teacher of all things";
+        
+        if(Objects.equals(val1, val2))
+            JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+        else
+            JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_SubmitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -746,6 +775,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Warning2;
     private javax.swing.JLabel Welcome;
     private javax.swing.JPanel WelcomePanel;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
