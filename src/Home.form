@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
@@ -12,72 +13,96 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HomeActionPerformed"/>
           </Events>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="SubstitutionCiphers">
+        <Menu class="javax.swing.JMenu" name="Ciphers">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Substitution Ciphers"/>
+            <Property name="text" type="java.lang.String" value="Ciphers"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="Caesar">
+            <Menu class="javax.swing.JMenu" name="SubstitutionCiphers">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Caesar Cipher"/>
+                <Property name="text" type="java.lang.String" value="Substitution Ciphers"/>
               </Properties>
-              <Events>
-                <EventHandler event="componentAdded" listener="java.awt.event.ContainerListener" parameters="java.awt.event.ContainerEvent" handler="CaesarComponentAdded"/>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CaesarActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="Atbash">
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="Caesar">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Caesar Cipher"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="componentAdded" listener="java.awt.event.ContainerListener" parameters="java.awt.event.ContainerEvent" handler="CaesarComponentAdded"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CaesarActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="Atbash">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Atbash Cipher"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AtbashActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="Vigenere">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vigenere Cipher"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VigenereActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="BlockCiphers">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Atbash Cipher"/>
+                <Property name="text" type="java.lang.String" value="Block Ciphers"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AtbashActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="Vigenere">
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="Feistel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Feistel Network"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FeistelActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="RC5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="RC5"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="DES">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="DES"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="StreamCiphers">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Vigenere Cipher"/>
+                <Property name="text" type="java.lang.String" value="Stream Ciphers"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VigenereActionPerformed"/>
-              </Events>
-            </MenuItem>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="OneTimePad">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="One Time Pad"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="Synchronous">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Synchronous"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="SSynchronizing">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Self-Synchronizing"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="LinearFeedback">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Linear-Feedback"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
           </SubComponents>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="BlockCiphers">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Block Ciphers"/>
-          </Properties>
-          <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="Feistel">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Feistel Network"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FeistelActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="RC5">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="RC5"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="Blowfish">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Blowfish"/>
-              </Properties>
-            </MenuItem>
-          </SubComponents>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="StreamCiphers">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Stream Ciphers"/>
-          </Properties>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="Entropy">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Entropy"/>
-          </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="EncryptionModes">
           <Properties>
@@ -100,6 +125,104 @@
             <MenuItem class="javax.swing.JMenuItem" name="CTR">
               <Properties>
                 <Property name="text" type="java.lang.String" value="CTR"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="Authentication">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Authentication"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="PAP">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pap"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="CHAP">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Chap"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="Kerberos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Kerberos"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="CBC_MAC">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Breakin CBC MAC"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="DigitalSignatures">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Digital Signatures"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="Hashing">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Hashing"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="SHA">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SHA"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="MD5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MD5"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JMenuItem" name="RSASignature">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="RSA Signature"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="PublicKey">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Public Key"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="RSA">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="RSA"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RSAActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="ELGamal">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="EL Gamal"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="DiffieHellman">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Diffie-Hellman"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="PrivateKey">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Private Key"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="Blowfish">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Blowfish"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="AES">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="AES"/>
               </Properties>
             </MenuItem>
           </SubComponents>
@@ -668,9 +791,9 @@
                       <Component id="Feistel_Intro" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="200" pref="200" max="-2" attributes="0"/>
-                      <Component id="Feistel_Pic" min="-2" pref="450" max="-2" attributes="0"/>
-                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="292" max="-2" attributes="0"/>
+                      <Component id="Feistel_Pic" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
                       <Component id="Feistel_Entry" min="-2" pref="90" max="-2" attributes="0"/>
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                       <Component id="Feistel_Button" min="-2" max="-2" attributes="0"/>
@@ -682,15 +805,17 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
                       <Component id="Feistel_Intro" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Feistel_Pic" min="-2" pref="410" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="180" pref="180" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="Feistel_Button" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
                                   <Component id="Feistel_Entry" min="-2" pref="30" max="-2" attributes="0"/>
                               </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="Feistel_Pic" min="-2" pref="329" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -701,7 +826,7 @@
             <Component class="javax.swing.JLabel" name="Feistel_Pic">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/resource/feistel.jpg"/>
+                  <Image iconType="3" name="/resource/feistel1.jpg"/>
                 </Property>
               </Properties>
             </Component>
@@ -728,6 +853,161 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Feistel_ButtonActionPerformed"/>
               </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="RSAPanel">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="card9"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="RSAHeader" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="243" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="RSAQ1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="RSAQ1_1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="RSAA1_1" min="-2" pref="87" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="RSAB1_1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="RSAQ1_2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="RSAA1_2" min="-2" pref="85" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="RSAB1_2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="RSAQ1_3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="RSAA1_3" min="-2" pref="87" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="RSAB1_3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="59" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                      <Component id="RSAHeader" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="RSAQ1" min="-2" pref="67" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="RSAQ1_1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="RSAA1_1" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="RSAB1_1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="RSAQ1_2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="RSAA1_2" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="RSAB1_2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                      <Component id="RSAQ1_3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="RSAA1_3" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="RSAB1_3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="133" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="RSAQ1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Alice wants to send a message to Bob. Given p = 3, q = 11, and e = 3 answer the following questions:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="RSAHeader">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="36" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="RSA Practice Problems"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="RSAA1_1">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RSAA1_1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="RSAQ1_1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="1. What is Bob&#x2019;s public key? Format: (n,e)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="RSAB1_1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enter"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="RSAQ1_2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="2. Alice wants to send M = 7, what is C?"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="RSAA1_2">
+            </Component>
+            <Component class="javax.swing.JButton" name="RSAB1_2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enter"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="RSAQ1_3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="3. What is Bob&#x2019;s private key? Format: (n,d)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="RSAA1_3">
+            </Component>
+            <Component class="javax.swing.JButton" name="RSAB1_3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enter"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
