@@ -32,8 +32,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel = new javax.swing.JPanel();
         WelcomePanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        Welcome = new javax.swing.JLabel();
+        FSULOGO = new javax.swing.JLabel();
         CaesarPanel = new javax.swing.JPanel();
         CaesarTitle = new javax.swing.JLabel();
         Warning = new javax.swing.JLabel();
@@ -87,14 +87,14 @@ public class Home extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         MainPanel.setBackground(new java.awt.Color(255, 255, 255));
-        MainPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        MainPanel.setLayout(new java.awt.CardLayout());
 
         WelcomePanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
-        jLabel1.setText("Welcome to the FSU Cryptography Module");
+        Welcome.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
+        Welcome.setText("Welcome to the FSU Cryptography Module");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/fsu-seal-full-color.png"))); // NOI18N
+        FSULOGO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/fsu-seal-full-color.png"))); // NOI18N
 
         javax.swing.GroupLayout WelcomePanelLayout = new javax.swing.GroupLayout(WelcomePanel);
         WelcomePanel.setLayout(WelcomePanelLayout);
@@ -102,116 +102,200 @@ public class Home extends javax.swing.JFrame {
             WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(WelcomePanelLayout.createSequentialGroup()
                 .addContainerGap(23, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 820, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 820, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
             .addGroup(WelcomePanelLayout.createSequentialGroup()
                 .addGap(300, 300, 300)
-                .addComponent(jLabel3)
+                .addComponent(FSULOGO)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         WelcomePanelLayout.setVerticalGroup(
             WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(WelcomePanelLayout.createSequentialGroup()
                 .addGap(107, 107, 107)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(FSULOGO, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(65, Short.MAX_VALUE))
         );
 
-        MainPanel.add(WelcomePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        MainPanel.add(WelcomePanel, "card2");
 
         CaesarPanel.setBackground(new java.awt.Color(204, 204, 255));
-        CaesarPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         CaesarTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         CaesarTitle.setText("Let's practice breaking a Caesar Cipher!");
-        CaesarPanel.add(CaesarTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
 
         Warning.setText("Please write a script to decrypt the following ciphertext. Instructors may ask students to demo or submit their code. ");
-        CaesarPanel.add(Warning, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
 
         Ciphertext_Caesar.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         Ciphertext_Caesar.setText("Phrase: vogvizvetv zj kyv kvrtyvi fw rcc kyzexj ");
-        CaesarPanel.add(Ciphertext_Caesar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
 
         Submission.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SubmissionActionPerformed(evt);
             }
         });
-        CaesarPanel.add(Submission, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 450, 40));
 
         Submit.setText("Submit");
-        CaesarPanel.add(Submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, -1, -1));
 
-        MainPanel.add(CaesarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
+        javax.swing.GroupLayout CaesarPanelLayout = new javax.swing.GroupLayout(CaesarPanel);
+        CaesarPanel.setLayout(CaesarPanelLayout);
+        CaesarPanelLayout.setHorizontalGroup(
+            CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CaesarPanelLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(CaesarTitle))
+            .addGroup(CaesarPanelLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(Warning))
+            .addGroup(CaesarPanelLayout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addComponent(Ciphertext_Caesar))
+            .addGroup(CaesarPanelLayout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(Submission, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(CaesarPanelLayout.createSequentialGroup()
+                .addGap(340, 340, 340)
+                .addComponent(Submit))
+        );
+        CaesarPanelLayout.setVerticalGroup(
+            CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CaesarPanelLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(CaesarTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Warning)
+                .addGap(84, 84, 84)
+                .addComponent(Ciphertext_Caesar)
+                .addGap(90, 90, 90)
+                .addComponent(Submission, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(Submit))
+        );
+
+        MainPanel.add(CaesarPanel, "card3");
 
         AtbashPanel.setBackground(new java.awt.Color(204, 255, 204));
-        AtbashPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         AtbashTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         AtbashTitle.setText("Let's practice breaking an Atbash Cipher!");
-        AtbashPanel.add(AtbashTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
 
         Warning1.setText("Please write a script to decrypt the following ciphertext. Instructors may ask students to demo or submit their code. ");
-        AtbashPanel.add(Warning1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
 
         Ciphertext_Atbash.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         Ciphertext_Atbash.setText("Phrase: vhmk ijpt e uavuav uigjev (key: caesar) ");
-        AtbashPanel.add(Ciphertext_Atbash, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
 
         Submission1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Submission1ActionPerformed(evt);
             }
         });
-        AtbashPanel.add(Submission1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 450, 40));
 
         Submit1.setText("Submit");
-        AtbashPanel.add(Submit1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, -1, -1));
 
-        MainPanel.add(AtbashPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
+        javax.swing.GroupLayout AtbashPanelLayout = new javax.swing.GroupLayout(AtbashPanel);
+        AtbashPanel.setLayout(AtbashPanelLayout);
+        AtbashPanelLayout.setHorizontalGroup(
+            AtbashPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AtbashPanelLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(AtbashTitle))
+            .addGroup(AtbashPanelLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(Warning1))
+            .addGroup(AtbashPanelLayout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addComponent(Ciphertext_Atbash))
+            .addGroup(AtbashPanelLayout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(Submission1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(AtbashPanelLayout.createSequentialGroup()
+                .addGap(340, 340, 340)
+                .addComponent(Submit1))
+        );
+        AtbashPanelLayout.setVerticalGroup(
+            AtbashPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AtbashPanelLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(AtbashTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Warning1)
+                .addGap(84, 84, 84)
+                .addComponent(Ciphertext_Atbash)
+                .addGap(90, 90, 90)
+                .addComponent(Submission1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(Submit1))
+        );
+
+        MainPanel.add(AtbashPanel, "card4");
 
         VigenerePanel.setBackground(new java.awt.Color(255, 204, 204));
-        VigenerePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         VigenereTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         VigenereTitle.setText("Let's practice breaking a Vigenere Cipher!");
-        VigenerePanel.add(VigenereTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, 60));
 
         Warning2.setText("Please write a script to decrypt the following ciphertext. Instructors may ask students to demo or submit their code. ");
-        VigenerePanel.add(Warning2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
 
         Ciphertext_Vigenere.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         Ciphertext_Vigenere.setText("Phrase: mlgsrmt zylfg gsrh rh hvxfiv");
-        VigenerePanel.add(Ciphertext_Vigenere, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, -1, -1));
 
         Submission2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Submission2ActionPerformed(evt);
             }
         });
-        VigenerePanel.add(Submission2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 450, 40));
 
         Submit2.setText("Submit");
-        VigenerePanel.add(Submit2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, -1, -1));
 
-        MainPanel.add(VigenerePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 859, 516));
+        javax.swing.GroupLayout VigenerePanelLayout = new javax.swing.GroupLayout(VigenerePanel);
+        VigenerePanel.setLayout(VigenerePanelLayout);
+        VigenerePanelLayout.setHorizontalGroup(
+            VigenerePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VigenerePanelLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(VigenereTitle))
+            .addGroup(VigenerePanelLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(Warning2))
+            .addGroup(VigenerePanelLayout.createSequentialGroup()
+                .addGap(180, 180, 180)
+                .addComponent(Ciphertext_Vigenere))
+            .addGroup(VigenerePanelLayout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(Submission2, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(VigenerePanelLayout.createSequentialGroup()
+                .addGap(340, 340, 340)
+                .addComponent(Submit2))
+        );
+        VigenerePanelLayout.setVerticalGroup(
+            VigenerePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VigenerePanelLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(VigenereTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Warning2)
+                .addGap(74, 74, 74)
+                .addComponent(Ciphertext_Vigenere)
+                .addGap(100, 100, 100)
+                .addComponent(Submission2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(Submit2))
+        );
+
+        MainPanel.add(VigenerePanel, "card5");
 
         ECBPanel.setBackground(new java.awt.Color(255, 255, 255));
-        ECBPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         ECB_Picture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/ECB.png"))); // NOI18N
         ECB_Picture.setText("jLabel4");
-        ECBPanel.add(ECB_Picture, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 420, -1));
 
         Answer1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Answer1ActionPerformed(evt);
             }
         });
-        ECBPanel.add(Answer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 450, 170, 30));
 
         ECB_Button.setText("Enter");
         ECB_Button.addActionListener(new java.awt.event.ActionListener() {
@@ -219,13 +303,40 @@ public class Home extends javax.swing.JFrame {
                 ECB_ButtonActionPerformed(evt);
             }
         });
-        ECBPanel.add(ECB_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, 80, 30));
 
         Q1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         Q1.setText("What does the following picture enrypted with 3DES ECB say?");
-        ECBPanel.add(Q1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, -1, 30));
 
-        MainPanel.add(ECBPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
+        javax.swing.GroupLayout ECBPanelLayout = new javax.swing.GroupLayout(ECBPanel);
+        ECBPanel.setLayout(ECBPanelLayout);
+        ECBPanelLayout.setHorizontalGroup(
+            ECBPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ECBPanelLayout.createSequentialGroup()
+                .addGap(210, 210, 210)
+                .addComponent(Q1))
+            .addGroup(ECBPanelLayout.createSequentialGroup()
+                .addGap(210, 210, 210)
+                .addComponent(ECB_Picture, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(ECBPanelLayout.createSequentialGroup()
+                .addGap(310, 310, 310)
+                .addComponent(Answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        ECBPanelLayout.setVerticalGroup(
+            ECBPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ECBPanelLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(Q1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(ECB_Picture)
+                .addGap(24, 24, 24)
+                .addGroup(ECBPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+
+        MainPanel.add(ECBPanel, "card6");
 
         Correct_ECB.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -260,18 +371,15 @@ public class Home extends javax.swing.JFrame {
                 .addGap(103, 103, 103))
         );
 
-        MainPanel.add(Correct_ECB, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
+        MainPanel.add(Correct_ECB, "card7");
 
         FeistelPanel.setBackground(new java.awt.Color(255, 255, 255));
-        FeistelPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Feistel_Pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/feistel.jpg"))); // NOI18N
         Feistel_Pic.setText("jLabel2");
-        FeistelPanel.add(Feistel_Pic, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 450, 410));
 
         Feistel_Intro.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         Feistel_Intro.setText("What is the final 8 bit value?");
-        FeistelPanel.add(Feistel_Intro, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
 
         Feistel_Entry.setText("Answer Here!");
         Feistel_Entry.addActionListener(new java.awt.event.ActionListener() {
@@ -279,7 +387,6 @@ public class Home extends javax.swing.JFrame {
                 Feistel_EntryActionPerformed(evt);
             }
         });
-        FeistelPanel.add(Feistel_Entry, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 270, 90, 30));
 
         Feistel_Button.setText("Enter");
         Feistel_Button.addActionListener(new java.awt.event.ActionListener() {
@@ -287,9 +394,38 @@ public class Home extends javax.swing.JFrame {
                 Feistel_ButtonActionPerformed(evt);
             }
         });
-        FeistelPanel.add(Feistel_Button, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 270, -1, 30));
 
-        MainPanel.add(FeistelPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
+        javax.swing.GroupLayout FeistelPanelLayout = new javax.swing.GroupLayout(FeistelPanel);
+        FeistelPanel.setLayout(FeistelPanelLayout);
+        FeistelPanelLayout.setHorizontalGroup(
+            FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelPanelLayout.createSequentialGroup()
+                .addGap(250, 250, 250)
+                .addComponent(Feistel_Intro))
+            .addGroup(FeistelPanelLayout.createSequentialGroup()
+                .addGap(200, 200, 200)
+                .addComponent(Feistel_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(Feistel_Button))
+        );
+        FeistelPanelLayout.setVerticalGroup(
+            FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelPanelLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(Feistel_Intro)
+                .addGap(21, 21, 21)
+                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Feistel_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(FeistelPanelLayout.createSequentialGroup()
+                        .addGap(180, 180, 180)
+                        .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+        );
+
+        MainPanel.add(FeistelPanel, "card8");
 
         Home.setText("Home");
         Home.addActionListener(new java.awt.event.ActionListener() {
@@ -582,6 +718,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ECB_Picture;
     private javax.swing.JMenu EncryptionModes;
     private javax.swing.JMenu Entropy;
+    private javax.swing.JLabel FSULOGO;
     private javax.swing.JMenuItem Feistel;
     private javax.swing.JPanel FeistelPanel;
     private javax.swing.JButton Feistel_Button;
@@ -607,9 +744,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Warning;
     private javax.swing.JLabel Warning1;
     private javax.swing.JLabel Warning2;
+    private javax.swing.JLabel Welcome;
     private javax.swing.JPanel WelcomePanel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
