@@ -400,7 +400,6 @@ public class Home extends javax.swing.JFrame {
         FeistelPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         Feistel_Pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/feistel.jpg"))); // NOI18N
-        Feistel_Pic.setText("jLabel2");
 
         Feistel_Intro.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         Feistel_Intro.setText("What is the final 8 bit value?");
@@ -445,8 +444,8 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
                         .addGap(180, 180, 180)
                         .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
         );
 
         MainPanel.add(FeistelPanel, "card8");
@@ -647,19 +646,9 @@ public class Home extends javax.swing.JFrame {
         String val2 = "01010100";
         
         if(Objects.equals(val1, val2))
-        {
-            MainPanel.removeAll();
-            MainPanel.repaint();
-            MainPanel.revalidate();
-
-            MainPanel.add(Correct_ECB);
-            MainPanel.repaint();
-            MainPanel.revalidate();
-        }
+            JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
         else
-            System.out.println("FALSE");
-        
-        System.out.println(val1);
+            JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_Feistel_ButtonActionPerformed
 /*-----------------------------------------------*/
 /*THESE ARE BUILT IN PRIMITIVES FOR THE TEXTFIELDS*/
