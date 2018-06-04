@@ -67,8 +67,21 @@ public class Home extends javax.swing.JFrame {
         Feistel_Intro = new javax.swing.JLabel();
         Feistel_Entry = new javax.swing.JTextField();
         Feistel_Button = new javax.swing.JButton();
+        RSAPanel = new javax.swing.JPanel();
+        RSAQ1 = new javax.swing.JLabel();
+        RSAHeader = new javax.swing.JLabel();
+        RSAA1_1 = new javax.swing.JTextField();
+        RSAQ1_1 = new javax.swing.JLabel();
+        RSAB1_1 = new javax.swing.JButton();
+        RSAQ1_2 = new javax.swing.JLabel();
+        RSAA1_2 = new javax.swing.JTextField();
+        RSAB1_2 = new javax.swing.JButton();
+        RSAQ1_3 = new javax.swing.JLabel();
+        RSAA1_3 = new javax.swing.JTextField();
+        RSAB1_3 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
+        Ciphers = new javax.swing.JMenu();
         SubstitutionCiphers = new javax.swing.JMenu();
         Caesar = new javax.swing.JMenuItem();
         Atbash = new javax.swing.JMenuItem();
@@ -76,13 +89,33 @@ public class Home extends javax.swing.JFrame {
         BlockCiphers = new javax.swing.JMenu();
         Feistel = new javax.swing.JMenuItem();
         RC5 = new javax.swing.JMenuItem();
-        Blowfish = new javax.swing.JMenuItem();
+        DES = new javax.swing.JMenuItem();
         StreamCiphers = new javax.swing.JMenu();
-        Entropy = new javax.swing.JMenu();
+        OneTimePad = new javax.swing.JMenuItem();
+        Synchronous = new javax.swing.JMenuItem();
+        SSynchronizing = new javax.swing.JMenuItem();
+        LinearFeedback = new javax.swing.JMenuItem();
         EncryptionModes = new javax.swing.JMenu();
         ECB = new javax.swing.JMenuItem();
         CBC = new javax.swing.JMenuItem();
         CTR = new javax.swing.JMenuItem();
+        Authentication = new javax.swing.JMenu();
+        PAP = new javax.swing.JMenuItem();
+        CHAP = new javax.swing.JMenuItem();
+        Kerberos = new javax.swing.JMenuItem();
+        CBC_MAC = new javax.swing.JMenuItem();
+        DigitalSignatures = new javax.swing.JMenu();
+        Hashing = new javax.swing.JMenu();
+        SHA = new javax.swing.JMenuItem();
+        MD5 = new javax.swing.JMenuItem();
+        RSASignature = new javax.swing.JMenuItem();
+        PublicKey = new javax.swing.JMenu();
+        RSA = new javax.swing.JMenuItem();
+        ELGamal = new javax.swing.JMenuItem();
+        DiffieHellman = new javax.swing.JMenuItem();
+        PrivateKey = new javax.swing.JMenu();
+        Blowfish = new javax.swing.JMenuItem();
+        AES = new javax.swing.JMenuItem();
         Help = new javax.swing.JMenu();
         Dev = new javax.swing.JMenuItem();
 
@@ -399,7 +432,7 @@ public class Home extends javax.swing.JFrame {
 
         FeistelPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        Feistel_Pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/feistel.jpg"))); // NOI18N
+        Feistel_Pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/feistel1.jpg"))); // NOI18N
 
         Feistel_Intro.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         Feistel_Intro.setText("What is the final 8 bit value?");
@@ -426,9 +459,9 @@ public class Home extends javax.swing.JFrame {
                 .addGap(250, 250, 250)
                 .addComponent(Feistel_Intro))
             .addGroup(FeistelPanelLayout.createSequentialGroup()
-                .addGap(200, 200, 200)
-                .addComponent(Feistel_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
+                .addGap(292, 292, 292)
+                .addComponent(Feistel_Pic)
+                .addGap(112, 112, 112)
                 .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(Feistel_Button))
@@ -438,17 +471,110 @@ public class Home extends javax.swing.JFrame {
             .addGroup(FeistelPanelLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(Feistel_Intro)
-                .addGap(21, 21, 21)
                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Feistel_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(180, 180, 180)
+                        .addGap(201, 201, 201)
                         .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(FeistelPanelLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(Feistel_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         MainPanel.add(FeistelPanel, "card8");
+
+        RSAPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        RSAQ1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        RSAQ1.setText("Alice wants to send a message to Bob. Given p = 3, q = 11, and e = 3 answer the following questions:");
+
+        RSAHeader.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        RSAHeader.setForeground(new java.awt.Color(255, 0, 0));
+        RSAHeader.setText("RSA Practice Problems");
+
+        RSAA1_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSAA1_1ActionPerformed(evt);
+            }
+        });
+
+        RSAQ1_1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RSAQ1_1.setText("1. What is Bob’s public key? Format: (n,e)");
+
+        RSAB1_1.setText("Enter");
+
+        RSAQ1_2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RSAQ1_2.setText("2. Alice wants to send M = 7, what is C?");
+
+        RSAB1_2.setText("Enter");
+
+        RSAQ1_3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        RSAQ1_3.setText("3. What is Bob’s private key? Format: (n,d)");
+
+        RSAB1_3.setText("Enter");
+
+        javax.swing.GroupLayout RSAPanelLayout = new javax.swing.GroupLayout(RSAPanel);
+        RSAPanel.setLayout(RSAPanelLayout);
+        RSAPanelLayout.setHorizontalGroup(
+            RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSAPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(RSAHeader)
+                .addGap(243, 243, 243))
+            .addGroup(RSAPanelLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(RSAQ1)
+                    .addGroup(RSAPanelLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RSAQ1_1)
+                            .addGroup(RSAPanelLayout.createSequentialGroup()
+                                .addComponent(RSAA1_1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(RSAB1_1))
+                            .addComponent(RSAQ1_2)
+                            .addGroup(RSAPanelLayout.createSequentialGroup()
+                                .addComponent(RSAA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(RSAB1_2))
+                            .addComponent(RSAQ1_3)
+                            .addGroup(RSAPanelLayout.createSequentialGroup()
+                                .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(RSAB1_3)))))
+                .addContainerGap(59, Short.MAX_VALUE))
+        );
+        RSAPanelLayout.setVerticalGroup(
+            RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RSAPanelLayout.createSequentialGroup()
+                .addGap(65, 65, 65)
+                .addComponent(RSAHeader)
+                .addGap(18, 18, 18)
+                .addComponent(RSAQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(RSAQ1_1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RSAA1_1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RSAB1_1))
+                .addGap(55, 55, 55)
+                .addComponent(RSAQ1_2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RSAA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RSAB1_2))
+                .addGap(65, 65, 65)
+                .addComponent(RSAQ1_3)
+                .addGap(18, 18, 18)
+                .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RSAB1_3))
+                .addContainerGap(133, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(RSAPanel, "card9");
 
         Home.setText("Home");
         Home.addActionListener(new java.awt.event.ActionListener() {
@@ -457,6 +583,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
         jMenuBar1.add(Home);
+
+        Ciphers.setText("Ciphers");
 
         SubstitutionCiphers.setText("Substitution Ciphers");
 
@@ -489,7 +617,7 @@ public class Home extends javax.swing.JFrame {
         });
         SubstitutionCiphers.add(Vigenere);
 
-        jMenuBar1.add(SubstitutionCiphers);
+        Ciphers.add(SubstitutionCiphers);
 
         BlockCiphers.setText("Block Ciphers");
 
@@ -504,16 +632,28 @@ public class Home extends javax.swing.JFrame {
         RC5.setText("RC5");
         BlockCiphers.add(RC5);
 
-        Blowfish.setText("Blowfish");
-        BlockCiphers.add(Blowfish);
+        DES.setText("DES");
+        BlockCiphers.add(DES);
 
-        jMenuBar1.add(BlockCiphers);
+        Ciphers.add(BlockCiphers);
 
         StreamCiphers.setText("Stream Ciphers");
-        jMenuBar1.add(StreamCiphers);
 
-        Entropy.setText("Entropy");
-        jMenuBar1.add(Entropy);
+        OneTimePad.setText("One Time Pad");
+        StreamCiphers.add(OneTimePad);
+
+        Synchronous.setText("Synchronous");
+        StreamCiphers.add(Synchronous);
+
+        SSynchronizing.setText("Self-Synchronizing");
+        StreamCiphers.add(SSynchronizing);
+
+        LinearFeedback.setText("Linear-Feedback");
+        StreamCiphers.add(LinearFeedback);
+
+        Ciphers.add(StreamCiphers);
+
+        jMenuBar1.add(Ciphers);
 
         EncryptionModes.setText("Encryption Modes");
 
@@ -532,6 +672,67 @@ public class Home extends javax.swing.JFrame {
         EncryptionModes.add(CTR);
 
         jMenuBar1.add(EncryptionModes);
+
+        Authentication.setText("Authentication");
+
+        PAP.setText("Pap");
+        Authentication.add(PAP);
+
+        CHAP.setText("Chap");
+        Authentication.add(CHAP);
+
+        Kerberos.setText("Kerberos");
+        Authentication.add(Kerberos);
+
+        CBC_MAC.setText("Breakin CBC MAC");
+        Authentication.add(CBC_MAC);
+
+        jMenuBar1.add(Authentication);
+
+        DigitalSignatures.setText("Digital Signatures");
+
+        Hashing.setText("Hashing");
+
+        SHA.setText("SHA");
+        Hashing.add(SHA);
+
+        MD5.setText("MD5");
+        Hashing.add(MD5);
+
+        DigitalSignatures.add(Hashing);
+
+        RSASignature.setText("RSA Signature");
+        DigitalSignatures.add(RSASignature);
+
+        jMenuBar1.add(DigitalSignatures);
+
+        PublicKey.setText("Public Key");
+
+        RSA.setText("RSA");
+        RSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSAActionPerformed(evt);
+            }
+        });
+        PublicKey.add(RSA);
+
+        ELGamal.setText("EL Gamal");
+        PublicKey.add(ELGamal);
+
+        DiffieHellman.setText("Diffie-Hellman");
+        PublicKey.add(DiffieHellman);
+
+        jMenuBar1.add(PublicKey);
+
+        PrivateKey.setText("Private Key");
+
+        Blowfish.setText("Blowfish");
+        PrivateKey.add(Blowfish);
+
+        AES.setText("AES");
+        PrivateKey.add(AES);
+
+        jMenuBar1.add(PrivateKey);
 
         Help.setText("Help");
 
@@ -708,6 +909,20 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_Submit2ActionPerformed
 
+    private void RSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(RSAPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_RSAActionPerformed
+
+    private void RSAA1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAA1_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RSAA1_1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -742,30 +957,38 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem AES;
     private javax.swing.JTextField Answer1;
     private javax.swing.JMenuItem Atbash;
     private javax.swing.JPanel AtbashPanel;
     private javax.swing.JLabel AtbashTitle;
+    private javax.swing.JMenu Authentication;
     private javax.swing.JMenu BlockCiphers;
     private javax.swing.JMenuItem Blowfish;
     private javax.swing.JMenuItem CBC;
+    private javax.swing.JMenuItem CBC_MAC;
+    private javax.swing.JMenuItem CHAP;
     private javax.swing.JMenuItem CTR;
     private javax.swing.JMenuItem Caesar;
     private javax.swing.JPanel CaesarPanel;
     private javax.swing.JLabel CaesarTitle;
+    private javax.swing.JMenu Ciphers;
     private javax.swing.JLabel Ciphertext_Atbash;
     private javax.swing.JLabel Ciphertext_Caesar;
     private javax.swing.JLabel Ciphertext_Vigenere;
     private javax.swing.JLabel Correct1;
     private javax.swing.JPanel Correct_ECB;
     private javax.swing.JLabel Correct_Pic;
+    private javax.swing.JMenuItem DES;
     private javax.swing.JMenuItem Dev;
+    private javax.swing.JMenuItem DiffieHellman;
+    private javax.swing.JMenu DigitalSignatures;
     private javax.swing.JMenuItem ECB;
     private javax.swing.JPanel ECBPanel;
     private javax.swing.JButton ECB_Button;
     private javax.swing.JLabel ECB_Picture;
+    private javax.swing.JMenuItem ELGamal;
     private javax.swing.JMenu EncryptionModes;
-    private javax.swing.JMenu Entropy;
     private javax.swing.JLabel FSULOGO;
     private javax.swing.JMenuItem Feistel;
     private javax.swing.JPanel FeistelPanel;
@@ -773,11 +996,35 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField Feistel_Entry;
     private javax.swing.JLabel Feistel_Intro;
     private javax.swing.JLabel Feistel_Pic;
+    private javax.swing.JMenu Hashing;
     private javax.swing.JMenu Help;
     private javax.swing.JMenu Home;
+    private javax.swing.JMenuItem Kerberos;
+    private javax.swing.JMenuItem LinearFeedback;
+    private javax.swing.JMenuItem MD5;
     private javax.swing.JPanel MainPanel;
+    private javax.swing.JMenuItem OneTimePad;
+    private javax.swing.JMenuItem PAP;
+    private javax.swing.JMenu PrivateKey;
+    private javax.swing.JMenu PublicKey;
     private javax.swing.JLabel Q1;
     private javax.swing.JMenuItem RC5;
+    private javax.swing.JMenuItem RSA;
+    private javax.swing.JTextField RSAA1_1;
+    private javax.swing.JTextField RSAA1_2;
+    private javax.swing.JTextField RSAA1_3;
+    private javax.swing.JButton RSAB1_1;
+    private javax.swing.JButton RSAB1_2;
+    private javax.swing.JButton RSAB1_3;
+    private javax.swing.JLabel RSAHeader;
+    private javax.swing.JPanel RSAPanel;
+    private javax.swing.JLabel RSAQ1;
+    private javax.swing.JLabel RSAQ1_1;
+    private javax.swing.JLabel RSAQ1_2;
+    private javax.swing.JLabel RSAQ1_3;
+    private javax.swing.JMenuItem RSASignature;
+    private javax.swing.JMenuItem SHA;
+    private javax.swing.JMenuItem SSynchronizing;
     private javax.swing.JMenu StreamCiphers;
     private javax.swing.JTextField Submission;
     private javax.swing.JTextField Submission1;
@@ -786,6 +1033,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton Submit1;
     private javax.swing.JButton Submit2;
     private javax.swing.JMenu SubstitutionCiphers;
+    private javax.swing.JMenuItem Synchronous;
     private javax.swing.JMenuItem Vigenere;
     private javax.swing.JPanel VigenerePanel;
     private javax.swing.JLabel VigenereTitle;
@@ -798,3 +1046,4 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
+
