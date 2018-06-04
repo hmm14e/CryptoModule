@@ -207,6 +207,11 @@ public class Home extends javax.swing.JFrame {
         });
 
         Submit1.setText("Submit");
+        Submit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Submit1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout AtbashPanelLayout = new javax.swing.GroupLayout(AtbashPanel);
         AtbashPanel.setLayout(AtbashPanelLayout);
@@ -262,6 +267,11 @@ public class Home extends javax.swing.JFrame {
         });
 
         Submit2.setText("Submit");
+        Submit2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Submit2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout VigenerePanelLayout = new javax.swing.GroupLayout(VigenerePanel);
         VigenerePanel.setLayout(VigenerePanelLayout);
@@ -688,6 +698,26 @@ public class Home extends javax.swing.JFrame {
         else
             JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_SubmitActionPerformed
+
+    private void Submit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit1ActionPerformed
+        String val1 = Submission1.getText();
+        String val2 = "nothing about this is secure";
+        
+        if(Objects.equals(val1, val2))
+            JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+        else
+            JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_Submit1ActionPerformed
+
+    private void Submit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit2ActionPerformed
+        String val1 = Submission2.getText();
+        String val2 = "this isnt a caesar cipher";
+        
+        if(Objects.equals(val1, val2))
+            JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+        else
+            JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_Submit2ActionPerformed
 
     /**
      * @param args the command line arguments
