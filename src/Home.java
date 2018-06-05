@@ -103,13 +103,24 @@ public class Home extends javax.swing.JFrame {
         FormerSHA = new javax.swing.JLabel();
         Current = new javax.swing.JLabel();
         Former = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
+        SHAB1 = new javax.swing.JButton();
+        SHAA2 = new javax.swing.JTextField();
+        SHAB2 = new javax.swing.JButton();
+        SHAQ3 = new javax.swing.JLabel();
+        SHAA3 = new javax.swing.JTextField();
+        SHAB3 = new javax.swing.JButton();
+        SHAA1 = new javax.swing.JTextField();
+        DHPanel = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        DHPanel1 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -168,7 +179,7 @@ public class Home extends javax.swing.JFrame {
         WelcomePanelLayout.setHorizontalGroup(
             WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(WelcomePanelLayout.createSequentialGroup()
-                .addContainerGap(23, Short.MAX_VALUE)
+                .addContainerGap(103, Short.MAX_VALUE)
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 820, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
             .addGroup(WelcomePanelLayout.createSequentialGroup()
@@ -183,7 +194,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FSULOGO, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(242, Short.MAX_VALUE))
+                .addContainerGap(497, Short.MAX_VALUE))
         );
 
         MainPanel.add(WelcomePanel, "card2");
@@ -448,7 +459,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
                         .addGap(348, 348, 348)
                         .addComponent(Correct1)))
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addContainerGap(241, Short.MAX_VALUE))
         );
         Correct_ECBLayout.setVerticalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -576,7 +587,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(RSAB1_3)))))
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addContainerGap(139, Short.MAX_VALUE))
         );
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -603,7 +614,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSAB1_3))
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(454, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSAPanel, "card9");
@@ -667,7 +678,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(EGB1_2)))))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(112, Short.MAX_VALUE))
         );
         ElGamalPanelLayout.setVerticalGroup(
             ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -688,7 +699,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(EGB1_2))
-                .addContainerGap(331, Short.MAX_VALUE))
+                .addContainerGap(586, Short.MAX_VALUE))
         );
 
         MainPanel.add(ElGamalPanel, "card10");
@@ -725,20 +736,20 @@ public class Home extends javax.swing.JFrame {
         Former.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         Former.setText("Former:");
 
-        jButton1.setText("jButton1");
+        SHAB1.setText("jButton1");
 
-        jTextField2.setText("jTextField2");
+        SHAA2.setText("jTextField2");
 
-        jButton2.setText("jButton2");
+        SHAB2.setText("jButton2");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("3. Not sure yet?");
+        SHAQ3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SHAQ3.setText("3. Not sure yet?");
 
-        jTextField3.setText("jTextField3");
+        SHAA3.setText("jTextField3");
 
-        jButton3.setText("jButton3");
+        SHAB3.setText("jButton3");
 
-        jTextField1.setText("jTextField1");
+        SHAA1.setText("jTextField1");
 
         javax.swing.GroupLayout SHAPanelLayout = new javax.swing.GroupLayout(SHAPanel);
         SHAPanel.setLayout(SHAPanelLayout);
@@ -767,19 +778,19 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(SHAQ1)
                             .addComponent(SHAQ2)
                             .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton1))
+                                .addComponent(SHAB1))
                             .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton2))
-                            .addComponent(jLabel2)
+                                .addComponent(SHAB2))
+                            .addComponent(SHAQ3)
                             .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton3)))))
-                .addContainerGap(218, Short.MAX_VALUE))
+                                .addComponent(SHAB3)))))
+                .addContainerGap(298, Short.MAX_VALUE))
         );
         SHAPanelLayout.setVerticalGroup(
             SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -804,24 +815,129 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(SHAQ1)
                 .addGap(18, 18, 18)
                 .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(SHAB1)
+                    .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(SHAQ2)
                 .addGap(18, 18, 18)
                 .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2))
+                    .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SHAB2))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(SHAQ3)
                 .addGap(18, 18, 18)
                 .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3))
-                .addContainerGap(194, Short.MAX_VALUE))
+                    .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SHAB3))
+                .addContainerGap(449, Short.MAX_VALUE))
         );
 
         MainPanel.add(SHAPanel, "card11");
+
+        DHPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Untitled Diagram.png"))); // NOI18N
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4.setText("Diffie-Hellman Key Exchange");
+
+        jButton4.setText("Next");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("First, Alice and Bob publicly create a generator and a prime modulus. For this example we'll use g=3, and n = 11. ");
+
+        jLabel7.setText("Therefore, 3 mod 11 is the equation both Alice and Bob will use.");
+
+        javax.swing.GroupLayout DHPanelLayout = new javax.swing.GroupLayout(DHPanel);
+        DHPanel.setLayout(DHPanelLayout);
+        DHPanelLayout.setHorizontalGroup(
+            DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DHPanelLayout.createSequentialGroup()
+                .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DHPanelLayout.createSequentialGroup()
+                        .addGap(279, 279, 279)
+                        .addComponent(jLabel4))
+                    .addGroup(DHPanelLayout.createSequentialGroup()
+                        .addGap(371, 371, 371)
+                        .addComponent(jButton4))
+                    .addGroup(DHPanelLayout.createSequentialGroup()
+                        .addGap(153, 153, 153)
+                        .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)))
+                    .addGroup(DHPanelLayout.createSequentialGroup()
+                        .addGap(266, 266, 266)
+                        .addComponent(jLabel7)))
+                .addContainerGap(243, Short.MAX_VALUE))
+        );
+        DHPanelLayout.setVerticalGroup(
+            DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DHPanelLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel4)
+                .addGap(42, 42, 42)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addGap(3, 3, 3)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton4)
+                .addContainerGap(466, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(DHPanel, "card12");
+
+        DHPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Untitled Diagram.png"))); // NOI18N
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel6.setText("Diffie-Hellman Key Exchange");
+
+        jButton5.setText("Next");
+
+        jLabel8.setText("Next, Alice generates a random number 7, and does the operation 3^7 mod(11) = 9 ");
+
+        javax.swing.GroupLayout DHPanel1Layout = new javax.swing.GroupLayout(DHPanel1);
+        DHPanel1.setLayout(DHPanel1Layout);
+        DHPanel1Layout.setHorizontalGroup(
+            DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DHPanel1Layout.createSequentialGroup()
+                .addGroup(DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DHPanel1Layout.createSequentialGroup()
+                        .addGap(153, 153, 153)
+                        .addComponent(jLabel5))
+                    .addGroup(DHPanel1Layout.createSequentialGroup()
+                        .addGap(279, 279, 279)
+                        .addComponent(jLabel6))
+                    .addGroup(DHPanel1Layout.createSequentialGroup()
+                        .addGap(375, 375, 375)
+                        .addComponent(jButton5))
+                    .addGroup(DHPanel1Layout.createSequentialGroup()
+                        .addGap(220, 220, 220)
+                        .addComponent(jLabel8)))
+                .addContainerGap(259, Short.MAX_VALUE))
+        );
+        DHPanel1Layout.setVerticalGroup(
+            DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DHPanel1Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel6)
+                .addGap(42, 42, 42)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addGap(42, 42, 42)
+                .addComponent(jButton5)
+                .addContainerGap(452, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(DHPanel1, "card12");
 
         Home.setText("Home");
         Home.addActionListener(new java.awt.event.ActionListener() {
@@ -980,6 +1096,11 @@ public class Home extends javax.swing.JFrame {
         PublicKey.add(ELGamal);
 
         DiffieHellman.setText("Diffie-Hellman");
+        DiffieHellman.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DiffieHellmanActionPerformed(evt);
+            }
+        });
         PublicKey.add(DiffieHellman);
 
         jMenuBar1.add(PublicKey);
@@ -1242,6 +1363,26 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();      
     }//GEN-LAST:event_SHAActionPerformed
 
+    private void DiffieHellmanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DiffieHellmanActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DHPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();  
+    }//GEN-LAST:event_DiffieHellmanActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DHPanel1);
+        MainPanel.repaint();
+        MainPanel.revalidate();  
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1300,6 +1441,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Correct_Pic;
     private javax.swing.JLabel Current;
     private javax.swing.JMenuItem DES;
+    private javax.swing.JPanel DHPanel;
+    private javax.swing.JPanel DHPanel1;
     private javax.swing.JMenuItem Dev;
     private javax.swing.JMenuItem DiffieHellman;
     private javax.swing.JMenu DigitalSignatures;
@@ -1356,9 +1499,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel RSAQ1_3;
     private javax.swing.JMenuItem RSASignature;
     private javax.swing.JMenuItem SHA;
+    private javax.swing.JTextField SHAA1;
+    private javax.swing.JTextField SHAA2;
+    private javax.swing.JTextField SHAA3;
+    private javax.swing.JButton SHAB1;
+    private javax.swing.JButton SHAB2;
+    private javax.swing.JButton SHAB3;
     private javax.swing.JPanel SHAPanel;
     private javax.swing.JLabel SHAQ1;
     private javax.swing.JLabel SHAQ2;
+    private javax.swing.JLabel SHAQ3;
     private javax.swing.JButton SHA_Button;
     private javax.swing.JLabel SHA_Header1;
     private javax.swing.JLabel SHA_Output;
@@ -1382,14 +1532,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Warning2;
     private javax.swing.JLabel Welcome;
     private javax.swing.JPanel WelcomePanel;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
