@@ -1,6 +1,10 @@
 
-import java.awt.Component;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Objects;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /*
@@ -79,6 +83,33 @@ public class Home extends javax.swing.JFrame {
         RSAQ1_3 = new javax.swing.JLabel();
         RSAA1_3 = new javax.swing.JTextField();
         RSAB1_3 = new javax.swing.JButton();
+        ElGamalPanel = new javax.swing.JPanel();
+        ElGamalHeader = new javax.swing.JLabel();
+        EGQ1 = new javax.swing.JLabel();
+        EGQ1_1 = new javax.swing.JLabel();
+        EGA1_1 = new javax.swing.JTextField();
+        EGB1_1 = new javax.swing.JButton();
+        EGQ1_2 = new javax.swing.JLabel();
+        EGA1_2 = new javax.swing.JTextField();
+        EGB1_2 = new javax.swing.JButton();
+        SHAPanel = new javax.swing.JPanel();
+        SHA_Text = new javax.swing.JTextField();
+        SHA_Button = new javax.swing.JButton();
+        SHA_Output = new javax.swing.JLabel();
+        SHA_Header1 = new javax.swing.JLabel();
+        SHA_Questions = new javax.swing.JLabel();
+        SHAQ1 = new javax.swing.JLabel();
+        SHAQ2 = new javax.swing.JLabel();
+        FormerSHA = new javax.swing.JLabel();
+        Current = new javax.swing.JLabel();
+        Former = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -95,6 +126,7 @@ public class Home extends javax.swing.JFrame {
         Synchronous = new javax.swing.JMenuItem();
         SSynchronizing = new javax.swing.JMenuItem();
         LinearFeedback = new javax.swing.JMenuItem();
+        Entropy = new javax.swing.JMenuItem();
         EncryptionModes = new javax.swing.JMenu();
         ECB = new javax.swing.JMenuItem();
         CBC = new javax.swing.JMenuItem();
@@ -151,7 +183,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FSULOGO, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addContainerGap(242, Short.MAX_VALUE))
         );
 
         MainPanel.add(WelcomePanel, "card2");
@@ -571,10 +603,225 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSAB1_3))
-                .addContainerGap(133, Short.MAX_VALUE))
+                .addContainerGap(199, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSAPanel, "card9");
+
+        ElGamalPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        ElGamalHeader.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        ElGamalHeader.setForeground(new java.awt.Color(255, 0, 0));
+        ElGamalHeader.setText("EL Gamal Practice Problems");
+
+        EGQ1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        EGQ1.setText("Bob generates p and g where p = 11, and g = 5. Then, Bob selects a random number x = 3. Given this information solve the following problems:");
+
+        EGQ1_1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        EGQ1_1.setText("1. What is Bob’s public key?");
+
+        EGA1_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EGA1_1ActionPerformed(evt);
+            }
+        });
+
+        EGB1_1.setText("Enter");
+        EGB1_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EGB1_1ActionPerformed(evt);
+            }
+        });
+
+        EGQ1_2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        EGQ1_2.setText("2. Alice wants to send message M = 4 to Bob, she chooses a random integer k = 4. What is the encrypted message Alice sends?");
+
+        EGA1_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EGA1_2ActionPerformed(evt);
+            }
+        });
+
+        EGB1_2.setText("Enter");
+
+        javax.swing.GroupLayout ElGamalPanelLayout = new javax.swing.GroupLayout(ElGamalPanel);
+        ElGamalPanel.setLayout(ElGamalPanelLayout);
+        ElGamalPanelLayout.setHorizontalGroup(
+            ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ElGamalPanelLayout.createSequentialGroup()
+                .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ElGamalPanelLayout.createSequentialGroup()
+                        .addGap(197, 197, 197)
+                        .addComponent(ElGamalHeader))
+                    .addGroup(ElGamalPanelLayout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(EGQ1_1)
+                            .addComponent(EGQ1)
+                            .addGroup(ElGamalPanelLayout.createSequentialGroup()
+                                .addComponent(EGA1_1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(EGB1_1))
+                            .addComponent(EGQ1_2)
+                            .addGroup(ElGamalPanelLayout.createSequentialGroup()
+                                .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(EGB1_2)))))
+                .addContainerGap(32, Short.MAX_VALUE))
+        );
+        ElGamalPanelLayout.setVerticalGroup(
+            ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ElGamalPanelLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(ElGamalHeader)
+                .addGap(18, 18, 18)
+                .addComponent(EGQ1)
+                .addGap(34, 34, 34)
+                .addComponent(EGQ1_1)
+                .addGap(30, 30, 30)
+                .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(EGA1_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EGB1_1))
+                .addGap(57, 57, 57)
+                .addComponent(EGQ1_2)
+                .addGap(39, 39, 39)
+                .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EGB1_2))
+                .addContainerGap(331, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(ElGamalPanel, "card10");
+
+        SHAPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        SHA_Button.setText("Enter");
+        SHA_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA_ButtonActionPerformed(evt);
+            }
+        });
+
+        SHA_Output.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        SHA_Output.setText("SHA-256 Text");
+
+        SHA_Header1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        SHA_Header1.setText("Enter any text to see its SHA-256 output!");
+
+        SHA_Questions.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        SHA_Questions.setText("Questions:");
+
+        SHAQ1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SHAQ1.setText("1. What is the length (in bytes) of all SHA-256 outputs?");
+
+        SHAQ2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        SHAQ2.setText("2. For any hash function, the same input will generate different output? T/F");
+
+        FormerSHA.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+
+        Current.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Current.setText("Current:");
+
+        Former.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Former.setText("Former:");
+
+        jButton1.setText("jButton1");
+
+        jTextField2.setText("jTextField2");
+
+        jButton2.setText("jButton2");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setText("3. Not sure yet?");
+
+        jTextField3.setText("jTextField3");
+
+        jButton3.setText("jButton3");
+
+        jTextField1.setText("jTextField1");
+
+        javax.swing.GroupLayout SHAPanelLayout = new javax.swing.GroupLayout(SHAPanel);
+        SHAPanel.setLayout(SHAPanelLayout);
+        SHAPanelLayout.setHorizontalGroup(
+            SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHAPanelLayout.createSequentialGroup()
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SHAPanelLayout.createSequentialGroup()
+                        .addGap(211, 211, 211)
+                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Current)
+                            .addComponent(Former))
+                        .addGap(18, 18, 18)
+                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SHA_Output)
+                            .addGroup(SHAPanelLayout.createSequentialGroup()
+                                .addComponent(SHA_Text, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(SHA_Button))
+                            .addComponent(FormerSHA)))
+                    .addGroup(SHAPanelLayout.createSequentialGroup()
+                        .addGap(184, 184, 184)
+                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SHA_Questions)
+                            .addComponent(SHA_Header1)
+                            .addComponent(SHAQ1)
+                            .addComponent(SHAQ2)
+                            .addGroup(SHAPanelLayout.createSequentialGroup()
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1))
+                            .addGroup(SHAPanelLayout.createSequentialGroup()
+                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton2))
+                            .addComponent(jLabel2)
+                            .addGroup(SHAPanelLayout.createSequentialGroup()
+                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton3)))))
+                .addContainerGap(218, Short.MAX_VALUE))
+        );
+        SHAPanelLayout.setVerticalGroup(
+            SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHAPanelLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(SHA_Header1)
+                .addGap(46, 46, 46)
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SHA_Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SHA_Button))
+                .addGap(43, 43, 43)
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SHA_Output)
+                    .addComponent(Current))
+                .addGap(18, 18, 18)
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FormerSHA)
+                    .addComponent(Former))
+                .addGap(27, 27, 27)
+                .addComponent(SHA_Questions)
+                .addGap(36, 36, 36)
+                .addComponent(SHAQ1)
+                .addGap(18, 18, 18)
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(SHAQ2)
+                .addGap(18, 18, 18)
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3))
+                .addContainerGap(194, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(SHAPanel, "card11");
 
         Home.setText("Home");
         Home.addActionListener(new java.awt.event.ActionListener() {
@@ -653,6 +900,9 @@ public class Home extends javax.swing.JFrame {
 
         Ciphers.add(StreamCiphers);
 
+        Entropy.setText("Entropy");
+        Ciphers.add(Entropy);
+
         jMenuBar1.add(Ciphers);
 
         EncryptionModes.setText("Encryption Modes");
@@ -694,6 +944,11 @@ public class Home extends javax.swing.JFrame {
         Hashing.setText("Hashing");
 
         SHA.setText("SHA");
+        SHA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHAActionPerformed(evt);
+            }
+        });
         Hashing.add(SHA);
 
         MD5.setText("MD5");
@@ -717,6 +972,11 @@ public class Home extends javax.swing.JFrame {
         PublicKey.add(RSA);
 
         ELGamal.setText("EL Gamal");
+        ELGamal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ELGamalActionPerformed(evt);
+            }
+        });
         PublicKey.add(ELGamal);
 
         DiffieHellman.setText("Diffie-Hellman");
@@ -758,6 +1018,22 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+   String sha256_return(String message) throws NoSuchAlgorithmException {
+    
+    MessageDigest digest = MessageDigest.getInstance("SHA-256");
+    byte[] hash = digest.digest(message.getBytes(StandardCharsets.UTF_8));
+       
+    StringBuilder hexString = new StringBuilder();
+    for (int i = 0; i < hash.length; i++) {
+    String hex = Integer.toHexString(0xff & hash[i]);
+    if(hex.length() == 1) hexString.append('0');
+        hexString.append(hex);
+    }
+       
+    return hexString.toString();
+    
+   }
+   
     private void AtbashActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashActionPerformed
     MainPanel.removeAll();
     MainPanel.repaint();
@@ -923,6 +1199,49 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_RSAA1_1ActionPerformed
 
+    private void ELGamalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ELGamalActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ElGamalPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();       
+    }//GEN-LAST:event_ELGamalActionPerformed
+
+    private void EGB1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EGB1_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EGB1_1ActionPerformed
+
+    private void EGA1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EGA1_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EGA1_1ActionPerformed
+
+    private void EGA1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EGA1_2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EGA1_2ActionPerformed
+
+    private void SHA_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA_ButtonActionPerformed
+        try {  
+            FormerSHA.setText(SHA_Output.getText());
+            String sha_output = sha256_return(SHA_Text.getText());
+            SHA_Output.setText(sha_output);
+            
+        } catch (NoSuchAlgorithmException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_SHA_ButtonActionPerformed
+
+    private void SHAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SHAPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();      
+    }//GEN-LAST:event_SHAActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -979,6 +1298,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Correct1;
     private javax.swing.JPanel Correct_ECB;
     private javax.swing.JLabel Correct_Pic;
+    private javax.swing.JLabel Current;
     private javax.swing.JMenuItem DES;
     private javax.swing.JMenuItem Dev;
     private javax.swing.JMenuItem DiffieHellman;
@@ -987,8 +1307,18 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel ECBPanel;
     private javax.swing.JButton ECB_Button;
     private javax.swing.JLabel ECB_Picture;
+    private javax.swing.JTextField EGA1_1;
+    private javax.swing.JTextField EGA1_2;
+    private javax.swing.JButton EGB1_1;
+    private javax.swing.JButton EGB1_2;
+    private javax.swing.JLabel EGQ1;
+    private javax.swing.JLabel EGQ1_1;
+    private javax.swing.JLabel EGQ1_2;
     private javax.swing.JMenuItem ELGamal;
+    private javax.swing.JLabel ElGamalHeader;
+    private javax.swing.JPanel ElGamalPanel;
     private javax.swing.JMenu EncryptionModes;
+    private javax.swing.JMenuItem Entropy;
     private javax.swing.JLabel FSULOGO;
     private javax.swing.JMenuItem Feistel;
     private javax.swing.JPanel FeistelPanel;
@@ -996,6 +1326,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField Feistel_Entry;
     private javax.swing.JLabel Feistel_Intro;
     private javax.swing.JLabel Feistel_Pic;
+    private javax.swing.JLabel Former;
+    private javax.swing.JLabel FormerSHA;
     private javax.swing.JMenu Hashing;
     private javax.swing.JMenu Help;
     private javax.swing.JMenu Home;
@@ -1024,6 +1356,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel RSAQ1_3;
     private javax.swing.JMenuItem RSASignature;
     private javax.swing.JMenuItem SHA;
+    private javax.swing.JPanel SHAPanel;
+    private javax.swing.JLabel SHAQ1;
+    private javax.swing.JLabel SHAQ2;
+    private javax.swing.JButton SHA_Button;
+    private javax.swing.JLabel SHA_Header1;
+    private javax.swing.JLabel SHA_Output;
+    private javax.swing.JLabel SHA_Questions;
+    private javax.swing.JTextField SHA_Text;
     private javax.swing.JMenuItem SSynchronizing;
     private javax.swing.JMenu StreamCiphers;
     private javax.swing.JTextField Submission;
@@ -1042,7 +1382,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Warning2;
     private javax.swing.JLabel Welcome;
     private javax.swing.JPanel WelcomePanel;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
