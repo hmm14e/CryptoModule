@@ -15,9 +15,9 @@ Federally funded research project to create tools for higher level college stude
 		*  DES
 		*  RC5
 	* Stream ciphers:
-		*  One* Time pad
+		*  One-Time pad
 		*  Synchronous
-		*  Self* Synchronizing
+		*  Self-Synchronizing
 * Encryption Modes
 	*  CBC
 	*  CTR
@@ -36,7 +36,7 @@ Federally funded research project to create tools for higher level college stude
 * public/asymmetric crypto
 	*  RSA
 	*  El Gamal
-	*  Diffie* Hellman
+	*  Diffie-Hellman
 * private/symmetric
 	*  AES
 	*  Blowfish
