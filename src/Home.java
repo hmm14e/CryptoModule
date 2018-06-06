@@ -159,6 +159,8 @@ public class Home extends javax.swing.JFrame {
         T5 = new javax.swing.JRadioButton();
         F5 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        CBCMAC_2 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -259,7 +261,7 @@ public class Home extends javax.swing.JFrame {
         Submit.setText("Submit");
         Submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SubmitActionPerformed(evt);
+                SubmitCaesar(evt);
             }
         });
 
@@ -326,7 +328,7 @@ public class Home extends javax.swing.JFrame {
         Submit1.setText("Submit");
         Submit1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Submit1ActionPerformed(evt);
+                SubmitAtbash(evt);
             }
         });
 
@@ -386,7 +388,7 @@ public class Home extends javax.swing.JFrame {
         Submit2.setText("Submit");
         Submit2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Submit2ActionPerformed(evt);
+                SubmitVigenere(evt);
             }
         });
 
@@ -441,7 +443,7 @@ public class Home extends javax.swing.JFrame {
         ECB_Button.setText("Enter");
         ECB_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ECB_ButtonActionPerformed(evt);
+                ECB_EnterButton(evt);
             }
         });
 
@@ -531,7 +533,7 @@ public class Home extends javax.swing.JFrame {
         Feistel_Button.setText("Enter");
         Feistel_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Feistel_ButtonActionPerformed(evt);
+                Feistel_Enter_Button(evt);
             }
         });
 
@@ -563,7 +565,7 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(Feistel_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(Feistel_Pic))))
         );
 
         MainPanel.add(FeistelPanel, "card8");
@@ -1109,7 +1111,7 @@ public class Home extends javax.swing.JFrame {
         CBCMAC.setBackground(new java.awt.Color(255, 255, 255));
 
         CBCMACTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        CBCMACTitle.setText("Breaking the security of CBC-MAC");
+        CBCMACTitle.setText("Insecurity of CBC-MAC");
 
         Question1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         Question1.setText("1) CBC-MAC uses a random IV");
@@ -1121,7 +1123,7 @@ public class Home extends javax.swing.JFrame {
         Question3.setText("3) CBC-MAC can be viewed as using");
 
         Question3_1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        Question3_1.setText("the fixed IV = O^n");
+        Question3_1.setText("<html>the fixed IV = O<sup>n</sup></html>");
 
         Question4.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         Question4.setText("4) If CBC-MAC uses a random IV, it will be secure");
@@ -1188,7 +1190,14 @@ public class Home extends javax.swing.JFrame {
         jButton1.setText("Submit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                Submit(evt);
+            }
+        });
+
+        jButton7.setText("Next Page");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NextPage(evt);
             }
         });
 
@@ -1196,11 +1205,12 @@ public class Home extends javax.swing.JFrame {
         CBCMAC.setLayout(CBCMACLayout);
         CBCMACLayout.setHorizontalGroup(
             CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton7)
+                .addGap(24, 24, 24))
             .addGroup(CBCMACLayout.createSequentialGroup()
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CBCMACLayout.createSequentialGroup()
-                        .addGap(123, 123, 123)
-                        .addComponent(CBCMACTitle))
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1228,19 +1238,22 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(F1)
                             .addComponent(F3)))
                     .addGroup(CBCMACLayout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(411, 411, 411)
-                        .addComponent(jButton1)))
+                        .addComponent(jButton1))
+                    .addGroup(CBCMACLayout.createSequentialGroup()
+                        .addGap(261, 261, 261)
+                        .addComponent(CBCMACTitle))
+                    .addGroup(CBCMACLayout.createSequentialGroup()
+                        .addGap(72, 72, 72)
+                        .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(94, Short.MAX_VALUE))
         );
         CBCMACLayout.setVerticalGroup(
             CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCMACLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(26, 26, 26)
                 .addComponent(CBCMACTitle)
-                .addGap(56, 56, 56)
+                .addGap(59, 59, 59)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1262,8 +1275,8 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(T3)
                     .addComponent(F3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Question3_1)
-                .addGap(18, 18, 18)
+                .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Question4)
                     .addComponent(T4)
@@ -1283,10 +1296,25 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(F5)))
                 .addGap(41, 41, 41)
                 .addComponent(jButton1)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton7)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         MainPanel.add(CBCMAC, "card18");
+
+        javax.swing.GroupLayout CBCMAC_2Layout = new javax.swing.GroupLayout(CBCMAC_2);
+        CBCMAC_2.setLayout(CBCMAC_2Layout);
+        CBCMAC_2Layout.setHorizontalGroup(
+            CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 930, Short.MAX_VALUE)
+        );
+        CBCMAC_2Layout.setVerticalGroup(
+            CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 655, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(CBCMAC_2, "card19");
 
         Home.setText("Home");
         Home.addActionListener(new java.awt.event.ActionListener() {
@@ -1564,7 +1592,7 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Answer1ActionPerformed
 
-    private void ECB_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECB_ButtonActionPerformed
+    private void ECB_EnterButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECB_EnterButton
         String val1 = Answer1.getText();
         String val2 = "NEVER USE ECB";
         
@@ -1582,7 +1610,7 @@ public class Home extends javax.swing.JFrame {
             System.out.println("FALSE");
         
         System.out.println(val1);
-    }//GEN-LAST:event_ECB_ButtonActionPerformed
+    }//GEN-LAST:event_ECB_EnterButton
 
     private void FeistelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelActionPerformed
             MainPanel.removeAll();
@@ -1598,7 +1626,7 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Feistel_EntryActionPerformed
 
-    private void Feistel_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_ButtonActionPerformed
+    private void Feistel_Enter_Button(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_Enter_Button
         String val1 = Feistel_Entry.getText();
         String val2 = "01010100";
         
@@ -1606,7 +1634,7 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
         else
             JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
-    }//GEN-LAST:event_Feistel_ButtonActionPerformed
+    }//GEN-LAST:event_Feistel_Enter_Button
 /*-----------------------------------------------*/
 /*THESE ARE BUILT IN PRIMITIVES FOR THE TEXTFIELDS*/
 /*-----------------------------------------------*/
@@ -1635,7 +1663,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_HomeActionPerformed
 
-    private void SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitActionPerformed
+    private void SubmitCaesar(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitCaesar
         String val1 = Submission.getText();
         String val2 = "experience is the teacher of all things";
         
@@ -1643,9 +1671,9 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
         else
             JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
-    }//GEN-LAST:event_SubmitActionPerformed
+    }//GEN-LAST:event_SubmitCaesar
 
-    private void Submit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit1ActionPerformed
+    private void SubmitAtbash(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitAtbash
         String val1 = Submission1.getText();
         String val2 = "nothing about this is secure";
         
@@ -1653,9 +1681,9 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
         else
             JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
-    }//GEN-LAST:event_Submit1ActionPerformed
+    }//GEN-LAST:event_SubmitAtbash
 
-    private void Submit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit2ActionPerformed
+    private void SubmitVigenere(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitVigenere
         String val1 = Submission2.getText();
         String val2 = "this isnt a caesar cipher";
         
@@ -1663,7 +1691,7 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
         else
             JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
-    }//GEN-LAST:event_Submit2ActionPerformed
+    }//GEN-LAST:event_SubmitVigenere
 
     private void RSAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAActionPerformed
         MainPanel.removeAll();
@@ -1816,12 +1844,22 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_F5ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Submit
        if(F1.isSelected() && T2.isSelected() && T3.isSelected() && F4.isSelected() && F5.isSelected()) 
            JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
        else
            JOptionPane.showMessageDialog(null, "Try again", "INCORRECT", JOptionPane.ERROR_MESSAGE);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_Submit
+
+    private void NextPage(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextPage
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CBCMAC_2);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_NextPage
 
     /**
      * @param args the command line arguments
@@ -1868,6 +1906,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem CBC;
     private javax.swing.JPanel CBCMAC;
     private javax.swing.JLabel CBCMACTitle;
+    private javax.swing.JPanel CBCMAC_2;
     private javax.swing.JMenuItem CBC_MAC;
     private javax.swing.JMenuItem CHAP;
     private javax.swing.JMenuItem CTR;
@@ -2011,6 +2050,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
