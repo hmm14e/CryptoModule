@@ -161,6 +161,8 @@ public class Home extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         CBCMAC_2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -242,7 +244,7 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(WelcomePanel, "card2");
 
-        CaesarPanel.setBackground(new java.awt.Color(204, 204, 255));
+        CaesarPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         CaesarTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         CaesarTitle.setText("Let's practice breaking a Caesar Cipher!");
@@ -309,7 +311,7 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CaesarPanel, "card3");
 
-        AtbashPanel.setBackground(new java.awt.Color(204, 255, 204));
+        AtbashPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         AtbashTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         AtbashTitle.setText("Let's practice breaking an Atbash Cipher!");
@@ -369,7 +371,7 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(AtbashPanel, "card4");
 
-        VigenerePanel.setBackground(new java.awt.Color(255, 204, 204));
+        VigenerePanel.setBackground(new java.awt.Color(255, 255, 255));
 
         VigenereTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         VigenereTitle.setText("Let's practice breaking a Vigenere Cipher!");
@@ -683,7 +685,7 @@ public class Home extends javax.swing.JFrame {
         EGB1_1.setText("Enter");
         EGB1_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EGB1_1ActionPerformed(evt);
+                ElGamal_Q1_Submit(evt);
             }
         });
 
@@ -697,6 +699,11 @@ public class Home extends javax.swing.JFrame {
         });
 
         EGB1_2.setText("Enter");
+        EGB1_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ElGamal_Q2_Submit(evt);
+            }
+        });
 
         javax.swing.GroupLayout ElGamalPanelLayout = new javax.swing.GroupLayout(ElGamalPanel);
         ElGamalPanel.setLayout(ElGamalPanelLayout);
@@ -779,20 +786,41 @@ public class Home extends javax.swing.JFrame {
         Former.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         Former.setText("Former:");
 
-        SHAB1.setText("jButton1");
+        SHAB1.setText("Submit");
+        SHAB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA_Q1_Submit(evt);
+            }
+        });
 
-        SHAA2.setText("jTextField2");
+        SHAA2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHAA2ActionPerformed(evt);
+            }
+        });
 
-        SHAB2.setText("jButton2");
+        SHAB2.setText("Submit");
+        SHAB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA_Q2_Submit(evt);
+            }
+        });
 
         SHAQ3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         SHAQ3.setText("3. Not sure yet?");
 
-        SHAA3.setText("jTextField3");
+        SHAB3.setText("Submit");
+        SHAB3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA_Q3_Submit(evt);
+            }
+        });
 
-        SHAB3.setText("jButton3");
-
-        SHAA1.setText("jTextField1");
+        SHAA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHAA1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout SHAPanelLayout = new javax.swing.GroupLayout(SHAPanel);
         SHAPanel.setLayout(SHAPanelLayout);
@@ -821,17 +849,17 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(SHAQ1)
                             .addComponent(SHAQ2)
                             .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(SHAB1))
                             .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(SHAB2))
                             .addComponent(SHAQ3)
                             .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(SHAB3)))))
                 .addContainerGap(284, Short.MAX_VALUE))
         );
@@ -1303,15 +1331,40 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CBCMAC, "card18");
 
+        CBCMAC_2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel2.setText("Breaking CBC-MAC");
+
+        jButton8.setText("Back");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCMAC_Back_Button(evt);
+            }
+        });
+
         javax.swing.GroupLayout CBCMAC_2Layout = new javax.swing.GroupLayout(CBCMAC_2);
         CBCMAC_2.setLayout(CBCMAC_2Layout);
         CBCMAC_2Layout.setHorizontalGroup(
             CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 930, Short.MAX_VALUE)
+            .addGroup(CBCMAC_2Layout.createSequentialGroup()
+                .addGroup(CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CBCMAC_2Layout.createSequentialGroup()
+                        .addGap(273, 273, 273)
+                        .addComponent(jLabel2))
+                    .addGroup(CBCMAC_2Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(322, Short.MAX_VALUE))
         );
         CBCMAC_2Layout.setVerticalGroup(
             CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 655, Short.MAX_VALUE)
+            .addGroup(CBCMAC_2Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 542, Short.MAX_VALUE)
+                .addComponent(jButton8)
+                .addGap(22, 22, 22))
         );
 
         MainPanel.add(CBCMAC_2, "card19");
@@ -1717,9 +1770,9 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();       
     }//GEN-LAST:event_ELGamalActionPerformed
 
-    private void EGB1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EGB1_1ActionPerformed
+    private void ElGamal_Q1_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ElGamal_Q1_Submit
         // TODO add your handling code here:
-    }//GEN-LAST:event_EGB1_1ActionPerformed
+    }//GEN-LAST:event_ElGamal_Q1_Submit
 
     private void EGA1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EGA1_1ActionPerformed
         // TODO add your handling code here:
@@ -1860,6 +1913,40 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_NextPage
+
+    private void ElGamal_Q2_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ElGamal_Q2_Submit
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ElGamal_Q2_Submit
+
+    private void SHAA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAA1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHAA1ActionPerformed
+
+    private void SHAA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAA2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHAA2ActionPerformed
+
+    private void SHA_Q1_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA_Q1_Submit
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHA_Q1_Submit
+
+    private void SHA_Q2_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA_Q2_Submit
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHA_Q2_Submit
+
+    private void SHA_Q3_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA_Q3_Submit
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHA_Q3_Submit
+
+    private void CBCMAC_Back_Button(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCMAC_Back_Button
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CBCMAC);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CBCMAC_Back_Button
 
     /**
      * @param args the command line arguments
@@ -2051,7 +2138,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
