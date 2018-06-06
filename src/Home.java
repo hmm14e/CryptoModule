@@ -161,8 +161,8 @@ public class Home extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         CBCMAC_2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
+        BreakingCBCBMAC_Title = new javax.swing.JLabel();
+        Back = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -239,7 +239,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(FSULOGO, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(176, Short.MAX_VALUE))
+                .addContainerGap(188, Short.MAX_VALUE))
         );
 
         MainPanel.add(WelcomePanel, "card2");
@@ -504,7 +504,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
                         .addGap(348, 348, 348)
                         .addComponent(Correct1)))
-                .addContainerGap(231, Short.MAX_VALUE))
+                .addContainerGap(182, Short.MAX_VALUE))
         );
         Correct_ECBLayout.setVerticalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -632,7 +632,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(RSAB1_3)))))
-                .addContainerGap(130, Short.MAX_VALUE))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -659,7 +659,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSAB1_3))
-                .addContainerGap(155, Short.MAX_VALUE))
+                .addContainerGap(144, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSAPanel, "card9");
@@ -728,7 +728,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(EGB1_2)))))
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
         ElGamalPanelLayout.setVerticalGroup(
             ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -749,7 +749,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(EGB1_2))
-                .addContainerGap(276, Short.MAX_VALUE))
+                .addContainerGap(265, Short.MAX_VALUE))
         );
 
         MainPanel.add(ElGamalPanel, "card10");
@@ -861,7 +861,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(SHAB3)))))
-                .addContainerGap(284, Short.MAX_VALUE))
+                .addContainerGap(235, Short.MAX_VALUE))
         );
         SHAPanelLayout.setVerticalGroup(
             SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -900,7 +900,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SHAB3))
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
 
         MainPanel.add(SHAPanel, "card11");
@@ -926,7 +926,7 @@ public class Home extends javax.swing.JFrame {
         DHPanelLayout.setHorizontalGroup(
             DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanelLayout.createSequentialGroup()
-                .addContainerGap(262, Short.MAX_VALUE)
+                .addContainerGap(213, Short.MAX_VALUE)
                 .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanelLayout.createSequentialGroup()
                         .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -951,7 +951,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram)
                 .addGap(46, 46, 46)
                 .addComponent(DHButton)
-                .addContainerGap(186, Short.MAX_VALUE))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel, "card12");
@@ -972,7 +972,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel1Layout.setHorizontalGroup(
             DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel1Layout.createSequentialGroup()
-                .addContainerGap(215, Short.MAX_VALUE)
+                .addContainerGap(166, Short.MAX_VALUE)
                 .addGroup(DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
@@ -988,7 +988,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(51, 51, 51)
                 .addComponent(jButton2)
-                .addContainerGap(178, Short.MAX_VALUE))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel1, "card12");
@@ -1009,7 +1009,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel2Layout.setHorizontalGroup(
             DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel2Layout.createSequentialGroup()
-                .addContainerGap(240, Short.MAX_VALUE)
+                .addContainerGap(191, Short.MAX_VALUE)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel4)
@@ -1025,7 +1025,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addGap(51, 51, 51)
                 .addComponent(jButton3)
-                .addContainerGap(178, Short.MAX_VALUE))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel2, "card12");
@@ -1046,7 +1046,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel3Layout.setHorizontalGroup(
             DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel3Layout.createSequentialGroup()
-                .addContainerGap(207, Short.MAX_VALUE)
+                .addContainerGap(158, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel5)
@@ -1062,7 +1062,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel5)
                 .addGap(51, 51, 51)
                 .addComponent(jButton4)
-                .addContainerGap(178, Short.MAX_VALUE))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -1083,7 +1083,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel4Layout.setHorizontalGroup(
             DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel4Layout.createSequentialGroup()
-                .addContainerGap(240, Short.MAX_VALUE)
+                .addContainerGap(191, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel6)
@@ -1099,7 +1099,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addGap(51, 51, 51)
                 .addComponent(jButton5)
-                .addContainerGap(178, Short.MAX_VALUE))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel4, "card12");
@@ -1115,7 +1115,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel5Layout.setHorizontalGroup(
             DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel5Layout.createSequentialGroup()
-                .addContainerGap(186, Short.MAX_VALUE)
+                .addContainerGap(137, Short.MAX_VALUE)
                 .addGroup(DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel7)
@@ -1131,7 +1131,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addGap(51, 51, 51)
                 .addComponent(jButton6)
-                .addContainerGap(178, Short.MAX_VALUE))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel5, "card12");
@@ -1139,25 +1139,26 @@ public class Home extends javax.swing.JFrame {
         CBCMAC.setBackground(new java.awt.Color(255, 255, 255));
 
         CBCMACTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        CBCMACTitle.setText("Insecurity of CBC-MAC");
+        CBCMACTitle.setForeground(new java.awt.Color(204, 0, 51));
+        CBCMACTitle.setText("<html><strong>Insecurity of CBC-MAC</strong></html>\n");
 
         Question1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        Question1.setText("1) CBC-MAC uses a random IV");
+        Question1.setText("<html><strong>1) </strong>CBC-MAC uses a random IV </html>\n");
 
         Question2.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        Question2.setText("2) CBC-MAC does not use an IV");
+        Question2.setText("<html><strong>2) </strong>CBC-MAC does not use an IV</html>");
 
         Question3.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        Question3.setText("3) CBC-MAC can be viewed as using");
+        Question3.setText("<html><strong>3) </strong> CBC-MAC can be viewed as using</html>");
 
         Question3_1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         Question3_1.setText("<html>the fixed IV = O<sup>n</sup></html>");
 
         Question4.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        Question4.setText("4) If CBC-MAC uses a random IV, it will be secure");
+        Question4.setText("<html><strong>4) </strong> If CBC-MAC uses a random IV, it will be secure</html>");
 
         Question5.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        Question5.setText("5) CBC-MAC is secure when authenticating");
+        Question5.setText("<html><strong>5) </strong> CBC-MAC is secure when authenticating</html>");
 
         Question5_1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         Question5_1.setText("messages of different lengths, however, it is not");
@@ -1233,20 +1234,16 @@ public class Home extends javax.swing.JFrame {
         CBCMAC.setLayout(CBCMACLayout);
         CBCMACLayout.setHorizontalGroup(
             CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton7)
-                .addGap(24, 24, 24))
             .addGroup(CBCMACLayout.createSequentialGroup()
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Question2)
-                            .addComponent(Question1)
+                            .addComponent(Question2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Question1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Question3, javax.swing.GroupLayout.PREFERRED_SIZE, 441, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Question4)
-                            .addComponent(Question5)
+                            .addComponent(Question4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Question5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Question5_1)
                             .addComponent(Question5_2))
                         .addGap(58, 58, 58)
@@ -1269,19 +1266,25 @@ public class Home extends javax.swing.JFrame {
                         .addGap(411, 411, 411)
                         .addComponent(jButton1))
                     .addGroup(CBCMACLayout.createSequentialGroup()
-                        .addGap(261, 261, 261)
-                        .addComponent(CBCMACTitle))
-                    .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
+                        .addComponent(jButton7)
+                        .addGap(24, 24, 24))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
+                        .addComponent(CBCMACTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(213, 213, 213))))
         );
         CBCMACLayout.setVerticalGroup(
             CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCMACLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(CBCMACTitle)
-                .addGap(59, 59, 59)
+                .addGap(36, 36, 36)
+                .addComponent(CBCMACTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1291,28 +1294,28 @@ public class Home extends javax.swing.JFrame {
                         .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(T1)
                             .addComponent(F1)))
-                    .addComponent(Question1))
+                    .addComponent(Question1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Question2)
+                    .addComponent(Question2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(T2)
                     .addComponent(F2))
                 .addGap(28, 28, 28)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Question3)
+                    .addComponent(Question3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(T3)
                     .addComponent(F3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(24, 24, 24)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Question4)
+                    .addComponent(Question4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(T4)
                     .addComponent(F4))
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addComponent(Question5)
+                        .addComponent(Question5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Question5_1)
@@ -1333,11 +1336,11 @@ public class Home extends javax.swing.JFrame {
 
         CBCMAC_2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jLabel2.setText("Breaking CBC-MAC");
+        BreakingCBCBMAC_Title.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        BreakingCBCBMAC_Title.setText("Breaking CBC-MAC");
 
-        jButton8.setText("Back");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        Back.setText("Back");
+        Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CBCMAC_Back_Button(evt);
             }
@@ -1351,19 +1354,19 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CBCMAC_2Layout.createSequentialGroup()
                         .addGap(273, 273, 273)
-                        .addComponent(jLabel2))
+                        .addComponent(BreakingCBCBMAC_Title))
                     .addGroup(CBCMAC_2Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(322, Short.MAX_VALUE))
+                        .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(273, Short.MAX_VALUE))
         );
         CBCMAC_2Layout.setVerticalGroup(
             CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCMAC_2Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 542, Short.MAX_VALUE)
-                .addComponent(jButton8)
+                .addComponent(BreakingCBCBMAC_Title)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 531, Short.MAX_VALUE)
+                .addComponent(Back)
                 .addGap(22, 22, 22))
         );
 
@@ -1569,11 +1572,11 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 881, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 644, Short.MAX_VALUE)
         );
 
         pack();
@@ -1707,6 +1710,7 @@ public class Home extends javax.swing.JFrame {
 /*-----------------------------------------------*/
     
     private void HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeActionPerformed
+        System.out.println("Test");
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -1988,8 +1992,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel AtbashPanel;
     private javax.swing.JLabel AtbashTitle;
     private javax.swing.JMenu Authentication;
+    private javax.swing.JButton Back;
     private javax.swing.JMenu BlockCiphers;
     private javax.swing.JMenuItem Blowfish;
+    private javax.swing.JLabel BreakingCBCBMAC_Title;
     private javax.swing.JMenuItem CBC;
     private javax.swing.JPanel CBCMAC;
     private javax.swing.JLabel CBCMACTitle;
@@ -2138,9 +2144,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
