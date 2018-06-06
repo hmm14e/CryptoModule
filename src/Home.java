@@ -73,10 +73,10 @@ public class Home extends javax.swing.JFrame {
         Correct_Pic = new javax.swing.JLabel();
         Correct1 = new javax.swing.JLabel();
         FeistelPanel = new javax.swing.JPanel();
-        Feistel_Pic = new javax.swing.JLabel();
         Feistel_Intro = new javax.swing.JLabel();
         Feistel_Entry = new javax.swing.JTextField();
         Feistel_Button = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
         RSAPanel = new javax.swing.JPanel();
         RSAQ1 = new javax.swing.JLabel();
         RSAHeader = new javax.swing.JLabel();
@@ -520,12 +520,10 @@ public class Home extends javax.swing.JFrame {
 
         FeistelPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        Feistel_Pic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/feistel1.jpg"))); // NOI18N
-
         Feistel_Intro.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         Feistel_Intro.setText("What is the final 8 bit value?");
 
-        Feistel_Entry.setText("Answer Here!");
+        Feistel_Entry.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Feistel_Entry.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Feistel_EntryActionPerformed(evt);
@@ -539,20 +537,25 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/fesitel2-update.png"))); // NOI18N
+
         javax.swing.GroupLayout FeistelPanelLayout = new javax.swing.GroupLayout(FeistelPanel);
         FeistelPanel.setLayout(FeistelPanelLayout);
         FeistelPanelLayout.setHorizontalGroup(
             FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FeistelPanelLayout.createSequentialGroup()
                 .addGap(250, 250, 250)
-                .addComponent(Feistel_Intro))
-            .addGroup(FeistelPanelLayout.createSequentialGroup()
-                .addGap(292, 292, 292)
-                .addComponent(Feistel_Pic)
-                .addGap(112, 112, 112)
-                .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(Feistel_Button))
+                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(FeistelPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                        .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Feistel_Button)
+                        .addGap(17, 17, 17))
+                    .addGroup(FeistelPanelLayout.createSequentialGroup()
+                        .addComponent(Feistel_Intro)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         FeistelPanelLayout.setVerticalGroup(
             FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -561,13 +564,14 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Feistel_Intro)
                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(201, 201, 201)
-                        .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(256, 256, 256)
+                        .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(Feistel_Pic))))
+                        .addGap(45, 45, 45)
+                        .addComponent(jLabel8)))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         MainPanel.add(FeistelPanel, "card8");
@@ -1572,11 +1576,11 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 881, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 644, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -2053,7 +2057,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton Feistel_Button;
     private javax.swing.JTextField Feistel_Entry;
     private javax.swing.JLabel Feistel_Intro;
-    private javax.swing.JLabel Feistel_Pic;
     private javax.swing.JLabel Former;
     private javax.swing.JLabel FormerSHA;
     private javax.swing.JMenu Hashing;
@@ -2150,6 +2153,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
