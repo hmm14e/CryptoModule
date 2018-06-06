@@ -2,6 +2,23 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup3">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup2">
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup3"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup4">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup5">
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="Home">
@@ -67,10 +84,13 @@
                     <Property name="text" type="java.lang.String" value="RC5"/>
                   </Properties>
                 </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="DES">
+                <MenuItem class="javax.swing.JMenuItem" name="TripDES">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="DES"/>
+                    <Property name="text" type="java.lang.String" value="3DES"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TripDESActionPerformed"/>
+                  </Events>
                 </MenuItem>
               </SubComponents>
             </Menu>
@@ -157,6 +177,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Breakin CBC MAC"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CBC_MACActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -749,7 +772,7 @@
                               <Component id="Correct1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="186" max="32767" attributes="0"/>
+                      <EmptySpace pref="231" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -920,7 +943,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="84" max="32767" attributes="0"/>
+                      <EmptySpace pref="130" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -952,7 +975,7 @@
                           <Component id="RSAA1_3" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                           <Component id="RSAB1_3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="133" max="32767" attributes="0"/>
+                      <EmptySpace pref="155" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1067,7 +1090,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="57" max="32767" attributes="0"/>
+                      <EmptySpace pref="113" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1092,7 +1115,7 @@
                           <Component id="EGA1_2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="EGB1_2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="265" max="32767" attributes="0"/>
+                      <EmptySpace pref="276" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1218,7 +1241,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="243" max="32767" attributes="0"/>
+                      <EmptySpace pref="284" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1400,14 +1423,14 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="232" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                              <Component id="DHDiagram" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="DHDiagram" min="-2" max="-2" attributes="0"/>
                                   <Component id="jScrollPane1" min="-2" pref="506" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="DHButton" min="-2" max="-2" attributes="0"/>
@@ -1432,7 +1455,7 @@
                       <Component id="DHDiagram" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                       <Component id="DHButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="151" max="32767" attributes="0"/>
+                      <EmptySpace pref="186" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1486,7 +1509,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="170" max="32767" attributes="0"/>
+                      <EmptySpace pref="215" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
@@ -1507,7 +1530,7 @@
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="160" max="32767" attributes="0"/>
+                      <EmptySpace pref="178" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1546,7 +1569,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="195" max="32767" attributes="0"/>
+                      <EmptySpace pref="240" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
@@ -1567,7 +1590,7 @@
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="160" max="32767" attributes="0"/>
+                      <EmptySpace pref="178" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1606,7 +1629,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="162" max="32767" attributes="0"/>
+                      <EmptySpace pref="207" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
@@ -1627,7 +1650,7 @@
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="160" max="32767" attributes="0"/>
+                      <EmptySpace pref="178" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1666,7 +1689,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="195" max="32767" attributes="0"/>
+                      <EmptySpace pref="240" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
@@ -1687,7 +1710,7 @@
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="160" max="32767" attributes="0"/>
+                      <EmptySpace pref="178" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1726,7 +1749,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="141" max="32767" attributes="0"/>
+                      <EmptySpace pref="186" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
@@ -1747,7 +1770,7 @@
                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="160" max="32767" attributes="0"/>
+                      <EmptySpace pref="178" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1764,6 +1787,313 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="jButton1"/>
               </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="CBCMAC">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="card18"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+                              <Component id="CBCMACTitle" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Question2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Question1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Question3" min="-2" pref="441" max="-2" attributes="0"/>
+                                  <Component id="Question4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Question5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Question5_1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Question5_2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="T1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="True" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="T2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="T3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="T4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="T5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="F5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="F4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="F2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="False" min="-2" max="-2" attributes="0"/>
+                                  <Component id="F1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="F3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                              <Component id="Question3_1" min="-2" pref="237" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="411" max="-2" attributes="0"/>
+                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="94" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="CBCMACTitle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="True" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="False" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="T1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="F1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="Question1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Question2" min="-2" max="-2" attributes="0"/>
+                          <Component id="T2" min="-2" max="-2" attributes="0"/>
+                          <Component id="F2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Question3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="T3" min="-2" max="-2" attributes="0"/>
+                          <Component id="F3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Question3_1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Question4" min="-2" max="-2" attributes="0"/>
+                          <Component id="T4" min="-2" max="-2" attributes="0"/>
+                          <Component id="F4" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Component id="Question5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Question5_1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="T5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Question5_2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                              <Component id="F5" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="76" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="CBCMACTitle">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="36" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Breaking the security of CBC-MAC"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Question1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="1) CBC-MAC uses a random IV"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Question2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="2) CBC-MAC does not use an IV"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Question3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="3) CBC-MAC can be viewed as using"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Question3_1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="the fixed IV = O^n"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Question4">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="4) If CBC-MAC uses a random IV, it will be secure"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Question5">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="5) CBC-MAC is secure when authenticating"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Question5_1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="messages of different lengths, however, it is not"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Question5_2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="secure in cases when messages are fixed sizes"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="True">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="True"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="False">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="False"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="T1">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup1"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="T1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="F1">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup1"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="T2">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup2"/>
+                </Property>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="T2ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="F2">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup2"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="T3">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup3"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="F3">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup3"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="T4">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup4"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="F4">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup4"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="T5">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup5"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="T5ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="F5">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup5"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="F5ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
