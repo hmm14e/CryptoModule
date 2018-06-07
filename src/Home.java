@@ -180,6 +180,18 @@ public class Home extends javax.swing.JFrame {
         d_input = new javax.swing.JTextField();
         Check_n_phi_d = new javax.swing.JButton();
         RSA_Signature_2 = new javax.swing.JPanel();
+        SigningAMessage1 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        Message1 = new javax.swing.JLabel();
+        p1 = new javax.swing.JLabel();
+        q1 = new javax.swing.JLabel();
+        e1 = new javax.swing.JLabel();
+        n1 = new javax.swing.JLabel();
+        phi_n1 = new javax.swing.JLabel();
+        d1 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        d2 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -521,7 +533,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
                         .addGap(348, 348, 348)
                         .addComponent(Correct1)))
-                .addContainerGap(438, Short.MAX_VALUE))
+                .addContainerGap(182, Short.MAX_VALUE))
         );
         Correct_ECBLayout.setVerticalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -572,7 +584,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(44, 44, 44))
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
                         .addComponent(Feistel_Intro)
-                        .addContainerGap(546, Short.MAX_VALUE))))
+                        .addContainerGap(290, Short.MAX_VALUE))))
         );
         FeistelPanelLayout.setVerticalGroup(
             FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -653,7 +665,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(RSAB1_3)))))
-                .addContainerGap(337, Short.MAX_VALUE))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -749,7 +761,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(EGB1_2)))))
-                .addContainerGap(320, Short.MAX_VALUE))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
         ElGamalPanelLayout.setVerticalGroup(
             ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -882,7 +894,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(SHAB3)))))
-                .addContainerGap(491, Short.MAX_VALUE))
+                .addContainerGap(235, Short.MAX_VALUE))
         );
         SHAPanelLayout.setVerticalGroup(
             SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -954,7 +966,7 @@ public class Home extends javax.swing.JFrame {
         DHPanelLayout.setHorizontalGroup(
             DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanelLayout.createSequentialGroup()
-                .addContainerGap(429, Short.MAX_VALUE)
+                .addContainerGap(173, Short.MAX_VALUE)
                 .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanelLayout.createSequentialGroup()
@@ -1001,7 +1013,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(DHPanel1Layout.createSequentialGroup()
                 .addGap(160, 160, 160)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(436, Short.MAX_VALUE))
+                .addContainerGap(180, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1035,7 +1047,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel2Layout.setHorizontalGroup(
             DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel2Layout.createSequentialGroup()
-                .addContainerGap(447, Short.MAX_VALUE)
+                .addContainerGap(191, Short.MAX_VALUE)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel4)
@@ -1072,7 +1084,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel3Layout.setHorizontalGroup(
             DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel3Layout.createSequentialGroup()
-                .addContainerGap(414, Short.MAX_VALUE)
+                .addContainerGap(158, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel5)
@@ -1109,7 +1121,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel4Layout.setHorizontalGroup(
             DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel4Layout.createSequentialGroup()
-                .addContainerGap(447, Short.MAX_VALUE)
+                .addContainerGap(191, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel6)
@@ -1141,7 +1153,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel5Layout.setHorizontalGroup(
             DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel5Layout.createSequentialGroup()
-                .addContainerGap(393, Short.MAX_VALUE)
+                .addContainerGap(137, Short.MAX_VALUE)
                 .addGroup(DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel7)
@@ -1294,7 +1306,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(299, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1384,7 +1396,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCMAC_2Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(529, Short.MAX_VALUE))
+                .addContainerGap(273, Short.MAX_VALUE))
         );
         CBCMAC_2Layout.setVerticalGroup(
             CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1443,21 +1455,24 @@ public class Home extends javax.swing.JFrame {
         d.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
         d.setText("d = ");
 
-        n_input.setColumns(20);
+        n_input.setColumns(30);
+        n_input.setFont(new java.awt.Font("Courier", 0, 13)); // NOI18N
         n_input.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 n_inputActionPerformed(evt);
             }
         });
 
-        phi_n_input.setColumns(20);
+        phi_n_input.setColumns(30);
+        phi_n_input.setFont(new java.awt.Font("Courier", 0, 13)); // NOI18N
         phi_n_input.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 phi_n_inputActionPerformed(evt);
             }
         });
 
-        d_input.setColumns(20);
+        d_input.setColumns(30);
+        d_input.setFont(new java.awt.Font("Courier", 0, 13)); // NOI18N
         d_input.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 d_inputActionPerformed(evt);
@@ -1491,70 +1506,179 @@ public class Home extends javax.swing.JFrame {
                                     .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Message, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(Instructions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(RSA_Signature_1Layout.createSequentialGroup()
-                                .addGap(46, 46, 46)
-                                .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGap(114, 114, 114)
+                                .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(phi_n)
                                     .addComponent(n)
                                     .addComponent(d))
-                                .addGap(18, 18, 18)
                                 .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(d_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(RSA_Signature_1Layout.createSequentialGroup()
+                                        .addGap(34, 34, 34)
+                                        .addComponent(n_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addGroup(RSA_Signature_1Layout.createSequentialGroup()
+                                        .addGap(33, 33, 33)
                                         .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(phi_n_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(n_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(95, 95, 95)
-                                        .addComponent(Check_n_phi_d)))
-                                .addGap(466, 466, 466))
-                            .addComponent(Instructions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addGroup(RSA_Signature_1Layout.createSequentialGroup()
+                                                .addComponent(d_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, Short.MAX_VALUE))
+                                            .addGroup(RSA_Signature_1Layout.createSequentialGroup()
+                                                .addComponent(phi_n_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(115, 115, 115)
+                                                .addComponent(Check_n_phi_d)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)))))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RSA_Signature_1Layout.setVerticalGroup(
             RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSA_Signature_1Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(RSA_Signature_1Layout.createSequentialGroup()
-                        .addComponent(SigningAMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Story, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Message, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(e, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
-                        .addComponent(Instructions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
-                        .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(n)
-                            .addComponent(n_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(28, 28, 28)
-                        .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(phi_n)
-                            .addComponent(phi_n_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Check_n_phi_d))
-                        .addGap(25, 25, 25)
-                        .addComponent(d))
-                    .addComponent(d_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(SigningAMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Story, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Message, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(e, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(Instructions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(n)
+                    .addComponent(n_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(phi_n)
+                    .addComponent(phi_n_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Check_n_phi_d))
+                .addGap(21, 21, 21)
+                .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(d_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(d))
                 .addContainerGap(102, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSA_Signature_1, "card20");
 
+        RSA_Signature_2.setBackground(new java.awt.Color(255, 255, 255));
+
+        SigningAMessage1.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        SigningAMessage1.setForeground(new java.awt.Color(255, 0, 51));
+        SigningAMessage1.setText("<html><strong>Signing a Message with RSA</strong></html>");
+
+        jLabel8.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 153, 0));
+        jLabel8.setText("<html><strong>Correct!</strong></html> ");
+
+        Message1.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        Message1.setText("Message = \"Want to go on a date?\"");
+
+        p1.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        p1.setText("p = 182369");
+
+        q1.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        q1.setText("q = 10AAC29");
+
+        e1.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        e1.setText("e = 10001");
+
+        n1.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        n1.setText("n = 192506C237D1");
+
+        phi_n1.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        phi_n1.setText("Φ(n) = 1925059F6840");
+
+        d1.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        d1.setText("S =");
+
+        jLabel9.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel9.setText("Now convert the message to hexadecimal and calculate the signature");
+
+        d2.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        d2.setText("d = E906B195201");
+
+        jTextField1.setColumns(30);
+        jTextField1.setFont(new java.awt.Font("Courier", 0, 13)); // NOI18N
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout RSA_Signature_2Layout = new javax.swing.GroupLayout(RSA_Signature_2);
         RSA_Signature_2.setLayout(RSA_Signature_2Layout);
         RSA_Signature_2Layout.setHorizontalGroup(
             RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1137, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SigningAMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(185, 185, 185))
+            .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                        .addGap(75, 75, 75)
+                        .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(n1)
+                            .addComponent(e1, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(p1, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(q1, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Message1, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(phi_n1)
+                            .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                                .addGap(274, 274, 274)
+                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                        .addGap(136, 136, 136)
+                        .addComponent(jLabel9))
+                    .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                        .addGap(237, 237, 237)
+                        .addComponent(d1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(141, Short.MAX_VALUE))
+            .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                    .addGap(85, 85, 85)
+                    .addComponent(d2)
+                    .addContainerGap(586, Short.MAX_VALUE)))
         );
         RSA_Signature_2Layout.setVerticalGroup(
             RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 690, Short.MAX_VALUE)
+            .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(SigningAMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53)
+                .addComponent(Message1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(p1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(q1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(e1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(n1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(phi_n1)
+                .addGap(55, 55, 55)
+                .addComponent(jLabel9)
+                .addGap(49, 49, 49)
+                .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(d1)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(99, Short.MAX_VALUE))
+            .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
+                    .addContainerGap(451, Short.MAX_VALUE)
+                    .addComponent(d2)
+                    .addGap(214, 214, 214)))
         );
 
         MainPanel.add(RSA_Signature_2, "card21");
@@ -1769,7 +1893,7 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 881, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2170,20 +2294,8 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_RSASignatureActionPerformed
 
-    private void phi_n_inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phi_n_inputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_phi_n_inputActionPerformed
-
-    private void n_inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n_inputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_n_inputActionPerformed
-
-    private void d_inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d_inputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_d_inputActionPerformed
-
     private void Check_n_phi_dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Check_n_phi_dActionPerformed
-        
+
         //n = 192506C237D1, phin = 1925059F6840, d = E906B195201
         if(n_input.getText().equals("1") && phi_n_input.getText().equals("1") && d_input.getText().equals("1")){
             MainPanel.removeAll();
@@ -2197,8 +2309,23 @@ public class Home extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(null, "Try again to move onto the next step", "INCORRECT", JOptionPane.ERROR_MESSAGE);
         }
-
     }//GEN-LAST:event_Check_n_phi_dActionPerformed
+
+    private void d_inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d_inputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_d_inputActionPerformed
+
+    private void phi_n_inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phi_n_inputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_phi_n_inputActionPerformed
+
+    private void n_inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n_inputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_n_inputActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2313,6 +2440,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem MD5;
     private javax.swing.JPanel MainPanel;
     private javax.swing.JLabel Message;
+    private javax.swing.JLabel Message1;
     private javax.swing.JMenuItem OneTimePad;
     private javax.swing.JMenuItem PAP;
     private javax.swing.JMenu PrivateKey;
@@ -2361,6 +2489,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField SHA_Text;
     private javax.swing.JMenuItem SSynchronizing;
     private javax.swing.JLabel SigningAMessage;
+    private javax.swing.JLabel SigningAMessage1;
     private javax.swing.JScrollPane Story;
     private javax.swing.JTextArea Story_TextArea;
     private javax.swing.JMenu StreamCiphers;
@@ -2393,8 +2522,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.ButtonGroup buttonGroup5;
     private javax.swing.JLabel d;
+    private javax.swing.JLabel d1;
+    private javax.swing.JLabel d2;
     private javax.swing.JTextField d_input;
     private javax.swing.JLabel e;
+    private javax.swing.JLabel e1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -2409,15 +2541,22 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel n;
+    private javax.swing.JLabel n1;
     private javax.swing.JTextField n_input;
     private javax.swing.JLabel p;
+    private javax.swing.JLabel p1;
     private javax.swing.JLabel phi_n;
+    private javax.swing.JLabel phi_n1;
     private javax.swing.JTextField phi_n_input;
     private javax.swing.JLabel q;
+    private javax.swing.JLabel q1;
     // End of variables declaration//GEN-END:variables
 }
