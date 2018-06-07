@@ -2198,7 +2198,7 @@ public class Home extends javax.swing.JFrame {
 /*-----------------------------------------------*/
     
     private void HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeActionPerformed
-        System.out.println("Test");
+
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
