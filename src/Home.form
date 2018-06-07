@@ -19,6 +19,8 @@
     </Component>
     <Component class="javax.swing.ButtonGroup" name="buttonGroup5">
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup6">
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="Home">
@@ -308,7 +310,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="MainPanel" alignment="0" pref="881" max="32767" attributes="0"/>
+          <Component id="MainPanel" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -364,7 +366,7 @@
                       <Component id="Welcome" min="-2" pref="57" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="FSULOGO" min="-2" pref="285" max="-2" attributes="0"/>
-                      <EmptySpace pref="211" max="32767" attributes="0"/>
+                      <EmptySpace pref="246" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -776,7 +778,7 @@
                               <Component id="Correct1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="182" max="32767" attributes="0"/>
+                      <EmptySpace pref="233" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -842,7 +844,7 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="Feistel_Intro" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="290" max="32767" attributes="0"/>
+                              <EmptySpace pref="341" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -957,7 +959,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="81" max="32767" attributes="0"/>
+                      <EmptySpace pref="132" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -989,7 +991,7 @@
                           <Component id="RSAA1_3" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                           <Component id="RSAB1_3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="168" max="32767" attributes="0"/>
+                      <EmptySpace pref="202" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1104,7 +1106,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="64" max="32767" attributes="0"/>
+                      <EmptySpace pref="115" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1129,7 +1131,7 @@
                           <Component id="EGA1_2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="EGB1_2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="300" max="32767" attributes="0"/>
+                      <EmptySpace pref="323" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1258,7 +1260,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="235" max="32767" attributes="0"/>
+                      <EmptySpace pref="286" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1305,7 +1307,7 @@
                           <Component id="SHAA3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="SHAB3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="163" max="32767" attributes="0"/>
+                      <EmptySpace pref="175" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1446,7 +1448,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="173" max="32767" attributes="0"/>
+                      <EmptySpace pref="224" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
@@ -1475,7 +1477,7 @@
                       <Component id="DHDiagram1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jTextArea3" min="-2" pref="41" max="-2" attributes="0"/>
-                      <EmptySpace pref="114" max="32767" attributes="0"/>
+                      <EmptySpace pref="164" max="32767" attributes="0"/>
                       <Component id="DHButton1" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                   </Group>
@@ -1536,7 +1538,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" pref="541" max="-2" attributes="0"/>
-                      <EmptySpace pref="180" max="32767" attributes="0"/>
+                      <EmptySpace pref="231" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
@@ -1550,7 +1552,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="169" max="32767" attributes="0"/>
+                      <EmptySpace pref="205" max="32767" attributes="0"/>
                       <Component id="jButton2" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                   </Group>
@@ -1591,7 +1593,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="191" max="32767" attributes="0"/>
+                      <EmptySpace pref="242" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
@@ -1612,7 +1614,7 @@
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="195" max="32767" attributes="0"/>
+                      <EmptySpace pref="225" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1651,7 +1653,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="158" max="32767" attributes="0"/>
+                      <EmptySpace pref="209" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
@@ -1672,7 +1674,7 @@
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="195" max="32767" attributes="0"/>
+                      <EmptySpace pref="225" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1711,7 +1713,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="191" max="32767" attributes="0"/>
+                      <EmptySpace pref="242" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
@@ -1732,7 +1734,7 @@
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="195" max="32767" attributes="0"/>
+                      <EmptySpace pref="225" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1771,7 +1773,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="137" max="32767" attributes="0"/>
+                      <EmptySpace pref="188" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
@@ -1792,7 +1794,7 @@
                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jButton6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="195" max="32767" attributes="0"/>
+                      <EmptySpace pref="225" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1868,7 +1870,7 @@
                               <Component id="Question3_1" min="-2" pref="314" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="43" max="32767" attributes="0"/>
+                      <EmptySpace pref="94" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -2167,7 +2169,7 @@
                               <Component id="Back" min="-2" pref="88" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="273" max="32767" attributes="0"/>
+                      <EmptySpace pref="324" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2176,7 +2178,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Component id="BreakingCBCBMAC_Title" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="555" max="32767" attributes="0"/>
+                      <EmptySpace pref="589" max="32767" attributes="0"/>
                       <Component id="Back" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   </Group>
@@ -2271,7 +2273,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="-27" max="32767" attributes="0"/>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2280,9 +2282,9 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Component id="SigningAMessage" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="Story" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="Message" min="-2" pref="27" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="p" min="-2" pref="27" max="-2" attributes="0"/>
@@ -2308,7 +2310,7 @@
                           <Component id="d_input" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="d" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="102" max="32767" attributes="0"/>
+                      <EmptySpace pref="114" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2345,7 +2347,7 @@
                     </Property>
                     <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Bob wants to ask Alice out on a date. He&apos;s afraid Eve might intercept his message and tamper with it, so he decided to sign the message. Help him sign his message! (The given information is represented in hexadecimal)"/>
+                    <Property name="text" type="java.lang.String" value="Bob wants to ask Alice out on a date. He&apos;s afraid Eve might intercept his message and tamper with it, so he decides to sign the message. Help him sign his message! (The given information is represented in hexadecimal)"/>
                     <Property name="wrapStyleWord" type="boolean" value="true"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2483,11 +2485,6 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="SigningAMessage1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -2501,29 +2498,45 @@
                                   <Component id="phi_n1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="274" max="-2" attributes="0"/>
-                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Correct" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="d2" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
-                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="237" max="-2" attributes="0"/>
                               <Component id="d1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+                              <Component id="Signature" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="141" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
-                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
-                          <Component id="d2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="586" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="119" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="SigningAMessage1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="Directions" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="364" max="-2" attributes="0"/>
+                              <Component id="Check_signature" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Back_RSA1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2533,7 +2546,7 @@
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="SigningAMessage1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                      <Component id="Correct" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                       <Component id="Message1" min="-2" pref="27" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -2546,21 +2559,20 @@
                       <Component id="n1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="phi_n1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="d2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Component id="Directions" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="d1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField1" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="Signature" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="99" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="451" max="32767" attributes="0"/>
-                          <Component id="d2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="214" max="-2" attributes="0"/>
-                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="Check_signature" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="29" max="32767" attributes="0"/>
+                      <Component id="Back_RSA1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2577,7 +2589,7 @@
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;strong&gt;Signing a Message with RSA&lt;/strong&gt;&lt;/html&gt;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel8">
+            <Component class="javax.swing.JLabel" name="Correct">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Lucida Grande" size="36" style="0"/>
@@ -2644,14 +2656,6 @@
                 <Property name="text" type="java.lang.String" value="S ="/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel9">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Lucida Grande" size="18" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Now convert the message to hexadecimal and calculate the signature"/>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="d2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -2660,7 +2664,15 @@
                 <Property name="text" type="java.lang.String" value="d = E906B195201"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JLabel" name="Directions">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="18" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Now convert the message to hexadecimal and calculate the signature (in hex)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="Signature">
               <Properties>
                 <Property name="columns" type="int" value="30"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -2668,7 +2680,239 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SignatureActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="Check_signature">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Check_signatureActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="Back_RSA1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Back"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Back_RSA1ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="RSA_Validate">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="card22"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="194" max="-2" attributes="0"/>
+                              <Component id="ValidateMessage" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="324" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="ChoiceB" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ChoiceA" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ChoiceC" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ChoiceD" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="Back_RSA2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="273" max="-2" attributes="0"/>
+                              <Component id="Verify_Submit" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="208" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                          <Component id="Story1" min="-2" pref="755" max="-2" attributes="0"/>
+                          <EmptySpace pref="114" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="ValidateMessage" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="ChoiceA" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="ChoiceB" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="ChoiceC" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="ChoiceD" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="59" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="Verify_Submit" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="Back_RSA2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                          <Component id="Story1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="483" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="ValidateMessage">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="36" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="33" green="0" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;strong&gt;Validating the Message&lt;/strong&gt;&lt;/html&gt;"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="Story1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="Story_TextArea1">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Lucida Grande" size="18" style="0"/>
+                    </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="Alice receives Bob&apos;s message and must check to see if it actually came from Bob. "/>
+                    <Property name="wrapStyleWord" type="boolean" value="true"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="opaque" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="Story_TextArea.setOpaque(false);"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel8">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Courier" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;strong&gt;Choose the equation to validate the message&lt;/html&gt;&lt;/strong&gt;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="ChoiceA">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup6"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;M&apos; = e&lt;sup&gt;S&lt;/sup&gt; mod n&lt;/html&gt;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ChoiceAActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="ChoiceB">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup6"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;M&apos; = n&lt;sup&gt;S&lt;/sup&gt; mod e&lt;/html&gt;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ChoiceBActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="ChoiceC">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup6"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;M&apos; = S&lt;sup&gt;e&lt;/sup&gt; mod n&lt;/html&gt;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="ChoiceD">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup6"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Lucida Grande" size="24" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;M&apos; = n&lt;sup&gt;e&lt;/sup&gt; mod S&lt;/html&gt;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ChoiceDActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="Verify_Submit">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verify_SubmitActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="Back_RSA2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Back"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Back_RSA2ActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
