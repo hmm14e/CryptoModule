@@ -42,6 +42,7 @@ public class Home extends javax.swing.JFrame {
         buttonGroup4 = new javax.swing.ButtonGroup();
         buttonGroup5 = new javax.swing.ButtonGroup();
         buttonGroup6 = new javax.swing.ButtonGroup();
+        DES_Buttons = new javax.swing.ButtonGroup();
         MainPanel = new javax.swing.JPanel();
         WelcomePanel = new javax.swing.JPanel();
         Welcome = new javax.swing.JLabel();
@@ -120,23 +121,44 @@ public class Home extends javax.swing.JFrame {
         DHPanel = new javax.swing.JPanel();
         DHDiagram1 = new javax.swing.JLabel();
         DHButton1 = new javax.swing.JButton();
+        DHIntro = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        DHText = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
-        jTextArea3 = new javax.swing.JTextArea();
         DHPanel1 = new javax.swing.JPanel();
         DH1Image = new javax.swing.JLabel();
         DH1_Next = new javax.swing.JButton();
+        DH1Text = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         DHPanel2 = new javax.swing.JPanel();
         DHImage2 = new javax.swing.JLabel();
         DH2_next = new javax.swing.JButton();
+        DH2Text = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
         DHPanel3 = new javax.swing.JPanel();
         DH3Image = new javax.swing.JLabel();
         DH3_Next = new javax.swing.JButton();
+        DH3Text = new javax.swing.JScrollPane();
+        jTextArea5 = new javax.swing.JTextArea();
         DHPanel4 = new javax.swing.JPanel();
         DH4Image = new javax.swing.JLabel();
         DH4_Next = new javax.swing.JButton();
+        DH4Text = new javax.swing.JScrollPane();
+        jTextArea6 = new javax.swing.JTextArea();
         DHPanel5 = new javax.swing.JPanel();
         DH5Image = new javax.swing.JLabel();
         DH5_Next = new javax.swing.JButton();
+        DH5Text = new javax.swing.JScrollPane();
+        jTextArea7 = new javax.swing.JTextArea();
+        DHPanel6 = new javax.swing.JPanel();
+        DH5Image1 = new javax.swing.JLabel();
+        DH6Text = new javax.swing.JScrollPane();
+        jTextArea8 = new javax.swing.JTextArea();
+        DHQuestions = new javax.swing.JLabel();
+        DHQ1 = new javax.swing.JScrollPane();
+        jTextArea9 = new javax.swing.JTextArea();
+        DHA1 = new javax.swing.JTextField();
+        DHB1 = new javax.swing.JButton();
         CBCMAC = new javax.swing.JPanel();
         CBCMACTitle = new javax.swing.JLabel();
         Question1 = new javax.swing.JLabel();
@@ -206,6 +228,19 @@ public class Home extends javax.swing.JFrame {
         ChoiceD = new javax.swing.JRadioButton();
         Verify_Submit = new javax.swing.JButton();
         Back_RSA2 = new javax.swing.JButton();
+        KerberosPanel = new javax.swing.JPanel();
+        KerberosText = new javax.swing.JScrollPane();
+        jTextArea10 = new javax.swing.JTextArea();
+        Kerberos_K = new javax.swing.JLabel();
+        DESPanel = new javax.swing.JPanel();
+        DESPic = new javax.swing.JLabel();
+        DESLabel = new javax.swing.JLabel();
+        DESQ = new javax.swing.JLabel();
+        DESA = new javax.swing.JRadioButton();
+        DESB = new javax.swing.JRadioButton();
+        DESC = new javax.swing.JRadioButton();
+        DESD = new javax.swing.JRadioButton();
+        DES_B = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -250,6 +285,7 @@ public class Home extends javax.swing.JFrame {
         buttonGroup3.add(jRadioButton3);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(885, 753));
 
         MainPanel.setBackground(new java.awt.Color(255, 255, 255));
         MainPanel.setLayout(new java.awt.CardLayout());
@@ -282,7 +318,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(FSULOGO, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(246, Short.MAX_VALUE))
+                .addContainerGap(277, Short.MAX_VALUE))
         );
 
         MainPanel.add(WelcomePanel, "card2");
@@ -547,7 +583,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
                         .addGap(348, 348, 348)
                         .addComponent(Correct1)))
-                .addContainerGap(233, Short.MAX_VALUE))
+                .addContainerGap(186, Short.MAX_VALUE))
         );
         Correct_ECBLayout.setVerticalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -598,7 +634,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(44, 44, 44))
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
                         .addComponent(Feistel_Intro)
-                        .addContainerGap(341, Short.MAX_VALUE))))
+                        .addContainerGap(294, Short.MAX_VALUE))))
         );
         FeistelPanelLayout.setVerticalGroup(
             FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -679,7 +715,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(RSAB1_3)))))
-                .addContainerGap(132, Short.MAX_VALUE))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -706,7 +742,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSAB1_3))
-                .addContainerGap(202, Short.MAX_VALUE))
+                .addContainerGap(234, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSAPanel, "card9");
@@ -775,7 +811,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(EGB1_2)))))
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
         ElGamalPanelLayout.setVerticalGroup(
             ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -796,7 +832,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(EGB1_2))
-                .addContainerGap(323, Short.MAX_VALUE))
+                .addContainerGap(366, Short.MAX_VALUE))
         );
 
         MainPanel.add(ElGamalPanel, "card10");
@@ -908,7 +944,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(SHAB3)))))
-                .addContainerGap(286, Short.MAX_VALUE))
+                .addContainerGap(243, Short.MAX_VALUE))
         );
         SHAPanelLayout.setVerticalGroup(
             SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -947,7 +983,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SHAB3))
-                .addContainerGap(175, Short.MAX_VALUE))
+                .addContainerGap(229, Short.MAX_VALUE))
         );
 
         MainPanel.add(SHAPanel, "card11");
@@ -965,46 +1001,51 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        DHIntro.setBorder(null);
+
+        jTextArea4.setEditable(false);
+        jTextArea4.setColumns(20);
+        jTextArea4.setRows(5);
+        jTextArea4.setText("The following is an elementary example of Diffie-Hellman\nkey exchange between Alice and Bob. This example has a passive\nman-in-the middle attack performed by Eve. Click next to go\nto the next diagram.");
+        DHIntro.setViewportView(jTextArea4);
+
+        DHText.setBorder(null);
+        DHText.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
         jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
-        jTextArea2.setText("The following is an elementary example of Diffie-Hellman\nkey exchange between Alice and Bob. This example has a passive\nman-in-the middle attack performed by Eve. Click next to go\nto the next diagram.\n");
-
-        jTextArea3.setEditable(false);
-        jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
-        jTextArea3.setText("First, Alice and Bob publicly agree on a generator and modulus. \nFor this example we'll have g = 3 and n = 11.");
+        jTextArea2.setText("First, Alice and Bob publicly agree on a generator and modulus. \nFor this example we'll have g = 3 and n = 11.");
+        DHText.setViewportView(jTextArea2);
 
         javax.swing.GroupLayout DHPanelLayout = new javax.swing.GroupLayout(DHPanel);
         DHPanel.setLayout(DHPanelLayout);
         DHPanelLayout.setHorizontalGroup(
             DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DHPanelLayout.createSequentialGroup()
+                .addGap(165, 165, 165)
+                .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(DHDiagram1, javax.swing.GroupLayout.DEFAULT_SIZE, 541, Short.MAX_VALUE)
+                    .addComponent(DHIntro)
+                    .addComponent(DHText))
+                .addGap(0, 179, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanelLayout.createSequentialGroup()
-                .addContainerGap(224, Short.MAX_VALUE)
-                .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanelLayout.createSequentialGroup()
-                            .addComponent(jTextArea2, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(167, 167, 167))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanelLayout.createSequentialGroup()
-                            .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(83, 83, 83)))
-                    .addGroup(DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextArea3, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(DHDiagram1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 541, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(82, 82, 82))
         );
         DHPanelLayout.setVerticalGroup(
             DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanelLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(jTextArea2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(DHIntro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(DHDiagram1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextArea3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(58, 58, 58))
+                .addGap(81, 81, 81))
         );
 
         MainPanel.add(DHPanel, "card12");
@@ -1020,25 +1061,38 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        DH1Text.setBorder(null);
+        DH1Text.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        DH1Text.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Next, Alice generates a random number 7, and does the operation\n3 ^ 7 mod(11). This gives Alice the value 9.");
+        DH1Text.setViewportView(jTextArea1);
+
         javax.swing.GroupLayout DHPanel1Layout = new javax.swing.GroupLayout(DHPanel1);
         DHPanel1.setLayout(DHPanel1Layout);
         DHPanel1Layout.setHorizontalGroup(
             DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DHPanel1Layout.createSequentialGroup()
-                .addGap(160, 160, 160)
-                .addComponent(DH1Image, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(231, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(709, Short.MAX_VALUE)
                 .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(79, 79, 79))
+            .addGroup(DHPanel1Layout.createSequentialGroup()
+                .addGap(156, 156, 156)
+                .addGroup(DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(DH1Image, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DH1Text))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DHPanel1Layout.setVerticalGroup(
             DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel1Layout.createSequentialGroup()
                 .addGap(148, 148, 148)
                 .addComponent(DH1Image)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 205, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DH1Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58))
         );
@@ -1056,28 +1110,39 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        DH2Text.setBorder(null);
+
+        jTextArea3.setEditable(false);
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jTextArea3.setText("Then, Alice send her generated number 9 to Bob, in which the\nmalicious actor Eve, also receives. ");
+        DH2Text.setViewportView(jTextArea3);
+
         javax.swing.GroupLayout DHPanel2Layout = new javax.swing.GroupLayout(DHPanel2);
         DHPanel2.setLayout(DHPanel2Layout);
         DHPanel2Layout.setHorizontalGroup(
             DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel2Layout.createSequentialGroup()
-                .addContainerGap(242, Short.MAX_VALUE)
-                .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
-                        .addComponent(DHImage2)
-                        .addGap(162, 162, 162))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
-                        .addComponent(DH2_next)
-                        .addGap(409, 409, 409))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(122, 122, 122))
+            .addGroup(DHPanel2Layout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(DHImage2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(DH2Text))
+                .addContainerGap(197, Short.MAX_VALUE))
         );
         DHPanel2Layout.setVerticalGroup(
             DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel2Layout.createSequentialGroup()
-                .addGap(142, 142, 142)
+                .addGap(162, 162, 162)
                 .addComponent(DHImage2)
-                .addGap(51, 51, 51)
-                .addComponent(DH2_next)
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(109, 109, 109))
         );
 
         MainPanel.add(DHPanel2, "card12");
@@ -1093,28 +1158,40 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        DH3Text.setBorder(null);
+
+        jTextArea5.setEditable(false);
+        jTextArea5.setColumns(20);
+        jTextArea5.setRows(5);
+        jTextArea5.setText("Next, Bob does the same steps Alice just took. First, he chooses a\nrandom number 8. Then does the operation 3 ^ 8 mode(11) which yields\n5.");
+        DH3Text.setViewportView(jTextArea5);
+
         javax.swing.GroupLayout DHPanel3Layout = new javax.swing.GroupLayout(DHPanel3);
         DHPanel3.setLayout(DHPanel3Layout);
         DHPanel3Layout.setHorizontalGroup(
             DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DHPanel3Layout.createSequentialGroup()
-                .addContainerGap(209, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
+                .addContainerGap(162, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
-                        .addComponent(DH3Image)
-                        .addGap(162, 162, 162))
+                        .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(104, 104, 104))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
-                        .addComponent(DH3_Next)
-                        .addGap(409, 409, 409))))
+                        .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DH3Image))
+                        .addGap(162, 162, 162))))
         );
         DHPanel3Layout.setVerticalGroup(
             DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel3Layout.createSequentialGroup()
                 .addGap(142, 142, 142)
                 .addComponent(DH3Image)
-                .addGap(51, 51, 51)
-                .addComponent(DH3_Next)
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(97, 97, 97)
+                .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(85, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -1130,28 +1207,39 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        DH4Text.setBorder(null);
+
+        jTextArea6.setEditable(false);
+        jTextArea6.setColumns(20);
+        jTextArea6.setRows(5);
+        jTextArea6.setText("Then, Bob sends Alice his generated number 5, which Eve also\nreceives.");
+        DH4Text.setViewportView(jTextArea6);
+
         javax.swing.GroupLayout DHPanel4Layout = new javax.swing.GroupLayout(DHPanel4);
         DHPanel4.setLayout(DHPanel4Layout);
         DHPanel4Layout.setHorizontalGroup(
             DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel4Layout.createSequentialGroup()
-                .addContainerGap(242, Short.MAX_VALUE)
-                .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
-                        .addComponent(DH4Image)
-                        .addGap(162, 162, 162))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
-                        .addComponent(DH4_Next)
-                        .addGap(409, 409, 409))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(114, 114, 114))
+            .addGroup(DHPanel4Layout.createSequentialGroup()
+                .addGap(158, 158, 158)
+                .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(DH4Image, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(DH4Text))
+                .addContainerGap(199, Short.MAX_VALUE))
         );
         DHPanel4Layout.setVerticalGroup(
             DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel4Layout.createSequentialGroup()
-                .addGap(142, 142, 142)
+                .addGap(157, 157, 157)
                 .addComponent(DH4Image)
-                .addGap(51, 51, 51)
-                .addComponent(DH4_Next)
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(112, 112, 112))
         );
 
         MainPanel.add(DHPanel4, "card12");
@@ -1161,32 +1249,119 @@ public class Home extends javax.swing.JFrame {
         DH5Image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH6.png"))); // NOI18N
 
         DH5_Next.setText("Next");
+        DH5_Next.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DH5_NextActionPerformed(evt);
+            }
+        });
+
+        DH5Text.setBorder(null);
+
+        jTextArea7.setEditable(false);
+        jTextArea7.setColumns(20);
+        jTextArea7.setRows(5);
+        jTextArea7.setText("Lastly, Alice and Bob do the operations shown above to both generate\ntheir private key 3. The operation is simply just the number they \nreceived from one another exponentiated to their private random number \nthey generated. Then they take the modulus of this number, with the \nnumber they agreed upon at the beginning of the key exchange.");
+        DH5Text.setViewportView(jTextArea7);
 
         javax.swing.GroupLayout DHPanel5Layout = new javax.swing.GroupLayout(DHPanel5);
         DHPanel5.setLayout(DHPanel5Layout);
         DHPanel5Layout.setHorizontalGroup(
             DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel5Layout.createSequentialGroup()
-                .addContainerGap(188, Short.MAX_VALUE)
-                .addGroup(DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel5Layout.createSequentialGroup()
-                        .addComponent(DH5Image)
-                        .addGap(162, 162, 162))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel5Layout.createSequentialGroup()
-                        .addComponent(DH5_Next)
-                        .addGap(409, 409, 409))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(DH5_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(126, 126, 126))
+            .addGroup(DHPanel5Layout.createSequentialGroup()
+                .addGap(133, 133, 133)
+                .addGroup(DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(DH5Image, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(DH5Text))
+                .addContainerGap(170, Short.MAX_VALUE))
         );
         DHPanel5Layout.setVerticalGroup(
             DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel5Layout.createSequentialGroup()
                 .addGap(142, 142, 142)
                 .addComponent(DH5Image)
-                .addGap(51, 51, 51)
-                .addComponent(DH5_Next)
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(DH5Text, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addComponent(DH5_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(128, 128, 128))
         );
 
         MainPanel.add(DHPanel5, "card12");
+
+        DHPanel6.setBackground(new java.awt.Color(255, 255, 255));
+
+        DH5Image1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH6.png"))); // NOI18N
+
+        DH6Text.setBorder(null);
+        DH6Text.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea8.setEditable(false);
+        jTextArea8.setColumns(20);
+        jTextArea8.setRows(5);
+        jTextArea8.setText("Now, given the information above, answer the following questions.");
+        DH6Text.setViewportView(jTextArea8);
+
+        DHQuestions.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        DHQuestions.setText("Questions!");
+
+        DHQ1.setBorder(null);
+        DHQ1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        DHQ1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea9.setEditable(false);
+        jTextArea9.setColumns(20);
+        jTextArea9.setRows(5);
+        jTextArea9.setText("1. Is there anyway Eve can deduce the private key, with information she \nhas. (Keep in mind she also has the modulus since this is public) Y/N");
+        DHQ1.setViewportView(jTextArea9);
+
+        DHA1.setText("Answer!");
+
+        DHB1.setText("jButton1");
+
+        javax.swing.GroupLayout DHPanel6Layout = new javax.swing.GroupLayout(DHPanel6);
+        DHPanel6.setLayout(DHPanel6Layout);
+        DHPanel6Layout.setHorizontalGroup(
+            DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DHPanel6Layout.createSequentialGroup()
+                .addGroup(DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DHPanel6Layout.createSequentialGroup()
+                        .addGap(346, 346, 346)
+                        .addComponent(DHQuestions))
+                    .addGroup(DHPanel6Layout.createSequentialGroup()
+                        .addGap(133, 133, 133)
+                        .addGroup(DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(DH5Image1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(DH6Text)
+                            .addComponent(DHQ1)
+                            .addGroup(DHPanel6Layout.createSequentialGroup()
+                                .addComponent(DHA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(49, 49, 49)
+                                .addComponent(DHB1)))))
+                .addContainerGap(170, Short.MAX_VALUE))
+        );
+        DHPanel6Layout.setVerticalGroup(
+            DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DHPanel6Layout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addComponent(DHQuestions)
+                .addGap(71, 71, 71)
+                .addComponent(DH5Image1)
+                .addGap(18, 18, 18)
+                .addComponent(DH6Text, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(DHQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DHA1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DHB1))
+                .addContainerGap(176, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(DHPanel6, "card12");
 
         CBCMAC.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1320,7 +1495,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1410,14 +1585,14 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCMAC_2Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(324, Short.MAX_VALUE))
+                .addContainerGap(295, Short.MAX_VALUE))
         );
         CBCMAC_2Layout.setVerticalGroup(
             CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCMAC_2Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(BreakingCBCBMAC_Title)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 589, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 621, Short.MAX_VALUE)
                 .addComponent(Back)
                 .addGap(22, 22, 22))
         );
@@ -1543,7 +1718,7 @@ public class Home extends javax.swing.JFrame {
                                                 .addGap(115, 115, 115)
                                                 .addComponent(Check_n_phi_d)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)))))))))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(4, Short.MAX_VALUE))
         );
         RSA_Signature_1Layout.setVerticalGroup(
             RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1575,7 +1750,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(d_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(d))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSA_Signature_1, "card20");
@@ -1665,7 +1840,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
-                .addContainerGap(119, Short.MAX_VALUE)
+                .addContainerGap(133, Short.MAX_VALUE)
                 .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
                         .addComponent(SigningAMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1712,7 +1887,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Check_signature)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addComponent(Back_RSA1)
                 .addContainerGap())
         );
@@ -1811,12 +1986,12 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Back_RSA2)
                         .addGap(273, 273, 273)
                         .addComponent(Verify_Submit)))
-                .addContainerGap(208, Short.MAX_VALUE))
+                .addContainerGap(161, Short.MAX_VALUE))
             .addGroup(RSA_ValidateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(RSA_ValidateLayout.createSequentialGroup()
                     .addGap(63, 63, 63)
                     .addComponent(Story1, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(114, Short.MAX_VALUE)))
+                    .addContainerGap(67, Short.MAX_VALUE)))
         );
         RSA_ValidateLayout.setVerticalGroup(
             RSA_ValidateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1845,10 +2020,130 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSA_ValidateLayout.createSequentialGroup()
                     .addGap(109, 109, 109)
                     .addComponent(Story1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(483, Short.MAX_VALUE)))
+                    .addContainerGap(503, Short.MAX_VALUE)))
         );
 
         MainPanel.add(RSA_Validate, "card22");
+
+        KerberosPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        KerberosText.setBorder(null);
+
+        jTextArea10.setEditable(false);
+        jTextArea10.setColumns(20);
+        jTextArea10.setRows(5);
+        jTextArea10.setText("1. A client attempts to log into windows sending a request for a ticket to the KDC \n(Key Distribution Center).\n2. The KDC then creates a TGT (Ticket-granting Ticket) for the user.\n3. The TGT encrypts the tickets using the user’s password as the key, and sends the encrypted\nTGT back to the user. Note: It encrypts the TGT with the given usernames password in AD.\n4. The user then will try to decrypt the TGT using the password the user entered.\n5. If the user had entered the correct password the TGT is decrypted.\n6. The user then keeps the decrypted TGT, which indicates proof of clients identity\n7. The TGT can be configured to expire after a specified time by the Network Admin\n* Not sure how I want to go about this, if I'll make diagrams then questions. Or just\nmake questions off this short protocol list.\n* Also note this is the basic protocol with Windows AD.");
+        KerberosText.setViewportView(jTextArea10);
+
+        Kerberos_K.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        Kerberos_K.setForeground(new java.awt.Color(255, 0, 51));
+        Kerberos_K.setText("Kerberos Basic Protocol:");
+
+        javax.swing.GroupLayout KerberosPanelLayout = new javax.swing.GroupLayout(KerberosPanel);
+        KerberosPanel.setLayout(KerberosPanelLayout);
+        KerberosPanelLayout.setHorizontalGroup(
+            KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KerberosPanelLayout.createSequentialGroup()
+                .addGap(219, 219, 219)
+                .addComponent(Kerberos_K)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
+                .addContainerGap(71, Short.MAX_VALUE)
+                .addComponent(KerberosText, javax.swing.GroupLayout.PREFERRED_SIZE, 754, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60))
+        );
+        KerberosPanelLayout.setVerticalGroup(
+            KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KerberosPanelLayout.createSequentialGroup()
+                .addGap(72, 72, 72)
+                .addComponent(Kerberos_K)
+                .addGap(18, 18, 18)
+                .addComponent(KerberosText, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(373, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(KerberosPanel, "card24");
+
+        DESPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        DESPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/3DES.png"))); // NOI18N
+
+        DESLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        DESLabel.setForeground(new java.awt.Color(255, 0, 51));
+        DESLabel.setText("Basic 3DES Encryption");
+
+        DESQ.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        DESQ.setText("What's the order of Encryption?");
+
+        DES_Buttons.add(DESA);
+        DESA.setText("Encrypt-Decrypt-Encrypt");
+
+        DES_Buttons.add(DESB);
+        DESB.setText("Encrypt-Encrypt-Encrypt");
+
+        DES_Buttons.add(DESC);
+        DESC.setText("Encrypt-Decrypt-Decrypt");
+
+        DES_Buttons.add(DESD);
+        DESD.setText("Decrypt-Encrypt-Encrypt");
+
+        DES_B.setText("Enter");
+        DES_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DES_BActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout DESPanelLayout = new javax.swing.GroupLayout(DESPanel);
+        DESPanel.setLayout(DESPanelLayout);
+        DESPanelLayout.setHorizontalGroup(
+            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelLayout.createSequentialGroup()
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(256, 256, 256)
+                        .addComponent(DESLabel))
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(159, 159, 159)
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(DESQ)
+                            .addComponent(DESPic)
+                            .addGroup(DESPanelLayout.createSequentialGroup()
+                                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(DESB)
+                                    .addComponent(DESC)
+                                    .addComponent(DESA)
+                                    .addComponent(DESD))
+                                .addGap(159, 159, 159)
+                                .addComponent(DES_B)))))
+                .addContainerGap(185, Short.MAX_VALUE))
+        );
+        DESPanelLayout.setVerticalGroup(
+            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(DESLabel)
+                .addGap(63, 63, 63)
+                .addComponent(DESPic)
+                .addGap(18, 18, 18)
+                .addComponent(DESQ)
+                .addGap(18, 18, 18)
+                .addComponent(DESA)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addComponent(DESB)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(DESC))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESPanelLayout.createSequentialGroup()
+                        .addComponent(DES_B)
+                        .addGap(11, 11, 11)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DESD)
+                .addContainerGap(55, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(DESPanel, "card25");
 
         Home.setText("Home");
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1969,6 +2264,11 @@ public class Home extends javax.swing.JFrame {
         Authentication.add(CHAP);
 
         Kerberos.setText("Kerberos");
+        Kerberos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KerberosActionPerformed(evt);
+            }
+        });
         Authentication.add(Kerberos);
 
         CBC_MAC.setText("Breakin CBC MAC");
@@ -2306,7 +2606,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_DiffieHellmanActionPerformed
 
     private void TripDESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TripDESActionPerformed
-        // TODO add your handling code here:
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(DESPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate(); 
     }//GEN-LAST:event_TripDESActionPerformed
 
     private void T1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_T1ActionPerformed
@@ -2528,7 +2834,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_Verify_SubmitActionPerformed
 
     private void Back_RSA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back_RSA1ActionPerformed
-        MainPanel.removeAll();
+            MainPanel.removeAll();
             MainPanel.repaint();
             MainPanel.revalidate();
 
@@ -2538,7 +2844,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_Back_RSA1ActionPerformed
 
     private void Back_RSA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back_RSA2ActionPerformed
-        MainPanel.removeAll();
+            MainPanel.removeAll();
             MainPanel.repaint();
             MainPanel.revalidate();
 
@@ -2546,6 +2852,45 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
     }//GEN-LAST:event_Back_RSA2ActionPerformed
+
+    private void DH5_NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DH5_NextActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(DHPanel6);
+            MainPanel.repaint();
+            MainPanel.revalidate();
+    }//GEN-LAST:event_DH5_NextActionPerformed
+
+    private void KerberosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KerberosActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(KerberosPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();      // TODO add your handling code here:
+    }//GEN-LAST:event_KerberosActionPerformed
+
+    private void DES_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DES_BActionPerformed
+        if(DESA.isSelected())
+        {
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(KerberosPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();
+            
+        }
+        
+        else
+        {
+            JOptionPane.showMessageDialog(null, "Incorrect", "Incorrect!", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_DES_BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2621,24 +2966,48 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel Correct_ECB;
     private javax.swing.JLabel Correct_Pic;
     private javax.swing.JLabel Current;
+    private javax.swing.JRadioButton DESA;
+    private javax.swing.JRadioButton DESB;
+    private javax.swing.JRadioButton DESC;
+    private javax.swing.JRadioButton DESD;
+    private javax.swing.JLabel DESLabel;
+    private javax.swing.JPanel DESPanel;
+    private javax.swing.JLabel DESPic;
+    private javax.swing.JLabel DESQ;
+    private javax.swing.JButton DES_B;
+    private javax.swing.ButtonGroup DES_Buttons;
     private javax.swing.JLabel DH1Image;
+    private javax.swing.JScrollPane DH1Text;
     private javax.swing.JButton DH1_Next;
+    private javax.swing.JScrollPane DH2Text;
     private javax.swing.JButton DH2_next;
     private javax.swing.JLabel DH3Image;
+    private javax.swing.JScrollPane DH3Text;
     private javax.swing.JButton DH3_Next;
     private javax.swing.JLabel DH4Image;
+    private javax.swing.JScrollPane DH4Text;
     private javax.swing.JButton DH4_Next;
     private javax.swing.JLabel DH5Image;
+    private javax.swing.JLabel DH5Image1;
+    private javax.swing.JScrollPane DH5Text;
     private javax.swing.JButton DH5_Next;
+    private javax.swing.JScrollPane DH6Text;
+    private javax.swing.JTextField DHA1;
+    private javax.swing.JButton DHB1;
     private javax.swing.JButton DHButton1;
     private javax.swing.JLabel DHDiagram1;
     private javax.swing.JLabel DHImage2;
+    private javax.swing.JScrollPane DHIntro;
     private javax.swing.JPanel DHPanel;
     private javax.swing.JPanel DHPanel1;
     private javax.swing.JPanel DHPanel2;
     private javax.swing.JPanel DHPanel3;
     private javax.swing.JPanel DHPanel4;
     private javax.swing.JPanel DHPanel5;
+    private javax.swing.JPanel DHPanel6;
+    private javax.swing.JScrollPane DHQ1;
+    private javax.swing.JLabel DHQuestions;
+    private javax.swing.JScrollPane DHText;
     private javax.swing.JMenuItem Dev;
     private javax.swing.JMenuItem DiffieHellman;
     private javax.swing.JMenu DigitalSignatures;
@@ -2679,6 +3048,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu Home;
     private javax.swing.JLabel Instructions;
     private javax.swing.JMenuItem Kerberos;
+    private javax.swing.JPanel KerberosPanel;
+    private javax.swing.JScrollPane KerberosText;
+    private javax.swing.JLabel Kerberos_K;
     private javax.swing.JMenuItem LinearFeedback;
     private javax.swing.JMenuItem MD5;
     private javax.swing.JPanel MainPanel;
@@ -2780,8 +3152,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
+    private javax.swing.JTextArea jTextArea6;
+    private javax.swing.JTextArea jTextArea7;
+    private javax.swing.JTextArea jTextArea8;
+    private javax.swing.JTextArea jTextArea9;
     private javax.swing.JLabel n;
     private javax.swing.JLabel n1;
     private javax.swing.JTextField n_input;
