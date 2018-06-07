@@ -2183,8 +2183,9 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_d_inputActionPerformed
 
     private void Check_n_phi_dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Check_n_phi_dActionPerformed
-        System.out.print(n_input.getText());
-        if(n_input.getText() == "1" && phi_n_input.getText() == "1" && d_input.getText() == "1"){
+        
+        //n = 192506C237D1, phin = 1925059F6840, d = E906B195201
+        if(n_input.getText().equals("1") && phi_n_input.getText().equals("1") && d_input.getText().equals("1")){
             MainPanel.removeAll();
             MainPanel.repaint();
             MainPanel.revalidate();
@@ -2196,6 +2197,7 @@ public class Home extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(null, "Try again to move onto the next step", "INCORRECT", JOptionPane.ERROR_MESSAGE);
         }
+
     }//GEN-LAST:event_Check_n_phi_dActionPerformed
 
     /**
