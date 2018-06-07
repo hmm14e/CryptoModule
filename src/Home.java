@@ -76,7 +76,7 @@ public class Home extends javax.swing.JFrame {
         Feistel_Intro = new javax.swing.JLabel();
         Feistel_Entry = new javax.swing.JTextField();
         Feistel_Button = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         RSAPanel = new javax.swing.JPanel();
         RSAQ1 = new javax.swing.JLabel();
         RSAHeader = new javax.swing.JLabel();
@@ -163,6 +163,23 @@ public class Home extends javax.swing.JFrame {
         CBCMAC_2 = new javax.swing.JPanel();
         BreakingCBCBMAC_Title = new javax.swing.JLabel();
         Back = new javax.swing.JButton();
+        RSA_Signature = new javax.swing.JPanel();
+        SigningAMessage = new javax.swing.JLabel();
+        Story = new javax.swing.JScrollPane();
+        Story_TextArea = new javax.swing.JTextArea();
+        Message = new javax.swing.JLabel();
+        p = new javax.swing.JLabel();
+        q = new javax.swing.JLabel();
+        e = new javax.swing.JLabel();
+        Instructions = new javax.swing.JLabel();
+        Next_verify = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        Check_n_phi_d = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -537,7 +554,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/fesitel2-update.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Feistel-Update.png"))); // NOI18N
 
         javax.swing.GroupLayout FeistelPanelLayout = new javax.swing.GroupLayout(FeistelPanel);
         FeistelPanel.setLayout(FeistelPanelLayout);
@@ -547,15 +564,15 @@ public class Home extends javax.swing.JFrame {
                 .addGap(250, 250, 250)
                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Feistel_Button)
-                        .addGap(17, 17, 17))
+                        .addGap(44, 44, 44))
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
                         .addComponent(Feistel_Intro)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(301, Short.MAX_VALUE))))
         );
         FeistelPanelLayout.setVerticalGroup(
             FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -564,14 +581,14 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Feistel_Intro)
                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(256, 256, 256)
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel2))
+                    .addGroup(FeistelPanelLayout.createSequentialGroup()
+                        .addGap(226, 226, 226)
                         .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(jLabel8)))
-                .addContainerGap(63, Short.MAX_VALUE))
+                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         MainPanel.add(FeistelPanel, "card8");
@@ -1381,6 +1398,167 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CBCMAC_2, "card19");
 
+        RSA_Signature.setBackground(new java.awt.Color(255, 255, 255));
+        RSA_Signature.setOpaque(false);
+
+        SigningAMessage.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        SigningAMessage.setForeground(new java.awt.Color(255, 0, 51));
+        SigningAMessage.setText("<html><strong>Signing a Message with RSA</strong></html>");
+
+        Story.setBorder(null);
+
+        Story_TextArea.setColumns(20);
+        Story_TextArea.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        Story_TextArea.setLineWrap(true);
+        Story_TextArea.setRows(5);
+        Story_TextArea.setText("Bob wants to ask Alice out on a date. He's afraid Eve might intercept his message and tamper with it, so he decided to sign the message. Help him sign his message!");
+        Story_TextArea.setWrapStyleWord(true);
+        Story_TextArea.setBorder(null);
+        Story_TextArea.setCaretColor(new java.awt.Color(255, 255, 255));
+        Story_TextArea.setOpaque(false);
+        Story.setViewportView(Story_TextArea);
+        Story_TextArea.setOpaque(false);
+
+        Message.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        Message.setText("Message = \"Want to go on a date?\"");
+
+        p.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        p.setText("p = F7E75FDC469067FFDC4E847C51F452DF");
+
+        q.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        q.setText("q = E85CED54AF57E53E092113E62F436F4F");
+
+        e.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        e.setText("e = 0D88C3");
+
+        Instructions.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        Instructions.setText("First, calculate the following values in hexadecimal:  ");
+
+        Next_verify.setText("Next");
+        Next_verify.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Next_verifyActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        jLabel8.setText("n = ");
+
+        jLabel9.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        jLabel9.setText("d = ");
+
+        jLabel10.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
+        jLabel10.setText("Φ(n) = ");
+
+        jTextField1.setColumns(20);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jTextField2.setColumns(20);
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+
+        jTextField3.setColumns(20);
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+
+        Check_n_phi_d.setText("Submit");
+        Check_n_phi_d.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Check_n_phi_dActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout RSA_SignatureLayout = new javax.swing.GroupLayout(RSA_Signature);
+        RSA_Signature.setLayout(RSA_SignatureLayout);
+        RSA_SignatureLayout.setHorizontalGroup(
+            RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_SignatureLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Next_verify)
+                .addGap(30, 30, 30))
+            .addGroup(RSA_SignatureLayout.createSequentialGroup()
+                .addGroup(RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RSA_SignatureLayout.createSequentialGroup()
+                        .addGap(204, 204, 204)
+                        .addComponent(SigningAMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(RSA_SignatureLayout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addGroup(RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Story, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(RSA_SignatureLayout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addGroup(RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(e, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Message, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(RSA_SignatureLayout.createSequentialGroup()
+                                .addGap(46, 46, 46)
+                                .addGroup(RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel10)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel9))
+                                .addGap(18, 18, 18)
+                                .addGroup(RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(RSA_SignatureLayout.createSequentialGroup()
+                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(95, 95, 95)
+                                        .addComponent(Check_n_phi_d))))
+                            .addComponent(Instructions))))
+                .addContainerGap(67, Short.MAX_VALUE))
+        );
+        RSA_SignatureLayout.setVerticalGroup(
+            RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RSA_SignatureLayout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(RSA_SignatureLayout.createSequentialGroup()
+                        .addComponent(SigningAMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Story, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Message, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(q, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(e, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(47, 47, 47)
+                        .addComponent(Instructions)
+                        .addGap(26, 26, 26)
+                        .addGroup(RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(28, 28, 28)
+                        .addGroup(RSA_SignatureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel10)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Check_n_phi_d))
+                        .addGap(25, 25, 25)
+                        .addComponent(jLabel9))
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addComponent(Next_verify)
+                .addGap(18, 18, 18))
+        );
+
+        Next_verify.setVisible(false);
+
+        MainPanel.add(RSA_Signature, "card20");
+
         Home.setText("Home");
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1530,6 +1708,11 @@ public class Home extends javax.swing.JFrame {
         DigitalSignatures.add(Hashing);
 
         RSASignature.setText("RSA Signature");
+        RSASignature.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSASignatureActionPerformed(evt);
+            }
+        });
         DigitalSignatures.add(RSASignature);
 
         jMenuBar1.add(DigitalSignatures);
@@ -1977,6 +2160,36 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();          // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void RSASignatureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSASignatureActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(RSA_Signature);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_RSASignatureActionPerformed
+
+    private void Next_verifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Next_verifyActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Next_verifyActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void Check_n_phi_dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Check_n_phi_dActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Check_n_phi_dActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2031,6 +2244,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem Caesar;
     private javax.swing.JPanel CaesarPanel;
     private javax.swing.JLabel CaesarTitle;
+    private javax.swing.JButton Check_n_phi_d;
     private javax.swing.JMenu Ciphers;
     private javax.swing.JLabel Ciphertext_Atbash;
     private javax.swing.JLabel Ciphertext_Caesar;
@@ -2083,10 +2297,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu Hashing;
     private javax.swing.JMenu Help;
     private javax.swing.JMenu Home;
+    private javax.swing.JLabel Instructions;
     private javax.swing.JMenuItem Kerberos;
     private javax.swing.JMenuItem LinearFeedback;
     private javax.swing.JMenuItem MD5;
     private javax.swing.JPanel MainPanel;
+    private javax.swing.JLabel Message;
+    private javax.swing.JButton Next_verify;
     private javax.swing.JMenuItem OneTimePad;
     private javax.swing.JMenuItem PAP;
     private javax.swing.JMenu PrivateKey;
@@ -2115,6 +2332,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel RSAQ1_2;
     private javax.swing.JLabel RSAQ1_3;
     private javax.swing.JMenuItem RSASignature;
+    private javax.swing.JPanel RSA_Signature;
     private javax.swing.JMenuItem SHA;
     private javax.swing.JTextField SHAA1;
     private javax.swing.JTextField SHAA2;
@@ -2132,6 +2350,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel SHA_Questions;
     private javax.swing.JTextField SHA_Text;
     private javax.swing.JMenuItem SSynchronizing;
+    private javax.swing.JLabel SigningAMessage;
+    private javax.swing.JScrollPane Story;
+    private javax.swing.JTextArea Story_TextArea;
     private javax.swing.JMenu StreamCiphers;
     private javax.swing.JTextField Submission;
     private javax.swing.JTextField Submission1;
@@ -2161,6 +2382,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.ButtonGroup buttonGroup5;
+    private javax.swing.JLabel e;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -2169,15 +2391,23 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JLabel p;
+    private javax.swing.JLabel q;
     // End of variables declaration//GEN-END:variables
 }
