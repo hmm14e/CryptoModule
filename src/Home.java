@@ -52,7 +52,7 @@ public class Home extends javax.swing.JFrame {
         Ciphertext_Caesar = new javax.swing.JLabel();
         Submission = new javax.swing.JTextField();
         Submit = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        Caesar_Directions = new javax.swing.JLabel();
         AtbashPanel = new javax.swing.JPanel();
         AtbashTitle = new javax.swing.JLabel();
         Warning1 = new javax.swing.JLabel();
@@ -77,7 +77,7 @@ public class Home extends javax.swing.JFrame {
         Feistel_Intro = new javax.swing.JLabel();
         Feistel_Entry = new javax.swing.JTextField();
         Feistel_Button = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        FeistelImage = new javax.swing.JLabel();
         RSAPanel = new javax.swing.JPanel();
         RSAQ1 = new javax.swing.JLabel();
         RSAHeader = new javax.swing.JLabel();
@@ -123,20 +123,20 @@ public class Home extends javax.swing.JFrame {
         jTextArea2 = new javax.swing.JTextArea();
         jTextArea3 = new javax.swing.JTextArea();
         DHPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        DH1Image = new javax.swing.JLabel();
+        DH1_Next = new javax.swing.JButton();
         DHPanel2 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        DHImage2 = new javax.swing.JLabel();
+        DH2_next = new javax.swing.JButton();
         DHPanel3 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        DH3Image = new javax.swing.JLabel();
+        DH3_Next = new javax.swing.JButton();
         DHPanel4 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        DH4Image = new javax.swing.JLabel();
+        DH4_Next = new javax.swing.JButton();
         DHPanel5 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        DH5Image = new javax.swing.JLabel();
+        DH5_Next = new javax.swing.JButton();
         CBCMAC = new javax.swing.JPanel();
         CBCMACTitle = new javax.swing.JLabel();
         Question1 = new javax.swing.JLabel();
@@ -159,8 +159,8 @@ public class Home extends javax.swing.JFrame {
         F4 = new javax.swing.JRadioButton();
         T5 = new javax.swing.JRadioButton();
         F5 = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
+        CBCMAC_Submit = new javax.swing.JButton();
+        CBCMAC_Next = new javax.swing.JButton();
         CBCMAC_2 = new javax.swing.JPanel();
         BreakingCBCBMAC_Title = new javax.swing.JLabel();
         Back = new javax.swing.JButton();
@@ -310,7 +310,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Enter the plaintext answer in lowercase");
+        Caesar_Directions.setText("Enter the plaintext answer in lowercase");
 
         javax.swing.GroupLayout CaesarPanelLayout = new javax.swing.GroupLayout(CaesarPanel);
         CaesarPanel.setLayout(CaesarPanelLayout);
@@ -333,7 +333,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Submit))
             .addGroup(CaesarPanelLayout.createSequentialGroup()
                 .addGap(283, 283, 283)
-                .addComponent(jLabel1))
+                .addComponent(Caesar_Directions))
         );
         CaesarPanelLayout.setVerticalGroup(
             CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -345,7 +345,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(84, 84, 84)
                 .addComponent(Ciphertext_Caesar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1)
+                .addComponent(Caesar_Directions)
                 .addGap(62, 62, 62)
                 .addComponent(Submission, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
@@ -580,7 +580,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Feistel-Update.png"))); // NOI18N
+        FeistelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Feistel-Update.png"))); // NOI18N
 
         javax.swing.GroupLayout FeistelPanelLayout = new javax.swing.GroupLayout(FeistelPanel);
         FeistelPanel.setLayout(FeistelPanelLayout);
@@ -590,7 +590,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(250, 250, 250)
                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(FeistelImage)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -608,7 +608,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
                         .addGap(42, 42, 42)
-                        .addComponent(jLabel2))
+                        .addComponent(FeistelImage))
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
                         .addGap(226, 226, 226)
                         .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1011,12 +1011,12 @@ public class Home extends javax.swing.JFrame {
 
         DHPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH2.png"))); // NOI18N
+        DH1Image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH2.png"))); // NOI18N
 
-        jButton2.setText("Next");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        DH1_Next.setText("Next");
+        DH1_Next.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                DH1_NextActionPerformed(evt);
             }
         });
 
@@ -1026,20 +1026,20 @@ public class Home extends javax.swing.JFrame {
             DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel1Layout.createSequentialGroup()
                 .addGap(160, 160, 160)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DH1Image, javax.swing.GroupLayout.PREFERRED_SIZE, 541, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(231, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(79, 79, 79))
         );
         DHPanel1Layout.setVerticalGroup(
             DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel1Layout.createSequentialGroup()
                 .addGap(148, 148, 148)
-                .addComponent(jLabel3)
+                .addComponent(DH1Image)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 205, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58))
         );
 
@@ -1047,12 +1047,12 @@ public class Home extends javax.swing.JFrame {
 
         DHPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH3.png"))); // NOI18N
+        DHImage2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH3.png"))); // NOI18N
 
-        jButton3.setText("Next");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        DH2_next.setText("Next");
+        DH2_next.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                DH2_nextActionPerformed(evt);
             }
         });
 
@@ -1064,19 +1064,19 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(242, Short.MAX_VALUE)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
+                        .addComponent(DHImage2)
                         .addGap(162, 162, 162))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton3)
+                        .addComponent(DH2_next)
                         .addGap(409, 409, 409))))
         );
         DHPanel2Layout.setVerticalGroup(
             DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel2Layout.createSequentialGroup()
                 .addGap(142, 142, 142)
-                .addComponent(jLabel4)
+                .addComponent(DHImage2)
                 .addGap(51, 51, 51)
-                .addComponent(jButton3)
+                .addComponent(DH2_next)
                 .addContainerGap(225, Short.MAX_VALUE))
         );
 
@@ -1084,12 +1084,12 @@ public class Home extends javax.swing.JFrame {
 
         DHPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH4.png"))); // NOI18N
+        DH3Image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH4.png"))); // NOI18N
 
-        jButton4.setText("Next");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        DH3_Next.setText("Next");
+        DH3_Next.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                DH3_NextActionPerformed(evt);
             }
         });
 
@@ -1101,19 +1101,19 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(209, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
+                        .addComponent(DH3Image)
                         .addGap(162, 162, 162))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton4)
+                        .addComponent(DH3_Next)
                         .addGap(409, 409, 409))))
         );
         DHPanel3Layout.setVerticalGroup(
             DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel3Layout.createSequentialGroup()
                 .addGap(142, 142, 142)
-                .addComponent(jLabel5)
+                .addComponent(DH3Image)
                 .addGap(51, 51, 51)
-                .addComponent(jButton4)
+                .addComponent(DH3_Next)
                 .addContainerGap(225, Short.MAX_VALUE))
         );
 
@@ -1121,12 +1121,12 @@ public class Home extends javax.swing.JFrame {
 
         DHPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH5.png"))); // NOI18N
+        DH4Image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH5.png"))); // NOI18N
 
-        jButton5.setText("Next");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        DH4_Next.setText("Next");
+        DH4_Next.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                DH4_NextActionPerformed(evt);
             }
         });
 
@@ -1138,19 +1138,19 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(242, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
+                        .addComponent(DH4Image)
                         .addGap(162, 162, 162))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
-                        .addComponent(jButton5)
+                        .addComponent(DH4_Next)
                         .addGap(409, 409, 409))))
         );
         DHPanel4Layout.setVerticalGroup(
             DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel4Layout.createSequentialGroup()
                 .addGap(142, 142, 142)
-                .addComponent(jLabel6)
+                .addComponent(DH4Image)
                 .addGap(51, 51, 51)
-                .addComponent(jButton5)
+                .addComponent(DH4_Next)
                 .addContainerGap(225, Short.MAX_VALUE))
         );
 
@@ -1158,9 +1158,9 @@ public class Home extends javax.swing.JFrame {
 
         DHPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH6.png"))); // NOI18N
+        DH5Image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/DH6.png"))); // NOI18N
 
-        jButton6.setText("Next");
+        DH5_Next.setText("Next");
 
         javax.swing.GroupLayout DHPanel5Layout = new javax.swing.GroupLayout(DHPanel5);
         DHPanel5.setLayout(DHPanel5Layout);
@@ -1170,19 +1170,19 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(188, Short.MAX_VALUE)
                 .addGroup(DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
+                        .addComponent(DH5Image)
                         .addGap(162, 162, 162))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel5Layout.createSequentialGroup()
-                        .addComponent(jButton6)
+                        .addComponent(DH5_Next)
                         .addGap(409, 409, 409))))
         );
         DHPanel5Layout.setVerticalGroup(
             DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel5Layout.createSequentialGroup()
                 .addGap(142, 142, 142)
-                .addComponent(jLabel7)
+                .addComponent(DH5Image)
                 .addGap(51, 51, 51)
-                .addComponent(jButton6)
+                .addComponent(DH5_Next)
                 .addContainerGap(225, Short.MAX_VALUE))
         );
 
@@ -1268,15 +1268,15 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Submit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        CBCMAC_Submit.setText("Submit");
+        CBCMAC_Submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Submit(evt);
             }
         });
 
-        jButton7.setText("Next Page");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        CBCMAC_Next.setText("Next Page");
+        CBCMAC_Next.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NextPage(evt);
             }
@@ -1316,7 +1316,7 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(F3)))
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(411, 411, 411)
-                        .addComponent(jButton1))
+                        .addComponent(CBCMAC_Submit))
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -1325,7 +1325,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
-                        .addComponent(jButton7)
+                        .addComponent(CBCMAC_Next)
                         .addGap(24, 24, 24))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
                         .addComponent(CBCMACTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1378,9 +1378,9 @@ public class Home extends javax.swing.JFrame {
                         .addGap(64, 64, 64)
                         .addComponent(F5)))
                 .addGap(41, 41, 41)
-                .addComponent(jButton1)
+                .addComponent(CBCMAC_Submit)
                 .addGap(18, 18, 18)
-                .addComponent(jButton7)
+                .addComponent(CBCMAC_Next)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -2411,7 +2411,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_DHButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void DH1_NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DH1_NextActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -2419,9 +2419,9 @@ public class Home extends javax.swing.JFrame {
         MainPanel.add(DHPanel2);
         MainPanel.repaint();
         MainPanel.revalidate();          // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_DH1_NextActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void DH2_nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DH2_nextActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -2429,9 +2429,9 @@ public class Home extends javax.swing.JFrame {
         MainPanel.add(DHPanel3);
         MainPanel.repaint();
         MainPanel.revalidate();          // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_DH2_nextActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void DH3_NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DH3_NextActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -2439,9 +2439,9 @@ public class Home extends javax.swing.JFrame {
         MainPanel.add(DHPanel4);
         MainPanel.repaint();
         MainPanel.revalidate();          // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_DH3_NextActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void DH4_NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DH4_NextActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -2449,7 +2449,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.add(DHPanel5);
         MainPanel.repaint();
         MainPanel.revalidate();          // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_DH4_NextActionPerformed
 
     private void RSASignatureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSASignatureActionPerformed
         MainPanel.removeAll();
@@ -2597,12 +2597,15 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel CBCMAC;
     private javax.swing.JLabel CBCMACTitle;
     private javax.swing.JPanel CBCMAC_2;
+    private javax.swing.JButton CBCMAC_Next;
+    private javax.swing.JButton CBCMAC_Submit;
     private javax.swing.JMenuItem CBC_MAC;
     private javax.swing.JMenuItem CHAP;
     private javax.swing.JMenuItem CTR;
     private javax.swing.JMenuItem Caesar;
     private javax.swing.JPanel CaesarPanel;
     private javax.swing.JLabel CaesarTitle;
+    private javax.swing.JLabel Caesar_Directions;
     private javax.swing.JButton Check_n_phi_d;
     private javax.swing.JButton Check_signature;
     private javax.swing.JRadioButton ChoiceA;
@@ -2618,8 +2621,18 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel Correct_ECB;
     private javax.swing.JLabel Correct_Pic;
     private javax.swing.JLabel Current;
+    private javax.swing.JLabel DH1Image;
+    private javax.swing.JButton DH1_Next;
+    private javax.swing.JButton DH2_next;
+    private javax.swing.JLabel DH3Image;
+    private javax.swing.JButton DH3_Next;
+    private javax.swing.JLabel DH4Image;
+    private javax.swing.JButton DH4_Next;
+    private javax.swing.JLabel DH5Image;
+    private javax.swing.JButton DH5_Next;
     private javax.swing.JButton DHButton1;
     private javax.swing.JLabel DHDiagram1;
+    private javax.swing.JLabel DHImage2;
     private javax.swing.JPanel DHPanel;
     private javax.swing.JPanel DHPanel1;
     private javax.swing.JPanel DHPanel2;
@@ -2654,6 +2667,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel FSULOGO;
     private javax.swing.JLabel False;
     private javax.swing.JMenuItem Feistel;
+    private javax.swing.JLabel FeistelImage;
     private javax.swing.JPanel FeistelPanel;
     private javax.swing.JButton Feistel_Button;
     private javax.swing.JTextField Feistel_Entry;
@@ -2763,20 +2777,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField d_input;
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JRadioButton jRadioButton3;
