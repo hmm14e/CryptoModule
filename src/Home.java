@@ -241,6 +241,19 @@ public class Home extends javax.swing.JFrame {
         DESC = new javax.swing.JRadioButton();
         DESD = new javax.swing.JRadioButton();
         DES_B = new javax.swing.JButton();
+        RC5Panel = new javax.swing.JPanel();
+        OTPPanel = new javax.swing.JPanel();
+        SynchPanel = new javax.swing.JPanel();
+        SSynchPanel = new javax.swing.JPanel();
+        LinearFeedbackPanel = new javax.swing.JPanel();
+        EntropyPanel = new javax.swing.JPanel();
+        CBCPanel = new javax.swing.JPanel();
+        CTRPanel = new javax.swing.JPanel();
+        PAPPanel = new javax.swing.JPanel();
+        CHAPPanel = new javax.swing.JPanel();
+        MD5Panel = new javax.swing.JPanel();
+        BlowfishPanel = new javax.swing.JPanel();
+        AESPanel = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -285,7 +298,6 @@ public class Home extends javax.swing.JFrame {
         buttonGroup3.add(jRadioButton3);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(885, 753));
 
         MainPanel.setBackground(new java.awt.Color(255, 255, 255));
         MainPanel.setLayout(new java.awt.CardLayout());
@@ -2138,12 +2150,206 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESPanelLayout.createSequentialGroup()
                         .addComponent(DES_B)
                         .addGap(11, 11, 11)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DESD)
                 .addContainerGap(55, Short.MAX_VALUE))
         );
 
         MainPanel.add(DESPanel, "card25");
+
+        RC5Panel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout RC5PanelLayout = new javax.swing.GroupLayout(RC5Panel);
+        RC5Panel.setLayout(RC5PanelLayout);
+        RC5PanelLayout.setHorizontalGroup(
+            RC5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        RC5PanelLayout.setVerticalGroup(
+            RC5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(RC5Panel, "card26");
+
+        OTPPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout OTPPanelLayout = new javax.swing.GroupLayout(OTPPanel);
+        OTPPanel.setLayout(OTPPanelLayout);
+        OTPPanelLayout.setHorizontalGroup(
+            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        OTPPanelLayout.setVerticalGroup(
+            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(OTPPanel, "card27");
+
+        SynchPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout SynchPanelLayout = new javax.swing.GroupLayout(SynchPanel);
+        SynchPanel.setLayout(SynchPanelLayout);
+        SynchPanelLayout.setHorizontalGroup(
+            SynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        SynchPanelLayout.setVerticalGroup(
+            SynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(SynchPanel, "card28");
+
+        SSynchPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout SSynchPanelLayout = new javax.swing.GroupLayout(SSynchPanel);
+        SSynchPanel.setLayout(SSynchPanelLayout);
+        SSynchPanelLayout.setHorizontalGroup(
+            SSynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        SSynchPanelLayout.setVerticalGroup(
+            SSynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(SSynchPanel, "card29");
+
+        LinearFeedbackPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout LinearFeedbackPanelLayout = new javax.swing.GroupLayout(LinearFeedbackPanel);
+        LinearFeedbackPanel.setLayout(LinearFeedbackPanelLayout);
+        LinearFeedbackPanelLayout.setHorizontalGroup(
+            LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        LinearFeedbackPanelLayout.setVerticalGroup(
+            LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(LinearFeedbackPanel, "card30");
+
+        EntropyPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout EntropyPanelLayout = new javax.swing.GroupLayout(EntropyPanel);
+        EntropyPanel.setLayout(EntropyPanelLayout);
+        EntropyPanelLayout.setHorizontalGroup(
+            EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        EntropyPanelLayout.setVerticalGroup(
+            EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(EntropyPanel, "card31");
+
+        CBCPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout CBCPanelLayout = new javax.swing.GroupLayout(CBCPanel);
+        CBCPanel.setLayout(CBCPanelLayout);
+        CBCPanelLayout.setHorizontalGroup(
+            CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        CBCPanelLayout.setVerticalGroup(
+            CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(CBCPanel, "card32");
+
+        CTRPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout CTRPanelLayout = new javax.swing.GroupLayout(CTRPanel);
+        CTRPanel.setLayout(CTRPanelLayout);
+        CTRPanelLayout.setHorizontalGroup(
+            CTRPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        CTRPanelLayout.setVerticalGroup(
+            CTRPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(CTRPanel, "card33");
+
+        PAPPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout PAPPanelLayout = new javax.swing.GroupLayout(PAPPanel);
+        PAPPanel.setLayout(PAPPanelLayout);
+        PAPPanelLayout.setHorizontalGroup(
+            PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        PAPPanelLayout.setVerticalGroup(
+            PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(PAPPanel, "card34");
+
+        CHAPPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout CHAPPanelLayout = new javax.swing.GroupLayout(CHAPPanel);
+        CHAPPanel.setLayout(CHAPPanelLayout);
+        CHAPPanelLayout.setHorizontalGroup(
+            CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        CHAPPanelLayout.setVerticalGroup(
+            CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(CHAPPanel, "card35");
+
+        MD5Panel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout MD5PanelLayout = new javax.swing.GroupLayout(MD5Panel);
+        MD5Panel.setLayout(MD5PanelLayout);
+        MD5PanelLayout.setHorizontalGroup(
+            MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        MD5PanelLayout.setVerticalGroup(
+            MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(MD5Panel, "card36");
+
+        BlowfishPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout BlowfishPanelLayout = new javax.swing.GroupLayout(BlowfishPanel);
+        BlowfishPanel.setLayout(BlowfishPanelLayout);
+        BlowfishPanelLayout.setHorizontalGroup(
+            BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        BlowfishPanelLayout.setVerticalGroup(
+            BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(BlowfishPanel, "card37");
+
+        AESPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout AESPanelLayout = new javax.swing.GroupLayout(AESPanel);
+        AESPanel.setLayout(AESPanelLayout);
+        AESPanelLayout.setHorizontalGroup(
+            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 885, Short.MAX_VALUE)
+        );
+        AESPanelLayout.setVerticalGroup(
+            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 732, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(AESPanel, "card38");
 
         Home.setText("Home");
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -2204,6 +2410,11 @@ public class Home extends javax.swing.JFrame {
         BlockCiphers.add(Feistel);
 
         RC5.setText("RC5");
+        RC5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RC5ActionPerformed(evt);
+            }
+        });
         BlockCiphers.add(RC5);
 
         TripDES.setText("3DES");
@@ -2219,20 +2430,45 @@ public class Home extends javax.swing.JFrame {
         StreamCiphers.setText("Stream Ciphers");
 
         OneTimePad.setText("One Time Pad");
+        OneTimePad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OneTimePadActionPerformed(evt);
+            }
+        });
         StreamCiphers.add(OneTimePad);
 
         Synchronous.setText("Synchronous");
+        Synchronous.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SynchronousActionPerformed(evt);
+            }
+        });
         StreamCiphers.add(Synchronous);
 
         SSynchronizing.setText("Self-Synchronizing");
+        SSynchronizing.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SSynchronizingActionPerformed(evt);
+            }
+        });
         StreamCiphers.add(SSynchronizing);
 
         LinearFeedback.setText("Linear-Feedback");
+        LinearFeedback.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LinearFeedbackActionPerformed(evt);
+            }
+        });
         StreamCiphers.add(LinearFeedback);
 
         Ciphers.add(StreamCiphers);
 
         Entropy.setText("Entropy");
+        Entropy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EntropyActionPerformed(evt);
+            }
+        });
         Ciphers.add(Entropy);
 
         jMenuBar1.add(Ciphers);
@@ -2248,9 +2484,19 @@ public class Home extends javax.swing.JFrame {
         EncryptionModes.add(ECB);
 
         CBC.setText("CBC");
+        CBC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCActionPerformed(evt);
+            }
+        });
         EncryptionModes.add(CBC);
 
         CTR.setText("CTR");
+        CTR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CTRActionPerformed(evt);
+            }
+        });
         EncryptionModes.add(CTR);
 
         jMenuBar1.add(EncryptionModes);
@@ -2258,9 +2504,19 @@ public class Home extends javax.swing.JFrame {
         Authentication.setText("Authentication");
 
         PAP.setText("Pap");
+        PAP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PAPActionPerformed(evt);
+            }
+        });
         Authentication.add(PAP);
 
         CHAP.setText("Chap");
+        CHAP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CHAPActionPerformed(evt);
+            }
+        });
         Authentication.add(CHAP);
 
         Kerberos.setText("Kerberos");
@@ -2294,6 +2550,11 @@ public class Home extends javax.swing.JFrame {
         Hashing.add(SHA);
 
         MD5.setText("MD5");
+        MD5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MD5ActionPerformed(evt);
+            }
+        });
         Hashing.add(MD5);
 
         DigitalSignatures.add(Hashing);
@@ -2339,9 +2600,19 @@ public class Home extends javax.swing.JFrame {
         PrivateKey.setText("Private Key");
 
         Blowfish.setText("Blowfish");
+        Blowfish.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BlowfishActionPerformed(evt);
+            }
+        });
         PrivateKey.add(Blowfish);
 
         AES.setText("AES");
+        AES.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AESActionPerformed(evt);
+            }
+        });
         PrivateKey.add(AES);
 
         jMenuBar1.add(PrivateKey);
@@ -2892,6 +3163,136 @@ public class Home extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_DES_BActionPerformed
 
+    private void RC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RC5ActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(RC5Panel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_RC5ActionPerformed
+
+    private void OneTimePadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OneTimePadActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(OTPPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_OneTimePadActionPerformed
+
+    private void SynchronousActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SynchronousActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(SynchPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_SynchronousActionPerformed
+
+    private void SSynchronizingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SSynchronizingActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(SSynchPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_SSynchronizingActionPerformed
+
+    private void LinearFeedbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LinearFeedbackActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(LinearFeedbackPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_LinearFeedbackActionPerformed
+
+    private void EntropyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EntropyActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(EntropyPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_EntropyActionPerformed
+
+    private void CBCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(CBCPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_CBCActionPerformed
+
+    private void CTRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CTRActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(CTRPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_CTRActionPerformed
+
+    private void PAPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(PAPPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_PAPActionPerformed
+
+    private void CHAPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHAPActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(CHAPPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_CHAPActionPerformed
+
+    private void MD5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5ActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(MD5Panel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_MD5ActionPerformed
+
+    private void BlowfishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowfishActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(BlowfishPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_BlowfishActionPerformed
+
+    private void AESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESActionPerformed
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(AESPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();        // TODO add your handling code here:
+    }//GEN-LAST:event_AESActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2927,6 +3328,7 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem AES;
+    private javax.swing.JPanel AESPanel;
     private javax.swing.JTextField Answer1;
     private javax.swing.JMenuItem Atbash;
     private javax.swing.JPanel AtbashPanel;
@@ -2937,6 +3339,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton Back_RSA2;
     private javax.swing.JMenu BlockCiphers;
     private javax.swing.JMenuItem Blowfish;
+    private javax.swing.JPanel BlowfishPanel;
     private javax.swing.JLabel BreakingCBCBMAC_Title;
     private javax.swing.JMenuItem CBC;
     private javax.swing.JPanel CBCMAC;
@@ -2944,9 +3347,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel CBCMAC_2;
     private javax.swing.JButton CBCMAC_Next;
     private javax.swing.JButton CBCMAC_Submit;
+    private javax.swing.JPanel CBCPanel;
     private javax.swing.JMenuItem CBC_MAC;
     private javax.swing.JMenuItem CHAP;
+    private javax.swing.JPanel CHAPPanel;
     private javax.swing.JMenuItem CTR;
+    private javax.swing.JPanel CTRPanel;
     private javax.swing.JMenuItem Caesar;
     private javax.swing.JPanel CaesarPanel;
     private javax.swing.JLabel CaesarTitle;
@@ -3028,6 +3434,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel ElGamalPanel;
     private javax.swing.JMenu EncryptionModes;
     private javax.swing.JMenuItem Entropy;
+    private javax.swing.JPanel EntropyPanel;
     private javax.swing.JRadioButton F1;
     private javax.swing.JRadioButton F2;
     private javax.swing.JRadioButton F3;
@@ -3052,12 +3459,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane KerberosText;
     private javax.swing.JLabel Kerberos_K;
     private javax.swing.JMenuItem LinearFeedback;
+    private javax.swing.JPanel LinearFeedbackPanel;
     private javax.swing.JMenuItem MD5;
+    private javax.swing.JPanel MD5Panel;
     private javax.swing.JPanel MainPanel;
     private javax.swing.JLabel Message;
     private javax.swing.JLabel Message1;
+    private javax.swing.JPanel OTPPanel;
     private javax.swing.JMenuItem OneTimePad;
     private javax.swing.JMenuItem PAP;
+    private javax.swing.JPanel PAPPanel;
     private javax.swing.JMenu PrivateKey;
     private javax.swing.JMenu PublicKey;
     private javax.swing.JLabel Q1;
@@ -3070,6 +3481,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Question5_1;
     private javax.swing.JLabel Question5_2;
     private javax.swing.JMenuItem RC5;
+    private javax.swing.JPanel RC5Panel;
     private javax.swing.JMenuItem RSA;
     private javax.swing.JTextField RSAA1_1;
     private javax.swing.JTextField RSAA1_2;
@@ -3103,6 +3515,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel SHA_Output;
     private javax.swing.JLabel SHA_Questions;
     private javax.swing.JTextField SHA_Text;
+    private javax.swing.JPanel SSynchPanel;
     private javax.swing.JMenuItem SSynchronizing;
     private javax.swing.JTextField Signature;
     private javax.swing.JLabel SigningAMessage;
@@ -3119,6 +3532,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton Submit1;
     private javax.swing.JButton Submit2;
     private javax.swing.JMenu SubstitutionCiphers;
+    private javax.swing.JPanel SynchPanel;
     private javax.swing.JMenuItem Synchronous;
     private javax.swing.JRadioButton T1;
     private javax.swing.JRadioButton T2;
