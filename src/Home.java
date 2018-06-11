@@ -263,17 +263,18 @@ public class Home extends javax.swing.JFrame {
         WEPA2 = new javax.swing.JTextField();
         WEPB1 = new javax.swing.JButton();
         OTPPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        OTPLabel = new javax.swing.JLabel();
+        OTPDescription = new javax.swing.JScrollPane();
         jTextArea15 = new javax.swing.JTextArea();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        OTPGameLabel = new javax.swing.JLabel();
+        OTPEnterMessage = new javax.swing.JLabel();
         OTPMessage = new javax.swing.JTextField();
         OTPB1 = new javax.swing.JButton();
         OTPOut = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        OTPQ = new javax.swing.JLabel();
         OTPYes = new javax.swing.JButton();
         OTPNo = new javax.swing.JButton();
+        OTPPicture = new javax.swing.JLabel();
         SynchPanel = new javax.swing.JPanel();
         SSynchPanel = new javax.swing.JPanel();
         LinearFeedbackPanel = new javax.swing.JPanel();
@@ -366,7 +367,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(FSULOGO, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(274, Short.MAX_VALUE))
+                .addContainerGap(278, Short.MAX_VALUE))
         );
 
         MainPanel.add(WelcomePanel, "card2");
@@ -790,7 +791,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSAB1_3))
-                .addContainerGap(231, Short.MAX_VALUE))
+                .addContainerGap(235, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSAPanel, "card9");
@@ -880,7 +881,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(EGB1_2))
-                .addContainerGap(363, Short.MAX_VALUE))
+                .addContainerGap(367, Short.MAX_VALUE))
         );
 
         MainPanel.add(ElGamalPanel, "card10");
@@ -1031,7 +1032,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SHAB3))
-                .addContainerGap(226, Short.MAX_VALUE))
+                .addContainerGap(230, Short.MAX_VALUE))
         );
 
         MainPanel.add(SHAPanel, "card11");
@@ -1091,7 +1092,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(81, 81, 81))
         );
@@ -1140,7 +1141,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH1Image)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DH1Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
                 .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58))
         );
@@ -1188,7 +1189,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -1239,7 +1240,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -1285,7 +1286,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -1333,7 +1334,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH5Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH5Text, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(DH5_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(128, 128, 128))
         );
@@ -1406,7 +1407,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DHA1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DHB1))
-                .addContainerGap(173, Short.MAX_VALUE))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel6, "card12");
@@ -1640,7 +1641,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(CBCMAC_2Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(BreakingCBCBMAC_Title)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 618, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 622, Short.MAX_VALUE)
                 .addComponent(Back)
                 .addGap(22, 22, 22))
         );
@@ -1798,7 +1799,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(d_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(d))
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSA_Signature_1, "card20");
@@ -1935,7 +1936,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Check_signature)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(Back_RSA1)
                 .addContainerGap())
         );
@@ -2056,7 +2057,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(ChoiceC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(ChoiceD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addGroup(RSA_ValidateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_ValidateLayout.createSequentialGroup()
                         .addComponent(Verify_Submit)
@@ -2068,7 +2069,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSA_ValidateLayout.createSequentialGroup()
                     .addGap(109, 109, 109)
                     .addComponent(Story1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(500, Short.MAX_VALUE)))
+                    .addContainerGap(504, Short.MAX_VALUE)))
         );
 
         MainPanel.add(RSA_Validate, "card22");
@@ -2107,7 +2108,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Kerberos_K)
                 .addGap(18, 18, 18)
                 .addComponent(KerberosText, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(370, Short.MAX_VALUE))
+                .addContainerGap(374, Short.MAX_VALUE))
         );
 
         MainPanel.add(KerberosPanel, "card24");
@@ -2187,7 +2188,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(DES_B)
                         .addGap(11, 11, 11)))
                 .addComponent(DESD)
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
         MainPanel.add(DESPanel, "card25");
@@ -2317,26 +2318,30 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(WEPB1)
                         .addGap(7, 7, 7)
                         .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
 
         MainPanel.add(RCPanel, "card26");
 
         OTPPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel1.setText("One-Time Pad");
+        OTPLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        OTPLabel.setText("One-Time Pad");
+
+        OTPDescription.setBorder(null);
 
         jTextArea15.setColumns(20);
+        jTextArea15.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea15.setRows(5);
-        jScrollPane1.setViewportView(jTextArea15);
+        jTextArea15.setText("- The one-time pad is an encryption scheme, in which a one-time pre-shared\nkey is generated that is as long, or longer than the plaintext message being sent.\n- The pre-shared key is then xor'd, bit for bit, with the plaintext message\n- The one-time pad is said to be uncrackable, and is said to have *perfect\nsecrecy\n*Perfect Secrey: Given a ciphertext C, no information about the plaintext\ncan be leaked or gained. ");
+        OTPDescription.setViewportView(jTextArea15);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel2.setText("One-Time Pad Game");
+        OTPGameLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        OTPGameLabel.setText("One-Time Pad Game");
 
-        jLabel3.setText("Enter a Message");
+        OTPEnterMessage.setText("Enter a Message");
 
-        OTPMessage.setText("jTextField1");
+        OTPMessage.setText("Enter Message");
 
         OTPB1.setText("jButton1");
         OTPB1.addActionListener(new java.awt.event.ActionListener() {
@@ -2347,7 +2352,7 @@ public class Home extends javax.swing.JFrame {
 
         OTPOut.setText("One-Time Pad: ");
 
-        jLabel5.setText("Is this a one-time pad for the message entered?");
+        OTPQ.setText("Is this a one-time pad for the message entered?");
 
         OTPYes.setText("Yes");
         OTPYes.addActionListener(new java.awt.event.ActionListener() {
@@ -2363,58 +2368,67 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        OTPPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/otp.png"))); // NOI18N
+
         javax.swing.GroupLayout OTPPanelLayout = new javax.swing.GroupLayout(OTPPanel);
         OTPPanel.setLayout(OTPPanelLayout);
         OTPPanelLayout.setHorizontalGroup(
             OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OTPPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addContainerGap(332, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(118, Short.MAX_VALUE)
                 .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(OTPOut)
-                    .addComponent(jLabel2)
-                    .addGroup(OTPPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(30, 30, 30)
-                        .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35)
-                        .addComponent(OTPB1))
-                    .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(OTPPanelLayout.createSequentialGroup()
-                            .addComponent(OTPYes)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(OTPNo))
-                        .addComponent(jLabel5)))
-                .addGap(268, 268, 268))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                        .addComponent(OTPLabel)
+                        .addGap(314, 314, 314))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(OTPOut)
+                            .addComponent(OTPGameLabel)
+                            .addGroup(OTPPanelLayout.createSequentialGroup()
+                                .addComponent(OTPEnterMessage)
+                                .addGap(18, 18, 18)
+                                .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(31, 31, 31)
+                                .addComponent(OTPB1))
+                            .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, OTPPanelLayout.createSequentialGroup()
+                                    .addComponent(OTPYes)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(OTPNo))
+                                .addComponent(OTPQ, javax.swing.GroupLayout.Alignment.LEADING)))
+                        .addGap(285, 285, 285))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                        .addComponent(OTPPicture, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(61, 61, 61))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                        .addComponent(OTPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(48, 48, 48))))
         );
         OTPPanelLayout.setVerticalGroup(
             OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OTPPanelLayout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(jLabel1)
+                .addGap(31, 31, 31)
+                .addComponent(OTPLabel)
+                .addGap(4, 4, 4)
+                .addComponent(OTPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(OTPGameLabel)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addGap(37, 37, 37)
                 .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(OTPEnterMessage)
                     .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(OTPB1))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(OTPOut)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(OTPQ)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(OTPYes)
                     .addComponent(OTPNo))
-                .addContainerGap(292, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(OTPPicture, javax.swing.GroupLayout.PREFERRED_SIZE, 300, Short.MAX_VALUE)
+                .addGap(24, 24, 24))
         );
 
         MainPanel.add(OTPPanel, "card27");
@@ -2429,7 +2443,7 @@ public class Home extends javax.swing.JFrame {
         );
         SynchPanelLayout.setVerticalGroup(
             SynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(SynchPanel, "card28");
@@ -2444,7 +2458,7 @@ public class Home extends javax.swing.JFrame {
         );
         SSynchPanelLayout.setVerticalGroup(
             SSynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(SSynchPanel, "card29");
@@ -2459,7 +2473,7 @@ public class Home extends javax.swing.JFrame {
         );
         LinearFeedbackPanelLayout.setVerticalGroup(
             LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(LinearFeedbackPanel, "card30");
@@ -2474,7 +2488,7 @@ public class Home extends javax.swing.JFrame {
         );
         EntropyPanelLayout.setVerticalGroup(
             EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(EntropyPanel, "card31");
@@ -2489,7 +2503,7 @@ public class Home extends javax.swing.JFrame {
         );
         CBCPanelLayout.setVerticalGroup(
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(CBCPanel, "card32");
@@ -2504,7 +2518,7 @@ public class Home extends javax.swing.JFrame {
         );
         CTRPanelLayout.setVerticalGroup(
             CTRPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(CTRPanel, "card33");
@@ -2519,7 +2533,7 @@ public class Home extends javax.swing.JFrame {
         );
         PAPPanelLayout.setVerticalGroup(
             PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(PAPPanel, "card34");
@@ -2534,7 +2548,7 @@ public class Home extends javax.swing.JFrame {
         );
         CHAPPanelLayout.setVerticalGroup(
             CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(CHAPPanel, "card35");
@@ -2549,7 +2563,7 @@ public class Home extends javax.swing.JFrame {
         );
         MD5PanelLayout.setVerticalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(MD5Panel, "card36");
@@ -2564,7 +2578,7 @@ public class Home extends javax.swing.JFrame {
         );
         BlowfishPanelLayout.setVerticalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(BlowfishPanel, "card37");
@@ -2579,7 +2593,7 @@ public class Home extends javax.swing.JFrame {
         );
         AESPanelLayout.setVerticalGroup(
             AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 733, Short.MAX_VALUE)
         );
 
         MainPanel.add(AESPanel, "card38");
@@ -2617,7 +2631,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addComponent(WEPDescription_Label)
                 .addGap(18, 18, 18)
-                .addComponent(WEPDescription, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
+                .addComponent(WEPDescription, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -3619,14 +3633,16 @@ public class Home extends javax.swing.JFrame {
                nextbin = r2.nextInt(2);
                otp1 += Integer.toString(nextbin);
            }
-           int index;
-           String newst = otp1;
+           int ind1 = 0;
+           Random r3 = new Random();
+           char[] newst = otp1.toCharArray();
            for(int x = 0; x < 10; ++x){
-                index = r2.nextInt(hold1);
-                newst = newst.substring(0,index) + '1' + newst.substring(otp1.length()-1);
+                ind1 = r3.nextInt(hold1-8);
+                newst[ind1] = '1';
            }
            GlobalVariable.OTPflag = 0;
-           return newst;
+           String retval = new String(newst);
+           return retval;
            
        }
     }
@@ -3829,10 +3845,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Message;
     private javax.swing.JLabel Message1;
     private javax.swing.JButton OTPB1;
+    private javax.swing.JScrollPane OTPDescription;
+    private javax.swing.JLabel OTPEnterMessage;
+    private javax.swing.JLabel OTPGameLabel;
+    private javax.swing.JLabel OTPLabel;
     private javax.swing.JTextField OTPMessage;
     private javax.swing.JButton OTPNo;
     private javax.swing.JLabel OTPOut;
     private javax.swing.JPanel OTPPanel;
+    private javax.swing.JLabel OTPPicture;
+    private javax.swing.JLabel OTPQ;
     private javax.swing.JButton OTPYes;
     private javax.swing.JMenuItem OneTimePad;
     private javax.swing.JMenuItem PAP;
@@ -3943,14 +3965,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField d_input;
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
