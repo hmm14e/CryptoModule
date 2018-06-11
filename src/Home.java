@@ -3,6 +3,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Objects;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -17,6 +18,7 @@ import javax.swing.JOptionPane;
  *
  * @author hannahmclaughlin
  */
+
 public class Home extends javax.swing.JFrame {
 
     /**
@@ -24,6 +26,10 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
+    }
+    
+    public static class GlobalVariable{
+        public static int OTPflag;
     }
 
     /**
@@ -257,6 +263,17 @@ public class Home extends javax.swing.JFrame {
         WEPA2 = new javax.swing.JTextField();
         WEPB1 = new javax.swing.JButton();
         OTPPanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea15 = new javax.swing.JTextArea();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        OTPMessage = new javax.swing.JTextField();
+        OTPB1 = new javax.swing.JButton();
+        OTPOut = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        OTPYes = new javax.swing.JButton();
+        OTPNo = new javax.swing.JButton();
         SynchPanel = new javax.swing.JPanel();
         SSynchPanel = new javax.swing.JPanel();
         LinearFeedbackPanel = new javax.swing.JPanel();
@@ -1074,7 +1091,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(81, 81, 81))
         );
@@ -1171,7 +1188,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -1222,7 +1239,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -1268,7 +1285,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -2300,22 +2317,104 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(WEPB1)
                         .addGap(7, 7, 7)
                         .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(122, Short.MAX_VALUE))
+                .addContainerGap(139, Short.MAX_VALUE))
         );
 
         MainPanel.add(RCPanel, "card26");
 
         OTPPanel.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel1.setText("One-Time Pad");
+
+        jTextArea15.setColumns(20);
+        jTextArea15.setRows(5);
+        jScrollPane1.setViewportView(jTextArea15);
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel2.setText("One-Time Pad Game");
+
+        jLabel3.setText("Enter a Message");
+
+        OTPMessage.setText("jTextField1");
+
+        OTPB1.setText("jButton1");
+        OTPB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPB1ActionPerformed(evt);
+            }
+        });
+
+        OTPOut.setText("One-Time Pad: ");
+
+        jLabel5.setText("Is this a one-time pad for the message entered?");
+
+        OTPYes.setText("Yes");
+        OTPYes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPYesActionPerformed(evt);
+            }
+        });
+
+        OTPNo.setText("No");
+        OTPNo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPNoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout OTPPanelLayout = new javax.swing.GroupLayout(OTPPanel);
         OTPPanel.setLayout(OTPPanelLayout);
         OTPPanelLayout.setHorizontalGroup(
             OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 885, Short.MAX_VALUE)
+            .addGroup(OTPPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addContainerGap(332, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(OTPOut)
+                    .addComponent(jLabel2)
+                    .addGroup(OTPPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(30, 30, 30)
+                        .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(OTPB1))
+                    .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(OTPPanelLayout.createSequentialGroup()
+                            .addComponent(OTPYes)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(OTPNo))
+                        .addComponent(jLabel5)))
+                .addGap(268, 268, 268))
         );
         OTPPanelLayout.setVerticalGroup(
             OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGroup(OTPPanelLayout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(37, 37, 37)
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OTPB1))
+                .addGap(18, 18, 18)
+                .addComponent(OTPOut)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel5)
+                .addGap(18, 18, 18)
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(OTPYes)
+                    .addComponent(OTPNo))
+                .addContainerGap(292, Short.MAX_VALUE))
         );
 
         MainPanel.add(OTPPanel, "card27");
@@ -2808,7 +2907,7 @@ public class Home extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 729, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -3489,6 +3588,71 @@ public class Home extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "One or both answers are incorrect. Try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
             }
     }//GEN-LAST:event_WEPB1ActionPerformed
+    String OTPGame(String message){
+        
+       Random r1 = new Random();
+       int rn = r1.nextInt(2) + 1;
+       int mlen = message.length();
+       
+       if(rn == 1){
+           int hold = mlen * 8;
+           Random r2 = new Random();
+           String otp = "";
+           int nextbin;
+           
+           for(int x = 0; x < hold; ++x){
+               nextbin = r2.nextInt(2);
+               otp += Integer.toString(nextbin);
+           }
+           
+           GlobalVariable.OTPflag = 1;
+           return otp;
+       }
+       
+       else{
+           int hold1 = mlen * 8;
+           Random r2 = new Random();
+           String otp1 = "";
+           int nextbin;
+           
+           for(int x = 0; x < r2.nextInt(8+1)+hold1-8; ++x){
+               nextbin = r2.nextInt(2);
+               otp1 += Integer.toString(nextbin);
+           }
+           int index;
+           String newst = otp1;
+           for(int x = 0; x < 10; ++x){
+                index = r2.nextInt(hold1);
+                newst = newst.substring(0,index) + '1' + newst.substring(otp1.length()-1);
+           }
+           GlobalVariable.OTPflag = 0;
+           return newst;
+           
+       }
+    }
+    private void OTPYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPYesActionPerformed
+        int hold = GlobalVariable.OTPflag;
+        if(hold == 1){
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.ERROR_MESSAGE);               
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "INCORRECT", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_OTPYesActionPerformed
+
+    private void OTPB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPB1ActionPerformed
+        OTPOut.setText(OTPGame(OTPMessage.getText()));
+    }//GEN-LAST:event_OTPB1ActionPerformed
+
+    private void OTPNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPNoActionPerformed
+        int hold = GlobalVariable.OTPflag;
+        if(hold == 0){
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.ERROR_MESSAGE);               
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "INCORRECT", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_OTPNoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3664,7 +3828,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel MainPanel;
     private javax.swing.JLabel Message;
     private javax.swing.JLabel Message1;
+    private javax.swing.JButton OTPB1;
+    private javax.swing.JTextField OTPMessage;
+    private javax.swing.JButton OTPNo;
+    private javax.swing.JLabel OTPOut;
     private javax.swing.JPanel OTPPanel;
+    private javax.swing.JButton OTPYes;
     private javax.swing.JMenuItem OneTimePad;
     private javax.swing.JMenuItem PAP;
     private javax.swing.JPanel PAPPanel;
@@ -3774,15 +3943,21 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField d_input;
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea13;
     private javax.swing.JTextArea jTextArea14;
+    private javax.swing.JTextArea jTextArea15;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
