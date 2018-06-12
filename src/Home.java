@@ -2361,6 +2361,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea15.setRows(5);
         jTextArea15.setText("- The one-time pad is an encryption scheme, in which a one-time pre-shared\nkey is generated that is as long, or longer than the plaintext message being sent.\n- The pre-shared key is then xor'd, bit for bit, with the plaintext message\n- The one-time pad is said to be uncrackable, and is said to have *perfect\nsecrecy\n*Perfect Secrey: Given a ciphertext C, no information about the plaintext\ncan be leaked or gained. ");
         OTPDescription.setViewportView(jTextArea15);
+        jTextArea15.setEditable(false);
 
         OTPGameLabel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         OTPGameLabel.setText("One-Time Pad Game");

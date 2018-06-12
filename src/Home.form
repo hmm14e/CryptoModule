@@ -3842,6 +3842,9 @@
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="- The one-time pad is an encryption scheme, in which a one-time pre-shared&#xa;key is generated that is as long, or longer than the plaintext message being sent.&#xa;- The pre-shared key is then xor&apos;d, bit for bit, with the plaintext message&#xa;- The one-time pad is said to be uncrackable, and is said to have *perfect&#xa;secrecy&#xa;*Perfect Secrey: Given a ciphertext C, no information about the plaintext&#xa;can be leaked or gained. "/>
                   </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="jTextArea15.setEditable(false);"/>
+                  </AuxValues>
                 </Component>
               </SubComponents>
             </Container>
