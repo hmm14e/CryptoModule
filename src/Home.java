@@ -50,6 +50,7 @@ public class Home extends javax.swing.JFrame {
         buttonGroup6 = new javax.swing.ButtonGroup();
         DES_Buttons = new javax.swing.ButtonGroup();
         jPasswordField1 = new javax.swing.JPasswordField();
+        PAPQB1 = new javax.swing.JButton();
         MainPanel = new javax.swing.JPanel();
         WelcomePanel = new javax.swing.JPanel();
         Welcome = new javax.swing.JLabel();
@@ -158,7 +159,12 @@ public class Home extends javax.swing.JFrame {
         CTRPanel = new javax.swing.JPanel();
         CTRTitle = new javax.swing.JLabel();
         CTRImage = new javax.swing.JLabel();
-        PAPPanel = new javax.swing.JPanel();
+        PAPPanelWelcome = new javax.swing.JPanel();
+        PAPIntro = new javax.swing.JLabel();
+        ThemePicture1 = new javax.swing.JLabel();
+        PAPDes = new javax.swing.JButton();
+        PAPQB = new javax.swing.JButton();
+        PAPQPanel = new javax.swing.JPanel();
         PAPLabel = new javax.swing.JLabel();
         PAPPicture = new javax.swing.JLabel();
         PAPDescription = new javax.swing.JLabel();
@@ -166,6 +172,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea16 = new javax.swing.JTextArea();
         PAPA1 = new javax.swing.JTextField();
         PAPB = new javax.swing.JButton();
+        PAPQB2 = new javax.swing.JButton();
         CHAPPanel = new javax.swing.JPanel();
         CHAPLabel = new javax.swing.JLabel();
         CHAPPicture = new javax.swing.JLabel();
@@ -377,6 +384,15 @@ public class Home extends javax.swing.JFrame {
         CBCMAC3.add(jRadioButton3);
 
         jPasswordField1.setText("jPasswordField1");
+
+        PAPQB1.setBackground(new java.awt.Color(77, 132, 155));
+        PAPQB1.setForeground(new java.awt.Color(255, 255, 255));
+        PAPQB1.setText("Questions");
+        PAPQB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PAPQB1ActionPerformed(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(885, 750));
@@ -705,10 +721,10 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FeistelPanelLayout.createSequentialGroup()
                         .addGap(163, 163, 163)
                         .addComponent(Feistel_Intro)))
-                .addGap(18, 18, 18)
-                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Feistel_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Feistel_Button)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         FeistelPanelLayout.setVerticalGroup(
@@ -836,7 +852,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel9)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 231, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 201, Short.MAX_VALUE)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel11))
@@ -912,7 +928,7 @@ public class Home extends javax.swing.JFrame {
         RCPanelLayout.setHorizontalGroup(
             RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RCPanelLayout.createSequentialGroup()
-                .addGap(244, 270, Short.MAX_VALUE)
+                .addGap(244, 265, Short.MAX_VALUE)
                 .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DescriptionWEP_Label))
@@ -1030,7 +1046,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(DESPanelLayout.createSequentialGroup()
                         .addGap(225, 225, 225)
                         .addComponent(DESLabel)))
-                .addContainerGap(185, Short.MAX_VALUE))
+                .addContainerGap(212, Short.MAX_VALUE))
         );
         DESPanelLayout.setVerticalGroup(
             DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1113,7 +1129,7 @@ public class Home extends javax.swing.JFrame {
         OTPPanelLayout.setHorizontalGroup(
             OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OTPPanelLayout.createSequentialGroup()
-                .addContainerGap(118, Short.MAX_VALUE)
+                .addContainerGap(145, Short.MAX_VALUE)
                 .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
                         .addComponent(OTPLabel)
@@ -1181,7 +1197,7 @@ public class Home extends javax.swing.JFrame {
         SynchPanel.setLayout(SynchPanelLayout);
         SynchPanelLayout.setHorizontalGroup(
             SynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 885, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         SynchPanelLayout.setVerticalGroup(
             SynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1196,7 +1212,7 @@ public class Home extends javax.swing.JFrame {
         SSynchPanel.setLayout(SSynchPanelLayout);
         SSynchPanelLayout.setHorizontalGroup(
             SSynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 885, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         SSynchPanelLayout.setVerticalGroup(
             SSynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1211,7 +1227,7 @@ public class Home extends javax.swing.JFrame {
         LinearFeedbackPanel.setLayout(LinearFeedbackPanelLayout);
         LinearFeedbackPanelLayout.setHorizontalGroup(
             LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 885, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         LinearFeedbackPanelLayout.setVerticalGroup(
             LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1226,7 +1242,7 @@ public class Home extends javax.swing.JFrame {
         EntropyPanel.setLayout(EntropyPanelLayout);
         EntropyPanelLayout.setHorizontalGroup(
             EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 885, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         EntropyPanelLayout.setVerticalGroup(
             EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1281,7 +1297,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(154, Short.MAX_VALUE))
+                .addContainerGap(181, Short.MAX_VALUE))
         );
         ECBPanelLayout.setVerticalGroup(
             ECBPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1326,7 +1342,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
                         .addGap(127, 127, 127)
                         .addComponent(Correct1)))
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addContainerGap(156, Short.MAX_VALUE))
         );
         Correct_ECBLayout.setVerticalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1372,7 +1388,7 @@ public class Home extends javax.swing.JFrame {
         CBCPanelLayout.setHorizontalGroup(
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCPanelLayout.createSequentialGroup()
-                .addContainerGap(409, Short.MAX_VALUE)
+                .addContainerGap(425, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(407, 407, 407))
             .addGroup(CBCPanelLayout.createSequentialGroup()
@@ -1419,7 +1435,7 @@ public class Home extends javax.swing.JFrame {
         CBCQPanel.setLayout(CBCQPanelLayout);
         CBCQPanelLayout.setHorizontalGroup(
             CBCQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 885, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         CBCQPanelLayout.setVerticalGroup(
             CBCQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1446,7 +1462,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(CTRTitle)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRPanelLayout.createSequentialGroup()
-                .addContainerGap(189, Short.MAX_VALUE)
+                .addContainerGap(216, Short.MAX_VALUE)
                 .addComponent(CTRImage)
                 .addGap(146, 146, 146))
         );
@@ -1462,7 +1478,67 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CTRPanel, "card33");
 
-        PAPPanel.setBackground(new java.awt.Color(255, 255, 255));
+        PAPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        PAPIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        PAPIntro.setForeground(new java.awt.Color(48, 87, 120));
+        PAPIntro.setText("Password Authentication Protocol (PAP)");
+
+        ThemePicture1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        PAPDes.setBackground(new java.awt.Color(77, 132, 155));
+        PAPDes.setForeground(new java.awt.Color(255, 255, 255));
+        PAPDes.setText("Description");
+        PAPDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PAPDesActionPerformed(evt);
+            }
+        });
+
+        PAPQB.setBackground(new java.awt.Color(77, 132, 155));
+        PAPQB.setForeground(new java.awt.Color(255, 255, 255));
+        PAPQB.setText("Questions");
+        PAPQB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PAPQBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PAPPanelWelcomeLayout = new javax.swing.GroupLayout(PAPPanelWelcome);
+        PAPPanelWelcome.setLayout(PAPPanelWelcomeLayout);
+        PAPPanelWelcomeLayout.setHorizontalGroup(
+            PAPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PAPPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture1)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(PAPPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(PAPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PAPPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(PAPDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(PAPQB))
+                    .addGroup(PAPPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(PAPIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        PAPPanelWelcomeLayout.setVerticalGroup(
+            PAPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PAPPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(215, Short.MAX_VALUE)
+                .addComponent(PAPIntro)
+                .addGap(36, 36, 36)
+                .addGroup(PAPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PAPDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PAPQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture1))
+        );
+
+        MainPanel.add(PAPPanelWelcome, "card43");
+
+        PAPQPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         PAPLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         PAPLabel.setText("Password Authentication Protocol (PAP)");
@@ -1487,38 +1563,51 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout PAPPanelLayout = new javax.swing.GroupLayout(PAPPanel);
-        PAPPanel.setLayout(PAPPanelLayout);
-        PAPPanelLayout.setHorizontalGroup(
-            PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PAPPanelLayout.createSequentialGroup()
-                .addGroup(PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PAPPanelLayout.createSequentialGroup()
+        PAPQB2.setBackground(new java.awt.Color(77, 132, 155));
+        PAPQB2.setForeground(new java.awt.Color(255, 255, 255));
+        PAPQB2.setText("Return");
+        PAPQB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PAPQB2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PAPQPanelLayout = new javax.swing.GroupLayout(PAPQPanel);
+        PAPQPanel.setLayout(PAPQPanelLayout);
+        PAPQPanelLayout.setHorizontalGroup(
+            PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PAPQPanelLayout.createSequentialGroup()
+                .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PAPQPanelLayout.createSequentialGroup()
                         .addGap(374, 374, 374)
                         .addComponent(PAPDescription))
-                    .addGroup(PAPPanelLayout.createSequentialGroup()
+                    .addGroup(PAPQPanelLayout.createSequentialGroup()
                         .addGap(186, 186, 186)
-                        .addGroup(PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PAPPanelLayout.createSequentialGroup()
+                        .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PAPQPanelLayout.createSequentialGroup()
                                 .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 464, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(PAPPicture))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPPanelLayout.createSequentialGroup()
-                .addContainerGap(120, Short.MAX_VALUE)
-                .addGroup(PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PAPPanelLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
+                .addContainerGap(147, Short.MAX_VALUE)
+                .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PAPQPanelLayout.createSequentialGroup()
                         .addComponent(PAPLabel)
                         .addGap(132, 132, 132))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPPanelLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
                         .addGap(482, 482, 482)
                         .addComponent(PAPB)
                         .addGap(63, 63, 63))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(PAPQB2)
+                .addGap(84, 84, 84))
         );
-        PAPPanelLayout.setVerticalGroup(
-            PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PAPPanelLayout.createSequentialGroup()
+        PAPQPanelLayout.setVerticalGroup(
+            PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PAPQPanelLayout.createSequentialGroup()
                 .addGap(77, 77, 77)
                 .addComponent(PAPLabel)
                 .addGap(93, 93, 93)
@@ -1526,15 +1615,17 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PAPDescription)
                 .addGap(56, 56, 56)
-                .addGroup(PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addContainerGap(232, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
+                .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(118, 118, 118))
         );
 
-        MainPanel.add(PAPPanel, "card34");
+        MainPanel.add(PAPQPanel, "card34");
 
         CHAPPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1556,7 +1647,7 @@ public class Home extends javax.swing.JFrame {
         CHAPPanelLayout.setHorizontalGroup(
             CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CHAPPanelLayout.createSequentialGroup()
-                .addContainerGap(85, Short.MAX_VALUE)
+                .addContainerGap(112, Short.MAX_VALUE)
                 .addComponent(CHAPLabel)
                 .addGap(76, 76, 76))
             .addGroup(CHAPPanelLayout.createSequentialGroup()
@@ -1603,7 +1694,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Kerberos_K)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
-                .addContainerGap(71, Short.MAX_VALUE)
+                .addContainerGap(98, Short.MAX_VALUE)
                 .addComponent(KerberosText, javax.swing.GroupLayout.PREFERRED_SIZE, 754, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(60, 60, 60))
         );
@@ -1751,7 +1842,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(110, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1841,7 +1932,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCMAC_2Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(295, Short.MAX_VALUE))
+                .addContainerGap(304, Short.MAX_VALUE))
         );
         CBCMAC_2Layout.setVerticalGroup(
             CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1962,7 +2053,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(SHAB3)))))
-                .addContainerGap(243, Short.MAX_VALUE))
+                .addContainerGap(266, Short.MAX_VALUE))
         );
         SHAPanelLayout.setVerticalGroup(
             SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2012,7 +2103,7 @@ public class Home extends javax.swing.JFrame {
         MD5Panel.setLayout(MD5PanelLayout);
         MD5PanelLayout.setHorizontalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 885, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         MD5PanelLayout.setVerticalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2263,7 +2354,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
-                .addContainerGap(133, Short.MAX_VALUE)
+                .addContainerGap(99, Short.MAX_VALUE)
                 .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
                         .addComponent(SigningAMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2409,12 +2500,12 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Back_RSA2)
                         .addGap(273, 273, 273)
                         .addComponent(Verify_Submit)))
-                .addContainerGap(161, Short.MAX_VALUE))
+                .addContainerGap(188, Short.MAX_VALUE))
             .addGroup(RSA_ValidateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(RSA_ValidateLayout.createSequentialGroup()
                     .addGap(63, 63, 63)
                     .addComponent(Story1, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(67, Short.MAX_VALUE)))
+                    .addContainerGap(94, Short.MAX_VALUE)))
         );
         RSA_ValidateLayout.setVerticalGroup(
             RSA_ValidateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2508,7 +2599,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(RSAB1_3)))))
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addContainerGap(112, Short.MAX_VALUE))
         );
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2604,7 +2695,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(EGB1_2)))))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(95, Short.MAX_VALUE))
         );
         ElGamalPanelLayout.setVerticalGroup(
             ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2670,7 +2761,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(DHDiagram1, javax.swing.GroupLayout.DEFAULT_SIZE, 541, Short.MAX_VALUE)
                     .addComponent(DHIntro)
                     .addComponent(DHText))
-                .addGap(0, 179, Short.MAX_VALUE))
+                .addGap(0, 206, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2685,7 +2776,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(81, 81, 81))
         );
@@ -2717,7 +2808,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel1Layout.setHorizontalGroup(
             DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel1Layout.createSequentialGroup()
-                .addContainerGap(709, Short.MAX_VALUE)
+                .addContainerGap(736, Short.MAX_VALUE)
                 .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(79, 79, 79))
             .addGroup(DHPanel1Layout.createSequentialGroup()
@@ -2773,7 +2864,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(DHImage2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(DH2Text))
-                .addContainerGap(197, Short.MAX_VALUE))
+                .addContainerGap(224, Short.MAX_VALUE))
         );
         DHPanel2Layout.setVerticalGroup(
             DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2782,7 +2873,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -2813,7 +2904,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel3Layout.setHorizontalGroup(
             DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
-                .addContainerGap(162, Short.MAX_VALUE)
+                .addContainerGap(189, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2833,7 +2924,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -2870,7 +2961,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(DH4Image, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(DH4Text))
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(226, Short.MAX_VALUE))
         );
         DHPanel4Layout.setVerticalGroup(
             DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2879,7 +2970,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -2918,7 +3009,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(DH5Image, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(DH5Text))
-                .addContainerGap(170, Short.MAX_VALUE))
+                .addContainerGap(197, Short.MAX_VALUE))
         );
         DHPanel5Layout.setVerticalGroup(
             DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2983,7 +3074,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(DHA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(49, 49, 49)
                                 .addComponent(DHB1)))))
-                .addContainerGap(170, Short.MAX_VALUE))
+                .addContainerGap(197, Short.MAX_VALUE))
         );
         DHPanel6Layout.setVerticalGroup(
             DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3011,7 +3102,7 @@ public class Home extends javax.swing.JFrame {
         BlowfishPanel.setLayout(BlowfishPanelLayout);
         BlowfishPanelLayout.setHorizontalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 885, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         BlowfishPanelLayout.setVerticalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3032,7 +3123,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(AESPanelLayout.createSequentialGroup()
                 .addGap(416, 416, 416)
                 .addComponent(AESTitle)
-                .addContainerGap(407, Short.MAX_VALUE))
+                .addContainerGap(434, Short.MAX_VALUE))
         );
         AESPanelLayout.setVerticalGroup(
             AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3082,7 +3173,7 @@ public class Home extends javax.swing.JFrame {
                             .addGroup(WEPPanelLayout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jButton2)))
-                        .addGap(0, 256, Short.MAX_VALUE)))
+                        .addGap(0, 287, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         WEPPanelLayout.setVerticalGroup(
@@ -3379,7 +3470,7 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 920, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 912, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3966,7 +4057,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
 
-            MainPanel.add(PAPPanel);
+            MainPanel.add(PAPPanelWelcome);
             MainPanel.repaint();
             MainPanel.revalidate();        // TODO add your handling code here:
     }//GEN-LAST:event_PAPActionPerformed
@@ -4205,6 +4296,34 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void PAPDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPDesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PAPDesActionPerformed
+
+    private void PAPQBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPQBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(PAPQPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_PAPQBActionPerformed
+
+    private void PAPQB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPQB1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PAPQB1ActionPerformed
+
+    private void PAPQB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPQB2ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(PAPPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_PAPQB2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4412,10 +4531,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem PAP;
     private javax.swing.JTextField PAPA1;
     private javax.swing.JButton PAPB;
+    private javax.swing.JButton PAPDes;
     private javax.swing.JLabel PAPDescription;
+    private javax.swing.JLabel PAPIntro;
     private javax.swing.JLabel PAPLabel;
-    private javax.swing.JPanel PAPPanel;
+    private javax.swing.JPanel PAPPanelWelcome;
     private javax.swing.JLabel PAPPicture;
+    private javax.swing.JButton PAPQB;
+    private javax.swing.JButton PAPQB1;
+    private javax.swing.JButton PAPQB2;
+    private javax.swing.JPanel PAPQPanel;
     private javax.swing.JScrollPane PAPQuestions;
     private javax.swing.JMenu PrivateKey;
     private javax.swing.JLabel Project;
@@ -4494,6 +4619,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JRadioButton T5;
     private javax.swing.JLabel Theme;
     private javax.swing.JLabel ThemePicture;
+    private javax.swing.JLabel ThemePicture1;
     private javax.swing.JMenuItem TripDES;
     private javax.swing.JLabel True;
     private javax.swing.JLabel ValidateMessage;
