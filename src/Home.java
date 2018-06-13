@@ -82,6 +82,19 @@ public class Home extends javax.swing.JFrame {
         Feistel_Button = new javax.swing.JButton();
         Feistel_Intro = new javax.swing.JLabel();
         FeistelImage = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        FeistelPanelWelcome = new javax.swing.JPanel();
+        FeistelIntro = new javax.swing.JLabel();
+        ThemePicture = new javax.swing.JLabel();
+        FesitelDescipB = new javax.swing.JButton();
+        FeistelQB = new javax.swing.JButton();
+        FeistelDescripPanel = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea18 = new javax.swing.JTextArea();
+        jLabel11 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         RCPanel = new javax.swing.JPanel();
         RCFamily_Label = new javax.swing.JLabel();
         RCFamilyDescription = new javax.swing.JScrollPane();
@@ -490,7 +503,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Submission, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Submit))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
                 .addComponent(theme))
         );
 
@@ -550,7 +563,7 @@ public class Home extends javax.swing.JFrame {
         AtbashPanelLayout.setVerticalGroup(
             AtbashPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AtbashPanelLayout.createSequentialGroup()
-                .addContainerGap(99, Short.MAX_VALUE)
+                .addContainerGap(97, Short.MAX_VALUE)
                 .addComponent(AtbashTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Warning1)
@@ -633,7 +646,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Submission2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Submit2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addComponent(theme2))
         );
 
@@ -648,7 +661,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        Feistel_Button.setBackground(new java.awt.Color(218, 233, 216));
+        Feistel_Button.setBackground(new java.awt.Color(77, 132, 155));
+        Feistel_Button.setForeground(new java.awt.Color(255, 255, 255));
         Feistel_Button.setText("Enter");
         Feistel_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -662,42 +676,173 @@ public class Home extends javax.swing.JFrame {
 
         FeistelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Feistel-Update.png"))); // NOI18N
 
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        jButton4.setBackground(new java.awt.Color(77, 132, 155));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Return");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout FeistelPanelLayout = new javax.swing.GroupLayout(FeistelPanel);
         FeistelPanel.setLayout(FeistelPanelLayout);
         FeistelPanelLayout.setHorizontalGroup(
             FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FeistelPanelLayout.createSequentialGroup()
-                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(257, 257, 257)
+                .addContainerGap()
+                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(FeistelPanelLayout.createSequentialGroup()
+                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FeistelPanelLayout.createSequentialGroup()
+                        .addGap(249, 249, 249)
                         .addComponent(FeistelImage)
-                        .addGap(77, 77, 77)
-                        .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Feistel_Button))
-                    .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(136, 136, 136)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FeistelPanelLayout.createSequentialGroup()
+                        .addGap(163, 163, 163)
                         .addComponent(Feistel_Intro)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Feistel_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         FeistelPanelLayout.setVerticalGroup(
             FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FeistelPanelLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addGap(34, 34, 34)
                 .addComponent(Feistel_Intro)
                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                        .addComponent(FeistelImage, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(239, 239, 239)
+                        .addGap(234, 234, 234)
                         .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addComponent(FeistelImage)))
-                .addContainerGap(134, Short.MAX_VALUE))
+                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34)))
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         MainPanel.add(FeistelPanel, "card8");
+
+        FeistelPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        FeistelIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        FeistelIntro.setForeground(new java.awt.Color(48, 87, 120));
+        FeistelIntro.setText("Feistel Structure");
+
+        ThemePicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        FesitelDescipB.setBackground(new java.awt.Color(77, 132, 155));
+        FesitelDescipB.setForeground(new java.awt.Color(255, 255, 255));
+        FesitelDescipB.setText("Description");
+        FesitelDescipB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FesitelDescipBActionPerformed(evt);
+            }
+        });
+
+        FeistelQB.setBackground(new java.awt.Color(77, 132, 155));
+        FeistelQB.setForeground(new java.awt.Color(255, 255, 255));
+        FeistelQB.setText("Questions");
+        FeistelQB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeistelQBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout FeistelPanelWelcomeLayout = new javax.swing.GroupLayout(FeistelPanelWelcome);
+        FeistelPanelWelcome.setLayout(FeistelPanelWelcomeLayout);
+        FeistelPanelWelcomeLayout.setHorizontalGroup(
+            FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
+                .addGap(293, 293, 293)
+                .addGroup(FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
+                        .addComponent(FesitelDescipB)
+                        .addGap(92, 92, 92)
+                        .addComponent(FeistelQB))
+                    .addComponent(FeistelIntro))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        FeistelPanelWelcomeLayout.setVerticalGroup(
+            FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(192, Short.MAX_VALUE)
+                .addComponent(FeistelIntro)
+                .addGap(51, 51, 51)
+                .addGroup(FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FesitelDescipB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FeistelQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture))
+        );
+
+        MainPanel.add(FeistelPanelWelcome, "card41");
+
+        FeistelDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel9.setText("Feistel");
+
+        jTextArea18.setColumns(20);
+        jTextArea18.setRows(5);
+        jTextArea18.setText("- SHORT DESCRIPTION ON FEISTEL! HERE!");
+        jScrollPane1.setViewportView(jTextArea18);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        jButton3.setBackground(new java.awt.Color(77, 132, 155));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("Return");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout FeistelDescripPanelLayout = new javax.swing.GroupLayout(FeistelDescripPanel);
+        FeistelDescripPanel.setLayout(FeistelDescripPanelLayout);
+        FeistelDescripPanelLayout.setHorizontalGroup(
+            FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                .addGap(374, 374, 374)
+                .addComponent(jLabel9))
+            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 668, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel11)
+            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                .addGap(394, 394, 394)
+                .addComponent(jButton3))
+        );
+        FeistelDescripPanelLayout.setVerticalGroup(
+            FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(jLabel9)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 231, Short.MAX_VALUE)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel11))
+        );
+
+        MainPanel.add(FeistelDescripPanel, "card42");
 
         RCPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -767,7 +912,7 @@ public class Home extends javax.swing.JFrame {
         RCPanelLayout.setHorizontalGroup(
             RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RCPanelLayout.createSequentialGroup()
-                .addGap(244, 295, Short.MAX_VALUE)
+                .addGap(244, 270, Short.MAX_VALUE)
                 .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DescriptionWEP_Label))
@@ -827,7 +972,7 @@ public class Home extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
 
         MainPanel.add(RCPanel, "card26");
@@ -885,7 +1030,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(DESPanelLayout.createSequentialGroup()
                         .addGap(225, 225, 225)
                         .addComponent(DESLabel)))
-                .addContainerGap(242, Short.MAX_VALUE))
+                .addContainerGap(185, Short.MAX_VALUE))
         );
         DESPanelLayout.setVerticalGroup(
             DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -906,7 +1051,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DESC)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DESD)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
 
         MainPanel.add(DESPanel, "card25");
@@ -968,7 +1113,7 @@ public class Home extends javax.swing.JFrame {
         OTPPanelLayout.setHorizontalGroup(
             OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OTPPanelLayout.createSequentialGroup()
-                .addContainerGap(175, Short.MAX_VALUE)
+                .addContainerGap(118, Short.MAX_VALUE)
                 .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
                         .addComponent(OTPLabel)
@@ -1036,11 +1181,11 @@ public class Home extends javax.swing.JFrame {
         SynchPanel.setLayout(SynchPanelLayout);
         SynchPanelLayout.setHorizontalGroup(
             SynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 942, Short.MAX_VALUE)
+            .addGap(0, 885, Short.MAX_VALUE)
         );
         SynchPanelLayout.setVerticalGroup(
             SynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
 
         MainPanel.add(SynchPanel, "card28");
@@ -1051,11 +1196,11 @@ public class Home extends javax.swing.JFrame {
         SSynchPanel.setLayout(SSynchPanelLayout);
         SSynchPanelLayout.setHorizontalGroup(
             SSynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 942, Short.MAX_VALUE)
+            .addGap(0, 885, Short.MAX_VALUE)
         );
         SSynchPanelLayout.setVerticalGroup(
             SSynchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
 
         MainPanel.add(SSynchPanel, "card29");
@@ -1066,11 +1211,11 @@ public class Home extends javax.swing.JFrame {
         LinearFeedbackPanel.setLayout(LinearFeedbackPanelLayout);
         LinearFeedbackPanelLayout.setHorizontalGroup(
             LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 942, Short.MAX_VALUE)
+            .addGap(0, 885, Short.MAX_VALUE)
         );
         LinearFeedbackPanelLayout.setVerticalGroup(
             LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
 
         MainPanel.add(LinearFeedbackPanel, "card30");
@@ -1081,11 +1226,11 @@ public class Home extends javax.swing.JFrame {
         EntropyPanel.setLayout(EntropyPanelLayout);
         EntropyPanelLayout.setHorizontalGroup(
             EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 942, Short.MAX_VALUE)
+            .addGap(0, 885, Short.MAX_VALUE)
         );
         EntropyPanelLayout.setVerticalGroup(
             EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
 
         MainPanel.add(EntropyPanel, "card31");
@@ -1136,7 +1281,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(211, Short.MAX_VALUE))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
         ECBPanelLayout.setVerticalGroup(
             ECBPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1151,7 +1296,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(ECBPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(151, Short.MAX_VALUE))
         );
 
         MainPanel.add(ECBPanel, "card6");
@@ -1181,7 +1326,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
                         .addGap(127, 127, 127)
                         .addComponent(Correct1)))
-                .addContainerGap(186, Short.MAX_VALUE))
+                .addContainerGap(125, Short.MAX_VALUE))
         );
         Correct_ECBLayout.setVerticalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1227,7 +1372,7 @@ public class Home extends javax.swing.JFrame {
         CBCPanelLayout.setHorizontalGroup(
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCPanelLayout.createSequentialGroup()
-                .addContainerGap(455, Short.MAX_VALUE)
+                .addContainerGap(409, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(407, 407, 407))
             .addGroup(CBCPanelLayout.createSequentialGroup()
@@ -1263,7 +1408,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addComponent(jButton1)
-                .addContainerGap(123, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
 
         MainPanel.add(CBCPanel, "card32");
@@ -1274,11 +1419,11 @@ public class Home extends javax.swing.JFrame {
         CBCQPanel.setLayout(CBCQPanelLayout);
         CBCQPanelLayout.setHorizontalGroup(
             CBCQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 942, Short.MAX_VALUE)
+            .addGap(0, 885, Short.MAX_VALUE)
         );
         CBCQPanelLayout.setVerticalGroup(
             CBCQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
 
         MainPanel.add(CBCQPanel, "card40");
@@ -1301,7 +1446,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(CTRTitle)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRPanelLayout.createSequentialGroup()
-                .addContainerGap(246, Short.MAX_VALUE)
+                .addContainerGap(189, Short.MAX_VALUE)
                 .addComponent(CTRImage)
                 .addGap(146, 146, 146))
         );
@@ -1312,7 +1457,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(CTRTitle)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(CTRImage)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(68, Short.MAX_VALUE))
         );
 
         MainPanel.add(CTRPanel, "card33");
@@ -1361,7 +1506,7 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(PAPPicture))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPPanelLayout.createSequentialGroup()
-                .addContainerGap(177, Short.MAX_VALUE)
+                .addContainerGap(120, Short.MAX_VALUE)
                 .addGroup(PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PAPPanelLayout.createSequentialGroup()
                         .addComponent(PAPLabel)
@@ -1386,7 +1531,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addContainerGap(269, Short.MAX_VALUE))
+                .addContainerGap(232, Short.MAX_VALUE))
         );
 
         MainPanel.add(PAPPanel, "card34");
@@ -1411,7 +1556,7 @@ public class Home extends javax.swing.JFrame {
         CHAPPanelLayout.setHorizontalGroup(
             CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CHAPPanelLayout.createSequentialGroup()
-                .addContainerGap(142, Short.MAX_VALUE)
+                .addContainerGap(85, Short.MAX_VALUE)
                 .addComponent(CHAPLabel)
                 .addGap(76, 76, 76))
             .addGroup(CHAPPanelLayout.createSequentialGroup()
@@ -1430,7 +1575,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(CHAPPicture)
                 .addGap(18, 18, 18)
                 .addComponent(CHAPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(224, Short.MAX_VALUE))
+                .addContainerGap(216, Short.MAX_VALUE))
         );
 
         MainPanel.add(CHAPPanel, "card35");
@@ -1458,7 +1603,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Kerberos_K)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
-                .addContainerGap(128, Short.MAX_VALUE)
+                .addContainerGap(71, Short.MAX_VALUE)
                 .addComponent(KerberosText, javax.swing.GroupLayout.PREFERRED_SIZE, 754, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(60, 60, 60))
         );
@@ -1469,7 +1614,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Kerberos_K)
                 .addGap(18, 18, 18)
                 .addComponent(KerberosText, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(399, Short.MAX_VALUE))
+                .addContainerGap(391, Short.MAX_VALUE))
         );
 
         MainPanel.add(KerberosPanel, "card24");
@@ -1606,7 +1751,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(104, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1696,14 +1841,14 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCMAC_2Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(334, Short.MAX_VALUE))
+                .addContainerGap(295, Short.MAX_VALUE))
         );
         CBCMAC_2Layout.setVerticalGroup(
             CBCMAC_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCMAC_2Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(BreakingCBCBMAC_Title)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 645, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 639, Short.MAX_VALUE)
                 .addComponent(Back)
                 .addGap(22, 22, 22))
         );
@@ -1817,7 +1962,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(SHAB3)))))
-                .addContainerGap(296, Short.MAX_VALUE))
+                .addContainerGap(243, Short.MAX_VALUE))
         );
         SHAPanelLayout.setVerticalGroup(
             SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1856,7 +2001,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SHAB3))
-                .addContainerGap(231, Short.MAX_VALUE))
+                .addContainerGap(247, Short.MAX_VALUE))
         );
 
         MainPanel.add(SHAPanel, "card11");
@@ -1867,11 +2012,11 @@ public class Home extends javax.swing.JFrame {
         MD5Panel.setLayout(MD5PanelLayout);
         MD5PanelLayout.setHorizontalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 942, Short.MAX_VALUE)
+            .addGap(0, 885, Short.MAX_VALUE)
         );
         MD5PanelLayout.setVerticalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
 
         MainPanel.add(MD5Panel, "card36");
@@ -2028,7 +2173,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(d_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(d))
-                .addContainerGap(170, Short.MAX_VALUE))
+                .addContainerGap(135, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSA_Signature_1, "card20");
@@ -2118,7 +2263,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
-                .addContainerGap(129, Short.MAX_VALUE)
+                .addContainerGap(133, Short.MAX_VALUE)
                 .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
                         .addComponent(SigningAMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2165,7 +2310,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Check_signature)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addComponent(Back_RSA1)
                 .addContainerGap())
         );
@@ -2264,12 +2409,12 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Back_RSA2)
                         .addGap(273, 273, 273)
                         .addComponent(Verify_Submit)))
-                .addContainerGap(218, Short.MAX_VALUE))
+                .addContainerGap(161, Short.MAX_VALUE))
             .addGroup(RSA_ValidateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(RSA_ValidateLayout.createSequentialGroup()
                     .addGap(63, 63, 63)
                     .addComponent(Story1, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(124, Short.MAX_VALUE)))
+                    .addContainerGap(67, Short.MAX_VALUE)))
         );
         RSA_ValidateLayout.setVerticalGroup(
             RSA_ValidateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2286,7 +2431,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(ChoiceC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(ChoiceD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addGroup(RSA_ValidateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_ValidateLayout.createSequentialGroup()
                         .addComponent(Verify_Submit)
@@ -2298,7 +2443,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSA_ValidateLayout.createSequentialGroup()
                     .addGap(109, 109, 109)
                     .addComponent(Story1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(539, Short.MAX_VALUE)))
+                    .addContainerGap(521, Short.MAX_VALUE)))
         );
 
         MainPanel.add(RSA_Validate, "card22");
@@ -2363,7 +2508,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(RSAB1_3)))))
-                .addContainerGap(142, Short.MAX_VALUE))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2390,7 +2535,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSAB1_3))
-                .addContainerGap(258, Short.MAX_VALUE))
+                .addContainerGap(252, Short.MAX_VALUE))
         );
 
         MainPanel.add(RSAPanel, "card9");
@@ -2459,7 +2604,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(EGB1_2)))))
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addContainerGap(57, Short.MAX_VALUE))
         );
         ElGamalPanelLayout.setVerticalGroup(
             ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2480,7 +2625,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(EGB1_2))
-                .addContainerGap(379, Short.MAX_VALUE))
+                .addContainerGap(384, Short.MAX_VALUE))
         );
 
         MainPanel.add(ElGamalPanel, "card10");
@@ -2525,7 +2670,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(DHDiagram1, javax.swing.GroupLayout.DEFAULT_SIZE, 541, Short.MAX_VALUE)
                     .addComponent(DHIntro)
                     .addComponent(DHText))
-                .addGap(0, 236, Short.MAX_VALUE))
+                .addGap(0, 179, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2540,7 +2685,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(81, 81, 81))
         );
@@ -2572,7 +2717,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel1Layout.setHorizontalGroup(
             DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel1Layout.createSequentialGroup()
-                .addContainerGap(766, Short.MAX_VALUE)
+                .addContainerGap(709, Short.MAX_VALUE)
                 .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(79, 79, 79))
             .addGroup(DHPanel1Layout.createSequentialGroup()
@@ -2589,7 +2734,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH1Image)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DH1Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 175, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 153, Short.MAX_VALUE)
                 .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58))
         );
@@ -2628,7 +2773,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(DHImage2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(DH2Text))
-                .addContainerGap(254, Short.MAX_VALUE))
+                .addContainerGap(197, Short.MAX_VALUE))
         );
         DHPanel2Layout.setVerticalGroup(
             DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2637,7 +2782,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -2668,7 +2813,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel3Layout.setHorizontalGroup(
             DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
-                .addContainerGap(219, Short.MAX_VALUE)
+                .addContainerGap(162, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2688,7 +2833,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -2725,7 +2870,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(DH4Image, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(DH4Text))
-                .addContainerGap(256, Short.MAX_VALUE))
+                .addContainerGap(199, Short.MAX_VALUE))
         );
         DHPanel4Layout.setVerticalGroup(
             DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2734,7 +2879,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -2773,7 +2918,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(DH5Image, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(DH5Text))
-                .addContainerGap(227, Short.MAX_VALUE))
+                .addContainerGap(170, Short.MAX_VALUE))
         );
         DHPanel5Layout.setVerticalGroup(
             DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2782,7 +2927,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH5Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH5Text, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(DH5_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(128, 128, 128))
         );
@@ -2838,7 +2983,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(DHA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(49, 49, 49)
                                 .addComponent(DHB1)))))
-                .addContainerGap(227, Short.MAX_VALUE))
+                .addContainerGap(170, Short.MAX_VALUE))
         );
         DHPanel6Layout.setVerticalGroup(
             DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2855,7 +3000,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DHA1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DHB1))
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(194, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel6, "card12");
@@ -2866,11 +3011,11 @@ public class Home extends javax.swing.JFrame {
         BlowfishPanel.setLayout(BlowfishPanelLayout);
         BlowfishPanelLayout.setHorizontalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 942, Short.MAX_VALUE)
+            .addGap(0, 885, Short.MAX_VALUE)
         );
         BlowfishPanelLayout.setVerticalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
 
         MainPanel.add(BlowfishPanel, "card37");
@@ -2887,14 +3032,14 @@ public class Home extends javax.swing.JFrame {
             .addGroup(AESPanelLayout.createSequentialGroup()
                 .addGap(416, 416, 416)
                 .addComponent(AESTitle)
-                .addContainerGap(464, Short.MAX_VALUE))
+                .addContainerGap(407, Short.MAX_VALUE))
         );
         AESPanelLayout.setVerticalGroup(
             AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AESPanelLayout.createSequentialGroup()
                 .addGap(68, 68, 68)
                 .addComponent(AESTitle)
-                .addContainerGap(646, Short.MAX_VALUE))
+                .addContainerGap(638, Short.MAX_VALUE))
         );
 
         MainPanel.add(AESPanel, "card38");
@@ -2937,7 +3082,7 @@ public class Home extends javax.swing.JFrame {
                             .addGroup(WEPPanelLayout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jButton2)))
-                        .addGap(0, 317, Short.MAX_VALUE)))
+                        .addGap(0, 256, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         WEPPanelLayout.setVerticalGroup(
@@ -2946,7 +3091,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addComponent(WEPDescription_Label)
                 .addGap(18, 18, 18)
-                .addComponent(WEPDescription, javax.swing.GroupLayout.DEFAULT_SIZE, 534, Short.MAX_VALUE)
+                .addComponent(WEPDescription, javax.swing.GroupLayout.DEFAULT_SIZE, 532, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
                 .addGap(71, 71, 71))
@@ -3234,7 +3379,7 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 942, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 920, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3335,7 +3480,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
 
-            MainPanel.add(FeistelPanel);
+            MainPanel.add(FeistelPanelWelcome);
             MainPanel.repaint();
             MainPanel.revalidate();
     }//GEN-LAST:event_FeistelActionPerformed
@@ -4020,6 +4165,46 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Feistel_EntryActionPerformed
 
+    private void FeistelQBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelQBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_FeistelQBActionPerformed
+
+    private void FesitelDescipBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FesitelDescipBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelDescripPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_FesitelDescipBActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4183,11 +4368,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JRadioButton F5;
     private javax.swing.JLabel False;
     private javax.swing.JMenuItem Feistel;
+    private javax.swing.JPanel FeistelDescripPanel;
     private javax.swing.JLabel FeistelImage;
+    private javax.swing.JLabel FeistelIntro;
     private javax.swing.JPanel FeistelPanel;
+    private javax.swing.JPanel FeistelPanelWelcome;
+    private javax.swing.JButton FeistelQB;
     private javax.swing.JButton Feistel_Button;
     private javax.swing.JTextField Feistel_Entry;
     private javax.swing.JLabel Feistel_Intro;
+    private javax.swing.JButton FesitelDescipB;
     private javax.swing.JLabel Former;
     private javax.swing.JLabel FormerSHA;
     private javax.swing.JMenu Hashing;
@@ -4303,6 +4493,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JRadioButton T4;
     private javax.swing.JRadioButton T5;
     private javax.swing.JLabel Theme;
+    private javax.swing.JLabel ThemePicture;
     private javax.swing.JMenuItem TripDES;
     private javax.swing.JLabel True;
     private javax.swing.JLabel ValidateMessage;
@@ -4332,17 +4523,23 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel e1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
@@ -4352,6 +4549,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea15;
     private javax.swing.JTextArea jTextArea16;
     private javax.swing.JTextArea jTextArea17;
+    private javax.swing.JTextArea jTextArea18;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
