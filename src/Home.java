@@ -146,14 +146,13 @@ public class Home extends javax.swing.JFrame {
         Correct_ECB = new javax.swing.JPanel();
         Correct_Pic = new javax.swing.JLabel();
         Correct1 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         CBCPanel = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        CBCtitle = new javax.swing.JLabel();
+        EncryptImage = new javax.swing.JLabel();
+        DecryptImage = new javax.swing.JLabel();
+        Encrypt = new javax.swing.JLabel();
+        Decrypt = new javax.swing.JLabel();
+        CBCSubmit = new javax.swing.JButton();
         CBCQPanel = new javax.swing.JPanel();
         CTRPanel = new javax.swing.JPanel();
         CTRTitle = new javax.swing.JLabel();
@@ -1352,60 +1351,55 @@ public class Home extends javax.swing.JFrame {
         Correct1.setForeground(new java.awt.Color(48, 87, 120));
         Correct1.setText("CORRECT!");
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme3.png"))); // NOI18N
-
         javax.swing.GroupLayout Correct_ECBLayout = new javax.swing.GroupLayout(Correct_ECB);
         Correct_ECB.setLayout(Correct_ECBLayout);
         Correct_ECBLayout.setHorizontalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Correct_ECBLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(198, 198, 198)
                         .addComponent(Correct_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
-                        .addGap(127, 127, 127)
+                        .addGap(326, 326, 326)
                         .addComponent(Correct1)))
-                .addContainerGap(156, Short.MAX_VALUE))
+                .addContainerGap(230, Short.MAX_VALUE))
         );
         Correct_ECBLayout.setVerticalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Correct_ECBLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(119, Short.MAX_VALUE)
                 .addComponent(Correct1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Correct_Pic)
                 .addGap(127, 127, 127))
-            .addGroup(Correct_ECBLayout.createSequentialGroup()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 759, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         MainPanel.add(Correct_ECB, "card7");
 
         CBCPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel4.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel4.setText("CBC Mode");
+        CBCtitle.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        CBCtitle.setForeground(new java.awt.Color(48, 87, 120));
+        CBCtitle.setText("CBC Mode");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/CBCEncrypt.png"))); // NOI18N
+        EncryptImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/CBCEncrypt.png"))); // NOI18N
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/CBCDecrypt.png"))); // NOI18N
+        DecryptImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/CBCDecrypt.png"))); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("Encrypt");
+        Encrypt.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Encrypt.setText("Encrypt");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setText("Decrypt");
+        Decrypt.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Decrypt.setText("Decrypt");
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("Next");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        CBCSubmit.setBackground(new java.awt.Color(77, 132, 155));
+        CBCSubmit.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        CBCSubmit.setForeground(new java.awt.Color(255, 255, 255));
+        CBCSubmit.setText("Next");
+        CBCSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                CBCSubmitActionPerformed(evt);
             }
         });
 
@@ -1415,41 +1409,41 @@ public class Home extends javax.swing.JFrame {
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCPanelLayout.createSequentialGroup()
                 .addContainerGap(425, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(CBCSubmit)
                 .addGap(407, 407, 407))
             .addGroup(CBCPanelLayout.createSequentialGroup()
                 .addGap(218, 218, 218)
-                .addComponent(jLabel2)
+                .addComponent(Encrypt)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
+                .addComponent(Decrypt)
                 .addGap(172, 172, 172))
             .addGroup(CBCPanelLayout.createSequentialGroup()
                 .addGroup(CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CBCPanelLayout.createSequentialGroup()
                         .addGap(37, 37, 37)
-                        .addComponent(jLabel5)
+                        .addComponent(EncryptImage)
                         .addGap(27, 27, 27)
-                        .addComponent(jLabel1))
+                        .addComponent(DecryptImage))
                     .addGroup(CBCPanelLayout.createSequentialGroup()
                         .addGap(351, 351, 351)
-                        .addComponent(jLabel4)))
+                        .addComponent(CBCtitle)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         CBCPanelLayout.setVerticalGroup(
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCPanelLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jLabel4)
+                .addComponent(CBCtitle)
                 .addGap(66, 66, 66)
                 .addGroup(CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
+                    .addComponent(Encrypt)
+                    .addComponent(Decrypt))
                 .addGap(59, 59, 59)
                 .addGroup(CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EncryptImage)
+                    .addComponent(DecryptImage, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
-                .addComponent(jButton1)
+                .addComponent(CBCSubmit)
                 .addContainerGap(123, Short.MAX_VALUE))
         );
 
@@ -1588,6 +1582,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        PAPB.setBackground(new java.awt.Color(77, 132, 155));
+        PAPB.setForeground(new java.awt.Color(255, 255, 255));
         PAPB.setText("Enter");
         PAPB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1649,7 +1645,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -2591,7 +2587,7 @@ public class Home extends javax.swing.JFrame {
         RSA_Signature_1.setOpaque(false);
 
         SigningAMessage.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        SigningAMessage.setForeground(new java.awt.Color(255, 0, 51));
+        SigningAMessage.setForeground(new java.awt.Color(48, 87, 120));
         SigningAMessage.setText("<html><strong>Signing a Message with RSA</strong></html>");
 
         Story.setBorder(null);
@@ -2657,6 +2653,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        Check_n_phi_d.setBackground(new java.awt.Color(77, 132, 155));
+        Check_n_phi_d.setForeground(new java.awt.Color(255, 255, 255));
         Check_n_phi_d.setText("Submit");
         Check_n_phi_d.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2762,11 +2760,11 @@ public class Home extends javax.swing.JFrame {
         RSA_Signature_2.setBackground(new java.awt.Color(255, 255, 255));
 
         SigningAMessage1.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        SigningAMessage1.setForeground(new java.awt.Color(255, 0, 51));
+        SigningAMessage1.setForeground(new java.awt.Color(48, 87, 120));
         SigningAMessage1.setText("<html><strong>Signing a Message with RSA</strong></html>");
 
         Correct.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        Correct.setForeground(new java.awt.Color(0, 153, 0));
+        Correct.setForeground(new java.awt.Color(77, 132, 155));
         Correct.setText("<html><strong>Correct!</strong></html> ");
 
         Message1.setFont(new java.awt.Font("Courier", 0, 24)); // NOI18N
@@ -2804,6 +2802,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        Check_signature.setBackground(new java.awt.Color(77, 132, 155));
+        Check_signature.setForeground(new java.awt.Color(255, 255, 255));
         Check_signature.setText("Submit");
         Check_signature.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2811,6 +2811,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        Back_RSA1.setBackground(new java.awt.Color(77, 132, 155));
+        Back_RSA1.setForeground(new java.awt.Color(255, 255, 255));
         Back_RSA1.setText("Back");
         Back_RSA1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2822,6 +2824,19 @@ public class Home extends javax.swing.JFrame {
         RSA_Signature_2.setLayout(RSA_Signature_2Layout);
         RSA_Signature_2Layout.setHorizontalGroup(
             RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
+                .addContainerGap(99, Short.MAX_VALUE)
+                .addComponent(Directions)
+                .addGap(137, 137, 137))
+            .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                        .addGap(364, 364, 364)
+                        .addComponent(Check_signature))
+                    .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Back_RSA1)))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(RSA_Signature_2Layout.createSequentialGroup()
                 .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RSA_Signature_2Layout.createSequentialGroup()
@@ -2841,26 +2856,11 @@ public class Home extends javax.swing.JFrame {
                         .addGap(237, 237, 237)
                         .addComponent(d1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(RSA_Signature_2Layout.createSequentialGroup()
+                        .addGap(190, 190, 190)
+                        .addComponent(SigningAMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
-                .addContainerGap(99, Short.MAX_VALUE)
-                .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
-                        .addComponent(SigningAMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(185, 185, 185))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
-                        .addComponent(Directions)
-                        .addGap(137, 137, 137))))
-            .addGroup(RSA_Signature_2Layout.createSequentialGroup()
-                .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RSA_Signature_2Layout.createSequentialGroup()
-                        .addGap(364, 364, 364)
-                        .addComponent(Check_signature))
-                    .addGroup(RSA_Signature_2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Back_RSA1)))
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         RSA_Signature_2Layout.setVerticalGroup(
             RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4683,7 +4683,7 @@ public class Home extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_OTPNoActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void CBCSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCSubmitActionPerformed
             MainPanel.removeAll();
             MainPanel.repaint();
             MainPanel.revalidate();
@@ -4691,7 +4691,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.add(CBCQPanel);
             MainPanel.repaint();
             MainPanel.revalidate();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_CBCSubmitActionPerformed
 
     private void PAPBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPBActionPerformed
         String papans = PAPA1.getText();
@@ -5025,7 +5025,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton CBCMAC_Submit;
     private javax.swing.JPanel CBCPanel;
     private javax.swing.JPanel CBCQPanel;
+    private javax.swing.JButton CBCSubmit;
     private javax.swing.JMenuItem CBC_MAC;
+    private javax.swing.JLabel CBCtitle;
     private javax.swing.JMenuItem CHAP;
     private javax.swing.JButton CHAPDes;
     private javax.swing.JScrollPane CHAPDescription;
@@ -5101,6 +5103,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane DHQ1;
     private javax.swing.JLabel DHQuestions;
     private javax.swing.JScrollPane DHText;
+    private javax.swing.JLabel Decrypt;
+    private javax.swing.JLabel DecryptImage;
     private javax.swing.JLabel DescriptionWEP_Label;
     private javax.swing.JButton Description_button;
     private javax.swing.JMenuItem Dev;
@@ -5121,6 +5125,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem ELGamal;
     private javax.swing.JLabel ElGamalHeader;
     private javax.swing.JPanel ElGamalPanel;
+    private javax.swing.JLabel Encrypt;
+    private javax.swing.JLabel EncryptImage;
     private javax.swing.JMenu EncryptionModes;
     private javax.swing.JMenuItem Entropy;
     private javax.swing.JPanel EntropyPanel;
@@ -5316,18 +5322,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField d_input;
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
