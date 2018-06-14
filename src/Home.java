@@ -77,62 +77,6 @@ public class Home extends javax.swing.JFrame {
         Submission2 = new javax.swing.JTextField();
         Submit2 = new javax.swing.JButton();
         theme2 = new javax.swing.JLabel();
-        FeistelPanel = new javax.swing.JPanel();
-        Feistel_Entry = new javax.swing.JTextField();
-        Feistel_Button = new javax.swing.JButton();
-        Feistel_Intro = new javax.swing.JLabel();
-        FeistelImage = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        FeistelPanelWelcome = new javax.swing.JPanel();
-        FeistelIntro = new javax.swing.JLabel();
-        ThemePicture = new javax.swing.JLabel();
-        FesitelDescipB = new javax.swing.JButton();
-        FeistelQB = new javax.swing.JButton();
-        FeistelDescripPanel = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea18 = new javax.swing.JTextArea();
-        jLabel11 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        RCPanel = new javax.swing.JPanel();
-        RCFamily_Label = new javax.swing.JLabel();
-        RCFamilyDescription = new javax.swing.JScrollPane();
-        jTextArea11 = new javax.swing.JTextArea();
-        RC4_Label = new javax.swing.JLabel();
-        RC4Description = new javax.swing.JScrollPane();
-        jTextArea12 = new javax.swing.JTextArea();
-        WEP_Label = new javax.swing.JLabel();
-        DescriptionWEP_Label = new javax.swing.JLabel();
-        Description_button = new javax.swing.JButton();
-        WEPQuestions = new javax.swing.JScrollPane();
-        jTextArea14 = new javax.swing.JTextArea();
-        WEPA1 = new javax.swing.JTextField();
-        WEPA2 = new javax.swing.JTextField();
-        WEPB1 = new javax.swing.JButton();
-        DESPanel = new javax.swing.JPanel();
-        DESPic = new javax.swing.JLabel();
-        DESLabel = new javax.swing.JLabel();
-        DESQ = new javax.swing.JLabel();
-        DESA = new javax.swing.JRadioButton();
-        DESB = new javax.swing.JRadioButton();
-        DESC = new javax.swing.JRadioButton();
-        DESD = new javax.swing.JRadioButton();
-        DES_B = new javax.swing.JButton();
-        OTPPanel = new javax.swing.JPanel();
-        OTPLabel = new javax.swing.JLabel();
-        OTPDescription = new javax.swing.JScrollPane();
-        jTextArea15 = new javax.swing.JTextArea();
-        OTPGameLabel = new javax.swing.JLabel();
-        OTPEnterMessage = new javax.swing.JLabel();
-        OTPMessage = new javax.swing.JTextField();
-        OTPB1 = new javax.swing.JButton();
-        OTPQ = new javax.swing.JLabel();
-        OTPYes = new javax.swing.JButton();
-        OTPNo = new javax.swing.JButton();
-        OTPPicture = new javax.swing.JLabel();
-        OTPOutDescription = new javax.swing.JScrollPane();
-        OTPOut = new javax.swing.JTextArea();
         SynchPanel = new javax.swing.JPanel();
         SSynchPanel = new javax.swing.JPanel();
         LinearFeedbackPanel = new javax.swing.JPanel();
@@ -404,6 +348,83 @@ public class Home extends javax.swing.JFrame {
         WEPDescription = new javax.swing.JScrollPane();
         jTextArea13 = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
+        FeistelPanel = new javax.swing.JPanel();
+        Feistel_Entry = new javax.swing.JTextField();
+        Feistel_Button = new javax.swing.JButton();
+        Feistel_Intro = new javax.swing.JLabel();
+        FeistelImage = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        FeistelPanelWelcome = new javax.swing.JPanel();
+        FeistelIntro = new javax.swing.JLabel();
+        ThemePicture = new javax.swing.JLabel();
+        FesitelDescipB = new javax.swing.JButton();
+        FeistelQB = new javax.swing.JButton();
+        FeistelDescripPanel = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea18 = new javax.swing.JTextArea();
+        jLabel11 = new javax.swing.JLabel();
+        FDPB = new javax.swing.JButton();
+        RCPanel = new javax.swing.JPanel();
+        RCFamily_Label = new javax.swing.JLabel();
+        RCFamilyDescription = new javax.swing.JScrollPane();
+        jTextArea11 = new javax.swing.JTextArea();
+        RC4_Label = new javax.swing.JLabel();
+        RC4Description = new javax.swing.JScrollPane();
+        jTextArea12 = new javax.swing.JTextArea();
+        WEP_Label = new javax.swing.JLabel();
+        DescriptionWEP_Label = new javax.swing.JLabel();
+        Description_button = new javax.swing.JButton();
+        WEPQuestions = new javax.swing.JScrollPane();
+        jTextArea14 = new javax.swing.JTextArea();
+        WEPA1 = new javax.swing.JTextField();
+        WEPA2 = new javax.swing.JTextField();
+        WEPB1 = new javax.swing.JButton();
+        DESPanel = new javax.swing.JPanel();
+        DESPic = new javax.swing.JLabel();
+        DESLabel = new javax.swing.JLabel();
+        DESQ = new javax.swing.JLabel();
+        DESA = new javax.swing.JRadioButton();
+        DESB = new javax.swing.JRadioButton();
+        DESC = new javax.swing.JRadioButton();
+        DESD = new javax.swing.JRadioButton();
+        DES_B = new javax.swing.JButton();
+        DESRETURNB = new javax.swing.JButton();
+        DESPanelWelcome = new javax.swing.JPanel();
+        DESIntro = new javax.swing.JLabel();
+        ThemePicture12 = new javax.swing.JLabel();
+        DESDescripB = new javax.swing.JButton();
+        DESQB = new javax.swing.JButton();
+        DESDescripPanel = new javax.swing.JPanel();
+        DESDescrip = new javax.swing.JLabel();
+        DESDescription = new javax.swing.JScrollPane();
+        jTextArea19 = new javax.swing.JTextArea();
+        jLabel13 = new javax.swing.JLabel();
+        DESBB = new javax.swing.JButton();
+        OTPPanel = new javax.swing.JPanel();
+        OTPLabel = new javax.swing.JLabel();
+        OTPGameLabel = new javax.swing.JLabel();
+        OTPEnterMessage = new javax.swing.JLabel();
+        OTPMessage = new javax.swing.JTextField();
+        OTPB1 = new javax.swing.JButton();
+        OTPQ = new javax.swing.JLabel();
+        OTPYes = new javax.swing.JButton();
+        OTPNo = new javax.swing.JButton();
+        OTPPicture = new javax.swing.JLabel();
+        OTPOutDescription = new javax.swing.JScrollPane();
+        OTPOut = new javax.swing.JTextArea();
+        OTPPanelWelcome = new javax.swing.JPanel();
+        OTPIntro = new javax.swing.JLabel();
+        ThemePicture14 = new javax.swing.JLabel();
+        OTPDescripB = new javax.swing.JButton();
+        OTPQB = new javax.swing.JButton();
+        OTPDescripPanel = new javax.swing.JPanel();
+        DESDescrip1 = new javax.swing.JLabel();
+        DESDescription1 = new javax.swing.JScrollPane();
+        jTextArea20 = new javax.swing.JTextArea();
+        jLabel14 = new javax.swing.JLabel();
+        DESBB1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -722,529 +743,6 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(VigenerePanel, "card5");
-
-        FeistelPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        Feistel_Entry.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Feistel_Entry.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Feistel_EntryActionPerformed(evt);
-            }
-        });
-
-        Feistel_Button.setBackground(new java.awt.Color(77, 132, 155));
-        Feistel_Button.setForeground(new java.awt.Color(255, 255, 255));
-        Feistel_Button.setText("Enter");
-        Feistel_Button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Feistel_Enter_Button(evt);
-            }
-        });
-
-        Feistel_Intro.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        Feistel_Intro.setForeground(new java.awt.Color(48, 87, 120));
-        Feistel_Intro.setText("What is the final 8 bit value?");
-
-        FeistelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Feistel-Update.png"))); // NOI18N
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        jButton4.setBackground(new java.awt.Color(77, 132, 155));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Return");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout FeistelPanelLayout = new javax.swing.GroupLayout(FeistelPanel);
-        FeistelPanel.setLayout(FeistelPanelLayout);
-        FeistelPanelLayout.setHorizontalGroup(
-            FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(FeistelPanelLayout.createSequentialGroup()
-                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FeistelPanelLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(129, 129, 129)
-                        .addComponent(FeistelImage)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FeistelPanelLayout.createSequentialGroup()
-                        .addGap(163, 163, 163)
-                        .addComponent(Feistel_Intro)))
-                .addGap(34, 34, 34)
-                .addComponent(Feistel_Button)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        FeistelPanelLayout.setVerticalGroup(
-            FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelPanelLayout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(Feistel_Intro)
-                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(234, 234, 234)
-                        .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(34, 293, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
-                        .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(FeistelImage, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)))
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        MainPanel.add(FeistelPanel, "card8");
-
-        FeistelPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
-
-        FeistelIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        FeistelIntro.setForeground(new java.awt.Color(48, 87, 120));
-        FeistelIntro.setText("Feistel Structure");
-
-        ThemePicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        FesitelDescipB.setBackground(new java.awt.Color(77, 132, 155));
-        FesitelDescipB.setForeground(new java.awt.Color(255, 255, 255));
-        FesitelDescipB.setText("Description");
-        FesitelDescipB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FesitelDescipBActionPerformed(evt);
-            }
-        });
-
-        FeistelQB.setBackground(new java.awt.Color(77, 132, 155));
-        FeistelQB.setForeground(new java.awt.Color(255, 255, 255));
-        FeistelQB.setText("Questions");
-        FeistelQB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FeistelQBActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout FeistelPanelWelcomeLayout = new javax.swing.GroupLayout(FeistelPanelWelcome);
-        FeistelPanelWelcome.setLayout(FeistelPanelWelcomeLayout);
-        FeistelPanelWelcomeLayout.setHorizontalGroup(
-            FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
-                .addGap(293, 293, 293)
-                .addGroup(FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
-                        .addComponent(FesitelDescipB)
-                        .addGap(92, 92, 92)
-                        .addComponent(FeistelQB))
-                    .addComponent(FeistelIntro))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        FeistelPanelWelcomeLayout.setVerticalGroup(
-            FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(201, Short.MAX_VALUE)
-                .addComponent(FeistelIntro)
-                .addGap(51, 51, 51)
-                .addGroup(FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(FesitelDescipB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(FeistelQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(148, 148, 148)
-                .addComponent(ThemePicture))
-        );
-
-        MainPanel.add(FeistelPanelWelcome, "card41");
-
-        FeistelDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel9.setText("Feistel");
-
-        jTextArea18.setColumns(20);
-        jTextArea18.setRows(5);
-        jTextArea18.setText("- SHORT DESCRIPTION ON FEISTEL! HERE!");
-        jScrollPane1.setViewportView(jTextArea18);
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        jButton3.setBackground(new java.awt.Color(77, 132, 155));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Return");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout FeistelDescripPanelLayout = new javax.swing.GroupLayout(FeistelDescripPanel);
-        FeistelDescripPanel.setLayout(FeistelDescripPanelLayout);
-        FeistelDescripPanelLayout.setHorizontalGroup(
-            FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
-                .addGap(374, 374, 374)
-                .addComponent(jLabel9))
-            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 668, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel11)
-            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
-                .addGap(394, 394, 394)
-                .addComponent(jButton3))
-        );
-        FeistelDescripPanelLayout.setVerticalGroup(
-            FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(jLabel9)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 217, Short.MAX_VALUE)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel11))
-        );
-
-        MainPanel.add(FeistelDescripPanel, "card42");
-
-        RCPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        RCFamily_Label.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
-        RCFamily_Label.setForeground(new java.awt.Color(48, 87, 120));
-        RCFamily_Label.setText("<html><strong>The RC Family");
-
-        RCFamilyDescription.setBorder(null);
-
-        jTextArea11.setColumns(20);
-        jTextArea11.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea11.setLineWrap(true);
-        jTextArea11.setRows(5);
-        jTextArea11.setText("- RC4, RC5, and RC6 are a family of symmetric encryption algorithms developed by Rivest, Shamir, and Adleman (RSA).");
-        RCFamilyDescription.setViewportView(jTextArea11);
-        jTextArea11.setEditable(false);
-
-        RC4_Label.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
-        RC4_Label.setForeground(new java.awt.Color(48, 87, 120));
-        RC4_Label.setText("<html><strong>RC4");
-
-        RC4Description.setBorder(null);
-        RC4Description.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea12.setColumns(20);
-        jTextArea12.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea12.setRows(5);
-        jTextArea12.setText("- A variable key length stream cipher. \n- Simple to implement, and fast.\n- Many vulnerabilites have been discovered.\n- One of the biggest vulnerabilities is in it's implementation in the WEP protocol");
-        RC4Description.setViewportView(jTextArea12);
-        jTextArea12.setEditable(false);
-
-        WEP_Label.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
-        WEP_Label.setForeground(new java.awt.Color(48, 87, 120));
-        WEP_Label.setText("<html><strong>The WEP Vulerability");
-
-        DescriptionWEP_Label.setText("If you need a description of WEP click here. ");
-
-        Description_button.setText("Description");
-        Description_button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Description_buttonActionPerformed(evt);
-            }
-        });
-
-        WEPQuestions.setBorder(null);
-
-        jTextArea14.setColumns(20);
-        jTextArea14.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea14.setRows(5);
-        jTextArea14.setText("1. Suppose you have 8-bits of C' = 01011001, and also 8-bits of\nC''= 11100110. Both were xor encrypted with the same key-stream,\nis there anyway you can leak information? Yes/No\n\n\n\n2. Suppose C' is the encrypted P', and C'' is the encrypted P''. \nWhat is P' xor P''?");
-        WEPQuestions.setViewportView(jTextArea14);
-        jTextArea14.setEditable(false);
-
-        WEPA1.setColumns(8);
-
-        WEPA2.setColumns(8);
-
-        WEPB1.setText("Enter");
-        WEPB1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                WEPB1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout RCPanelLayout = new javax.swing.GroupLayout(RCPanel);
-        RCPanel.setLayout(RCPanelLayout);
-        RCPanelLayout.setHorizontalGroup(
-            RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RCPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(DescriptionWEP_Label))
-                .addGap(18, 18, 18)
-                .addComponent(Description_button)
-                .addGap(231, 231, 231))
-            .addGroup(RCPanelLayout.createSequentialGroup()
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(RCFamilyDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 813, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(RCPanelLayout.createSequentialGroup()
-                                .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 549, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(RCPanelLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(WEPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(RCPanelLayout.createSequentialGroup()
-                                        .addGap(126, 126, 126)
-                                        .addComponent(WEPB1))))))
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(364, 364, 364)
-                        .addComponent(RC4_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(266, 266, 266)
-                        .addComponent(RCFamily_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        RCPanelLayout.setVerticalGroup(
-            RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RCPanelLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(RCFamily_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(RCFamilyDescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(RC4_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
-                .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DescriptionWEP_Label)
-                    .addComponent(Description_button))
-                .addGap(35, 35, 35)
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(WEPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)
-                        .addComponent(WEPB1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(128, Short.MAX_VALUE))
-        );
-
-        MainPanel.add(RCPanel, "card26");
-
-        DESPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        DESPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/3DES.png"))); // NOI18N
-
-        DESLabel.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        DESLabel.setForeground(new java.awt.Color(48, 87, 120));
-        DESLabel.setText("Basic 3DES Encryption");
-
-        DESQ.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        DESQ.setForeground(new java.awt.Color(77, 132, 155));
-        DESQ.setText("What's the order of Encryption?");
-
-        DES_Buttons.add(DESA);
-        DESA.setText("Encrypt-Decrypt-Encrypt");
-
-        DES_Buttons.add(DESB);
-        DESB.setText("Encrypt-Encrypt-Encrypt");
-
-        DES_Buttons.add(DESC);
-        DESC.setText("Encrypt-Decrypt-Decrypt");
-
-        DES_Buttons.add(DESD);
-        DESD.setText("Decrypt-Encrypt-Encrypt");
-
-        DES_B.setText("Enter");
-        DES_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DES_BActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout DESPanelLayout = new javax.swing.GroupLayout(DESPanel);
-        DESPanel.setLayout(DESPanelLayout);
-        DESPanelLayout.setHorizontalGroup(
-            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelLayout.createSequentialGroup()
-                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DESPanelLayout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(DESQ)
-                            .addComponent(DESPic)
-                            .addGroup(DESPanelLayout.createSequentialGroup()
-                                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(DESB)
-                                    .addComponent(DESC)
-                                    .addComponent(DESA)
-                                    .addComponent(DESD))
-                                .addGap(68, 68, 68)
-                                .addComponent(DES_B))))
-                    .addGroup(DESPanelLayout.createSequentialGroup()
-                        .addGap(225, 225, 225)
-                        .addComponent(DESLabel)))
-                .addContainerGap(212, Short.MAX_VALUE))
-        );
-        DESPanelLayout.setVerticalGroup(
-            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(DESLabel)
-                .addGap(49, 49, 49)
-                .addComponent(DESPic)
-                .addGap(33, 33, 33)
-                .addComponent(DESQ)
-                .addGap(26, 26, 26)
-                .addComponent(DESA)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DESB)
-                    .addComponent(DES_B))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(DESC)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(DESD)
-                .addContainerGap(77, Short.MAX_VALUE))
-        );
-
-        MainPanel.add(DESPanel, "card25");
-
-        OTPPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        OTPLabel.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        OTPLabel.setForeground(new java.awt.Color(48, 87, 120));
-        OTPLabel.setText("One-Time Pad");
-
-        OTPDescription.setBorder(null);
-
-        jTextArea15.setColumns(20);
-        jTextArea15.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea15.setRows(5);
-        jTextArea15.setText("- The one-time pad is an encryption scheme, in which a one-time pre-shared\nkey is generated that is as long, or longer than the plaintext message being sent.\n- The pre-shared key is then XOR'd, bit for bit, with the plaintext message\n- The one-time pad is said to be uncrackable, and is said to have *perfect\nsecrecy\n* Perfect Secrey: Given a ciphertext C, no information about the plaintext\ncan be leaked or gained. ");
-        OTPDescription.setViewportView(jTextArea15);
-        jTextArea15.setEditable(false);
-
-        OTPGameLabel.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
-        OTPGameLabel.setForeground(new java.awt.Color(77, 132, 155));
-        OTPGameLabel.setText("One-Time Pad Game");
-
-        OTPEnterMessage.setText("Enter a Message");
-
-        OTPMessage.setColumns(8);
-
-        OTPB1.setText("Enter");
-        OTPB1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPB1ActionPerformed(evt);
-            }
-        });
-
-        OTPQ.setText("Is this a one-time pad for the message entered?");
-
-        OTPYes.setText("Yes");
-        OTPYes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPYesActionPerformed(evt);
-            }
-        });
-
-        OTPNo.setText("No");
-        OTPNo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPNoActionPerformed(evt);
-            }
-        });
-
-        OTPPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/otp.png"))); // NOI18N
-
-        OTPOut.setColumns(20);
-        OTPOut.setRows(5);
-        OTPOutDescription.setViewportView(OTPOut);
-
-        javax.swing.GroupLayout OTPPanelLayout = new javax.swing.GroupLayout(OTPPanel);
-        OTPPanel.setLayout(OTPPanelLayout);
-        OTPPanelLayout.setHorizontalGroup(
-            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPPanelLayout.createSequentialGroup()
-                .addContainerGap(145, Short.MAX_VALUE)
-                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                        .addComponent(OTPLabel)
-                        .addGap(314, 314, 314))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                        .addComponent(OTPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(48, 48, 48))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(OTPPanelLayout.createSequentialGroup()
-                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(OTPPanelLayout.createSequentialGroup()
-                                        .addComponent(OTPEnterMessage)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(OTPB1))
-                                    .addComponent(OTPGameLabel))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(OTPPanelLayout.createSequentialGroup()
-                                                .addComponent(OTPYes)
-                                                .addGap(161, 161, 161)
-                                                .addComponent(OTPNo))
-                                            .addComponent(OTPQ))
-                                        .addGap(42, 42, 42))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                                        .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(9, 9, 9))))
-                            .addComponent(OTPPicture, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(61, 61, 61))))
-        );
-        OTPPanelLayout.setVerticalGroup(
-            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPPanelLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(OTPLabel)
-                .addGap(4, 4, 4)
-                .addComponent(OTPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(OTPGameLabel)
-                    .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(OTPQ)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(OTPYes)
-                    .addComponent(OTPNo)
-                    .addComponent(OTPB1)
-                    .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(OTPEnterMessage))
-                .addGap(18, 18, 18)
-                .addComponent(OTPPicture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(85, 85, 85))
-        );
-
-        MainPanel.add(OTPPanel, "card27");
 
         SynchPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1675,7 +1173,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -3518,7 +3016,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 180, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(DHReturn)
@@ -3617,7 +3115,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -3668,7 +3166,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(126, Short.MAX_VALUE))
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -3714,7 +3212,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -4087,6 +3585,773 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(WEPPanel, "card39");
 
+        FeistelPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        Feistel_Entry.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Feistel_Entry.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Feistel_EntryActionPerformed(evt);
+            }
+        });
+
+        Feistel_Button.setBackground(new java.awt.Color(77, 132, 155));
+        Feistel_Button.setForeground(new java.awt.Color(255, 255, 255));
+        Feistel_Button.setText("Enter");
+        Feistel_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Feistel_ButtonFeistel_Enter_Button(evt);
+            }
+        });
+
+        Feistel_Intro.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        Feistel_Intro.setForeground(new java.awt.Color(48, 87, 120));
+        Feistel_Intro.setText("What is the final 8 bit value?");
+
+        FeistelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Feistel-Update.png"))); // NOI18N
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        jButton4.setBackground(new java.awt.Color(77, 132, 155));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Return");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout FeistelPanelLayout = new javax.swing.GroupLayout(FeistelPanel);
+        FeistelPanel.setLayout(FeistelPanelLayout);
+        FeistelPanelLayout.setHorizontalGroup(
+            FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(FeistelPanelLayout.createSequentialGroup()
+                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FeistelPanelLayout.createSequentialGroup()
+                        .addGap(249, 249, 249)
+                        .addComponent(FeistelImage)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FeistelPanelLayout.createSequentialGroup()
+                        .addGap(163, 163, 163)
+                        .addComponent(Feistel_Intro)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Feistel_Button)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        FeistelPanelLayout.setVerticalGroup(
+            FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelPanelLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(Feistel_Intro)
+                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                        .addComponent(FeistelImage, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(FeistelPanelLayout.createSequentialGroup()
+                        .addGap(234, 234, 234)
+                        .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34)))
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        MainPanel.add(FeistelPanel, "card8");
+
+        FeistelPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        FeistelIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        FeistelIntro.setForeground(new java.awt.Color(48, 87, 120));
+        FeistelIntro.setText("Feistel Structure");
+
+        ThemePicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        FesitelDescipB.setBackground(new java.awt.Color(77, 132, 155));
+        FesitelDescipB.setForeground(new java.awt.Color(255, 255, 255));
+        FesitelDescipB.setText("Description");
+        FesitelDescipB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FesitelDescipBActionPerformed(evt);
+            }
+        });
+
+        FeistelQB.setBackground(new java.awt.Color(77, 132, 155));
+        FeistelQB.setForeground(new java.awt.Color(255, 255, 255));
+        FeistelQB.setText("Questions");
+        FeistelQB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeistelQBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout FeistelPanelWelcomeLayout = new javax.swing.GroupLayout(FeistelPanelWelcome);
+        FeistelPanelWelcome.setLayout(FeistelPanelWelcomeLayout);
+        FeistelPanelWelcomeLayout.setHorizontalGroup(
+            FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
+                .addGap(293, 293, 293)
+                .addGroup(FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
+                        .addComponent(FesitelDescipB)
+                        .addGap(92, 92, 92)
+                        .addComponent(FeistelQB))
+                    .addComponent(FeistelIntro))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        FeistelPanelWelcomeLayout.setVerticalGroup(
+            FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(201, Short.MAX_VALUE)
+                .addComponent(FeistelIntro)
+                .addGap(51, 51, 51)
+                .addGroup(FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FesitelDescipB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FeistelQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture))
+        );
+
+        MainPanel.add(FeistelPanelWelcome, "card41");
+
+        FeistelDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel9.setText("Feistel");
+
+        jScrollPane1.setBorder(null);
+
+        jTextArea18.setColumns(20);
+        jTextArea18.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea18.setRows(5);
+        jTextArea18.setText("- The Feistel structure is a symmetric sturcture used in the construction of\nblock ciphers.\n- One of the most popular block ciphers that uses Feistel is DES.\n- In Feistel blocks are split in two, to create a left half of bits and a right\nhalf.\n- The right half of round N, becomes the left half of round N + 1.\n- Then, the right half of round N is also put through a mangler function, with a \nrandom key K. The output of this is XOR'd with the left half of round N. The \noutput of this xor becomes the right half of round N+1.\n- This sequence occurs for a pre-determined amount of round.\n\n*For a visual representation of one round of Feistel look at the questions section.");
+        jScrollPane1.setViewportView(jTextArea18);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        FDPB.setBackground(new java.awt.Color(77, 132, 155));
+        FDPB.setForeground(new java.awt.Color(255, 255, 255));
+        FDPB.setText("Return");
+        FDPB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FDPBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout FeistelDescripPanelLayout = new javax.swing.GroupLayout(FeistelDescripPanel);
+        FeistelDescripPanel.setLayout(FeistelDescripPanelLayout);
+        FeistelDescripPanelLayout.setHorizontalGroup(
+            FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                .addGroup(FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                        .addGap(374, 374, 374)
+                        .addComponent(jLabel9))
+                    .addComponent(jLabel11)
+                    .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(FDPB))
+                    .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(12, 12, 12))
+        );
+        FeistelDescripPanelLayout.setVerticalGroup(
+            FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(jLabel9)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addComponent(FDPB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel11))
+        );
+
+        MainPanel.add(FeistelDescripPanel, "card42");
+
+        RCPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        RCFamily_Label.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
+        RCFamily_Label.setForeground(new java.awt.Color(48, 87, 120));
+        RCFamily_Label.setText("<html><strong>The RC Family");
+
+        RCFamilyDescription.setBorder(null);
+
+        jTextArea11.setColumns(20);
+        jTextArea11.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea11.setLineWrap(true);
+        jTextArea11.setRows(5);
+        jTextArea11.setText("- RC4, RC5, and RC6 are a family of symmetric encryption algorithms developed by Rivest, Shamir, and Adleman (RSA).");
+        RCFamilyDescription.setViewportView(jTextArea11);
+        jTextArea11.setEditable(false);
+
+        RC4_Label.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        RC4_Label.setForeground(new java.awt.Color(48, 87, 120));
+        RC4_Label.setText("<html><strong>RC4");
+
+        RC4Description.setBorder(null);
+        RC4Description.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea12.setColumns(20);
+        jTextArea12.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea12.setRows(5);
+        jTextArea12.setText("- A variable key length stream cipher. \n- Simple to implement, and fast.\n- Many vulnerabilites have been discovered.\n- One of the biggest vulnerabilities is in it's implementation in the WEP protocol");
+        RC4Description.setViewportView(jTextArea12);
+        jTextArea12.setEditable(false);
+
+        WEP_Label.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        WEP_Label.setForeground(new java.awt.Color(48, 87, 120));
+        WEP_Label.setText("<html><strong>The WEP Vulerability");
+
+        DescriptionWEP_Label.setText("If you need a description of WEP click here. ");
+
+        Description_button.setText("Description");
+        Description_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Description_buttonActionPerformed(evt);
+            }
+        });
+
+        WEPQuestions.setBorder(null);
+
+        jTextArea14.setColumns(20);
+        jTextArea14.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea14.setRows(5);
+        jTextArea14.setText("1. Suppose you have 8-bits of C' = 01011001, and also 8-bits of\nC''= 11100110. Both were xor encrypted with the same key-stream,\nis there anyway you can leak information? Yes/No\n\n\n\n2. Suppose C' is the encrypted P', and C'' is the encrypted P''. \nWhat is P' xor P''?");
+        WEPQuestions.setViewportView(jTextArea14);
+        jTextArea14.setEditable(false);
+
+        WEPA1.setColumns(8);
+
+        WEPA2.setColumns(8);
+
+        WEPB1.setText("Enter");
+        WEPB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WEPB1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout RCPanelLayout = new javax.swing.GroupLayout(RCPanel);
+        RCPanel.setLayout(RCPanelLayout);
+        RCPanelLayout.setHorizontalGroup(
+            RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RCPanelLayout.createSequentialGroup()
+                .addGap(244, 297, Short.MAX_VALUE)
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DescriptionWEP_Label))
+                .addGap(18, 18, 18)
+                .addComponent(Description_button)
+                .addGap(231, 231, 231))
+            .addGroup(RCPanelLayout.createSequentialGroup()
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(RCFamilyDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 813, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(RCPanelLayout.createSequentialGroup()
+                                .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 549, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(RCPanelLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(WEPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(RCPanelLayout.createSequentialGroup()
+                                        .addGap(126, 126, 126)
+                                        .addComponent(WEPB1))))))
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(364, 364, 364)
+                        .addComponent(RC4_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(266, 266, 266)
+                        .addComponent(RCFamily_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        RCPanelLayout.setVerticalGroup(
+            RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RCPanelLayout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(RCFamily_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(RCFamilyDescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(RC4_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
+                .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DescriptionWEP_Label)
+                    .addComponent(Description_button))
+                .addGap(35, 35, 35)
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(WEPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(WEPB1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(116, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(RCPanel, "card26");
+
+        DESPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        DESPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/3DES.png"))); // NOI18N
+
+        DESLabel.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        DESLabel.setForeground(new java.awt.Color(48, 87, 120));
+        DESLabel.setText("Basic 3DES Encryption");
+
+        DESQ.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        DESQ.setForeground(new java.awt.Color(77, 132, 155));
+        DESQ.setText("What's the order of Encryption?");
+
+        DESA.setText("Encrypt-Decrypt-Encrypt");
+
+        DESB.setText("Encrypt-Encrypt-Encrypt");
+
+        DESC.setText("Encrypt-Decrypt-Decrypt");
+
+        DESD.setText("Decrypt-Encrypt-Encrypt");
+
+        DES_B.setBackground(new java.awt.Color(77, 132, 155));
+        DES_B.setForeground(new java.awt.Color(255, 255, 255));
+        DES_B.setText("Enter");
+        DES_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DES_BActionPerformed(evt);
+            }
+        });
+
+        DESRETURNB.setBackground(new java.awt.Color(77, 132, 155));
+        DESRETURNB.setForeground(new java.awt.Color(255, 255, 255));
+        DESRETURNB.setText("Return");
+        DESRETURNB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESRETURNBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout DESPanelLayout = new javax.swing.GroupLayout(DESPanel);
+        DESPanel.setLayout(DESPanelLayout);
+        DESPanelLayout.setHorizontalGroup(
+            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelLayout.createSequentialGroup()
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(159, 159, 159)
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(DESQ)
+                            .addComponent(DESPic)
+                            .addGroup(DESPanelLayout.createSequentialGroup()
+                                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(DESB)
+                                    .addComponent(DESC)
+                                    .addComponent(DESA)
+                                    .addComponent(DESD))
+                                .addGap(68, 68, 68)
+                                .addComponent(DES_B)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 244, Short.MAX_VALUE)
+                                .addComponent(DESRETURNB))))
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(225, 225, 225)
+                        .addComponent(DESLabel)))
+                .addGap(170, 170, 170))
+        );
+        DESPanelLayout.setVerticalGroup(
+            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(DESLabel)
+                .addGap(49, 49, 49)
+                .addComponent(DESPic)
+                .addGap(33, 33, 33)
+                .addComponent(DESQ)
+                .addGap(26, 26, 26)
+                .addComponent(DESA)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DESB)
+                    .addComponent(DES_B)
+                    .addComponent(DESRETURNB))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DESC)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DESD)
+                .addContainerGap(97, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(DESPanel, "card25");
+
+        DESPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        DESIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        DESIntro.setForeground(new java.awt.Color(48, 87, 120));
+        DESIntro.setText("Data Encryption Standard (DES)");
+
+        ThemePicture12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        DESDescripB.setBackground(new java.awt.Color(77, 132, 155));
+        DESDescripB.setForeground(new java.awt.Color(255, 255, 255));
+        DESDescripB.setText("Description");
+        DESDescripB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESDescripBActionPerformed(evt);
+            }
+        });
+
+        DESQB.setBackground(new java.awt.Color(77, 132, 155));
+        DESQB.setForeground(new java.awt.Color(255, 255, 255));
+        DESQB.setText("Questions");
+        DESQB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESQBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout DESPanelWelcomeLayout = new javax.swing.GroupLayout(DESPanelWelcome);
+        DESPanelWelcome.setLayout(DESPanelWelcomeLayout);
+        DESPanelWelcomeLayout.setHorizontalGroup(
+            DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture12)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(293, 293, 293)
+                        .addComponent(DESDescripB)
+                        .addGap(92, 92, 92)
+                        .addComponent(DESQB))
+                    .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(188, 188, 188)
+                        .addComponent(DESIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        DESPanelWelcomeLayout.setVerticalGroup(
+            DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(186, Short.MAX_VALUE)
+                .addComponent(DESIntro)
+                .addGap(66, 66, 66)
+                .addGroup(DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DESDescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DESQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture12))
+        );
+
+        MainPanel.add(DESPanelWelcome, "card41");
+
+        DESDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        DESDescrip.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        DESDescrip.setForeground(new java.awt.Color(48, 87, 120));
+        DESDescrip.setText("DES");
+
+        DESDescription.setBorder(null);
+
+        jTextArea19.setColumns(20);
+        jTextArea19.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea19.setRows(5);
+        jTextArea19.setText("DES DESCRIPTION!!!");
+        DESDescription.setViewportView(jTextArea19);
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        DESBB.setBackground(new java.awt.Color(77, 132, 155));
+        DESBB.setForeground(new java.awt.Color(255, 255, 255));
+        DESBB.setText("Return");
+        DESBB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESBBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout DESDescripPanelLayout = new javax.swing.GroupLayout(DESDescripPanel);
+        DESDescripPanel.setLayout(DESDescripPanelLayout);
+        DESDescripPanelLayout.setHorizontalGroup(
+            DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                .addGroup(DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel13)
+                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(DESBB))
+                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(DESDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                        .addGap(380, 380, 380)
+                        .addComponent(DESDescrip)))
+                .addGap(12, 12, 12))
+        );
+        DESDescripPanelLayout.setVerticalGroup(
+            DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(DESDescrip)
+                .addGap(18, 18, 18)
+                .addComponent(DESDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addComponent(DESBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel13))
+        );
+
+        MainPanel.add(DESDescripPanel, "card42");
+
+        OTPPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        OTPLabel.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        OTPLabel.setForeground(new java.awt.Color(48, 87, 120));
+        OTPLabel.setText("One-Time Pad");
+
+        OTPGameLabel.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        OTPGameLabel.setForeground(new java.awt.Color(77, 132, 155));
+        OTPGameLabel.setText("One-Time Pad Game");
+
+        OTPEnterMessage.setText("Enter a Message");
+
+        OTPMessage.setColumns(8);
+
+        OTPB1.setBackground(new java.awt.Color(77, 132, 155));
+        OTPB1.setForeground(new java.awt.Color(255, 255, 255));
+        OTPB1.setText("Enter");
+        OTPB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPB1ActionPerformed(evt);
+            }
+        });
+
+        OTPQ.setText("Is this a one-time pad for the message entered?");
+
+        OTPYes.setBackground(new java.awt.Color(77, 132, 155));
+        OTPYes.setForeground(new java.awt.Color(255, 255, 255));
+        OTPYes.setText("Yes");
+        OTPYes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPYesActionPerformed(evt);
+            }
+        });
+
+        OTPNo.setBackground(new java.awt.Color(77, 132, 155));
+        OTPNo.setForeground(new java.awt.Color(255, 255, 255));
+        OTPNo.setText("No");
+        OTPNo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPNoActionPerformed(evt);
+            }
+        });
+
+        OTPPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/otp.png"))); // NOI18N
+
+        OTPOut.setColumns(20);
+        OTPOut.setRows(5);
+        OTPOutDescription.setViewportView(OTPOut);
+
+        javax.swing.GroupLayout OTPPanelLayout = new javax.swing.GroupLayout(OTPPanel);
+        OTPPanel.setLayout(OTPPanelLayout);
+        OTPPanelLayout.setHorizontalGroup(
+            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                        .addComponent(OTPLabel)
+                        .addGap(314, 314, 314))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(OTPPanelLayout.createSequentialGroup()
+                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(OTPPanelLayout.createSequentialGroup()
+                                        .addComponent(OTPEnterMessage)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(OTPB1))
+                                    .addComponent(OTPGameLabel))
+                                .addGap(124, 124, 124)
+                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(OTPPanelLayout.createSequentialGroup()
+                                                .addComponent(OTPYes)
+                                                .addGap(161, 161, 161)
+                                                .addComponent(OTPNo))
+                                            .addComponent(OTPQ))
+                                        .addGap(42, 42, 42))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                                        .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(9, 9, 9))))
+                            .addComponent(OTPPicture, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(102, 102, 102))))
+        );
+        OTPPanelLayout.setVerticalGroup(
+            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(OTPLabel)
+                .addGap(32, 32, 32)
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(OTPGameLabel)
+                    .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(OTPQ)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(OTPYes)
+                    .addComponent(OTPNo)
+                    .addComponent(OTPB1)
+                    .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OTPEnterMessage))
+                .addGap(18, 18, 18)
+                .addComponent(OTPPicture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(220, 220, 220))
+        );
+
+        MainPanel.add(OTPPanel, "card27");
+
+        OTPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        OTPIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        OTPIntro.setForeground(new java.awt.Color(48, 87, 120));
+        OTPIntro.setText("One-Time Pad");
+
+        ThemePicture14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        OTPDescripB.setBackground(new java.awt.Color(77, 132, 155));
+        OTPDescripB.setForeground(new java.awt.Color(255, 255, 255));
+        OTPDescripB.setText("Description");
+        OTPDescripB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPDescripBActionPerformed(evt);
+            }
+        });
+
+        OTPQB.setBackground(new java.awt.Color(77, 132, 155));
+        OTPQB.setForeground(new java.awt.Color(255, 255, 255));
+        OTPQB.setText("Questions");
+        OTPQB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPQBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OTPPanelWelcomeLayout = new javax.swing.GroupLayout(OTPPanelWelcome);
+        OTPPanelWelcome.setLayout(OTPPanelWelcomeLayout);
+        OTPPanelWelcomeLayout.setHorizontalGroup(
+            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture14)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(293, 293, 293)
+                        .addComponent(OTPDescripB)
+                        .addGap(92, 92, 92)
+                        .addComponent(OTPQB))
+                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(310, 310, 310)
+                        .addComponent(OTPIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        OTPPanelWelcomeLayout.setVerticalGroup(
+            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(187, Short.MAX_VALUE)
+                .addComponent(OTPIntro)
+                .addGap(65, 65, 65)
+                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(OTPDescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OTPQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture14))
+        );
+
+        MainPanel.add(OTPPanelWelcome, "card41");
+
+        OTPDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        DESDescrip1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        DESDescrip1.setForeground(new java.awt.Color(48, 87, 120));
+        DESDescrip1.setText("One-Time Pad");
+
+        DESDescription1.setBorder(null);
+
+        jTextArea20.setColumns(20);
+        jTextArea20.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea20.setRows(5);
+        jTextArea20.setText("- The one-time pad is an encryption scheme, in which a one-time pre-shared\nkey is generated that is as long, or longer than the plaintext message being sent.\n- The pre-shared key is then XOR'd, bit for bit, with the plaintext message\n- The one-time pad is said to be uncrackable, and is said to have *perfect\nsecrecy\n* Perfect Secrey: Given a ciphertext C, no information about the plaintext\ncan be leaked or gained. ");
+        DESDescription1.setViewportView(jTextArea20);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        DESBB1.setBackground(new java.awt.Color(77, 132, 155));
+        DESBB1.setForeground(new java.awt.Color(255, 255, 255));
+        DESBB1.setText("Return");
+        DESBB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESBB1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OTPDescripPanelLayout = new javax.swing.GroupLayout(OTPDescripPanel);
+        OTPDescripPanel.setLayout(OTPDescripPanelLayout);
+        OTPDescripPanelLayout.setHorizontalGroup(
+            OTPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                .addGroup(OTPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel14)
+                    .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(DESBB1))
+                    .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(DESDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                        .addGap(302, 302, 302)
+                        .addComponent(DESDescrip1)))
+                .addGap(12, 12, 12))
+        );
+        OTPDescripPanelLayout.setVerticalGroup(
+            OTPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(DESDescrip1)
+                .addGap(18, 18, 18)
+                .addComponent(DESDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addComponent(DESBB1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel14))
+        );
+
+        MainPanel.add(OTPDescripPanel, "card42");
+
         Home.setText("Home");
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -4367,7 +4632,7 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 912, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 912, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4587,7 +4852,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
 
-            MainPanel.add(DESPanel);
+            MainPanel.add(DESPanelWelcome);
             MainPanel.repaint();
             MainPanel.revalidate(); 
     }//GEN-LAST:event_TripDESActionPerformed
@@ -4850,25 +5115,6 @@ public class Home extends javax.swing.JFrame {
             MainPanel.revalidate();      // TODO add your handling code here:
     }//GEN-LAST:event_KerberosActionPerformed
 
-    private void DES_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DES_BActionPerformed
-        if(DESA.isSelected())
-        {
-            MainPanel.removeAll();
-            MainPanel.repaint();
-            MainPanel.revalidate();
-
-            MainPanel.add(KerberosPanel);
-            MainPanel.repaint();
-            MainPanel.revalidate();
-            
-        }
-        
-        else
-        {
-            JOptionPane.showMessageDialog(null, "Incorrect", "Incorrect!", JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_DES_BActionPerformed
-
     private void RC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RC5ActionPerformed
             MainPanel.removeAll();
             MainPanel.repaint();
@@ -4884,7 +5130,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
 
-            MainPanel.add(OTPPanel);
+            MainPanel.add(OTPPanelWelcome);
             MainPanel.repaint();
             MainPanel.revalidate();        // TODO add your handling code here:
     }//GEN-LAST:event_OneTimePadActionPerformed
@@ -4998,30 +5244,6 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();        // TODO add your handling code here:
     }//GEN-LAST:event_AESActionPerformed
-
-    private void Description_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Description_buttonActionPerformed
-            MainPanel.removeAll();
-            MainPanel.repaint();
-            MainPanel.revalidate();
-
-            MainPanel.add(WEPPanel);
-            MainPanel.repaint();
-            MainPanel.revalidate();
-    }//GEN-LAST:event_Description_buttonActionPerformed
-
-    private void WEPB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WEPB1ActionPerformed
-            String answer1 = WEPA1.getText();
-            String answer2 = WEPA2.getText();
-            System.out.print(answer1);
-            System.out.print(answer2);
-            
-            if(answer1.toUpperCase().equals("YES") && answer2.equals("10111111")){
-                JOptionPane.showMessageDialog(null, "Correct! You can continue onto RC5", "CORRECT!", JOptionPane.ERROR_MESSAGE);
-            } 
-            else{
-                JOptionPane.showMessageDialog(null, "One or both answers are incorrect. Try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
-            }
-    }//GEN-LAST:event_WEPB1ActionPerformed
     String OTPGame(String message){
         
        Random r1 = new Random();
@@ -5066,30 +5288,6 @@ public class Home extends javax.swing.JFrame {
            
        }
     }
-    private void OTPYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPYesActionPerformed
-        int hold = GlobalVariable.OTPflag;
-        if(hold == 1){
-            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.ERROR_MESSAGE);               
-        }
-        else{
-            JOptionPane.showMessageDialog(null, "INCORRECT", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_OTPYesActionPerformed
-
-    private void OTPB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPB1ActionPerformed
-        OTPOut.setText(OTPGame(OTPMessage.getText()));
-    }//GEN-LAST:event_OTPB1ActionPerformed
-
-    private void OTPNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPNoActionPerformed
-        int hold = GlobalVariable.OTPflag;
-        if(hold == 0){
-            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.ERROR_MESSAGE);               
-        }
-        else{
-            JOptionPane.showMessageDialog(null, "INCORRECT", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_OTPNoActionPerformed
-
     private void CBCSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCSubmitActionPerformed
             MainPanel.removeAll();
             MainPanel.repaint();
@@ -5138,60 +5336,6 @@ public class Home extends javax.swing.JFrame {
     private void SubmissionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmissionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SubmissionActionPerformed
-
-    private void Feistel_Enter_Button(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_Enter_Button
-        String val1 = Feistel_Entry.getText();
-        String val2 = "01010100";
-
-        if(Objects.equals(val1, val2))
-        JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
-        else
-        JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
-    }//GEN-LAST:event_Feistel_Enter_Button
-
-    private void Feistel_EntryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_EntryActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Feistel_EntryActionPerformed
-
-    private void FeistelQBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelQBActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(FeistelPanel);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_FeistelQBActionPerformed
-
-    private void FesitelDescipBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FesitelDescipBActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(FeistelDescripPanel);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_FesitelDescipBActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(FeistelPanelWelcome);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(FeistelPanelWelcome);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void PAPDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPDesActionPerformed
         // TODO add your handling code here:
@@ -5485,6 +5629,197 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_AESReturnActionPerformed
 
+    private void Feistel_EntryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_EntryActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Feistel_EntryActionPerformed
+
+    private void Feistel_ButtonFeistel_Enter_Button(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_ButtonFeistel_Enter_Button
+        String val1 = Feistel_Entry.getText();
+        String val2 = "01010100";
+
+        if(Objects.equals(val1, val2))
+        JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+        else
+        JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_Feistel_ButtonFeistel_Enter_Button
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void FesitelDescipBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FesitelDescipBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelDescripPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_FesitelDescipBActionPerformed
+
+    private void FeistelQBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelQBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_FeistelQBActionPerformed
+
+    private void FDPBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FDPBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_FDPBActionPerformed
+
+    private void Description_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Description_buttonActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(WEPPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_Description_buttonActionPerformed
+
+    private void WEPB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WEPB1ActionPerformed
+        String answer1 = WEPA1.getText();
+        String answer2 = WEPA2.getText();
+        System.out.print(answer1);
+        System.out.print(answer2);
+
+        if(answer1.toUpperCase().equals("YES") && answer2.equals("10111111")){
+            JOptionPane.showMessageDialog(null, "Correct! You can continue onto RC5", "CORRECT!", JOptionPane.ERROR_MESSAGE);
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "One or both answers are incorrect. Try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_WEPB1ActionPerformed
+
+    private void DES_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DES_BActionPerformed
+        if(DESA.isSelected())
+        {
+            MainPanel.removeAll();
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+            MainPanel.add(KerberosPanel);
+            MainPanel.repaint();
+            MainPanel.revalidate();
+
+        }
+
+        else
+        {
+            JOptionPane.showMessageDialog(null, "Incorrect", "Incorrect!", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_DES_BActionPerformed
+
+    private void DESRETURNBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESRETURNBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DESPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_DESRETURNBActionPerformed
+
+    private void DESDescripBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESDescripBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DESDescripPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_DESDescripBActionPerformed
+
+    private void DESQBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESQBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DESPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_DESQBActionPerformed
+
+    private void DESBBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESBBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DESPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_DESBBActionPerformed
+
+    private void OTPB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPB1ActionPerformed
+        OTPOut.setText(OTPGame(OTPMessage.getText()));
+    }//GEN-LAST:event_OTPB1ActionPerformed
+
+    private void OTPYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPYesActionPerformed
+        int hold = GlobalVariable.OTPflag;
+        if(hold == 1){
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.ERROR_MESSAGE);
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "INCORRECT", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_OTPYesActionPerformed
+
+    private void OTPNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPNoActionPerformed
+        int hold = GlobalVariable.OTPflag;
+        if(hold == 0){
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.ERROR_MESSAGE);
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "INCORRECT", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_OTPNoActionPerformed
+
+    private void OTPDescripBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPDescripBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(OTPDescripPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_OTPDescripBActionPerformed
+
+    private void OTPQBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPQBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(OTPPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_OTPQBActionPerformed
+
+    private void DESBB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESBB1ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(OTPPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_DESBB1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -5600,12 +5935,24 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Current;
     private javax.swing.JRadioButton DESA;
     private javax.swing.JRadioButton DESB;
+    private javax.swing.JButton DESBB;
+    private javax.swing.JButton DESBB1;
     private javax.swing.JRadioButton DESC;
     private javax.swing.JRadioButton DESD;
+    private javax.swing.JLabel DESDescrip;
+    private javax.swing.JLabel DESDescrip1;
+    private javax.swing.JButton DESDescripB;
+    private javax.swing.JPanel DESDescripPanel;
+    private javax.swing.JScrollPane DESDescription;
+    private javax.swing.JScrollPane DESDescription1;
+    private javax.swing.JLabel DESIntro;
     private javax.swing.JLabel DESLabel;
     private javax.swing.JPanel DESPanel;
+    private javax.swing.JPanel DESPanelWelcome;
     private javax.swing.JLabel DESPic;
     private javax.swing.JLabel DESQ;
+    private javax.swing.JButton DESQB;
+    private javax.swing.JButton DESRETURNB;
     private javax.swing.JButton DES_B;
     private javax.swing.ButtonGroup DES_Buttons;
     private javax.swing.JLabel DH1Image;
@@ -5682,6 +6029,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JRadioButton F3;
     private javax.swing.JRadioButton F4;
     private javax.swing.JRadioButton F5;
+    private javax.swing.JButton FDPB;
     private javax.swing.JLabel False;
     private javax.swing.JMenuItem Feistel;
     private javax.swing.JPanel FeistelDescripPanel;
@@ -5723,17 +6071,21 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Message;
     private javax.swing.JLabel Message1;
     private javax.swing.JButton OTPB1;
-    private javax.swing.JScrollPane OTPDescription;
+    private javax.swing.JButton OTPDescripB;
+    private javax.swing.JPanel OTPDescripPanel;
     private javax.swing.JLabel OTPEnterMessage;
     private javax.swing.JLabel OTPGameLabel;
+    private javax.swing.JLabel OTPIntro;
     private javax.swing.JLabel OTPLabel;
     private javax.swing.JTextField OTPMessage;
     private javax.swing.JButton OTPNo;
     private javax.swing.JTextArea OTPOut;
     private javax.swing.JScrollPane OTPOutDescription;
     private javax.swing.JPanel OTPPanel;
+    private javax.swing.JPanel OTPPanelWelcome;
     private javax.swing.JLabel OTPPicture;
     private javax.swing.JLabel OTPQ;
+    private javax.swing.JButton OTPQB;
     private javax.swing.JButton OTPYes;
     private javax.swing.JMenuItem OneTimePad;
     private javax.swing.JMenuItem PAP;
@@ -5843,7 +6195,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture1;
     private javax.swing.JLabel ThemePicture10;
     private javax.swing.JLabel ThemePicture11;
+    private javax.swing.JLabel ThemePicture12;
     private javax.swing.JLabel ThemePicture13;
+    private javax.swing.JLabel ThemePicture14;
     private javax.swing.JLabel ThemePicture2;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
@@ -5880,10 +6234,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -5897,11 +6252,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea13;
     private javax.swing.JTextArea jTextArea14;
-    private javax.swing.JTextArea jTextArea15;
     private javax.swing.JTextArea jTextArea16;
     private javax.swing.JTextArea jTextArea17;
     private javax.swing.JTextArea jTextArea18;
+    private javax.swing.JTextArea jTextArea19;
     private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea20;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
