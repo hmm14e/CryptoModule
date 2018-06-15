@@ -122,6 +122,11 @@ public class Home extends javax.swing.JFrame {
         Correct_ECB = new javax.swing.JPanel();
         Correct_Pic = new javax.swing.JLabel();
         Correct1 = new javax.swing.JLabel();
+        CBCPanelWelcome = new javax.swing.JPanel();
+        CBCIntro = new javax.swing.JLabel();
+        ThemePicture19 = new javax.swing.JLabel();
+        CBCDes = new javax.swing.JButton();
+        CBCQ = new javax.swing.JButton();
         CBCDescription = new javax.swing.JPanel();
         CBCPanel = new javax.swing.JPanel();
         CBCtitle = new javax.swing.JLabel();
@@ -132,11 +137,6 @@ public class Home extends javax.swing.JFrame {
         CBCSubmit = new javax.swing.JButton();
         CBCReturn = new javax.swing.JButton();
         CBCQPanel = new javax.swing.JPanel();
-        CBCPanelWelcome = new javax.swing.JPanel();
-        CBCIntro = new javax.swing.JLabel();
-        ThemePicture19 = new javax.swing.JLabel();
-        CBCDes = new javax.swing.JButton();
-        CBCQ = new javax.swing.JButton();
         CTRDescription = new javax.swing.JPanel();
         CTRPanel = new javax.swing.JPanel();
         CTRTitle = new javax.swing.JLabel();
@@ -203,12 +203,12 @@ public class Home extends javax.swing.JFrame {
         jTextArea19 = new javax.swing.JTextArea();
         jLabel13 = new javax.swing.JLabel();
         DESBB = new javax.swing.JButton();
-        PAP_Description = new javax.swing.JPanel();
         PAPPanelWelcome = new javax.swing.JPanel();
         PAPIntro = new javax.swing.JLabel();
         ThemePicture1 = new javax.swing.JLabel();
         PAPDes = new javax.swing.JButton();
         PAPQB = new javax.swing.JButton();
+        PAP_Description = new javax.swing.JPanel();
         PAPQPanel = new javax.swing.JPanel();
         PAPLabel = new javax.swing.JLabel();
         PAPPicture = new javax.swing.JLabel();
@@ -583,6 +583,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(WelcomePanel, "card2");
 
+        CaesarDescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout CaesarDescriptionLayout = new javax.swing.GroupLayout(CaesarDescription);
         CaesarDescription.setLayout(CaesarDescriptionLayout);
         CaesarDescriptionLayout.setHorizontalGroup(
@@ -749,6 +751,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CaesarPanel, "card3");
 
+        AtbashDescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout AtbashDescriptionLayout = new javax.swing.GroupLayout(AtbashDescription);
         AtbashDescription.setLayout(AtbashDescriptionLayout);
         AtbashDescriptionLayout.setHorizontalGroup(
@@ -905,6 +909,8 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(AtbashPanelWelcome, "card48");
+
+        VigDescription.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout VigDescriptionLayout = new javax.swing.GroupLayout(VigDescription);
         VigDescription.setLayout(VigDescriptionLayout);
@@ -1069,6 +1075,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(VigenerePanelWelcome, "card48");
 
+        SynchDescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout SynchDescriptionLayout = new javax.swing.GroupLayout(SynchDescription);
         SynchDescription.setLayout(SynchDescriptionLayout);
         SynchDescriptionLayout.setHorizontalGroup(
@@ -1096,6 +1104,8 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(SynchPanel, "card28");
+
+        SSynchDescription.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout SSynchDescriptionLayout = new javax.swing.GroupLayout(SSynchDescription);
         SSynchDescription.setLayout(SSynchDescriptionLayout);
@@ -1125,6 +1135,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(SSynchPanel, "card29");
 
+        LinearDescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout LinearDescriptionLayout = new javax.swing.GroupLayout(LinearDescription);
         LinearDescription.setLayout(LinearDescriptionLayout);
         LinearDescriptionLayout.setHorizontalGroup(
@@ -1153,6 +1165,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(LinearFeedbackPanel, "card30");
 
+        EntropyDescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout EntropyDescriptionLayout = new javax.swing.GroupLayout(EntropyDescription);
         EntropyDescription.setLayout(EntropyDescriptionLayout);
         EntropyDescriptionLayout.setHorizontalGroup(
@@ -1180,6 +1194,8 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(EntropyPanel, "card31");
+
+        ECBDescription.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout ECBDescriptionLayout = new javax.swing.GroupLayout(ECBDescription);
         ECBDescription.setLayout(ECBDescriptionLayout);
@@ -1370,6 +1386,69 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(Correct_ECB, "card7");
 
+        CBCPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        CBCIntro.setBackground(new java.awt.Color(255, 255, 255));
+        CBCIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        CBCIntro.setForeground(new java.awt.Color(48, 87, 120));
+        CBCIntro.setText("Cipher Block Chaining (CBC)");
+
+        ThemePicture19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        CBCDes.setBackground(new java.awt.Color(77, 132, 155));
+        CBCDes.setForeground(new java.awt.Color(255, 255, 255));
+        CBCDes.setText("Description");
+        CBCDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCDesActionPerformed(evt);
+            }
+        });
+
+        CBCQ.setBackground(new java.awt.Color(77, 132, 155));
+        CBCQ.setForeground(new java.awt.Color(255, 255, 255));
+        CBCQ.setText("Questions");
+        CBCQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout CBCPanelWelcomeLayout = new javax.swing.GroupLayout(CBCPanelWelcome);
+        CBCPanelWelcome.setLayout(CBCPanelWelcomeLayout);
+        CBCPanelWelcomeLayout.setHorizontalGroup(
+            CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture19)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(CBCDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(CBCQ))
+                    .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(162, 162, 162)
+                        .addComponent(CBCIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        CBCPanelWelcomeLayout.setVerticalGroup(
+            CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(239, Short.MAX_VALUE)
+                .addComponent(CBCIntro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CBCDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CBCQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture19))
+        );
+
+        MainPanel.add(CBCPanelWelcome, "card48");
+
+        CBCDescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout CBCDescriptionLayout = new javax.swing.GroupLayout(CBCDescription);
         CBCDescription.setLayout(CBCDescriptionLayout);
         CBCDescriptionLayout.setHorizontalGroup(
@@ -1483,66 +1562,7 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CBCQPanel, "card40");
 
-        CBCPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
-
-        CBCIntro.setBackground(new java.awt.Color(255, 255, 255));
-        CBCIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        CBCIntro.setForeground(new java.awt.Color(48, 87, 120));
-        CBCIntro.setText("Cipher Block Chaining (CBC)");
-
-        ThemePicture19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        CBCDes.setBackground(new java.awt.Color(77, 132, 155));
-        CBCDes.setForeground(new java.awt.Color(255, 255, 255));
-        CBCDes.setText("Description");
-        CBCDes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CBCDesActionPerformed(evt);
-            }
-        });
-
-        CBCQ.setBackground(new java.awt.Color(77, 132, 155));
-        CBCQ.setForeground(new java.awt.Color(255, 255, 255));
-        CBCQ.setText("Questions");
-        CBCQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CBCQActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout CBCPanelWelcomeLayout = new javax.swing.GroupLayout(CBCPanelWelcome);
-        CBCPanelWelcome.setLayout(CBCPanelWelcomeLayout);
-        CBCPanelWelcomeLayout.setHorizontalGroup(
-            CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture19)
-                .addGap(0, 12, Short.MAX_VALUE))
-            .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
-                .addGroup(CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(269, 269, 269)
-                        .addComponent(CBCDes)
-                        .addGap(66, 66, 66)
-                        .addComponent(CBCQ))
-                    .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(162, 162, 162)
-                        .addComponent(CBCIntro)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        CBCPanelWelcomeLayout.setVerticalGroup(
-            CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(239, Short.MAX_VALUE)
-                .addComponent(CBCIntro)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CBCDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CBCQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(148, 148, 148)
-                .addComponent(ThemePicture19))
-        );
-
-        MainPanel.add(CBCPanelWelcome, "card48");
+        CTRDescription.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout CTRDescriptionLayout = new javax.swing.GroupLayout(CTRDescription);
         CTRDescription.setLayout(CTRDescriptionLayout);
@@ -2016,6 +2036,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(RCPanel, "card26");
 
+        RCDescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout RCDescriptionLayout = new javax.swing.GroupLayout(RCDescription);
         RCDescription.setLayout(RCDescriptionLayout);
         RCDescriptionLayout.setHorizontalGroup(
@@ -2236,19 +2258,6 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(DESDescripPanel, "card42");
 
-        javax.swing.GroupLayout PAP_DescriptionLayout = new javax.swing.GroupLayout(PAP_Description);
-        PAP_Description.setLayout(PAP_DescriptionLayout);
-        PAP_DescriptionLayout.setHorizontalGroup(
-            PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
-        );
-        PAP_DescriptionLayout.setVerticalGroup(
-            PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 758, Short.MAX_VALUE)
-        );
-
-        MainPanel.add(PAP_Description, "card75");
-
         PAPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
         PAPIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
@@ -2308,6 +2317,21 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(PAPPanelWelcome, "card43");
+
+        PAP_Description.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout PAP_DescriptionLayout = new javax.swing.GroupLayout(PAP_Description);
+        PAP_Description.setLayout(PAP_DescriptionLayout);
+        PAP_DescriptionLayout.setHorizontalGroup(
+            PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 912, Short.MAX_VALUE)
+        );
+        PAP_DescriptionLayout.setVerticalGroup(
+            PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 758, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(PAP_Description, "card75");
 
         PAPQPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -2463,6 +2487,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CHAPPanelWelcome, "card44");
 
+        CHAP_Description.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout CHAP_DescriptionLayout = new javax.swing.GroupLayout(CHAP_Description);
         CHAP_Description.setLayout(CHAP_DescriptionLayout);
         CHAP_DescriptionLayout.setHorizontalGroup(
@@ -2599,6 +2625,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(KerberosPanelWelcome, "card45");
 
+        Kerberos_Description.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout Kerberos_DescriptionLayout = new javax.swing.GroupLayout(Kerberos_Description);
         Kerberos_Description.setLayout(Kerberos_DescriptionLayout);
         Kerberos_DescriptionLayout.setHorizontalGroup(
@@ -2728,6 +2756,8 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(CBCMACPanelWelcome, "card46");
+
+        CBCMAC_Description.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout CBCMAC_DescriptionLayout = new javax.swing.GroupLayout(CBCMAC_Description);
         CBCMAC_Description.setLayout(CBCMAC_DescriptionLayout);
@@ -3054,6 +3084,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(SHAPanelWelcome, "card47");
 
+        SHADescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout SHADescriptionLayout = new javax.swing.GroupLayout(SHADescription);
         SHADescription.setLayout(SHADescriptionLayout);
         SHADescriptionLayout.setHorizontalGroup(
@@ -3295,6 +3327,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(MD5PanelWelcome, "card48");
 
+        MD5Description.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout MD5DescriptionLayout = new javax.swing.GroupLayout(MD5Description);
         MD5Description.setLayout(MD5DescriptionLayout);
         MD5DescriptionLayout.setHorizontalGroup(
@@ -3398,6 +3432,8 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(RSASignaturePanelWelcome, "card49");
+
+        RSASigDescription.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout RSASigDescriptionLayout = new javax.swing.GroupLayout(RSASigDescription);
         RSASigDescription.setLayout(RSASigDescriptionLayout);
@@ -3919,6 +3955,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(RSAPanelWelcome, "card54");
 
+        RSADescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout RSADescriptionLayout = new javax.swing.GroupLayout(RSADescription);
         RSADescription.setLayout(RSADescriptionLayout);
         RSADescriptionLayout.setHorizontalGroup(
@@ -4097,6 +4135,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(ElGamalPanelWelcome, "card54");
 
+        ELGamDescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout ELGamDescriptionLayout = new javax.swing.GroupLayout(ELGamDescription);
         ELGamDescription.setLayout(ELGamDescriptionLayout);
         ELGamDescriptionLayout.setHorizontalGroup(
@@ -4274,6 +4314,8 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(DHPanelWelcome, "card50");
+
+        DHDescription.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout DHDescriptionLayout = new javax.swing.GroupLayout(DHDescription);
         DHDescription.setLayout(DHDescriptionLayout);
@@ -4739,6 +4781,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(BlowfishPanelWelcome, "card51");
 
+        BlowfishDescription.setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout BlowfishDescriptionLayout = new javax.swing.GroupLayout(BlowfishDescription);
         BlowfishDescription.setLayout(BlowfishDescriptionLayout);
         BlowfishDescriptionLayout.setHorizontalGroup(
@@ -4842,6 +4886,8 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(AESPanelWelcome, "card52");
+
+        AESDescription.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout AESDescriptionLayout = new javax.swing.GroupLayout(AESDescription);
         AESDescription.setLayout(AESDescriptionLayout);
