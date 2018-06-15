@@ -55,6 +55,7 @@ public class Home extends javax.swing.JFrame {
         Welcome = new javax.swing.JLabel();
         Project = new javax.swing.JLabel();
         Theme = new javax.swing.JLabel();
+        CaesarDescription = new javax.swing.JPanel();
         CaesarPanelWelcome = new javax.swing.JPanel();
         CaesarIntro = new javax.swing.JLabel();
         ThemePicture15 = new javax.swing.JLabel();
@@ -69,6 +70,7 @@ public class Home extends javax.swing.JFrame {
         Caesar_Directions = new javax.swing.JLabel();
         theme = new javax.swing.JLabel();
         CaesarQReturn = new javax.swing.JButton();
+        AtbashDescription = new javax.swing.JPanel();
         AtbashPanel = new javax.swing.JPanel();
         AtbashTitle = new javax.swing.JLabel();
         Warning1 = new javax.swing.JLabel();
@@ -82,6 +84,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture16 = new javax.swing.JLabel();
         AtbashDes = new javax.swing.JButton();
         AtbashQ = new javax.swing.JButton();
+        VigDescription = new javax.swing.JPanel();
         VigenerePanel = new javax.swing.JPanel();
         VigenereTitle = new javax.swing.JLabel();
         Warning2 = new javax.swing.JLabel();
@@ -95,10 +98,15 @@ public class Home extends javax.swing.JFrame {
         ThemePicture17 = new javax.swing.JLabel();
         VigenereDes = new javax.swing.JButton();
         VigenereQ = new javax.swing.JButton();
+        SynchDescription = new javax.swing.JPanel();
         SynchPanel = new javax.swing.JPanel();
+        SSynchDescription = new javax.swing.JPanel();
         SSynchPanel = new javax.swing.JPanel();
+        LinearDescription = new javax.swing.JPanel();
         LinearFeedbackPanel = new javax.swing.JPanel();
+        EntropyDescription = new javax.swing.JPanel();
         EntropyPanel = new javax.swing.JPanel();
+        ECBDescription = new javax.swing.JPanel();
         ECBPanel = new javax.swing.JPanel();
         ECB_Picture = new javax.swing.JLabel();
         Answer1 = new javax.swing.JTextField();
@@ -114,6 +122,7 @@ public class Home extends javax.swing.JFrame {
         Correct_ECB = new javax.swing.JPanel();
         Correct_Pic = new javax.swing.JLabel();
         Correct1 = new javax.swing.JLabel();
+        CBCDescription = new javax.swing.JPanel();
         CBCPanel = new javax.swing.JPanel();
         CBCtitle = new javax.swing.JLabel();
         EncryptImage = new javax.swing.JLabel();
@@ -128,6 +137,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture19 = new javax.swing.JLabel();
         CBCDes = new javax.swing.JButton();
         CBCQ = new javax.swing.JButton();
+        CTRDescription = new javax.swing.JPanel();
         CTRPanel = new javax.swing.JPanel();
         CTRTitle = new javax.swing.JLabel();
         CTRImage = new javax.swing.JLabel();
@@ -142,8 +152,8 @@ public class Home extends javax.swing.JFrame {
         Feistel_Button = new javax.swing.JButton();
         Feistel_Intro = new javax.swing.JLabel();
         FeistelImage = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        Theme_ = new javax.swing.JLabel();
+        FeistelReturn = new javax.swing.JButton();
         FeistelPanelWelcome = new javax.swing.JPanel();
         FeistelIntro = new javax.swing.JLabel();
         ThemePicture = new javax.swing.JLabel();
@@ -155,6 +165,45 @@ public class Home extends javax.swing.JFrame {
         jTextArea18 = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         FDPB = new javax.swing.JButton();
+        RCPanelWelcome = new javax.swing.JPanel();
+        RCPanel = new javax.swing.JPanel();
+        RCFamily_Label = new javax.swing.JLabel();
+        RCFamilyDescription = new javax.swing.JScrollPane();
+        jTextArea11 = new javax.swing.JTextArea();
+        RC4_Label = new javax.swing.JLabel();
+        RC4Description = new javax.swing.JScrollPane();
+        jTextArea12 = new javax.swing.JTextArea();
+        WEP_Label = new javax.swing.JLabel();
+        DescriptionWEP_Label = new javax.swing.JLabel();
+        Description_button = new javax.swing.JButton();
+        WEPQuestions = new javax.swing.JScrollPane();
+        jTextArea14 = new javax.swing.JTextArea();
+        WEPA1 = new javax.swing.JTextField();
+        WEPA2 = new javax.swing.JTextField();
+        WEPB1 = new javax.swing.JButton();
+        RCDescription = new javax.swing.JPanel();
+        DESPanel = new javax.swing.JPanel();
+        DESPic = new javax.swing.JLabel();
+        DESLabel = new javax.swing.JLabel();
+        DESQ = new javax.swing.JLabel();
+        DESA = new javax.swing.JRadioButton();
+        DESB = new javax.swing.JRadioButton();
+        DESC = new javax.swing.JRadioButton();
+        DESD = new javax.swing.JRadioButton();
+        DES_B = new javax.swing.JButton();
+        DESRETURNB = new javax.swing.JButton();
+        DESPanelWelcome = new javax.swing.JPanel();
+        DESIntro = new javax.swing.JLabel();
+        ThemePicture12 = new javax.swing.JLabel();
+        DESDescripB = new javax.swing.JButton();
+        DESQB = new javax.swing.JButton();
+        DESDescripPanel = new javax.swing.JPanel();
+        DESDescrip = new javax.swing.JLabel();
+        DESDescription = new javax.swing.JScrollPane();
+        jTextArea19 = new javax.swing.JTextArea();
+        jLabel13 = new javax.swing.JLabel();
+        DESBB = new javax.swing.JButton();
+        PAP_Description = new javax.swing.JPanel();
         PAPPanelWelcome = new javax.swing.JPanel();
         PAPIntro = new javax.swing.JLabel();
         ThemePicture1 = new javax.swing.JLabel();
@@ -174,6 +223,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture2 = new javax.swing.JLabel();
         CHAPDes = new javax.swing.JButton();
         CHAPQ = new javax.swing.JButton();
+        CHAP_Description = new javax.swing.JPanel();
         CHAPPanel = new javax.swing.JPanel();
         CHAPLabel = new javax.swing.JLabel();
         CHAPPicture = new javax.swing.JLabel();
@@ -185,6 +235,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture3 = new javax.swing.JLabel();
         KerberosDes = new javax.swing.JButton();
         KerberosQ = new javax.swing.JButton();
+        Kerberos_Description = new javax.swing.JPanel();
         KerberosPanel = new javax.swing.JPanel();
         KerberosText = new javax.swing.JScrollPane();
         jTextArea10 = new javax.swing.JTextArea();
@@ -195,6 +246,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture4 = new javax.swing.JLabel();
         CBCMACDes = new javax.swing.JButton();
         CBCMACQ = new javax.swing.JButton();
+        CBCMAC_Description = new javax.swing.JPanel();
         CBCMAC = new javax.swing.JPanel();
         CBCMACTitle = new javax.swing.JLabel();
         Question1 = new javax.swing.JLabel();
@@ -228,6 +280,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture5 = new javax.swing.JLabel();
         SHADes = new javax.swing.JButton();
         SHAQ = new javax.swing.JButton();
+        SHADescription = new javax.swing.JPanel();
         SHAPanel = new javax.swing.JPanel();
         SHA_Text = new javax.swing.JTextField();
         SHA_Button = new javax.swing.JButton();
@@ -252,6 +305,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture6 = new javax.swing.JLabel();
         MD5Des = new javax.swing.JButton();
         MD5Q = new javax.swing.JButton();
+        MD5Description = new javax.swing.JPanel();
         MD5Panel = new javax.swing.JPanel();
         MD5Return = new javax.swing.JButton();
         RSASignaturePanelWelcome = new javax.swing.JPanel();
@@ -259,6 +313,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture7 = new javax.swing.JLabel();
         RSASigDes = new javax.swing.JButton();
         RSASigQ = new javax.swing.JButton();
+        RSASigDescription = new javax.swing.JPanel();
         RSA_Signature_1 = new javax.swing.JPanel();
         SigningAMessage = new javax.swing.JLabel();
         Story = new javax.swing.JScrollPane();
@@ -307,6 +362,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture13 = new javax.swing.JLabel();
         RSADes = new javax.swing.JButton();
         RSAQ = new javax.swing.JButton();
+        RSADescription = new javax.swing.JPanel();
         RSAPanel = new javax.swing.JPanel();
         RSAQ1 = new javax.swing.JLabel();
         RSAHeader = new javax.swing.JLabel();
@@ -325,6 +381,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture8 = new javax.swing.JLabel();
         ElGamDes = new javax.swing.JButton();
         ElGamQ = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
         ElGamalPanel = new javax.swing.JPanel();
         ElGamalHeader = new javax.swing.JLabel();
         EGQ1 = new javax.swing.JLabel();
@@ -340,6 +397,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture9 = new javax.swing.JLabel();
         DHDes = new javax.swing.JButton();
         DHQ = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         DHPanel = new javax.swing.JPanel();
         DHDiagram1 = new javax.swing.JLabel();
         DHButton1 = new javax.swing.JButton();
@@ -402,42 +460,6 @@ public class Home extends javax.swing.JFrame {
         WEPDescription = new javax.swing.JScrollPane();
         jTextArea13 = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
-        RCPanel = new javax.swing.JPanel();
-        RCFamily_Label = new javax.swing.JLabel();
-        RCFamilyDescription = new javax.swing.JScrollPane();
-        jTextArea11 = new javax.swing.JTextArea();
-        RC4_Label = new javax.swing.JLabel();
-        RC4Description = new javax.swing.JScrollPane();
-        jTextArea12 = new javax.swing.JTextArea();
-        WEP_Label = new javax.swing.JLabel();
-        DescriptionWEP_Label = new javax.swing.JLabel();
-        Description_button = new javax.swing.JButton();
-        WEPQuestions = new javax.swing.JScrollPane();
-        jTextArea14 = new javax.swing.JTextArea();
-        WEPA1 = new javax.swing.JTextField();
-        WEPA2 = new javax.swing.JTextField();
-        WEPB1 = new javax.swing.JButton();
-        DESPanel = new javax.swing.JPanel();
-        DESPic = new javax.swing.JLabel();
-        DESLabel = new javax.swing.JLabel();
-        DESQ = new javax.swing.JLabel();
-        DESA = new javax.swing.JRadioButton();
-        DESB = new javax.swing.JRadioButton();
-        DESC = new javax.swing.JRadioButton();
-        DESD = new javax.swing.JRadioButton();
-        DES_B = new javax.swing.JButton();
-        DESRETURNB = new javax.swing.JButton();
-        DESPanelWelcome = new javax.swing.JPanel();
-        DESIntro = new javax.swing.JLabel();
-        ThemePicture12 = new javax.swing.JLabel();
-        DESDescripB = new javax.swing.JButton();
-        DESQB = new javax.swing.JButton();
-        DESDescripPanel = new javax.swing.JPanel();
-        DESDescrip = new javax.swing.JLabel();
-        DESDescription = new javax.swing.JScrollPane();
-        jTextArea19 = new javax.swing.JTextArea();
-        jLabel13 = new javax.swing.JLabel();
-        DESBB = new javax.swing.JButton();
         OTPPanel = new javax.swing.JPanel();
         OTPLabel = new javax.swing.JLabel();
         OTPGameLabel = new javax.swing.JLabel();
@@ -558,6 +580,19 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(WelcomePanel, "card2");
+
+        javax.swing.GroupLayout CaesarDescriptionLayout = new javax.swing.GroupLayout(CaesarDescription);
+        CaesarDescription.setLayout(CaesarDescriptionLayout);
+        CaesarDescriptionLayout.setHorizontalGroup(
+            CaesarDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        CaesarDescriptionLayout.setVerticalGroup(
+            CaesarDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(CaesarDescription, "card65");
 
         CaesarPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -712,6 +747,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CaesarPanel, "card3");
 
+        javax.swing.GroupLayout AtbashDescriptionLayout = new javax.swing.GroupLayout(AtbashDescription);
+        AtbashDescription.setLayout(AtbashDescriptionLayout);
+        AtbashDescriptionLayout.setHorizontalGroup(
+            AtbashDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        AtbashDescriptionLayout.setVerticalGroup(
+            AtbashDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(AtbashDescription, "card65");
+
         AtbashPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         AtbashTitle.setFont(AtbashTitle.getFont().deriveFont(AtbashTitle.getFont().getSize()+23f));
@@ -855,6 +903,19 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(AtbashPanelWelcome, "card48");
+
+        javax.swing.GroupLayout VigDescriptionLayout = new javax.swing.GroupLayout(VigDescription);
+        VigDescription.setLayout(VigDescriptionLayout);
+        VigDescriptionLayout.setHorizontalGroup(
+            VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        VigDescriptionLayout.setVerticalGroup(
+            VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(VigDescription, "card65");
 
         VigenerePanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1006,6 +1067,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(VigenerePanelWelcome, "card48");
 
+        javax.swing.GroupLayout SynchDescriptionLayout = new javax.swing.GroupLayout(SynchDescription);
+        SynchDescription.setLayout(SynchDescriptionLayout);
+        SynchDescriptionLayout.setHorizontalGroup(
+            SynchDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        SynchDescriptionLayout.setVerticalGroup(
+            SynchDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(SynchDescription, "card65");
+
         SynchPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout SynchPanelLayout = new javax.swing.GroupLayout(SynchPanel);
@@ -1020,6 +1094,19 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(SynchPanel, "card28");
+
+        javax.swing.GroupLayout SSynchDescriptionLayout = new javax.swing.GroupLayout(SSynchDescription);
+        SSynchDescription.setLayout(SSynchDescriptionLayout);
+        SSynchDescriptionLayout.setHorizontalGroup(
+            SSynchDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        SSynchDescriptionLayout.setVerticalGroup(
+            SSynchDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(SSynchDescription, "card65");
 
         SSynchPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1036,6 +1123,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(SSynchPanel, "card29");
 
+        javax.swing.GroupLayout LinearDescriptionLayout = new javax.swing.GroupLayout(LinearDescription);
+        LinearDescription.setLayout(LinearDescriptionLayout);
+        LinearDescriptionLayout.setHorizontalGroup(
+            LinearDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        LinearDescriptionLayout.setVerticalGroup(
+            LinearDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(LinearDescription, "card65");
+
         LinearFeedbackPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout LinearFeedbackPanelLayout = new javax.swing.GroupLayout(LinearFeedbackPanel);
@@ -1051,6 +1151,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(LinearFeedbackPanel, "card30");
 
+        javax.swing.GroupLayout EntropyDescriptionLayout = new javax.swing.GroupLayout(EntropyDescription);
+        EntropyDescription.setLayout(EntropyDescriptionLayout);
+        EntropyDescriptionLayout.setHorizontalGroup(
+            EntropyDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        EntropyDescriptionLayout.setVerticalGroup(
+            EntropyDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(EntropyDescription, "card65");
+
         EntropyPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout EntropyPanelLayout = new javax.swing.GroupLayout(EntropyPanel);
@@ -1065,6 +1178,19 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(EntropyPanel, "card31");
+
+        javax.swing.GroupLayout ECBDescriptionLayout = new javax.swing.GroupLayout(ECBDescription);
+        ECBDescription.setLayout(ECBDescriptionLayout);
+        ECBDescriptionLayout.setHorizontalGroup(
+            ECBDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        ECBDescriptionLayout.setVerticalGroup(
+            ECBDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(ECBDescription, "card65");
 
         ECBPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1242,6 +1368,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(Correct_ECB, "card7");
 
+        javax.swing.GroupLayout CBCDescriptionLayout = new javax.swing.GroupLayout(CBCDescription);
+        CBCDescription.setLayout(CBCDescriptionLayout);
+        CBCDescriptionLayout.setHorizontalGroup(
+            CBCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        CBCDescriptionLayout.setVerticalGroup(
+            CBCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(CBCDescription, "card65");
+
         CBCPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         CBCtitle.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
@@ -1303,7 +1442,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCPanelLayout.createSequentialGroup()
                         .addGap(351, 351, 351)
                         .addComponent(CBCtitle)))
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
         CBCPanelLayout.setVerticalGroup(
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1403,6 +1542,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CBCPanelWelcome, "card48");
 
+        javax.swing.GroupLayout CTRDescriptionLayout = new javax.swing.GroupLayout(CTRDescription);
+        CTRDescription.setLayout(CTRDescriptionLayout);
+        CTRDescriptionLayout.setHorizontalGroup(
+            CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        CTRDescriptionLayout.setVerticalGroup(
+            CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(CTRDescription, "card65");
+
         CTRPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         CTRTitle.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
@@ -1430,7 +1582,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(CTRTitle)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRPanelLayout.createSequentialGroup()
-                .addContainerGap(93, Short.MAX_VALUE)
+                .addContainerGap(73, Short.MAX_VALUE)
                 .addComponent(CTRReturn)
                 .addGap(58, 58, 58)
                 .addComponent(CTRImage)
@@ -1538,14 +1690,14 @@ public class Home extends javax.swing.JFrame {
 
         FeistelImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Feistel-Update.png"))); // NOI18N
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        Theme_.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        jButton4.setBackground(new java.awt.Color(77, 132, 155));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Return");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        FeistelReturn.setBackground(new java.awt.Color(77, 132, 155));
+        FeistelReturn.setForeground(new java.awt.Color(255, 255, 255));
+        FeistelReturn.setText("Return");
+        FeistelReturn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                FeistelReturnActionPerformed(evt);
             }
         });
 
@@ -1555,22 +1707,22 @@ public class Home extends javax.swing.JFrame {
             FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FeistelPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Theme_, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(FeistelPanelLayout.createSequentialGroup()
                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FeistelPanelLayout.createSequentialGroup()
-                        .addGap(249, 249, 249)
+                        .addGap(24, 24, 24)
+                        .addComponent(FeistelReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(121, 121, 121)
                         .addComponent(FeistelImage)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FeistelPanelLayout.createSequentialGroup()
                         .addGap(163, 163, 163)
                         .addComponent(Feistel_Intro)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Feistel_Button)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addComponent(Feistel_Button)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         FeistelPanelLayout.setVerticalGroup(
@@ -1579,19 +1731,23 @@ public class Home extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addComponent(Feistel_Intro)
                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(FeistelImage, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
                     .addGroup(FeistelPanelLayout.createSequentialGroup()
-                        .addGap(234, 234, 234)
-                        .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanelLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                                .addComponent(FeistelImage, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18))
+                            .addGroup(FeistelPanelLayout.createSequentialGroup()
+                                .addGap(234, 234, 234)
+                                .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(34, 292, Short.MAX_VALUE)))
+                        .addComponent(Theme_, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanelLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)))
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(FeistelReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(151, 151, 151))))
         );
 
         MainPanel.add(FeistelPanel, "card8");
@@ -1695,7 +1851,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
                         .addGap(117, 117, 117)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(12, 12, 12))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         FeistelDescripPanelLayout.setVerticalGroup(
             FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1711,6 +1867,385 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(FeistelDescripPanel, "card42");
+
+        javax.swing.GroupLayout RCPanelWelcomeLayout = new javax.swing.GroupLayout(RCPanelWelcome);
+        RCPanelWelcome.setLayout(RCPanelWelcomeLayout);
+        RCPanelWelcomeLayout.setHorizontalGroup(
+            RCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        RCPanelWelcomeLayout.setVerticalGroup(
+            RCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(RCPanelWelcome, "card75");
+
+        RCPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        RCFamily_Label.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
+        RCFamily_Label.setForeground(new java.awt.Color(48, 87, 120));
+        RCFamily_Label.setText("<html><strong>The RC Family");
+
+        RCFamilyDescription.setBorder(null);
+
+        jTextArea11.setColumns(20);
+        jTextArea11.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea11.setLineWrap(true);
+        jTextArea11.setRows(5);
+        jTextArea11.setText("- RC4, RC5, and RC6 are a family of symmetric encryption algorithms developed by Rivest, Shamir, and Adleman (RSA).");
+        RCFamilyDescription.setViewportView(jTextArea11);
+        jTextArea11.setEditable(false);
+
+        RC4_Label.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        RC4_Label.setForeground(new java.awt.Color(48, 87, 120));
+        RC4_Label.setText("<html><strong>RC4");
+
+        RC4Description.setBorder(null);
+        RC4Description.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea12.setColumns(20);
+        jTextArea12.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea12.setRows(5);
+        jTextArea12.setText("- A variable key length stream cipher. \n- Simple to implement, and fast.\n- Many vulnerabilites have been discovered.\n- One of the biggest vulnerabilities is in it's implementation in the WEP protocol");
+        RC4Description.setViewportView(jTextArea12);
+        jTextArea12.setEditable(false);
+
+        WEP_Label.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        WEP_Label.setForeground(new java.awt.Color(48, 87, 120));
+        WEP_Label.setText("<html><strong>The WEP Vulerability");
+
+        DescriptionWEP_Label.setText("If you need a description of WEP click here. ");
+
+        Description_button.setText("Description");
+        Description_button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Description_buttonActionPerformed(evt);
+            }
+        });
+
+        WEPQuestions.setBorder(null);
+
+        jTextArea14.setColumns(20);
+        jTextArea14.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea14.setRows(5);
+        jTextArea14.setText("1. Suppose you have 8-bits of C' = 01011001, and also 8-bits of\nC''= 11100110. Both were xor encrypted with the same key-stream,\nis there anyway you can leak information? Yes/No\n\n\n\n2. Suppose C' is the encrypted P', and C'' is the encrypted P''. \nWhat is P' xor P''?");
+        WEPQuestions.setViewportView(jTextArea14);
+        jTextArea14.setEditable(false);
+
+        WEPA1.setColumns(8);
+
+        WEPA2.setColumns(8);
+
+        WEPB1.setText("Enter");
+        WEPB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WEPB1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout RCPanelLayout = new javax.swing.GroupLayout(RCPanel);
+        RCPanel.setLayout(RCPanelLayout);
+        RCPanelLayout.setHorizontalGroup(
+            RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RCPanelLayout.createSequentialGroup()
+                .addGap(244, 297, Short.MAX_VALUE)
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DescriptionWEP_Label))
+                .addGap(18, 18, 18)
+                .addComponent(Description_button)
+                .addGap(231, 231, 231))
+            .addGroup(RCPanelLayout.createSequentialGroup()
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(RCFamilyDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 813, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(RCPanelLayout.createSequentialGroup()
+                                .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 549, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(RCPanelLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(WEPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(RCPanelLayout.createSequentialGroup()
+                                        .addGap(126, 126, 126)
+                                        .addComponent(WEPB1))))))
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(364, 364, 364)
+                        .addComponent(RC4_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(266, 266, 266)
+                        .addComponent(RCFamily_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        RCPanelLayout.setVerticalGroup(
+            RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RCPanelLayout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(RCFamily_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(RCFamilyDescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(RC4_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
+                .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DescriptionWEP_Label)
+                    .addComponent(Description_button))
+                .addGap(35, 35, 35)
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(WEPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(WEPB1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(127, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(RCPanel, "card26");
+
+        javax.swing.GroupLayout RCDescriptionLayout = new javax.swing.GroupLayout(RCDescription);
+        RCDescription.setLayout(RCDescriptionLayout);
+        RCDescriptionLayout.setHorizontalGroup(
+            RCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        RCDescriptionLayout.setVerticalGroup(
+            RCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(RCDescription, "card75");
+
+        DESPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        DESPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/3DES.png"))); // NOI18N
+
+        DESLabel.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        DESLabel.setForeground(new java.awt.Color(48, 87, 120));
+        DESLabel.setText("Basic 3DES Encryption");
+
+        DESQ.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        DESQ.setForeground(new java.awt.Color(77, 132, 155));
+        DESQ.setText("What's the order of Encryption?");
+
+        DESA.setText("Encrypt-Decrypt-Encrypt");
+
+        DESB.setText("Encrypt-Encrypt-Encrypt");
+
+        DESC.setText("Encrypt-Decrypt-Decrypt");
+
+        DESD.setText("Decrypt-Encrypt-Encrypt");
+
+        DES_B.setBackground(new java.awt.Color(77, 132, 155));
+        DES_B.setForeground(new java.awt.Color(255, 255, 255));
+        DES_B.setText("Enter");
+        DES_B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DES_BActionPerformed(evt);
+            }
+        });
+
+        DESRETURNB.setBackground(new java.awt.Color(77, 132, 155));
+        DESRETURNB.setForeground(new java.awt.Color(255, 255, 255));
+        DESRETURNB.setText("Return");
+        DESRETURNB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESRETURNBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout DESPanelLayout = new javax.swing.GroupLayout(DESPanel);
+        DESPanel.setLayout(DESPanelLayout);
+        DESPanelLayout.setHorizontalGroup(
+            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelLayout.createSequentialGroup()
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(159, 159, 159)
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(DESQ)
+                            .addComponent(DESPic)
+                            .addGroup(DESPanelLayout.createSequentialGroup()
+                                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(DESB)
+                                    .addComponent(DESC)
+                                    .addComponent(DESA)
+                                    .addComponent(DESD))
+                                .addGap(68, 68, 68)
+                                .addComponent(DES_B)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                                .addComponent(DESRETURNB))))
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(225, 225, 225)
+                        .addComponent(DESLabel)))
+                .addGap(170, 170, 170))
+        );
+        DESPanelLayout.setVerticalGroup(
+            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(DESLabel)
+                .addGap(49, 49, 49)
+                .addComponent(DESPic)
+                .addGap(33, 33, 33)
+                .addComponent(DESQ)
+                .addGap(26, 26, 26)
+                .addComponent(DESA)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DESB)
+                    .addComponent(DES_B)
+                    .addComponent(DESRETURNB))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DESC)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DESD)
+                .addContainerGap(76, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(DESPanel, "card25");
+
+        DESPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        DESIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        DESIntro.setForeground(new java.awt.Color(48, 87, 120));
+        DESIntro.setText("Data Encryption Standard (DES)");
+
+        ThemePicture12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        DESDescripB.setBackground(new java.awt.Color(77, 132, 155));
+        DESDescripB.setForeground(new java.awt.Color(255, 255, 255));
+        DESDescripB.setText("Description");
+        DESDescripB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESDescripBActionPerformed(evt);
+            }
+        });
+
+        DESQB.setBackground(new java.awt.Color(77, 132, 155));
+        DESQB.setForeground(new java.awt.Color(255, 255, 255));
+        DESQB.setText("Questions");
+        DESQB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESQBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout DESPanelWelcomeLayout = new javax.swing.GroupLayout(DESPanelWelcome);
+        DESPanelWelcome.setLayout(DESPanelWelcomeLayout);
+        DESPanelWelcomeLayout.setHorizontalGroup(
+            DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture12)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(293, 293, 293)
+                        .addComponent(DESDescripB)
+                        .addGap(92, 92, 92)
+                        .addComponent(DESQB))
+                    .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(188, 188, 188)
+                        .addComponent(DESIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        DESPanelWelcomeLayout.setVerticalGroup(
+            DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(185, Short.MAX_VALUE)
+                .addComponent(DESIntro)
+                .addGap(66, 66, 66)
+                .addGroup(DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DESDescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DESQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture12))
+        );
+
+        MainPanel.add(DESPanelWelcome, "card41");
+
+        DESDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        DESDescrip.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        DESDescrip.setForeground(new java.awt.Color(48, 87, 120));
+        DESDescrip.setText("DES");
+
+        DESDescription.setBorder(null);
+
+        jTextArea19.setColumns(20);
+        jTextArea19.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea19.setRows(5);
+        jTextArea19.setText("DES DESCRIPTION!!!");
+        DESDescription.setViewportView(jTextArea19);
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        DESBB.setBackground(new java.awt.Color(77, 132, 155));
+        DESBB.setForeground(new java.awt.Color(255, 255, 255));
+        DESBB.setText("Return");
+        DESBB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESBBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout DESDescripPanelLayout = new javax.swing.GroupLayout(DESDescripPanel);
+        DESDescripPanel.setLayout(DESDescripPanelLayout);
+        DESDescripPanelLayout.setHorizontalGroup(
+            DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                .addGroup(DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel13)
+                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(DESBB))
+                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(DESDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                        .addGap(380, 380, 380)
+                        .addComponent(DESDescrip)))
+                .addGap(12, 12, 12))
+        );
+        DESDescripPanelLayout.setVerticalGroup(
+            DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(DESDescrip)
+                .addGap(18, 18, 18)
+                .addComponent(DESDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(DESBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel13))
+        );
+
+        MainPanel.add(DESDescripPanel, "card42");
+
+        javax.swing.GroupLayout PAP_DescriptionLayout = new javax.swing.GroupLayout(PAP_Description);
+        PAP_Description.setLayout(PAP_DescriptionLayout);
+        PAP_DescriptionLayout.setHorizontalGroup(
+            PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        PAP_DescriptionLayout.setVerticalGroup(
+            PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(PAP_Description, "card75");
 
         PAPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1926,6 +2461,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CHAPPanelWelcome, "card44");
 
+        javax.swing.GroupLayout CHAP_DescriptionLayout = new javax.swing.GroupLayout(CHAP_Description);
+        CHAP_Description.setLayout(CHAP_DescriptionLayout);
+        CHAP_DescriptionLayout.setHorizontalGroup(
+            CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        CHAP_DescriptionLayout.setVerticalGroup(
+            CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(CHAP_Description, "card75");
+
         CHAPPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         CHAPLabel.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
@@ -2049,6 +2597,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(KerberosPanelWelcome, "card45");
 
+        javax.swing.GroupLayout Kerberos_DescriptionLayout = new javax.swing.GroupLayout(Kerberos_Description);
+        Kerberos_Description.setLayout(Kerberos_DescriptionLayout);
+        Kerberos_DescriptionLayout.setHorizontalGroup(
+            Kerberos_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        Kerberos_DescriptionLayout.setVerticalGroup(
+            Kerberos_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(Kerberos_Description, "card75");
+
         KerberosPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         KerberosText.setBorder(null);
@@ -2165,6 +2726,19 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(CBCMACPanelWelcome, "card46");
+
+        javax.swing.GroupLayout CBCMAC_DescriptionLayout = new javax.swing.GroupLayout(CBCMAC_Description);
+        CBCMAC_Description.setLayout(CBCMAC_DescriptionLayout);
+        CBCMAC_DescriptionLayout.setHorizontalGroup(
+            CBCMAC_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        CBCMAC_DescriptionLayout.setVerticalGroup(
+            CBCMAC_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(CBCMAC_Description, "card75");
 
         CBCMAC.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -2478,6 +3052,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(SHAPanelWelcome, "card47");
 
+        javax.swing.GroupLayout SHADescriptionLayout = new javax.swing.GroupLayout(SHADescription);
+        SHADescription.setLayout(SHADescriptionLayout);
+        SHADescriptionLayout.setHorizontalGroup(
+            SHADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        SHADescriptionLayout.setVerticalGroup(
+            SHADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(SHADescription, "card75");
+
         SHAPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         SHA_Button.setText("Enter");
@@ -2706,6 +3293,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(MD5PanelWelcome, "card48");
 
+        javax.swing.GroupLayout MD5DescriptionLayout = new javax.swing.GroupLayout(MD5Description);
+        MD5Description.setLayout(MD5DescriptionLayout);
+        MD5DescriptionLayout.setHorizontalGroup(
+            MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        MD5DescriptionLayout.setVerticalGroup(
+            MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(MD5Description, "card82");
+
         MD5Panel.setBackground(new java.awt.Color(255, 255, 255));
 
         MD5Return.setBackground(new java.awt.Color(77, 132, 155));
@@ -2796,6 +3396,19 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(RSASignaturePanelWelcome, "card49");
+
+        javax.swing.GroupLayout RSASigDescriptionLayout = new javax.swing.GroupLayout(RSASigDescription);
+        RSASigDescription.setLayout(RSASigDescriptionLayout);
+        RSASigDescriptionLayout.setHorizontalGroup(
+            RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        RSASigDescriptionLayout.setVerticalGroup(
+            RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(RSASigDescription, "card82");
 
         RSA_Signature_1.setBackground(new java.awt.Color(255, 255, 255));
         RSA_Signature_1.setOpaque(false);
@@ -3304,6 +3917,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(RSAPanelWelcome, "card54");
 
+        javax.swing.GroupLayout RSADescriptionLayout = new javax.swing.GroupLayout(RSADescription);
+        RSADescription.setLayout(RSADescriptionLayout);
+        RSADescriptionLayout.setHorizontalGroup(
+            RSADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        RSADescriptionLayout.setVerticalGroup(
+            RSADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(RSADescription, "card82");
+
         RSAPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         RSAQ1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -3469,6 +4095,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(ElGamalPanelWelcome, "card54");
 
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(jPanel2, "card82");
+
         ElGamalPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         ElGamalHeader.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
@@ -3633,6 +4272,19 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(DHPanelWelcome, "card50");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(jPanel1, "card82");
 
         DHPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -4270,346 +4922,6 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(WEPPanel, "card39");
-
-        RCPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        RCFamily_Label.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
-        RCFamily_Label.setForeground(new java.awt.Color(48, 87, 120));
-        RCFamily_Label.setText("<html><strong>The RC Family");
-
-        RCFamilyDescription.setBorder(null);
-
-        jTextArea11.setColumns(20);
-        jTextArea11.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea11.setLineWrap(true);
-        jTextArea11.setRows(5);
-        jTextArea11.setText("- RC4, RC5, and RC6 are a family of symmetric encryption algorithms developed by Rivest, Shamir, and Adleman (RSA).");
-        RCFamilyDescription.setViewportView(jTextArea11);
-        jTextArea11.setEditable(false);
-
-        RC4_Label.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
-        RC4_Label.setForeground(new java.awt.Color(48, 87, 120));
-        RC4_Label.setText("<html><strong>RC4");
-
-        RC4Description.setBorder(null);
-        RC4Description.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea12.setColumns(20);
-        jTextArea12.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea12.setRows(5);
-        jTextArea12.setText("- A variable key length stream cipher. \n- Simple to implement, and fast.\n- Many vulnerabilites have been discovered.\n- One of the biggest vulnerabilities is in it's implementation in the WEP protocol");
-        RC4Description.setViewportView(jTextArea12);
-        jTextArea12.setEditable(false);
-
-        WEP_Label.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
-        WEP_Label.setForeground(new java.awt.Color(48, 87, 120));
-        WEP_Label.setText("<html><strong>The WEP Vulerability");
-
-        DescriptionWEP_Label.setText("If you need a description of WEP click here. ");
-
-        Description_button.setText("Description");
-        Description_button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Description_buttonActionPerformed(evt);
-            }
-        });
-
-        WEPQuestions.setBorder(null);
-
-        jTextArea14.setColumns(20);
-        jTextArea14.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea14.setRows(5);
-        jTextArea14.setText("1. Suppose you have 8-bits of C' = 01011001, and also 8-bits of\nC''= 11100110. Both were xor encrypted with the same key-stream,\nis there anyway you can leak information? Yes/No\n\n\n\n2. Suppose C' is the encrypted P', and C'' is the encrypted P''. \nWhat is P' xor P''?");
-        WEPQuestions.setViewportView(jTextArea14);
-        jTextArea14.setEditable(false);
-
-        WEPA1.setColumns(8);
-
-        WEPA2.setColumns(8);
-
-        WEPB1.setText("Enter");
-        WEPB1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                WEPB1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout RCPanelLayout = new javax.swing.GroupLayout(RCPanel);
-        RCPanel.setLayout(RCPanelLayout);
-        RCPanelLayout.setHorizontalGroup(
-            RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RCPanelLayout.createSequentialGroup()
-                .addGap(244, 297, Short.MAX_VALUE)
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(DescriptionWEP_Label))
-                .addGap(18, 18, 18)
-                .addComponent(Description_button)
-                .addGap(231, 231, 231))
-            .addGroup(RCPanelLayout.createSequentialGroup()
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(RCFamilyDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 813, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(RCPanelLayout.createSequentialGroup()
-                                .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 549, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(RCPanelLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(WEPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(RCPanelLayout.createSequentialGroup()
-                                        .addGap(126, 126, 126)
-                                        .addComponent(WEPB1))))))
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(364, 364, 364)
-                        .addComponent(RC4_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(266, 266, 266)
-                        .addComponent(RCFamily_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        RCPanelLayout.setVerticalGroup(
-            RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RCPanelLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(RCFamily_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(RCFamilyDescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(RC4_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
-                .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DescriptionWEP_Label)
-                    .addComponent(Description_button))
-                .addGap(35, 35, 35)
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(WEPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(13, 13, 13)
-                        .addComponent(WEPB1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(127, Short.MAX_VALUE))
-        );
-
-        MainPanel.add(RCPanel, "card26");
-
-        DESPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        DESPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/3DES.png"))); // NOI18N
-
-        DESLabel.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        DESLabel.setForeground(new java.awt.Color(48, 87, 120));
-        DESLabel.setText("Basic 3DES Encryption");
-
-        DESQ.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        DESQ.setForeground(new java.awt.Color(77, 132, 155));
-        DESQ.setText("What's the order of Encryption?");
-
-        DESA.setText("Encrypt-Decrypt-Encrypt");
-
-        DESB.setText("Encrypt-Encrypt-Encrypt");
-
-        DESC.setText("Encrypt-Decrypt-Decrypt");
-
-        DESD.setText("Decrypt-Encrypt-Encrypt");
-
-        DES_B.setBackground(new java.awt.Color(77, 132, 155));
-        DES_B.setForeground(new java.awt.Color(255, 255, 255));
-        DES_B.setText("Enter");
-        DES_B.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DES_BActionPerformed(evt);
-            }
-        });
-
-        DESRETURNB.setBackground(new java.awt.Color(77, 132, 155));
-        DESRETURNB.setForeground(new java.awt.Color(255, 255, 255));
-        DESRETURNB.setText("Return");
-        DESRETURNB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DESRETURNBActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout DESPanelLayout = new javax.swing.GroupLayout(DESPanel);
-        DESPanel.setLayout(DESPanelLayout);
-        DESPanelLayout.setHorizontalGroup(
-            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelLayout.createSequentialGroup()
-                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DESPanelLayout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(DESQ)
-                            .addComponent(DESPic)
-                            .addGroup(DESPanelLayout.createSequentialGroup()
-                                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(DESB)
-                                    .addComponent(DESC)
-                                    .addComponent(DESA)
-                                    .addComponent(DESD))
-                                .addGap(68, 68, 68)
-                                .addComponent(DES_B)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 244, Short.MAX_VALUE)
-                                .addComponent(DESRETURNB))))
-                    .addGroup(DESPanelLayout.createSequentialGroup()
-                        .addGap(225, 225, 225)
-                        .addComponent(DESLabel)))
-                .addGap(170, 170, 170))
-        );
-        DESPanelLayout.setVerticalGroup(
-            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelLayout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(DESLabel)
-                .addGap(49, 49, 49)
-                .addComponent(DESPic)
-                .addGap(33, 33, 33)
-                .addComponent(DESQ)
-                .addGap(26, 26, 26)
-                .addComponent(DESA)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DESB)
-                    .addComponent(DES_B)
-                    .addComponent(DESRETURNB))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(DESC)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(DESD)
-                .addContainerGap(76, Short.MAX_VALUE))
-        );
-
-        MainPanel.add(DESPanel, "card25");
-
-        DESPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
-
-        DESIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        DESIntro.setForeground(new java.awt.Color(48, 87, 120));
-        DESIntro.setText("Data Encryption Standard (DES)");
-
-        ThemePicture12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        DESDescripB.setBackground(new java.awt.Color(77, 132, 155));
-        DESDescripB.setForeground(new java.awt.Color(255, 255, 255));
-        DESDescripB.setText("Description");
-        DESDescripB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DESDescripBActionPerformed(evt);
-            }
-        });
-
-        DESQB.setBackground(new java.awt.Color(77, 132, 155));
-        DESQB.setForeground(new java.awt.Color(255, 255, 255));
-        DESQB.setText("Questions");
-        DESQB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DESQBActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout DESPanelWelcomeLayout = new javax.swing.GroupLayout(DESPanelWelcome);
-        DESPanelWelcome.setLayout(DESPanelWelcomeLayout);
-        DESPanelWelcomeLayout.setHorizontalGroup(
-            DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture12)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
-                .addGroup(DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(293, 293, 293)
-                        .addComponent(DESDescripB)
-                        .addGap(92, 92, 92)
-                        .addComponent(DESQB))
-                    .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(188, 188, 188)
-                        .addComponent(DESIntro)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        DESPanelWelcomeLayout.setVerticalGroup(
-            DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(185, Short.MAX_VALUE)
-                .addComponent(DESIntro)
-                .addGap(66, 66, 66)
-                .addGroup(DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DESDescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(DESQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(148, 148, 148)
-                .addComponent(ThemePicture12))
-        );
-
-        MainPanel.add(DESPanelWelcome, "card41");
-
-        DESDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        DESDescrip.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        DESDescrip.setForeground(new java.awt.Color(48, 87, 120));
-        DESDescrip.setText("DES");
-
-        DESDescription.setBorder(null);
-
-        jTextArea19.setColumns(20);
-        jTextArea19.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea19.setRows(5);
-        jTextArea19.setText("DES DESCRIPTION!!!");
-        DESDescription.setViewportView(jTextArea19);
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        DESBB.setBackground(new java.awt.Color(77, 132, 155));
-        DESBB.setForeground(new java.awt.Color(255, 255, 255));
-        DESBB.setText("Return");
-        DESBB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DESBBActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout DESDescripPanelLayout = new javax.swing.GroupLayout(DESDescripPanel);
-        DESDescripPanel.setLayout(DESDescripPanelLayout);
-        DESDescripPanelLayout.setHorizontalGroup(
-            DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESDescripPanelLayout.createSequentialGroup()
-                .addGroup(DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13)
-                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
-                        .addGap(394, 394, 394)
-                        .addComponent(DESBB))
-                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addComponent(DESDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
-                        .addGap(380, 380, 380)
-                        .addComponent(DESDescrip)))
-                .addGap(12, 12, 12))
-        );
-        DESDescripPanelLayout.setVerticalGroup(
-            DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESDescripPanelLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(DESDescrip)
-                .addGap(18, 18, 18)
-                .addComponent(DESDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
-                .addComponent(DESBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel13))
-        );
-
-        MainPanel.add(DESDescripPanel, "card42");
 
         OTPPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -6131,7 +6443,7 @@ public class Home extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_Feistel_ButtonFeistel_Enter_Button
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void FeistelReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelReturnActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -6139,7 +6451,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.add(FeistelPanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_FeistelReturnActionPerformed
 
     private void FesitelDescipBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FesitelDescipBActionPerformed
         MainPanel.removeAll();
@@ -6497,6 +6809,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField Answer1;
     private javax.swing.JMenuItem Atbash;
     private javax.swing.JButton AtbashDes;
+    private javax.swing.JPanel AtbashDescription;
     private javax.swing.JLabel AtbashIntro;
     private javax.swing.JPanel AtbashPanel;
     private javax.swing.JPanel AtbashPanelWelcome;
@@ -6518,6 +6831,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel BreakingCBCBMAC_Title;
     private javax.swing.JMenuItem CBC;
     private javax.swing.JButton CBCDes;
+    private javax.swing.JPanel CBCDescription;
     private javax.swing.JLabel CBCIntro;
     private javax.swing.JPanel CBCMAC;
     private javax.swing.ButtonGroup CBCMAC1;
@@ -6532,6 +6846,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton CBCMACReturn;
     private javax.swing.JLabel CBCMACTitle;
     private javax.swing.JPanel CBCMAC_2;
+    private javax.swing.JPanel CBCMAC_Description;
     private javax.swing.JButton CBCMAC_Next;
     private javax.swing.JButton CBCMAC_Submit;
     private javax.swing.JPanel CBCPanel;
@@ -6551,8 +6866,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel CHAPPicture;
     private javax.swing.JButton CHAPQ;
     private javax.swing.JButton CHAPReturn;
+    private javax.swing.JPanel CHAP_Description;
     private javax.swing.JMenuItem CTR;
     private javax.swing.JButton CTRDes;
+    private javax.swing.JPanel CTRDescription;
     private javax.swing.JLabel CTRImage;
     private javax.swing.JLabel CTRIntro;
     private javax.swing.JPanel CTRPanel;
@@ -6562,6 +6879,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel CTRTitle;
     private javax.swing.JMenuItem Caesar;
     private javax.swing.JButton CaesarDes;
+    private javax.swing.JPanel CaesarDescription;
     private javax.swing.JLabel CaesarIntro;
     private javax.swing.JPanel CaesarPanel;
     private javax.swing.JPanel CaesarPanelWelcome;
@@ -6654,6 +6972,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Directions;
     private javax.swing.JMenuItem ECB;
     private javax.swing.JButton ECBDes;
+    private javax.swing.JPanel ECBDescription;
     private javax.swing.JLabel ECBIntro;
     private javax.swing.JPanel ECBPanel;
     private javax.swing.JPanel ECBPanelWelcome;
@@ -6680,6 +6999,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel EncryptImage;
     private javax.swing.JMenu EncryptionModes;
     private javax.swing.JMenuItem Entropy;
+    private javax.swing.JPanel EntropyDescription;
     private javax.swing.JPanel EntropyPanel;
     private javax.swing.JRadioButton F1;
     private javax.swing.JRadioButton F2;
@@ -6695,6 +7015,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel FeistelPanel;
     private javax.swing.JPanel FeistelPanelWelcome;
     private javax.swing.JButton FeistelQB;
+    private javax.swing.JButton FeistelReturn;
     private javax.swing.JButton Feistel_Button;
     private javax.swing.JTextField Feistel_Entry;
     private javax.swing.JLabel Feistel_Intro;
@@ -6713,11 +7034,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton KerberosQ;
     private javax.swing.JButton KerberosReturn;
     private javax.swing.JScrollPane KerberosText;
+    private javax.swing.JPanel Kerberos_Description;
     private javax.swing.JLabel Kerberos_K;
+    private javax.swing.JPanel LinearDescription;
     private javax.swing.JMenuItem LinearFeedback;
     private javax.swing.JPanel LinearFeedbackPanel;
     private javax.swing.JMenuItem MD5;
     private javax.swing.JButton MD5Des;
+    private javax.swing.JPanel MD5Description;
     private javax.swing.JLabel MD5Intro;
     private javax.swing.JPanel MD5Panel;
     private javax.swing.JPanel MD5PanelWelcome;
@@ -6758,6 +7082,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton PAPQB2;
     private javax.swing.JPanel PAPQPanel;
     private javax.swing.JScrollPane PAPQuestions;
+    private javax.swing.JPanel PAP_Description;
     private javax.swing.JMenu PrivateKey;
     private javax.swing.JLabel Project;
     private javax.swing.JMenu PublicKey;
@@ -6773,9 +7098,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane RC4Description;
     private javax.swing.JLabel RC4_Label;
     private javax.swing.JMenuItem RC5;
+    private javax.swing.JPanel RCDescription;
     private javax.swing.JScrollPane RCFamilyDescription;
     private javax.swing.JLabel RCFamily_Label;
     private javax.swing.JPanel RCPanel;
+    private javax.swing.JPanel RCPanelWelcome;
     private javax.swing.JMenuItem RSA;
     private javax.swing.JTextField RSAA1_1;
     private javax.swing.JTextField RSAA1_2;
@@ -6784,6 +7111,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton RSAB1_2;
     private javax.swing.JButton RSAB1_3;
     private javax.swing.JButton RSADes;
+    private javax.swing.JPanel RSADescription;
     private javax.swing.JLabel RSAHeader;
     private javax.swing.JLabel RSAIntro;
     private javax.swing.JPanel RSAPanel;
@@ -6795,6 +7123,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel RSAQ1_3;
     private javax.swing.JButton RSAReturn;
     private javax.swing.JButton RSASigDes;
+    private javax.swing.JPanel RSASigDescription;
     private javax.swing.JLabel RSASigIntro;
     private javax.swing.JButton RSASigQ;
     private javax.swing.JMenuItem RSASignature;
@@ -6810,6 +7139,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton SHAB2;
     private javax.swing.JButton SHAB3;
     private javax.swing.JButton SHADes;
+    private javax.swing.JPanel SHADescription;
     private javax.swing.JLabel SHAIntro;
     private javax.swing.JPanel SHAPanel;
     private javax.swing.JPanel SHAPanelWelcome;
@@ -6823,6 +7153,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel SHA_Output;
     private javax.swing.JLabel SHA_Questions;
     private javax.swing.JTextField SHA_Text;
+    private javax.swing.JPanel SSynchDescription;
     private javax.swing.JPanel SSynchPanel;
     private javax.swing.JMenuItem SSynchronizing;
     private javax.swing.JTextField Signature;
@@ -6840,6 +7171,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton Submit1;
     private javax.swing.JButton Submit2;
     private javax.swing.JMenu SubstitutionCiphers;
+    private javax.swing.JPanel SynchDescription;
     private javax.swing.JPanel SynchPanel;
     private javax.swing.JMenuItem Synchronous;
     private javax.swing.JRadioButton T1;
@@ -6869,10 +7201,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture7;
     private javax.swing.JLabel ThemePicture8;
     private javax.swing.JLabel ThemePicture9;
+    private javax.swing.JLabel Theme_;
     private javax.swing.JMenuItem TripDES;
     private javax.swing.JLabel True;
     private javax.swing.JLabel ValidateMessage;
     private javax.swing.JButton Verify_Submit;
+    private javax.swing.JPanel VigDescription;
     private javax.swing.JMenuItem Vigenere;
     private javax.swing.JButton VigenereDes;
     private javax.swing.JLabel VigenereIntro;
@@ -6902,15 +7236,15 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
