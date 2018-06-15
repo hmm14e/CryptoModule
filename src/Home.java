@@ -381,7 +381,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture8 = new javax.swing.JLabel();
         ElGamDes = new javax.swing.JButton();
         ElGamQ = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        ELGamDescription = new javax.swing.JPanel();
         ElGamalPanel = new javax.swing.JPanel();
         ElGamalHeader = new javax.swing.JLabel();
         EGQ1 = new javax.swing.JLabel();
@@ -397,7 +397,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture9 = new javax.swing.JLabel();
         DHDes = new javax.swing.JButton();
         DHQ = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        DHDescription = new javax.swing.JPanel();
         DHPanel = new javax.swing.JPanel();
         DHDiagram1 = new javax.swing.JLabel();
         DHButton1 = new javax.swing.JButton();
@@ -445,6 +445,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture10 = new javax.swing.JLabel();
         BlowfishDes = new javax.swing.JButton();
         BlowfishQ = new javax.swing.JButton();
+        BlowfishDescription = new javax.swing.JPanel();
         BlowfishPanel = new javax.swing.JPanel();
         BlowfishReturn = new javax.swing.JButton();
         AESPanelWelcome = new javax.swing.JPanel();
@@ -452,6 +453,7 @@ public class Home extends javax.swing.JFrame {
         ThemePicture11 = new javax.swing.JLabel();
         AESDes = new javax.swing.JButton();
         AESQ = new javax.swing.JButton();
+        AESDescription = new javax.swing.JPanel();
         AESPanel = new javax.swing.JPanel();
         AESTitle = new javax.swing.JLabel();
         AESReturn = new javax.swing.JButton();
@@ -460,6 +462,11 @@ public class Home extends javax.swing.JFrame {
         WEPDescription = new javax.swing.JScrollPane();
         jTextArea13 = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
+        OTPPanelWelcome = new javax.swing.JPanel();
+        OTPIntro = new javax.swing.JLabel();
+        ThemePicture14 = new javax.swing.JLabel();
+        OTPDescripB = new javax.swing.JButton();
+        OTPQB = new javax.swing.JButton();
         OTPPanel = new javax.swing.JPanel();
         OTPLabel = new javax.swing.JLabel();
         OTPGameLabel = new javax.swing.JLabel();
@@ -472,11 +479,6 @@ public class Home extends javax.swing.JFrame {
         OTPPicture = new javax.swing.JLabel();
         OTPOutDescription = new javax.swing.JScrollPane();
         OTPOut = new javax.swing.JTextArea();
-        OTPPanelWelcome = new javax.swing.JPanel();
-        OTPIntro = new javax.swing.JLabel();
-        ThemePicture14 = new javax.swing.JLabel();
-        OTPDescripB = new javax.swing.JButton();
-        OTPQB = new javax.swing.JButton();
         OTPDescripPanel = new javax.swing.JPanel();
         DESDescrip1 = new javax.swing.JLabel();
         DESDescription1 = new javax.swing.JScrollPane();
@@ -585,11 +587,11 @@ public class Home extends javax.swing.JFrame {
         CaesarDescription.setLayout(CaesarDescriptionLayout);
         CaesarDescriptionLayout.setHorizontalGroup(
             CaesarDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         CaesarDescriptionLayout.setVerticalGroup(
             CaesarDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(CaesarDescription, "card65");
@@ -751,11 +753,11 @@ public class Home extends javax.swing.JFrame {
         AtbashDescription.setLayout(AtbashDescriptionLayout);
         AtbashDescriptionLayout.setHorizontalGroup(
             AtbashDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         AtbashDescriptionLayout.setVerticalGroup(
             AtbashDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(AtbashDescription, "card65");
@@ -908,11 +910,11 @@ public class Home extends javax.swing.JFrame {
         VigDescription.setLayout(VigDescriptionLayout);
         VigDescriptionLayout.setHorizontalGroup(
             VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         VigDescriptionLayout.setVerticalGroup(
             VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(VigDescription, "card65");
@@ -1071,11 +1073,11 @@ public class Home extends javax.swing.JFrame {
         SynchDescription.setLayout(SynchDescriptionLayout);
         SynchDescriptionLayout.setHorizontalGroup(
             SynchDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         SynchDescriptionLayout.setVerticalGroup(
             SynchDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(SynchDescription, "card65");
@@ -1099,11 +1101,11 @@ public class Home extends javax.swing.JFrame {
         SSynchDescription.setLayout(SSynchDescriptionLayout);
         SSynchDescriptionLayout.setHorizontalGroup(
             SSynchDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         SSynchDescriptionLayout.setVerticalGroup(
             SSynchDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(SSynchDescription, "card65");
@@ -1127,11 +1129,11 @@ public class Home extends javax.swing.JFrame {
         LinearDescription.setLayout(LinearDescriptionLayout);
         LinearDescriptionLayout.setHorizontalGroup(
             LinearDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         LinearDescriptionLayout.setVerticalGroup(
             LinearDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(LinearDescription, "card65");
@@ -1155,11 +1157,11 @@ public class Home extends javax.swing.JFrame {
         EntropyDescription.setLayout(EntropyDescriptionLayout);
         EntropyDescriptionLayout.setHorizontalGroup(
             EntropyDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         EntropyDescriptionLayout.setVerticalGroup(
             EntropyDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(EntropyDescription, "card65");
@@ -1183,11 +1185,11 @@ public class Home extends javax.swing.JFrame {
         ECBDescription.setLayout(ECBDescriptionLayout);
         ECBDescriptionLayout.setHorizontalGroup(
             ECBDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         ECBDescriptionLayout.setVerticalGroup(
             ECBDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(ECBDescription, "card65");
@@ -1372,11 +1374,11 @@ public class Home extends javax.swing.JFrame {
         CBCDescription.setLayout(CBCDescriptionLayout);
         CBCDescriptionLayout.setHorizontalGroup(
             CBCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         CBCDescriptionLayout.setVerticalGroup(
             CBCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(CBCDescription, "card65");
@@ -1546,11 +1548,11 @@ public class Home extends javax.swing.JFrame {
         CTRDescription.setLayout(CTRDescriptionLayout);
         CTRDescriptionLayout.setHorizontalGroup(
             CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         CTRDescriptionLayout.setVerticalGroup(
             CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(CTRDescription, "card65");
@@ -1872,11 +1874,11 @@ public class Home extends javax.swing.JFrame {
         RCPanelWelcome.setLayout(RCPanelWelcomeLayout);
         RCPanelWelcomeLayout.setHorizontalGroup(
             RCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         RCPanelWelcomeLayout.setVerticalGroup(
             RCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(RCPanelWelcome, "card75");
@@ -2018,11 +2020,11 @@ public class Home extends javax.swing.JFrame {
         RCDescription.setLayout(RCDescriptionLayout);
         RCDescriptionLayout.setHorizontalGroup(
             RCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         RCDescriptionLayout.setVerticalGroup(
             RCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(RCDescription, "card75");
@@ -2238,11 +2240,11 @@ public class Home extends javax.swing.JFrame {
         PAP_Description.setLayout(PAP_DescriptionLayout);
         PAP_DescriptionLayout.setHorizontalGroup(
             PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         PAP_DescriptionLayout.setVerticalGroup(
             PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(PAP_Description, "card75");
@@ -2394,7 +2396,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -2465,11 +2467,11 @@ public class Home extends javax.swing.JFrame {
         CHAP_Description.setLayout(CHAP_DescriptionLayout);
         CHAP_DescriptionLayout.setHorizontalGroup(
             CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         CHAP_DescriptionLayout.setVerticalGroup(
             CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(CHAP_Description, "card75");
@@ -2601,11 +2603,11 @@ public class Home extends javax.swing.JFrame {
         Kerberos_Description.setLayout(Kerberos_DescriptionLayout);
         Kerberos_DescriptionLayout.setHorizontalGroup(
             Kerberos_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         Kerberos_DescriptionLayout.setVerticalGroup(
             Kerberos_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(Kerberos_Description, "card75");
@@ -2731,11 +2733,11 @@ public class Home extends javax.swing.JFrame {
         CBCMAC_Description.setLayout(CBCMAC_DescriptionLayout);
         CBCMAC_DescriptionLayout.setHorizontalGroup(
             CBCMAC_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         CBCMAC_DescriptionLayout.setVerticalGroup(
             CBCMAC_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(CBCMAC_Description, "card75");
@@ -3056,11 +3058,11 @@ public class Home extends javax.swing.JFrame {
         SHADescription.setLayout(SHADescriptionLayout);
         SHADescriptionLayout.setHorizontalGroup(
             SHADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         SHADescriptionLayout.setVerticalGroup(
             SHADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(SHADescription, "card75");
@@ -3297,11 +3299,11 @@ public class Home extends javax.swing.JFrame {
         MD5Description.setLayout(MD5DescriptionLayout);
         MD5DescriptionLayout.setHorizontalGroup(
             MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         MD5DescriptionLayout.setVerticalGroup(
             MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(MD5Description, "card82");
@@ -3401,11 +3403,11 @@ public class Home extends javax.swing.JFrame {
         RSASigDescription.setLayout(RSASigDescriptionLayout);
         RSASigDescriptionLayout.setHorizontalGroup(
             RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         RSASigDescriptionLayout.setVerticalGroup(
             RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(RSASigDescription, "card82");
@@ -3921,11 +3923,11 @@ public class Home extends javax.swing.JFrame {
         RSADescription.setLayout(RSADescriptionLayout);
         RSADescriptionLayout.setHorizontalGroup(
             RSADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
         RSADescriptionLayout.setVerticalGroup(
             RSADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(RSADescription, "card82");
@@ -4095,18 +4097,18 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(ElGamalPanelWelcome, "card54");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+        javax.swing.GroupLayout ELGamDescriptionLayout = new javax.swing.GroupLayout(ELGamDescription);
+        ELGamDescription.setLayout(ELGamDescriptionLayout);
+        ELGamDescriptionLayout.setHorizontalGroup(
+            ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+        ELGamDescriptionLayout.setVerticalGroup(
+            ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
-        MainPanel.add(jPanel2, "card82");
+        MainPanel.add(ELGamDescription, "card82");
 
         ElGamalPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -4273,18 +4275,18 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(DHPanelWelcome, "card50");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+        javax.swing.GroupLayout DHDescriptionLayout = new javax.swing.GroupLayout(DHDescription);
+        DHDescription.setLayout(DHDescriptionLayout);
+        DHDescriptionLayout.setHorizontalGroup(
+            DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 912, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+        DHDescriptionLayout.setVerticalGroup(
+            DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
-        MainPanel.add(jPanel1, "card82");
+        MainPanel.add(DHDescription, "card82");
 
         DHPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -4354,7 +4356,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(DHReturn)
@@ -4453,7 +4455,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -4504,7 +4506,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -4550,7 +4552,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -4737,6 +4739,19 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(BlowfishPanelWelcome, "card51");
 
+        javax.swing.GroupLayout BlowfishDescriptionLayout = new javax.swing.GroupLayout(BlowfishDescription);
+        BlowfishDescription.setLayout(BlowfishDescriptionLayout);
+        BlowfishDescriptionLayout.setHorizontalGroup(
+            BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        BlowfishDescriptionLayout.setVerticalGroup(
+            BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(BlowfishDescription, "card87");
+
         BlowfishPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         BlowfishReturn.setBackground(new java.awt.Color(77, 132, 155));
@@ -4827,6 +4842,19 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(AESPanelWelcome, "card52");
+
+        javax.swing.GroupLayout AESDescriptionLayout = new javax.swing.GroupLayout(AESDescription);
+        AESDescription.setLayout(AESDescriptionLayout);
+        AESDescriptionLayout.setHorizontalGroup(
+            AESDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        AESDescriptionLayout.setVerticalGroup(
+            AESDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        MainPanel.add(AESDescription, "card87");
 
         AESPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -4922,6 +4950,66 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(WEPPanel, "card39");
+
+        OTPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        OTPIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        OTPIntro.setForeground(new java.awt.Color(48, 87, 120));
+        OTPIntro.setText("One-Time Pad");
+
+        ThemePicture14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        OTPDescripB.setBackground(new java.awt.Color(77, 132, 155));
+        OTPDescripB.setForeground(new java.awt.Color(255, 255, 255));
+        OTPDescripB.setText("Description");
+        OTPDescripB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPDescripBActionPerformed(evt);
+            }
+        });
+
+        OTPQB.setBackground(new java.awt.Color(77, 132, 155));
+        OTPQB.setForeground(new java.awt.Color(255, 255, 255));
+        OTPQB.setText("Questions");
+        OTPQB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPQBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OTPPanelWelcomeLayout = new javax.swing.GroupLayout(OTPPanelWelcome);
+        OTPPanelWelcome.setLayout(OTPPanelWelcomeLayout);
+        OTPPanelWelcomeLayout.setHorizontalGroup(
+            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture14)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(293, 293, 293)
+                        .addComponent(OTPDescripB)
+                        .addGap(92, 92, 92)
+                        .addComponent(OTPQB))
+                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(310, 310, 310)
+                        .addComponent(OTPIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        OTPPanelWelcomeLayout.setVerticalGroup(
+            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(186, Short.MAX_VALUE)
+                .addComponent(OTPIntro)
+                .addGap(65, 65, 65)
+                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(OTPDescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OTPQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture14))
+        );
+
+        MainPanel.add(OTPPanelWelcome, "card41");
 
         OTPPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -5033,66 +5121,6 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(OTPPanel, "card27");
-
-        OTPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
-
-        OTPIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        OTPIntro.setForeground(new java.awt.Color(48, 87, 120));
-        OTPIntro.setText("One-Time Pad");
-
-        ThemePicture14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        OTPDescripB.setBackground(new java.awt.Color(77, 132, 155));
-        OTPDescripB.setForeground(new java.awt.Color(255, 255, 255));
-        OTPDescripB.setText("Description");
-        OTPDescripB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPDescripBActionPerformed(evt);
-            }
-        });
-
-        OTPQB.setBackground(new java.awt.Color(77, 132, 155));
-        OTPQB.setForeground(new java.awt.Color(255, 255, 255));
-        OTPQB.setText("Questions");
-        OTPQB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPQBActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout OTPPanelWelcomeLayout = new javax.swing.GroupLayout(OTPPanelWelcome);
-        OTPPanelWelcome.setLayout(OTPPanelWelcomeLayout);
-        OTPPanelWelcomeLayout.setHorizontalGroup(
-            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture14)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(293, 293, 293)
-                        .addComponent(OTPDescripB)
-                        .addGap(92, 92, 92)
-                        .addComponent(OTPQB))
-                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(310, 310, 310)
-                        .addComponent(OTPIntro)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        OTPPanelWelcomeLayout.setVerticalGroup(
-            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(186, Short.MAX_VALUE)
-                .addComponent(OTPIntro)
-                .addGap(65, 65, 65)
-                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(OTPDescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(OTPQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(148, 148, 148)
-                .addComponent(ThemePicture14))
-        );
-
-        MainPanel.add(OTPPanelWelcome, "card41");
 
         OTPDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -6138,7 +6166,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_SubmissionActionPerformed
 
     private void PAPDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(PAP_Description);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_PAPDesActionPerformed
 
     private void PAPQBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPQBActionPerformed
@@ -6166,7 +6200,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_PAPA1ActionPerformed
 
     private void CHAPDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHAPDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CHAP_Description);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_CHAPDesActionPerformed
 
     private void CHAPQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHAPQActionPerformed
@@ -6190,7 +6230,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_CHAPReturnActionPerformed
 
     private void KerberosDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KerberosDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(Kerberos_Description);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_KerberosDesActionPerformed
 
     private void KerberosQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KerberosQActionPerformed
@@ -6214,7 +6260,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_KerberosReturnActionPerformed
 
     private void CBCMACDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCMACDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CBCMAC_Description);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_CBCMACDesActionPerformed
 
     private void CBCMACQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCMACQActionPerformed
@@ -6238,7 +6290,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_CBCMACReturnActionPerformed
 
     private void SHADesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHADesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SHADescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_SHADesActionPerformed
 
     private void SHAQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAQActionPerformed
@@ -6272,7 +6330,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_MD5ReturnActionPerformed
 
     private void MD5DesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5DesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(MD5Description);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_MD5DesActionPerformed
 
     private void MD5QActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5QActionPerformed
@@ -6286,7 +6350,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_MD5QActionPerformed
 
     private void RSASigDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSASigDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(RSASigDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_RSASigDesActionPerformed
 
     private void RSASigQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSASigQActionPerformed
@@ -6310,7 +6380,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_MD5Return1ActionPerformed
 
     private void ElGamDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ElGamDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ELGamDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_ElGamDesActionPerformed
 
     private void ElGamQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ElGamQActionPerformed
@@ -6324,7 +6400,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_ElGamQActionPerformed
 
     private void DHDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DHDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DHDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_DHDesActionPerformed
 
     private void DHQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DHQActionPerformed
@@ -6338,7 +6420,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_DHQActionPerformed
 
     private void BlowfishDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowfishDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(BlowfishDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_BlowfishDesActionPerformed
 
     private void BlowfishQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowfishQActionPerformed
@@ -6352,7 +6440,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_BlowfishQActionPerformed
 
     private void AESDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(AESDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_AESDesActionPerformed
 
     private void AESQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESQActionPerformed
@@ -6366,7 +6460,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_AESQActionPerformed
 
     private void RSADesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSADesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(RSADescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_RSADesActionPerformed
 
     private void RSAQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAQActionPerformed
@@ -6621,7 +6721,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_DESBB1ActionPerformed
 
     private void CaesarDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaesarDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CaesarDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_CaesarDesActionPerformed
 
     private void CaesarQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaesarQActionPerformed
@@ -6635,7 +6741,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_CaesarQActionPerformed
 
     private void AtbashDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(AtbashDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_AtbashDesActionPerformed
 
     private void AtbashQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashQActionPerformed
@@ -6649,7 +6761,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_AtbashQActionPerformed
 
     private void VigenereDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VigenereDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(VigDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_VigenereDesActionPerformed
 
     private void VigenereQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VigenereQActionPerformed
@@ -6693,7 +6811,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_VigenereQReturnActionPerformed
 
     private void ECBDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECBDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECBDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_ECBDesActionPerformed
 
     private void ECBQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECBQActionPerformed
@@ -6707,7 +6831,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_ECBQActionPerformed
 
     private void CBCDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CBCDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_CBCDesActionPerformed
 
     private void CBCQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCQActionPerformed
@@ -6721,7 +6851,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_CBCQActionPerformed
 
     private void CTRDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CTRDesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CTRDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_CTRDesActionPerformed
 
     private void CTRQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CTRQActionPerformed
@@ -6800,6 +6936,7 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem AES;
     private javax.swing.JButton AESDes;
+    private javax.swing.JPanel AESDescription;
     private javax.swing.JLabel AESIntro;
     private javax.swing.JPanel AESPanel;
     private javax.swing.JPanel AESPanelWelcome;
@@ -6823,6 +6960,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu BlockCiphers;
     private javax.swing.JMenuItem Blowfish;
     private javax.swing.JButton BlowfishDes;
+    private javax.swing.JPanel BlowfishDescription;
     private javax.swing.JLabel BlowfishIntro;
     private javax.swing.JPanel BlowfishPanel;
     private javax.swing.JPanel BlowfishPanelWelcome;
@@ -6945,6 +7083,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton DHB1;
     private javax.swing.JButton DHButton1;
     private javax.swing.JButton DHDes;
+    private javax.swing.JPanel DHDescription;
     private javax.swing.JLabel DHDiagram1;
     private javax.swing.JLabel DHImage2;
     private javax.swing.JScrollPane DHIntro;
@@ -6987,6 +7126,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel EGQ1;
     private javax.swing.JLabel EGQ1_1;
     private javax.swing.JLabel EGQ1_2;
+    private javax.swing.JPanel ELGamDescription;
     private javax.swing.JMenuItem ELGamal;
     private javax.swing.JButton ElGamDes;
     private javax.swing.JLabel ElGamIntro;
@@ -7243,8 +7383,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
