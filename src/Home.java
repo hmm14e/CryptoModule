@@ -55,6 +55,11 @@ public class Home extends javax.swing.JFrame {
         Welcome = new javax.swing.JLabel();
         Project = new javax.swing.JLabel();
         Theme = new javax.swing.JLabel();
+        CaesarPanelWelcome = new javax.swing.JPanel();
+        CaesarIntro = new javax.swing.JLabel();
+        ThemePicture15 = new javax.swing.JLabel();
+        CaesarDes = new javax.swing.JButton();
+        CaesarQ = new javax.swing.JButton();
         CaesarPanel = new javax.swing.JPanel();
         CaesarTitle = new javax.swing.JLabel();
         Warning = new javax.swing.JLabel();
@@ -63,6 +68,7 @@ public class Home extends javax.swing.JFrame {
         Submit = new javax.swing.JButton();
         Caesar_Directions = new javax.swing.JLabel();
         theme = new javax.swing.JLabel();
+        CaesarQReturn = new javax.swing.JButton();
         AtbashPanel = new javax.swing.JPanel();
         AtbashTitle = new javax.swing.JLabel();
         Warning1 = new javax.swing.JLabel();
@@ -70,6 +76,12 @@ public class Home extends javax.swing.JFrame {
         Submission1 = new javax.swing.JTextField();
         Submit1 = new javax.swing.JButton();
         theme1 = new javax.swing.JLabel();
+        AtbashQReturn = new javax.swing.JButton();
+        AtbashPanelWelcome = new javax.swing.JPanel();
+        AtbashIntro = new javax.swing.JLabel();
+        ThemePicture16 = new javax.swing.JLabel();
+        AtbashDes = new javax.swing.JButton();
+        AtbashQ = new javax.swing.JButton();
         VigenerePanel = new javax.swing.JPanel();
         VigenereTitle = new javax.swing.JLabel();
         Warning2 = new javax.swing.JLabel();
@@ -77,6 +89,12 @@ public class Home extends javax.swing.JFrame {
         Submission2 = new javax.swing.JTextField();
         Submit2 = new javax.swing.JButton();
         theme2 = new javax.swing.JLabel();
+        VigenereQReturn = new javax.swing.JButton();
+        VigenerePanelWelcome = new javax.swing.JPanel();
+        VigenereIntro = new javax.swing.JLabel();
+        ThemePicture17 = new javax.swing.JLabel();
+        VigenereDes = new javax.swing.JButton();
+        VigenereQ = new javax.swing.JButton();
         SynchPanel = new javax.swing.JPanel();
         SSynchPanel = new javax.swing.JPanel();
         LinearFeedbackPanel = new javax.swing.JPanel();
@@ -87,6 +105,12 @@ public class Home extends javax.swing.JFrame {
         ECB_Button = new javax.swing.JButton();
         Q1 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        ECBQReturn = new javax.swing.JButton();
+        ECBPanelWelcome = new javax.swing.JPanel();
+        ECBIntro = new javax.swing.JLabel();
+        ThemePicture18 = new javax.swing.JLabel();
+        ECBDes = new javax.swing.JButton();
+        ECBQ = new javax.swing.JButton();
         Correct_ECB = new javax.swing.JPanel();
         Correct_Pic = new javax.swing.JLabel();
         Correct1 = new javax.swing.JLabel();
@@ -97,10 +121,22 @@ public class Home extends javax.swing.JFrame {
         Encrypt = new javax.swing.JLabel();
         Decrypt = new javax.swing.JLabel();
         CBCSubmit = new javax.swing.JButton();
+        CBCReturn = new javax.swing.JButton();
         CBCQPanel = new javax.swing.JPanel();
+        CBCPanelWelcome = new javax.swing.JPanel();
+        CBCIntro = new javax.swing.JLabel();
+        ThemePicture19 = new javax.swing.JLabel();
+        CBCDes = new javax.swing.JButton();
+        CBCQ = new javax.swing.JButton();
         CTRPanel = new javax.swing.JPanel();
         CTRTitle = new javax.swing.JLabel();
         CTRImage = new javax.swing.JLabel();
+        CTRReturn = new javax.swing.JButton();
+        CTRPanelWelcome = new javax.swing.JPanel();
+        CTRIntro = new javax.swing.JLabel();
+        ThemePicture20 = new javax.swing.JLabel();
+        CTRDes = new javax.swing.JButton();
+        CTRQ = new javax.swing.JButton();
         PAPPanelWelcome = new javax.swing.JPanel();
         PAPIntro = new javax.swing.JLabel();
         ThemePicture1 = new javax.swing.JLabel();
@@ -523,6 +559,65 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(WelcomePanel, "card2");
 
+        CaesarPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        CaesarIntro.setBackground(new java.awt.Color(255, 255, 255));
+        CaesarIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        CaesarIntro.setForeground(new java.awt.Color(48, 87, 120));
+        CaesarIntro.setText("Caesars Cipher");
+
+        ThemePicture15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        CaesarDes.setBackground(new java.awt.Color(77, 132, 155));
+        CaesarDes.setForeground(new java.awt.Color(255, 255, 255));
+        CaesarDes.setText("Description");
+        CaesarDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CaesarDesActionPerformed(evt);
+            }
+        });
+
+        CaesarQ.setBackground(new java.awt.Color(77, 132, 155));
+        CaesarQ.setForeground(new java.awt.Color(255, 255, 255));
+        CaesarQ.setText("Questions");
+        CaesarQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CaesarQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout CaesarPanelWelcomeLayout = new javax.swing.GroupLayout(CaesarPanelWelcome);
+        CaesarPanelWelcome.setLayout(CaesarPanelWelcomeLayout);
+        CaesarPanelWelcomeLayout.setHorizontalGroup(
+            CaesarPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture15)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
+                .addGap(269, 269, 269)
+                .addGroup(CaesarPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(CaesarIntro)
+                    .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
+                        .addComponent(CaesarDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(CaesarQ)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        CaesarPanelWelcomeLayout.setVerticalGroup(
+            CaesarPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(241, Short.MAX_VALUE)
+                .addComponent(CaesarIntro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CaesarPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CaesarDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CaesarQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture15))
+        );
+
+        MainPanel.add(CaesarPanelWelcome, "card48");
+
         CaesarPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         CaesarTitle.setFont(CaesarTitle.getFont().deriveFont(CaesarTitle.getFont().getSize()+23f));
@@ -541,6 +636,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        Submit.setBackground(new java.awt.Color(77, 132, 155));
+        Submit.setForeground(new java.awt.Color(255, 255, 255));
         Submit.setText("Submit");
         Submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -552,10 +649,20 @@ public class Home extends javax.swing.JFrame {
 
         theme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
+        CaesarQReturn.setBackground(new java.awt.Color(77, 132, 155));
+        CaesarQReturn.setForeground(new java.awt.Color(255, 255, 255));
+        CaesarQReturn.setText("Return");
+        CaesarQReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CaesarQReturnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout CaesarPanelLayout = new javax.swing.GroupLayout(CaesarPanel);
         CaesarPanel.setLayout(CaesarPanelLayout);
         CaesarPanelLayout.setHorizontalGroup(
             CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(theme, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(CaesarPanelLayout.createSequentialGroup()
                 .addGroup(CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CaesarPanelLayout.createSequentialGroup()
@@ -576,9 +683,11 @@ public class Home extends javax.swing.JFrame {
                             .addGroup(CaesarPanelLayout.createSequentialGroup()
                                 .addGap(6, 6, 6)
                                 .addComponent(Warning))
-                            .addComponent(CaesarTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(78, 78, 78))
-            .addComponent(theme, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(CaesarTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(CaesarPanelLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(CaesarQReturn)))
+                .addContainerGap())
         );
         CaesarPanelLayout.setVerticalGroup(
             CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -595,7 +704,9 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(CaesarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Submission, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Submit))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addComponent(CaesarQReturn)
+                .addGap(18, 18, 18)
                 .addComponent(theme))
         );
 
@@ -619,6 +730,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        Submit1.setBackground(new java.awt.Color(77, 132, 155));
+        Submit1.setForeground(new java.awt.Color(255, 255, 255));
         Submit1.setText("Submit");
         Submit1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -627,6 +740,15 @@ public class Home extends javax.swing.JFrame {
         });
 
         theme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        AtbashQReturn.setBackground(new java.awt.Color(77, 132, 155));
+        AtbashQReturn.setForeground(new java.awt.Color(255, 255, 255));
+        AtbashQReturn.setText("Return");
+        AtbashQReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtbashQReturnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout AtbashPanelLayout = new javax.swing.GroupLayout(AtbashPanel);
         AtbashPanel.setLayout(AtbashPanelLayout);
@@ -639,9 +761,6 @@ public class Home extends javax.swing.JFrame {
                         .addGap(70, 70, 70)
                         .addComponent(Warning1))
                     .addGroup(AtbashPanelLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(AtbashTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AtbashPanelLayout.createSequentialGroup()
                         .addGap(152, 152, 152)
                         .addComponent(Ciphertext_Atbash))
                     .addGroup(AtbashPanelLayout.createSequentialGroup()
@@ -649,13 +768,18 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Submission1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(AtbashPanelLayout.createSequentialGroup()
                         .addGap(399, 399, 399)
-                        .addComponent(Submit1)))
+                        .addComponent(Submit1))
+                    .addGroup(AtbashPanelLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(AtbashPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AtbashQReturn)
+                            .addComponent(AtbashTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         AtbashPanelLayout.setVerticalGroup(
             AtbashPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AtbashPanelLayout.createSequentialGroup()
-                .addContainerGap(100, Short.MAX_VALUE)
+                .addContainerGap(91, Short.MAX_VALUE)
                 .addComponent(AtbashTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Warning1)
@@ -665,11 +789,72 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Submission1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Submit1)
-                .addGap(24, 24, 24)
+                .addGap(4, 4, 4)
+                .addComponent(AtbashQReturn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(theme1))
         );
 
         MainPanel.add(AtbashPanel, "card4");
+
+        AtbashPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        AtbashIntro.setBackground(new java.awt.Color(255, 255, 255));
+        AtbashIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        AtbashIntro.setForeground(new java.awt.Color(48, 87, 120));
+        AtbashIntro.setText("Atbash Cipher");
+
+        ThemePicture16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        AtbashDes.setBackground(new java.awt.Color(77, 132, 155));
+        AtbashDes.setForeground(new java.awt.Color(255, 255, 255));
+        AtbashDes.setText("Description");
+        AtbashDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtbashDesActionPerformed(evt);
+            }
+        });
+
+        AtbashQ.setBackground(new java.awt.Color(77, 132, 155));
+        AtbashQ.setForeground(new java.awt.Color(255, 255, 255));
+        AtbashQ.setText("Questions");
+        AtbashQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtbashQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AtbashPanelWelcomeLayout = new javax.swing.GroupLayout(AtbashPanelWelcome);
+        AtbashPanelWelcome.setLayout(AtbashPanelWelcomeLayout);
+        AtbashPanelWelcomeLayout.setHorizontalGroup(
+            AtbashPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AtbashPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture16)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(AtbashPanelWelcomeLayout.createSequentialGroup()
+                .addGap(269, 269, 269)
+                .addGroup(AtbashPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(AtbashIntro)
+                    .addGroup(AtbashPanelWelcomeLayout.createSequentialGroup()
+                        .addComponent(AtbashDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(AtbashQ)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        AtbashPanelWelcomeLayout.setVerticalGroup(
+            AtbashPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AtbashPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(241, Short.MAX_VALUE)
+                .addComponent(AtbashIntro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AtbashPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AtbashDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AtbashQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture16))
+        );
+
+        MainPanel.add(AtbashPanelWelcome, "card48");
 
         VigenerePanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -689,6 +874,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        Submit2.setBackground(new java.awt.Color(77, 132, 155));
+        Submit2.setForeground(new java.awt.Color(255, 255, 255));
         Submit2.setText("Submit");
         Submit2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -697,6 +884,15 @@ public class Home extends javax.swing.JFrame {
         });
 
         theme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        VigenereQReturn.setBackground(new java.awt.Color(77, 132, 155));
+        VigenereQReturn.setForeground(new java.awt.Color(255, 255, 255));
+        VigenereQReturn.setText("Return");
+        VigenereQReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VigenereQReturnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout VigenerePanelLayout = new javax.swing.GroupLayout(VigenerePanel);
         VigenerePanel.setLayout(VigenerePanelLayout);
@@ -712,6 +908,9 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Warning2))
                     .addComponent(VigenereTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(67, 67, 67))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VigenerePanelLayout.createSequentialGroup()
+                .addComponent(Submit2)
+                .addGap(408, 408, 408))
             .addGroup(VigenerePanelLayout.createSequentialGroup()
                 .addGroup(VigenerePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(VigenerePanelLayout.createSequentialGroup()
@@ -719,11 +918,11 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Ciphertext_Vigenere))
                     .addGroup(VigenerePanelLayout.createSequentialGroup()
                         .addGap(202, 202, 202)
-                        .addComponent(Submission2, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(254, 254, 254))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VigenerePanelLayout.createSequentialGroup()
-                .addComponent(Submit2)
-                .addGap(408, 408, 408))
+                        .addComponent(Submission2, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(VigenerePanelLayout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(VigenereQReturn)))
+                .addContainerGap())
         );
         VigenerePanelLayout.setVerticalGroup(
             VigenerePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -738,11 +937,74 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Submission2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Submit2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addComponent(VigenereQReturn)
+                .addGap(18, 18, 18)
                 .addComponent(theme2))
         );
 
         MainPanel.add(VigenerePanel, "card5");
+
+        VigenerePanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        VigenereIntro.setBackground(new java.awt.Color(255, 255, 255));
+        VigenereIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        VigenereIntro.setForeground(new java.awt.Color(48, 87, 120));
+        VigenereIntro.setText("Vigenere Cipher");
+
+        ThemePicture17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        VigenereDes.setBackground(new java.awt.Color(77, 132, 155));
+        VigenereDes.setForeground(new java.awt.Color(255, 255, 255));
+        VigenereDes.setText("Description");
+        VigenereDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VigenereDesActionPerformed(evt);
+            }
+        });
+
+        VigenereQ.setBackground(new java.awt.Color(77, 132, 155));
+        VigenereQ.setForeground(new java.awt.Color(255, 255, 255));
+        VigenereQ.setText("Questions");
+        VigenereQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VigenereQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout VigenerePanelWelcomeLayout = new javax.swing.GroupLayout(VigenerePanelWelcome);
+        VigenerePanelWelcome.setLayout(VigenerePanelWelcomeLayout);
+        VigenerePanelWelcomeLayout.setHorizontalGroup(
+            VigenerePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VigenerePanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture17)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(VigenerePanelWelcomeLayout.createSequentialGroup()
+                .addGroup(VigenerePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(VigenerePanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(VigenereDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(VigenereQ))
+                    .addGroup(VigenerePanelWelcomeLayout.createSequentialGroup()
+                        .addGap(261, 261, 261)
+                        .addComponent(VigenereIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        VigenerePanelWelcomeLayout.setVerticalGroup(
+            VigenerePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VigenerePanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(241, Short.MAX_VALUE)
+                .addComponent(VigenereIntro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(VigenerePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(VigenereDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VigenereQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture17))
+        );
+
+        MainPanel.add(VigenerePanelWelcome, "card48");
 
         SynchPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -815,6 +1077,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        ECB_Button.setBackground(new java.awt.Color(77, 132, 155));
+        ECB_Button.setForeground(new java.awt.Color(255, 255, 255));
         ECB_Button.setText("Enter");
         ECB_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -829,6 +1093,15 @@ public class Home extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(48, 87, 120));
         jLabel10.setText("Electronic Codebook Mode");
+
+        ECBQReturn.setBackground(new java.awt.Color(77, 132, 155));
+        ECBQReturn.setForeground(new java.awt.Color(255, 255, 255));
+        ECBQReturn.setText("Return");
+        ECBQReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECBQReturnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout ECBPanelLayout = new javax.swing.GroupLayout(ECBPanel);
         ECBPanel.setLayout(ECBPanelLayout);
@@ -846,7 +1119,9 @@ public class Home extends javax.swing.JFrame {
                         .addGap(254, 254, 254)
                         .addComponent(ECB_Picture, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(ECBPanelLayout.createSequentialGroup()
-                        .addGap(332, 332, 332)
+                        .addGap(65, 65, 65)
+                        .addComponent(ECBQReturn)
+                        .addGap(194, 194, 194)
                         .addComponent(Answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -864,11 +1139,73 @@ public class Home extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addGroup(ECBPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ECBQReturn))
                 .addContainerGap(159, Short.MAX_VALUE))
         );
 
         MainPanel.add(ECBPanel, "card6");
+
+        ECBPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        ECBIntro.setBackground(new java.awt.Color(255, 255, 255));
+        ECBIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        ECBIntro.setForeground(new java.awt.Color(48, 87, 120));
+        ECBIntro.setText("Electronic Codebook (ECB)");
+
+        ThemePicture18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        ECBDes.setBackground(new java.awt.Color(77, 132, 155));
+        ECBDes.setForeground(new java.awt.Color(255, 255, 255));
+        ECBDes.setText("Description");
+        ECBDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECBDesActionPerformed(evt);
+            }
+        });
+
+        ECBQ.setBackground(new java.awt.Color(77, 132, 155));
+        ECBQ.setForeground(new java.awt.Color(255, 255, 255));
+        ECBQ.setText("Questions");
+        ECBQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECBQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ECBPanelWelcomeLayout = new javax.swing.GroupLayout(ECBPanelWelcome);
+        ECBPanelWelcome.setLayout(ECBPanelWelcomeLayout);
+        ECBPanelWelcomeLayout.setHorizontalGroup(
+            ECBPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ECBPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture18)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(ECBPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(ECBPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ECBPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(ECBDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(ECBQ))
+                    .addGroup(ECBPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(185, 185, 185)
+                        .addComponent(ECBIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        ECBPanelWelcomeLayout.setVerticalGroup(
+            ECBPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ECBPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(241, Short.MAX_VALUE)
+                .addComponent(ECBIntro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ECBPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ECBDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ECBQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture18))
+        );
+
+        MainPanel.add(ECBPanelWelcome, "card48");
 
         Correct_ECB.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -931,12 +1268,23 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        CBCReturn.setBackground(new java.awt.Color(77, 132, 155));
+        CBCReturn.setForeground(new java.awt.Color(255, 255, 255));
+        CBCReturn.setText("Return");
+        CBCReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCReturnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout CBCPanelLayout = new javax.swing.GroupLayout(CBCPanel);
         CBCPanel.setLayout(CBCPanelLayout);
         CBCPanelLayout.setHorizontalGroup(
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCPanelLayout.createSequentialGroup()
-                .addContainerGap(425, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(CBCReturn)
+                .addGap(36, 36, 36)
                 .addComponent(CBCSubmit)
                 .addGap(407, 407, 407))
             .addGroup(CBCPanelLayout.createSequentialGroup()
@@ -955,7 +1303,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CBCPanelLayout.createSequentialGroup()
                         .addGap(351, 351, 351)
                         .addComponent(CBCtitle)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
         CBCPanelLayout.setVerticalGroup(
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -971,8 +1319,10 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(EncryptImage)
                     .addComponent(DecryptImage, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
-                .addComponent(CBCSubmit)
-                .addContainerGap(124, Short.MAX_VALUE))
+                .addGroup(CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CBCSubmit)
+                    .addComponent(CBCReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(121, Short.MAX_VALUE))
         );
 
         MainPanel.add(CBCPanel, "card32");
@@ -992,6 +1342,67 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CBCQPanel, "card40");
 
+        CBCPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        CBCIntro.setBackground(new java.awt.Color(255, 255, 255));
+        CBCIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        CBCIntro.setForeground(new java.awt.Color(48, 87, 120));
+        CBCIntro.setText("Cipher Block Chaining (CBC)");
+
+        ThemePicture19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        CBCDes.setBackground(new java.awt.Color(77, 132, 155));
+        CBCDes.setForeground(new java.awt.Color(255, 255, 255));
+        CBCDes.setText("Description");
+        CBCDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCDesActionPerformed(evt);
+            }
+        });
+
+        CBCQ.setBackground(new java.awt.Color(77, 132, 155));
+        CBCQ.setForeground(new java.awt.Color(255, 255, 255));
+        CBCQ.setText("Questions");
+        CBCQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout CBCPanelWelcomeLayout = new javax.swing.GroupLayout(CBCPanelWelcome);
+        CBCPanelWelcome.setLayout(CBCPanelWelcomeLayout);
+        CBCPanelWelcomeLayout.setHorizontalGroup(
+            CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture19)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(CBCDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(CBCQ))
+                    .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(162, 162, 162)
+                        .addComponent(CBCIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        CBCPanelWelcomeLayout.setVerticalGroup(
+            CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(241, Short.MAX_VALUE)
+                .addComponent(CBCIntro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CBCDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CBCQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture19))
+        );
+
+        MainPanel.add(CBCPanelWelcome, "card48");
+
         CTRPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         CTRTitle.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
@@ -1000,6 +1411,15 @@ public class Home extends javax.swing.JFrame {
 
         CTRImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/CTR.jpg"))); // NOI18N
         CTRImage.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+
+        CTRReturn.setBackground(new java.awt.Color(77, 132, 155));
+        CTRReturn.setForeground(new java.awt.Color(255, 255, 255));
+        CTRReturn.setText("Return");
+        CTRReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CTRReturnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout CTRPanelLayout = new javax.swing.GroupLayout(CTRPanel);
         CTRPanel.setLayout(CTRPanelLayout);
@@ -1010,7 +1430,9 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(CTRTitle)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRPanelLayout.createSequentialGroup()
-                .addContainerGap(216, Short.MAX_VALUE)
+                .addContainerGap(93, Short.MAX_VALUE)
+                .addComponent(CTRReturn)
+                .addGap(58, 58, 58)
                 .addComponent(CTRImage)
                 .addGap(146, 146, 146))
         );
@@ -1019,12 +1441,78 @@ public class Home extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRPanelLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(CTRTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CTRImage)
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addGroup(CTRPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CTRPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CTRImage))
+                    .addGroup(CTRPanelLayout.createSequentialGroup()
+                        .addGap(289, 289, 289)
+                        .addComponent(CTRReturn)))
+                .addContainerGap(68, Short.MAX_VALUE))
         );
 
         MainPanel.add(CTRPanel, "card33");
+
+        CTRPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        CTRIntro.setBackground(new java.awt.Color(255, 255, 255));
+        CTRIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        CTRIntro.setForeground(new java.awt.Color(48, 87, 120));
+        CTRIntro.setText("Counter Mode (CTR)");
+
+        ThemePicture20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        CTRDes.setBackground(new java.awt.Color(77, 132, 155));
+        CTRDes.setForeground(new java.awt.Color(255, 255, 255));
+        CTRDes.setText("Description");
+        CTRDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CTRDesActionPerformed(evt);
+            }
+        });
+
+        CTRQ.setBackground(new java.awt.Color(77, 132, 155));
+        CTRQ.setForeground(new java.awt.Color(255, 255, 255));
+        CTRQ.setText("Questions");
+        CTRQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CTRQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout CTRPanelWelcomeLayout = new javax.swing.GroupLayout(CTRPanelWelcome);
+        CTRPanelWelcome.setLayout(CTRPanelWelcomeLayout);
+        CTRPanelWelcomeLayout.setHorizontalGroup(
+            CTRPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture20)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(CTRPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(CTRDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(CTRQ))
+                    .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(231, 231, 231)
+                        .addComponent(CTRIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        CTRPanelWelcomeLayout.setVerticalGroup(
+            CTRPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(241, Short.MAX_VALUE)
+                .addComponent(CTRIntro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CTRPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CTRDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CTRQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture20))
+        );
+
+        MainPanel.add(CTRPanelWelcome, "card48");
 
         PAPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -4632,7 +5120,7 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 912, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 912, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4663,7 +5151,7 @@ public class Home extends javax.swing.JFrame {
     MainPanel.repaint();
     MainPanel.revalidate();
 
-    MainPanel.add(AtbashPanel);
+    MainPanel.add(AtbashPanelWelcome);
     MainPanel.repaint();
     MainPanel.revalidate();
     }//GEN-LAST:event_AtbashActionPerformed
@@ -4678,7 +5166,7 @@ public class Home extends javax.swing.JFrame {
     MainPanel.repaint();
     MainPanel.revalidate();
 
-    MainPanel.add(CaesarPanel);
+    MainPanel.add(CaesarPanelWelcome);
     MainPanel.repaint();
     MainPanel.revalidate();
     
@@ -4689,7 +5177,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(VigenerePanel);
+        MainPanel.add(VigenerePanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_VigenereActionPerformed
@@ -4699,7 +5187,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(ECBPanel);
+        MainPanel.add(ECBPanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_ECBActionPerformed
@@ -5180,7 +5668,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
 
-            MainPanel.add(CBCPanel);
+            MainPanel.add(CBCPanelWelcome);
             MainPanel.repaint();
             MainPanel.revalidate();        // TODO add your handling code here:
     }//GEN-LAST:event_CBCActionPerformed
@@ -5190,7 +5678,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
 
-            MainPanel.add(CTRPanel);
+            MainPanel.add(CTRPanelWelcome);
             MainPanel.repaint();
             MainPanel.revalidate();        // TODO add your handling code here:
     }//GEN-LAST:event_CTRActionPerformed
@@ -5820,6 +6308,150 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_DESBB1ActionPerformed
 
+    private void CaesarDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaesarDesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CaesarDesActionPerformed
+
+    private void CaesarQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaesarQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CaesarPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CaesarQActionPerformed
+
+    private void AtbashDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashDesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AtbashDesActionPerformed
+
+    private void AtbashQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(AtbashPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_AtbashQActionPerformed
+
+    private void VigenereDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VigenereDesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VigenereDesActionPerformed
+
+    private void VigenereQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VigenereQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(VigenerePanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_VigenereQActionPerformed
+
+    private void CaesarQReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CaesarQReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CaesarPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CaesarQReturnActionPerformed
+
+    private void AtbashQReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashQReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(AtbashPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_AtbashQReturnActionPerformed
+
+    private void VigenereQReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VigenereQReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(VigenerePanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_VigenereQReturnActionPerformed
+
+    private void ECBDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECBDesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ECBDesActionPerformed
+
+    private void ECBQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECBQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECBPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_ECBQActionPerformed
+
+    private void CBCDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCDesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CBCDesActionPerformed
+
+    private void CBCQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CBCPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CBCQActionPerformed
+
+    private void CTRDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CTRDesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CTRDesActionPerformed
+
+    private void CTRQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CTRQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CTRPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CTRQActionPerformed
+
+    private void ECBQReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECBQReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECBPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_ECBQReturnActionPerformed
+
+    private void CBCReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CBCPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CBCReturnActionPerformed
+
+    private void CTRReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CTRReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CTRPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CTRReturnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -5864,7 +6496,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel AESTitle;
     private javax.swing.JTextField Answer1;
     private javax.swing.JMenuItem Atbash;
+    private javax.swing.JButton AtbashDes;
+    private javax.swing.JLabel AtbashIntro;
     private javax.swing.JPanel AtbashPanel;
+    private javax.swing.JPanel AtbashPanelWelcome;
+    private javax.swing.JButton AtbashQ;
+    private javax.swing.JButton AtbashQReturn;
     private javax.swing.JLabel AtbashTitle;
     private javax.swing.JMenu Authentication;
     private javax.swing.JButton Back;
@@ -5880,6 +6517,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton BlowfishReturn;
     private javax.swing.JLabel BreakingCBCBMAC_Title;
     private javax.swing.JMenuItem CBC;
+    private javax.swing.JButton CBCDes;
+    private javax.swing.JLabel CBCIntro;
     private javax.swing.JPanel CBCMAC;
     private javax.swing.ButtonGroup CBCMAC1;
     private javax.swing.ButtonGroup CBCMAC2;
@@ -5896,7 +6535,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton CBCMAC_Next;
     private javax.swing.JButton CBCMAC_Submit;
     private javax.swing.JPanel CBCPanel;
+    private javax.swing.JPanel CBCPanelWelcome;
+    private javax.swing.JButton CBCQ;
     private javax.swing.JPanel CBCQPanel;
+    private javax.swing.JButton CBCReturn;
     private javax.swing.JButton CBCSubmit;
     private javax.swing.JMenuItem CBC_MAC;
     private javax.swing.JLabel CBCtitle;
@@ -5910,11 +6552,21 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton CHAPQ;
     private javax.swing.JButton CHAPReturn;
     private javax.swing.JMenuItem CTR;
+    private javax.swing.JButton CTRDes;
     private javax.swing.JLabel CTRImage;
+    private javax.swing.JLabel CTRIntro;
     private javax.swing.JPanel CTRPanel;
+    private javax.swing.JPanel CTRPanelWelcome;
+    private javax.swing.JButton CTRQ;
+    private javax.swing.JButton CTRReturn;
     private javax.swing.JLabel CTRTitle;
     private javax.swing.JMenuItem Caesar;
+    private javax.swing.JButton CaesarDes;
+    private javax.swing.JLabel CaesarIntro;
     private javax.swing.JPanel CaesarPanel;
+    private javax.swing.JPanel CaesarPanelWelcome;
+    private javax.swing.JButton CaesarQ;
+    private javax.swing.JButton CaesarQReturn;
     private javax.swing.JLabel CaesarTitle;
     private javax.swing.JLabel Caesar_Directions;
     private javax.swing.JLabel ChapIntro;
@@ -6001,7 +6653,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu DigitalSignatures;
     private javax.swing.JLabel Directions;
     private javax.swing.JMenuItem ECB;
+    private javax.swing.JButton ECBDes;
+    private javax.swing.JLabel ECBIntro;
     private javax.swing.JPanel ECBPanel;
+    private javax.swing.JPanel ECBPanelWelcome;
+    private javax.swing.JButton ECBQ;
+    private javax.swing.JButton ECBQReturn;
     private javax.swing.JButton ECB_Button;
     private javax.swing.JLabel ECB_Picture;
     private javax.swing.JTextField EGA1_1;
@@ -6198,7 +6855,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture12;
     private javax.swing.JLabel ThemePicture13;
     private javax.swing.JLabel ThemePicture14;
+    private javax.swing.JLabel ThemePicture15;
+    private javax.swing.JLabel ThemePicture16;
+    private javax.swing.JLabel ThemePicture17;
+    private javax.swing.JLabel ThemePicture18;
+    private javax.swing.JLabel ThemePicture19;
     private javax.swing.JLabel ThemePicture2;
+    private javax.swing.JLabel ThemePicture20;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
     private javax.swing.JLabel ThemePicture5;
@@ -6211,7 +6874,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ValidateMessage;
     private javax.swing.JButton Verify_Submit;
     private javax.swing.JMenuItem Vigenere;
+    private javax.swing.JButton VigenereDes;
+    private javax.swing.JLabel VigenereIntro;
     private javax.swing.JPanel VigenerePanel;
+    private javax.swing.JPanel VigenerePanelWelcome;
+    private javax.swing.JButton VigenereQ;
+    private javax.swing.JButton VigenereQReturn;
     private javax.swing.JLabel VigenereTitle;
     private javax.swing.JTextField WEPA1;
     private javax.swing.JTextField WEPA2;
