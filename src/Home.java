@@ -238,11 +238,16 @@ public class Home extends javax.swing.JFrame {
         ThemePicture1 = new javax.swing.JLabel();
         PAPDes = new javax.swing.JButton();
         PAPQB = new javax.swing.JButton();
-        PAP_Description = new javax.swing.JPanel();
+        PAPDescripPanel = new javax.swing.JPanel();
+        AtbashDescripHeader1 = new javax.swing.JLabel();
+        AtbashDescrip2 = new javax.swing.JScrollPane();
+        jTextArea26 = new javax.swing.JTextArea();
+        jLabel20 = new javax.swing.JLabel();
+        AtbashReturn1 = new javax.swing.JButton();
+        PAPPicture1 = new javax.swing.JLabel();
+        PAPDescription1 = new javax.swing.JLabel();
         PAPQPanel = new javax.swing.JPanel();
         PAPLabel = new javax.swing.JLabel();
-        PAPPicture = new javax.swing.JLabel();
-        PAPDescription = new javax.swing.JLabel();
         PAPQuestions = new javax.swing.JScrollPane();
         jTextArea16 = new javax.swing.JTextArea();
         PAPA1 = new javax.swing.JTextField();
@@ -1714,9 +1719,9 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(CBCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CBCDescriptionLayout.createSequentialGroup()
                         .addGap(51, 51, 51)
-                        .addGroup(CBCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Encrypt)
-                            .addComponent(Decrypt)))
+                        .addGroup(CBCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Decrypt, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Encrypt)))
                     .addGroup(CBCDescriptionLayout.createSequentialGroup()
                         .addGap(24, 24, 24)
                         .addComponent(CBCBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -2648,30 +2653,83 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(PAPPanelWelcome, "card43");
 
-        PAP_Description.setBackground(new java.awt.Color(255, 255, 255));
+        PAPDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout PAP_DescriptionLayout = new javax.swing.GroupLayout(PAP_Description);
-        PAP_Description.setLayout(PAP_DescriptionLayout);
-        PAP_DescriptionLayout.setHorizontalGroup(
-            PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+        AtbashDescripHeader1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        AtbashDescripHeader1.setForeground(new java.awt.Color(48, 87, 120));
+        AtbashDescripHeader1.setText("PAP");
+
+        AtbashDescrip2.setBorder(null);
+
+        jTextArea26.setColumns(20);
+        jTextArea26.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea26.setRows(5);
+        jTextArea26.setText("- PAP is an authentication scheme, which uses passwords for authentication.\n- PAP is considered a weak authentication scheme.");
+        AtbashDescrip2.setViewportView(jTextArea26);
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        AtbashReturn1.setBackground(new java.awt.Color(77, 132, 155));
+        AtbashReturn1.setForeground(new java.awt.Color(255, 255, 255));
+        AtbashReturn1.setText("Return");
+        AtbashReturn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtbashReturn1ActionPerformed(evt);
+            }
+        });
+
+        PAPPicture1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/PAP.png"))); // NOI18N
+
+        PAPDescription1.setText("PAP 2-Way Handshake");
+
+        javax.swing.GroupLayout PAPDescripPanelLayout = new javax.swing.GroupLayout(PAPDescripPanel);
+        PAPDescripPanel.setLayout(PAPDescripPanelLayout);
+        PAPDescripPanelLayout.setHorizontalGroup(
+            PAPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PAPDescripPanelLayout.createSequentialGroup()
+                .addGroup(PAPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel20)
+                    .addGroup(PAPDescripPanelLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(AtbashReturn1))
+                    .addGroup(PAPDescripPanelLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(AtbashDescrip2, javax.swing.GroupLayout.PREFERRED_SIZE, 654, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PAPDescripPanelLayout.createSequentialGroup()
+                        .addGap(177, 177, 177)
+                        .addComponent(PAPPicture1))
+                    .addGroup(PAPDescripPanelLayout.createSequentialGroup()
+                        .addGap(381, 381, 381)
+                        .addComponent(AtbashDescripHeader1))
+                    .addGroup(PAPDescripPanelLayout.createSequentialGroup()
+                        .addGap(369, 369, 369)
+                        .addComponent(PAPDescription1)))
+                .addGap(12, 12, 12))
         );
-        PAP_DescriptionLayout.setVerticalGroup(
-            PAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
+        PAPDescripPanelLayout.setVerticalGroup(
+            PAPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PAPDescripPanelLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(AtbashDescripHeader1)
+                .addGap(18, 18, 18)
+                .addComponent(AtbashDescrip2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(PAPPicture1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PAPDescription1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addComponent(AtbashReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel20))
         );
 
-        MainPanel.add(PAP_Description, "card75");
+        MainPanel.add(PAPDescripPanel, "card42");
 
         PAPQPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         PAPLabel.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         PAPLabel.setForeground(new java.awt.Color(48, 87, 120));
         PAPLabel.setText("Password Authentication Protocol (PAP)");
-
-        PAPPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/PAP.png"))); // NOI18N
-
-        PAPDescription.setText("PAP 2-Way Handshake");
 
         PAPQuestions.setBorder(null);
 
@@ -2720,16 +2778,10 @@ public class Home extends javax.swing.JFrame {
             .addGroup(PAPQPanelLayout.createSequentialGroup()
                 .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PAPQPanelLayout.createSequentialGroup()
-                        .addGap(374, 374, 374)
-                        .addComponent(PAPDescription))
-                    .addGroup(PAPQPanelLayout.createSequentialGroup()
                         .addGap(186, 186, 186)
-                        .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PAPQPanelLayout.createSequentialGroup()
-                                .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 464, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(PAPPicture)))
+                        .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 464, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(PAPQPanelLayout.createSequentialGroup()
                         .addGap(53, 53, 53)
                         .addComponent(PAPLabel)))
@@ -2740,17 +2792,13 @@ public class Home extends javax.swing.JFrame {
             .addGroup(PAPQPanelLayout.createSequentialGroup()
                 .addGap(134, 134, 134)
                 .addComponent(PAPLabel)
-                .addGap(36, 36, 36)
-                .addComponent(PAPPicture)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PAPDescription)
-                .addGap(56, 56, 56)
+                .addGap(229, 229, 229)
                 .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -4752,7 +4800,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(DHReturn)
@@ -4851,7 +4899,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -4902,7 +4950,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -4948,7 +4996,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -6558,7 +6606,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(PAP_Description);
+        MainPanel.add(PAPDescripPanel);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_PAPDesActionPerformed
@@ -7386,6 +7434,16 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_CTRReturn1ActionPerformed
 
+    private void AtbashReturn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashReturn1ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(PAPPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_AtbashReturn1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7434,7 +7492,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton AtbashDes;
     private javax.swing.JScrollPane AtbashDescrip;
     private javax.swing.JScrollPane AtbashDescrip1;
+    private javax.swing.JScrollPane AtbashDescrip2;
     private javax.swing.JLabel AtbashDescripHeader;
+    private javax.swing.JLabel AtbashDescripHeader1;
     private javax.swing.JPanel AtbashDescription;
     private javax.swing.JLabel AtbashIntro;
     private javax.swing.JPanel AtbashPanel;
@@ -7442,6 +7502,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton AtbashQ;
     private javax.swing.JButton AtbashQReturn;
     private javax.swing.JButton AtbashReturn;
+    private javax.swing.JButton AtbashReturn1;
     private javax.swing.JLabel AtbashTitle;
     private javax.swing.JMenu Authentication;
     private javax.swing.JButton Back;
@@ -7712,16 +7773,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField PAPA1;
     private javax.swing.JButton PAPB;
     private javax.swing.JButton PAPDes;
-    private javax.swing.JLabel PAPDescription;
+    private javax.swing.JPanel PAPDescripPanel;
+    private javax.swing.JLabel PAPDescription1;
     private javax.swing.JLabel PAPIntro;
     private javax.swing.JLabel PAPLabel;
     private javax.swing.JPanel PAPPanelWelcome;
-    private javax.swing.JLabel PAPPicture;
+    private javax.swing.JLabel PAPPicture1;
     private javax.swing.JButton PAPQB;
     private javax.swing.JButton PAPQB2;
     private javax.swing.JPanel PAPQPanel;
     private javax.swing.JScrollPane PAPQuestions;
-    private javax.swing.JPanel PAP_Description;
     private javax.swing.JMenu PrivateKey;
     private javax.swing.JLabel Project;
     private javax.swing.JMenu PublicKey;
@@ -7892,7 +7953,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel3;
+=======
+    private javax.swing.JLabel jLabel20;
+>>>>>>> 640bb16d38831d38e265354330a0a7ee14ac233b
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
@@ -7917,6 +7982,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea23;
     private javax.swing.JTextArea jTextArea24;
     private javax.swing.JTextArea jTextArea25;
+    private javax.swing.JTextArea jTextArea26;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
