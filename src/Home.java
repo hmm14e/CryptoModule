@@ -254,12 +254,12 @@ public class Home extends javax.swing.JFrame {
         CHAPDes = new javax.swing.JButton();
         CHAPQ = new javax.swing.JButton();
         CHAP_Description = new javax.swing.JPanel();
-        CHAPPanel = new javax.swing.JPanel();
         CHAPLabel = new javax.swing.JLabel();
         CHAPPicture = new javax.swing.JLabel();
         CHAPDescription = new javax.swing.JScrollPane();
         jTextArea17 = new javax.swing.JTextArea();
         CHAPReturn = new javax.swing.JButton();
+        CHAPPanel = new javax.swing.JPanel();
         KerberosPanelWelcome = new javax.swing.JPanel();
         KerberosIntro = new javax.swing.JLabel();
         ThemePicture3 = new javax.swing.JLabel();
@@ -336,6 +336,9 @@ public class Home extends javax.swing.JFrame {
         MD5Des = new javax.swing.JButton();
         MD5Q = new javax.swing.JButton();
         MD5Description = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea11 = new javax.swing.JTextArea();
         MD5Panel = new javax.swing.JPanel();
         MD5Return = new javax.swing.JButton();
         RSASignaturePanelWelcome = new javax.swing.JPanel();
@@ -604,7 +607,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Project)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 168, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
                 .addComponent(Theme))
         );
 
@@ -1068,7 +1071,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(VigDescriptionLayout.createSequentialGroup()
                         .addGap(390, 390, 390)
                         .addComponent(VigReturnB)))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(93, Short.MAX_VALUE))
         );
         VigDescriptionLayout.setVerticalGroup(
             VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1081,7 +1084,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(AtbashDescrip1, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(VigReturnB)
-                .addContainerGap(240, Short.MAX_VALUE))
+                .addContainerGap(211, Short.MAX_VALUE))
         );
 
         MainPanel.add(VigDescription, "card65");
@@ -1808,12 +1811,12 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(CTRDescriptionLayout.createSequentialGroup()
                     .addGap(72, 72, 72)
                     .addComponent(CTRImage)
-                    .addContainerGap(73, Short.MAX_VALUE)))
+                    .addContainerGap(81, Short.MAX_VALUE)))
             .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(CTRDescriptionLayout.createSequentialGroup()
                     .addGap(360, 360, 360)
                     .addComponent(CTRReturn1)
-                    .addContainerGap(361, Short.MAX_VALUE)))
+                    .addContainerGap(369, Short.MAX_VALUE)))
         );
 
         MainPanel.add(CTRDescription, "card65");
@@ -1854,7 +1857,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(CTRPanelLayout.createSequentialGroup()
                         .addGap(69, 69, 69)
                         .addComponent(CTRReturn)))
-                .addContainerGap(652, Short.MAX_VALUE))
+                .addContainerGap(660, Short.MAX_VALUE))
         );
 
         MainPanel.add(CTRPanel, "card33");
@@ -2124,9 +2127,9 @@ public class Home extends javax.swing.JFrame {
 
         RCPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        WEP_Label.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        WEP_Label.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
         WEP_Label.setForeground(new java.awt.Color(48, 87, 120));
-        WEP_Label.setText("<html><strong>The WEP Vulerability");
+        WEP_Label.setText("The WEP Vulerability");
 
         DescriptionWEP_Label.setText("If you need a description of WEP click here. ");
 
@@ -2176,9 +2179,10 @@ public class Home extends javax.swing.JFrame {
         RCPanel.setLayout(RCPanelLayout);
         RCPanelLayout.setHorizontalGroup(
             RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RCPanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel2))
+            .addGroup(RCPanelLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(jLabel2)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(RCPanelLayout.createSequentialGroup()
                 .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RCPanelLayout.createSequentialGroup()
@@ -2206,14 +2210,14 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Description_button))
                     .addGroup(RCPanelLayout.createSequentialGroup()
                         .addGap(261, 261, 261)
-                        .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(WEP_Label)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RCPanelLayout.setVerticalGroup(
             RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RCPanelLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addComponent(WEP_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(WEP_Label)
                 .addGap(26, 26, 26)
                 .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DescriptionWEP_Label)
@@ -2229,9 +2233,8 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(RCReturn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(43, 43, 43))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                .addComponent(jLabel2))
         );
 
         MainPanel.add(RCPanel, "card26");
@@ -2370,7 +2373,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(RC4_Label)
                 .addGap(29, 29, 29)
                 .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
                 .addComponent(RCReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel15))
@@ -2816,21 +2819,6 @@ public class Home extends javax.swing.JFrame {
 
         CHAP_Description.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout CHAP_DescriptionLayout = new javax.swing.GroupLayout(CHAP_Description);
-        CHAP_Description.setLayout(CHAP_DescriptionLayout);
-        CHAP_DescriptionLayout.setHorizontalGroup(
-            CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
-        );
-        CHAP_DescriptionLayout.setVerticalGroup(
-            CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
-        );
-
-        MainPanel.add(CHAP_Description, "card75");
-
-        CHAPPanel.setBackground(new java.awt.Color(255, 255, 255));
-
         CHAPLabel.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
         CHAPLabel.setForeground(new java.awt.Color(48, 87, 120));
         CHAPLabel.setText("Challenge-Handshake Authentication Protocol");
@@ -2842,7 +2830,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea17.setColumns(20);
         jTextArea17.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea17.setRows(5);
-        jTextArea17.setText("1. User requests to logon\n2. Server responds with a random challenge message\n3. User does the following hash computation \nMD5(ID||Password||Challenge) then sends the hash value to the \nserver as a response.\n4. Server does the same computation, and if the hash values\nare equal then accept, else deny.");
+        jTextArea17.setText("1. User requests to logon\n2. Server responds with a random challenge message\n3. User does the following hash computation \nMD5(ID||Password||Challenge) then sends the hash value to the \nserver as a response.\n4. Server does the same computation, and if the hash values\nare equal, then accept, else deny.");
         CHAPDescription.setViewportView(jTextArea17);
 
         CHAPReturn.setBackground(new java.awt.Color(77, 132, 155));
@@ -2854,39 +2842,53 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout CHAPPanelLayout = new javax.swing.GroupLayout(CHAPPanel);
-        CHAPPanel.setLayout(CHAPPanelLayout);
-        CHAPPanelLayout.setHorizontalGroup(
-            CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CHAPPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(CHAPReturn)
-                .addGap(113, 113, 113))
-            .addGroup(CHAPPanelLayout.createSequentialGroup()
-                .addGroup(CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CHAPPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout CHAP_DescriptionLayout = new javax.swing.GroupLayout(CHAP_Description);
+        CHAP_Description.setLayout(CHAP_DescriptionLayout);
+        CHAP_DescriptionLayout.setHorizontalGroup(
+            CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
+                .addGroup(CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
                         .addGap(167, 167, 167)
                         .addComponent(CHAPPicture))
-                    .addGroup(CHAPPanelLayout.createSequentialGroup()
-                        .addGap(190, 190, 190)
-                        .addComponent(CHAPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(CHAPPanelLayout.createSequentialGroup()
+                    .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
                         .addGap(36, 36, 36)
-                        .addComponent(CHAPLabel)))
+                        .addComponent(CHAPLabel))
+                    .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(CHAPReturn))
+                    .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
+                        .addGap(187, 187, 187)
+                        .addComponent(CHAPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(48, Short.MAX_VALUE))
         );
-        CHAPPanelLayout.setVerticalGroup(
-            CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CHAPPanelLayout.createSequentialGroup()
+        CHAP_DescriptionLayout.setVerticalGroup(
+            CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
                 .addGap(96, 96, 96)
                 .addComponent(CHAPLabel)
                 .addGap(38, 38, 38)
                 .addComponent(CHAPPicture)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(34, 34, 34)
                 .addComponent(CHAPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(97, 97, 97)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addComponent(CHAPReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addGap(95, 95, 95))
+        );
+
+        MainPanel.add(CHAP_Description, "card75");
+
+        CHAPPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout CHAPPanelLayout = new javax.swing.GroupLayout(CHAPPanel);
+        CHAPPanel.setLayout(CHAPPanelLayout);
+        CHAPPanelLayout.setHorizontalGroup(
+            CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 912, Short.MAX_VALUE)
+        );
+        CHAPPanelLayout.setVerticalGroup(
+            CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 758, Short.MAX_VALUE)
         );
 
         MainPanel.add(CHAPPanel, "card35");
@@ -3656,15 +3658,44 @@ public class Home extends javax.swing.JFrame {
 
         MD5Description.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel3.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel3.setText("MD5");
+
+        jScrollPane3.setBorder(null);
+        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        jTextArea11.setEditable(false);
+        jTextArea11.setColumns(20);
+        jTextArea11.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jTextArea11.setLineWrap(true);
+        jTextArea11.setRows(5);
+        jTextArea11.setText("MD5 is a hash function that produces a 128-bit hash value. It is often used as checksum to test for data integrity. MD5 has been found to have many collision vulnerabilities and can be cracked using a brute-force attack. ");
+        jTextArea11.setWrapStyleWord(true);
+        jScrollPane3.setViewportView(jTextArea11);
+
         javax.swing.GroupLayout MD5DescriptionLayout = new javax.swing.GroupLayout(MD5Description);
         MD5Description.setLayout(MD5DescriptionLayout);
         MD5DescriptionLayout.setHorizontalGroup(
             MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGroup(MD5DescriptionLayout.createSequentialGroup()
+                .addGroup(MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MD5DescriptionLayout.createSequentialGroup()
+                        .addGap(375, 375, 375)
+                        .addComponent(jLabel3))
+                    .addGroup(MD5DescriptionLayout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 708, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(134, Short.MAX_VALUE))
         );
         MD5DescriptionLayout.setVerticalGroup(
             MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
+            .addGroup(MD5DescriptionLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(jLabel3)
+                .addGap(42, 42, 42)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(443, Short.MAX_VALUE))
         );
 
         MainPanel.add(MD5Description, "card82");
@@ -7861,6 +7892,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
@@ -7868,8 +7900,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
+    private javax.swing.JTextArea jTextArea11;
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea13;
     private javax.swing.JTextArea jTextArea14;
