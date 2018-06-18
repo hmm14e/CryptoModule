@@ -1026,12 +1026,13 @@ public class Home extends javax.swing.JFrame {
         VigDescripHeader.setText("Vigenere");
 
         AtbashDescrip1.setBorder(null);
+        AtbashDescrip1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea24.setColumns(20);
         jTextArea24.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea24.setLineWrap(true);
         jTextArea24.setRows(5);
-        jTextArea24.setText("- Vigenere is a polyalphabetic substitution cipher.\n- It is a method of encoding plaintext by using a series of Caesar Ciphers based on a key.\n- Ex. \n\tPlaintext: DEFEND WALL\n\tKEY: FLAG\n\n\t1) Rewrite the key under the plaintext until it matches the length of the \t\t\tPaintext->\t DEFENDWALL\n\t\t\t   \t FLAGFLAGFL\n\n\t2) Use the table to encode the ciphertext\n\t\tCiphertext ->    IPFKSOWGQW\n\n");
+        jTextArea24.setText("- Vigenere is a polyalphabetic substitution cipher and a method of encoding plaintext by using a series of Caesar Ciphers based on a key.\n- Ex. \n\tPlaintext: DEFEND WALL\n\tKEY: FLAG\n\n\t1) Rewrite the key under the plaintext until it matches the length of the \t\t\t\t\tPlaintext->\t DEFENDWALL\n\t\t\t   \t FLAGFLAGFL\n\n\t2) Use the table to encode the ciphertext\n\t\tCiphertext ->    IPFKSOWGQW\n\n");
         jTextArea24.setWrapStyleWord(true);
         AtbashDescrip1.setViewportView(jTextArea24);
 
@@ -1053,34 +1054,30 @@ public class Home extends javax.swing.JFrame {
             .addGroup(VigDescriptionLayout.createSequentialGroup()
                 .addGroup(VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(VigDescriptionLayout.createSequentialGroup()
-                        .addGap(386, 386, 386)
-                        .addComponent(VigDescripHeader))
-                    .addGroup(VigDescriptionLayout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(VigReturnB)
-                        .addGap(87, 87, 87)
+                        .addGap(18, 18, 18)
+                        .addComponent(AtbashDescrip1, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel18))
                     .addGroup(VigDescriptionLayout.createSequentialGroup()
-                        .addGap(108, 108, 108)
-                        .addComponent(AtbashDescrip1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(2269, Short.MAX_VALUE))
+                        .addGap(332, 332, 332)
+                        .addComponent(VigDescripHeader))
+                    .addGroup(VigDescriptionLayout.createSequentialGroup()
+                        .addGap(370, 370, 370)
+                        .addComponent(VigReturnB)))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
         VigDescriptionLayout.setVerticalGroup(
             VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(VigDescriptionLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(29, 29, 29)
                 .addComponent(VigDescripHeader)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(AtbashDescrip1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(VigDescriptionLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(VigReturnB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(307, 307, 307))
-                    .addGroup(VigDescriptionLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel18)
-                        .addContainerGap(57, Short.MAX_VALUE))))
+                .addGap(18, 18, 18)
+                .addGroup(VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel18)
+                    .addComponent(AtbashDescrip1, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
+                .addComponent(VigReturnB)
+                .addGap(21, 21, 21))
         );
 
         MainPanel.add(VigDescription, "card65");
@@ -5851,9 +5848,8 @@ public class Home extends javax.swing.JFrame {
             MainPanel.revalidate();
         }
         else
-            System.out.println("FALSE");
+            JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
         
-        System.out.println(val1);
     }//GEN-LAST:event_ECB_EnterButton
 
     private void FeistelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelActionPerformed
@@ -6067,7 +6063,6 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_CBCMAC_Back_Button
 
     private void HomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseClicked
-        System.out.println("Test");
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -6896,8 +6891,6 @@ public class Home extends javax.swing.JFrame {
     private void WEPB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WEPB1ActionPerformed
         String answer1 = WEPA1.getText();
         String answer2 = WEPA2.getText();
-        System.out.print(answer1);
-        System.out.print(answer2);
 
         if(answer1.toUpperCase().equals("YES") && answer2.equals("10111111")){
             JOptionPane.showMessageDialog(null, "Correct! You can continue onto RC5", "CORRECT!", JOptionPane.ERROR_MESSAGE);

@@ -1201,44 +1201,38 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="386" max="-2" attributes="0"/>
-                              <Component id="VigDescripHeader" min="-2" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                              <Component id="VigReturnB" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="AtbashDescrip1" min="-2" pref="386" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
-                              <Component id="AtbashDescrip1" min="-2" pref="679" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="332" max="-2" attributes="0"/>
+                              <Component id="VigDescripHeader" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="370" max="-2" attributes="0"/>
+                              <Component id="VigReturnB" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="2269" max="32767" attributes="0"/>
+                      <EmptySpace pref="79" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                       <Component id="VigDescripHeader" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="AtbashDescrip1" min="-2" pref="266" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="VigReturnB" min="-2" pref="31" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="307" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="57" max="32767" attributes="0"/>
-                          </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                          <Component id="AtbashDescrip1" min="-2" pref="393" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace pref="74" max="32767" attributes="0"/>
+                      <Component id="VigReturnB" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1260,6 +1254,7 @@
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
+                <Property name="verticalScrollBarPolicy" type="int" value="21"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -1275,7 +1270,7 @@
                     </Property>
                     <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="- Vigenere is a polyalphabetic substitution cipher.&#xa;- It is a method of encoding plaintext by using a series of Caesar Ciphers based on a key.&#xa;- Ex. &#xa;&#x9;Plaintext: DEFEND WALL&#xa;&#x9;KEY: FLAG&#xa;&#xa;&#x9;1) Rewrite the key under the plaintext until it matches the length of the &#x9;&#x9;&#x9;Paintext-&gt;&#x9; DEFENDWALL&#xa;&#x9;&#x9;&#x9;   &#x9; FLAGFLAGFL&#xa;&#xa;&#x9;2) Use the table to encode the ciphertext&#xa;&#x9;&#x9;Ciphertext -&gt;    IPFKSOWGQW&#xa;&#xa;"/>
+                    <Property name="text" type="java.lang.String" value="- Vigenere is a polyalphabetic substitution cipher and a method of encoding plaintext by using a series of Caesar Ciphers based on a key.&#xa;- Ex. &#xa;&#x9;Plaintext: DEFEND WALL&#xa;&#x9;KEY: FLAG&#xa;&#xa;&#x9;1) Rewrite the key under the plaintext until it matches the length of the &#x9;&#x9;&#x9;&#x9;&#x9;Plaintext-&gt;&#x9; DEFENDWALL&#xa;&#x9;&#x9;&#x9;   &#x9; FLAGFLAGFL&#xa;&#xa;&#x9;2) Use the table to encode the ciphertext&#xa;&#x9;&#x9;Ciphertext -&gt;    IPFKSOWGQW&#xa;&#xa;"/>
                     <Property name="wrapStyleWord" type="boolean" value="true"/>
                   </Properties>
                 </Component>
