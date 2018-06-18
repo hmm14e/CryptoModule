@@ -63,8 +63,8 @@ public class Home extends javax.swing.JFrame {
         CaesarDescription = new javax.swing.JPanel();
         CaesarDescrip = new javax.swing.JLabel();
         CaesarDescription1 = new javax.swing.JScrollPane();
-        jTextArea22 = new javax.swing.JTextArea();
-        jLabel16 = new javax.swing.JLabel();
+        CaesarCipherDes = new javax.swing.JTextArea();
+        Theme__ = new javax.swing.JLabel();
         CaesarReturnB = new javax.swing.JButton();
         CaesarPanel = new javax.swing.JPanel();
         CaesarTitle = new javax.swing.JLabel();
@@ -95,6 +95,11 @@ public class Home extends javax.swing.JFrame {
         AtbashDes = new javax.swing.JButton();
         AtbashQ = new javax.swing.JButton();
         VigDescription = new javax.swing.JPanel();
+        VigDescripHeader = new javax.swing.JLabel();
+        AtbashDescrip1 = new javax.swing.JScrollPane();
+        jTextArea24 = new javax.swing.JTextArea();
+        jLabel18 = new javax.swing.JLabel();
+        VigReturnB = new javax.swing.JButton();
         VigenerePanel = new javax.swing.JPanel();
         VigenereTitle = new javax.swing.JLabel();
         Warning2 = new javax.swing.JLabel();
@@ -668,13 +673,13 @@ public class Home extends javax.swing.JFrame {
 
         CaesarDescription1.setBorder(null);
 
-        jTextArea22.setColumns(20);
-        jTextArea22.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea22.setRows(5);
-        jTextArea22.setText("- The Caesar Cipher, also known as a shift cipher, shifts each letter in the\nplaintext alphabet by some fixed amount.\n- An example, if the Key k = 4, then a -> e, b -> f and so on.\n- The reason it is called the Caesar Cipher, is because it is thought that\nJulius Caesar was the first one to use such a cipher with a key that equaled\n3.");
-        CaesarDescription1.setViewportView(jTextArea22);
+        CaesarCipherDes.setColumns(20);
+        CaesarCipherDes.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        CaesarCipherDes.setRows(5);
+        CaesarCipherDes.setText("- The Caesar Cipher, also known as a shift cipher, shifts each letter in the\nplaintext alphabet by some fixed amount.\n- An example, if the Key k = 4, then a -> e, b -> f and so on.\n- The reason it is called the Caesar Cipher, is because it is thought that\nJulius Caesar was the first one to use such a cipher with a key that equaled\n3.");
+        CaesarDescription1.setViewportView(CaesarCipherDes);
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        Theme__.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         CaesarReturnB.setBackground(new java.awt.Color(77, 132, 155));
         CaesarReturnB.setForeground(new java.awt.Color(255, 255, 255));
@@ -691,7 +696,7 @@ public class Home extends javax.swing.JFrame {
             CaesarDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CaesarDescriptionLayout.createSequentialGroup()
                 .addGroup(CaesarDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel16)
+                    .addComponent(Theme__)
                     .addGroup(CaesarDescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
                         .addComponent(CaesarReturnB))
@@ -713,7 +718,7 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addComponent(CaesarReturnB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16))
+                .addComponent(Theme__))
         );
 
         MainPanel.add(CaesarDescription, "card42");
@@ -1016,15 +1021,66 @@ public class Home extends javax.swing.JFrame {
 
         VigDescription.setBackground(new java.awt.Color(255, 255, 255));
 
+        VigDescripHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        VigDescripHeader.setForeground(new java.awt.Color(48, 87, 120));
+        VigDescripHeader.setText("Vigenere");
+
+        AtbashDescrip1.setBorder(null);
+
+        jTextArea24.setColumns(20);
+        jTextArea24.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea24.setLineWrap(true);
+        jTextArea24.setRows(5);
+        jTextArea24.setText("- Vigenere is a polyalphabetic substitution cipher.\n- It is a method of encoding plaintext by using a series of Caesar Ciphers based on a key.\n- Ex. \n\tPlaintext: DEFEND WALL\n\tKEY: FLAG\n\n\t1) Rewrite the key under the plaintext until it matches the length of the \t\t\tPaintext->\t DEFENDWALL\n\t\t\t   \t FLAGFLAGFL\n\n\t2) Use the table to encode the ciphertext\n\t\tCiphertext ->    IPFKSOWGQW\n\n");
+        jTextArea24.setWrapStyleWord(true);
+        AtbashDescrip1.setViewportView(jTextArea24);
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/VigTable1.jpg"))); // NOI18N
+
+        VigReturnB.setBackground(new java.awt.Color(77, 132, 155));
+        VigReturnB.setForeground(new java.awt.Color(255, 255, 255));
+        VigReturnB.setText("Return");
+        VigReturnB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VigReturnBActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout VigDescriptionLayout = new javax.swing.GroupLayout(VigDescription);
         VigDescription.setLayout(VigDescriptionLayout);
         VigDescriptionLayout.setHorizontalGroup(
             VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGroup(VigDescriptionLayout.createSequentialGroup()
+                .addGroup(VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(VigDescriptionLayout.createSequentialGroup()
+                        .addGap(386, 386, 386)
+                        .addComponent(VigDescripHeader))
+                    .addGroup(VigDescriptionLayout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(VigReturnB)
+                        .addGap(87, 87, 87)
+                        .addComponent(jLabel18))
+                    .addGroup(VigDescriptionLayout.createSequentialGroup()
+                        .addGap(108, 108, 108)
+                        .addComponent(AtbashDescrip1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(2269, Short.MAX_VALUE))
         );
         VigDescriptionLayout.setVerticalGroup(
             VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
+            .addGroup(VigDescriptionLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(VigDescripHeader)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(AtbashDescrip1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(VigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(VigDescriptionLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(VigReturnB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(307, 307, 307))
+                    .addGroup(VigDescriptionLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel18)
+                        .addContainerGap(57, Short.MAX_VALUE))))
         );
 
         MainPanel.add(VigDescription, "card65");
@@ -2086,7 +2142,7 @@ public class Home extends javax.swing.JFrame {
                                             .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RCPanelLayout.createSequentialGroup()
-                .addGap(244, 297, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RCPanelLayout.createSequentialGroup()
                         .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2622,7 +2678,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -4596,7 +4652,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(DHReturn)
@@ -4695,7 +4751,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -4746,7 +4802,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(125, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -4792,7 +4848,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -5576,7 +5632,7 @@ public class Home extends javax.swing.JFrame {
 
         Authentication.setText("Authentication");
 
-        PAP.setText("Pap");
+        PAP.setText("PAP");
         PAP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PAPActionPerformed(evt);
@@ -5584,7 +5640,7 @@ public class Home extends javax.swing.JFrame {
         });
         Authentication.add(PAP);
 
-        CHAP.setText("Chap");
+        CHAP.setText("CHAP");
         CHAP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CHAPActionPerformed(evt);
@@ -6917,7 +6973,7 @@ public class Home extends javax.swing.JFrame {
     private void OTPYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPYesActionPerformed
         int hold = GlobalVariable.OTPflag;
         if(hold == 1){
-            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
         }
         else{
             JOptionPane.showMessageDialog(null, "INCORRECT", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
@@ -6927,7 +6983,7 @@ public class Home extends javax.swing.JFrame {
     private void OTPNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OTPNoActionPerformed
         int hold = GlobalVariable.OTPflag;
         if(hold == 0){
-            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
         }
         else{
             JOptionPane.showMessageDialog(null, "INCORRECT", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
@@ -7204,6 +7260,16 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_AtbashReturnActionPerformed
 
+    private void VigReturnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VigReturnBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(VigenerePanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_VigReturnBActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7251,6 +7317,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem Atbash;
     private javax.swing.JButton AtbashDes;
     private javax.swing.JScrollPane AtbashDescrip;
+    private javax.swing.JScrollPane AtbashDescrip1;
     private javax.swing.JLabel AtbashDescripHeader;
     private javax.swing.JPanel AtbashDescription;
     private javax.swing.JLabel AtbashIntro;
@@ -7323,6 +7390,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton CTRReturn;
     private javax.swing.JLabel CTRTitle;
     private javax.swing.JMenuItem Caesar;
+    private javax.swing.JTextArea CaesarCipherDes;
     private javax.swing.JButton CaesarDes;
     private javax.swing.JLabel CaesarDescrip;
     private javax.swing.JPanel CaesarDescription;
@@ -7657,11 +7725,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture8;
     private javax.swing.JLabel ThemePicture9;
     private javax.swing.JLabel Theme_;
+    private javax.swing.JLabel Theme__;
     private javax.swing.JMenuItem TripDES;
     private javax.swing.JLabel True;
     private javax.swing.JLabel ValidateMessage;
     private javax.swing.JButton Verify_Submit;
+    private javax.swing.JLabel VigDescripHeader;
     private javax.swing.JPanel VigDescription;
+    private javax.swing.JButton VigReturnB;
     private javax.swing.JMenuItem Vigenere;
     private javax.swing.JButton VigenereDes;
     private javax.swing.JLabel VigenereIntro;
@@ -7697,8 +7768,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
@@ -7718,8 +7789,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea20;
     private javax.swing.JTextArea jTextArea21;
-    private javax.swing.JTextArea jTextArea22;
     private javax.swing.JTextArea jTextArea23;
+    private javax.swing.JTextArea jTextArea24;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
