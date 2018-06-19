@@ -285,6 +285,12 @@ public class Home extends javax.swing.JFrame {
         CBCMACDes = new javax.swing.JButton();
         CBCMACQ = new javax.swing.JButton();
         CBCMAC_Description = new javax.swing.JPanel();
+        CBCMACDescripHeader = new javax.swing.JLabel();
+        CBCMACDescription = new javax.swing.JScrollPane();
+        CaesarCipherDes1 = new javax.swing.JTextArea();
+        Theme__1 = new javax.swing.JLabel();
+        CBCMACBB = new javax.swing.JButton();
+        CBCMACPicture = new javax.swing.JLabel();
         CBCMAC = new javax.swing.JPanel();
         CBCMACTitle = new javax.swing.JLabel();
         Question1 = new javax.swing.JLabel();
@@ -2806,7 +2812,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -3018,6 +3024,8 @@ public class Home extends javax.swing.JFrame {
         KerberosDescripHeader.setText("Kerberos");
 
         KerberosDescription.setBorder(null);
+        KerberosDescription.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        KerberosDescription.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea22.setEditable(false);
         jTextArea22.setColumns(20);
@@ -3052,7 +3060,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(KerberosDescripHeader))
                     .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
                         .addGap(55, 55, 55)
-                        .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(12, 12, 12))
         );
         KerberosDescripPanelLayout.setVerticalGroup(
@@ -3090,21 +3098,20 @@ public class Home extends javax.swing.JFrame {
         KerberosPanelLayout.setHorizontalGroup(
             KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KerberosPanelLayout.createSequentialGroup()
-                .addContainerGap(267, Short.MAX_VALUE)
-                .addGroup(KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
-                        .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(97, 97, 97))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
-                        .addComponent(Kerberos_K)
-                        .addGap(248, 248, 248))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(97, 97, 97))
+            .addGroup(KerberosPanelLayout.createSequentialGroup()
+                .addGap(238, 238, 238)
+                .addComponent(Kerberos_K)
+                .addContainerGap(277, Short.MAX_VALUE))
         );
         KerberosPanelLayout.setVerticalGroup(
             KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KerberosPanelLayout.createSequentialGroup()
-                .addGap(72, 72, 72)
+                .addGap(87, 87, 87)
                 .addComponent(Kerberos_K)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 541, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 526, Short.MAX_VALUE)
                 .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59))
         );
@@ -3174,18 +3181,70 @@ public class Home extends javax.swing.JFrame {
 
         CBCMAC_Description.setBackground(new java.awt.Color(255, 255, 255));
 
+        CBCMACDescripHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        CBCMACDescripHeader.setForeground(new java.awt.Color(48, 87, 120));
+        CBCMACDescripHeader.setText("CBC-MAC");
+
+        CBCMACDescription.setBorder(null);
+        CBCMACDescription.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        CaesarCipherDes1.setEditable(false);
+        CaesarCipherDes1.setColumns(20);
+        CaesarCipherDes1.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        CaesarCipherDes1.setRows(5);
+        CaesarCipherDes1.setText("- CBC-MAC is a technique in constructing a message authentication code from a block\ncipher using cipher block chaining.");
+        CBCMACDescription.setViewportView(CaesarCipherDes1);
+
+        Theme__1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        CBCMACBB.setBackground(new java.awt.Color(77, 132, 155));
+        CBCMACBB.setForeground(new java.awt.Color(255, 255, 255));
+        CBCMACBB.setText("Return");
+        CBCMACBB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCMACBBActionPerformed(evt);
+            }
+        });
+
+        CBCMACPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/CBCMAC.png"))); // NOI18N
+
         javax.swing.GroupLayout CBCMAC_DescriptionLayout = new javax.swing.GroupLayout(CBCMAC_Description);
         CBCMAC_Description.setLayout(CBCMAC_DescriptionLayout);
         CBCMAC_DescriptionLayout.setHorizontalGroup(
             CBCMAC_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGroup(CBCMAC_DescriptionLayout.createSequentialGroup()
+                .addGroup(CBCMAC_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Theme__1)
+                    .addGroup(CBCMAC_DescriptionLayout.createSequentialGroup()
+                        .addGap(347, 347, 347)
+                        .addComponent(CBCMACDescripHeader))
+                    .addGroup(CBCMAC_DescriptionLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(CBCMACDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 690, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(CBCMAC_DescriptionLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(CBCMACBB))
+                    .addGroup(CBCMAC_DescriptionLayout.createSequentialGroup()
+                        .addGap(211, 211, 211)
+                        .addComponent(CBCMACPicture)))
+                .addGap(12, 12, 12))
         );
         CBCMAC_DescriptionLayout.setVerticalGroup(
             CBCMAC_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
+            .addGroup(CBCMAC_DescriptionLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(CBCMACDescripHeader)
+                .addGap(18, 18, 18)
+                .addComponent(CBCMACDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(CBCMACPicture)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addComponent(CBCMACBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Theme__1))
         );
 
-        MainPanel.add(CBCMAC_Description, "card75");
+        MainPanel.add(CBCMAC_Description, "card42");
 
         CBCMAC.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -4838,7 +4897,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(DHReturn)
@@ -4937,7 +4996,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -4988,7 +5047,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -5034,7 +5093,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -7484,8 +7543,24 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_AtbashReturn1ActionPerformed
 
     private void KerberosBBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KerberosBBActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(KerberosPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_KerberosBBActionPerformed
+
+    private void CBCMACBBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCMACBBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CBCMACPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CBCMACBBActionPerformed
 
     /**
      * @param args the command line arguments
@@ -7573,9 +7648,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.ButtonGroup CBCMAC3;
     private javax.swing.ButtonGroup CBCMAC4;
     private javax.swing.ButtonGroup CBCMAC5;
+    private javax.swing.JButton CBCMACBB;
     private javax.swing.JButton CBCMACDes;
+    private javax.swing.JLabel CBCMACDescripHeader;
+    private javax.swing.JScrollPane CBCMACDescription;
     private javax.swing.JLabel CBCMACIntro;
     private javax.swing.JPanel CBCMACPanelWelcome;
+    private javax.swing.JLabel CBCMACPicture;
     private javax.swing.JButton CBCMACQ;
     private javax.swing.JButton CBCMACReturn;
     private javax.swing.JLabel CBCMACTitle;
@@ -7612,6 +7691,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel CTRTitle;
     private javax.swing.JMenuItem Caesar;
     private javax.swing.JTextArea CaesarCipherDes;
+    private javax.swing.JTextArea CaesarCipherDes1;
     private javax.swing.JButton CaesarDes;
     private javax.swing.JLabel CaesarDescrip;
     private javax.swing.JPanel CaesarDescription;
@@ -7951,6 +8031,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture9;
     private javax.swing.JLabel Theme_;
     private javax.swing.JLabel Theme__;
+    private javax.swing.JLabel Theme__1;
     private javax.swing.JMenuItem TripDES;
     private javax.swing.JLabel True;
     private javax.swing.JLabel ValidateMessage;
