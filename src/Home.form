@@ -428,7 +428,7 @@
                       <Component id="Welcome" min="-2" pref="57" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Project" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="148" max="32767" attributes="0"/>
+                      <EmptySpace pref="172" max="32767" attributes="0"/>
                       <Component id="Theme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -502,7 +502,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="CaesarIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -609,7 +609,7 @@
                       <Component id="CaesarDescrip" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="CaesarDescription1" min="-2" pref="270" max="-2" attributes="0"/>
-                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                      <EmptySpace pref="59" max="32767" attributes="0"/>
                       <Component id="CaesarReturnB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Theme__" min="-2" max="-2" attributes="0"/>
@@ -746,7 +746,7 @@
                           <Component id="Submission" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                           <Component id="Submit" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="82" max="32767" attributes="0"/>
+                      <EmptySpace pref="119" max="32767" attributes="0"/>
                       <Component id="CaesarQReturn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="theme" min="-2" max="-2" attributes="0"/>
@@ -873,7 +873,7 @@
                       <Component id="AtbashDescripHeader" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="AtbashDescrip" min="-2" pref="270" max="-2" attributes="0"/>
-                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                      <EmptySpace pref="59" max="32767" attributes="0"/>
                       <Component id="AtbashReturn" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
@@ -990,7 +990,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="88" max="32767" attributes="0"/>
+                      <EmptySpace pref="125" max="32767" attributes="0"/>
                       <Component id="AtbashTitle" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="Warning1" min="-2" max="-2" attributes="0"/>
@@ -1116,7 +1116,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="AtbashIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -1229,7 +1229,7 @@
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="VigReturnB" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="211" max="32767" attributes="0"/>
+                      <EmptySpace pref="247" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1362,7 +1362,7 @@
                       <Component id="Submission2" min="-2" pref="40" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="Submit2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="45" max="32767" attributes="0"/>
+                      <EmptySpace pref="82" max="32767" attributes="0"/>
                       <Component id="VigenereQReturn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="theme2" min="-2" max="-2" attributes="0"/>
@@ -1479,7 +1479,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="VigenereIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -1564,7 +1564,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -1589,7 +1589,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -1614,7 +1614,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -1639,7 +1639,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -1664,7 +1664,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -1689,7 +1689,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -1714,7 +1714,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -1739,7 +1739,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -1801,7 +1801,7 @@
                           <Component id="ECB_Button" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="ECBQReturn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="151" max="32767" attributes="0"/>
+                      <EmptySpace pref="188" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1914,7 +1914,7 @@
                       <Component id="ECBDescripHeader" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="ECBDescrip" min="-2" pref="270" max="-2" attributes="0"/>
-                      <EmptySpace pref="34" max="32767" attributes="0"/>
+                      <EmptySpace pref="71" max="32767" attributes="0"/>
                       <Component id="ECBBB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
@@ -2021,7 +2021,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="ECBIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -2119,7 +2119,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="110" max="32767" attributes="0"/>
+                      <EmptySpace pref="147" max="32767" attributes="0"/>
                       <Component id="Correct1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Correct_Pic" min="-2" max="-2" attributes="0"/>
@@ -2189,7 +2189,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="CBCIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -2430,7 +2430,7 @@
                       <Component id="CBCtitle" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="536" max="-2" attributes="0"/>
                       <Component id="CBCReturn" min="-2" pref="31" max="-2" attributes="0"/>
-                      <EmptySpace pref="111" max="32767" attributes="0"/>
+                      <EmptySpace pref="149" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2497,19 +2497,19 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                           <Component id="CTRImage" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="81" max="32767" attributes="0"/>
+                          <EmptySpace pref="110" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="360" max="-2" attributes="0"/>
                           <Component id="CTRReturn1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="369" max="32767" attributes="0"/>
+                          <EmptySpace pref="404" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -2577,7 +2577,7 @@
                               <Component id="CTRReturn" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="660" max="32767" attributes="0"/>
+                      <EmptySpace pref="695" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2649,7 +2649,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="CTRIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -2764,7 +2764,7 @@
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace pref="51" max="32767" attributes="0"/>
+                                      <EmptySpace pref="88" max="32767" attributes="0"/>
                                       <Component id="FeistelImage" min="-2" pref="480" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                   </Group>
@@ -2774,7 +2774,7 @@
                                           <Component id="Feistel_Entry" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                           <Component id="Feistel_Button" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="34" pref="285" max="32767" attributes="0"/>
+                                      <EmptySpace min="34" pref="322" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Component id="Theme_" min="-2" pref="122" max="-2" attributes="0"/>
@@ -2893,7 +2893,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="FeistelIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -2997,7 +2997,7 @@
                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="270" max="-2" attributes="0"/>
-                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                      <EmptySpace pref="59" max="32767" attributes="0"/>
                       <Component id="FDPB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
@@ -3147,7 +3147,7 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="RCReturn" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="82" max="32767" attributes="0"/>
+                      <EmptySpace pref="123" max="32767" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -3297,7 +3297,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="DESIntro1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -3412,7 +3412,7 @@
                       <Component id="RC4_Label" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                       <Component id="RC4Description" min="-2" pref="81" max="-2" attributes="0"/>
-                      <EmptySpace pref="110" max="32767" attributes="0"/>
+                      <EmptySpace pref="139" max="32767" attributes="0"/>
                       <Component id="RCReturn1" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
@@ -3586,7 +3586,7 @@
                       <Component id="DESC" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="DESD" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="88" max="32767" attributes="0"/>
+                      <EmptySpace pref="125" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -3710,7 +3710,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="177" max="32767" attributes="0"/>
+                      <EmptySpace pref="214" max="32767" attributes="0"/>
                       <Component id="DESIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -3814,7 +3814,7 @@
                       <Component id="DESDescrip" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="DESDescription" min="-2" pref="270" max="-2" attributes="0"/>
-                      <EmptySpace pref="34" max="32767" attributes="0"/>
+                      <EmptySpace pref="71" max="32767" attributes="0"/>
                       <Component id="DESBB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
@@ -3921,7 +3921,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="208" max="32767" attributes="0"/>
+                      <EmptySpace pref="245" max="32767" attributes="0"/>
                       <Component id="PAPIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -4037,7 +4037,7 @@
                       <Component id="PAPPicture1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="PAPDescription1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="21" max="32767" attributes="0"/>
+                      <EmptySpace pref="58" max="32767" attributes="0"/>
                       <Component id="AtbashReturn1" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
@@ -4172,7 +4172,7 @@
                               <Component id="PAPB" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="80" max="32767" attributes="0"/>
+                      <EmptySpace pref="117" max="32767" attributes="0"/>
                       <Component id="PAPQB2" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
                   </Group>
@@ -4289,7 +4289,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="208" max="32767" attributes="0"/>
+                      <EmptySpace pref="245" max="32767" attributes="0"/>
                       <Component id="ChapIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -4398,7 +4398,7 @@
                       <Component id="CHAPPicture" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="CHAPDescription" min="-2" pref="176" max="-2" attributes="0"/>
-                      <EmptySpace pref="79" max="32767" attributes="0"/>
+                      <EmptySpace pref="108" max="32767" attributes="0"/>
                       <Component id="CHAPReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                   </Group>
@@ -4485,7 +4485,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="758" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -4529,7 +4529,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="KerberosIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -4636,7 +4636,7 @@
                       <Component id="KerberosDescripHeader" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="KerberosDescription" min="-2" pref="214" max="-2" attributes="0"/>
-                      <EmptySpace pref="78" max="32767" attributes="0"/>
+                      <EmptySpace pref="115" max="32767" attributes="0"/>
                       <Component id="KerberosBB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
@@ -4738,7 +4738,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
                       <Component id="Kerberos_K" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="526" max="32767" attributes="0"/>
+                      <EmptySpace pref="563" max="32767" attributes="0"/>
                       <Component id="KerberosReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                   </Group>
@@ -4812,7 +4812,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="CBCMACIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -4925,7 +4925,7 @@
                       <Component id="CBCMACDescription" min="-2" pref="54" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       <Component id="CBCMACPicture" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="53" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="CBCMACBB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Theme__1" min="-2" max="-2" attributes="0"/>
@@ -5136,7 +5136,7 @@
                           <Component id="CBCMAC_Next" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="CBCMACReturn" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="106" max="32767" attributes="0"/>
+                      <EmptySpace pref="143" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -5392,7 +5392,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Component id="BreakingCBCBMAC_Title" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="639" max="32767" attributes="0"/>
+                      <EmptySpace pref="676" max="32767" attributes="0"/>
                       <Component id="Back" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   </Group>
@@ -5457,7 +5457,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="SHAIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -5530,22 +5530,107 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card75"/>
+              <CardConstraints cardName="card42"/>
             </Constraint>
           </Constraints>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="912" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Theme__2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
+                              <Component id="SHABB" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="384" max="-2" attributes="0"/>
+                              <Component id="SHADescriptionHeader" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
+                              <Component id="SHADescrip" min="-2" pref="679" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <Component id="SHADescriptionHeader" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="SHADescrip" min="-2" pref="270" max="-2" attributes="0"/>
+                      <EmptySpace pref="66" max="32767" attributes="0"/>
+                      <Component id="SHABB" min="-2" pref="31" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Theme__2" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="SHADescriptionHeader">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="36" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="78" green="57" red="30" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="SHA-2"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="SHADescrip">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="CaesarCipherDes2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Monospaced" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="- Secure Hashing Algorith - 2 (SHA-2) are a set of cryptographic hashing functions.&#xa;- Built on the Merkle-Damgard structure.&#xa;- The family consists of the following: sha224, sha256, sha384, sha512. The number &#xa;preceeding sha, is the size of message digest.&#xa;- For example, if we were using sha256, our message digest (the output) would be&#xa;256 bits."/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="Theme__2">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/resource/theme1.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="SHABB">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="9b" green="84" red="4d" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Return"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SHABBActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="SHAPanel">
           <Properties>
@@ -5658,7 +5743,7 @@
                           <Component id="SHAA3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="SHAB3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="141" max="32767" attributes="0"/>
+                      <EmptySpace pref="178" max="32767" attributes="0"/>
                       <Component id="SHAReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                   </Group>
@@ -5844,7 +5929,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="MD5Intro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -5946,7 +6031,7 @@
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       <Component id="jScrollPane3" min="-2" pref="187" max="-2" attributes="0"/>
-                      <EmptySpace pref="443" max="32767" attributes="0"/>
+                      <EmptySpace pref="476" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -6018,7 +6103,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="641" max="32767" attributes="0"/>
+                      <EmptySpace pref="678" max="32767" attributes="0"/>
                       <Component id="MD5Return" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                   </Group>
@@ -6078,7 +6163,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="212" max="32767" attributes="0"/>
+                      <EmptySpace pref="249" max="32767" attributes="0"/>
                       <Component id="RSASigIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -6163,7 +6248,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -6279,7 +6364,7 @@
                           <Component id="d_input" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="d" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="64" max="32767" attributes="0"/>
+                      <EmptySpace pref="101" max="32767" attributes="0"/>
                       <Component id="MD5Return1" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
@@ -6557,7 +6642,7 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="Check_signature" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="52" max="32767" attributes="0"/>
+                      <EmptySpace pref="89" max="32767" attributes="0"/>
                       <Component id="Back_RSA1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -6767,7 +6852,7 @@
                       <Component id="ChoiceC" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="ChoiceD" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                      <EmptySpace pref="114" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="Verify_Submit" min="-2" max="-2" attributes="0"/>
@@ -6783,7 +6868,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
                           <Component id="Story1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="521" max="32767" attributes="0"/>
+                          <EmptySpace pref="558" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -6955,7 +7040,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="RSAIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -7028,22 +7113,107 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
-              <CardConstraints cardName="card82"/>
+              <CardConstraints cardName="card42"/>
             </Constraint>
           </Constraints>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="912" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Theme__3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
+                              <Component id="RSABB" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
+                              <Component id="RSADescrip" min="-2" pref="679" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="390" max="-2" attributes="0"/>
+                              <Component id="RSADescripHeader" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <Component id="RSADescripHeader" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="RSADescrip" min="-2" pref="270" max="-2" attributes="0"/>
+                      <EmptySpace pref="59" max="32767" attributes="0"/>
+                      <Component id="RSABB" min="-2" pref="31" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Theme__3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="RSADescripHeader">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="36" style="0"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="78" green="57" red="30" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="RSA"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="RSADescrip">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="CaesarCipherDes3">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Monospaced" size="14" style="0"/>
+                    </Property>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="- RSA is a public-key encryption scheme.&#xa;- Public-key encryption schemes have two keys, one for encryption, one for&#xa;decryption.&#xa;-"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="Theme__3">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/resource/theme1.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="RSABB">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="9b" green="84" red="4d" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Return"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RSABBActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="RSAPanel">
           <Properties>
@@ -7126,7 +7296,7 @@
                           <Component id="RSAA1_3" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                           <Component id="RSAB1_3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="147" max="32767" attributes="0"/>
+                      <EmptySpace pref="184" max="32767" attributes="0"/>
                       <Component id="RSAReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                   </Group>
@@ -7256,7 +7426,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="ElGamIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -7341,7 +7511,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -7415,7 +7585,7 @@
                           <Component id="EGA1_2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="EGB1_2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="292" max="32767" attributes="0"/>
+                      <EmptySpace pref="329" max="32767" attributes="0"/>
                       <Component id="ElGamReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                   </Group>
@@ -7536,7 +7706,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="DH_intro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -7621,7 +7791,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -7671,7 +7841,7 @@
                       <Component id="DHDiagram1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="DHText" min="-2" pref="84" max="-2" attributes="0"/>
-                      <EmptySpace pref="117" max="32767" attributes="0"/>
+                      <EmptySpace pref="154" max="32767" attributes="0"/>
                       <Component id="DHButton1" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="DHReturn" min="-2" max="-2" attributes="0"/>
@@ -7796,7 +7966,7 @@
                       <Component id="DH1Image" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="DH1Text" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="153" max="32767" attributes="0"/>
+                      <EmptySpace pref="190" max="32767" attributes="0"/>
                       <Component id="DH1_Next" min="-2" pref="36" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                   </Group>
@@ -7881,7 +8051,7 @@
                       <Component id="DHImage2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="DH2Text" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="60" max="32767" attributes="0"/>
+                      <EmptySpace pref="97" max="32767" attributes="0"/>
                       <Component id="DH2_next" min="-2" pref="35" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
                   </Group>
@@ -7970,7 +8140,7 @@
                       <Component id="DH3Text" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
                       <Component id="DH3_Next" min="-2" pref="41" max="-2" attributes="0"/>
-                      <EmptySpace pref="86" max="32767" attributes="0"/>
+                      <EmptySpace pref="123" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -8052,7 +8222,7 @@
                       <Component id="DH4Image" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="DH4Text" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="55" max="32767" attributes="0"/>
+                      <EmptySpace pref="92" max="32767" attributes="0"/>
                       <Component id="DH4_Next" min="-2" pref="42" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
                   </Group>
@@ -8136,7 +8306,7 @@
                       <Component id="DH5Image" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="DH5Text" min="-2" pref="122" max="-2" attributes="0"/>
-                      <EmptySpace pref="43" max="32767" attributes="0"/>
+                      <EmptySpace pref="80" max="32767" attributes="0"/>
                       <Component id="DH5_Next" min="-2" pref="42" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
                   </Group>
@@ -8238,7 +8408,7 @@
                           <Component id="DHA1" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="DHB1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="194" max="32767" attributes="0"/>
+                      <EmptySpace pref="231" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -8357,7 +8527,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="BlowfishIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -8442,7 +8612,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -8472,7 +8642,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="689" max="32767" attributes="0"/>
+                      <EmptySpace pref="726" max="32767" attributes="0"/>
                       <Component id="BlowfishReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   </Group>
@@ -8535,7 +8705,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="AESIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -8620,7 +8790,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="750" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="787" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -8660,7 +8830,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                       <Component id="AESTitle" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="573" max="32767" attributes="0"/>
+                      <EmptySpace pref="610" max="32767" attributes="0"/>
                       <Component id="AESReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   </Group>
@@ -8737,7 +8907,7 @@
                       <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                       <Component id="WEPDescription_Label" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="WEPDescription" pref="532" max="32767" attributes="0"/>
+                      <Component id="WEPDescription" pref="569" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
@@ -8830,7 +9000,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="225" max="32767" attributes="0"/>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
                       <Component id="OTPIntro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -9127,7 +9297,7 @@
                       <Component id="DESDescrip1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="DESDescription1" min="-2" pref="270" max="-2" attributes="0"/>
-                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                      <EmptySpace pref="59" max="32767" attributes="0"/>
                       <Component id="DESBB1" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
