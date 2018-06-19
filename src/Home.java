@@ -270,10 +270,13 @@ public class Home extends javax.swing.JFrame {
         ThemePicture3 = new javax.swing.JLabel();
         KerberosDes = new javax.swing.JButton();
         KerberosQ = new javax.swing.JButton();
-        Kerberos_Description = new javax.swing.JPanel();
+        KerberosDescripPanel = new javax.swing.JPanel();
+        KerberosDescripHeader = new javax.swing.JLabel();
+        KerberosDescription = new javax.swing.JScrollPane();
+        jTextArea22 = new javax.swing.JTextArea();
+        jLabel16 = new javax.swing.JLabel();
+        KerberosBB = new javax.swing.JButton();
         KerberosPanel = new javax.swing.JPanel();
-        KerberosText = new javax.swing.JScrollPane();
-        jTextArea10 = new javax.swing.JTextArea();
         Kerberos_K = new javax.swing.JLabel();
         KerberosReturn = new javax.swing.JButton();
         CBCMACPanelWelcome = new javax.swing.JPanel();
@@ -685,6 +688,7 @@ public class Home extends javax.swing.JFrame {
 
         CaesarDescription1.setBorder(null);
 
+        CaesarCipherDes.setEditable(false);
         CaesarCipherDes.setColumns(20);
         CaesarCipherDes.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         CaesarCipherDes.setRows(5);
@@ -837,6 +841,7 @@ public class Home extends javax.swing.JFrame {
 
         AtbashDescrip.setBorder(null);
 
+        jTextArea23.setEditable(false);
         jTextArea23.setColumns(20);
         jTextArea23.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea23.setRows(5);
@@ -1040,6 +1045,7 @@ public class Home extends javax.swing.JFrame {
         AtbashDescrip1.setBorder(null);
         AtbashDescrip1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
+        jTextArea24.setEditable(false);
         jTextArea24.setColumns(20);
         jTextArea24.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea24.setLineWrap(true);
@@ -1452,6 +1458,7 @@ public class Home extends javax.swing.JFrame {
 
         ECBDescrip.setBorder(null);
 
+        jTextArea25.setEditable(false);
         jTextArea25.setColumns(20);
         jTextArea25.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea25.setRows(5);
@@ -2080,6 +2087,7 @@ public class Home extends javax.swing.JFrame {
 
         jScrollPane1.setBorder(null);
 
+        jTextArea18.setEditable(false);
         jTextArea18.setColumns(20);
         jTextArea18.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea18.setRows(5);
@@ -2185,11 +2193,19 @@ public class Home extends javax.swing.JFrame {
         RCPanelLayout.setHorizontalGroup(
             RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RCPanelLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jLabel2)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(160, 160, 160)
+                        .addComponent(DescriptionWEP_Label)
+                        .addGap(68, 68, 68)
+                        .addComponent(Description_button))
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(261, 261, 261)
+                        .addComponent(WEP_Label)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(RCPanelLayout.createSequentialGroup()
                 .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
                     .addGroup(RCPanelLayout.createSequentialGroup()
                         .addGap(52, 52, 52)
                         .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 549, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2205,18 +2221,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(RCPanelLayout.createSequentialGroup()
                         .addGap(369, 369, 369)
                         .addComponent(RCReturn)))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(RCPanelLayout.createSequentialGroup()
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(160, 160, 160)
-                        .addComponent(DescriptionWEP_Label)
-                        .addGap(68, 68, 68)
-                        .addComponent(Description_button))
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(261, 261, 261)
-                        .addComponent(WEP_Label)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 12, Short.MAX_VALUE))
         );
         RCPanelLayout.setVerticalGroup(
             RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2313,6 +2318,7 @@ public class Home extends javax.swing.JFrame {
         jScrollPane2.setBorder(null);
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
+        jTextArea21.setEditable(false);
         jTextArea21.setColumns(20);
         jTextArea21.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea21.setRows(5);
@@ -2543,6 +2549,7 @@ public class Home extends javax.swing.JFrame {
 
         DESDescription.setBorder(null);
 
+        jTextArea19.setEditable(false);
         jTextArea19.setColumns(20);
         jTextArea19.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea19.setRows(5);
@@ -2661,6 +2668,7 @@ public class Home extends javax.swing.JFrame {
 
         AtbashDescrip2.setBorder(null);
 
+        jTextArea26.setEditable(false);
         jTextArea26.setColumns(20);
         jTextArea26.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea26.setRows(5);
@@ -2798,7 +2806,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -2875,6 +2883,7 @@ public class Home extends javax.swing.JFrame {
 
         CHAPDescription.setBorder(null);
 
+        jTextArea17.setEditable(false);
         jTextArea17.setColumns(20);
         jTextArea17.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea17.setRows(5);
@@ -3002,35 +3011,70 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(KerberosPanelWelcome, "card45");
 
-        Kerberos_Description.setBackground(new java.awt.Color(255, 255, 255));
+        KerberosDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout Kerberos_DescriptionLayout = new javax.swing.GroupLayout(Kerberos_Description);
-        Kerberos_Description.setLayout(Kerberos_DescriptionLayout);
-        Kerberos_DescriptionLayout.setHorizontalGroup(
-            Kerberos_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+        KerberosDescripHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        KerberosDescripHeader.setForeground(new java.awt.Color(48, 87, 120));
+        KerberosDescripHeader.setText("Kerberos");
+
+        KerberosDescription.setBorder(null);
+
+        jTextArea22.setEditable(false);
+        jTextArea22.setColumns(20);
+        jTextArea22.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea22.setRows(5);
+        jTextArea22.setText("1. A client attempts to log into windows sending a request for a ticket to the KDC \n(Key Distribution Center).\n2. The KDC then creates a TGT (Ticket-granting Ticket) for the user.\n3. The TGT encrypts the tickets using the user’s password as the key, and sends the encrypted\nTGT back to the user. Note: It encrypts the TGT with the given usernames password in AD.\n4. The user then will try to decrypt the TGT using the password the user entered.\n5. If the user had entered the correct password the TGT is decrypted.\n6. The user then keeps the decrypted TGT, which indicates proof of clients identity\n7. The TGT can be configured to expire after a specified time by the Network Admin\n");
+        KerberosDescription.setViewportView(jTextArea22);
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        KerberosBB.setBackground(new java.awt.Color(77, 132, 155));
+        KerberosBB.setForeground(new java.awt.Color(255, 255, 255));
+        KerberosBB.setText("Return");
+        KerberosBB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KerberosBBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout KerberosDescripPanelLayout = new javax.swing.GroupLayout(KerberosDescripPanel);
+        KerberosDescripPanel.setLayout(KerberosDescripPanelLayout);
+        KerberosDescripPanelLayout.setHorizontalGroup(
+            KerberosDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
+                .addGroup(KerberosDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel16)
+                    .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(KerberosBB))
+                    .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
+                        .addGap(331, 331, 331)
+                        .addComponent(KerberosDescripHeader))
+                    .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 748, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(12, 12, 12))
         );
-        Kerberos_DescriptionLayout.setVerticalGroup(
-            Kerberos_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
+        KerberosDescripPanelLayout.setVerticalGroup(
+            KerberosDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(KerberosDescripHeader)
+                .addGap(18, 18, 18)
+                .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                .addComponent(KerberosBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel16))
         );
 
-        MainPanel.add(Kerberos_Description, "card75");
+        MainPanel.add(KerberosDescripPanel, "card42");
 
         KerberosPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        KerberosText.setBorder(null);
-
-        jTextArea10.setEditable(false);
-        jTextArea10.setColumns(20);
-        jTextArea10.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
-        jTextArea10.setRows(5);
-        jTextArea10.setText("1. A client attempts to log into windows sending a request for a ticket to the KDC \n(Key Distribution Center).\n2. The KDC then creates a TGT (Ticket-granting Ticket) for the user.\n3. The TGT encrypts the tickets using the user’s password as the key, and sends the encrypted\nTGT back to the user. Note: It encrypts the TGT with the given usernames password in AD.\n4. The user then will try to decrypt the TGT using the password the user entered.\n5. If the user had entered the correct password the TGT is decrypted.\n6. The user then keeps the decrypted TGT, which indicates proof of clients identity\n7. The TGT can be configured to expire after a specified time by the Network Admin\n* Not sure how I want to go about this, if I'll make diagrams then questions. Or just\nmake questions off this short protocol list.\n* Also note this is the basic protocol with Windows AD.");
-        KerberosText.setViewportView(jTextArea10);
-
         Kerberos_K.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         Kerberos_K.setForeground(new java.awt.Color(48, 87, 120));
-        Kerberos_K.setText("Kerberos Basic Protocol:");
+        Kerberos_K.setText("Kerberos Questions");
 
         KerberosReturn.setBackground(new java.awt.Color(77, 132, 155));
         KerberosReturn.setForeground(new java.awt.Color(255, 255, 255));
@@ -3046,27 +3090,21 @@ public class Home extends javax.swing.JFrame {
         KerberosPanelLayout.setHorizontalGroup(
             KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KerberosPanelLayout.createSequentialGroup()
-                .addGap(219, 219, 219)
-                .addComponent(Kerberos_K)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
-                .addContainerGap(98, Short.MAX_VALUE)
+                .addContainerGap(267, Short.MAX_VALUE)
                 .addGroup(KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
-                        .addComponent(KerberosText, javax.swing.GroupLayout.PREFERRED_SIZE, 754, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(60, 60, 60))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
                         .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(97, 97, 97))))
+                        .addGap(97, 97, 97))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
+                        .addComponent(Kerberos_K)
+                        .addGap(248, 248, 248))))
         );
         KerberosPanelLayout.setVerticalGroup(
             KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KerberosPanelLayout.createSequentialGroup()
                 .addGap(72, 72, 72)
                 .addComponent(Kerberos_K)
-                .addGap(18, 18, 18)
-                .addComponent(KerberosText, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 298, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 541, Short.MAX_VALUE)
                 .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59))
         );
@@ -4800,7 +4838,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(DHReturn)
@@ -4899,7 +4937,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -4950,7 +4988,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -4996,7 +5034,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -5578,6 +5616,7 @@ public class Home extends javax.swing.JFrame {
 
         DESDescription1.setBorder(null);
 
+        jTextArea20.setEditable(false);
         jTextArea20.setColumns(20);
         jTextArea20.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea20.setRows(5);
@@ -6670,7 +6709,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(Kerberos_Description);
+        MainPanel.add(KerberosDescripPanel);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_KerberosDesActionPerformed
@@ -7444,6 +7483,10 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_AtbashReturn1ActionPerformed
 
+    private void KerberosBBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KerberosBBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KerberosBBActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7727,14 +7770,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu Home;
     private javax.swing.JLabel Instructions;
     private javax.swing.JMenuItem Kerberos;
+    private javax.swing.JButton KerberosBB;
     private javax.swing.JButton KerberosDes;
+    private javax.swing.JLabel KerberosDescripHeader;
+    private javax.swing.JPanel KerberosDescripPanel;
+    private javax.swing.JScrollPane KerberosDescription;
     private javax.swing.JLabel KerberosIntro;
     private javax.swing.JPanel KerberosPanel;
     private javax.swing.JPanel KerberosPanelWelcome;
     private javax.swing.JButton KerberosQ;
     private javax.swing.JButton KerberosReturn;
-    private javax.swing.JScrollPane KerberosText;
-    private javax.swing.JPanel Kerberos_Description;
     private javax.swing.JLabel Kerberos_K;
     private javax.swing.JPanel LinearDescription;
     private javax.swing.JMenuItem LinearFeedback;
@@ -7949,15 +7994,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-<<<<<<< HEAD
-    private javax.swing.JLabel jLabel3;
-=======
     private javax.swing.JLabel jLabel20;
->>>>>>> 640bb16d38831d38e265354330a0a7ee14ac233b
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
@@ -7967,7 +8010,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea13;
@@ -7979,6 +8021,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea20;
     private javax.swing.JTextArea jTextArea21;
+    private javax.swing.JTextArea jTextArea22;
     private javax.swing.JTextArea jTextArea23;
     private javax.swing.JTextArea jTextArea24;
     private javax.swing.JTextArea jTextArea25;
