@@ -359,7 +359,19 @@ public class Home extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea11 = new javax.swing.JTextArea();
         MD5Panel = new javax.swing.JPanel();
+        MD5_Text = new javax.swing.JTextField();
+        MD5_Button = new javax.swing.JButton();
+        MD5_Output = new javax.swing.JLabel();
+        MD5_Header = new javax.swing.JLabel();
+        MD5_Questions = new javax.swing.JLabel();
+        MD5Former = new javax.swing.JLabel();
+        Current1 = new javax.swing.JLabel();
+        Former1 = new javax.swing.JLabel();
         MD5Return = new javax.swing.JButton();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea10 = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
         RSASignaturePanelWelcome = new javax.swing.JPanel();
         RSASigIntro = new javax.swing.JLabel();
         ThemePicture7 = new javax.swing.JLabel();
@@ -3629,6 +3641,12 @@ public class Home extends javax.swing.JFrame {
 
         SHAPanel.setBackground(new java.awt.Color(255, 255, 255));
 
+        SHA_Text.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA_TextActionPerformed(evt);
+            }
+        });
+
         SHA_Button.setText("Enter");
         SHA_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3901,6 +3919,38 @@ public class Home extends javax.swing.JFrame {
 
         MD5Panel.setBackground(new java.awt.Color(255, 255, 255));
 
+        MD5_Text.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MD5_TextActionPerformed(evt);
+            }
+        });
+
+        MD5_Button.setText("Enter");
+        MD5_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MD5_ButtonActionPerformed(evt);
+            }
+        });
+
+        MD5_Output.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        MD5_Output.setText("MD5-Text");
+
+        MD5_Header.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        MD5_Header.setForeground(new java.awt.Color(48, 87, 120));
+        MD5_Header.setText("Enter any text to see its MD5 hash!");
+
+        MD5_Questions.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        MD5_Questions.setForeground(new java.awt.Color(48, 87, 120));
+        MD5_Questions.setText("Questions:");
+
+        MD5Former.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+
+        Current1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Current1.setText("Current:");
+
+        Former1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Former1.setText("Former:");
+
         MD5Return.setBackground(new java.awt.Color(77, 132, 155));
         MD5Return.setForeground(new java.awt.Color(255, 255, 255));
         MD5Return.setText("Return");
@@ -3910,24 +3960,78 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jTextArea10.setColumns(20);
+        jTextArea10.setRows(5);
+        jTextArea10.setText("1. MD5 produces 128-bit hash values, how many \nunique hashes can MD5 produce?");
+        jScrollPane4.setViewportView(jTextArea10);
+
+        jButton1.setText("Enter");
+
         javax.swing.GroupLayout MD5PanelLayout = new javax.swing.GroupLayout(MD5Panel);
         MD5Panel.setLayout(MD5PanelLayout);
         MD5PanelLayout.setHorizontalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MD5PanelLayout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(797, Short.MAX_VALUE))
+                .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MD5PanelLayout.createSequentialGroup()
+                        .addGap(211, 211, 211)
+                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Current1)
+                            .addComponent(Former1))
+                        .addGap(18, 18, 18)
+                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(MD5_Output)
+                            .addGroup(MD5PanelLayout.createSequentialGroup()
+                                .addComponent(MD5_Text, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(MD5_Button))
+                            .addComponent(MD5Former)))
+                    .addGroup(MD5PanelLayout.createSequentialGroup()
+                        .addGap(184, 184, 184)
+                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(MD5_Questions)
+                            .addComponent(MD5_Header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jScrollPane4))
+                        .addGap(28, 28, 28)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1))
+                    .addGroup(MD5PanelLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(158, Short.MAX_VALUE))
         );
         MD5PanelLayout.setVerticalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MD5PanelLayout.createSequentialGroup()
-                .addContainerGap(678, Short.MAX_VALUE)
+            .addGroup(MD5PanelLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(MD5_Header, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MD5_Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MD5_Button))
+                .addGap(43, 43, 43)
+                .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MD5_Output)
+                    .addComponent(Current1))
+                .addGap(18, 18, 18)
+                .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MD5Former)
+                    .addComponent(Former1))
+                .addGap(27, 27, 27)
+                .addComponent(MD5_Questions)
+                .addGap(18, 18, 18)
+                .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton1)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 303, Short.MAX_VALUE)
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(76, 76, 76))
+                .addGap(66, 66, 66))
         );
 
-        MainPanel.add(MD5Panel, "card36");
+        MainPanel.add(MD5Panel, "card11");
 
         RSASignaturePanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -6130,6 +6234,22 @@ public class Home extends javax.swing.JFrame {
     
    }
    
+   String MD5_return(String message) throws NoSuchAlgorithmException {
+    
+    MessageDigest digest = MessageDigest.getInstance("MD5");
+    byte[] hash = digest.digest(message.getBytes(StandardCharsets.UTF_8));
+       
+    StringBuilder hexString = new StringBuilder();
+    for (int i = 0; i < hash.length; i++) {
+    String hex = Integer.toHexString(0xff & hash[i]);
+    if(hex.length() == 1) hexString.append('0');
+        hexString.append(hex);
+    }
+       
+    return hexString.toString();
+    
+   }
+   
     private void AtbashActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtbashActionPerformed
     MainPanel.removeAll();
     MainPanel.repaint();
@@ -6951,16 +7071,6 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_SHAReturnActionPerformed
 
-    private void MD5ReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5ReturnActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(MD5PanelWelcome);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_MD5ReturnActionPerformed
-
     private void MD5DesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5DesActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
@@ -7146,7 +7256,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(ElGamalPanelWelcome);
+        MainPanel.add(BlowfishPanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_BlowfishReturnActionPerformed
@@ -7680,6 +7790,35 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_RSABBActionPerformed
 
+    private void SHA_TextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA_TextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHA_TextActionPerformed
+
+    private void MD5_TextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5_TextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MD5_TextActionPerformed
+
+    private void MD5_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5_ButtonActionPerformed
+        try {  
+            MD5Former.setText(MD5_Output.getText());
+            String md5_output = MD5_return(MD5_Text.getText());
+            MD5_Output.setText(md5_output);
+            
+        } catch (NoSuchAlgorithmException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_MD5_ButtonActionPerformed
+
+    private void MD5ReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5ReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(MD5PanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_MD5ReturnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7840,6 +7979,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel Correct_ECB;
     private javax.swing.JLabel Correct_Pic;
     private javax.swing.JLabel Current;
+    private javax.swing.JLabel Current1;
     private javax.swing.JRadioButton DESA;
     private javax.swing.JRadioButton DESB;
     private javax.swing.JButton DESBB;
@@ -7964,6 +8104,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Feistel_Intro;
     private javax.swing.JButton FesitelDescipB;
     private javax.swing.JLabel Former;
+    private javax.swing.JLabel Former1;
     private javax.swing.JLabel FormerSHA;
     private javax.swing.JMenu Hashing;
     private javax.swing.JMenu Help;
@@ -7987,12 +8128,18 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem MD5;
     private javax.swing.JButton MD5Des;
     private javax.swing.JPanel MD5Description;
+    private javax.swing.JLabel MD5Former;
     private javax.swing.JLabel MD5Intro;
     private javax.swing.JPanel MD5Panel;
     private javax.swing.JPanel MD5PanelWelcome;
     private javax.swing.JButton MD5Q;
     private javax.swing.JButton MD5Return;
     private javax.swing.JButton MD5Return1;
+    private javax.swing.JButton MD5_Button;
+    private javax.swing.JLabel MD5_Header;
+    private javax.swing.JLabel MD5_Output;
+    private javax.swing.JLabel MD5_Questions;
+    private javax.swing.JTextField MD5_Text;
     private javax.swing.JPanel MainPanel;
     private javax.swing.JLabel Message;
     private javax.swing.JLabel Message1;
@@ -8195,6 +8342,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField d_input;
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -8218,7 +8366,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea13;
@@ -8242,6 +8392,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JTextArea jTextArea8;
     private javax.swing.JTextArea jTextArea9;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel n;
     private javax.swing.JLabel n1;
     private javax.swing.JTextField n_input;
