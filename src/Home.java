@@ -161,6 +161,7 @@ public class Home extends javax.swing.JFrame {
         CTRDescription = new javax.swing.JPanel();
         CTRImage = new javax.swing.JLabel();
         CTRReturn1 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         CTRPanel = new javax.swing.JPanel();
         CTRTitle = new javax.swing.JLabel();
         CTRReturn = new javax.swing.JButton();
@@ -255,6 +256,7 @@ public class Home extends javax.swing.JFrame {
         OTPPicture = new javax.swing.JLabel();
         OTPOutDescription = new javax.swing.JScrollPane();
         OTPOut = new javax.swing.JTextArea();
+        jButton3 = new javax.swing.JButton();
         OTPDescripPanel = new javax.swing.JPanel();
         DESDescrip1 = new javax.swing.JLabel();
         DESDescription1 = new javax.swing.JScrollPane();
@@ -506,7 +508,7 @@ public class Home extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea11 = new javax.swing.JTextArea();
         ThemePicture22 = new javax.swing.JLabel();
-        RSABB1 = new javax.swing.JButton();
+        DHBB = new javax.swing.JButton();
         DHPanel = new javax.swing.JPanel();
         DHDiagram1 = new javax.swing.JLabel();
         DHButton1 = new javax.swing.JButton();
@@ -565,7 +567,7 @@ public class Home extends javax.swing.JFrame {
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea27 = new javax.swing.JTextArea();
         ThemePicture23 = new javax.swing.JLabel();
-        RSABB2 = new javax.swing.JButton();
+        BlowfishBB = new javax.swing.JButton();
         BlowfishPanel = new javax.swing.JPanel();
         BlowfishReturn = new javax.swing.JButton();
         AESPanelWelcome = new javax.swing.JPanel();
@@ -1851,11 +1853,23 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setBackground(new java.awt.Color(77, 132, 155));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Return");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout CTRDescriptionLayout = new javax.swing.GroupLayout(CTRDescription);
         CTRDescription.setLayout(CTRDescriptionLayout);
         CTRDescriptionLayout.setHorizontalGroup(
             CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGroup(CTRDescriptionLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(793, Short.MAX_VALUE))
             .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(CTRDescriptionLayout.createSequentialGroup()
                     .addGap(181, 181, 181)
@@ -1869,7 +1883,10 @@ public class Home extends javax.swing.JFrame {
         );
         CTRDescriptionLayout.setVerticalGroup(
             CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRDescriptionLayout.createSequentialGroup()
+                .addContainerGap(610, Short.MAX_VALUE)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(154, 154, 154))
             .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(CTRDescriptionLayout.createSequentialGroup()
                     .addGap(72, 72, 72)
@@ -1879,7 +1896,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(CTRDescriptionLayout.createSequentialGroup()
                     .addGap(360, 360, 360)
                     .addComponent(CTRReturn1)
-                    .addContainerGap(411, Short.MAX_VALUE)))
+                    .addContainerGap(417, Short.MAX_VALUE)))
         );
 
         MainPanel.add(CTRDescription, "card65");
@@ -2834,42 +2851,57 @@ public class Home extends javax.swing.JFrame {
         OTPOut.setRows(5);
         OTPOutDescription.setViewportView(OTPOut);
 
+        jButton3.setBackground(new java.awt.Color(77, 132, 155));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("Return");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout OTPPanelLayout = new javax.swing.GroupLayout(OTPPanel);
         OTPPanel.setLayout(OTPPanelLayout);
         OTPPanelLayout.setHorizontalGroup(
             OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OTPPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                        .addComponent(OTPLabel)
-                        .addGap(314, 314, 314))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(OTPPanelLayout.createSequentialGroup()
-                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(OTPPanelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                                .addComponent(OTPLabel)
+                                .addGap(314, 314, 314))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(OTPPanelLayout.createSequentialGroup()
-                                        .addComponent(OTPEnterMessage)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(OTPB1))
-                                    .addComponent(OTPGameLabel))
-                                .addGap(124, 124, 124)
-                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(OTPPanelLayout.createSequentialGroup()
-                                                .addComponent(OTPYes)
-                                                .addGap(161, 161, 161)
-                                                .addComponent(OTPNo))
-                                            .addComponent(OTPQ))
-                                        .addGap(42, 42, 42))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                                        .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(9, 9, 9))))
-                            .addComponent(OTPPicture, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(102, 102, 102))))
+                                                .addComponent(OTPEnterMessage)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(OTPB1))
+                                            .addComponent(OTPGameLabel))
+                                        .addGap(124, 124, 124)
+                                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addGroup(OTPPanelLayout.createSequentialGroup()
+                                                        .addComponent(OTPYes)
+                                                        .addGap(161, 161, 161)
+                                                        .addComponent(OTPNo))
+                                                    .addComponent(OTPQ))
+                                                .addGap(42, 42, 42))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                                                .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(9, 9, 9))))
+                                    .addComponent(OTPPicture, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(102, 102, 102))))
+                    .addGroup(OTPPanelLayout.createSequentialGroup()
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         OTPPanelLayout.setVerticalGroup(
             OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2891,7 +2923,9 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(OTPEnterMessage))
                 .addGap(18, 18, 18)
                 .addComponent(OTPPicture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(220, 220, 220))
+                .addGap(39, 39, 39)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(147, 147, 147))
         );
 
         MainPanel.add(OTPPanel, "card27");
@@ -3161,7 +3195,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -3914,6 +3948,8 @@ public class Home extends javax.swing.JFrame {
         SHADescriptionHeader.setText("SHA-2");
 
         SHADescrip.setBorder(null);
+        SHADescrip.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        SHADescrip.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         SHA_Des.setEditable(false);
         SHA_Des.setColumns(20);
@@ -4378,7 +4414,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton1)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 333, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 312, Short.MAX_VALUE)
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66))
         );
@@ -5440,12 +5476,12 @@ public class Home extends javax.swing.JFrame {
 
         ThemePicture22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        RSABB1.setBackground(new java.awt.Color(77, 132, 155));
-        RSABB1.setForeground(new java.awt.Color(255, 255, 255));
-        RSABB1.setText("Return");
-        RSABB1.addActionListener(new java.awt.event.ActionListener() {
+        DHBB.setBackground(new java.awt.Color(77, 132, 155));
+        DHBB.setForeground(new java.awt.Color(255, 255, 255));
+        DHBB.setText("Return");
+        DHBB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RSABB1ActionPerformed(evt);
+                DHBBActionPerformed(evt);
             }
         });
 
@@ -5464,7 +5500,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(DHDescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
-                        .addComponent(RSABB1)))
+                        .addComponent(DHBB)))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
         DHDescriptionLayout.setVerticalGroup(
@@ -5475,7 +5511,7 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(RSABB1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DHBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ThemePicture22))
         );
@@ -5555,7 +5591,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(DHDiagram1)
                         .addGap(18, 18, 18)
                         .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                         .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(110, 110, 110))
         );
@@ -5680,7 +5716,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DH2_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -5743,7 +5779,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5809,7 +5845,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(36, 36, 36)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
                         .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6054,12 +6090,12 @@ public class Home extends javax.swing.JFrame {
 
         ThemePicture23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        RSABB2.setBackground(new java.awt.Color(77, 132, 155));
-        RSABB2.setForeground(new java.awt.Color(255, 255, 255));
-        RSABB2.setText("Return");
-        RSABB2.addActionListener(new java.awt.event.ActionListener() {
+        BlowfishBB.setBackground(new java.awt.Color(77, 132, 155));
+        BlowfishBB.setForeground(new java.awt.Color(255, 255, 255));
+        BlowfishBB.setText("Return");
+        BlowfishBB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RSABB2ActionPerformed(evt);
+                BlowfishBBActionPerformed(evt);
             }
         });
 
@@ -6078,7 +6114,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
                         .addGap(377, 377, 377)
-                        .addComponent(RSABB2)))
+                        .addComponent(BlowfishBB)))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
         BlowfishDescriptionLayout.setVerticalGroup(
@@ -6089,7 +6125,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(69, 69, 69)
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62)
-                .addComponent(RSABB2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BlowfishBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
                 .addComponent(ThemePicture23))
         );
@@ -8092,9 +8128,15 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_MD5BackkActionPerformed
 
-    private void RSABB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSABB1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RSABB1ActionPerformed
+    private void DHBBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DHBBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DHPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_DHBBActionPerformed
 
     private void DH2_NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DH2_NextActionPerformed
         MainPanel.removeAll();
@@ -8210,9 +8252,35 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DESAActionPerformed
 
-    private void RSABB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSABB2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RSABB2ActionPerformed
+    private void BlowfishBBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowfishBBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(BlowfishPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate(); 
+    }//GEN-LAST:event_BlowfishBBActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(OTPPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate(); 
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CTRPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -8280,6 +8348,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton Back_RSA2;
     private javax.swing.JMenu BlockCiphers;
     private javax.swing.JMenuItem Blowfish;
+    private javax.swing.JButton BlowfishBB;
     private javax.swing.JButton BlowfishDes;
     private javax.swing.JPanel BlowfishDescription;
     private javax.swing.JLabel BlowfishIntro;
@@ -8422,6 +8491,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton DH6_Back;
     private javax.swing.JTextField DHA1;
     private javax.swing.JButton DHB1;
+    private javax.swing.JButton DHBB;
     private javax.swing.JButton DHButton1;
     private javax.swing.JButton DHDes;
     private javax.swing.JPanel DHDescription;
@@ -8607,8 +8677,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton RSAB1_2;
     private javax.swing.JButton RSAB1_3;
     private javax.swing.JButton RSABB;
-    private javax.swing.JButton RSABB1;
-    private javax.swing.JButton RSABB2;
     private javax.swing.JButton RSADes;
     private javax.swing.JScrollPane RSADescrip;
     private javax.swing.JLabel RSADescripHeader;
@@ -8757,6 +8825,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel e1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
