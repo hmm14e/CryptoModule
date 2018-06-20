@@ -380,6 +380,11 @@ public class Home extends javax.swing.JFrame {
         RSASigDes = new javax.swing.JButton();
         RSASigQ = new javax.swing.JButton();
         RSASigDescription = new javax.swing.JPanel();
+        RSASigIntro1 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea15 = new javax.swing.JTextArea();
+        Theme__5 = new javax.swing.JLabel();
+        RSA_Sig_Back = new javax.swing.JButton();
         RSA_Signature_1 = new javax.swing.JPanel();
         SigningAMessage = new javax.swing.JLabel();
         Story = new javax.swing.JScrollPane();
@@ -396,7 +401,7 @@ public class Home extends javax.swing.JFrame {
         phi_n_input = new javax.swing.JTextField();
         d_input = new javax.swing.JTextField();
         Check_n_phi_d = new javax.swing.JButton();
-        MD5Return1 = new javax.swing.JButton();
+        RSA_SigBack = new javax.swing.JButton();
         RSA_Signature_2 = new javax.swing.JPanel();
         SigningAMessage1 = new javax.swing.JLabel();
         Correct = new javax.swing.JLabel();
@@ -2848,7 +2853,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -4065,7 +4070,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton1)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 333, Short.MAX_VALUE)
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66))
         );
@@ -4105,7 +4110,7 @@ public class Home extends javax.swing.JFrame {
             RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture7)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 71, Short.MAX_VALUE))
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
                 .addGap(269, 269, 269)
                 .addGroup(RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -4133,15 +4138,66 @@ public class Home extends javax.swing.JFrame {
 
         RSASigDescription.setBackground(new java.awt.Color(255, 255, 255));
 
+        RSASigIntro1.setBackground(new java.awt.Color(255, 255, 255));
+        RSASigIntro1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        RSASigIntro1.setForeground(new java.awt.Color(48, 87, 120));
+        RSASigIntro1.setText("RSA Signature");
+
+        jScrollPane5.setBorder(null);
+
+        jTextArea15.setColumns(20);
+        jTextArea15.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
+        jTextArea15.setLineWrap(true);
+        jTextArea15.setRows(5);
+        jTextArea15.setText("1) Given two large prime numbers p and q, calculate n by finding the product of p and q.\n \n2) To find Φ(n), find the product of (p-1) and (q-1)\n\n3) Given e (a number between 1 and n and the greatest common divisor between e and n is 1) find the private key d by using the modular inverse. d ≡ e^(-1) mod Φ(n)\n\n4) To sign a message, convert the message to hex and compute, Message^d mod n\n\n5) To verify a message, compute Signature^e mod n");
+        jTextArea15.setWrapStyleWord(true);
+        jScrollPane5.setViewportView(jTextArea15);
+
+        Theme__5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        RSA_Sig_Back.setBackground(new java.awt.Color(77, 132, 155));
+        RSA_Sig_Back.setForeground(new java.awt.Color(255, 255, 255));
+        RSA_Sig_Back.setText("Return");
+        RSA_Sig_Back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSA_Sig_BackActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout RSASigDescriptionLayout = new javax.swing.GroupLayout(RSASigDescription);
         RSASigDescription.setLayout(RSASigDescriptionLayout);
         RSASigDescriptionLayout.setHorizontalGroup(
             RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGroup(RSASigDescriptionLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSASigDescriptionLayout.createSequentialGroup()
+                        .addComponent(Theme__5)
+                        .addGap(12, 12, 12))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSASigDescriptionLayout.createSequentialGroup()
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80))))
+            .addGroup(RSASigDescriptionLayout.createSequentialGroup()
+                .addGroup(RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RSASigDescriptionLayout.createSequentialGroup()
+                        .addGap(335, 335, 335)
+                        .addComponent(RSASigIntro1))
+                    .addGroup(RSASigDescriptionLayout.createSequentialGroup()
+                        .addGap(404, 404, 404)
+                        .addComponent(RSA_Sig_Back)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RSASigDescriptionLayout.setVerticalGroup(
             RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(RSASigDescriptionLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(RSASigIntro1)
+                .addGap(35, 35, 35)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(RSA_Sig_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addComponent(Theme__5))
         );
 
         MainPanel.add(RSASigDescription, "card82");
@@ -4225,12 +4281,12 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        MD5Return1.setBackground(new java.awt.Color(77, 132, 155));
-        MD5Return1.setForeground(new java.awt.Color(255, 255, 255));
-        MD5Return1.setText("Return");
-        MD5Return1.addActionListener(new java.awt.event.ActionListener() {
+        RSA_SigBack.setBackground(new java.awt.Color(77, 132, 155));
+        RSA_SigBack.setForeground(new java.awt.Color(255, 255, 255));
+        RSA_SigBack.setText("Return");
+        RSA_SigBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MD5Return1ActionPerformed(evt);
+                RSA_SigBackActionPerformed(evt);
             }
         });
 
@@ -4280,7 +4336,7 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(RSA_Signature_1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(MD5Return1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(RSA_SigBack, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RSA_Signature_1Layout.setVerticalGroup(
@@ -4314,7 +4370,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(d_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(d))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
-                .addComponent(MD5Return1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(RSA_SigBack, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38))
         );
 
@@ -5189,7 +5245,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(DHDiagram1)
                         .addGap(18, 18, 18)
                         .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
                         .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(110, 110, 110))
         );
@@ -5236,7 +5292,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH1_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(79, 79, 79))
+                .addGap(80, 80, 80))
             .addGroup(DHPanel1Layout.createSequentialGroup()
                 .addGap(156, 156, 156)
                 .addGroup(DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -5252,13 +5308,10 @@ public class Home extends javax.swing.JFrame {
                 .addGap(68, 68, 68)
                 .addComponent(DH1Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 202, Short.MAX_VALUE)
-                .addGroup(DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel1Layout.createSequentialGroup()
-                        .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel1Layout.createSequentialGroup()
-                        .addComponent(DH1_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(73, 73, 73))))
+                .addGroup(DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DH1_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(73, 73, 73))
         );
 
         MainPanel.add(DHPanel1, "card12");
@@ -5302,7 +5355,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH2_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74))
+                .addGap(73, 73, 73))
             .addGroup(DHPanel2Layout.createSequentialGroup()
                 .addGap(160, 160, 160)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -5317,14 +5370,11 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
-                .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
-                        .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(76, 76, 76))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
-                        .addComponent(DH2_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(108, 108, 108))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
+                .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DH2_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(108, 108, 108))
         );
 
         MainPanel.add(DHPanel2, "card12");
@@ -5383,7 +5433,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5449,7 +5499,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(36, 36, 36)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
                         .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -7265,7 +7315,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_RSASigQActionPerformed
 
-    private void MD5Return1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5Return1ActionPerformed
+    private void RSA_SigBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSA_SigBackActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -7273,7 +7323,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.add(RSASignaturePanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
-    }//GEN-LAST:event_MD5Return1ActionPerformed
+    }//GEN-LAST:event_RSA_SigBackActionPerformed
 
     private void ElGamDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ElGamDesActionPerformed
         MainPanel.removeAll();
@@ -8087,6 +8137,16 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate(); 
     }//GEN-LAST:event_DH6_BackActionPerformed
 
+    private void RSA_Sig_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSA_Sig_BackActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(RSASignaturePanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate(); 
+    }//GEN-LAST:event_RSA_Sig_BackActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8410,7 +8470,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel MD5PanelWelcome;
     private javax.swing.JButton MD5Q;
     private javax.swing.JButton MD5Return;
-    private javax.swing.JButton MD5Return1;
     private javax.swing.JButton MD5_Button;
     private javax.swing.JLabel MD5_Header;
     private javax.swing.JLabel MD5_Output;
@@ -8499,9 +8558,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton RSASigDes;
     private javax.swing.JPanel RSASigDescription;
     private javax.swing.JLabel RSASigIntro;
+    private javax.swing.JLabel RSASigIntro1;
     private javax.swing.JButton RSASigQ;
     private javax.swing.JMenuItem RSASignature;
     private javax.swing.JPanel RSASignaturePanelWelcome;
+    private javax.swing.JButton RSA_SigBack;
+    private javax.swing.JButton RSA_Sig_Back;
     private javax.swing.JPanel RSA_Signature_1;
     private javax.swing.JPanel RSA_Signature_2;
     private javax.swing.JPanel RSA_Validate;
@@ -8588,6 +8650,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Theme__2;
     private javax.swing.JLabel Theme__3;
     private javax.swing.JLabel Theme__4;
+    private javax.swing.JLabel Theme__5;
     private javax.swing.JMenuItem TripDES;
     private javax.swing.JLabel True;
     private javax.swing.JLabel ValidateMessage;
@@ -8648,12 +8711,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea13;
     private javax.swing.JTextArea jTextArea14;
+    private javax.swing.JTextArea jTextArea15;
     private javax.swing.JTextArea jTextArea16;
     private javax.swing.JTextArea jTextArea17;
     private javax.swing.JTextArea jTextArea18;
