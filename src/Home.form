@@ -3540,13 +3540,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="DESPic" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
-                                      <Component id="DESQ" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="DESPic" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
@@ -3562,13 +3556,18 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                               <Component id="DESRETURNB" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="310" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="313" max="-2" attributes="0"/>
                               <Component id="DES_B" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="212" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="DESQ" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="259" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -3579,9 +3578,9 @@
                       <Component id="DESLabel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                       <Component id="DESPic" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                      <Component id="DESQ" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="DESQ" min="-2" pref="29" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="DESA" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="DESB" min="-2" max="-2" attributes="0"/>
@@ -3589,12 +3588,12 @@
                       <Component id="DESC" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="DESD" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DESRETURNB" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="DES_B" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="DESRETURNB" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="83" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -3626,7 +3625,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="9b" green="84" red="4d" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="What&apos;s the order of Encryption?"/>
+                <Property name="text" type="java.lang.String" value="What is the order of 3DES Encryption?"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="DESA">
@@ -7342,7 +7341,7 @@
                               <Component id="RSAQ" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="352" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="386" max="-2" attributes="0"/>
                               <Component id="RSAIntro" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -7543,11 +7542,6 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="RSAHeader" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="243" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -7579,6 +7573,11 @@
                       </Group>
                       <EmptySpace pref="112" max="32767" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="RSAHeader" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="263" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -7609,7 +7608,7 @@
                           <Component id="RSAA1_3" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                           <Component id="RSAB1_3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="195" max="32767" attributes="0"/>
+                      <EmptySpace pref="194" max="32767" attributes="0"/>
                       <Component id="RSAReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                   </Group>
@@ -7628,10 +7627,10 @@
             <Component class="javax.swing.JLabel" name="RSAHeader">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="36" style="1"/>
+                  <Font name="Tahoma" size="36" style="0"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="ff" type="rgb"/>
+                  <Color blue="78" green="57" red="30" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="RSA Practice Problems"/>
               </Properties>
@@ -8002,14 +8001,17 @@
                       <Component id="ThemePicture9" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="DH_intro" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
                               <Component id="DHDes" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                               <Component id="DHQ" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="306" max="-2" attributes="0"/>
+                              <Component id="DH_intro" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -9451,25 +9453,21 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="WEPDescription" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="263" max="-2" attributes="0"/>
+                              <Component id="WEPDescription_Label" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="263" max="-2" attributes="0"/>
-                                      <Component id="WEPDescription_Label" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="0" pref="287" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="67" max="32767" attributes="0"/>
+                      <Component id="WEPDescription" min="-2" pref="781" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -9479,10 +9477,10 @@
                       <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                       <Component id="WEPDescription_Label" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="WEPDescription" pref="576" max="32767" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="WEPDescription" min="-2" pref="481" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -9493,6 +9491,9 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="36" style="0"/>
                 </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="78" green="57" red="30" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Short WEP Description"/>
               </Properties>
             </Component>
@@ -9501,6 +9502,7 @@
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
                 </Property>
+                <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -9512,10 +9514,12 @@
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Monospaced" size="16" style="0"/>
+                      <Font name="Tahoma" size="16" style="0"/>
                     </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="- WEP is a security algorithm intended for IEEE 802.11 wireless networks.&#xa;&#xa;The Algorithm:&#xa;&#xa;- First, a 32-bit checksum is performend, which is concatenated to the end&#xa;of the plaintext message being sent. &#xa;- Next, the secret key = K is taken, and concatenated to the IV which we&apos;ll&#xa;call K&apos; = IV || K.&#xa;- Then, K&apos; is inputted into the RC4 algorithm, which generates a keystream.&#xa;- The key stream is then xor&apos;d with the plaintext || CRC which generates&#xa;the ciphertext. &#xa;- Lastly, the IV is prepended, in plaintext, to the ciphertext which is&#xa;sent out to the intended receiver. &#xa;&#xa;Notes on WEP:&#xa;&#xa;- 802.11 doesn&apos;t specify how to generate IV&apos;s.&#xa;- IV&apos;s are 24-bit values (in this protocol).&#xa;- Each packet requires a new unique RC4 key stream.&#xa;- On a high traffic system, the range of RC4 keys can be used.&#xa;- The reason is because the secret key will always be a constant. The&#xa;only variance is the 24-bit IV. This only gives us 16,777,216 seeds for &#xa;RC4.&#xa;- If an attacker were to intercept two packets with the same keystream,&#xa;what could the attacker do?&#xa;- WEP is a decprecated algorithm, thus it shouldn&apos;t be used in modern day&#xa;networks."/>
+                    <Property name="text" type="java.lang.String" value="- WEP is a security algorithm intended for IEEE 802.11 wireless networks.&#xa;&#xa;The Algorithm:&#xa;&#xa;- First, a 32-bit checksum is performend, which is concatenated to the end of the plaintext message being sent. &#xa;- Next, the secret key = K is taken, and concatenated to the IV which we&apos;ll call K&apos; = IV || K.&#xa;- Then, K&apos; is inputted into the RC4 algorithm, which generates a keystream.&#xa;- The key stream is then xor&apos;d with the plaintext || CRC which generates the ciphertext. &#xa;- Lastly, the IV is prepended, in plaintext, to the ciphertext which is sent out to the intended receiver. &#xa;&#xa;Notes on WEP:&#xa;&#xa;- 802.11 doesn&apos;t specify how to generate IV&apos;s.&#xa;- IV&apos;s are 24-bit values (in this protocol).&#xa;- Each packet requires a new unique RC4 key stream.&#xa;- On a high traffic system, the range of RC4 keys can be used.&#xa;- The reason is because the secret key will always be a constant. The only variance is the 24-bit IV. This only gives us 16,777,216 seeds for RC4.&#xa;- If an attacker were to intercept two packets with the same keystream, what could the attacker do?&#xa;- WEP is a decprecated algorithm, thus it shouldn&apos;t be used in modern day networks."/>
+                    <Property name="wrapStyleWord" type="boolean" value="true"/>
                   </Properties>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="jTextArea13.setEditable(false);"/>
@@ -9525,6 +9529,12 @@
             </Container>
             <Component class="javax.swing.JButton" name="jButton2">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="78" green="57" red="30" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Back"/>
               </Properties>
               <Events>

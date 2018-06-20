@@ -2449,7 +2449,7 @@ public class Home extends javax.swing.JFrame {
 
         DESQ.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         DESQ.setForeground(new java.awt.Color(77, 132, 155));
-        DESQ.setText("What's the order of Encryption?");
+        DESQ.setText("What is the order of 3DES Encryption?");
 
         DESQuestion.add(DESA);
         DESA.setText("Encrypt-Decrypt-Encrypt");
@@ -2494,11 +2494,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DESPanelLayout.createSequentialGroup()
                         .addGap(159, 159, 159)
-                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(DESPic, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, DESPanelLayout.createSequentialGroup()
-                                .addGap(151, 151, 151)
-                                .addComponent(DESQ))))
+                        .addComponent(DESPic))
                     .addGroup(DESPanelLayout.createSequentialGroup()
                         .addGap(225, 225, 225)
                         .addComponent(DESLabel))
@@ -2510,11 +2506,15 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(DESB)
                             .addComponent(DESC)))
                     .addGroup(DESPanelLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
+                        .addGap(20, 20, 20)
                         .addComponent(DESRETURNB)
-                        .addGap(310, 310, 310)
+                        .addGap(313, 313, 313)
                         .addComponent(DES_B)))
                 .addContainerGap(212, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(DESQ)
+                .addGap(259, 259, 259))
         );
         DESPanelLayout.setVerticalGroup(
             DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2523,9 +2523,9 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DESLabel)
                 .addGap(49, 49, 49)
                 .addComponent(DESPic)
-                .addGap(41, 41, 41)
-                .addComponent(DESQ)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DESQ, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DESA)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DESB)
@@ -2533,11 +2533,11 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DESC)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DESD)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DESRETURNB)
-                    .addComponent(DES_B))
-                .addContainerGap(83, Short.MAX_VALUE))
+                    .addComponent(DES_B)
+                    .addComponent(DESRETURNB))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         MainPanel.add(DESPanel, "card25");
@@ -4704,7 +4704,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(66, 66, 66)
                         .addComponent(RSAQ))
                     .addGroup(RSAPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(352, 352, 352)
+                        .addGap(386, 386, 386)
                         .addComponent(RSAIntro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -4787,8 +4787,8 @@ public class Home extends javax.swing.JFrame {
         RSAQ1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         RSAQ1.setText("Alice wants to send a message to Bob. Given p = 3, q = 11, and e = 3 answer the following questions:");
 
-        RSAHeader.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        RSAHeader.setForeground(new java.awt.Color(255, 0, 0));
+        RSAHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        RSAHeader.setForeground(new java.awt.Color(48, 87, 120));
         RSAHeader.setText("RSA Practice Problems");
 
         RSAA1_1.addActionListener(new java.awt.event.ActionListener() {
@@ -4825,10 +4825,6 @@ public class Home extends javax.swing.JFrame {
         RSAPanel.setLayout(RSAPanelLayout);
         RSAPanelLayout.setHorizontalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSAPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(RSAHeader)
-                .addGap(243, 243, 243))
             .addGroup(RSAPanelLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4853,6 +4849,10 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(RSAB1_3))
                             .addComponent(RSAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(112, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSAPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(RSAHeader)
+                .addGap(263, 263, 263))
         );
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4879,7 +4879,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RSAA1_3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSAB1_3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 195, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 194, Short.MAX_VALUE)
                 .addComponent(RSAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(72, 72, 72))
         );
@@ -5101,13 +5101,15 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(ThemePicture9)
                 .addGap(0, 12, Short.MAX_VALUE))
             .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
-                .addGap(269, 269, 269)
                 .addGroup(DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(DH_intro)
                     .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
                         .addComponent(DHDes)
                         .addGap(66, 66, 66)
-                        .addComponent(DHQ)))
+                        .addComponent(DHQ))
+                    .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(306, 306, 306)
+                        .addComponent(DH_intro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DHPanelWelcomeLayout.setVerticalGroup(
@@ -5904,17 +5906,23 @@ public class Home extends javax.swing.JFrame {
         WEPPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         WEPDescription_Label.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        WEPDescription_Label.setForeground(new java.awt.Color(48, 87, 120));
         WEPDescription_Label.setText("Short WEP Description");
 
         WEPDescription.setBorder(null);
+        WEPDescription.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         jTextArea13.setColumns(20);
-        jTextArea13.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        jTextArea13.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jTextArea13.setLineWrap(true);
         jTextArea13.setRows(5);
-        jTextArea13.setText("- WEP is a security algorithm intended for IEEE 802.11 wireless networks.\n\nThe Algorithm:\n\n- First, a 32-bit checksum is performend, which is concatenated to the end\nof the plaintext message being sent. \n- Next, the secret key = K is taken, and concatenated to the IV which we'll\ncall K' = IV || K.\n- Then, K' is inputted into the RC4 algorithm, which generates a keystream.\n- The key stream is then xor'd with the plaintext || CRC which generates\nthe ciphertext. \n- Lastly, the IV is prepended, in plaintext, to the ciphertext which is\nsent out to the intended receiver. \n\nNotes on WEP:\n\n- 802.11 doesn't specify how to generate IV's.\n- IV's are 24-bit values (in this protocol).\n- Each packet requires a new unique RC4 key stream.\n- On a high traffic system, the range of RC4 keys can be used.\n- The reason is because the secret key will always be a constant. The\nonly variance is the 24-bit IV. This only gives us 16,777,216 seeds for \nRC4.\n- If an attacker were to intercept two packets with the same keystream,\nwhat could the attacker do?\n- WEP is a decprecated algorithm, thus it shouldn't be used in modern day\nnetworks.");
+        jTextArea13.setText("- WEP is a security algorithm intended for IEEE 802.11 wireless networks.\n\nThe Algorithm:\n\n- First, a 32-bit checksum is performend, which is concatenated to the end of the plaintext message being sent. \n- Next, the secret key = K is taken, and concatenated to the IV which we'll call K' = IV || K.\n- Then, K' is inputted into the RC4 algorithm, which generates a keystream.\n- The key stream is then xor'd with the plaintext || CRC which generates the ciphertext. \n- Lastly, the IV is prepended, in plaintext, to the ciphertext which is sent out to the intended receiver. \n\nNotes on WEP:\n\n- 802.11 doesn't specify how to generate IV's.\n- IV's are 24-bit values (in this protocol).\n- Each packet requires a new unique RC4 key stream.\n- On a high traffic system, the range of RC4 keys can be used.\n- The reason is because the secret key will always be a constant. The only variance is the 24-bit IV. This only gives us 16,777,216 seeds for RC4.\n- If an attacker were to intercept two packets with the same keystream, what could the attacker do?\n- WEP is a decprecated algorithm, thus it shouldn't be used in modern day networks.");
+        jTextArea13.setWrapStyleWord(true);
         WEPDescription.setViewportView(jTextArea13);
         jTextArea13.setEditable(false);
 
+        jButton2.setBackground(new java.awt.Color(48, 87, 120));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Back");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5929,18 +5937,16 @@ public class Home extends javax.swing.JFrame {
             .addGroup(WEPPanelLayout.createSequentialGroup()
                 .addGroup(WEPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(WEPPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(WEPDescription))
+                        .addGap(263, 263, 263)
+                        .addComponent(WEPDescription_Label))
                     .addGroup(WEPPanelLayout.createSequentialGroup()
-                        .addGroup(WEPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(WEPPanelLayout.createSequentialGroup()
-                                .addGap(263, 263, 263)
-                                .addComponent(WEPDescription_Label))
-                            .addGroup(WEPPanelLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jButton2)))
-                        .addGap(0, 287, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addGap(41, 41, 41)
+                        .addComponent(jButton2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WEPPanelLayout.createSequentialGroup()
+                .addGap(0, 67, Short.MAX_VALUE)
+                .addComponent(WEPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 781, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(64, 64, 64))
         );
         WEPPanelLayout.setVerticalGroup(
             WEPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -5948,10 +5954,10 @@ public class Home extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addComponent(WEPDescription_Label)
                 .addGap(18, 18, 18)
-                .addComponent(WEPDescription, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(WEPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addGap(71, 71, 71))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         MainPanel.add(WEPPanel, "card39");
