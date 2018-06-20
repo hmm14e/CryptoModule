@@ -48,8 +48,8 @@ public class Home extends javax.swing.JFrame {
         CBCMAC4 = new javax.swing.ButtonGroup();
         CBCMAC5 = new javax.swing.ButtonGroup();
         buttonGroup6 = new javax.swing.ButtonGroup();
-        DES_Buttons = new javax.swing.ButtonGroup();
         jPasswordField1 = new javax.swing.JPasswordField();
+        DESQuestion = new javax.swing.ButtonGroup();
         MainPanel = new javax.swing.JPanel();
         WelcomePanel = new javax.swing.JPanel();
         Welcome = new javax.swing.JLabel();
@@ -2451,12 +2451,21 @@ public class Home extends javax.swing.JFrame {
         DESQ.setForeground(new java.awt.Color(77, 132, 155));
         DESQ.setText("What's the order of Encryption?");
 
+        DESQuestion.add(DESA);
         DESA.setText("Encrypt-Decrypt-Encrypt");
+        DESA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESAActionPerformed(evt);
+            }
+        });
 
+        DESQuestion.add(DESB);
         DESB.setText("Encrypt-Encrypt-Encrypt");
 
+        DESQuestion.add(DESC);
         DESC.setText("Encrypt-Decrypt-Decrypt");
 
+        DESQuestion.add(DESD);
         DESD.setText("Decrypt-Encrypt-Encrypt");
 
         DES_B.setBackground(new java.awt.Color(77, 132, 155));
@@ -2485,23 +2494,27 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DESPanelLayout.createSequentialGroup()
                         .addGap(159, 159, 159)
-                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(DESQ)
-                            .addComponent(DESPic)
-                            .addGroup(DESPanelLayout.createSequentialGroup()
-                                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(DESB)
-                                    .addComponent(DESC)
-                                    .addComponent(DESA)
-                                    .addComponent(DESD))
-                                .addGap(68, 68, 68)
-                                .addComponent(DES_B)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
-                                .addComponent(DESRETURNB))))
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(DESPic, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, DESPanelLayout.createSequentialGroup()
+                                .addGap(151, 151, 151)
+                                .addComponent(DESQ))))
                     .addGroup(DESPanelLayout.createSequentialGroup()
                         .addGap(225, 225, 225)
-                        .addComponent(DESLabel)))
-                .addGap(170, 170, 170))
+                        .addComponent(DESLabel))
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(359, 359, 359)
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(DESA)
+                            .addComponent(DESD)
+                            .addComponent(DESB)
+                            .addComponent(DESC)))
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(DESRETURNB)
+                        .addGap(310, 310, 310)
+                        .addComponent(DES_B)))
+                .addContainerGap(212, Short.MAX_VALUE))
         );
         DESPanelLayout.setVerticalGroup(
             DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2510,20 +2523,21 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DESLabel)
                 .addGap(49, 49, 49)
                 .addComponent(DESPic)
-                .addGap(33, 33, 33)
+                .addGap(41, 41, 41)
                 .addComponent(DESQ)
-                .addGap(26, 26, 26)
+                .addGap(18, 18, 18)
                 .addComponent(DESA)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DESB)
-                    .addComponent(DES_B)
-                    .addComponent(DESRETURNB))
+                .addComponent(DESB)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DESC)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DESD)
-                .addContainerGap(118, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DESRETURNB)
+                    .addComponent(DES_B))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
 
         MainPanel.add(DESPanel, "card25");
@@ -4169,34 +4183,34 @@ public class Home extends javax.swing.JFrame {
         RSASigDescriptionLayout.setHorizontalGroup(
             RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSASigDescriptionLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSASigDescriptionLayout.createSequentialGroup()
-                        .addComponent(Theme__5)
-                        .addGap(12, 12, 12))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSASigDescriptionLayout.createSequentialGroup()
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(80, 80, 80))))
-            .addGroup(RSASigDescriptionLayout.createSequentialGroup()
-                .addGroup(RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(Theme__5))
                     .addGroup(RSASigDescriptionLayout.createSequentialGroup()
-                        .addGap(335, 335, 335)
-                        .addComponent(RSASigIntro1))
-                    .addGroup(RSASigDescriptionLayout.createSequentialGroup()
-                        .addGap(404, 404, 404)
-                        .addComponent(RSA_Sig_Back)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(RSASigDescriptionLayout.createSequentialGroup()
+                                .addGap(69, 69, 69)
+                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(RSASigDescriptionLayout.createSequentialGroup()
+                                .addGap(372, 372, 372)
+                                .addComponent(RSA_Sig_Back))
+                            .addGroup(RSASigDescriptionLayout.createSequentialGroup()
+                                .addGap(310, 310, 310)
+                                .addComponent(RSASigIntro1)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         RSASigDescriptionLayout.setVerticalGroup(
             RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSASigDescriptionLayout.createSequentialGroup()
-                .addGap(51, 51, 51)
+                .addContainerGap(79, Short.MAX_VALUE)
                 .addComponent(RSASigIntro1)
-                .addGap(35, 35, 35)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(RSA_Sig_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Theme__5))
         );
 
@@ -5604,9 +5618,9 @@ public class Home extends javax.swing.JFrame {
         jTextArea9.setText("1. Is there anyway Eve can deduce the private key, with information she \nhas. (Keep in mind she also has the modulus since this is public) Y/N");
         DHQ1.setViewportView(jTextArea9);
 
-        DHA1.setText("Answer!");
+        DHA1.setColumns(15);
 
-        DHB1.setText("jButton1");
+        DHB1.setText("Submit");
 
         DH6_Back.setBackground(new java.awt.Color(77, 132, 155));
         DH6_Back.setForeground(new java.awt.Color(255, 255, 255));
@@ -5632,8 +5646,8 @@ public class Home extends javax.swing.JFrame {
                             .addComponent(DH6Text, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE)
                             .addComponent(DHQ1)
                             .addGroup(DHPanel6Layout.createSequentialGroup()
-                                .addComponent(DHA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(49, 49, 49)
+                                .addComponent(DHA1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(27, 27, 27)
                                 .addComponent(DHB1))))
                     .addGroup(DHPanel6Layout.createSequentialGroup()
                         .addGap(148, 148, 148)
@@ -7544,7 +7558,7 @@ public class Home extends javax.swing.JFrame {
         String answer2 = WEPA2.getText();
 
         if(answer1.toUpperCase().equals("YES") && answer2.equals("10111111")){
-            JOptionPane.showMessageDialog(null, "Correct! You can continue onto RC5", "CORRECT!", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Correct! You can continue onto RC5", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
         }
         else{
             JOptionPane.showMessageDialog(null, "One or both answers are incorrect. Try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
@@ -7553,21 +7567,10 @@ public class Home extends javax.swing.JFrame {
 
     private void DES_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DES_BActionPerformed
         if(DESA.isSelected())
-        {
-            MainPanel.removeAll();
-            MainPanel.repaint();
-            MainPanel.revalidate();
-
-            MainPanel.add(KerberosPanel);
-            MainPanel.repaint();
-            MainPanel.revalidate();
-
-        }
+            JOptionPane.showMessageDialog(null, "You are correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
 
         else
-        {
-            JOptionPane.showMessageDialog(null, "Incorrect", "Incorrect!", JOptionPane.ERROR_MESSAGE);
-        }
+            JOptionPane.showMessageDialog(null, "Try again!", "Incorrect!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_DES_BActionPerformed
 
     private void DESRETURNBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESRETURNBActionPerformed
@@ -8147,6 +8150,10 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate(); 
     }//GEN-LAST:event_RSA_Sig_BackActionPerformed
 
+    private void DESAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DESAActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8328,9 +8335,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel DESPic;
     private javax.swing.JLabel DESQ;
     private javax.swing.JButton DESQB;
+    private javax.swing.ButtonGroup DESQuestion;
     private javax.swing.JButton DESRETURNB;
     private javax.swing.JButton DES_B;
-    private javax.swing.ButtonGroup DES_Buttons;
     private javax.swing.JLabel DH1Image;
     private javax.swing.JScrollPane DH1Text;
     private javax.swing.JButton DH1_Back;

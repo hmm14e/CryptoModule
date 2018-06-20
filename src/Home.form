@@ -21,12 +21,12 @@
     </Component>
     <Component class="javax.swing.ButtonGroup" name="buttonGroup6">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="DES_Buttons">
-    </Component>
     <Component class="javax.swing.JPasswordField" name="jPasswordField1">
       <Properties>
         <Property name="text" type="java.lang.String" value="jPasswordField1"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="DESQuestion">
     </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
@@ -3536,24 +3536,15 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="DESQ" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="DESPic" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="DESB" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="DESC" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="DESA" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="DESD" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                                      <Component id="DES_B" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="161" max="32767" attributes="0"/>
-                                      <Component id="DESRETURNB" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
+                                      <Component id="DESQ" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -3561,8 +3552,23 @@
                               <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
                               <Component id="DESLabel" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="359" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="DESA" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DESD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DESB" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DESC" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                              <Component id="DESRETURNB" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="310" max="-2" attributes="0"/>
+                              <Component id="DES_B" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="170" max="-2" attributes="0"/>
+                      <EmptySpace pref="212" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -3573,21 +3579,22 @@
                       <Component id="DESLabel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                       <Component id="DESPic" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                       <Component id="DESQ" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="DESA" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DESB" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="DES_B" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="DESRETURNB" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="DESB" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="DESC" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="DESD" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="118" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="DESRETURNB" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="DES_B" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="83" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -3624,21 +3631,36 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="DESA">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="DESQuestion"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Encrypt-Decrypt-Encrypt"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DESAActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="DESB">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="DESQuestion"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Encrypt-Encrypt-Encrypt"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="DESC">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="DESQuestion"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Encrypt-Decrypt-Decrypt"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="DESD">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="DESQuestion"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Decrypt-Encrypt-Encrypt"/>
               </Properties>
             </Component>
@@ -6438,43 +6460,43 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="Theme__5" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jScrollPane5" min="-2" pref="727" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane5" min="-2" pref="727" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="372" max="-2" attributes="0"/>
+                                      <Component id="RSA_Sig_Back" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="310" max="-2" attributes="0"/>
+                                      <Component id="RSASigIntro1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="335" max="-2" attributes="0"/>
-                              <Component id="RSASigIntro1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="404" max="-2" attributes="0"/>
-                              <Component id="RSA_Sig_Back" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <EmptySpace pref="79" max="32767" attributes="0"/>
                       <Component id="RSASigIntro1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                      <Component id="jScrollPane5" min="-2" pref="331" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jScrollPane5" min="-2" pref="287" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="RSA_Sig_Back" min="-2" pref="31" max="-2" attributes="0"/>
-                      <EmptySpace pref="20" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="Theme__5" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -8907,8 +8929,8 @@
                                   <Component id="DH6Text" alignment="0" pref="582" max="32767" attributes="0"/>
                                   <Component id="DHQ1" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="DHA1" min="-2" pref="60" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                      <Component id="DHA1" min="-2" pref="82" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                                       <Component id="DHB1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -9014,12 +9036,12 @@
             </Container>
             <Component class="javax.swing.JTextField" name="DHA1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Answer!"/>
+                <Property name="columns" type="int" value="15"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="DHB1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jButton1"/>
+                <Property name="text" type="java.lang.String" value="Submit"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="DH6_Back">
