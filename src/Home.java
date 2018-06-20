@@ -1151,7 +1151,7 @@ public class Home extends javax.swing.JFrame {
         Warning2.setText("Please write a script to decrypt the following ciphertext. Instructors may ask students to demo or submit their code. ");
 
         Ciphertext_Vigenere.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        Ciphertext_Vigenere.setText("Phrase: mlgsrmt zylfg gsrh rh hvxfiv");
+        Ciphertext_Vigenere.setText("Phrase: vhmk ijpt e uavuav uigjev (key: caesar)");
 
         Submission2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1199,14 +1199,14 @@ public class Home extends javax.swing.JFrame {
             .addGroup(VigenerePanelLayout.createSequentialGroup()
                 .addGroup(VigenerePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(VigenerePanelLayout.createSequentialGroup()
-                        .addGap(213, 213, 213)
-                        .addComponent(Ciphertext_Vigenere))
-                    .addGroup(VigenerePanelLayout.createSequentialGroup()
                         .addGap(202, 202, 202)
                         .addComponent(Submission2, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(VigenerePanelLayout.createSequentialGroup()
                         .addGap(31, 31, 31)
-                        .addComponent(VigenereQReturn)))
+                        .addComponent(VigenereQReturn))
+                    .addGroup(VigenerePanelLayout.createSequentialGroup()
+                        .addGap(175, 175, 175)
+                        .addComponent(Ciphertext_Vigenere)))
                 .addContainerGap())
         );
         VigenerePanelLayout.setVerticalGroup(
@@ -1216,9 +1216,9 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(VigenereTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Warning2)
-                .addGap(75, 75, 75)
+                .addGap(77, 77, 77)
                 .addComponent(Ciphertext_Vigenere)
-                .addGap(97, 97, 97)
+                .addGap(95, 95, 95)
                 .addComponent(Submission2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Submit2)
@@ -2052,7 +2052,7 @@ public class Home extends javax.swing.JFrame {
                                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(34, 334, Short.MAX_VALUE)))
+                                .addGap(34, 335, Short.MAX_VALUE)))
                         .addComponent(Theme_, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanelLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2235,17 +2235,6 @@ public class Home extends javax.swing.JFrame {
             RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RCPanelLayout.createSequentialGroup()
                 .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(160, 160, 160)
-                        .addComponent(DescriptionWEP_Label)
-                        .addGap(68, 68, 68)
-                        .addComponent(Description_button))
-                    .addGroup(RCPanelLayout.createSequentialGroup()
-                        .addGap(261, 261, 261)
-                        .addComponent(WEP_Label)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(RCPanelLayout.createSequentialGroup()
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addGroup(RCPanelLayout.createSequentialGroup()
                         .addGap(52, 52, 52)
@@ -2263,24 +2252,35 @@ public class Home extends javax.swing.JFrame {
                         .addGap(369, 369, 369)
                         .addComponent(RCReturn)))
                 .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(RCPanelLayout.createSequentialGroup()
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(261, 261, 261)
+                        .addComponent(WEP_Label))
+                    .addGroup(RCPanelLayout.createSequentialGroup()
+                        .addGap(327, 327, 327)
+                        .addComponent(DescriptionWEP_Label)
+                        .addGap(18, 18, 18)
+                        .addComponent(Description_button)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RCPanelLayout.setVerticalGroup(
             RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RCPanelLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(WEP_Label)
-                .addGap(26, 26, 26)
-                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(DescriptionWEP_Label)
                     .addComponent(Description_button))
-                .addGap(34, 34, 34)
+                .addGap(54, 54, 54)
                 .addGroup(RCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(WEPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(RCPanelLayout.createSequentialGroup()
                         .addComponent(WEPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(9, 9, 9)
+                        .addGap(25, 25, 25)
                         .addComponent(WEPB1)
-                        .addGap(14, 14, 14)
+                        .addGap(35, 35, 35)
                         .addComponent(WEPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(RCReturn)
@@ -2358,6 +2358,7 @@ public class Home extends javax.swing.JFrame {
 
         jScrollPane2.setBorder(null);
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea21.setEditable(false);
         jTextArea21.setColumns(20);
@@ -2847,7 +2848,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -4064,7 +4065,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton1)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 318, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66))
         );
@@ -5188,7 +5189,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(DHDiagram1)
                         .addGap(18, 18, 18)
                         .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
                         .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(110, 110, 110))
         );
@@ -5316,7 +5317,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
                         .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5382,7 +5383,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5448,7 +5449,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(36, 36, 36)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
                         .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
