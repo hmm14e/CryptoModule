@@ -327,7 +327,7 @@ public class Home extends javax.swing.JFrame {
         SHADescription = new javax.swing.JPanel();
         SHADescriptionHeader = new javax.swing.JLabel();
         SHADescrip = new javax.swing.JScrollPane();
-        CaesarCipherDes2 = new javax.swing.JTextArea();
+        SHA_Des = new javax.swing.JTextArea();
         Theme__2 = new javax.swing.JLabel();
         SHABB = new javax.swing.JButton();
         SHAPanel = new javax.swing.JPanel();
@@ -355,9 +355,11 @@ public class Home extends javax.swing.JFrame {
         MD5Des = new javax.swing.JButton();
         MD5Q = new javax.swing.JButton();
         MD5Description = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea11 = new javax.swing.JTextArea();
+        MD5Header = new javax.swing.JLabel();
+        SHADescrip1 = new javax.swing.JScrollPane();
+        CaesarCipherDes4 = new javax.swing.JTextArea();
+        Theme__4 = new javax.swing.JLabel();
+        MD5Backk = new javax.swing.JButton();
         MD5Panel = new javax.swing.JPanel();
         MD5_Text = new javax.swing.JTextField();
         MD5_Button = new javax.swing.JButton();
@@ -467,6 +469,10 @@ public class Home extends javax.swing.JFrame {
         DHDes = new javax.swing.JButton();
         DHQ = new javax.swing.JButton();
         DHDescription = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea11 = new javax.swing.JTextArea();
+        ThemePicture22 = new javax.swing.JLabel();
         DHPanel = new javax.swing.JPanel();
         DHDiagram1 = new javax.swing.JLabel();
         DHButton1 = new javax.swing.JButton();
@@ -2834,7 +2840,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -3588,12 +3594,12 @@ public class Home extends javax.swing.JFrame {
 
         SHADescrip.setBorder(null);
 
-        CaesarCipherDes2.setEditable(false);
-        CaesarCipherDes2.setColumns(20);
-        CaesarCipherDes2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        CaesarCipherDes2.setRows(5);
-        CaesarCipherDes2.setText("- Secure Hashing Algorith - 2 (SHA-2) are a set of cryptographic hashing functions.\n- Built on the Merkle-Damgard structure.\n- The family consists of the following: sha224, sha256, sha384, sha512. The number \npreceeding sha, is the size of message digest.\n- For example, if we were using sha256, our message digest (the output) would be\n256 bits.");
-        SHADescrip.setViewportView(CaesarCipherDes2);
+        SHA_Des.setEditable(false);
+        SHA_Des.setColumns(20);
+        SHA_Des.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        SHA_Des.setRows(5);
+        SHA_Des.setText("- Secure Hashing Algorithm - 2 (SHA-2) are a set of cryptographic hashing functions.\n- Built on the Merkle-Damgard structure.\n- The family consists of the following: SHA224, SHA256, SHA384, SHA512. The number \nafter 'SHA', is the size of message digest.\n- For example, if we were using SHA256, our message digest (the output) would be\n256 bits.");
+        SHADescrip.setViewportView(SHA_Des);
 
         Theme__2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
@@ -3843,9 +3849,10 @@ public class Home extends javax.swing.JFrame {
         MD5PanelWelcome.setLayout(MD5PanelWelcomeLayout);
         MD5PanelWelcomeLayout.setHorizontalGroup(
             MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MD5PanelWelcomeLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MD5PanelWelcomeLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(ThemePicture6)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(12, 12, 12))
             .addGroup(MD5PanelWelcomeLayout.createSequentialGroup()
                 .addGroup(MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MD5PanelWelcomeLayout.createSequentialGroup()
@@ -3875,44 +3882,65 @@ public class Home extends javax.swing.JFrame {
 
         MD5Description.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel3.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel3.setText("MD5");
+        MD5Header.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        MD5Header.setForeground(new java.awt.Color(48, 87, 120));
+        MD5Header.setText("MD5");
 
-        jScrollPane3.setBorder(null);
-        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        SHADescrip1.setBorder(null);
 
-        jTextArea11.setEditable(false);
-        jTextArea11.setColumns(20);
-        jTextArea11.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jTextArea11.setLineWrap(true);
-        jTextArea11.setRows(5);
-        jTextArea11.setText("MD5 is a hash function that produces a 128-bit hash value. It is often used as checksum to test for data integrity. MD5 has been found to have many collision vulnerabilities and can be cracked using a brute-force attack. ");
-        jTextArea11.setWrapStyleWord(true);
-        jScrollPane3.setViewportView(jTextArea11);
+        CaesarCipherDes4.setEditable(false);
+        CaesarCipherDes4.setColumns(20);
+        CaesarCipherDes4.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        CaesarCipherDes4.setLineWrap(true);
+        CaesarCipherDes4.setRows(5);
+        CaesarCipherDes4.setText("- MD5 is a hash function that produces a 128-bit Message Digest. \n- It is often used as checksum to test for data integrity. \n- MD5 has been found to have many collision vulnerabilities and can be cracked using a brute-force attack. ");
+        CaesarCipherDes4.setWrapStyleWord(true);
+        SHADescrip1.setViewportView(CaesarCipherDes4);
+
+        Theme__4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        MD5Backk.setBackground(new java.awt.Color(77, 132, 155));
+        MD5Backk.setForeground(new java.awt.Color(255, 255, 255));
+        MD5Backk.setText("Return");
+        MD5Backk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MD5BackkActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout MD5DescriptionLayout = new javax.swing.GroupLayout(MD5Description);
         MD5Description.setLayout(MD5DescriptionLayout);
         MD5DescriptionLayout.setHorizontalGroup(
             MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MD5DescriptionLayout.createSequentialGroup()
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addComponent(Theme__4))
             .addGroup(MD5DescriptionLayout.createSequentialGroup()
+                .addGap(376, 376, 376)
                 .addGroup(MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(MD5DescriptionLayout.createSequentialGroup()
-                        .addGap(375, 375, 375)
-                        .addComponent(jLabel3))
-                    .addGroup(MD5DescriptionLayout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 708, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(134, Short.MAX_VALUE))
+                    .addComponent(MD5Backk)
+                    .addComponent(MD5Header))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MD5DescriptionLayout.createSequentialGroup()
+                    .addContainerGap(113, Short.MAX_VALUE)
+                    .addComponent(SHADescrip1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(120, 120, 120)))
         );
         MD5DescriptionLayout.setVerticalGroup(
             MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MD5DescriptionLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jLabel3)
-                .addGap(42, 42, 42)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(476, Short.MAX_VALUE))
+                .addGap(65, 65, 65)
+                .addComponent(MD5Header)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 299, Short.MAX_VALUE)
+                .addComponent(MD5Backk, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(63, 63, 63)
+                .addComponent(Theme__4))
+            .addGroup(MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(MD5DescriptionLayout.createSequentialGroup()
+                    .addGap(140, 140, 140)
+                    .addComponent(SHADescrip1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(421, Short.MAX_VALUE)))
         );
 
         MainPanel.add(MD5Description, "card82");
@@ -3960,6 +3988,9 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jScrollPane4.setBorder(null);
+
+        jTextArea10.setEditable(false);
         jTextArea10.setColumns(20);
         jTextArea10.setRows(5);
         jTextArea10.setText("1. MD5 produces 128-bit hash values, how many \nunique hashes can MD5 produce?");
@@ -4026,7 +4057,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton1)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 303, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 335, Short.MAX_VALUE)
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66))
         );
@@ -4066,7 +4097,7 @@ public class Home extends javax.swing.JFrame {
             RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture7)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 71, Short.MAX_VALUE))
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
                 .addGap(269, 269, 269)
                 .addGroup(RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -5017,16 +5048,49 @@ public class Home extends javax.swing.JFrame {
         MainPanel.add(DHPanelWelcome, "card50");
 
         DHDescription.setBackground(new java.awt.Color(255, 255, 255));
+        DHDescription.setForeground(new java.awt.Color(48, 87, 120));
+
+        jLabel3.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel3.setText("Diffie-Hellman ");
+
+        jScrollPane3.setBorder(null);
+
+        jTextArea11.setColumns(20);
+        jTextArea11.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
+        jTextArea11.setLineWrap(true);
+        jTextArea11.setRows(5);
+        jTextArea11.setText("If Alice and Bob are trying to exchange a key:\n\n1) Alice chooses two prime numbers g and p and sends them to Bob. They do not need to be secret.\n2) Bob will chooses a secret number, called a, and compute g^a mod p, and send that result back to Alice. Let's call the result A. \n3) Alice will repeat step 2. She will choose a secret number, called b, and compute g^b mod p, and send that result to Bob. Let's call the result B. \n4) Bob will then compute B^a mod p and Alice will compute A^b mod p.\n\nBoth Alice and Bob, will have the same result and can use this as their key.  \n\nThis is because:\n(g^a mod p)^b mod p = g^(ab) mod p\n(g^b mod p)^a mod p = g^(ba) mod p\n");
+        jTextArea11.setWrapStyleWord(true);
+        jScrollPane3.setViewportView(jTextArea11);
+
+        ThemePicture22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout DHDescriptionLayout = new javax.swing.GroupLayout(DHDescription);
         DHDescription.setLayout(DHDescriptionLayout);
         DHDescriptionLayout.setHorizontalGroup(
             DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGroup(DHDescriptionLayout.createSequentialGroup()
+                .addGroup(DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DHDescriptionLayout.createSequentialGroup()
+                        .addGap(287, 287, 287)
+                        .addComponent(jLabel3))
+                    .addComponent(ThemePicture22)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHDescriptionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         DHDescriptionLayout.setVerticalGroup(
             DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 787, Short.MAX_VALUE)
+            .addGroup(DHDescriptionLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ThemePicture22))
         );
 
         MainPanel.add(DHDescription, "card82");
@@ -5099,7 +5163,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHDiagram1)
                 .addGap(18, 18, 18)
                 .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 154, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 178, Short.MAX_VALUE)
                 .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(DHReturn)
@@ -5198,7 +5262,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2)
                 .addGap(18, 18, 18)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
                 .addComponent(DH2_next, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(109, 109, 109))
         );
@@ -5249,7 +5313,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(123, Short.MAX_VALUE))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanel3, "card12");
@@ -5295,7 +5359,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
                 .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
@@ -7819,6 +7883,16 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_MD5ReturnActionPerformed
 
+    private void MD5BackkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5BackkActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(MD5PanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_MD5BackkActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7949,8 +8023,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem Caesar;
     private javax.swing.JTextArea CaesarCipherDes;
     private javax.swing.JTextArea CaesarCipherDes1;
-    private javax.swing.JTextArea CaesarCipherDes2;
     private javax.swing.JTextArea CaesarCipherDes3;
+    private javax.swing.JTextArea CaesarCipherDes4;
     private javax.swing.JButton CaesarDes;
     private javax.swing.JLabel CaesarDescrip;
     private javax.swing.JPanel CaesarDescription;
@@ -8126,9 +8200,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem LinearFeedback;
     private javax.swing.JPanel LinearFeedbackPanel;
     private javax.swing.JMenuItem MD5;
+    private javax.swing.JButton MD5Backk;
     private javax.swing.JButton MD5Des;
     private javax.swing.JPanel MD5Description;
     private javax.swing.JLabel MD5Former;
+    private javax.swing.JLabel MD5Header;
     private javax.swing.JLabel MD5Intro;
     private javax.swing.JPanel MD5Panel;
     private javax.swing.JPanel MD5PanelWelcome;
@@ -8238,6 +8314,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton SHABB;
     private javax.swing.JButton SHADes;
     private javax.swing.JScrollPane SHADescrip;
+    private javax.swing.JScrollPane SHADescrip1;
     private javax.swing.JPanel SHADescription;
     private javax.swing.JLabel SHADescriptionHeader;
     private javax.swing.JLabel SHAIntro;
@@ -8249,6 +8326,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel SHAQ3;
     private javax.swing.JButton SHAReturn;
     private javax.swing.JButton SHA_Button;
+    private javax.swing.JTextArea SHA_Des;
     private javax.swing.JLabel SHA_Header1;
     private javax.swing.JLabel SHA_Output;
     private javax.swing.JLabel SHA_Questions;
@@ -8295,6 +8373,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture2;
     private javax.swing.JLabel ThemePicture20;
     private javax.swing.JLabel ThemePicture21;
+    private javax.swing.JLabel ThemePicture22;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
     private javax.swing.JLabel ThemePicture5;
@@ -8307,6 +8386,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Theme__1;
     private javax.swing.JLabel Theme__2;
     private javax.swing.JLabel Theme__3;
+    private javax.swing.JLabel Theme__4;
     private javax.swing.JMenuItem TripDES;
     private javax.swing.JLabel True;
     private javax.swing.JLabel ValidateMessage;
