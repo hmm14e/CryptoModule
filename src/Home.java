@@ -212,6 +212,11 @@ public class Home extends javax.swing.JFrame {
         RC4_Label = new javax.swing.JLabel();
         RC4Description = new javax.swing.JScrollPane();
         jTextArea12 = new javax.swing.JTextArea();
+        WEPPanel = new javax.swing.JPanel();
+        WEPDescription_Label = new javax.swing.JLabel();
+        WEPDescription = new javax.swing.JScrollPane();
+        jTextArea13 = new javax.swing.JTextArea();
+        jButton2 = new javax.swing.JButton();
         DESPanel = new javax.swing.JPanel();
         DESPic = new javax.swing.JLabel();
         DESLabel = new javax.swing.JLabel();
@@ -233,6 +238,29 @@ public class Home extends javax.swing.JFrame {
         jTextArea19 = new javax.swing.JTextArea();
         jLabel13 = new javax.swing.JLabel();
         DESBB = new javax.swing.JButton();
+        OTPPanelWelcome = new javax.swing.JPanel();
+        OTPIntro = new javax.swing.JLabel();
+        ThemePicture14 = new javax.swing.JLabel();
+        OTPDescripB = new javax.swing.JButton();
+        OTPQB = new javax.swing.JButton();
+        OTPPanel = new javax.swing.JPanel();
+        OTPLabel = new javax.swing.JLabel();
+        OTPGameLabel = new javax.swing.JLabel();
+        OTPEnterMessage = new javax.swing.JLabel();
+        OTPMessage = new javax.swing.JTextField();
+        OTPB1 = new javax.swing.JButton();
+        OTPQ = new javax.swing.JLabel();
+        OTPYes = new javax.swing.JButton();
+        OTPNo = new javax.swing.JButton();
+        OTPPicture = new javax.swing.JLabel();
+        OTPOutDescription = new javax.swing.JScrollPane();
+        OTPOut = new javax.swing.JTextArea();
+        OTPDescripPanel = new javax.swing.JPanel();
+        DESDescrip1 = new javax.swing.JLabel();
+        DESDescription1 = new javax.swing.JScrollPane();
+        jTextArea20 = new javax.swing.JTextArea();
+        jLabel14 = new javax.swing.JLabel();
+        DESBB1 = new javax.swing.JButton();
         PAPPanelWelcome = new javax.swing.JPanel();
         PAPIntro = new javax.swing.JLabel();
         ThemePicture1 = new javax.swing.JLabel();
@@ -533,6 +561,11 @@ public class Home extends javax.swing.JFrame {
         BlowfishDes = new javax.swing.JButton();
         BlowfishQ = new javax.swing.JButton();
         BlowfishDescription = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTextArea27 = new javax.swing.JTextArea();
+        ThemePicture23 = new javax.swing.JLabel();
+        RSABB2 = new javax.swing.JButton();
         BlowfishPanel = new javax.swing.JPanel();
         BlowfishReturn = new javax.swing.JButton();
         AESPanelWelcome = new javax.swing.JPanel();
@@ -544,34 +577,6 @@ public class Home extends javax.swing.JFrame {
         AESPanel = new javax.swing.JPanel();
         AESTitle = new javax.swing.JLabel();
         AESReturn = new javax.swing.JButton();
-        WEPPanel = new javax.swing.JPanel();
-        WEPDescription_Label = new javax.swing.JLabel();
-        WEPDescription = new javax.swing.JScrollPane();
-        jTextArea13 = new javax.swing.JTextArea();
-        jButton2 = new javax.swing.JButton();
-        OTPPanelWelcome = new javax.swing.JPanel();
-        OTPIntro = new javax.swing.JLabel();
-        ThemePicture14 = new javax.swing.JLabel();
-        OTPDescripB = new javax.swing.JButton();
-        OTPQB = new javax.swing.JButton();
-        OTPPanel = new javax.swing.JPanel();
-        OTPLabel = new javax.swing.JLabel();
-        OTPGameLabel = new javax.swing.JLabel();
-        OTPEnterMessage = new javax.swing.JLabel();
-        OTPMessage = new javax.swing.JTextField();
-        OTPB1 = new javax.swing.JButton();
-        OTPQ = new javax.swing.JLabel();
-        OTPYes = new javax.swing.JButton();
-        OTPNo = new javax.swing.JButton();
-        OTPPicture = new javax.swing.JLabel();
-        OTPOutDescription = new javax.swing.JScrollPane();
-        OTPOut = new javax.swing.JTextArea();
-        OTPDescripPanel = new javax.swing.JPanel();
-        DESDescrip1 = new javax.swing.JLabel();
-        DESDescription1 = new javax.swing.JScrollPane();
-        jTextArea20 = new javax.swing.JTextArea();
-        jLabel14 = new javax.swing.JLabel();
-        DESBB1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -2439,6 +2444,65 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(RCDescripPanel, "card42");
 
+        WEPPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        WEPDescription_Label.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        WEPDescription_Label.setForeground(new java.awt.Color(48, 87, 120));
+        WEPDescription_Label.setText("Short WEP Description");
+
+        WEPDescription.setBorder(null);
+        WEPDescription.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        jTextArea13.setColumns(20);
+        jTextArea13.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jTextArea13.setLineWrap(true);
+        jTextArea13.setRows(5);
+        jTextArea13.setText("- WEP is a security algorithm intended for IEEE 802.11 wireless networks.\n\nThe Algorithm:\n\n- First, a 32-bit checksum is performend, which is concatenated to the end of the plaintext message being sent. \n- Next, the secret key = K is taken, and concatenated to the IV which we'll call K' = IV || K.\n- Then, K' is inputted into the RC4 algorithm, which generates a keystream.\n- The key stream is then xor'd with the plaintext || CRC which generates the ciphertext. \n- Lastly, the IV is prepended, in plaintext, to the ciphertext which is sent out to the intended receiver. \n\nNotes on WEP:\n\n- 802.11 doesn't specify how to generate IV's.\n- IV's are 24-bit values (in this protocol).\n- Each packet requires a new unique RC4 key stream.\n- On a high traffic system, the range of RC4 keys can be used.\n- The reason is because the secret key will always be a constant. The only variance is the 24-bit IV. This only gives us 16,777,216 seeds for RC4.\n- If an attacker were to intercept two packets with the same keystream, what could the attacker do?\n- WEP is a decprecated algorithm, thus it shouldn't be used in modern day networks.");
+        jTextArea13.setWrapStyleWord(true);
+        WEPDescription.setViewportView(jTextArea13);
+        jTextArea13.setEditable(false);
+
+        jButton2.setBackground(new java.awt.Color(48, 87, 120));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Back");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout WEPPanelLayout = new javax.swing.GroupLayout(WEPPanel);
+        WEPPanel.setLayout(WEPPanelLayout);
+        WEPPanelLayout.setHorizontalGroup(
+            WEPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(WEPPanelLayout.createSequentialGroup()
+                .addGroup(WEPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(WEPPanelLayout.createSequentialGroup()
+                        .addGap(263, 263, 263)
+                        .addComponent(WEPDescription_Label))
+                    .addGroup(WEPPanelLayout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(jButton2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WEPPanelLayout.createSequentialGroup()
+                .addGap(0, 67, Short.MAX_VALUE)
+                .addComponent(WEPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 781, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(64, 64, 64))
+        );
+        WEPPanelLayout.setVerticalGroup(
+            WEPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(WEPPanelLayout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addComponent(WEPDescription_Label)
+                .addGap(18, 18, 18)
+                .addComponent(WEPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(WEPPanel, "card39");
+
         DESPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         DESPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/3DES.png"))); // NOI18N
@@ -2660,6 +2724,236 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(DESDescripPanel, "card42");
+
+        OTPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        OTPIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        OTPIntro.setForeground(new java.awt.Color(48, 87, 120));
+        OTPIntro.setText("One-Time Pad");
+
+        ThemePicture14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        OTPDescripB.setBackground(new java.awt.Color(77, 132, 155));
+        OTPDescripB.setForeground(new java.awt.Color(255, 255, 255));
+        OTPDescripB.setText("Description");
+        OTPDescripB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPDescripBActionPerformed(evt);
+            }
+        });
+
+        OTPQB.setBackground(new java.awt.Color(77, 132, 155));
+        OTPQB.setForeground(new java.awt.Color(255, 255, 255));
+        OTPQB.setText("Questions");
+        OTPQB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPQBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OTPPanelWelcomeLayout = new javax.swing.GroupLayout(OTPPanelWelcome);
+        OTPPanelWelcome.setLayout(OTPPanelWelcomeLayout);
+        OTPPanelWelcomeLayout.setHorizontalGroup(
+            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture14)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(293, 293, 293)
+                        .addComponent(OTPDescripB)
+                        .addGap(92, 92, 92)
+                        .addComponent(OTPQB))
+                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(309, 309, 309)
+                        .addComponent(OTPIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        OTPPanelWelcomeLayout.setVerticalGroup(
+            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(275, Short.MAX_VALUE)
+                .addComponent(OTPIntro)
+                .addGap(18, 18, 18)
+                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(OTPDescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OTPQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture14))
+        );
+
+        MainPanel.add(OTPPanelWelcome, "card41");
+
+        OTPPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        OTPLabel.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        OTPLabel.setForeground(new java.awt.Color(48, 87, 120));
+        OTPLabel.setText("One-Time Pad");
+
+        OTPGameLabel.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        OTPGameLabel.setForeground(new java.awt.Color(77, 132, 155));
+        OTPGameLabel.setText("One-Time Pad Game");
+
+        OTPEnterMessage.setText("Enter a Message");
+
+        OTPMessage.setColumns(8);
+
+        OTPB1.setBackground(new java.awt.Color(77, 132, 155));
+        OTPB1.setForeground(new java.awt.Color(255, 255, 255));
+        OTPB1.setText("Enter");
+        OTPB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPB1ActionPerformed(evt);
+            }
+        });
+
+        OTPQ.setText("Is this a one-time pad for the message entered?");
+
+        OTPYes.setBackground(new java.awt.Color(77, 132, 155));
+        OTPYes.setForeground(new java.awt.Color(255, 255, 255));
+        OTPYes.setText("Yes");
+        OTPYes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPYesActionPerformed(evt);
+            }
+        });
+
+        OTPNo.setBackground(new java.awt.Color(77, 132, 155));
+        OTPNo.setForeground(new java.awt.Color(255, 255, 255));
+        OTPNo.setText("No");
+        OTPNo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OTPNoActionPerformed(evt);
+            }
+        });
+
+        OTPPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/otp.png"))); // NOI18N
+
+        OTPOut.setColumns(20);
+        OTPOut.setRows(5);
+        OTPOutDescription.setViewportView(OTPOut);
+
+        javax.swing.GroupLayout OTPPanelLayout = new javax.swing.GroupLayout(OTPPanel);
+        OTPPanel.setLayout(OTPPanelLayout);
+        OTPPanelLayout.setHorizontalGroup(
+            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                        .addComponent(OTPLabel)
+                        .addGap(314, 314, 314))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(OTPPanelLayout.createSequentialGroup()
+                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(OTPPanelLayout.createSequentialGroup()
+                                        .addComponent(OTPEnterMessage)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(OTPB1))
+                                    .addComponent(OTPGameLabel))
+                                .addGap(124, 124, 124)
+                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addGroup(OTPPanelLayout.createSequentialGroup()
+                                                .addComponent(OTPYes)
+                                                .addGap(161, 161, 161)
+                                                .addComponent(OTPNo))
+                                            .addComponent(OTPQ))
+                                        .addGap(42, 42, 42))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
+                                        .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(9, 9, 9))))
+                            .addComponent(OTPPicture, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(102, 102, 102))))
+        );
+        OTPPanelLayout.setVerticalGroup(
+            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPPanelLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(OTPLabel)
+                .addGap(32, 32, 32)
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(OTPGameLabel)
+                    .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(OTPQ)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(OTPYes)
+                    .addComponent(OTPNo)
+                    .addComponent(OTPB1)
+                    .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OTPEnterMessage))
+                .addGap(18, 18, 18)
+                .addComponent(OTPPicture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(220, 220, 220))
+        );
+
+        MainPanel.add(OTPPanel, "card27");
+
+        OTPDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        DESDescrip1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        DESDescrip1.setForeground(new java.awt.Color(48, 87, 120));
+        DESDescrip1.setText("One-Time Pad");
+
+        DESDescription1.setBorder(null);
+
+        jTextArea20.setEditable(false);
+        jTextArea20.setColumns(20);
+        jTextArea20.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea20.setRows(5);
+        jTextArea20.setText("- The one-time pad is an encryption scheme, in which a one-time pre-shared\nkey is generated that is as long, or longer than the plaintext message being sent.\n- The pre-shared key is then XOR'd, bit for bit, with the plaintext message\n- The one-time pad is said to be uncrackable, and is said to have *perfect\nsecrecy\n* Perfect Secrey: Given a ciphertext C, no information about the plaintext\ncan be leaked or gained. ");
+        DESDescription1.setViewportView(jTextArea20);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        DESBB1.setBackground(new java.awt.Color(77, 132, 155));
+        DESBB1.setForeground(new java.awt.Color(255, 255, 255));
+        DESBB1.setText("Return");
+        DESBB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESBB1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OTPDescripPanelLayout = new javax.swing.GroupLayout(OTPDescripPanel);
+        OTPDescripPanel.setLayout(OTPDescripPanelLayout);
+        OTPDescripPanelLayout.setHorizontalGroup(
+            OTPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                .addGroup(OTPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel14)
+                    .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(DESBB1))
+                    .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(DESDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                        .addGap(302, 302, 302)
+                        .addComponent(DESDescrip1)))
+                .addGap(12, 12, 12))
+        );
+        OTPDescripPanelLayout.setVerticalGroup(
+            OTPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OTPDescripPanelLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(DESDescrip1)
+                .addGap(18, 18, 18)
+                .addComponent(DESDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addComponent(DESBB1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel14))
+        );
+
+        MainPanel.add(OTPDescripPanel, "card42");
 
         PAPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -5744,15 +6038,60 @@ public class Home extends javax.swing.JFrame {
 
         BlowfishDescription.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel4.setText("Blowfish ");
+
+        jScrollPane6.setBorder(null);
+
+        jTextArea27.setColumns(20);
+        jTextArea27.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
+        jTextArea27.setLineWrap(true);
+        jTextArea27.setRows(5);
+        jTextArea27.setText("- Blowfish is a symmetric-key block cipher designed by Bruce Schneier\n- No effective crytanalysis of it has been found to date\n- It was originally designed as an alternative to DES\n- Like 3DES, it has 16 rounds and uses the Feistel Network\n- It uses block sizes of 64 bits and key sizes from 32-448 bits\n- However, Twofish is more widely used due to it's larger block sizes");
+        jTextArea27.setWrapStyleWord(true);
+        jScrollPane6.setViewportView(jTextArea27);
+
+        ThemePicture23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        RSABB2.setBackground(new java.awt.Color(77, 132, 155));
+        RSABB2.setForeground(new java.awt.Color(255, 255, 255));
+        RSABB2.setText("Return");
+        RSABB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSABB2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout BlowfishDescriptionLayout = new javax.swing.GroupLayout(BlowfishDescription);
         BlowfishDescription.setLayout(BlowfishDescriptionLayout);
         BlowfishDescriptionLayout.setHorizontalGroup(
             BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
+                .addGroup(BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ThemePicture23)
+                    .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
+                        .addGap(350, 350, 350)
+                        .addComponent(jLabel4))
+                    .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
+                        .addGap(377, 377, 377)
+                        .addComponent(RSABB2)))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         BlowfishDescriptionLayout.setVerticalGroup(
             BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addComponent(jLabel4)
+                .addGap(69, 69, 69)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addComponent(RSABB2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addComponent(ThemePicture23))
         );
 
         MainPanel.add(BlowfishDescription, "card87");
@@ -5902,295 +6241,6 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(AESPanel, "card38");
-
-        WEPPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        WEPDescription_Label.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        WEPDescription_Label.setForeground(new java.awt.Color(48, 87, 120));
-        WEPDescription_Label.setText("Short WEP Description");
-
-        WEPDescription.setBorder(null);
-        WEPDescription.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-
-        jTextArea13.setColumns(20);
-        jTextArea13.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jTextArea13.setLineWrap(true);
-        jTextArea13.setRows(5);
-        jTextArea13.setText("- WEP is a security algorithm intended for IEEE 802.11 wireless networks.\n\nThe Algorithm:\n\n- First, a 32-bit checksum is performend, which is concatenated to the end of the plaintext message being sent. \n- Next, the secret key = K is taken, and concatenated to the IV which we'll call K' = IV || K.\n- Then, K' is inputted into the RC4 algorithm, which generates a keystream.\n- The key stream is then xor'd with the plaintext || CRC which generates the ciphertext. \n- Lastly, the IV is prepended, in plaintext, to the ciphertext which is sent out to the intended receiver. \n\nNotes on WEP:\n\n- 802.11 doesn't specify how to generate IV's.\n- IV's are 24-bit values (in this protocol).\n- Each packet requires a new unique RC4 key stream.\n- On a high traffic system, the range of RC4 keys can be used.\n- The reason is because the secret key will always be a constant. The only variance is the 24-bit IV. This only gives us 16,777,216 seeds for RC4.\n- If an attacker were to intercept two packets with the same keystream, what could the attacker do?\n- WEP is a decprecated algorithm, thus it shouldn't be used in modern day networks.");
-        jTextArea13.setWrapStyleWord(true);
-        WEPDescription.setViewportView(jTextArea13);
-        jTextArea13.setEditable(false);
-
-        jButton2.setBackground(new java.awt.Color(48, 87, 120));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Back");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout WEPPanelLayout = new javax.swing.GroupLayout(WEPPanel);
-        WEPPanel.setLayout(WEPPanelLayout);
-        WEPPanelLayout.setHorizontalGroup(
-            WEPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(WEPPanelLayout.createSequentialGroup()
-                .addGroup(WEPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(WEPPanelLayout.createSequentialGroup()
-                        .addGap(263, 263, 263)
-                        .addComponent(WEPDescription_Label))
-                    .addGroup(WEPPanelLayout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addComponent(jButton2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WEPPanelLayout.createSequentialGroup()
-                .addGap(0, 67, Short.MAX_VALUE)
-                .addComponent(WEPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 781, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64))
-        );
-        WEPPanelLayout.setVerticalGroup(
-            WEPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(WEPPanelLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(WEPDescription_Label)
-                .addGap(18, 18, 18)
-                .addComponent(WEPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-
-        MainPanel.add(WEPPanel, "card39");
-
-        OTPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
-
-        OTPIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        OTPIntro.setForeground(new java.awt.Color(48, 87, 120));
-        OTPIntro.setText("One-Time Pad");
-
-        ThemePicture14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        OTPDescripB.setBackground(new java.awt.Color(77, 132, 155));
-        OTPDescripB.setForeground(new java.awt.Color(255, 255, 255));
-        OTPDescripB.setText("Description");
-        OTPDescripB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPDescripBActionPerformed(evt);
-            }
-        });
-
-        OTPQB.setBackground(new java.awt.Color(77, 132, 155));
-        OTPQB.setForeground(new java.awt.Color(255, 255, 255));
-        OTPQB.setText("Questions");
-        OTPQB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPQBActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout OTPPanelWelcomeLayout = new javax.swing.GroupLayout(OTPPanelWelcome);
-        OTPPanelWelcome.setLayout(OTPPanelWelcomeLayout);
-        OTPPanelWelcomeLayout.setHorizontalGroup(
-            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture14)
-                .addGap(0, 12, Short.MAX_VALUE))
-            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(293, 293, 293)
-                        .addComponent(OTPDescripB)
-                        .addGap(92, 92, 92)
-                        .addComponent(OTPQB))
-                    .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(309, 309, 309)
-                        .addComponent(OTPIntro)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        OTPPanelWelcomeLayout.setVerticalGroup(
-            OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(275, Short.MAX_VALUE)
-                .addComponent(OTPIntro)
-                .addGap(18, 18, 18)
-                .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(OTPDescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(OTPQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(148, 148, 148)
-                .addComponent(ThemePicture14))
-        );
-
-        MainPanel.add(OTPPanelWelcome, "card41");
-
-        OTPPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        OTPLabel.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        OTPLabel.setForeground(new java.awt.Color(48, 87, 120));
-        OTPLabel.setText("One-Time Pad");
-
-        OTPGameLabel.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
-        OTPGameLabel.setForeground(new java.awt.Color(77, 132, 155));
-        OTPGameLabel.setText("One-Time Pad Game");
-
-        OTPEnterMessage.setText("Enter a Message");
-
-        OTPMessage.setColumns(8);
-
-        OTPB1.setBackground(new java.awt.Color(77, 132, 155));
-        OTPB1.setForeground(new java.awt.Color(255, 255, 255));
-        OTPB1.setText("Enter");
-        OTPB1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPB1ActionPerformed(evt);
-            }
-        });
-
-        OTPQ.setText("Is this a one-time pad for the message entered?");
-
-        OTPYes.setBackground(new java.awt.Color(77, 132, 155));
-        OTPYes.setForeground(new java.awt.Color(255, 255, 255));
-        OTPYes.setText("Yes");
-        OTPYes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPYesActionPerformed(evt);
-            }
-        });
-
-        OTPNo.setBackground(new java.awt.Color(77, 132, 155));
-        OTPNo.setForeground(new java.awt.Color(255, 255, 255));
-        OTPNo.setText("No");
-        OTPNo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OTPNoActionPerformed(evt);
-            }
-        });
-
-        OTPPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/otp.png"))); // NOI18N
-
-        OTPOut.setColumns(20);
-        OTPOut.setRows(5);
-        OTPOutDescription.setViewportView(OTPOut);
-
-        javax.swing.GroupLayout OTPPanelLayout = new javax.swing.GroupLayout(OTPPanel);
-        OTPPanel.setLayout(OTPPanelLayout);
-        OTPPanelLayout.setHorizontalGroup(
-            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                        .addComponent(OTPLabel)
-                        .addGap(314, 314, 314))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(OTPPanelLayout.createSequentialGroup()
-                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(OTPPanelLayout.createSequentialGroup()
-                                        .addComponent(OTPEnterMessage)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(OTPB1))
-                                    .addComponent(OTPGameLabel))
-                                .addGap(124, 124, 124)
-                                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                                        .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(OTPPanelLayout.createSequentialGroup()
-                                                .addComponent(OTPYes)
-                                                .addGap(161, 161, 161)
-                                                .addComponent(OTPNo))
-                                            .addComponent(OTPQ))
-                                        .addGap(42, 42, 42))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OTPPanelLayout.createSequentialGroup()
-                                        .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(9, 9, 9))))
-                            .addComponent(OTPPicture, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(102, 102, 102))))
-        );
-        OTPPanelLayout.setVerticalGroup(
-            OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPPanelLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(OTPLabel)
-                .addGap(32, 32, 32)
-                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(OTPGameLabel)
-                    .addComponent(OTPOutDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(OTPQ)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(OTPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(OTPYes)
-                    .addComponent(OTPNo)
-                    .addComponent(OTPB1)
-                    .addComponent(OTPMessage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(OTPEnterMessage))
-                .addGap(18, 18, 18)
-                .addComponent(OTPPicture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(220, 220, 220))
-        );
-
-        MainPanel.add(OTPPanel, "card27");
-
-        OTPDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        DESDescrip1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        DESDescrip1.setForeground(new java.awt.Color(48, 87, 120));
-        DESDescrip1.setText("One-Time Pad");
-
-        DESDescription1.setBorder(null);
-
-        jTextArea20.setEditable(false);
-        jTextArea20.setColumns(20);
-        jTextArea20.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        jTextArea20.setRows(5);
-        jTextArea20.setText("- The one-time pad is an encryption scheme, in which a one-time pre-shared\nkey is generated that is as long, or longer than the plaintext message being sent.\n- The pre-shared key is then XOR'd, bit for bit, with the plaintext message\n- The one-time pad is said to be uncrackable, and is said to have *perfect\nsecrecy\n* Perfect Secrey: Given a ciphertext C, no information about the plaintext\ncan be leaked or gained. ");
-        DESDescription1.setViewportView(jTextArea20);
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        DESBB1.setBackground(new java.awt.Color(77, 132, 155));
-        DESBB1.setForeground(new java.awt.Color(255, 255, 255));
-        DESBB1.setText("Return");
-        DESBB1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DESBB1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout OTPDescripPanelLayout = new javax.swing.GroupLayout(OTPDescripPanel);
-        OTPDescripPanel.setLayout(OTPDescripPanelLayout);
-        OTPDescripPanelLayout.setHorizontalGroup(
-            OTPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPDescripPanelLayout.createSequentialGroup()
-                .addGroup(OTPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel14)
-                    .addGroup(OTPDescripPanelLayout.createSequentialGroup()
-                        .addGap(394, 394, 394)
-                        .addComponent(DESBB1))
-                    .addGroup(OTPDescripPanelLayout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addComponent(DESDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(OTPDescripPanelLayout.createSequentialGroup()
-                        .addGap(302, 302, 302)
-                        .addComponent(DESDescrip1)))
-                .addGap(12, 12, 12))
-        );
-        OTPDescripPanelLayout.setVerticalGroup(
-            OTPDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OTPDescripPanelLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(DESDescrip1)
-                .addGap(18, 18, 18)
-                .addComponent(DESDescription1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
-                .addComponent(DESBB1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel14))
-        );
-
-        MainPanel.add(OTPDescripPanel, "card42");
 
         Home.setText("Home");
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -8160,6 +8210,10 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DESAActionPerformed
 
+    private void RSABB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSABB2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RSABB2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8554,6 +8608,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton RSAB1_3;
     private javax.swing.JButton RSABB;
     private javax.swing.JButton RSABB1;
+    private javax.swing.JButton RSABB2;
     private javax.swing.JButton RSADes;
     private javax.swing.JScrollPane RSADescrip;
     private javax.swing.JLabel RSADescripHeader;
@@ -8650,6 +8705,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture20;
     private javax.swing.JLabel ThemePicture21;
     private javax.swing.JLabel ThemePicture22;
+    private javax.swing.JLabel ThemePicture23;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
     private javax.swing.JLabel ThemePicture5;
@@ -8715,6 +8771,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
@@ -8725,6 +8782,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
@@ -8744,6 +8802,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea24;
     private javax.swing.JTextArea jTextArea25;
     private javax.swing.JTextArea jTextArea26;
+    private javax.swing.JTextArea jTextArea27;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
