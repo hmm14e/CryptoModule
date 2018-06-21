@@ -563,7 +563,7 @@ public class Home extends javax.swing.JFrame {
         BlowfishDes = new javax.swing.JButton();
         BlowfishQ = new javax.swing.JButton();
         BlowfishDescription = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        BlowfishTitle = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea27 = new javax.swing.JTextArea();
         ThemePicture23 = new javax.swing.JLabel();
@@ -576,6 +576,11 @@ public class Home extends javax.swing.JFrame {
         AESDes = new javax.swing.JButton();
         AESQ = new javax.swing.JButton();
         AESDescription = new javax.swing.JPanel();
+        AEStitle = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTextArea28 = new javax.swing.JTextArea();
+        ThemePicture24 = new javax.swing.JLabel();
+        AESBack = new javax.swing.JButton();
         AESPanel = new javax.swing.JPanel();
         AESTitle = new javax.swing.JLabel();
         AESReturn = new javax.swing.JButton();
@@ -3195,7 +3200,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(118, 118, 118))
         );
@@ -4414,7 +4419,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton1)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 312, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 333, Short.MAX_VALUE)
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66))
         );
@@ -5591,7 +5596,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(DHDiagram1)
                         .addGap(18, 18, 18)
                         .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
                         .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(110, 110, 110))
         );
@@ -5716,7 +5721,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DH2_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -5779,7 +5784,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5845,7 +5850,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(36, 36, 36)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
                         .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6074,9 +6079,9 @@ public class Home extends javax.swing.JFrame {
 
         BlowfishDescription.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel4.setText("Blowfish ");
+        BlowfishTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        BlowfishTitle.setForeground(new java.awt.Color(48, 87, 120));
+        BlowfishTitle.setText("Blowfish ");
 
         jScrollPane6.setBorder(null);
 
@@ -6108,7 +6113,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(ThemePicture23)
                     .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
                         .addGap(350, 350, 350)
-                        .addComponent(jLabel4))
+                        .addComponent(BlowfishTitle))
                     .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -6121,7 +6126,7 @@ public class Home extends javax.swing.JFrame {
             BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
                 .addGap(62, 62, 62)
-                .addComponent(jLabel4)
+                .addComponent(BlowfishTitle)
                 .addGap(69, 69, 69)
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62)
@@ -6225,15 +6230,61 @@ public class Home extends javax.swing.JFrame {
 
         AESDescription.setBackground(new java.awt.Color(255, 255, 255));
 
+        AEStitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        AEStitle.setForeground(new java.awt.Color(48, 87, 120));
+        AEStitle.setText("Advanced Encryption Standard");
+
+        jScrollPane7.setBorder(null);
+
+        jTextArea28.setColumns(20);
+        jTextArea28.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
+        jTextArea28.setLineWrap(true);
+        jTextArea28.setRows(5);
+        jTextArea28.setText("- AES was created by Vincent Rijmen and Joan Daemen who submitted a proposal to NIST during the AES selection process. \n- AES uses 10, 12 or 14 rounds for the 128, 192 and 256 bit key size, respectively. \n- AES is currently standard for the U.S government\n- It is a symmetric-key algorithm \n- While there have been proposals for AES attacks that are computationally faster than a brute-force attack, they are not computationally feasible.");
+        jTextArea28.setWrapStyleWord(true);
+        jScrollPane7.setViewportView(jTextArea28);
+
+        ThemePicture24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        AESBack.setBackground(new java.awt.Color(77, 132, 155));
+        AESBack.setForeground(new java.awt.Color(255, 255, 255));
+        AESBack.setText("Return");
+        AESBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AESBackActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout AESDescriptionLayout = new javax.swing.GroupLayout(AESDescription);
         AESDescription.setLayout(AESDescriptionLayout);
         AESDescriptionLayout.setHorizontalGroup(
             AESDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AESDescriptionLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(AESDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ThemePicture24)
+                    .addGroup(AESDescriptionLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AESDescriptionLayout.createSequentialGroup()
+                        .addGap(377, 377, 377)
+                        .addComponent(AESBack))
+                    .addGroup(AESDescriptionLayout.createSequentialGroup()
+                        .addGap(188, 188, 188)
+                        .addComponent(AEStitle)))
+                .addGap(28, 28, 28))
         );
         AESDescriptionLayout.setVerticalGroup(
             AESDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(AESDescriptionLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(AEStitle)
+                .addGap(56, 56, 56)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addComponent(AESBack, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addComponent(ThemePicture24))
         );
 
         MainPanel.add(AESDescription, "card87");
@@ -8282,6 +8333,16 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void AESBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESBackActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(AESPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate(); 
+    }//GEN-LAST:event_AESBackActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8317,6 +8378,7 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem AES;
+    private javax.swing.JButton AESBack;
     private javax.swing.JButton AESDes;
     private javax.swing.JPanel AESDescription;
     private javax.swing.JLabel AESIntro;
@@ -8325,6 +8387,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton AESQ;
     private javax.swing.JButton AESReturn;
     private javax.swing.JLabel AESTitle;
+    private javax.swing.JLabel AEStitle;
     private javax.swing.JTextField Answer1;
     private javax.swing.JMenuItem Atbash;
     private javax.swing.JButton AtbashDes;
@@ -8356,6 +8419,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel BlowfishPanelWelcome;
     private javax.swing.JButton BlowfishQ;
     private javax.swing.JButton BlowfishReturn;
+    private javax.swing.JLabel BlowfishTitle;
     private javax.swing.JLabel BreakingCBCBMAC_Title;
     private javax.swing.JMenuItem CBC;
     private javax.swing.JButton CBCBB;
@@ -8774,6 +8838,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture21;
     private javax.swing.JLabel ThemePicture22;
     private javax.swing.JLabel ThemePicture23;
+    private javax.swing.JLabel ThemePicture24;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
     private javax.swing.JLabel ThemePicture5;
@@ -8841,7 +8906,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
@@ -8853,6 +8917,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
@@ -8873,6 +8938,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea25;
     private javax.swing.JTextArea jTextArea26;
     private javax.swing.JTextArea jTextArea27;
+    private javax.swing.JTextArea jTextArea28;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
