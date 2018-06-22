@@ -494,14 +494,16 @@ public class Home extends javax.swing.JFrame {
         ElGamalSteps = new javax.swing.JLabel();
         ElGamalPanel = new javax.swing.JPanel();
         ElGamalHeader = new javax.swing.JLabel();
-        EGQ1 = new javax.swing.JLabel();
         EGQ1_1 = new javax.swing.JLabel();
         EGA1_1 = new javax.swing.JTextField();
         EGB1_1 = new javax.swing.JButton();
-        EGQ1_2 = new javax.swing.JLabel();
         EGA1_2 = new javax.swing.JTextField();
         EGB1_2 = new javax.swing.JButton();
         ElGamReturn = new javax.swing.JButton();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTextArea29 = new javax.swing.JTextArea();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTextArea30 = new javax.swing.JTextArea();
         DHPanelWelcome = new javax.swing.JPanel();
         DH_intro = new javax.swing.JLabel();
         ThemePicture9 = new javax.swing.JLabel();
@@ -5342,21 +5344,21 @@ public class Home extends javax.swing.JFrame {
         ElGamalPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         ElGamalHeader.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
-        ElGamalHeader.setForeground(new java.awt.Color(255, 0, 0));
-        ElGamalHeader.setText("EL Gamal Practice Problems");
+        ElGamalHeader.setForeground(new java.awt.Color(48, 87, 120));
+        ElGamalHeader.setText("ElGamal Practice Problems");
 
-        EGQ1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        EGQ1.setText("Bob generates p and g where p = 11, and g = 5. Then, Bob selects a random number x = 3. Given this information solve the following problems:");
+        EGQ1_1.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
+        EGQ1_1.setText("1. What is Alice’s public key?");
 
-        EGQ1_1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        EGQ1_1.setText("1. What is Bob’s public key?");
-
+        EGA1_1.setColumns(10);
         EGA1_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EGA1_1ActionPerformed(evt);
             }
         });
 
+        EGB1_1.setBackground(new java.awt.Color(77, 132, 155));
+        EGB1_1.setForeground(new java.awt.Color(255, 255, 255));
         EGB1_1.setText("Enter");
         EGB1_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5364,15 +5366,14 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        EGQ1_2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        EGQ1_2.setText("2. Alice wants to send message M = 4 to Bob, she chooses a random integer k = 4. What is the encrypted message Alice sends?");
-
         EGA1_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EGA1_2ActionPerformed(evt);
             }
         });
 
+        EGB1_2.setBackground(new java.awt.Color(77, 132, 155));
+        EGB1_2.setForeground(new java.awt.Color(255, 255, 255));
         EGB1_2.setText("Enter");
         EGB1_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5389,6 +5390,30 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jScrollPane8.setBorder(null);
+        jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane8.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea29.setColumns(20);
+        jTextArea29.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jTextArea29.setLineWrap(true);
+        jTextArea29.setRows(5);
+        jTextArea29.setText("Alice generates p and g where p = 11, and g = 5. Then, Alice selects a random number x = 3. Given this information solve the following problems:");
+        jTextArea29.setWrapStyleWord(true);
+        jScrollPane8.setViewportView(jTextArea29);
+
+        jScrollPane9.setBorder(null);
+        jScrollPane9.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane9.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea30.setColumns(20);
+        jTextArea30.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jTextArea30.setLineWrap(true);
+        jTextArea30.setRows(5);
+        jTextArea30.setText("2. Bob wants to send message M = 4 to Alice, he chooses a random integer k = 4. What is the encrypted message Bob sends?");
+        jTextArea30.setWrapStyleWord(true);
+        jScrollPane9.setViewportView(jTextArea30);
+
         javax.swing.GroupLayout ElGamalPanelLayout = new javax.swing.GroupLayout(ElGamalPanel);
         ElGamalPanel.setLayout(ElGamalPanelLayout);
         ElGamalPanelLayout.setHorizontalGroup(
@@ -5396,47 +5421,50 @@ public class Home extends javax.swing.JFrame {
             .addGroup(ElGamalPanelLayout.createSequentialGroup()
                 .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ElGamalPanelLayout.createSequentialGroup()
-                        .addGap(197, 197, 197)
-                        .addComponent(ElGamalHeader))
-                    .addGroup(ElGamalPanelLayout.createSequentialGroup()
                         .addGap(27, 27, 27)
                         .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(EGQ1_1)
-                            .addComponent(EGQ1)
                             .addGroup(ElGamalPanelLayout.createSequentialGroup()
-                                .addComponent(EGA1_1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(EGA1_1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(35, 35, 35)
                                 .addComponent(EGB1_1))
-                            .addComponent(EGQ1_2)
                             .addGroup(ElGamalPanelLayout.createSequentialGroup()
-                                .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
+                                .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(31, 31, 31)
                                 .addComponent(EGB1_2))))
                     .addGroup(ElGamalPanelLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
-                        .addComponent(ElGamReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(95, Short.MAX_VALUE))
+                        .addComponent(ElGamReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ElGamalPanelLayout.createSequentialGroup()
+                        .addGap(234, 234, 234)
+                        .addComponent(ElGamalHeader))
+                    .addGroup(ElGamalPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 834, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         ElGamalPanelLayout.setVerticalGroup(
             ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ElGamalPanelLayout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addComponent(ElGamalHeader)
-                .addGap(18, 18, 18)
-                .addComponent(EGQ1)
-                .addGap(34, 34, 34)
-                .addComponent(EGQ1_1)
-                .addGap(30, 30, 30)
-                .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(EGA1_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(ElGamalPanelLayout.createSequentialGroup()
+                        .addComponent(EGQ1_1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(EGA1_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(EGB1_1))
-                .addGap(57, 57, 57)
-                .addComponent(EGQ1_2)
-                .addGap(39, 39, 39)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(EGB1_2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
+                    .addComponent(EGB1_2)
+                    .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 264, Short.MAX_VALUE)
                 .addComponent(ElGamReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59))
         );
@@ -8654,9 +8682,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField EGA1_2;
     private javax.swing.JButton EGB1_1;
     private javax.swing.JButton EGB1_2;
-    private javax.swing.JLabel EGQ1;
     private javax.swing.JLabel EGQ1_1;
-    private javax.swing.JLabel EGQ1_2;
     private javax.swing.JPanel ELGamDescription;
     private javax.swing.JMenuItem ELGamal;
     private javax.swing.JButton ElGamDes;
@@ -8974,6 +9000,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
@@ -8995,7 +9023,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea26;
     private javax.swing.JTextArea jTextArea27;
     private javax.swing.JTextArea jTextArea28;
+    private javax.swing.JTextArea jTextArea29;
     private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea30;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
