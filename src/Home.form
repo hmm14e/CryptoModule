@@ -277,12 +277,12 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RSAActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="ELGamal">
+            <MenuItem class="javax.swing.JMenuItem" name="ElGamal">
               <Properties>
-                <Property name="text" type="java.lang.String" value="EL Gamal"/>
+                <Property name="text" type="java.lang.String" value="ElGamal"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ELGamalActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ElGamalActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="DiffieHellman">
@@ -330,6 +330,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Developers"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DevActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

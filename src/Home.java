@@ -623,7 +623,7 @@ public class Home extends javax.swing.JFrame {
         RSASignature = new javax.swing.JMenuItem();
         PublicKey = new javax.swing.JMenu();
         RSA = new javax.swing.JMenuItem();
-        ELGamal = new javax.swing.JMenuItem();
+        ElGamal = new javax.swing.JMenuItem();
         DiffieHellman = new javax.swing.JMenuItem();
         PrivateKey = new javax.swing.JMenu();
         Blowfish = new javax.swing.JMenuItem();
@@ -6627,13 +6627,13 @@ public class Home extends javax.swing.JFrame {
         });
         PublicKey.add(RSA);
 
-        ELGamal.setText("EL Gamal");
-        ELGamal.addActionListener(new java.awt.event.ActionListener() {
+        ElGamal.setText("ElGamal");
+        ElGamal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ELGamalActionPerformed(evt);
+                ElGamalActionPerformed(evt);
             }
         });
-        PublicKey.add(ELGamal);
+        PublicKey.add(ElGamal);
 
         DiffieHellman.setText("Diffie-Hellman");
         DiffieHellman.addActionListener(new java.awt.event.ActionListener() {
@@ -6669,6 +6669,11 @@ public class Home extends javax.swing.JFrame {
 
         Dev.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         Dev.setText("Developers");
+        Dev.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DevActionPerformed(evt);
+            }
+        });
         Help.add(Dev);
 
         jMenuBar1.add(Help);
@@ -6856,7 +6861,7 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_RSAA1_1ActionPerformed
 
-    private void ELGamalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ELGamalActionPerformed
+    private void ElGamalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ElGamalActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -6864,7 +6869,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.add(ElGamalPanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();       
-    }//GEN-LAST:event_ELGamalActionPerformed
+    }//GEN-LAST:event_ElGamalActionPerformed
 
     private void ElGamal_Q1_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ElGamal_Q1_Submit
         // TODO add your handling code here:
@@ -8423,6 +8428,10 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate(); 
     }//GEN-LAST:event_DHBB1ActionPerformed
 
+    private void DevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DevActionPerformed
+        JOptionPane.showMessageDialog(null, "Created by Hannah McLaughlin & Jason Hawkins \n                             2018", "Developers", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_DevActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8684,11 +8693,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton EGB1_2;
     private javax.swing.JLabel EGQ1_1;
     private javax.swing.JPanel ELGamDescription;
-    private javax.swing.JMenuItem ELGamal;
     private javax.swing.JButton ElGamDes;
     private javax.swing.JLabel ElGamIntro;
     private javax.swing.JButton ElGamQ;
     private javax.swing.JButton ElGamReturn;
+    private javax.swing.JMenuItem ElGamal;
     private javax.swing.JLabel ElGamalHeader;
     private javax.swing.JPanel ElGamalPanel;
     private javax.swing.JPanel ElGamalPanelWelcome;
