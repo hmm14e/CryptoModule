@@ -488,6 +488,10 @@ public class Home extends javax.swing.JFrame {
         ElGamDes = new javax.swing.JButton();
         ElGamQ = new javax.swing.JButton();
         ELGamDescription = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        ThemePicture25 = new javax.swing.JLabel();
+        DHBB1 = new javax.swing.JButton();
+        ElGamalSteps = new javax.swing.JLabel();
         ElGamalPanel = new javax.swing.JPanel();
         ElGamalHeader = new javax.swing.JLabel();
         EGQ1 = new javax.swing.JLabel();
@@ -5226,7 +5230,7 @@ public class Home extends javax.swing.JFrame {
         ElGamIntro.setBackground(new java.awt.Color(255, 255, 255));
         ElGamIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         ElGamIntro.setForeground(new java.awt.Color(48, 87, 120));
-        ElGamIntro.setText("El Gamal");
+        ElGamIntro.setText("ElGamal");
 
         ThemePicture8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
@@ -5263,7 +5267,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(66, 66, 66)
                         .addComponent(ElGamQ))
                     .addGroup(ElGamalPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(317, 317, 317)
+                        .addGap(343, 343, 343)
                         .addComponent(ElGamIntro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -5284,15 +5288,53 @@ public class Home extends javax.swing.JFrame {
 
         ELGamDescription.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel4.setText("ElGamal");
+
+        ThemePicture25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        DHBB1.setBackground(new java.awt.Color(77, 132, 155));
+        DHBB1.setForeground(new java.awt.Color(255, 255, 255));
+        DHBB1.setText("Return");
+        DHBB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DHBB1ActionPerformed(evt);
+            }
+        });
+
+        ElGamalSteps.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/ElGamalSteps_.png"))); // NOI18N
+
         javax.swing.GroupLayout ELGamDescriptionLayout = new javax.swing.GroupLayout(ELGamDescription);
         ELGamDescription.setLayout(ELGamDescriptionLayout);
         ELGamDescriptionLayout.setHorizontalGroup(
             ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addComponent(ThemePicture25, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ELGamDescriptionLayout.createSequentialGroup()
+                .addComponent(ElGamalSteps)
+                .addGap(62, 62, 62))
+            .addGroup(ELGamDescriptionLayout.createSequentialGroup()
+                .addGroup(ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ELGamDescriptionLayout.createSequentialGroup()
+                        .addGap(370, 370, 370)
+                        .addComponent(jLabel4))
+                    .addGroup(ELGamDescriptionLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(DHBB1)))
+                .addContainerGap())
         );
         ELGamDescriptionLayout.setVerticalGroup(
             ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(ELGamDescriptionLayout.createSequentialGroup()
+                .addContainerGap(42, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ElGamalSteps)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DHBB1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ThemePicture25)
+                .addGap(45, 45, 45))
         );
 
         MainPanel.add(ELGamDescription, "card82");
@@ -6613,7 +6655,7 @@ public class Home extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
         );
 
         pack();
@@ -8343,6 +8385,16 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate(); 
     }//GEN-LAST:event_AESBackActionPerformed
 
+    private void DHBB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DHBB1ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ElGamalPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate(); 
+    }//GEN-LAST:event_DHBB1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8556,6 +8608,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextField DHA1;
     private javax.swing.JButton DHB1;
     private javax.swing.JButton DHBB;
+    private javax.swing.JButton DHBB1;
     private javax.swing.JButton DHButton1;
     private javax.swing.JButton DHDes;
     private javax.swing.JPanel DHDescription;
@@ -8613,6 +8666,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ElGamalHeader;
     private javax.swing.JPanel ElGamalPanel;
     private javax.swing.JPanel ElGamalPanelWelcome;
+    private javax.swing.JLabel ElGamalSteps;
     private javax.swing.JLabel Encrypt;
     private javax.swing.JLabel EncryptImage;
     private javax.swing.JMenu EncryptionModes;
@@ -8839,6 +8893,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture22;
     private javax.swing.JLabel ThemePicture23;
     private javax.swing.JLabel ThemePicture24;
+    private javax.swing.JLabel ThemePicture25;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
     private javax.swing.JLabel ThemePicture5;
@@ -8906,6 +8961,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
