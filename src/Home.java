@@ -283,9 +283,19 @@ public class Home extends javax.swing.JFrame {
         PAPA1 = new javax.swing.JTextField();
         PAPB = new javax.swing.JButton();
         PAPQB2 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        PAPUser = new javax.swing.JLabel();
+        PAPPass = new javax.swing.JLabel();
+        PAPSend = new javax.swing.JButton();
+        PAPComp = new javax.swing.JLabel();
+        PAPArrow = new javax.swing.JLabel();
+        PAPAS = new javax.swing.JLabel();
+        SentPassword = new javax.swing.JLabel();
+        LTUsername = new javax.swing.JLabel();
+        PAPUN = new javax.swing.JTextField();
+        PAPP = new javax.swing.JTextField();
+        SentUN = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jButton5 = new javax.swing.JButton();
         CHAPPanelWelcome = new javax.swing.JPanel();
         ChapIntro = new javax.swing.JLabel();
         ThemePicture2 = new javax.swing.JLabel();
@@ -3146,7 +3156,7 @@ public class Home extends javax.swing.JFrame {
 
         jTextArea16.setColumns(20);
         jTextArea16.setRows(5);
-        jTextArea16.setText("1. Why is PAP insecure? Hint: Take a look at the diagram\n\n");
+        jTextArea16.setText("1. Why is PAP insecure? Hint: Enter a username and\npassword above then push enter!\n\n2. PAP should be used to authenticate users. T/F\n\n");
         PAPQuestions.setViewportView(jTextArea16);
 
         PAPA1.setColumns(8);
@@ -3174,63 +3184,130 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Pap-Game.png"))); // NOI18N
+        PAPUser.setText("Username:");
 
-        jLabel6.setText("Username:");
+        PAPPass.setText("Password:");
 
-        jLabel7.setText("Password:");
+        PAPSend.setBackground(new java.awt.Color(77, 132, 155));
+        PAPSend.setForeground(new java.awt.Color(255, 255, 255));
+        PAPSend.setText("Enter");
+        PAPSend.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PAPSendActionPerformed(evt);
+            }
+        });
+
+        PAPComp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/LT.png"))); // NOI18N
+
+        PAPArrow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/arrow.png"))); // NOI18N
+
+        PAPAS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/AS.png"))); // NOI18N
+
+        SentPassword.setText("Data being sent");
+
+        SentUN.setText("Data being sent");
+
+        jButton5.setBackground(new java.awt.Color(77, 132, 155));
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Enter");
 
         javax.swing.GroupLayout PAPQPanelLayout = new javax.swing.GroupLayout(PAPQPanel);
         PAPQPanel.setLayout(PAPQPanelLayout);
         PAPQPanelLayout.setHorizontalGroup(
             PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(PAPQB2)
-                .addGap(84, 84, 84))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
-                .addContainerGap(32, Short.MAX_VALUE)
-                .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(PAPLabel)
-                    .addComponent(PAPB))
-                .addGap(63, 63, 63))
             .addGroup(PAPQPanelLayout.createSequentialGroup()
+                .addGap(284, 284, 284)
+                .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(PAPUser)
+                    .addComponent(PAPPass))
+                .addGap(18, 18, 18)
+                .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(PAPP)
+                    .addComponent(PAPUN, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(PAPSend)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
+                .addContainerGap(56, Short.MAX_VALUE)
                 .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PAPQPanelLayout.createSequentialGroup()
-                        .addGap(186, 186, 186)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
+                        .addComponent(PAPLabel)
+                        .addGap(63, 63, 63))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
                         .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
+                            .addComponent(LTUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(PAPQPanelLayout.createSequentialGroup()
-                                .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 464, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(PAPQPanelLayout.createSequentialGroup()
-                        .addGap(410, 410, 410)
+                                .addComponent(PAPComp)
+                                .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(PAPQPanelLayout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addComponent(PAPArrow))
+                                    .addGroup(PAPQPanelLayout.createSequentialGroup()
+                                        .addGap(46, 46, 46)
+                                        .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(SentUN, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(SentPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(18, 18, 18)
+                                .addComponent(PAPAS)))
+                        .addGap(257, 257, 257))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
+                        .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(PAPA1)
+                            .addComponent(jTextField2))
+                        .addGap(18, 18, 18)
                         .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(PAPQB2)
+                            .addComponent(PAPB)
+                            .addComponent(jButton5))
+                        .addGap(191, 191, 191))))
         );
         PAPQPanelLayout.setVerticalGroup(
             PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PAPQPanelLayout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addComponent(PAPLabel)
-                .addGap(79, 79, 79)
-                .addComponent(jLabel5)
-                .addGap(32, 32, 32)
-                .addComponent(jLabel6)
-                .addGap(37, 37, 37)
-                .addComponent(jLabel7)
-                .addGap(88, 88, 88)
+                .addGap(67, 67, 67)
                 .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(PAPB)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                    .addComponent(PAPAS)
+                    .addGroup(PAPQPanelLayout.createSequentialGroup()
+                        .addComponent(SentUN, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PAPQPanelLayout.createSequentialGroup()
+                                .addComponent(SentPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(PAPArrow))
+                            .addComponent(PAPComp))))
+                .addGap(13, 13, 13)
+                .addComponent(LTUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PAPQPanelLayout.createSequentialGroup()
+                        .addComponent(PAPUN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(PAPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PAPPass)))
+                    .addGroup(PAPQPanelLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(PAPSend))
+                    .addComponent(PAPUser))
+                .addGap(84, 84, 84)
+                .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PAPQPanelLayout.createSequentialGroup()
+                        .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PAPB))
+                        .addGap(31, 31, 31)
+                        .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton5)))
+                    .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
                 .addComponent(PAPQB2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(118, 118, 118))
+                .addContainerGap(120, Short.MAX_VALUE))
         );
 
         MainPanel.add(PAPQPanel, "card34");
@@ -4447,7 +4524,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton1)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 308, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 325, Short.MAX_VALUE)
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66))
         );
@@ -5690,7 +5767,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(DHDiagram1)
                         .addGap(18, 18, 18)
                         .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
                         .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(110, 110, 110))
         );
@@ -5815,7 +5892,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DH2_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -5878,7 +5955,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 130, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 147, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5944,7 +6021,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(36, 36, 36)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
                         .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6708,11 +6785,11 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 912, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 912, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 800, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
         );
 
         pack();
@@ -8456,6 +8533,12 @@ public class Home extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Created by Hannah McLaughlin & Jason Hawkins \n                             2018", "Developers", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_DevActionPerformed
 
+    private void PAPSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPSendActionPerformed
+            SentPassword.setText(PAPP.getText());
+            LTUsername.setText(PAPUN.getText()+"'s computer");
+            SentUN.setText(PAPUN.getText());
+    }//GEN-LAST:event_PAPSendActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8770,6 +8853,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton KerberosQ;
     private javax.swing.JButton KerberosReturn;
     private javax.swing.JLabel Kerberos_K;
+    private javax.swing.JLabel LTUsername;
     private javax.swing.JPanel LinearDescription;
     private javax.swing.JMenuItem LinearFeedback;
     private javax.swing.JPanel LinearFeedbackPanel;
@@ -8812,18 +8896,26 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem OneTimePad;
     private javax.swing.JMenuItem PAP;
     private javax.swing.JTextField PAPA1;
+    private javax.swing.JLabel PAPAS;
+    private javax.swing.JLabel PAPArrow;
     private javax.swing.JButton PAPB;
+    private javax.swing.JLabel PAPComp;
     private javax.swing.JButton PAPDes;
     private javax.swing.JPanel PAPDescripPanel;
     private javax.swing.JLabel PAPDescription1;
     private javax.swing.JLabel PAPIntro;
     private javax.swing.JLabel PAPLabel;
+    private javax.swing.JTextField PAPP;
     private javax.swing.JPanel PAPPanelWelcome;
+    private javax.swing.JLabel PAPPass;
     private javax.swing.JLabel PAPPicture1;
     private javax.swing.JButton PAPQB;
     private javax.swing.JButton PAPQB2;
     private javax.swing.JPanel PAPQPanel;
     private javax.swing.JScrollPane PAPQuestions;
+    private javax.swing.JButton PAPSend;
+    private javax.swing.JTextField PAPUN;
+    private javax.swing.JLabel PAPUser;
     private javax.swing.JMenu PrivateKey;
     private javax.swing.JLabel Project;
     private javax.swing.JMenu PublicKey;
@@ -8910,6 +9002,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel SSynchDescription;
     private javax.swing.JPanel SSynchPanel;
     private javax.swing.JMenuItem SSynchronizing;
+    private javax.swing.JLabel SentPassword;
+    private javax.swing.JLabel SentUN;
     private javax.swing.JTextField Signature;
     private javax.swing.JLabel SigningAMessage;
     private javax.swing.JLabel SigningAMessage1;
@@ -9006,6 +9100,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -9021,9 +9116,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
@@ -9069,6 +9161,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea8;
     private javax.swing.JTextArea jTextArea9;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel n;
     private javax.swing.JLabel n1;
     private javax.swing.JTextField n_input;
