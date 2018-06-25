@@ -162,6 +162,8 @@ public class Home extends javax.swing.JFrame {
         CTRImage = new javax.swing.JLabel();
         CTRReturn1 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         CTRPanel = new javax.swing.JPanel();
         CTRTitle = new javax.swing.JLabel();
         CTRReturn = new javax.swing.JButton();
@@ -307,6 +309,7 @@ public class Home extends javax.swing.JFrame {
         CHAPDescription = new javax.swing.JScrollPane();
         jTextArea17 = new javax.swing.JTextArea();
         CHAPReturn = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
         CHAPPanel = new javax.swing.JPanel();
         KerberosPanelWelcome = new javax.swing.JPanel();
         KerberosIntro = new javax.swing.JLabel();
@@ -387,11 +390,9 @@ public class Home extends javax.swing.JFrame {
         SHAB1 = new javax.swing.JButton();
         SHAA2 = new javax.swing.JTextField();
         SHAB2 = new javax.swing.JButton();
-        SHAQ3 = new javax.swing.JLabel();
-        SHAA3 = new javax.swing.JTextField();
-        SHAB3 = new javax.swing.JButton();
         SHAA1 = new javax.swing.JTextField();
         SHAReturn = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
         MD5PanelWelcome = new javax.swing.JPanel();
         MD5Intro = new javax.swing.JLabel();
         ThemePicture6 = new javax.swing.JLabel();
@@ -417,6 +418,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea10 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
         RSASignaturePanelWelcome = new javax.swing.JPanel();
         RSASigIntro = new javax.swing.JLabel();
         ThemePicture7 = new javax.swing.JLabel();
@@ -1502,7 +1504,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(ECBPanelLayout.createSequentialGroup()
                         .addGap(65, 65, 65)
                         .addComponent(ECBQReturn)
-                        .addGap(194, 194, 194)
+                        .addGap(212, 212, 212)
                         .addComponent(Answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -1522,7 +1524,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(Answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ECB_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ECBQReturn))
-                .addContainerGap(200, Short.MAX_VALUE))
+                .addContainerGap(201, Short.MAX_VALUE))
         );
 
         MainPanel.add(ECBPanel, "card6");
@@ -1886,6 +1888,10 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel5.setText("CTR");
+
         javax.swing.GroupLayout CTRDescriptionLayout = new javax.swing.GroupLayout(CTRDescription);
         CTRDescription.setLayout(CTRDescriptionLayout);
         CTRDescriptionLayout.setHorizontalGroup(
@@ -1893,29 +1899,38 @@ public class Home extends javax.swing.JFrame {
             .addGroup(CTRDescriptionLayout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(793, Short.MAX_VALUE))
-            .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(CTRDescriptionLayout.createSequentialGroup()
-                    .addGap(181, 181, 181)
-                    .addComponent(CTRImage)
-                    .addContainerGap(181, Short.MAX_VALUE)))
+                .addGap(63, 63, 63)
+                .addComponent(CTRImage)
+                .addContainerGap(180, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRDescriptionLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRDescriptionLayout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addGap(419, 419, 419))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRDescriptionLayout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(370, 370, 370))))
             .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(CTRDescriptionLayout.createSequentialGroup()
                     .addGap(413, 413, 413)
                     .addComponent(CTRReturn1)
-                    .addContainerGap(414, Short.MAX_VALUE)))
+                    .addContainerGap(434, Short.MAX_VALUE)))
         );
         CTRDescriptionLayout.setVerticalGroup(
             CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRDescriptionLayout.createSequentialGroup()
-                .addContainerGap(610, Short.MAX_VALUE)
+            .addGroup(CTRDescriptionLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(154, 154, 154))
-            .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(CTRDescriptionLayout.createSequentialGroup()
-                    .addGap(72, 72, 72)
-                    .addComponent(CTRImage)
-                    .addContainerGap(123, Short.MAX_VALUE)))
+            .addGroup(CTRDescriptionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(CTRImage)
+                .addGap(43, 43, 43)
+                .addComponent(jLabel6)
+                .addContainerGap(91, Short.MAX_VALUE))
             .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(CTRDescriptionLayout.createSequentialGroup()
                     .addGap(360, 360, 360)
@@ -3398,6 +3413,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
         javax.swing.GroupLayout CHAP_DescriptionLayout = new javax.swing.GroupLayout(CHAP_Description);
         CHAP_Description.setLayout(CHAP_DescriptionLayout);
         CHAP_DescriptionLayout.setHorizontalGroup(
@@ -3409,27 +3426,32 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(CHAPPicture))
                     .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
                         .addGap(36, 36, 36)
-                        .addComponent(CHAPLabel))
-                    .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(CHAPReturn))
-                    .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
-                        .addGap(187, 187, 187)
-                        .addComponent(CHAPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(48, Short.MAX_VALUE))
+                        .addGroup(CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
+                                .addComponent(CHAPReturn)
+                                .addGap(86, 86, 86)
+                                .addComponent(CHAPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(CHAPLabel))))
+                .addGap(41, 41, 41))
+            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         CHAP_DescriptionLayout.setVerticalGroup(
             CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
-                .addGap(96, 96, 96)
+                .addContainerGap(96, Short.MAX_VALUE)
                 .addComponent(CHAPLabel)
                 .addGap(38, 38, 38)
                 .addComponent(CHAPPicture)
-                .addGap(34, 34, 34)
-                .addComponent(CHAPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
-                .addComponent(CHAPReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95))
+                .addGroup(CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(CHAPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CHAP_DescriptionLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CHAPReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)))
+                .addComponent(jLabel7))
         );
 
         MainPanel.add(CHAP_Description, "card75");
@@ -4120,6 +4142,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        SHA_Button.setBackground(new java.awt.Color(77, 132, 155));
+        SHA_Button.setForeground(new java.awt.Color(255, 255, 255));
         SHA_Button.setText("Enter");
         SHA_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4152,6 +4176,8 @@ public class Home extends javax.swing.JFrame {
         Former.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         Former.setText("Former:");
 
+        SHAB1.setBackground(new java.awt.Color(77, 132, 155));
+        SHAB1.setForeground(new java.awt.Color(255, 255, 255));
         SHAB1.setText("Submit");
         SHAB1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4165,20 +4191,12 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        SHAB2.setBackground(new java.awt.Color(77, 132, 155));
+        SHAB2.setForeground(new java.awt.Color(255, 255, 255));
         SHAB2.setText("Submit");
         SHAB2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SHA_Q2_Submit(evt);
-            }
-        });
-
-        SHAQ3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        SHAQ3.setText("3. Not sure yet?");
-
-        SHAB3.setText("Submit");
-        SHAB3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SHA_Q3_Submit(evt);
             }
         });
 
@@ -4197,90 +4215,82 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
         javax.swing.GroupLayout SHAPanelLayout = new javax.swing.GroupLayout(SHAPanel);
         SHAPanel.setLayout(SHAPanelLayout);
         SHAPanelLayout.setHorizontalGroup(
             SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHAPanelLayout.createSequentialGroup()
+                .addGap(211, 211, 211)
                 .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Current)
+                    .addComponent(Former))
+                .addGap(18, 18, 18)
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SHA_Output)
                     .addGroup(SHAPanelLayout.createSequentialGroup()
-                        .addGap(211, 211, 211)
-                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Current)
-                            .addComponent(Former))
+                        .addComponent(SHA_Text, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(SHA_Output)
-                            .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(SHA_Text, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(SHA_Button))
-                            .addComponent(FormerSHA)))
+                        .addComponent(SHA_Button))
+                    .addComponent(FormerSHA)))
+            .addGroup(SHAPanelLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(SHAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SHA_Questions)
+                    .addComponent(SHA_Header1)
+                    .addComponent(SHAQ1)
+                    .addComponent(SHAQ2)
                     .addGroup(SHAPanelLayout.createSequentialGroup()
-                        .addGap(184, 184, 184)
-                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(SHA_Questions)
-                            .addComponent(SHA_Header1)
-                            .addComponent(SHAQ1)
-                            .addComponent(SHAQ2)
-                            .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(SHAB1))
-                            .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(SHAB2))
-                            .addComponent(SHAQ3)
-                            .addGroup(SHAPanelLayout.createSequentialGroup()
-                                .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(SHAB3))))
+                        .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SHAB1))
                     .addGroup(SHAPanelLayout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(SHAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(237, Short.MAX_VALUE))
+                        .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SHAB2))))
+            .addComponent(jLabel21)
         );
         SHAPanelLayout.setVerticalGroup(
             SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHAPanelLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(SHA_Header1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SHA_Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SHA_Button))
-                .addGap(43, 43, 43)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SHA_Output)
-                    .addComponent(Current))
-                .addGap(18, 18, 18)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(FormerSHA)
-                    .addComponent(Former))
-                .addGap(27, 27, 27)
-                .addComponent(SHA_Questions)
-                .addGap(36, 36, 36)
-                .addComponent(SHAQ1)
-                .addGap(18, 18, 18)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SHAB1)
-                    .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(SHAQ2)
-                .addGap(18, 18, 18)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SHAB2))
-                .addGap(18, 18, 18)
-                .addComponent(SHAQ3)
-                .addGap(18, 18, 18)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SHAA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SHAB3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 167, Short.MAX_VALUE)
-                .addComponent(SHAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66))
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(SHAPanelLayout.createSequentialGroup()
+                        .addComponent(SHA_Header1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SHA_Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SHA_Button))
+                        .addGap(43, 43, 43)
+                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SHA_Output)
+                            .addComponent(Current))
+                        .addGap(18, 18, 18)
+                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(FormerSHA)
+                            .addComponent(Former))
+                        .addGap(27, 27, 27)
+                        .addComponent(SHA_Questions)
+                        .addGap(36, 36, 36)
+                        .addComponent(SHAQ1)
+                        .addGap(18, 18, 18)
+                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SHAB1)
+                            .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(SHAQ2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SHAB2))
+                        .addGap(55, 55, 55))
+                    .addGroup(SHAPanelLayout.createSequentialGroup()
+                        .addComponent(SHAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(51, 51, 51)))
+                .addComponent(jLabel21))
         );
 
         MainPanel.add(SHAPanel, "card11");
@@ -4420,6 +4430,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        MD5_Button.setBackground(new java.awt.Color(77, 132, 155));
+        MD5_Button.setForeground(new java.awt.Color(255, 255, 255));
         MD5_Button.setText("Enter");
         MD5_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4463,46 +4475,47 @@ public class Home extends javax.swing.JFrame {
         jTextArea10.setText("1. MD5 produces 128-bit hash values, how many \nunique hashes can MD5 produce?");
         jScrollPane4.setViewportView(jTextArea10);
 
+        jButton1.setBackground(new java.awt.Color(77, 132, 155));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Enter");
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout MD5PanelLayout = new javax.swing.GroupLayout(MD5Panel);
         MD5Panel.setLayout(MD5PanelLayout);
         MD5PanelLayout.setHorizontalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MD5PanelLayout.createSequentialGroup()
+                .addGap(211, 211, 211)
                 .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Current1)
+                    .addComponent(Former1))
+                .addGap(18, 18, 18)
+                .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(MD5_Output)
                     .addGroup(MD5PanelLayout.createSequentialGroup()
-                        .addGap(211, 211, 211)
-                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Current1)
-                            .addComponent(Former1))
+                        .addComponent(MD5_Text, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(MD5_Output)
-                            .addGroup(MD5PanelLayout.createSequentialGroup()
-                                .addComponent(MD5_Text, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(MD5_Button))
-                            .addComponent(MD5Former)))
-                    .addGroup(MD5PanelLayout.createSequentialGroup()
-                        .addGap(184, 184, 184)
-                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(MD5_Questions)
-                            .addComponent(MD5_Header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane4))
-                        .addGap(28, 28, 28)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1))
-                    .addGroup(MD5PanelLayout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(158, Short.MAX_VALUE))
+                        .addComponent(MD5_Button))
+                    .addComponent(MD5Former)))
+            .addGroup(MD5PanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(76, 76, 76)
+                .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(MD5_Questions)
+                    .addComponent(MD5_Header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane4))
+                .addGap(28, 28, 28)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1))
+            .addComponent(jLabel22)
         );
         MD5PanelLayout.setVerticalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MD5PanelLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addContainerGap(26, Short.MAX_VALUE)
                 .addComponent(MD5_Header, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -4518,15 +4531,19 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(Former1))
                 .addGap(27, 27, 27)
                 .addComponent(MD5_Questions)
-                .addGap(18, 18, 18)
                 .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton1)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 325, Short.MAX_VALUE)
-                .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66))
+                    .addGroup(MD5PanelLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jButton1)
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(MD5PanelLayout.createSequentialGroup()
+                        .addGap(119, 119, 119)
+                        .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(29, 29, 29)
+                .addComponent(jLabel22))
         );
 
         MainPanel.add(MD5Panel, "card11");
@@ -7092,10 +7109,6 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_SHA_Q2_Submit
 
-    private void SHA_Q3_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA_Q3_Submit
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SHA_Q3_Submit
-
     private void CBCMAC_Back_Button(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCMAC_Back_Button
         MainPanel.removeAll();
         MainPanel.repaint();
@@ -8975,10 +8988,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem SHA;
     private javax.swing.JTextField SHAA1;
     private javax.swing.JTextField SHAA2;
-    private javax.swing.JTextField SHAA3;
     private javax.swing.JButton SHAB1;
     private javax.swing.JButton SHAB2;
-    private javax.swing.JButton SHAB3;
     private javax.swing.JButton SHABB;
     private javax.swing.JButton SHADes;
     private javax.swing.JScrollPane SHADescrip;
@@ -8991,7 +9002,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton SHAQ;
     private javax.swing.JLabel SHAQ1;
     private javax.swing.JLabel SHAQ2;
-    private javax.swing.JLabel SHAQ3;
     private javax.swing.JButton SHAReturn;
     private javax.swing.JButton SHA_Button;
     private javax.swing.JTextArea SHA_Des;
@@ -9114,8 +9124,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
