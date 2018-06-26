@@ -6,38 +6,37 @@ Federally funded research project to create tools for higher level college stude
 ## Topics include: 
 * Ciphers
 	* Subtitution ciphers:
-		*  caesar
-		*  vigenere
-		*  atbash
+		*  Caesar
+		*  Vigenere
+		*  Atbash
 	* Block ciphers
 		*  Feistel Structure
-		*  AES
-		*  DES
 		*  RC5
+		*  3DES
 	* Stream ciphers:
 		*  One-Time pad
-		*  Synchronous
-		*  Self-Synchronizing
+		*  RC4
+		*  Linear-Feedback
+	* Entropy
 * Encryption Modes
 	*  CBC
 	*  CTR
 	*  ECB
 * Authentication
-	*  breaking CBC MAC
-	*  Pap
-	*  Chap
-	*  EAP
+	*  PAP
+	*  CHAP
 	*  Kerberos
+	* Breaking CBC MAC
 *  Digital Signatures
 	*  Hashing
-		*  Sha
+		*  SHA
 		*  MD5
 	*  RSA Signature
-* public/asymmetric crypto
+* Public Key
 	*  RSA
-	*  El Gamal
+	*  ElGamal
 	*  Diffie-Hellman
-* private/symmetric
+* Private Key
 	*  AES
 	*  Blowfish
 
