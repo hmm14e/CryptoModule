@@ -115,6 +115,10 @@ public class Home extends javax.swing.JFrame {
         VigenereQ = new javax.swing.JButton();
         LinearDescription = new javax.swing.JPanel();
         LinearFeedbackPanel = new javax.swing.JPanel();
+        LFSRIntro = new javax.swing.JLabel();
+        ThemePicture27 = new javax.swing.JLabel();
+        LFSRDes = new javax.swing.JButton();
+        LFSRQB = new javax.swing.JButton();
         EntropyDescription = new javax.swing.JPanel();
         EntropyPanel = new javax.swing.JPanel();
         ECBPanel = new javax.swing.JPanel();
@@ -1363,18 +1367,64 @@ public class Home extends javax.swing.JFrame {
 
         LinearFeedbackPanel.setBackground(new java.awt.Color(255, 255, 255));
 
+        LFSRIntro.setBackground(new java.awt.Color(255, 255, 255));
+        LFSRIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        LFSRIntro.setForeground(new java.awt.Color(48, 87, 120));
+        LFSRIntro.setText("Linear Feedback Shift Registers");
+
+        ThemePicture27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        LFSRDes.setBackground(new java.awt.Color(77, 132, 155));
+        LFSRDes.setForeground(new java.awt.Color(255, 255, 255));
+        LFSRDes.setText("Description");
+        LFSRDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LFSRDesActionPerformed(evt);
+            }
+        });
+
+        LFSRQB.setBackground(new java.awt.Color(77, 132, 155));
+        LFSRQB.setForeground(new java.awt.Color(255, 255, 255));
+        LFSRQB.setText("Questions");
+        LFSRQB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LFSRQBActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout LinearFeedbackPanelLayout = new javax.swing.GroupLayout(LinearFeedbackPanel);
         LinearFeedbackPanel.setLayout(LinearFeedbackPanelLayout);
         LinearFeedbackPanelLayout.setHorizontalGroup(
             LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addGroup(LinearFeedbackPanelLayout.createSequentialGroup()
+                .addComponent(ThemePicture27)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(LinearFeedbackPanelLayout.createSequentialGroup()
+                .addGroup(LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(LinearFeedbackPanelLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(LFSRDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(LFSRQB))
+                    .addGroup(LinearFeedbackPanelLayout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(LFSRIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         LinearFeedbackPanelLayout.setVerticalGroup(
             LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(LinearFeedbackPanelLayout.createSequentialGroup()
+                .addContainerGap(290, Short.MAX_VALUE)
+                .addComponent(LFSRIntro)
+                .addGap(18, 18, 18)
+                .addGroup(LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LFSRDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LFSRQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(133, 133, 133)
+                .addComponent(ThemePicture27))
         );
 
-        MainPanel.add(LinearFeedbackPanel, "card30");
+        MainPanel.add(LinearFeedbackPanel, "card48");
 
         EntropyDescription.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -8723,10 +8773,18 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(RC4PanelWelcome);
+        MainPanel.add(RC5PanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate(); 
     }//GEN-LAST:event_RC5BackActionPerformed
+
+    private void LFSRDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFSRDesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LFSRDesActionPerformed
+
+    private void LFSRQBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFSRQBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LFSRQBActionPerformed
 
     /**
      * @param args the command line arguments
@@ -9042,6 +9100,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton KerberosQ;
     private javax.swing.JButton KerberosReturn;
     private javax.swing.JLabel Kerberos_K;
+    private javax.swing.JButton LFSRDes;
+    private javax.swing.JLabel LFSRIntro;
+    private javax.swing.JButton LFSRQB;
     private javax.swing.JLabel LTUsername;
     private javax.swing.JPanel LinearDescription;
     private javax.swing.JMenuItem LinearFeedback;
@@ -9238,6 +9299,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture24;
     private javax.swing.JLabel ThemePicture25;
     private javax.swing.JLabel ThemePicture26;
+    private javax.swing.JLabel ThemePicture27;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
     private javax.swing.JLabel ThemePicture5;
