@@ -2302,8 +2302,10 @@ public class Home extends javax.swing.JFrame {
         jTextArea31.setEditable(false);
         jTextArea31.setColumns(20);
         jTextArea31.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea31.setLineWrap(true);
         jTextArea31.setRows(5);
-        jTextArea31.setText("- ");
+        jTextArea31.setText("- RC5 is a symmetric-key block cipher that uses the structure of a Feistel-like network.\n- It has a variable block size (32, 64 or 128 bits)\n- It has a variable key size (0 to 2040 bits)\n- It has a variable number of rounds (0 to 255)\n- It uses data-dependent rotations\n- Rc5 uses a complex key schedule algorithm using a one-way functions with the binary expansions of both e and the golden ratio. ");
+        jTextArea31.setWrapStyleWord(true);
         RC5_Description.setViewportView(jTextArea31);
 
         theme__.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
@@ -2342,7 +2344,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(RC5Descr)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(RC5_Description, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addComponent(RC5Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(theme__))
