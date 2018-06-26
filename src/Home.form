@@ -3243,6 +3243,11 @@
           </Layout>
         </Container>
         <Container class="javax.swing.JPanel" name="RC5Description">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
               <CardConstraints cardName="card85"/>
@@ -3279,7 +3284,7 @@
                       <Component id="RC5Descr" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="RC5_Description" min="-2" pref="270" max="-2" attributes="0"/>
-                      <EmptySpace pref="44" max="32767" attributes="0"/>
+                      <EmptySpace pref="39" max="32767" attributes="0"/>
                       <Component id="RC5Back" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="theme__" min="-2" max="-2" attributes="0"/>
@@ -3318,8 +3323,10 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Monospaced" size="14" style="0"/>
                     </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="- "/>
+                    <Property name="text" type="java.lang.String" value="- RC5 is a symmetric-key block cipher that uses the structure of a Feistel-like network.&#xa;- It has a variable block size (32, 64 or 128 bits)&#xa;- It has a variable key size (0 to 2040 bits)&#xa;- It has a variable number of rounds (0 to 255)&#xa;- It uses data-dependent rotations&#xa;- Rc5 uses a complex key schedule algorithm using a one-way functions with the binary expansions of both e and the golden ratio. "/>
+                    <Property name="wrapStyleWord" type="boolean" value="true"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -3405,7 +3412,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="78" green="57" red="30" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Short WEP Description"/>
+                <Property name="text" type="java.lang.String" value="WEP Description"/>
               </Properties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="WEPDescription">
@@ -3441,7 +3448,7 @@
             <Component class="javax.swing.JButton" name="jButton2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="78" green="57" red="30" type="rgb"/>
+                  <Color blue="9b" green="84" red="4d" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
