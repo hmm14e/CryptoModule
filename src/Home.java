@@ -2293,6 +2293,8 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(RC5Panel, "card85");
 
+        RC5Description.setBackground(new java.awt.Color(255, 255, 255));
+
         RC5Descr.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         RC5Descr.setForeground(new java.awt.Color(48, 87, 120));
         RC5Descr.setText("RC5");
@@ -2356,7 +2358,7 @@ public class Home extends javax.swing.JFrame {
 
         WEPDescription_Label.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         WEPDescription_Label.setForeground(new java.awt.Color(48, 87, 120));
-        WEPDescription_Label.setText("Short WEP Description");
+        WEPDescription_Label.setText("WEP Description");
 
         WEPDescription.setBorder(null);
         WEPDescription.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -2370,7 +2372,7 @@ public class Home extends javax.swing.JFrame {
         WEPDescription.setViewportView(jTextArea13);
         jTextArea13.setEditable(false);
 
-        jButton2.setBackground(new java.awt.Color(48, 87, 120));
+        jButton2.setBackground(new java.awt.Color(77, 132, 155));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Back");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -8725,7 +8727,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(RC4PanelWelcome);
+        MainPanel.add(RC5PanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate(); 
     }//GEN-LAST:event_RC5BackActionPerformed

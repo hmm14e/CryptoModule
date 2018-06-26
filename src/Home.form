@@ -3164,6 +3164,11 @@
           </Layout>
         </Container>
         <Container class="javax.swing.JPanel" name="RC5Description">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
               <CardConstraints cardName="card85"/>
@@ -3328,7 +3333,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="78" green="57" red="30" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Short WEP Description"/>
+                <Property name="text" type="java.lang.String" value="WEP Description"/>
               </Properties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="WEPDescription">
@@ -3364,7 +3369,7 @@
             <Component class="javax.swing.JButton" name="jButton2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="78" green="57" red="30" type="rgb"/>
+                  <Color blue="9b" green="84" red="4d" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
