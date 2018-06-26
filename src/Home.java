@@ -114,6 +114,11 @@ public class Home extends javax.swing.JFrame {
         ThemePicture17 = new javax.swing.JLabel();
         VigenereDes = new javax.swing.JButton();
         VigenereQ = new javax.swing.JButton();
+        RC5PanelWelcome = new javax.swing.JPanel();
+        RC5Intro = new javax.swing.JLabel();
+        ThemePicture26 = new javax.swing.JLabel();
+        RC5DescripB = new javax.swing.JButton();
+        RC5QB = new javax.swing.JButton();
         LinearDescription = new javax.swing.JPanel();
         LinearFeedbackPanel = new javax.swing.JPanel();
         EntropyDescription = new javax.swing.JPanel();
@@ -1335,6 +1340,66 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(VigenerePanelWelcome, "card48");
+
+        RC5PanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        RC5Intro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        RC5Intro.setForeground(new java.awt.Color(48, 87, 120));
+        RC5Intro.setText("RC5");
+
+        ThemePicture26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        RC5DescripB.setBackground(new java.awt.Color(77, 132, 155));
+        RC5DescripB.setForeground(new java.awt.Color(255, 255, 255));
+        RC5DescripB.setText("Description");
+        RC5DescripB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RC5DescripBActionPerformed(evt);
+            }
+        });
+
+        RC5QB.setBackground(new java.awt.Color(77, 132, 155));
+        RC5QB.setForeground(new java.awt.Color(255, 255, 255));
+        RC5QB.setText("Questions");
+        RC5QB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RC5QBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout RC5PanelWelcomeLayout = new javax.swing.GroupLayout(RC5PanelWelcome);
+        RC5PanelWelcome.setLayout(RC5PanelWelcomeLayout);
+        RC5PanelWelcomeLayout.setHorizontalGroup(
+            RC5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RC5PanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture26)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(RC5PanelWelcomeLayout.createSequentialGroup()
+                .addGroup(RC5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RC5PanelWelcomeLayout.createSequentialGroup()
+                        .addGap(293, 293, 293)
+                        .addComponent(RC5DescripB)
+                        .addGap(92, 92, 92)
+                        .addComponent(RC5QB))
+                    .addGroup(RC5PanelWelcomeLayout.createSequentialGroup()
+                        .addGap(388, 388, 388)
+                        .addComponent(RC5Intro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        RC5PanelWelcomeLayout.setVerticalGroup(
+            RC5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RC5PanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(275, Short.MAX_VALUE)
+                .addComponent(RC5Intro)
+                .addGap(18, 18, 18)
+                .addGroup(RC5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RC5DescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RC5QB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture26))
+        );
+
+        MainPanel.add(RC5PanelWelcome, "card41");
 
         LinearDescription.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -5325,7 +5390,7 @@ public class Home extends javax.swing.JFrame {
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSAPanelLayout.createSequentialGroup()
-                .addContainerGap(61, Short.MAX_VALUE)
+                .addContainerGap(48, Short.MAX_VALUE)
                 .addComponent(RSAHeader)
                 .addGap(18, 18, 18)
                 .addComponent(RSAQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6533,7 +6598,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(AESPanelLayout.createSequentialGroup()
                 .addGap(68, 68, 68)
                 .addComponent(AESTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 273, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 323, Short.MAX_VALUE)
                 .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50)
                 .addComponent(jLabel32))
@@ -6818,11 +6883,11 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 912, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 912, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 800, Short.MAX_VALUE)
         );
 
         pack();
@@ -7276,7 +7341,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
 
-            MainPanel.add(RC4PanelWelcome);
+            MainPanel.add(RC5PanelWelcome);
             MainPanel.repaint();
             MainPanel.revalidate();        // TODO add your handling code here:
     }//GEN-LAST:event_RC5ActionPerformed
@@ -8558,6 +8623,14 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate(); 
     }//GEN-LAST:event_RC4ActionPerformed
 
+    private void RC5DescripBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RC5DescripBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RC5DescripBActionPerformed
+
+    private void RC5QBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RC5QBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RC5QBActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8954,6 +9027,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel RC4PanelWelcome;
     private javax.swing.JLabel RC4_Label;
     private javax.swing.JMenuItem RC5;
+    private javax.swing.JButton RC5DescripB;
+    private javax.swing.JLabel RC5Intro;
+    private javax.swing.JPanel RC5PanelWelcome;
+    private javax.swing.JButton RC5QB;
     private javax.swing.JButton RCDescripB;
     private javax.swing.JButton RCQB;
     private javax.swing.JButton RCReturn;
@@ -9058,6 +9135,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture23;
     private javax.swing.JLabel ThemePicture24;
     private javax.swing.JLabel ThemePicture25;
+    private javax.swing.JLabel ThemePicture26;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
     private javax.swing.JLabel ThemePicture5;
