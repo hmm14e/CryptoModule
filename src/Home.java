@@ -113,8 +113,27 @@ public class Home extends javax.swing.JFrame {
         ThemePicture17 = new javax.swing.JLabel();
         VigenereDes = new javax.swing.JButton();
         VigenereQ = new javax.swing.JButton();
+        LinearPanelWelcome = new javax.swing.JPanel();
+        LFSRTitle = new javax.swing.JLabel();
+        ThemePicture27 = new javax.swing.JLabel();
+        LinearDes = new javax.swing.JButton();
+        LinearQ = new javax.swing.JButton();
+        LinearPanel = new javax.swing.JPanel();
+        LFSRHeader1 = new javax.swing.JLabel();
+        LFSR = new javax.swing.JLabel();
+        Seed = new javax.swing.JLabel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jTextArea33 = new javax.swing.JTextArea();
+        jLabel37 = new javax.swing.JLabel();
+        LFSR_Answer = new javax.swing.JTextField();
+        LFSR_Return = new javax.swing.JButton();
+        LFSR_Check = new javax.swing.JButton();
         LinearDescription = new javax.swing.JPanel();
-        LinearFeedbackPanel = new javax.swing.JPanel();
+        LFSRHeader = new javax.swing.JLabel();
+        LFSRDescrip = new javax.swing.JScrollPane();
+        jTextArea32 = new javax.swing.JTextArea();
+        jLabel33 = new javax.swing.JLabel();
+        LFSRBack = new javax.swing.JButton();
         EntropyDescription = new javax.swing.JPanel();
         EntropyPanel = new javax.swing.JPanel();
         ECBPanel = new javax.swing.JPanel();
@@ -749,7 +768,7 @@ public class Home extends javax.swing.JFrame {
             CaesarPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture15)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
                 .addGap(269, 269, 269)
                 .addGroup(CaesarPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1105,7 +1124,7 @@ public class Home extends javax.swing.JFrame {
             AtbashPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AtbashPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture16)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(AtbashPanelWelcomeLayout.createSequentialGroup()
                 .addGap(269, 269, 269)
                 .addGroup(AtbashPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1318,7 +1337,7 @@ public class Home extends javax.swing.JFrame {
             VigenerePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(VigenerePanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture17)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(VigenerePanelWelcomeLayout.createSequentialGroup()
                 .addGroup(VigenerePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(VigenerePanelWelcomeLayout.createSequentialGroup()
@@ -1346,35 +1365,225 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(VigenerePanelWelcome, "card48");
 
+        LinearPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        LFSRTitle.setBackground(new java.awt.Color(255, 255, 255));
+        LFSRTitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        LFSRTitle.setForeground(new java.awt.Color(48, 87, 120));
+        LFSRTitle.setText("Linear-Feedback Shift Register");
+
+        ThemePicture27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        LinearDes.setBackground(new java.awt.Color(77, 132, 155));
+        LinearDes.setForeground(new java.awt.Color(255, 255, 255));
+        LinearDes.setText("Description");
+        LinearDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LinearDesActionPerformed(evt);
+            }
+        });
+
+        LinearQ.setBackground(new java.awt.Color(77, 132, 155));
+        LinearQ.setForeground(new java.awt.Color(255, 255, 255));
+        LinearQ.setText("Questions");
+        LinearQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LinearQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout LinearPanelWelcomeLayout = new javax.swing.GroupLayout(LinearPanelWelcome);
+        LinearPanelWelcome.setLayout(LinearPanelWelcomeLayout);
+        LinearPanelWelcomeLayout.setHorizontalGroup(
+            LinearPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LinearPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture27)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(LinearPanelWelcomeLayout.createSequentialGroup()
+                .addGap(202, 202, 202)
+                .addGroup(LinearPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(LinearPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(58, 58, 58)
+                        .addComponent(LinearDes)
+                        .addGap(91, 91, 91)
+                        .addComponent(LinearQ))
+                    .addComponent(LFSRTitle))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        LinearPanelWelcomeLayout.setVerticalGroup(
+            LinearPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LinearPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(244, Short.MAX_VALUE)
+                .addComponent(LFSRTitle)
+                .addGap(37, 37, 37)
+                .addGroup(LinearPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LinearQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LinearDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(160, 160, 160)
+                .addComponent(ThemePicture27))
+        );
+
+        MainPanel.add(LinearPanelWelcome, "card30");
+
+        LinearPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        LFSRHeader1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        LFSRHeader1.setForeground(new java.awt.Color(48, 87, 120));
+        LFSRHeader1.setText("Linear-Feedback Shift Register (LFSR)");
+
+        LFSR.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        LFSR.setText("<html>Let x<sub>n</sub> = (x<sub>n-1</sub>+x<sub>n-2</sub>+x<sub>n-4</sub>+x<sub>n-5</sub>+x<sub>n-8</sub>) mod 2 </html>");
+
+        Seed.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        Seed.setText("Seed = 11001010, Plaintext Message = 1101100101010110");
+
+        jScrollPane10.setBorder(null);
+        jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        jTextArea33.setColumns(20);
+        jTextArea33.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        jTextArea33.setLineWrap(true);
+        jTextArea33.setRows(5);
+        jTextArea33.setText("\tUse the table to find the ciphertext of the encrypted message. \n(Hint: Find the rest of the seed value and then XOR the seed and plaintext to find the ciphertext)");
+        jTextArea33.setWrapStyleWord(true);
+        jScrollPane10.setViewportView(jTextArea33);
+
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/LFSR1.png"))); // NOI18N
+
+        LFSR_Answer.setColumns(15);
+
+        LFSR_Return.setBackground(new java.awt.Color(77, 132, 155));
+        LFSR_Return.setForeground(new java.awt.Color(255, 255, 255));
+        LFSR_Return.setText("Return");
+        LFSR_Return.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LFSR_ReturnActionPerformed(evt);
+            }
+        });
+
+        LFSR_Check.setBackground(new java.awt.Color(77, 132, 155));
+        LFSR_Check.setForeground(new java.awt.Color(255, 255, 255));
+        LFSR_Check.setText("Enter");
+        LFSR_Check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LFSR_CheckActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout LinearPanelLayout = new javax.swing.GroupLayout(LinearPanel);
+        LinearPanel.setLayout(LinearPanelLayout);
+        LinearPanelLayout.setHorizontalGroup(
+            LinearPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LinearPanelLayout.createSequentialGroup()
+                .addGroup(LinearPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(LinearPanelLayout.createSequentialGroup()
+                        .addGap(156, 156, 156)
+                        .addComponent(LFSR, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(LinearPanelLayout.createSequentialGroup()
+                        .addGap(118, 118, 118)
+                        .addComponent(Seed))
+                    .addGroup(LinearPanelLayout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jLabel37))
+                    .addGroup(LinearPanelLayout.createSequentialGroup()
+                        .addGap(247, 247, 247)
+                        .addComponent(LFSR_Answer, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(55, 55, 55)
+                        .addComponent(LFSR_Check))
+                    .addGroup(LinearPanelLayout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(LFSR_Return))
+                    .addGroup(LinearPanelLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 682, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(LinearPanelLayout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addComponent(LFSRHeader1)))
+                .addContainerGap(71, Short.MAX_VALUE))
+        );
+        LinearPanelLayout.setVerticalGroup(
+            LinearPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LinearPanelLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(LFSRHeader1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(LFSR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Seed)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addGroup(LinearPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LFSR_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LFSR_Answer, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
+                .addComponent(LFSR_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31))
+        );
+
+        MainPanel.add(LinearPanel, "card87");
+
         LinearDescription.setBackground(new java.awt.Color(255, 255, 255));
+
+        LFSRHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        LFSRHeader.setForeground(new java.awt.Color(48, 87, 120));
+        LFSRHeader.setText("Linear-Feedback Shift Register (LFSR)");
+
+        LFSRDescrip.setBorder(null);
+        LFSRDescrip.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        jTextArea32.setEditable(false);
+        jTextArea32.setColumns(20);
+        jTextArea32.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea32.setLineWrap(true);
+        jTextArea32.setRows(5);
+        jTextArea32.setText("- LFSR is a shift register who's input bit(s) is a linear function of its previous state\n- A LFSR's input bit is usually driven by the XOR of some bits of the overall shift register value\n- The initial value of the LFSR is called the seed\n- There is a finite number of states for a given input\n- LFSRs are used for generating pseduo-random numbers, pseudo-random noise sequences, fast digital counters, and whitening sequences");
+        jTextArea32.setWrapStyleWord(true);
+        LFSRDescrip.setViewportView(jTextArea32);
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        LFSRBack.setBackground(new java.awt.Color(77, 132, 155));
+        LFSRBack.setForeground(new java.awt.Color(255, 255, 255));
+        LFSRBack.setText("Return");
+        LFSRBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LFSRBackActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout LinearDescriptionLayout = new javax.swing.GroupLayout(LinearDescription);
         LinearDescription.setLayout(LinearDescriptionLayout);
         LinearDescriptionLayout.setHorizontalGroup(
             LinearDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
+            .addComponent(jLabel33)
+            .addGroup(LinearDescriptionLayout.createSequentialGroup()
+                .addGap(394, 394, 394)
+                .addComponent(LFSRBack))
+            .addGroup(LinearDescriptionLayout.createSequentialGroup()
+                .addGap(117, 117, 117)
+                .addGroup(LinearDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LFSRDescrip, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(LinearDescriptionLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addComponent(LFSRHeader))))
         );
         LinearDescriptionLayout.setVerticalGroup(
             LinearDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGroup(LinearDescriptionLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(LFSRHeader)
+                .addGap(18, 18, 18)
+                .addComponent(LFSRDescrip, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addComponent(LFSRBack, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel33))
         );
 
         MainPanel.add(LinearDescription, "card65");
-
-        LinearFeedbackPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout LinearFeedbackPanelLayout = new javax.swing.GroupLayout(LinearFeedbackPanel);
-        LinearFeedbackPanel.setLayout(LinearFeedbackPanelLayout);
-        LinearFeedbackPanelLayout.setHorizontalGroup(
-            LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 912, Short.MAX_VALUE)
-        );
-        LinearFeedbackPanelLayout.setVerticalGroup(
-            LinearFeedbackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-        );
-
-        MainPanel.add(LinearFeedbackPanel, "card30");
 
         EntropyDescription.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1585,7 +1794,7 @@ public class Home extends javax.swing.JFrame {
             ECBPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ECBPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture18)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(ECBPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(ECBPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ECBPanelWelcomeLayout.createSequentialGroup()
@@ -1681,7 +1890,7 @@ public class Home extends javax.swing.JFrame {
             CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture19)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
@@ -1761,7 +1970,7 @@ public class Home extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(Decrypt)
                                 .addGap(169, 169, 169)))))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         CBCDescriptionLayout.setVerticalGroup(
             CBCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1826,7 +2035,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(CBCPanelLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(CBCtitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 355, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 404, Short.MAX_VALUE)
                 .addComponent(CBCReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel26))
@@ -1870,7 +2079,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(63, 63, 63)
                 .addComponent(CTRImage)
-                .addContainerGap(200, Short.MAX_VALUE))
+                .addContainerGap(180, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CTRDescriptionLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1884,7 +2093,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(CTRDescriptionLayout.createSequentialGroup()
                     .addGap(413, 413, 413)
                     .addComponent(CTRReturn1)
-                    .addContainerGap(434, Short.MAX_VALUE)))
+                    .addContainerGap(414, Short.MAX_VALUE)))
         );
         CTRDescriptionLayout.setVerticalGroup(
             CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1899,12 +2108,12 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(CTRImage)
                 .addGap(43, 43, 43)
                 .addComponent(jLabel6)
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(96, Short.MAX_VALUE))
             .addGroup(CTRDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(CTRDescriptionLayout.createSequentialGroup()
                     .addGap(360, 360, 360)
                     .addComponent(CTRReturn1)
-                    .addContainerGap(367, Short.MAX_VALUE)))
+                    .addContainerGap(411, Short.MAX_VALUE)))
         );
 
         MainPanel.add(CTRDescription, "card65");
@@ -1948,7 +2157,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(CTRPanelLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(CTRTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 363, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 406, Short.MAX_VALUE)
                 .addComponent(CTRReturn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel27))
@@ -1989,7 +2198,7 @@ public class Home extends javax.swing.JFrame {
             CTRPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture20)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(CTRPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
@@ -2093,7 +2302,7 @@ public class Home extends javax.swing.JFrame {
                                 .addGroup(FeistelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Feistel_Entry, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Feistel_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(34, 335, Short.MAX_VALUE)))
+                                .addGap(34, 334, Short.MAX_VALUE)))
                         .addComponent(Theme_, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanelLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2252,7 +2461,7 @@ public class Home extends javax.swing.JFrame {
             RC5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RC5PanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture26)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(RC5PanelWelcomeLayout.createSequentialGroup()
                 .addGroup(RC5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RC5PanelWelcomeLayout.createSequentialGroup()
@@ -2346,7 +2555,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(RC5Descr)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(RC5_Description, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
                 .addComponent(RC5Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(theme__))
@@ -2408,7 +2617,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(WEPDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
 
         MainPanel.add(WEPPanel, "card39");
@@ -2494,7 +2703,7 @@ public class Home extends javax.swing.JFrame {
         DESPanelLayout.setVerticalGroup(
             DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DESPanelLayout.createSequentialGroup()
-                .addContainerGap(45, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DESLabel)
                 .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DESPanelLayout.createSequentialGroup()
@@ -2673,7 +2882,7 @@ public class Home extends javax.swing.JFrame {
             OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture14)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
@@ -2960,7 +3169,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(RC4PanelLayout.createSequentialGroup()
                         .addGap(369, 369, 369)
                         .addComponent(RCReturn)))
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(RC4PanelLayout.createSequentialGroup()
                 .addGroup(RC4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RC4PanelLayout.createSequentialGroup()
@@ -3031,7 +3240,7 @@ public class Home extends javax.swing.JFrame {
             RC4PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RC4PanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture21)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(RC4PanelWelcomeLayout.createSequentialGroup()
                 .addGroup(RC4PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RC4PanelWelcomeLayout.createSequentialGroup()
@@ -3122,7 +3331,7 @@ public class Home extends javax.swing.JFrame {
                         .addGroup(RC4DescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(RC4Description, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RC4DescripPanelLayout.setVerticalGroup(
             RC4DescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3447,7 +3656,7 @@ public class Home extends javax.swing.JFrame {
                                 .addComponent(PAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PAPQPanelLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(PAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(PAPB))
@@ -3572,7 +3781,7 @@ public class Home extends javax.swing.JFrame {
         CHAP_DescriptionLayout.setVerticalGroup(
             CHAP_DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CHAP_DescriptionLayout.createSequentialGroup()
-                .addContainerGap(96, Short.MAX_VALUE)
+                .addContainerGap(57, Short.MAX_VALUE)
                 .addComponent(CHAPLabel)
                 .addGap(38, 38, 38)
                 .addComponent(CHAPPicture)
@@ -3766,7 +3975,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(KerberosPanelLayout.createSequentialGroup()
                 .addGap(87, 87, 87)
                 .addComponent(Kerberos_K)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 292, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 341, Short.MAX_VALUE)
                 .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel29))
@@ -4186,7 +4395,7 @@ public class Home extends javax.swing.JFrame {
             SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture5)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
@@ -4397,7 +4606,7 @@ public class Home extends javax.swing.JFrame {
         SHAPanelLayout.setVerticalGroup(
             SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHAPanelLayout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(SHAPanelLayout.createSequentialGroup()
                         .addComponent(SHA_Header1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4531,7 +4740,7 @@ public class Home extends javax.swing.JFrame {
         MD5DescriptionLayout.setHorizontalGroup(
             MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MD5DescriptionLayout.createSequentialGroup()
-                .addGap(0, 12, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(Theme__4))
             .addGroup(MD5DescriptionLayout.createSequentialGroup()
                 .addGap(376, 376, 376)
@@ -4656,7 +4865,7 @@ public class Home extends javax.swing.JFrame {
         MD5PanelLayout.setVerticalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MD5PanelLayout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
+                .addContainerGap(93, Short.MAX_VALUE)
                 .addComponent(MD5_Header, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -4722,7 +4931,7 @@ public class Home extends javax.swing.JFrame {
             RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture7)
-                .addGap(0, 71, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
                 .addGap(269, 269, 269)
                 .addGroup(RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -4731,7 +4940,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(RSASigDes)
                         .addGap(66, 66, 66)
                         .addComponent(RSASigQ)))
-                .addContainerGap(411, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RSASignaturePanelWelcomeLayout.setVerticalGroup(
             RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4802,7 +5011,7 @@ public class Home extends javax.swing.JFrame {
         RSASigDescriptionLayout.setVerticalGroup(
             RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSASigDescriptionLayout.createSequentialGroup()
-                .addContainerGap(79, Short.MAX_VALUE)
+                .addContainerGap(120, Short.MAX_VALUE)
                 .addComponent(RSASigIntro1)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5293,7 +5502,7 @@ public class Home extends javax.swing.JFrame {
             RSAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSAPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture13)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(RSAPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(RSAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RSAPanelWelcomeLayout.createSequentialGroup()
@@ -5374,7 +5583,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(RSADescripHeader)
                 .addGap(18, 18, 18)
                 .addComponent(RSADescrip, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(RSABB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Theme__3))
@@ -5469,7 +5678,7 @@ public class Home extends javax.swing.JFrame {
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSAPanelLayout.createSequentialGroup()
-                .addContainerGap(48, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(RSAHeader)
                 .addGap(18, 18, 18)
                 .addComponent(RSAQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5535,7 +5744,7 @@ public class Home extends javax.swing.JFrame {
             ElGamalPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ElGamalPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture8)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(ElGamalPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(ElGamalPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ElGamalPanelWelcomeLayout.createSequentialGroup()
@@ -5786,7 +5995,7 @@ public class Home extends javax.swing.JFrame {
             DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture9)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
@@ -5858,7 +6067,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(DHDescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
                         .addComponent(DHBB)))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DHDescriptionLayout.setVerticalGroup(
             DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -5948,7 +6157,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(DHDiagram1)
                         .addGap(18, 18, 18)
                         .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 147, Short.MAX_VALUE)
                         .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(110, 110, 110))
         );
@@ -6073,7 +6282,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DH2_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -6136,7 +6345,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel3Layout.createSequentialGroup()
                         .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6202,7 +6411,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(36, 36, 36)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel4Layout.createSequentialGroup()
                         .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6401,7 +6610,7 @@ public class Home extends javax.swing.JFrame {
             BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture10)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
@@ -6472,7 +6681,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
                         .addGap(377, 377, 377)
                         .addComponent(BlowfishBB)))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         BlowfishDescriptionLayout.setVerticalGroup(
             BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -6552,7 +6761,7 @@ public class Home extends javax.swing.JFrame {
             AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture11)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
@@ -6635,7 +6844,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(AESBack, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 116, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
                 .addComponent(ThemePicture24))
         );
 
@@ -7440,7 +7649,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
 
-            MainPanel.add(LinearFeedbackPanel);
+            MainPanel.add(LinearPanelWelcome);
             MainPanel.repaint();
             MainPanel.revalidate();        // TODO add your handling code here:
     }//GEN-LAST:event_LinearFeedbackActionPerformed
@@ -8732,6 +8941,56 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate(); 
     }//GEN-LAST:event_RC5BackActionPerformed
 
+    private void LinearDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LinearDesActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(LinearDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate(); 
+    }//GEN-LAST:event_LinearDesActionPerformed
+
+    private void LinearQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LinearQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(LinearPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate(); 
+    }//GEN-LAST:event_LinearQActionPerformed
+
+    private void LFSRBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFSRBackActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(LinearPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate(); 
+    }//GEN-LAST:event_LFSRBackActionPerformed
+
+    private void LFSR_ReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFSR_ReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(LinearPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate(); 
+    }//GEN-LAST:event_LFSR_ReturnActionPerformed
+
+    private void LFSR_CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LFSR_CheckActionPerformed
+        String answer = LFSR_Answer.getText();
+        
+        if(answer.equals("0001001110100010"))
+            JOptionPane.showMessageDialog(null, "You are correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
+
+        else
+            JOptionPane.showMessageDialog(null, "Try again!", "Incorrect!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_LFSR_CheckActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -9046,10 +9305,22 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton KerberosQ;
     private javax.swing.JButton KerberosReturn;
     private javax.swing.JLabel Kerberos_K;
+    private javax.swing.JLabel LFSR;
+    private javax.swing.JButton LFSRBack;
+    private javax.swing.JScrollPane LFSRDescrip;
+    private javax.swing.JLabel LFSRHeader;
+    private javax.swing.JLabel LFSRHeader1;
+    private javax.swing.JLabel LFSRTitle;
+    private javax.swing.JTextField LFSR_Answer;
+    private javax.swing.JButton LFSR_Check;
+    private javax.swing.JButton LFSR_Return;
     private javax.swing.JLabel LTUsername;
+    private javax.swing.JButton LinearDes;
     private javax.swing.JPanel LinearDescription;
     private javax.swing.JMenuItem LinearFeedback;
-    private javax.swing.JPanel LinearFeedbackPanel;
+    private javax.swing.JPanel LinearPanel;
+    private javax.swing.JPanel LinearPanelWelcome;
+    private javax.swing.JButton LinearQ;
     private javax.swing.JMenuItem MD5;
     private javax.swing.JButton MD5Backk;
     private javax.swing.JButton MD5Des;
@@ -9199,6 +9470,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel SHA_Output;
     private javax.swing.JLabel SHA_Questions;
     private javax.swing.JTextField SHA_Text;
+    private javax.swing.JLabel Seed;
     private javax.swing.JLabel SentPassword;
     private javax.swing.JLabel SentUN;
     private javax.swing.JTextField Signature;
@@ -9242,6 +9514,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture24;
     private javax.swing.JLabel ThemePicture25;
     private javax.swing.JLabel ThemePicture26;
+    private javax.swing.JLabel ThemePicture27;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
     private javax.swing.JLabel ThemePicture5;
@@ -9323,6 +9596,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -9332,6 +9607,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -9365,6 +9641,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea30;
     private javax.swing.JTextArea jTextArea31;
+    private javax.swing.JTextArea jTextArea32;
+    private javax.swing.JTextArea jTextArea33;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
