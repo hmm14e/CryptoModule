@@ -185,6 +185,12 @@ public class Home extends javax.swing.JFrame {
         CBCtitle = new javax.swing.JLabel();
         CBCReturn = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        DecryptImage1 = new javax.swing.JLabel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jTextArea35 = new javax.swing.JTextArea();
+        CBCYes = new javax.swing.JButton();
+        CBCNo = new javax.swing.JButton();
         CTRDescription = new javax.swing.JPanel();
         CTRImage = new javax.swing.JLabel();
         CTRReturn1 = new javax.swing.JButton();
@@ -2130,30 +2136,79 @@ public class Home extends javax.swing.JFrame {
 
         jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
+        DecryptImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/CBCDecrypt.png"))); // NOI18N
+
+        jScrollPane11.setBorder(null);
+        jScrollPane11.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane11.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea35.setEditable(false);
+        jTextArea35.setColumns(20);
+        jTextArea35.setRows(5);
+        jTextArea35.setText("To the right is the decrpytion mode of CBC-Mode. Given the \nplaintext and corresponding ciphertext would an attacker \nsuccesfully be able to insert his own 8-byte phrase in place \nof plaintext 1?");
+        jScrollPane11.setViewportView(jTextArea35);
+
+        CBCYes.setBackground(new java.awt.Color(77, 132, 155));
+        CBCYes.setForeground(new java.awt.Color(255, 255, 255));
+        CBCYes.setText("Yes");
+
+        CBCNo.setBackground(new java.awt.Color(77, 132, 155));
+        CBCNo.setForeground(new java.awt.Color(255, 255, 255));
+        CBCNo.setText("No");
+
         javax.swing.GroupLayout CBCPanelLayout = new javax.swing.GroupLayout(CBCPanel);
         CBCPanel.setLayout(CBCPanelLayout);
         CBCPanelLayout.setHorizontalGroup(
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel26))
+            .addGroup(CBCPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(CBCReturn)
+                .addGap(276, 276, 276)
+                .addComponent(CBCtitle)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(CBCPanelLayout.createSequentialGroup()
                 .addGroup(CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CBCPanelLayout.createSequentialGroup()
-                        .addGap(351, 351, 351)
-                        .addComponent(CBCtitle))
-                    .addGroup(CBCPanelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(CBCReturn)))
-                .addGap(366, 366, 366))
-            .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jScrollPane11))
+                    .addGroup(CBCPanelLayout.createSequentialGroup()
+                        .addGap(114, 114, 114)
+                        .addComponent(jLabel35)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(CBCPanelLayout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(CBCYes)
+                        .addGap(106, 106, 106)
+                        .addComponent(CBCNo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DecryptImage1)
+                .addGap(33, 33, 33))
         );
         CBCPanelLayout.setVerticalGroup(
             CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCPanelLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(CBCtitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 404, Short.MAX_VALUE)
+                .addGap(25, 25, 25)
+                .addGroup(CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CBCPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel35)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(CBCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(CBCYes)
+                            .addComponent(CBCNo)))
+                    .addComponent(DecryptImage1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(CBCReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel26))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         MainPanel.add(CBCPanel, "card32");
@@ -4321,6 +4376,10 @@ public class Home extends javax.swing.JFrame {
         CBCMAC.setLayout(CBCMACLayout);
         CBCMACLayout.setHorizontalGroup(
             CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(CBCMACTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(213, 213, 213))
             .addGroup(CBCMACLayout.createSequentialGroup()
                 .addGroup(CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CBCMACLayout.createSequentialGroup()
@@ -4354,15 +4413,9 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(CBCMAC_Submit))
                     .addGroup(CBCMACLayout.createSequentialGroup()
                         .addGap(72, 72, 72)
-                        .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(74, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(CBCMACTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(213, 213, 213))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CBCMACLayout.createSequentialGroup()
-                .addComponent(CBCMACReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 814, Short.MAX_VALUE))
+                        .addComponent(Question3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CBCMACReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(137, Short.MAX_VALUE))
         );
         CBCMACLayout.setVerticalGroup(
             CBCMACLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -6214,7 +6267,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(DHDiagram1)
                         .addGap(18, 18, 18)
                         .addComponent(DHText, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 112, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
                         .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(110, 110, 110))
         );
@@ -6339,7 +6392,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DHImage2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
                 .addGroup(DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DH2_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -6402,7 +6455,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH3Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 147, Short.MAX_VALUE)
                 .addGroup(DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DH3_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -6465,7 +6518,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DH4Image)
                 .addGap(36, 36, 36)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addGroup(DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DH4_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -9150,10 +9203,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel CBCMACTitle;
     private javax.swing.JPanel CBCMAC_Description;
     private javax.swing.JButton CBCMAC_Submit;
+    private javax.swing.JButton CBCNo;
     private javax.swing.JPanel CBCPanel;
     private javax.swing.JPanel CBCPanelWelcome;
     private javax.swing.JButton CBCQ;
     private javax.swing.JButton CBCReturn;
+    private javax.swing.JButton CBCYes;
     private javax.swing.JMenuItem CBC_MAC;
     private javax.swing.JLabel CBCtitle;
     private javax.swing.JMenuItem CHAP;
@@ -9282,6 +9337,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel DH_intro;
     private javax.swing.JLabel Decrypt;
     private javax.swing.JLabel DecryptImage;
+    private javax.swing.JLabel DecryptImage1;
     private javax.swing.JLabel DescriptionWEP_Label;
     private javax.swing.JButton Description_button;
     private javax.swing.JMenuItem Dev;
@@ -9661,6 +9717,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -9672,6 +9729,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -9708,6 +9766,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea32;
     private javax.swing.JTextArea jTextArea33;
     private javax.swing.JTextArea jTextArea34;
+    private javax.swing.JTextArea jTextArea35;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
