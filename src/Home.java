@@ -230,6 +230,9 @@ public class Home extends javax.swing.JFrame {
         RC5DescripB = new javax.swing.JButton();
         RC5QB = new javax.swing.JButton();
         RC5Panel = new javax.swing.JPanel();
+        RC5Label = new javax.swing.JLabel();
+        RCReturn2 = new javax.swing.JButton();
+        jLabel36 = new javax.swing.JLabel();
         RC5Description = new javax.swing.JPanel();
         RC5Descr = new javax.swing.JLabel();
         RC5_Description = new javax.swing.JScrollPane();
@@ -2653,18 +2656,52 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(RC5PanelWelcome, "card41");
 
+        RC5Panel.setBackground(new java.awt.Color(255, 255, 255));
+
+        RC5Label.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
+        RC5Label.setForeground(new java.awt.Color(48, 87, 120));
+        RC5Label.setText("RC5");
+
+        RCReturn2.setBackground(new java.awt.Color(77, 132, 155));
+        RCReturn2.setForeground(new java.awt.Color(255, 255, 255));
+        RCReturn2.setText("Return");
+        RCReturn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RCReturn2ActionPerformed(evt);
+            }
+        });
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
         javax.swing.GroupLayout RC5PanelLayout = new javax.swing.GroupLayout(RC5Panel);
         RC5Panel.setLayout(RC5PanelLayout);
         RC5PanelLayout.setHorizontalGroup(
             RC5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(RC5PanelLayout.createSequentialGroup()
+                .addComponent(jLabel36)
+                .addGap(0, 12, Short.MAX_VALUE))
+            .addGroup(RC5PanelLayout.createSequentialGroup()
+                .addGroup(RC5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RC5PanelLayout.createSequentialGroup()
+                        .addGap(415, 415, 415)
+                        .addComponent(RC5Label))
+                    .addGroup(RC5PanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(RCReturn2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RC5PanelLayout.setVerticalGroup(
             RC5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(RC5PanelLayout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(RC5Label)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 395, Short.MAX_VALUE)
+                .addComponent(RCReturn2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel36))
         );
 
-        MainPanel.add(RC5Panel, "card85");
+        MainPanel.add(RC5Panel, "card26");
 
         RC5Description.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -6141,6 +6178,8 @@ public class Home extends javax.swing.JFrame {
         jLabel3.setText("Diffie-Hellman ");
 
         jScrollPane3.setBorder(null);
+        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea11.setColumns(20);
         jTextArea11.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
@@ -6167,26 +6206,26 @@ public class Home extends javax.swing.JFrame {
             DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHDescriptionLayout.createSequentialGroup()
                 .addGroup(DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DHDescriptionLayout.createSequentialGroup()
-                        .addGap(287, 287, 287)
-                        .addComponent(jLabel3))
                     .addComponent(ThemePicture22)
                     .addGroup(DHDescriptionLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(DHDescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
-                        .addComponent(DHBB)))
+                        .addComponent(DHBB))
+                    .addGroup(DHDescriptionLayout.createSequentialGroup()
+                        .addGap(303, 303, 303)
+                        .addComponent(jLabel3))
+                    .addGroup(DHDescriptionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DHDescriptionLayout.setVerticalGroup(
             DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHDescriptionLayout.createSequentialGroup()
-                .addGap(62, 62, 62)
+                .addContainerGap(31, Short.MAX_VALUE)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23)
                 .addComponent(DHBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ThemePicture22))
@@ -6747,6 +6786,8 @@ public class Home extends javax.swing.JFrame {
         BlowfishTitle.setText("Blowfish ");
 
         jScrollPane6.setBorder(null);
+        jScrollPane6.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane6.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea27.setColumns(20);
         jTextArea27.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
@@ -9103,6 +9144,16 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_EntropyReturnActionPerformed
 
+    private void RCReturn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RCReturn2ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(RC5PanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_RCReturn2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -9522,6 +9573,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton RC5DescripB;
     private javax.swing.JPanel RC5Description;
     private javax.swing.JLabel RC5Intro;
+    private javax.swing.JLabel RC5Label;
     private javax.swing.JPanel RC5Panel;
     private javax.swing.JPanel RC5PanelWelcome;
     private javax.swing.JButton RC5QB;
@@ -9530,6 +9582,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton RCQB;
     private javax.swing.JButton RCReturn;
     private javax.swing.JButton RCReturn1;
+    private javax.swing.JButton RCReturn2;
     private javax.swing.JMenuItem RSA;
     private javax.swing.JTextField RSAA1_1;
     private javax.swing.JTextField RSAA1_2;
@@ -9718,6 +9771,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
