@@ -233,6 +233,8 @@ public class Home extends javax.swing.JFrame {
         RC5Label = new javax.swing.JLabel();
         RCReturn2 = new javax.swing.JButton();
         jLabel36 = new javax.swing.JLabel();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        jTextArea36 = new javax.swing.JTextArea();
         RC5Description = new javax.swing.JPanel();
         RC5Descr = new javax.swing.JLabel();
         RC5_Description = new javax.swing.JScrollPane();
@@ -468,6 +470,10 @@ public class Home extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jButton6 = new javax.swing.JButton();
+        jTextField4 = new javax.swing.JTextField();
+        jButton7 = new javax.swing.JButton();
         RSASignaturePanelWelcome = new javax.swing.JPanel();
         RSASigIntro = new javax.swing.JLabel();
         ThemePicture7 = new javax.swing.JLabel();
@@ -700,7 +706,6 @@ public class Home extends javax.swing.JFrame {
         jPasswordField1.setText("jPasswordField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(885, 750));
         setResizable(false);
 
         MainPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -2185,8 +2190,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(135, 135, 135)
                         .addComponent(CBCYes)
                         .addGap(106, 106, 106)
-                        .addComponent(CBCNo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(CBCNo)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DecryptImage1)
                 .addGap(33, 33, 33))
@@ -2673,6 +2677,10 @@ public class Home extends javax.swing.JFrame {
 
         jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
+        jTextArea36.setColumns(20);
+        jTextArea36.setRows(5);
+        jScrollPane12.setViewportView(jTextArea36);
+
         javax.swing.GroupLayout RC5PanelLayout = new javax.swing.GroupLayout(RC5Panel);
         RC5Panel.setLayout(RC5PanelLayout);
         RC5PanelLayout.setHorizontalGroup(
@@ -2683,19 +2691,25 @@ public class Home extends javax.swing.JFrame {
             .addGroup(RC5PanelLayout.createSequentialGroup()
                 .addGroup(RC5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RC5PanelLayout.createSequentialGroup()
-                        .addGap(415, 415, 415)
-                        .addComponent(RC5Label))
-                    .addGroup(RC5PanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(RCReturn2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(RC5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(RC5PanelLayout.createSequentialGroup()
+                                .addGap(415, 415, 415)
+                                .addComponent(RC5Label))
+                            .addGroup(RC5PanelLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(RCReturn2)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane12, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         RC5PanelLayout.setVerticalGroup(
             RC5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RC5PanelLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(RC5Label)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 395, Short.MAX_VALUE)
+                .addGap(24, 24, 24)
+                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
                 .addComponent(RCReturn2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel36))
@@ -4969,7 +4983,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea10.setEditable(false);
         jTextArea10.setColumns(20);
         jTextArea10.setRows(5);
-        jTextArea10.setText("1. MD5 produces 128-bit hash values, how many \nunique hashes can MD5 produce?");
+        jTextArea10.setText("1. MD5 produces 128-bit hash values, how many \nunique hashes can MD5 produce?\n\n2. What is the plaintext of this hash: \n527d60cd4715db174ad56cda34ab2dce\n\n3. Is MD5 a cryptographically secure hashing \nfunction? Y/N?");
         jScrollPane4.setViewportView(jTextArea10);
 
         jButton1.setBackground(new java.awt.Color(77, 132, 155));
@@ -4977,6 +4991,14 @@ public class Home extends javax.swing.JFrame {
         jButton1.setText("Enter");
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        jButton6.setBackground(new java.awt.Color(77, 132, 155));
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Enter");
+
+        jButton7.setBackground(new java.awt.Color(77, 132, 155));
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("Enter");
 
         javax.swing.GroupLayout MD5PanelLayout = new javax.swing.GroupLayout(MD5Panel);
         MD5Panel.setLayout(MD5PanelLayout);
@@ -4996,23 +5018,34 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(MD5_Button))
                     .addComponent(MD5Former)))
             .addGroup(MD5PanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(76, 76, 76)
+                .addGap(184, 184, 184)
                 .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(MD5_Questions)
                     .addComponent(MD5_Header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jScrollPane4))
                 .addGap(28, 28, 28)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1))
+                .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MD5PanelLayout.createSequentialGroup()
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1))
+                    .addGroup(MD5PanelLayout.createSequentialGroup()
+                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
+                            .addComponent(jTextField4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton7)
+                            .addComponent(jButton6)))))
             .addComponent(jLabel22)
+            .addGroup(MD5PanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         MD5PanelLayout.setVerticalGroup(
             MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MD5PanelLayout.createSequentialGroup()
-                .addContainerGap(93, Short.MAX_VALUE)
+                .addContainerGap(88, Short.MAX_VALUE)
                 .addComponent(MD5_Header, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -5028,19 +5061,25 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(Former1))
                 .addGap(27, 27, 27)
                 .addComponent(MD5_Questions)
+                .addGap(18, 18, 18)
                 .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MD5PanelLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jButton1)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(MD5PanelLayout.createSequentialGroup()
-                        .addGap(119, 119, 119)
-                        .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(29, 29, 29)
-                .addComponent(jLabel22))
+                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton1)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(37, 37, 37)
+                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton6))
+                        .addGap(33, 33, 33)
+                        .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton7)))
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         MainPanel.add(MD5Panel, "card11");
@@ -9742,6 +9781,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -9784,6 +9825,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -9821,6 +9863,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea33;
     private javax.swing.JTextArea jTextArea34;
     private javax.swing.JTextArea jTextArea35;
+    private javax.swing.JTextArea jTextArea36;
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
@@ -9829,6 +9872,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     private javax.swing.JLabel n;
     private javax.swing.JLabel n1;
     private javax.swing.JTextField n_input;
