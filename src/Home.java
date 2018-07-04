@@ -128,6 +128,7 @@ public class Home extends javax.swing.JFrame {
         LFSR_Answer = new javax.swing.JTextField();
         LFSR_Return = new javax.swing.JButton();
         LFSR_Check = new javax.swing.JButton();
+        jLabel45 = new javax.swing.JLabel();
         LinearDescription = new javax.swing.JPanel();
         LFSRHeader = new javax.swing.JLabel();
         LFSRDescrip = new javax.swing.JScrollPane();
@@ -139,13 +140,16 @@ public class Home extends javax.swing.JFrame {
         ThemePicture28 = new javax.swing.JLabel();
         EntropyDes = new javax.swing.JButton();
         EntropyQ = new javax.swing.JButton();
+        EntropyPanel = new javax.swing.JPanel();
+        EntropyHeader = new javax.swing.JLabel();
+        EntropyReturnB = new javax.swing.JButton();
+        jLabel47 = new javax.swing.JLabel();
         EntropyDescription = new javax.swing.JPanel();
         EntropyTitle = new javax.swing.JLabel();
         EntropyDescrip = new javax.swing.JScrollPane();
         jTextArea34 = new javax.swing.JTextArea();
         jLabel34 = new javax.swing.JLabel();
         EntropyReturn = new javax.swing.JButton();
-        EntropyPanel = new javax.swing.JPanel();
         ECBPanel = new javax.swing.JPanel();
         ECB_Picture = new javax.swing.JLabel();
         Answer1 = new javax.swing.JTextField();
@@ -1495,41 +1499,40 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
         javax.swing.GroupLayout LinearPanelLayout = new javax.swing.GroupLayout(LinearPanel);
         LinearPanel.setLayout(LinearPanelLayout);
         LinearPanelLayout.setHorizontalGroup(
             LinearPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LinearPanelLayout.createSequentialGroup()
-                .addGroup(LinearPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(LinearPanelLayout.createSequentialGroup()
-                        .addGap(156, 156, 156)
-                        .addComponent(LFSR, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(LinearPanelLayout.createSequentialGroup()
-                        .addGap(118, 118, 118)
-                        .addComponent(Seed))
-                    .addGroup(LinearPanelLayout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(jLabel37))
-                    .addGroup(LinearPanelLayout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(LFSR_Answer, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55)
-                        .addComponent(LFSR_Check))
-                    .addGroup(LinearPanelLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 682, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(LinearPanelLayout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(LFSRHeader1))
-                    .addGroup(LinearPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(LFSR_Return)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(156, 156, 156)
+                .addComponent(LFSR, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(LinearPanelLayout.createSequentialGroup()
+                .addGap(118, 118, 118)
+                .addComponent(Seed))
+            .addGroup(LinearPanelLayout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel37))
+            .addGroup(LinearPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(LFSR_Return)
+                .addGap(172, 172, 172)
+                .addComponent(LFSR_Answer, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55)
+                .addComponent(LFSR_Check))
+            .addGroup(LinearPanelLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 682, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(LinearPanelLayout.createSequentialGroup()
+                .addGap(95, 95, 95)
+                .addComponent(LFSRHeader1))
+            .addComponent(jLabel45)
         );
         LinearPanelLayout.setVerticalGroup(
             LinearPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LinearPanelLayout.createSequentialGroup()
-                .addGap(70, 70, 70)
+                .addContainerGap(70, Short.MAX_VALUE)
                 .addComponent(LFSRHeader1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1542,10 +1545,10 @@ public class Home extends javax.swing.JFrame {
                 .addGap(44, 44, 44)
                 .addGroup(LinearPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LFSR_Check, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(LFSR_Answer, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
-                .addComponent(LFSR_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(LFSR_Answer, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LFSR_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel45))
         );
 
         MainPanel.add(LinearPanel, "card87");
@@ -1652,7 +1655,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(66, 66, 66)
                         .addComponent(EntropyQ))
                     .addGroup(EntropyPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(353, 353, 353)
+                        .addGap(324, 324, 324)
                         .addComponent(EntropyIntro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -1670,6 +1673,48 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(EntropyPanelWelcome, "card87");
+
+        EntropyPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        EntropyHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        EntropyHeader.setForeground(new java.awt.Color(48, 87, 120));
+        EntropyHeader.setText("Entropy");
+
+        EntropyReturnB.setBackground(new java.awt.Color(77, 132, 155));
+        EntropyReturnB.setForeground(new java.awt.Color(255, 255, 255));
+        EntropyReturnB.setText("Return");
+        EntropyReturnB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EntropyReturnBActionPerformed(evt);
+            }
+        });
+
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        javax.swing.GroupLayout EntropyPanelLayout = new javax.swing.GroupLayout(EntropyPanel);
+        EntropyPanel.setLayout(EntropyPanelLayout);
+        EntropyPanelLayout.setHorizontalGroup(
+            EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EntropyPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(EntropyReturnB))
+            .addComponent(jLabel47)
+            .addGroup(EntropyPanelLayout.createSequentialGroup()
+                .addGap(339, 339, 339)
+                .addComponent(EntropyHeader))
+        );
+        EntropyPanelLayout.setVerticalGroup(
+            EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EntropyPanelLayout.createSequentialGroup()
+                .addContainerGap(63, Short.MAX_VALUE)
+                .addComponent(EntropyHeader)
+                .addGap(359, 359, 359)
+                .addComponent(EntropyReturnB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel47))
+        );
+
+        MainPanel.add(EntropyPanel, "card87");
 
         EntropyDescription.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1733,21 +1778,6 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(EntropyDescription, "card65");
-
-        EntropyPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout EntropyPanelLayout = new javax.swing.GroupLayout(EntropyPanel);
-        EntropyPanel.setLayout(EntropyPanelLayout);
-        EntropyPanelLayout.setHorizontalGroup(
-            EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        EntropyPanelLayout.setVerticalGroup(
-            EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        MainPanel.add(EntropyPanel, "card31");
 
         ECBPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -5341,8 +5371,7 @@ public class Home extends javax.swing.JFrame {
                                             .addGroup(RSA_Signature_1Layout.createSequentialGroup()
                                                 .addComponent(phi_n_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(115, 115, 115)
-                                                .addComponent(Check_n_phi_d)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))))
+                                                .addComponent(Check_n_phi_d)))))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(RSA_Signature_1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
@@ -6406,7 +6435,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel1Layout.setVerticalGroup(
             DHPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel1Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(55, 55, 55)
                 .addComponent(DH1Image)
                 .addGap(68, 68, 68)
                 .addComponent(DH1Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6479,7 +6508,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel2Layout.setVerticalGroup(
             DHPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel2Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(55, 55, 55)
                 .addComponent(DHImage2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(DH2Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6552,7 +6581,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel3Layout.setVerticalGroup(
             DHPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel3Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(55, 55, 55)
                 .addComponent(DH3Image)
                 .addGap(18, 18, 18)
                 .addComponent(DH3Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6625,7 +6654,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel4Layout.setVerticalGroup(
             DHPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel4Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(55, 55, 55)
                 .addComponent(DH4Image)
                 .addGap(36, 36, 36)
                 .addComponent(DH4Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6700,7 +6729,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel5Layout.setVerticalGroup(
             DHPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel5Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(55, 55, 55)
                 .addComponent(DH5Image)
                 .addGap(38, 38, 38)
                 .addComponent(DH5Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -9243,6 +9272,16 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_MD5DesActionPerformed
 
+    private void EntropyReturnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EntropyReturnBActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(EntropyPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_EntropyReturnBActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -9518,11 +9557,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton EntropyDes;
     private javax.swing.JScrollPane EntropyDescrip;
     private javax.swing.JPanel EntropyDescription;
+    private javax.swing.JLabel EntropyHeader;
     private javax.swing.JLabel EntropyIntro;
     private javax.swing.JPanel EntropyPanel;
     private javax.swing.JPanel EntropyPanelWelcome;
     private javax.swing.JButton EntropyQ;
     private javax.swing.JButton EntropyReturn;
+    private javax.swing.JButton EntropyReturnB;
     private javax.swing.JLabel EntropyTitle;
     private javax.swing.JRadioButton F1;
     private javax.swing.JRadioButton F2;
@@ -9871,6 +9912,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
