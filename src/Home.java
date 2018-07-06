@@ -250,7 +250,7 @@ public class Home extends javax.swing.JFrame {
         WEPDescription = new javax.swing.JScrollPane();
         jTextArea13 = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
-        DESPanel = new javax.swing.JPanel();
+        TripDESPanel = new javax.swing.JPanel();
         DESPic = new javax.swing.JLabel();
         DESLabel = new javax.swing.JLabel();
         DESQ = new javax.swing.JLabel();
@@ -261,12 +261,12 @@ public class Home extends javax.swing.JFrame {
         DES_B = new javax.swing.JButton();
         DESRETURNB = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
-        DESPanelWelcome = new javax.swing.JPanel();
+        TripDESPanelWelcome = new javax.swing.JPanel();
         DESIntro = new javax.swing.JLabel();
         ThemePicture12 = new javax.swing.JLabel();
         DESDescripB = new javax.swing.JButton();
         DESQB = new javax.swing.JButton();
-        DESDescripPanel = new javax.swing.JPanel();
+        TripDESDescripPanel = new javax.swing.JPanel();
         DESDescrip = new javax.swing.JLabel();
         DESDescription = new javax.swing.JScrollPane();
         jTextArea19 = new javax.swing.JTextArea();
@@ -681,8 +681,10 @@ public class Home extends javax.swing.JFrame {
         Vigenere = new javax.swing.JMenuItem();
         BlockCiphers = new javax.swing.JMenu();
         Feistel = new javax.swing.JMenuItem();
-        RC5 = new javax.swing.JMenuItem();
+        DES_Menu = new javax.swing.JMenu();
+        DES = new javax.swing.JMenuItem();
         TripDES = new javax.swing.JMenuItem();
+        RC5 = new javax.swing.JMenuItem();
         StreamCiphers = new javax.swing.JMenu();
         OneTimePad = new javax.swing.JMenuItem();
         RC4 = new javax.swing.JMenuItem();
@@ -2874,7 +2876,7 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(WEPPanel, "card39");
 
-        DESPanel.setBackground(new java.awt.Color(255, 255, 255));
+        TripDESPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         DESPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/3DES.png"))); // NOI18N
 
@@ -2923,42 +2925,42 @@ public class Home extends javax.swing.JFrame {
 
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        javax.swing.GroupLayout DESPanelLayout = new javax.swing.GroupLayout(DESPanel);
-        DESPanel.setLayout(DESPanelLayout);
-        DESPanelLayout.setHorizontalGroup(
-            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelLayout.createSequentialGroup()
-                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DESPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout TripDESPanelLayout = new javax.swing.GroupLayout(TripDESPanel);
+        TripDESPanel.setLayout(TripDESPanelLayout);
+        TripDESPanelLayout.setHorizontalGroup(
+            TripDESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TripDESPanelLayout.createSequentialGroup()
+                .addGroup(TripDESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TripDESPanelLayout.createSequentialGroup()
                         .addGap(74, 74, 74)
-                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(TripDESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(DESA)
                             .addComponent(DESD)
                             .addComponent(DESB)
                             .addComponent(DESC)
-                            .addGroup(DESPanelLayout.createSequentialGroup()
+                            .addGroup(TripDESPanelLayout.createSequentialGroup()
                                 .addGap(39, 39, 39)
                                 .addComponent(DES_B))))
-                    .addGroup(DESPanelLayout.createSequentialGroup()
+                    .addGroup(TripDESPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(DESRETURNB))
-                    .addGroup(DESPanelLayout.createSequentialGroup()
+                    .addGroup(TripDESPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(DESQ)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(DESPic))
-            .addGroup(DESPanelLayout.createSequentialGroup()
+            .addGroup(TripDESPanelLayout.createSequentialGroup()
                 .addGap(225, 225, 225)
                 .addComponent(DESLabel))
             .addComponent(jLabel23)
         );
-        DESPanelLayout.setVerticalGroup(
-            DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelLayout.createSequentialGroup()
+        TripDESPanelLayout.setVerticalGroup(
+            TripDESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TripDESPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DESLabel)
-                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DESPanelLayout.createSequentialGroup()
+                .addGroup(TripDESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TripDESPanelLayout.createSequentialGroup()
                         .addGap(56, 56, 56)
                         .addComponent(DESQ, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -2974,20 +2976,20 @@ public class Home extends javax.swing.JFrame {
                         .addGap(111, 111, 111)
                         .addComponent(DESRETURNB)
                         .addGap(29, 29, 29))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESPanelLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TripDESPanelLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(DESPic)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addComponent(jLabel23))
         );
 
-        MainPanel.add(DESPanel, "card25");
+        MainPanel.add(TripDESPanel, "card25");
 
-        DESPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+        TripDESPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
         DESIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         DESIntro.setForeground(new java.awt.Color(48, 87, 120));
-        DESIntro.setText("Data Encryption Standard (DES)");
+        DESIntro.setText("Triple Data Encryption Standard (3DES)");
 
         ThemePicture12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
@@ -3009,41 +3011,41 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout DESPanelWelcomeLayout = new javax.swing.GroupLayout(DESPanelWelcome);
-        DESPanelWelcome.setLayout(DESPanelWelcomeLayout);
-        DESPanelWelcomeLayout.setHorizontalGroup(
-            DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+        javax.swing.GroupLayout TripDESPanelWelcomeLayout = new javax.swing.GroupLayout(TripDESPanelWelcome);
+        TripDESPanelWelcome.setLayout(TripDESPanelWelcomeLayout);
+        TripDESPanelWelcomeLayout.setHorizontalGroup(
+            TripDESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TripDESPanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture12)
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
-                .addGroup(DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+            .addGroup(TripDESPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(TripDESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TripDESPanelWelcomeLayout.createSequentialGroup()
                         .addGap(293, 293, 293)
                         .addComponent(DESDescripB)
                         .addGap(92, 92, 92)
                         .addComponent(DESQB))
-                    .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+                    .addGroup(TripDESPanelWelcomeLayout.createSequentialGroup()
                         .addGap(188, 188, 188)
                         .addComponent(DESIntro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        DESPanelWelcomeLayout.setVerticalGroup(
-            DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
+        TripDESPanelWelcomeLayout.setVerticalGroup(
+            TripDESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TripDESPanelWelcomeLayout.createSequentialGroup()
                 .addContainerGap(177, Short.MAX_VALUE)
                 .addComponent(DESIntro)
                 .addGap(66, 66, 66)
-                .addGroup(DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(TripDESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DESDescripB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DESQB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148)
                 .addComponent(ThemePicture12))
         );
 
-        MainPanel.add(DESPanelWelcome, "card41");
+        MainPanel.add(TripDESPanelWelcome, "card41");
 
-        DESDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
+        TripDESDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         DESDescrip.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         DESDescrip.setForeground(new java.awt.Color(48, 87, 120));
@@ -3069,27 +3071,27 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout DESDescripPanelLayout = new javax.swing.GroupLayout(DESDescripPanel);
-        DESDescripPanel.setLayout(DESDescripPanelLayout);
-        DESDescripPanelLayout.setHorizontalGroup(
-            DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESDescripPanelLayout.createSequentialGroup()
-                .addGroup(DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout TripDESDescripPanelLayout = new javax.swing.GroupLayout(TripDESDescripPanel);
+        TripDESDescripPanel.setLayout(TripDESDescripPanelLayout);
+        TripDESDescripPanelLayout.setHorizontalGroup(
+            TripDESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TripDESDescripPanelLayout.createSequentialGroup()
+                .addGroup(TripDESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel13)
-                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                    .addGroup(TripDESDescripPanelLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
                         .addComponent(DESBB))
-                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                    .addGroup(TripDESDescripPanelLayout.createSequentialGroup()
                         .addGap(380, 380, 380)
                         .addComponent(DESDescrip)))
                 .addGap(12, 12, 12))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESDescripPanelLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TripDESDescripPanelLayout.createSequentialGroup()
                 .addComponent(DESDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(112, 112, 112))
         );
-        DESDescripPanelLayout.setVerticalGroup(
-            DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DESDescripPanelLayout.createSequentialGroup()
+        TripDESDescripPanelLayout.setVerticalGroup(
+            TripDESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TripDESDescripPanelLayout.createSequentialGroup()
                 .addGap(77, 77, 77)
                 .addComponent(DESDescrip)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3100,7 +3102,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel13))
         );
 
-        MainPanel.add(DESDescripPanel, "card42");
+        MainPanel.add(TripDESDescripPanel, "card42");
 
         OTPPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -5415,7 +5417,7 @@ public class Home extends javax.swing.JFrame {
 
         SigningAMessage1.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         SigningAMessage1.setForeground(new java.awt.Color(48, 87, 120));
-        SigningAMessage1.setText("<html><strong>Signing a Message with RSA</strong></html>");
+        SigningAMessage1.setText("Signing a Message with RSA");
 
         Correct.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         Correct.setForeground(new java.awt.Color(77, 132, 155));
@@ -5478,10 +5480,6 @@ public class Home extends javax.swing.JFrame {
         RSA_Signature_2.setLayout(RSA_Signature_2Layout);
         RSA_Signature_2Layout.setHorizontalGroup(
             RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Directions)
-                .addGap(137, 137, 137))
             .addGroup(RSA_Signature_2Layout.createSequentialGroup()
                 .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RSA_Signature_2Layout.createSequentialGroup()
@@ -5510,18 +5508,24 @@ public class Home extends javax.swing.JFrame {
                         .addGap(237, 237, 237)
                         .addComponent(d1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(RSA_Signature_2Layout.createSequentialGroup()
-                        .addGap(190, 190, 190)
-                        .addComponent(SigningAMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Signature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
+                        .addComponent(Directions)
+                        .addGap(137, 137, 137))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSA_Signature_2Layout.createSequentialGroup()
+                        .addComponent(SigningAMessage1)
+                        .addGap(151, 151, 151))))
         );
         RSA_Signature_2Layout.setVerticalGroup(
             RSA_Signature_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSA_Signature_2Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(SigningAMessage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
+                .addComponent(SigningAMessage1)
+                .addGap(38, 38, 38)
                 .addComponent(Correct, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53)
                 .addComponent(Message1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -5555,7 +5559,7 @@ public class Home extends javax.swing.JFrame {
         RSA_Validate.setBackground(new java.awt.Color(255, 255, 255));
 
         ValidateMessage.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        ValidateMessage.setForeground(new java.awt.Color(255, 0, 51));
+        ValidateMessage.setForeground(new java.awt.Color(48, 87, 120));
         ValidateMessage.setText("<html><strong>Validating the Message</strong></html>");
 
         Story1.setBorder(null);
@@ -5606,6 +5610,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        Verify_Submit.setBackground(new java.awt.Color(77, 132, 155));
+        Verify_Submit.setForeground(new java.awt.Color(255, 255, 255));
         Verify_Submit.setText("Submit");
         Verify_Submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5613,6 +5619,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        Back_RSA2.setBackground(new java.awt.Color(77, 132, 155));
+        Back_RSA2.setForeground(new java.awt.Color(255, 255, 255));
         Back_RSA2.setText("Back");
         Back_RSA2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -7209,13 +7217,15 @@ public class Home extends javax.swing.JFrame {
         });
         BlockCiphers.add(Feistel);
 
-        RC5.setText("RC5");
-        RC5.addActionListener(new java.awt.event.ActionListener() {
+        DES_Menu.setText("DES");
+
+        DES.setText("DES");
+        DES.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RC5ActionPerformed(evt);
+                DESActionPerformed(evt);
             }
         });
-        BlockCiphers.add(RC5);
+        DES_Menu.add(DES);
 
         TripDES.setText("3DES");
         TripDES.addActionListener(new java.awt.event.ActionListener() {
@@ -7223,7 +7233,17 @@ public class Home extends javax.swing.JFrame {
                 TripDESActionPerformed(evt);
             }
         });
-        BlockCiphers.add(TripDES);
+        DES_Menu.add(TripDES);
+
+        BlockCiphers.add(DES_Menu);
+
+        RC5.setText("RC5");
+        RC5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RC5ActionPerformed(evt);
+            }
+        });
+        BlockCiphers.add(RC5);
 
         Ciphers.add(BlockCiphers);
 
@@ -7663,7 +7683,7 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();
 
-            MainPanel.add(DESPanelWelcome);
+            MainPanel.add(TripDESPanelWelcome);
             MainPanel.repaint();
             MainPanel.revalidate(); 
     }//GEN-LAST:event_TripDESActionPerformed
@@ -8476,7 +8496,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(DESPanelWelcome);
+        MainPanel.add(TripDESPanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_DESRETURNBActionPerformed
@@ -8486,7 +8506,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(DESDescripPanel);
+        MainPanel.add(TripDESDescripPanel);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_DESDescripBActionPerformed
@@ -8496,7 +8516,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(DESPanel);
+        MainPanel.add(TripDESPanel);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_DESQBActionPerformed
@@ -8810,7 +8830,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(DESPanelWelcome);
+        MainPanel.add(TripDESPanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_DESBBActionPerformed
@@ -9278,6 +9298,10 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_EntropyReturnBActionPerformed
 
+    private void DESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DESActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -9441,6 +9465,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Correct_Pic;
     private javax.swing.JLabel Current;
     private javax.swing.JLabel Current1;
+    private javax.swing.JMenuItem DES;
     private javax.swing.JRadioButton DESA;
     private javax.swing.JRadioButton DESB;
     private javax.swing.JButton DESBB;
@@ -9450,20 +9475,18 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel DESDescrip;
     private javax.swing.JLabel DESDescrip1;
     private javax.swing.JButton DESDescripB;
-    private javax.swing.JPanel DESDescripPanel;
     private javax.swing.JScrollPane DESDescription;
     private javax.swing.JScrollPane DESDescription1;
     private javax.swing.JLabel DESIntro;
     private javax.swing.JLabel DESIntro1;
     private javax.swing.JLabel DESLabel;
-    private javax.swing.JPanel DESPanel;
-    private javax.swing.JPanel DESPanelWelcome;
     private javax.swing.JLabel DESPic;
     private javax.swing.JLabel DESQ;
     private javax.swing.JButton DESQB;
     private javax.swing.ButtonGroup DESQuestion;
     private javax.swing.JButton DESRETURNB;
     private javax.swing.JButton DES_B;
+    private javax.swing.JMenu DES_Menu;
     private javax.swing.JLabel DH1Image;
     private javax.swing.JScrollPane DH1Text;
     private javax.swing.JButton DH1_Back;
@@ -9827,6 +9850,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Theme__4;
     private javax.swing.JLabel Theme__5;
     private javax.swing.JMenuItem TripDES;
+    private javax.swing.JPanel TripDESDescripPanel;
+    private javax.swing.JPanel TripDESPanel;
+    private javax.swing.JPanel TripDESPanelWelcome;
     private javax.swing.JLabel True;
     private javax.swing.JLabel VIGPicture;
     private javax.swing.JLabel ValidateMessage;

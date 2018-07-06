@@ -82,20 +82,35 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FeistelActionPerformed"/>
                   </Events>
                 </MenuItem>
+                <Menu class="javax.swing.JMenu" name="DES_Menu">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="DES"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="DES">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="DES"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DESActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="TripDES">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="3DES"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TripDESActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
                 <MenuItem class="javax.swing.JMenuItem" name="RC5">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="RC5"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RC5ActionPerformed"/>
-                  </Events>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="TripDES">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="3DES"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TripDESActionPerformed"/>
                   </Events>
                 </MenuItem>
               </SubComponents>
@@ -4130,7 +4145,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="DESPanel">
+        <Container class="javax.swing.JPanel" name="TripDESPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -4315,7 +4330,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="DESPanelWelcome">
+        <Container class="javax.swing.JPanel" name="TripDESPanelWelcome">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -4376,7 +4391,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="78" green="57" red="30" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Data Encryption Standard (DES)"/>
+                <Property name="text" type="java.lang.String" value="Triple Data Encryption Standard (3DES)"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="ThemePicture12">
@@ -4416,7 +4431,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="DESDescripPanel">
+        <Container class="javax.swing.JPanel" name="TripDESDescripPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -8569,11 +8584,6 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="Directions" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -8611,21 +8621,30 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="Signature" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
-                              <Component id="SigningAMessage1" min="-2" max="-2" attributes="0"/>
-                          </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="Directions" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="SigningAMessage1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="SigningAMessage1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="SigningAMessage1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="Correct" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                       <Component id="Message1" min="-2" pref="27" max="-2" attributes="0"/>
@@ -8666,7 +8685,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="78" green="57" red="30" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;strong&gt;Signing a Message with RSA&lt;/strong&gt;&lt;/html&gt;"/>
+                <Property name="text" type="java.lang.String" value="Signing a Message with RSA"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Correct">
@@ -8889,7 +8908,7 @@
                   <Font name="Lucida Grande" size="36" style="0"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="33" green="0" red="ff" type="rgb"/>
+                  <Color blue="78" green="57" red="30" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;strong&gt;Validating the Message&lt;/strong&gt;&lt;/html&gt;"/>
               </Properties>
@@ -8993,6 +9012,12 @@
             </Component>
             <Component class="javax.swing.JButton" name="Verify_Submit">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="9b" green="84" red="4d" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Submit"/>
               </Properties>
               <Events>
@@ -9001,6 +9026,12 @@
             </Component>
             <Component class="javax.swing.JButton" name="Back_RSA2">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="9b" green="84" red="4d" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Back"/>
               </Properties>
               <Events>
