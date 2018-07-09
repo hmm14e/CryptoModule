@@ -728,10 +728,14 @@ public class Home extends javax.swing.JFrame {
         AES = new javax.swing.JMenuItem();
         Help = new javax.swing.JMenu();
         Dev = new javax.swing.JMenuItem();
+        TEST = new javax.swing.JMenu();
+        Test = new javax.swing.JMenuItem();
 
         jPasswordField1.setText("jPasswordField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(885, 750));
+        setMinimumSize(new java.awt.Dimension(885, 750));
         setPreferredSize(new java.awt.Dimension(885, 750));
         setResizable(false);
 
@@ -776,7 +780,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Project)
                 .addGap(112, 112, 112)
                 .addComponent(Theme)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
 
         MainPanel.add(WelcomePanel, "card2");
@@ -828,7 +832,7 @@ public class Home extends javax.swing.JFrame {
         CaesarPanelWelcomeLayout.setVerticalGroup(
             CaesarPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(CaesarIntro)
                 .addGap(18, 18, 18)
                 .addGroup(CaesarPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1184,7 +1188,7 @@ public class Home extends javax.swing.JFrame {
         AtbashPanelWelcomeLayout.setVerticalGroup(
             AtbashPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AtbashPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(AtbashIntro)
                 .addGap(18, 18, 18)
                 .addGroup(AtbashPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1399,7 +1403,7 @@ public class Home extends javax.swing.JFrame {
         VigenerePanelWelcomeLayout.setVerticalGroup(
             VigenerePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(VigenerePanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(VigenereIntro)
                 .addGap(18, 18, 18)
                 .addGroup(VigenerePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1459,7 +1463,7 @@ public class Home extends javax.swing.JFrame {
         LinearPanelWelcomeLayout.setVerticalGroup(
             LinearPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LinearPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(194, Short.MAX_VALUE)
+                .addContainerGap(437, Short.MAX_VALUE)
                 .addComponent(LFSRTitle)
                 .addGap(37, 37, 37)
                 .addGroup(LinearPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1549,7 +1553,7 @@ public class Home extends javax.swing.JFrame {
         LinearPanelLayout.setVerticalGroup(
             LinearPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LinearPanelLayout.createSequentialGroup()
-                .addContainerGap(70, Short.MAX_VALUE)
+                .addContainerGap(264, Short.MAX_VALUE)
                 .addComponent(LFSRHeader1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1679,7 +1683,7 @@ public class Home extends javax.swing.JFrame {
         EntropyPanelWelcomeLayout.setVerticalGroup(
             EntropyPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EntropyPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(232, Short.MAX_VALUE)
+                .addContainerGap(475, Short.MAX_VALUE)
                 .addComponent(EntropyIntro)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(EntropyPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1723,7 +1727,7 @@ public class Home extends javax.swing.JFrame {
         EntropyPanelLayout.setVerticalGroup(
             EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EntropyPanelLayout.createSequentialGroup()
-                .addContainerGap(63, Short.MAX_VALUE)
+                .addContainerGap(257, Short.MAX_VALUE)
                 .addComponent(EntropyHeader)
                 .addGap(359, 359, 359)
                 .addComponent(EntropyReturnB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1991,7 +1995,7 @@ public class Home extends javax.swing.JFrame {
         ECBPanelWelcomeLayout.setVerticalGroup(
             ECBPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ECBPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(ECBIntro)
                 .addGap(18, 18, 18)
                 .addGroup(ECBPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2087,7 +2091,7 @@ public class Home extends javax.swing.JFrame {
         CBCPanelWelcomeLayout.setVerticalGroup(
             CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(CBCIntro)
                 .addGap(18, 18, 18)
                 .addGroup(CBCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2446,7 +2450,7 @@ public class Home extends javax.swing.JFrame {
         CTRPanelWelcomeLayout.setVerticalGroup(
             CTRPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(CTRIntro)
                 .addGap(18, 18, 18)
                 .addGroup(CTRPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2583,7 +2587,7 @@ public class Home extends javax.swing.JFrame {
         FeistelPanelWelcomeLayout.setVerticalGroup(
             FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(FeistelIntro)
                 .addGap(18, 18, 18)
                 .addGroup(FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2702,7 +2706,7 @@ public class Home extends javax.swing.JFrame {
         RC5PanelWelcomeLayout.setVerticalGroup(
             RC5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RC5PanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(RC5Intro)
                 .addGap(18, 18, 18)
                 .addGroup(RC5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2925,7 +2929,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(DESPanelLayout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(DESLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 336, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 585, Short.MAX_VALUE)
                 .addComponent(DESRETURNB1)
                 .addGap(29, 29, 29)
                 .addComponent(jLabel46))
@@ -2981,7 +2985,7 @@ public class Home extends javax.swing.JFrame {
         DESPanelWelcomeLayout.setVerticalGroup(
             DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DESPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(180, Short.MAX_VALUE)
+                .addContainerGap(423, Short.MAX_VALUE)
                 .addComponent(DESIntro2)
                 .addGap(63, 63, 63)
                 .addGroup(DESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -3209,7 +3213,7 @@ public class Home extends javax.swing.JFrame {
         TripDESPanelWelcomeLayout.setVerticalGroup(
             TripDESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TripDESPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(177, Short.MAX_VALUE)
+                .addContainerGap(420, Short.MAX_VALUE)
                 .addComponent(TripDESIntro)
                 .addGap(66, 66, 66)
                 .addGroup(TripDESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -3328,7 +3332,7 @@ public class Home extends javax.swing.JFrame {
         OTPPanelWelcomeLayout.setVerticalGroup(
             OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OTPPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(OTPIntro)
                 .addGap(18, 18, 18)
                 .addGroup(OTPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -3686,7 +3690,7 @@ public class Home extends javax.swing.JFrame {
         RC4PanelWelcomeLayout.setVerticalGroup(
             RC4PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RC4PanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(DESIntro1)
                 .addGap(18, 18, 18)
                 .addGroup(RC4PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -3830,7 +3834,7 @@ public class Home extends javax.swing.JFrame {
         PAPPanelWelcomeLayout.setVerticalGroup(
             PAPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PAPPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(208, Short.MAX_VALUE)
+                .addContainerGap(451, Short.MAX_VALUE)
                 .addComponent(PAPIntro)
                 .addGap(35, 35, 35)
                 .addGroup(PAPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -4147,7 +4151,7 @@ public class Home extends javax.swing.JFrame {
         CHAPPanelWelcomeLayout.setVerticalGroup(
             CHAPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CHAPPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(208, Short.MAX_VALUE)
+                .addContainerGap(451, Short.MAX_VALUE)
                 .addComponent(ChapIntro)
                 .addGap(35, 35, 35)
                 .addGroup(CHAPPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -4292,7 +4296,7 @@ public class Home extends javax.swing.JFrame {
         KerberosPanelWelcomeLayout.setVerticalGroup(
             KerberosPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KerberosPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(KerberosIntro)
                 .addGap(18, 18, 18)
                 .addGroup(KerberosPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -4461,7 +4465,7 @@ public class Home extends javax.swing.JFrame {
         CBCMACPanelWelcomeLayout.setVerticalGroup(
             CBCMACPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CBCMACPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(CBCMACIntro)
                 .addGap(18, 18, 18)
                 .addGroup(CBCMACPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -4787,7 +4791,7 @@ public class Home extends javax.swing.JFrame {
         SHAPanelWelcomeLayout.setVerticalGroup(
             SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(SHAIntro)
                 .addGap(18, 18, 18)
                 .addGroup(SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -5067,7 +5071,7 @@ public class Home extends javax.swing.JFrame {
         MD5PanelWelcomeLayout.setVerticalGroup(
             MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MD5PanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(209, Short.MAX_VALUE)
+                .addContainerGap(452, Short.MAX_VALUE)
                 .addComponent(MD5Intro)
                 .addGap(18, 18, 18)
                 .addGroup(MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -5342,7 +5346,7 @@ public class Home extends javax.swing.JFrame {
         RSASignaturePanelWelcomeLayout.setVerticalGroup(
             RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(212, Short.MAX_VALUE)
+                .addContainerGap(455, Short.MAX_VALUE)
                 .addComponent(RSASigIntro)
                 .addGap(31, 31, 31)
                 .addGroup(RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -5916,7 +5920,7 @@ public class Home extends javax.swing.JFrame {
         RSAPanelWelcomeLayout.setVerticalGroup(
             RSAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSAPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(224, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(RSAIntro)
                 .addGap(18, 18, 18)
                 .addGroup(RSAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -6158,7 +6162,7 @@ public class Home extends javax.swing.JFrame {
         ElGamalPanelWelcomeLayout.setVerticalGroup(
             ElGamalPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ElGamalPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(ElGamIntro)
                 .addGap(18, 18, 18)
                 .addGroup(ElGamalPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -6409,7 +6413,7 @@ public class Home extends javax.swing.JFrame {
         DHPanelWelcomeLayout.setVerticalGroup(
             DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(DH_intro)
                 .addGap(18, 18, 18)
                 .addGroup(DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -6997,7 +7001,7 @@ public class Home extends javax.swing.JFrame {
         DHPanel6Layout.setVerticalGroup(
             DHPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanel6Layout.createSequentialGroup()
-                .addContainerGap(57, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DHQuestions)
                 .addGap(63, 63, 63)
                 .addComponent(DH5Image1)
@@ -7065,7 +7069,7 @@ public class Home extends javax.swing.JFrame {
         BlowfishPanelWelcomeLayout.setVerticalGroup(
             BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(BlowfishIntro)
                 .addGap(18, 18, 18)
                 .addGroup(BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -7162,7 +7166,7 @@ public class Home extends javax.swing.JFrame {
         BlowfishPanelLayout.setVerticalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BlowfishPanelLayout.createSequentialGroup()
-                .addContainerGap(232, Short.MAX_VALUE)
+                .addContainerGap(932, Short.MAX_VALUE)
                 .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28))
         );
@@ -7218,7 +7222,7 @@ public class Home extends javax.swing.JFrame {
         AESPanelWelcomeLayout.setVerticalGroup(
             AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
+                .addContainerGap(468, Short.MAX_VALUE)
                 .addComponent(AESIntro)
                 .addGap(18, 18, 18)
                 .addGroup(AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -7617,6 +7621,18 @@ public class Home extends javax.swing.JFrame {
         Help.add(Dev);
 
         jMenuBar1.add(Help);
+
+        TEST.setText("Test");
+
+        Test.setText("Test");
+        Test.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TestActionPerformed(evt);
+            }
+        });
+        TEST.add(Test);
+
+        jMenuBar1.add(TEST);
 
         setJMenuBar(jMenuBar1);
 
@@ -9515,6 +9531,11 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DESBB2ActionPerformed
 
+    private void TestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TestActionPerformed
+        this.setVisible(false);
+        new NewJFrame().setVisible(true);
+    }//GEN-LAST:event_TestActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -10024,6 +10045,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JRadioButton T3;
     private javax.swing.JRadioButton T4;
     private javax.swing.JRadioButton T5;
+    private javax.swing.JMenu TEST;
+    private javax.swing.JMenuItem Test;
     private javax.swing.JLabel Theme;
     private javax.swing.JLabel ThemePicture;
     private javax.swing.JLabel ThemePicture1;
