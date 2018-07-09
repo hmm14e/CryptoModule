@@ -687,13 +687,6 @@ public class Home extends javax.swing.JFrame {
         AESTitle = new javax.swing.JLabel();
         AESReturn = new javax.swing.JButton();
         jLabel32 = new javax.swing.JLabel();
-        FeistelPanel1 = new javax.swing.JPanel();
-        Feistel_Entry1 = new javax.swing.JTextField();
-        Feistel_Button1 = new javax.swing.JButton();
-        Feistel_Intro1 = new javax.swing.JLabel();
-        FeistelImage1 = new javax.swing.JLabel();
-        Theme_1 = new javax.swing.JLabel();
-        FeistelReturn1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -7348,85 +7341,6 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(AESPanel, "card38");
 
-        FeistelPanel1.setBackground(new java.awt.Color(255, 255, 255));
-
-        Feistel_Entry1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Feistel_Entry1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Feistel_Entry1ActionPerformed(evt);
-            }
-        });
-
-        Feistel_Button1.setBackground(new java.awt.Color(77, 132, 155));
-        Feistel_Button1.setForeground(new java.awt.Color(255, 255, 255));
-        Feistel_Button1.setText("Enter");
-        Feistel_Button1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Feistel_Button1Feistel_Enter_Button(evt);
-            }
-        });
-
-        Feistel_Intro1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        Feistel_Intro1.setForeground(new java.awt.Color(48, 87, 120));
-        Feistel_Intro1.setText("What is the final 8 bit value?");
-
-        FeistelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Feistel-Update.png"))); // NOI18N
-
-        Theme_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        FeistelReturn1.setBackground(new java.awt.Color(77, 132, 155));
-        FeistelReturn1.setForeground(new java.awt.Color(255, 255, 255));
-        FeistelReturn1.setText("Return");
-        FeistelReturn1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FeistelReturn1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout FeistelPanel1Layout = new javax.swing.GroupLayout(FeistelPanel1);
-        FeistelPanel1.setLayout(FeistelPanel1Layout);
-        FeistelPanel1Layout.setHorizontalGroup(
-            FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
-                        .addComponent(Feistel_Intro1))
-                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(FeistelReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(FeistelImage1)
-                        .addGap(18, 18, 18)
-                        .addComponent(Feistel_Entry1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Feistel_Button1)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addComponent(Theme_1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        FeistelPanel1Layout.setVerticalGroup(
-            FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(Feistel_Intro1)
-                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(FeistelReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(81, 81, 81))
-                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                        .addGap(234, 234, 234)
-                        .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Feistel_Entry1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Feistel_Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(FeistelImage1, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addComponent(Theme_1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        MainPanel.add(FeistelPanel1, "card8");
-
         Home.setText("Home");
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -9622,21 +9536,9 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_DESBB2ActionPerformed
 
     private void TestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TestActionPerformed
-        this.setVisible(false);
-        new NewJFrame().setVisible(true);
+//        this.setVisible(false);
+//        new NewJFrame().setVisible(true);
     }//GEN-LAST:event_TestActionPerformed
-
-    private void Feistel_Entry1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_Entry1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Feistel_Entry1ActionPerformed
-
-    private void Feistel_Button1Feistel_Enter_Button(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_Button1Feistel_Enter_Button
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Feistel_Button1Feistel_Enter_Button
-
-    private void FeistelReturn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelReturn1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FeistelReturn1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -9929,20 +9831,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem Feistel;
     private javax.swing.JPanel FeistelDescripPanel;
     private javax.swing.JLabel FeistelImage;
-    private javax.swing.JLabel FeistelImage1;
     private javax.swing.JLabel FeistelIntro;
     private javax.swing.JPanel FeistelPanel;
-    private javax.swing.JPanel FeistelPanel1;
     private javax.swing.JPanel FeistelPanelWelcome;
     private javax.swing.JButton FeistelQB;
     private javax.swing.JButton FeistelReturn;
-    private javax.swing.JButton FeistelReturn1;
     private javax.swing.JButton Feistel_Button;
-    private javax.swing.JButton Feistel_Button1;
     private javax.swing.JTextField Feistel_Entry;
-    private javax.swing.JTextField Feistel_Entry1;
     private javax.swing.JLabel Feistel_Intro;
-    private javax.swing.JLabel Feistel_Intro1;
     private javax.swing.JButton FesitelDescipB;
     private javax.swing.JLabel Former;
     private javax.swing.JLabel Former1;
@@ -10187,7 +10083,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture8;
     private javax.swing.JLabel ThemePicture9;
     private javax.swing.JLabel Theme_;
-    private javax.swing.JLabel Theme_1;
     private javax.swing.JLabel Theme__;
     private javax.swing.JLabel Theme__1;
     private javax.swing.JLabel Theme__2;
