@@ -54,6 +54,15 @@ public class Home extends javax.swing.JFrame {
         Welcome = new javax.swing.JLabel();
         Project = new javax.swing.JLabel();
         Theme = new javax.swing.JLabel();
+        TOCButton = new javax.swing.JButton();
+        TOCPanel = new javax.swing.JPanel();
+        jLabel49 = new javax.swing.JLabel();
+        TOCLabel = new javax.swing.JLabel();
+        TOC = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        ReturnWelcome = new javax.swing.JButton();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTextArea27 = new javax.swing.JTextArea();
         CaesarPanelWelcome = new javax.swing.JPanel();
         CaesarIntro = new javax.swing.JLabel();
         ThemePicture15 = new javax.swing.JLabel();
@@ -659,12 +668,6 @@ public class Home extends javax.swing.JFrame {
         DHB1 = new javax.swing.JButton();
         DH6_Back = new javax.swing.JButton();
         jLabel44 = new javax.swing.JLabel();
-        TestPanel = new javax.swing.JPanel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        jScrollPane13 = new javax.swing.JScrollPane();
-        jTextArea4 = new javax.swing.JTextArea();
-        jButton8 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -702,7 +705,6 @@ public class Home extends javax.swing.JFrame {
         ElGamal = new javax.swing.JMenuItem();
         DiffieHellman = new javax.swing.JMenuItem();
         TEST = new javax.swing.JMenu();
-        Test = new javax.swing.JMenuItem();
         Help = new javax.swing.JMenu();
         Dev = new javax.swing.JMenuItem();
 
@@ -733,6 +735,15 @@ public class Home extends javax.swing.JFrame {
 
         Theme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme2.png"))); // NOI18N
 
+        TOCButton.setBackground(new java.awt.Color(77, 132, 155));
+        TOCButton.setForeground(new java.awt.Color(255, 255, 255));
+        TOCButton.setText("Table of Contents");
+        TOCButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TOCButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout WelcomePanelLayout = new javax.swing.GroupLayout(WelcomePanel);
         WelcomePanel.setLayout(WelcomePanelLayout);
         WelcomePanelLayout.setHorizontalGroup(
@@ -747,6 +758,10 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Project)))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addComponent(Theme, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(WelcomePanelLayout.createSequentialGroup()
+                .addGap(354, 354, 354)
+                .addComponent(TOCButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         WelcomePanelLayout.setVerticalGroup(
             WelcomePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -755,11 +770,89 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Project)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
+                .addGap(43, 43, 43)
+                .addComponent(TOCButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
                 .addComponent(Theme))
         );
 
         MainPanel.add(WelcomePanel, "card2");
+
+        TOCPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        TOCLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        TOCLabel.setForeground(new java.awt.Color(48, 87, 120));
+        TOCLabel.setText("Crypto Tool: Table of Contents");
+
+        TOC.setBorder(null);
+        TOC.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        TOC.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea4.setEditable(false);
+        jTextArea4.setColumns(20);
+        jTextArea4.setRows(5);
+        jTextArea4.setText("Part 1: \n- Ciphers\n o Substitution\n o Block\n o Stream\n o Entropy\n- Encryption Modes\n o ECB\n o CBC\n o CTR\n- Authentication\n o PAP\n o CHAP\n o Kerberos\n o CBC-Mac\n");
+        TOC.setViewportView(jTextArea4);
+
+        ReturnWelcome.setBackground(new java.awt.Color(77, 132, 155));
+        ReturnWelcome.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        ReturnWelcome.setForeground(new java.awt.Color(255, 255, 255));
+        ReturnWelcome.setText("Return");
+        ReturnWelcome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ReturnWelcomeActionPerformed(evt);
+            }
+        });
+
+        jScrollPane6.setBorder(null);
+        jScrollPane6.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane6.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea27.setEditable(false);
+        jTextArea27.setColumns(20);
+        jTextArea27.setRows(5);
+        jTextArea27.setText("Part 2:\n- Digital Signatures\n o Hashing\n o RSA Signature\n- Public Key\n o RSA \n o El Gamal\n o Diffie Hellman\n- Private Key\n o Blowfish\n o AES");
+        jScrollPane6.setViewportView(jTextArea27);
+
+        javax.swing.GroupLayout TOCPanelLayout = new javax.swing.GroupLayout(TOCPanel);
+        TOCPanel.setLayout(TOCPanelLayout);
+        TOCPanelLayout.setHorizontalGroup(
+            TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TOCPanelLayout.createSequentialGroup()
+                .addGroup(TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel49)
+                    .addGroup(TOCPanelLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(ReturnWelcome))
+                    .addGroup(TOCPanelLayout.createSequentialGroup()
+                        .addGap(204, 204, 204)
+                        .addComponent(TOCLabel)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TOCPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(TOC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(208, 208, 208))
+        );
+        TOCPanelLayout.setVerticalGroup(
+            TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TOCPanelLayout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addComponent(TOCLabel)
+                .addGap(18, 18, 18)
+                .addGroup(TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
+                    .addComponent(TOC))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ReturnWelcome)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel49))
+        );
+
+        MainPanel.add(TOCPanel, "card91");
 
         CaesarPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -6996,63 +7089,6 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(DHPanel6, "card12");
 
-        TestPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        jLabel50.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel50.setText("Possible Solution: Crypto Tool Part Two");
-
-        jScrollPane13.setBorder(null);
-        jScrollPane13.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane13.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea4.setEditable(false);
-        jTextArea4.setColumns(20);
-        jTextArea4.setRows(5);
-        jTextArea4.setText("Part two contains:\n- Something\n- Blah\n- Something else\n- So on");
-        jScrollPane13.setViewportView(jTextArea4);
-
-        jButton8.setBackground(new java.awt.Color(77, 132, 155));
-        jButton8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Part Two");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout TestPanelLayout = new javax.swing.GroupLayout(TestPanel);
-        TestPanel.setLayout(TestPanelLayout);
-        TestPanelLayout.setHorizontalGroup(
-            TestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel49)
-            .addGroup(TestPanelLayout.createSequentialGroup()
-                .addGap(116, 116, 116)
-                .addGroup(TestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane13)))
-            .addGroup(TestPanelLayout.createSequentialGroup()
-                .addGap(380, 380, 380)
-                .addComponent(jButton8))
-        );
-        TestPanelLayout.setVerticalGroup(
-            TestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestPanelLayout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addComponent(jLabel50)
-                .addGap(30, 30, 30)
-                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
-                .addComponent(jButton8)
-                .addGap(75, 75, 75)
-                .addComponent(jLabel49))
-        );
-
-        MainPanel.add(TestPanel, "card91");
-
         Home.setText("Home");
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -7304,15 +7340,11 @@ public class Home extends javax.swing.JFrame {
         jMenuBar1.add(PublicKey);
 
         TEST.setText("Part 2");
-
-        Test.setText("Test");
-        Test.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TestActionPerformed(evt);
+        TEST.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TESTMouseClicked(evt);
             }
         });
-        TEST.add(Test);
-
         jMenuBar1.add(TEST);
 
         Help.setText("Help");
@@ -9127,20 +9159,30 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DESBB2ActionPerformed
 
-    private void TestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TestActionPerformed
+    private void ReturnWelcomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReturnWelcomeActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(TestPanel);
+        MainPanel.add(WelcomePanel);
         MainPanel.repaint();
         MainPanel.revalidate();
-    }//GEN-LAST:event_TestActionPerformed
+    }//GEN-LAST:event_ReturnWelcomeActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void TOCButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TOCButtonActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(TOCPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_TOCButtonActionPerformed
+
+    private void TESTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TESTMouseClicked
         this.setVisible(false);
         new Crypto2().setVisible(true);
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_TESTMouseClicked
 
     /**
      * @param args the command line arguments
@@ -9582,6 +9624,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel RSA_Signature_1;
     private javax.swing.JPanel RSA_Signature_2;
     private javax.swing.JPanel RSA_Validate;
+    private javax.swing.JButton ReturnWelcome;
     private javax.swing.JMenuItem SHA;
     private javax.swing.JTextField SHAA1;
     private javax.swing.JTextField SHAA2;
@@ -9630,8 +9673,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JRadioButton T4;
     private javax.swing.JRadioButton T5;
     private javax.swing.JMenu TEST;
-    private javax.swing.JMenuItem Test;
-    private javax.swing.JPanel TestPanel;
+    private javax.swing.JScrollPane TOC;
+    private javax.swing.JButton TOCButton;
+    private javax.swing.JLabel TOCLabel;
+    private javax.swing.JPanel TOCPanel;
     private javax.swing.JLabel Theme;
     private javax.swing.JLabel ThemePicture;
     private javax.swing.JLabel ThemePicture1;
@@ -9724,7 +9769,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -9769,7 +9813,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -9780,11 +9823,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
-    private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTextArea jTextArea1;
@@ -9806,6 +9849,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea24;
     private javax.swing.JTextArea jTextArea25;
     private javax.swing.JTextArea jTextArea26;
+    private javax.swing.JTextArea jTextArea27;
     private javax.swing.JTextArea jTextArea29;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea30;
