@@ -659,34 +659,12 @@ public class Home extends javax.swing.JFrame {
         DHB1 = new javax.swing.JButton();
         DH6_Back = new javax.swing.JButton();
         jLabel44 = new javax.swing.JLabel();
-        BlowfishPanelWelcome = new javax.swing.JPanel();
-        BlowfishIntro = new javax.swing.JLabel();
-        ThemePicture10 = new javax.swing.JLabel();
-        BlowfishDes = new javax.swing.JButton();
-        BlowfishQ = new javax.swing.JButton();
-        BlowfishDescription = new javax.swing.JPanel();
-        BlowfishTitle = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jTextArea27 = new javax.swing.JTextArea();
-        ThemePicture23 = new javax.swing.JLabel();
-        BlowfishBB = new javax.swing.JButton();
-        BlowfishPanel = new javax.swing.JPanel();
-        BlowfishReturn = new javax.swing.JButton();
-        AESPanelWelcome = new javax.swing.JPanel();
-        AESIntro = new javax.swing.JLabel();
-        ThemePicture11 = new javax.swing.JLabel();
-        AESDes = new javax.swing.JButton();
-        AESQ = new javax.swing.JButton();
-        AESDescription = new javax.swing.JPanel();
-        AEStitle = new javax.swing.JLabel();
-        jScrollPane7 = new javax.swing.JScrollPane();
-        jTextArea28 = new javax.swing.JTextArea();
-        ThemePicture24 = new javax.swing.JLabel();
-        AESBack = new javax.swing.JButton();
-        AESPanel = new javax.swing.JPanel();
-        AESTitle = new javax.swing.JLabel();
-        AESReturn = new javax.swing.JButton();
-        jLabel32 = new javax.swing.JLabel();
+        TestPanel = new javax.swing.JPanel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        jButton8 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Home = new javax.swing.JMenu();
         Ciphers = new javax.swing.JMenu();
@@ -723,13 +701,10 @@ public class Home extends javax.swing.JFrame {
         RSA = new javax.swing.JMenuItem();
         ElGamal = new javax.swing.JMenuItem();
         DiffieHellman = new javax.swing.JMenuItem();
-        PrivateKey = new javax.swing.JMenu();
-        Blowfish = new javax.swing.JMenuItem();
-        AES = new javax.swing.JMenuItem();
-        Help = new javax.swing.JMenu();
-        Dev = new javax.swing.JMenuItem();
         TEST = new javax.swing.JMenu();
         Test = new javax.swing.JMenuItem();
+        Help = new javax.swing.JMenu();
+        Dev = new javax.swing.JMenuItem();
 
         jPasswordField1.setText("jPasswordField1");
 
@@ -780,9 +755,8 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Project)
-                .addGap(112, 112, 112)
-                .addComponent(Theme)
-                .addGap(0, 0, 0))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
+                .addComponent(Theme))
         );
 
         MainPanel.add(WelcomePanel, "card2");
@@ -7022,324 +6996,62 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(DHPanel6, "card12");
 
-        BlowfishPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+        TestPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        BlowfishIntro.setBackground(new java.awt.Color(255, 255, 255));
-        BlowfishIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        BlowfishIntro.setForeground(new java.awt.Color(48, 87, 120));
-        BlowfishIntro.setText("Blowfish");
+        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        ThemePicture10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        jLabel50.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel50.setText("Possible Solution: Crypto Tool Part Two");
 
-        BlowfishDes.setBackground(new java.awt.Color(77, 132, 155));
-        BlowfishDes.setForeground(new java.awt.Color(255, 255, 255));
-        BlowfishDes.setText("Description");
-        BlowfishDes.addActionListener(new java.awt.event.ActionListener() {
+        jScrollPane13.setBorder(null);
+        jScrollPane13.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane13.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea4.setEditable(false);
+        jTextArea4.setColumns(20);
+        jTextArea4.setRows(5);
+        jTextArea4.setText("Part two contains:\n- Something\n- Blah\n- Something else\n- So on");
+        jScrollPane13.setViewportView(jTextArea4);
+
+        jButton8.setBackground(new java.awt.Color(77, 132, 155));
+        jButton8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("Part Two");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BlowfishDesActionPerformed(evt);
+                jButton8ActionPerformed(evt);
             }
         });
 
-        BlowfishQ.setBackground(new java.awt.Color(77, 132, 155));
-        BlowfishQ.setForeground(new java.awt.Color(255, 255, 255));
-        BlowfishQ.setText("Questions");
-        BlowfishQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BlowfishQActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout BlowfishPanelWelcomeLayout = new javax.swing.GroupLayout(BlowfishPanelWelcome);
-        BlowfishPanelWelcome.setLayout(BlowfishPanelWelcomeLayout);
-        BlowfishPanelWelcomeLayout.setHorizontalGroup(
-            BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture10)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
-                .addGroup(BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(269, 269, 269)
-                        .addComponent(BlowfishDes)
-                        .addGap(66, 66, 66)
-                        .addComponent(BlowfishQ))
-                    .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(323, 323, 323)
-                        .addComponent(BlowfishIntro)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        javax.swing.GroupLayout TestPanelLayout = new javax.swing.GroupLayout(TestPanel);
+        TestPanel.setLayout(TestPanelLayout);
+        TestPanelLayout.setHorizontalGroup(
+            TestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel49)
+            .addGroup(TestPanelLayout.createSequentialGroup()
+                .addGap(116, 116, 116)
+                .addGroup(TestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane13)))
+            .addGroup(TestPanelLayout.createSequentialGroup()
+                .addGap(380, 380, 380)
+                .addComponent(jButton8))
         );
-        BlowfishPanelWelcomeLayout.setVerticalGroup(
-            BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
-                .addComponent(BlowfishIntro)
-                .addGap(18, 18, 18)
-                .addGroup(BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BlowfishDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BlowfishQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(148, 148, 148)
-                .addComponent(ThemePicture10))
-        );
-
-        MainPanel.add(BlowfishPanelWelcome, "card51");
-
-        BlowfishDescription.setBackground(new java.awt.Color(255, 255, 255));
-
-        BlowfishTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        BlowfishTitle.setForeground(new java.awt.Color(48, 87, 120));
-        BlowfishTitle.setText("Blowfish ");
-
-        jScrollPane6.setBorder(null);
-        jScrollPane6.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane6.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea27.setColumns(20);
-        jTextArea27.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
-        jTextArea27.setLineWrap(true);
-        jTextArea27.setRows(5);
-        jTextArea27.setText("- Blowfish is a symmetric-key block cipher designed by Bruce Schneier\n- No effective crytanalysis of it has been found to date\n- It was originally designed as an alternative to DES\n- Like 3DES, it has 16 rounds and uses the Feistel Network\n- It uses block sizes of 64 bits and key sizes from 32-448 bits\n- However, Twofish is more widely used due to it's larger block sizes");
-        jTextArea27.setWrapStyleWord(true);
-        jScrollPane6.setViewportView(jTextArea27);
-
-        ThemePicture23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        BlowfishBB.setBackground(new java.awt.Color(77, 132, 155));
-        BlowfishBB.setForeground(new java.awt.Color(255, 255, 255));
-        BlowfishBB.setText("Return");
-        BlowfishBB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BlowfishBBActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout BlowfishDescriptionLayout = new javax.swing.GroupLayout(BlowfishDescription);
-        BlowfishDescription.setLayout(BlowfishDescriptionLayout);
-        BlowfishDescriptionLayout.setHorizontalGroup(
-            BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
-                .addGroup(BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ThemePicture23)
-                    .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
-                        .addGap(350, 350, 350)
-                        .addComponent(BlowfishTitle))
-                    .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
-                        .addGap(377, 377, 377)
-                        .addComponent(BlowfishBB)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        BlowfishDescriptionLayout.setVerticalGroup(
-            BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(BlowfishTitle)
-                .addGap(69, 69, 69)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62)
-                .addComponent(BlowfishBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ThemePicture23))
-        );
-
-        MainPanel.add(BlowfishDescription, "card87");
-
-        BlowfishPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        BlowfishReturn.setBackground(new java.awt.Color(77, 132, 155));
-        BlowfishReturn.setForeground(new java.awt.Color(255, 255, 255));
-        BlowfishReturn.setText("Return");
-        BlowfishReturn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BlowfishReturnActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout BlowfishPanelLayout = new javax.swing.GroupLayout(BlowfishPanel);
-        BlowfishPanel.setLayout(BlowfishPanelLayout);
-        BlowfishPanelLayout.setHorizontalGroup(
-            BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BlowfishPanelLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        BlowfishPanelLayout.setVerticalGroup(
-            BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BlowfishPanelLayout.createSequentialGroup()
-                .addContainerGap(689, Short.MAX_VALUE)
-                .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
-        );
-
-        MainPanel.add(BlowfishPanel, "card37");
-
-        AESPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
-
-        AESIntro.setBackground(new java.awt.Color(255, 255, 255));
-        AESIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        AESIntro.setForeground(new java.awt.Color(48, 87, 120));
-        AESIntro.setText("AES");
-
-        ThemePicture11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        AESDes.setBackground(new java.awt.Color(77, 132, 155));
-        AESDes.setForeground(new java.awt.Color(255, 255, 255));
-        AESDes.setText("Description");
-        AESDes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AESDesActionPerformed(evt);
-            }
-        });
-
-        AESQ.setBackground(new java.awt.Color(77, 132, 155));
-        AESQ.setForeground(new java.awt.Color(255, 255, 255));
-        AESQ.setText("Questions");
-        AESQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AESQActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout AESPanelWelcomeLayout = new javax.swing.GroupLayout(AESPanelWelcome);
-        AESPanelWelcome.setLayout(AESPanelWelcomeLayout);
-        AESPanelWelcomeLayout.setHorizontalGroup(
-            AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture11)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
-                .addGroup(AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(269, 269, 269)
-                        .addComponent(AESDes)
-                        .addGap(66, 66, 66)
-                        .addComponent(AESQ))
-                    .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(350, 350, 350)
-                        .addComponent(AESIntro)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        AESPanelWelcomeLayout.setVerticalGroup(
-            AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(225, Short.MAX_VALUE)
-                .addComponent(AESIntro)
-                .addGap(18, 18, 18)
-                .addGroup(AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AESDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AESQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(148, 148, 148)
-                .addComponent(ThemePicture11))
-        );
-
-        MainPanel.add(AESPanelWelcome, "card52");
-
-        AESDescription.setBackground(new java.awt.Color(255, 255, 255));
-
-        AEStitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        AEStitle.setForeground(new java.awt.Color(48, 87, 120));
-        AEStitle.setText("Advanced Encryption Standard");
-
-        jScrollPane7.setBorder(null);
-
-        jTextArea28.setColumns(20);
-        jTextArea28.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
-        jTextArea28.setLineWrap(true);
-        jTextArea28.setRows(5);
-        jTextArea28.setText("- AES was created by Vincent Rijmen and Joan Daemen who submitted a proposal to NIST during the AES selection process. \n- AES uses 10, 12 or 14 rounds for the 128, 192 and 256 bit key size, respectively. \n- AES is currently standard for the U.S government\n- It is a symmetric-key algorithm \n- While there have been proposals for AES attacks that are computationally faster than a brute-force attack, they are not computationally feasible.");
-        jTextArea28.setWrapStyleWord(true);
-        jScrollPane7.setViewportView(jTextArea28);
-
-        ThemePicture24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        AESBack.setBackground(new java.awt.Color(77, 132, 155));
-        AESBack.setForeground(new java.awt.Color(255, 255, 255));
-        AESBack.setText("Return");
-        AESBack.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AESBackActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout AESDescriptionLayout = new javax.swing.GroupLayout(AESDescription);
-        AESDescription.setLayout(AESDescriptionLayout);
-        AESDescriptionLayout.setHorizontalGroup(
-            AESDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AESDescriptionLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(AESDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ThemePicture24)
-                    .addGroup(AESDescriptionLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AESDescriptionLayout.createSequentialGroup()
-                        .addGap(377, 377, 377)
-                        .addComponent(AESBack))
-                    .addGroup(AESDescriptionLayout.createSequentialGroup()
-                        .addGap(188, 188, 188)
-                        .addComponent(AEStitle)))
-                .addGap(28, 28, 28))
-        );
-        AESDescriptionLayout.setVerticalGroup(
-            AESDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AESDescriptionLayout.createSequentialGroup()
+        TestPanelLayout.setVerticalGroup(
+            TestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestPanelLayout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addComponent(jLabel50)
+                .addGap(30, 30, 30)
+                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
+                .addComponent(jButton8)
                 .addGap(75, 75, 75)
-                .addComponent(AEStitle)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(AESBack, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ThemePicture24))
+                .addComponent(jLabel49))
         );
 
-        MainPanel.add(AESDescription, "card87");
-
-        AESPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        AESTitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        AESTitle.setForeground(new java.awt.Color(48, 87, 120));
-        AESTitle.setText("AES");
-
-        AESReturn.setBackground(new java.awt.Color(77, 132, 155));
-        AESReturn.setForeground(new java.awt.Color(255, 255, 255));
-        AESReturn.setText("Return");
-        AESReturn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AESReturnActionPerformed(evt);
-            }
-        });
-
-        jLabel32.setBackground(new java.awt.Color(77, 132, 155));
-        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        javax.swing.GroupLayout AESPanelLayout = new javax.swing.GroupLayout(AESPanel);
-        AESPanel.setLayout(AESPanelLayout);
-        AESPanelLayout.setHorizontalGroup(
-            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AESPanelLayout.createSequentialGroup()
-                .addGap(416, 416, 416)
-                .addComponent(AESTitle))
-            .addComponent(jLabel32)
-            .addGroup(AESPanelLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        AESPanelLayout.setVerticalGroup(
-            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AESPanelLayout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(AESTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(jLabel32))
-        );
-
-        MainPanel.add(AESPanel, "card38");
+        MainPanel.add(TestPanel, "card91");
 
         Home.setText("Home");
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -7591,25 +7303,17 @@ public class Home extends javax.swing.JFrame {
 
         jMenuBar1.add(PublicKey);
 
-        PrivateKey.setText("Private Key");
+        TEST.setText("Part 2");
 
-        Blowfish.setText("Blowfish");
-        Blowfish.addActionListener(new java.awt.event.ActionListener() {
+        Test.setText("Test");
+        Test.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BlowfishActionPerformed(evt);
+                TestActionPerformed(evt);
             }
         });
-        PrivateKey.add(Blowfish);
+        TEST.add(Test);
 
-        AES.setText("AES");
-        AES.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AESActionPerformed(evt);
-            }
-        });
-        PrivateKey.add(AES);
-
-        jMenuBar1.add(PrivateKey);
+        jMenuBar1.add(TEST);
 
         Help.setText("Help");
 
@@ -7623,18 +7327,6 @@ public class Home extends javax.swing.JFrame {
         Help.add(Dev);
 
         jMenuBar1.add(Help);
-
-        TEST.setText("Test");
-
-        Test.setText("Test");
-        Test.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TestActionPerformed(evt);
-            }
-        });
-        TEST.add(Test);
-
-        jMenuBar1.add(TEST);
 
         setJMenuBar(jMenuBar1);
 
@@ -8169,26 +7861,6 @@ public class Home extends javax.swing.JFrame {
             MainPanel.repaint();
             MainPanel.revalidate();        // TODO add your handling code here:
     }//GEN-LAST:event_MD5ActionPerformed
-
-    private void BlowfishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowfishActionPerformed
-            MainPanel.removeAll();
-            MainPanel.repaint();
-            MainPanel.revalidate();
-
-            MainPanel.add(BlowfishPanelWelcome);
-            MainPanel.repaint();
-            MainPanel.revalidate();        // TODO add your handling code here:
-    }//GEN-LAST:event_BlowfishActionPerformed
-
-    private void AESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESActionPerformed
-            MainPanel.removeAll();
-            MainPanel.repaint();
-            MainPanel.revalidate();
-
-            MainPanel.add(AESPanelWelcome);
-            MainPanel.repaint();
-            MainPanel.revalidate();        // TODO add your handling code here:
-    }//GEN-LAST:event_AESActionPerformed
     String OTPGame(String message){
         
        Random r1 = new Random();
@@ -8496,46 +8168,6 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_DHQActionPerformed
 
-    private void BlowfishDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowfishDesActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(BlowfishDescription);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_BlowfishDesActionPerformed
-
-    private void BlowfishQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowfishQActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(BlowfishPanel);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_BlowfishQActionPerformed
-
-    private void AESDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESDesActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(AESDescription);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_AESDesActionPerformed
-
-    private void AESQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESQActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(AESPanel);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_AESQActionPerformed
-
     private void RSADesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSADesActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
@@ -8585,26 +8217,6 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_DHReturnActionPerformed
-
-    private void BlowfishReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowfishReturnActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(BlowfishPanelWelcome);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_BlowfishReturnActionPerformed
-
-    private void AESReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESReturnActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(AESPanelWelcome);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_AESReturnActionPerformed
 
     private void Feistel_EntryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Feistel_EntryActionPerformed
         // TODO add your handling code here:
@@ -9277,16 +8889,6 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TripDESAActionPerformed
 
-    private void BlowfishBBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowfishBBActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(BlowfishPanelWelcome);
-        MainPanel.repaint();
-        MainPanel.revalidate(); 
-    }//GEN-LAST:event_BlowfishBBActionPerformed
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
@@ -9306,16 +8908,6 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void AESBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESBackActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(AESPanelWelcome);
-        MainPanel.repaint();
-        MainPanel.revalidate(); 
-    }//GEN-LAST:event_AESBackActionPerformed
 
     private void DHBB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DHBB1ActionPerformed
         MainPanel.removeAll();
@@ -9536,9 +9128,19 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_DESBB2ActionPerformed
 
     private void TestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TestActionPerformed
-//        this.setVisible(false);
-//        new NewJFrame().setVisible(true);
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(TestPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_TestActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        this.setVisible(false);
+        new Crypto2().setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -9574,17 +9176,6 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem AES;
-    private javax.swing.JButton AESBack;
-    private javax.swing.JButton AESDes;
-    private javax.swing.JPanel AESDescription;
-    private javax.swing.JLabel AESIntro;
-    private javax.swing.JPanel AESPanel;
-    private javax.swing.JPanel AESPanelWelcome;
-    private javax.swing.JButton AESQ;
-    private javax.swing.JButton AESReturn;
-    private javax.swing.JLabel AESTitle;
-    private javax.swing.JLabel AEStitle;
     private javax.swing.JTextField Answer1;
     private javax.swing.JMenuItem Atbash;
     private javax.swing.JButton AtbashDes;
@@ -9606,16 +9197,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton Back_RSA1;
     private javax.swing.JButton Back_RSA2;
     private javax.swing.JMenu BlockCiphers;
-    private javax.swing.JMenuItem Blowfish;
-    private javax.swing.JButton BlowfishBB;
-    private javax.swing.JButton BlowfishDes;
-    private javax.swing.JPanel BlowfishDescription;
-    private javax.swing.JLabel BlowfishIntro;
-    private javax.swing.JPanel BlowfishPanel;
-    private javax.swing.JPanel BlowfishPanelWelcome;
-    private javax.swing.JButton BlowfishQ;
-    private javax.swing.JButton BlowfishReturn;
-    private javax.swing.JLabel BlowfishTitle;
     private javax.swing.JMenuItem CBC;
     private javax.swing.JButton CBCBB;
     private javax.swing.JButton CBCDes;
@@ -9934,7 +9515,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton PAPSend;
     private javax.swing.JTextField PAPUN;
     private javax.swing.JLabel PAPUser;
-    private javax.swing.JMenu PrivateKey;
     private javax.swing.JLabel Project;
     private javax.swing.JMenu PublicKey;
     private javax.swing.JLabel Q1;
@@ -10051,11 +9631,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JRadioButton T5;
     private javax.swing.JMenu TEST;
     private javax.swing.JMenuItem Test;
+    private javax.swing.JPanel TestPanel;
     private javax.swing.JLabel Theme;
     private javax.swing.JLabel ThemePicture;
     private javax.swing.JLabel ThemePicture1;
-    private javax.swing.JLabel ThemePicture10;
-    private javax.swing.JLabel ThemePicture11;
     private javax.swing.JLabel ThemePicture12;
     private javax.swing.JLabel ThemePicture13;
     private javax.swing.JLabel ThemePicture14;
@@ -10068,8 +9647,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture20;
     private javax.swing.JLabel ThemePicture21;
     private javax.swing.JLabel ThemePicture22;
-    private javax.swing.JLabel ThemePicture23;
-    private javax.swing.JLabel ThemePicture24;
     private javax.swing.JLabel ThemePicture25;
     private javax.swing.JLabel ThemePicture26;
     private javax.swing.JLabel ThemePicture27;
@@ -10147,6 +9724,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -10172,7 +9750,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
@@ -10190,7 +9767,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -10201,12 +9780,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTextArea jTextArea1;
@@ -10228,8 +9806,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea24;
     private javax.swing.JTextArea jTextArea25;
     private javax.swing.JTextArea jTextArea26;
-    private javax.swing.JTextArea jTextArea27;
-    private javax.swing.JTextArea jTextArea28;
     private javax.swing.JTextArea jTextArea29;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea30;
@@ -10240,6 +9816,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea35;
     private javax.swing.JTextArea jTextArea36;
     private javax.swing.JTextArea jTextArea37;
+    private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextArea jTextArea7;
