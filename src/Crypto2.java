@@ -348,7 +348,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addComponent(Welcome, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Project)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 439, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addComponent(Theme))
         );
 
@@ -403,7 +403,7 @@ public class Crypto2 extends javax.swing.JFrame {
         BlowfishPanelWelcomeLayout.setVerticalGroup(
             BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(529, Short.MAX_VALUE)
+                .addContainerGap(512, Short.MAX_VALUE)
                 .addComponent(BlowfishIntro)
                 .addGap(18, 18, 18)
                 .addGroup(BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -500,7 +500,7 @@ public class Crypto2 extends javax.swing.JFrame {
         BlowfishPanelLayout.setVerticalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BlowfishPanelLayout.createSequentialGroup()
-                .addContainerGap(993, Short.MAX_VALUE)
+                .addContainerGap(976, Short.MAX_VALUE)
                 .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28))
         );
@@ -556,7 +556,7 @@ public class Crypto2 extends javax.swing.JFrame {
         AESPanelWelcomeLayout.setVerticalGroup(
             AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(529, Short.MAX_VALUE)
+                .addContainerGap(512, Short.MAX_VALUE)
                 .addComponent(AESIntro)
                 .addGap(18, 18, 18)
                 .addGroup(AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -722,7 +722,7 @@ public class Crypto2 extends javax.swing.JFrame {
         RSAPanelWelcomeLayout.setVerticalGroup(
             RSAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSAPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(529, Short.MAX_VALUE)
+                .addContainerGap(512, Short.MAX_VALUE)
                 .addComponent(RSAIntro)
                 .addGap(18, 18, 18)
                 .addGroup(RSAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -964,7 +964,7 @@ public class Crypto2 extends javax.swing.JFrame {
         ElGamalPanelWelcomeLayout.setVerticalGroup(
             ElGamalPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ElGamalPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(529, Short.MAX_VALUE)
+                .addContainerGap(512, Short.MAX_VALUE)
                 .addComponent(ElGamIntro)
                 .addGap(18, 18, 18)
                 .addGroup(ElGamalPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1215,7 +1215,7 @@ public class Crypto2 extends javax.swing.JFrame {
         DHPanelWelcomeLayout.setVerticalGroup(
             DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(529, Short.MAX_VALUE)
+                .addContainerGap(512, Short.MAX_VALUE)
                 .addComponent(DH_intro)
                 .addGap(18, 18, 18)
                 .addGroup(DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1871,7 +1871,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SHAPanelWelcomeLayout.setVerticalGroup(
             SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(529, Short.MAX_VALUE)
+                .addContainerGap(512, Short.MAX_VALUE)
                 .addComponent(SHAIntro)
                 .addGap(18, 18, 18)
                 .addGroup(SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2151,7 +2151,7 @@ public class Crypto2 extends javax.swing.JFrame {
         MD5PanelWelcomeLayout.setVerticalGroup(
             MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MD5PanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(513, Short.MAX_VALUE)
+                .addContainerGap(496, Short.MAX_VALUE)
                 .addComponent(MD5Intro)
                 .addGap(18, 18, 18)
                 .addGroup(MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2426,7 +2426,7 @@ public class Crypto2 extends javax.swing.JFrame {
         RSASignaturePanelWelcomeLayout.setVerticalGroup(
             RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(516, Short.MAX_VALUE)
+                .addContainerGap(499, Short.MAX_VALUE)
                 .addComponent(RSASigIntro)
                 .addGap(31, 31, 31)
                 .addGroup(RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -3057,7 +3057,7 @@ public class Crypto2 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1054, Short.MAX_VALUE)
+            .addGap(0, 1037, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(MainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );

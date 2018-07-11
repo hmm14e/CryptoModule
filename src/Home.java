@@ -231,6 +231,17 @@ public class Home extends javax.swing.JFrame {
         ThemePicture = new javax.swing.JLabel();
         FesitelDescipB = new javax.swing.JButton();
         FeistelQB = new javax.swing.JButton();
+        FeistelPanel1 = new javax.swing.JPanel();
+        Feistel_Intro1 = new javax.swing.JLabel();
+        Theme_1 = new javax.swing.JLabel();
+        FeistelReturn1 = new javax.swing.JButton();
+        inout = new javax.swing.JLabel();
+        SBOX = new javax.swing.JLabel();
+        ConfusionQuestion = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        ConfusionA = new javax.swing.JTextField();
+        ConfusionB = new javax.swing.JButton();
+        ConfusionNext = new javax.swing.JButton();
         FeistelDescripPanel = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -2434,6 +2445,111 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(FeistelPanelWelcome, "card41");
+
+        FeistelPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        Feistel_Intro1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        Feistel_Intro1.setForeground(new java.awt.Color(48, 87, 120));
+        Feistel_Intro1.setText("Confusion");
+
+        Theme_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        FeistelReturn1.setBackground(new java.awt.Color(77, 132, 155));
+        FeistelReturn1.setForeground(new java.awt.Color(255, 255, 255));
+        FeistelReturn1.setText("Return");
+        FeistelReturn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeistelReturn1ActionPerformed(evt);
+            }
+        });
+
+        inout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/TAble.png"))); // NOI18N
+
+        SBOX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Sbox.png"))); // NOI18N
+
+        ConfusionQuestion.setBorder(null);
+        ConfusionQuestion.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        ConfusionQuestion.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("1. What's the output of the S box?");
+        ConfusionQuestion.setViewportView(jTextArea1);
+
+        ConfusionA.setText("jTextField1");
+
+        ConfusionB.setText("jButton1");
+        ConfusionB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConfusionBActionPerformed(evt);
+            }
+        });
+
+        ConfusionNext.setBackground(new java.awt.Color(77, 132, 155));
+        ConfusionNext.setForeground(new java.awt.Color(255, 255, 255));
+        ConfusionNext.setText("Next");
+        ConfusionNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConfusionNextActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout FeistelPanel1Layout = new javax.swing.GroupLayout(FeistelPanel1);
+        FeistelPanel1.setLayout(FeistelPanel1Layout);
+        FeistelPanel1Layout.setHorizontalGroup(
+            FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Theme_1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(FeistelPanel1Layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(FeistelReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ConfusionNext, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
+                        .addGap(91, 91, 91)
+                        .addComponent(Feistel_Intro1)
+                        .addGap(215, 215, 215))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ConfusionQuestion, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(ConfusionA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(ConfusionB))
+                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
+                        .addComponent(SBOX)
+                        .addGap(151, 151, 151)
+                        .addComponent(inout)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(183, 183, 183))
+        );
+        FeistelPanel1Layout.setVerticalGroup(
+            FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FeistelPanel1Layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(Feistel_Intro1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(SBOX, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(inout, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ConfusionQuestion, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(ConfusionA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ConfusionB)))
+                .addGap(46, 46, 46)
+                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FeistelReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ConfusionNext, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(81, 81, 81)
+                .addComponent(Theme_1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        MainPanel.add(FeistelPanel1, "card8");
 
         FeistelDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -5320,9 +5436,10 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(FeistelPanel);
+        MainPanel.add(FeistelPanel1);
         MainPanel.repaint();
         MainPanel.revalidate();
+        ConfusionNext.setVisible(false);
     }//GEN-LAST:event_FeistelQBActionPerformed
 
     private void FDPBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FDPBActionPerformed
@@ -6006,6 +6123,36 @@ public class Home extends javax.swing.JFrame {
         new Crypto2().setVisible(true);
     }//GEN-LAST:event_TESTMouseClicked
 
+    private void FeistelReturn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelReturn1ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_FeistelReturn1ActionPerformed
+
+    private void ConfusionNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfusionNextActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(FeistelPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_ConfusionNextActionPerformed
+
+    private void ConfusionBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfusionBActionPerformed
+        String hold = ConfusionA.getText();
+        
+        if(hold.equals("1"))
+        {    
+            ConfusionNext.setVisible(true);
+            System.out.print("Hi");
+        }
+    }//GEN-LAST:event_ConfusionBActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -6132,6 +6279,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Ciphertext_Atbash;
     private javax.swing.JLabel Ciphertext_Caesar;
     private javax.swing.JLabel Ciphertext_Vigenere;
+    private javax.swing.JTextField ConfusionA;
+    private javax.swing.JButton ConfusionB;
+    private javax.swing.JButton ConfusionNext;
+    private javax.swing.JScrollPane ConfusionQuestion;
     private javax.swing.JLabel Correct1;
     private javax.swing.JPanel Correct_ECB;
     private javax.swing.JLabel Correct_Pic;
@@ -6202,12 +6353,15 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel FeistelImage;
     private javax.swing.JLabel FeistelIntro;
     private javax.swing.JPanel FeistelPanel;
+    private javax.swing.JPanel FeistelPanel1;
     private javax.swing.JPanel FeistelPanelWelcome;
     private javax.swing.JButton FeistelQB;
     private javax.swing.JButton FeistelReturn;
+    private javax.swing.JButton FeistelReturn1;
     private javax.swing.JButton Feistel_Button;
     private javax.swing.JTextField Feistel_Entry;
     private javax.swing.JLabel Feistel_Intro;
+    private javax.swing.JLabel Feistel_Intro1;
     private javax.swing.JButton FesitelDescipB;
     private javax.swing.JMenu Help;
     private javax.swing.JMenu Home;
@@ -6313,6 +6467,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton RCReturn1;
     private javax.swing.JButton RCReturn2;
     private javax.swing.JButton ReturnWelcome;
+    private javax.swing.JLabel SBOX;
     private javax.swing.JLabel Seed;
     private javax.swing.JLabel SentPassword;
     private javax.swing.JLabel SentUN;
@@ -6354,6 +6509,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
     private javax.swing.JLabel Theme_;
+    private javax.swing.JLabel Theme_1;
     private javax.swing.JLabel Theme__;
     private javax.swing.JLabel Theme__1;
     private javax.swing.JMenuItem TripDES;
@@ -6399,6 +6555,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Welcome;
     private javax.swing.JPanel WelcomePanel;
     private javax.swing.ButtonGroup buttonGroup6;
+    private javax.swing.JLabel inout;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -6445,6 +6602,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea13;
     private javax.swing.JTextArea jTextArea14;
