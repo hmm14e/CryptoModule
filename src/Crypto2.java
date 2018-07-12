@@ -177,18 +177,18 @@ public class Crypto2 extends javax.swing.JFrame {
         DHB1 = new javax.swing.JButton();
         DH6_Back = new javax.swing.JButton();
         jLabel44 = new javax.swing.JLabel();
-        SHAPanelWelcome = new javax.swing.JPanel();
-        SHAIntro = new javax.swing.JLabel();
+        SHA2PanelWelcome = new javax.swing.JPanel();
+        SHA2Intro = new javax.swing.JLabel();
         ThemePicture5 = new javax.swing.JLabel();
-        SHADes = new javax.swing.JButton();
-        SHAQ = new javax.swing.JButton();
-        SHADescription = new javax.swing.JPanel();
-        SHADescriptionHeader = new javax.swing.JLabel();
+        SHA2Des = new javax.swing.JButton();
+        SHA2Q = new javax.swing.JButton();
+        SHA2Description = new javax.swing.JPanel();
+        SHA2DescriptionHeader = new javax.swing.JLabel();
         SHADescrip = new javax.swing.JScrollPane();
         SHA_Des = new javax.swing.JTextArea();
         Theme__2 = new javax.swing.JLabel();
-        SHABB = new javax.swing.JButton();
-        SHAPanel = new javax.swing.JPanel();
+        SHA2Back = new javax.swing.JButton();
+        SHA2Panel = new javax.swing.JPanel();
         SHA_Text = new javax.swing.JTextField();
         SHA_Button = new javax.swing.JButton();
         SHA_Output = new javax.swing.JLabel();
@@ -205,6 +205,21 @@ public class Crypto2 extends javax.swing.JFrame {
         SHAA1 = new javax.swing.JTextField();
         SHAReturn = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
+        SHA3PanelWelcome = new javax.swing.JPanel();
+        SHA3Intro = new javax.swing.JLabel();
+        ThemePicture12 = new javax.swing.JLabel();
+        SHA3Des = new javax.swing.JButton();
+        SHA3Q = new javax.swing.JButton();
+        SHA3Description = new javax.swing.JPanel();
+        SHADescriptionHeader1 = new javax.swing.JLabel();
+        SHA3Descrip = new javax.swing.JScrollPane();
+        SHA_Des1 = new javax.swing.JTextArea();
+        Theme__6 = new javax.swing.JLabel();
+        SHA3Back = new javax.swing.JButton();
+        SHA3Panel = new javax.swing.JPanel();
+        SHA3Header = new javax.swing.JLabel();
+        SHA3Return = new javax.swing.JButton();
+        jLabel23 = new javax.swing.JLabel();
         MD5PanelWelcome = new javax.swing.JPanel();
         MD5Intro = new javax.swing.JLabel();
         ThemePicture6 = new javax.swing.JLabel();
@@ -290,13 +305,13 @@ public class Crypto2 extends javax.swing.JFrame {
         Verify_Submit = new javax.swing.JButton();
         Back_RSA2 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
         DigitalSignatures = new javax.swing.JMenu();
-        Hashing = new javax.swing.JMenu();
-        SHA = new javax.swing.JMenuItem();
-        MD5 = new javax.swing.JMenuItem();
         RSASignature = new javax.swing.JMenuItem();
+        Hashing = new javax.swing.JMenu();
+        MD5 = new javax.swing.JMenuItem();
+        SHA = new javax.swing.JMenu();
+        SHA2 = new javax.swing.JMenuItem();
+        SHA3 = new javax.swing.JMenuItem();
         PublicKey = new javax.swing.JMenu();
         RSA = new javax.swing.JMenuItem();
         ElGamal = new javax.swing.JMenuItem();
@@ -304,8 +319,7 @@ public class Crypto2 extends javax.swing.JFrame {
         PrivateKey = new javax.swing.JMenu();
         Blowfish = new javax.swing.JMenuItem();
         AES = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        Part1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1822,72 +1836,72 @@ public class Crypto2 extends javax.swing.JFrame {
 
         MainPanel.add(DHPanel6, "card12");
 
-        SHAPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+        SHA2PanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
-        SHAIntro.setBackground(new java.awt.Color(255, 255, 255));
-        SHAIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        SHAIntro.setForeground(new java.awt.Color(48, 87, 120));
-        SHAIntro.setText("SHA");
+        SHA2Intro.setBackground(new java.awt.Color(255, 255, 255));
+        SHA2Intro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        SHA2Intro.setForeground(new java.awt.Color(48, 87, 120));
+        SHA2Intro.setText("SHA-2");
 
         ThemePicture5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        SHADes.setBackground(new java.awt.Color(77, 132, 155));
-        SHADes.setForeground(new java.awt.Color(255, 255, 255));
-        SHADes.setText("Description");
-        SHADes.addActionListener(new java.awt.event.ActionListener() {
+        SHA2Des.setBackground(new java.awt.Color(77, 132, 155));
+        SHA2Des.setForeground(new java.awt.Color(255, 255, 255));
+        SHA2Des.setText("Description");
+        SHA2Des.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SHADesActionPerformed(evt);
+                SHA2DesActionPerformed(evt);
             }
         });
 
-        SHAQ.setBackground(new java.awt.Color(77, 132, 155));
-        SHAQ.setForeground(new java.awt.Color(255, 255, 255));
-        SHAQ.setText("Questions");
-        SHAQ.addActionListener(new java.awt.event.ActionListener() {
+        SHA2Q.setBackground(new java.awt.Color(77, 132, 155));
+        SHA2Q.setForeground(new java.awt.Color(255, 255, 255));
+        SHA2Q.setText("Questions");
+        SHA2Q.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SHAQActionPerformed(evt);
+                SHA2QActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout SHAPanelWelcomeLayout = new javax.swing.GroupLayout(SHAPanelWelcome);
-        SHAPanelWelcome.setLayout(SHAPanelWelcomeLayout);
-        SHAPanelWelcomeLayout.setHorizontalGroup(
-            SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
+        javax.swing.GroupLayout SHA2PanelWelcomeLayout = new javax.swing.GroupLayout(SHA2PanelWelcome);
+        SHA2PanelWelcome.setLayout(SHA2PanelWelcomeLayout);
+        SHA2PanelWelcomeLayout.setHorizontalGroup(
+            SHA2PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA2PanelWelcomeLayout.createSequentialGroup()
                 .addComponent(ThemePicture5)
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
-                .addGroup(SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
+            .addGroup(SHA2PanelWelcomeLayout.createSequentialGroup()
+                .addGroup(SHA2PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SHA2PanelWelcomeLayout.createSequentialGroup()
                         .addGap(269, 269, 269)
-                        .addComponent(SHADes)
+                        .addComponent(SHA2Des)
                         .addGap(66, 66, 66)
-                        .addComponent(SHAQ))
-                    .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(350, 350, 350)
-                        .addComponent(SHAIntro)))
+                        .addComponent(SHA2Q))
+                    .addGroup(SHA2PanelWelcomeLayout.createSequentialGroup()
+                        .addGap(372, 372, 372)
+                        .addComponent(SHA2Intro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        SHAPanelWelcomeLayout.setVerticalGroup(
-            SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SHAPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(538, Short.MAX_VALUE)
-                .addComponent(SHAIntro)
+        SHA2PanelWelcomeLayout.setVerticalGroup(
+            SHA2PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA2PanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(312, Short.MAX_VALUE)
+                .addComponent(SHA2Intro)
                 .addGap(18, 18, 18)
-                .addGroup(SHAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SHADes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SHAQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(SHA2PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SHA2Des, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SHA2Q, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148)
                 .addComponent(ThemePicture5))
         );
 
-        MainPanel.add(SHAPanelWelcome, "card47");
+        MainPanel.add(SHA2PanelWelcome, "card47");
 
-        SHADescription.setBackground(new java.awt.Color(255, 255, 255));
+        SHA2Description.setBackground(new java.awt.Color(255, 255, 255));
 
-        SHADescriptionHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        SHADescriptionHeader.setForeground(new java.awt.Color(48, 87, 120));
-        SHADescriptionHeader.setText("SHA-2");
+        SHA2DescriptionHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        SHA2DescriptionHeader.setForeground(new java.awt.Color(48, 87, 120));
+        SHA2DescriptionHeader.setText("SHA-2");
 
         SHADescrip.setBorder(null);
         SHADescrip.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -1902,49 +1916,49 @@ public class Crypto2 extends javax.swing.JFrame {
 
         Theme__2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        SHABB.setBackground(new java.awt.Color(77, 132, 155));
-        SHABB.setForeground(new java.awt.Color(255, 255, 255));
-        SHABB.setText("Return");
-        SHABB.addActionListener(new java.awt.event.ActionListener() {
+        SHA2Back.setBackground(new java.awt.Color(77, 132, 155));
+        SHA2Back.setForeground(new java.awt.Color(255, 255, 255));
+        SHA2Back.setText("Return");
+        SHA2Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SHABBActionPerformed(evt);
+                SHA2BackActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout SHADescriptionLayout = new javax.swing.GroupLayout(SHADescription);
-        SHADescription.setLayout(SHADescriptionLayout);
-        SHADescriptionLayout.setHorizontalGroup(
-            SHADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SHADescriptionLayout.createSequentialGroup()
-                .addGroup(SHADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout SHA2DescriptionLayout = new javax.swing.GroupLayout(SHA2Description);
+        SHA2Description.setLayout(SHA2DescriptionLayout);
+        SHA2DescriptionLayout.setHorizontalGroup(
+            SHA2DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA2DescriptionLayout.createSequentialGroup()
+                .addGroup(SHA2DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Theme__2)
-                    .addGroup(SHADescriptionLayout.createSequentialGroup()
+                    .addGroup(SHA2DescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
-                        .addComponent(SHABB))
-                    .addGroup(SHADescriptionLayout.createSequentialGroup()
+                        .addComponent(SHA2Back))
+                    .addGroup(SHA2DescriptionLayout.createSequentialGroup()
                         .addGap(384, 384, 384)
-                        .addComponent(SHADescriptionHeader))
-                    .addGroup(SHADescriptionLayout.createSequentialGroup()
+                        .addComponent(SHA2DescriptionHeader))
+                    .addGroup(SHA2DescriptionLayout.createSequentialGroup()
                         .addGap(107, 107, 107)
                         .addComponent(SHADescrip, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(12, 12, 12))
         );
-        SHADescriptionLayout.setVerticalGroup(
-            SHADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SHADescriptionLayout.createSequentialGroup()
+        SHA2DescriptionLayout.setVerticalGroup(
+            SHA2DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA2DescriptionLayout.createSequentialGroup()
                 .addGap(77, 77, 77)
-                .addComponent(SHADescriptionHeader)
+                .addComponent(SHA2DescriptionHeader)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(SHADescrip, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(SHABB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(SHA2Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Theme__2))
         );
 
-        MainPanel.add(SHADescription, "card42");
+        MainPanel.add(SHA2Description, "card42");
 
-        SHAPanel.setBackground(new java.awt.Color(255, 255, 255));
+        SHA2Panel.setBackground(new java.awt.Color(255, 255, 255));
 
         SHA_Text.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2027,59 +2041,59 @@ public class Crypto2 extends javax.swing.JFrame {
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        javax.swing.GroupLayout SHAPanelLayout = new javax.swing.GroupLayout(SHAPanel);
-        SHAPanel.setLayout(SHAPanelLayout);
-        SHAPanelLayout.setHorizontalGroup(
-            SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SHAPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout SHA2PanelLayout = new javax.swing.GroupLayout(SHA2Panel);
+        SHA2Panel.setLayout(SHA2PanelLayout);
+        SHA2PanelLayout.setHorizontalGroup(
+            SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA2PanelLayout.createSequentialGroup()
                 .addGap(211, 211, 211)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Current)
                     .addComponent(Former))
                 .addGap(18, 18, 18)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(SHA_Output)
-                    .addGroup(SHAPanelLayout.createSequentialGroup()
+                    .addGroup(SHA2PanelLayout.createSequentialGroup()
                         .addComponent(SHA_Text, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(SHA_Button))
                     .addComponent(FormerSHA)))
-            .addGroup(SHAPanelLayout.createSequentialGroup()
+            .addGroup(SHA2PanelLayout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(SHAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(SHA_Questions)
                     .addComponent(SHA_Header1)
                     .addComponent(SHAQ1)
                     .addComponent(SHAQ2)
-                    .addGroup(SHAPanelLayout.createSequentialGroup()
+                    .addGroup(SHA2PanelLayout.createSequentialGroup()
                         .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(SHAB1))
-                    .addGroup(SHAPanelLayout.createSequentialGroup()
+                    .addGroup(SHA2PanelLayout.createSequentialGroup()
                         .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(SHAB2))))
             .addComponent(jLabel21)
         );
-        SHAPanelLayout.setVerticalGroup(
-            SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SHAPanelLayout.createSequentialGroup()
+        SHA2PanelLayout.setVerticalGroup(
+            SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA2PanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(SHAPanelLayout.createSequentialGroup()
+                .addGroup(SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(SHA2PanelLayout.createSequentialGroup()
                         .addComponent(SHA_Header1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(36, 36, 36)
-                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(SHA_Text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(SHA_Button))
                         .addGap(43, 43, 43)
-                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(SHA_Output)
                             .addComponent(Current))
                         .addGap(18, 18, 18)
-                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(FormerSHA)
                             .addComponent(Former))
                         .addGap(27, 27, 27)
@@ -2087,23 +2101,186 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addGap(36, 36, 36)
                         .addComponent(SHAQ1)
                         .addGap(18, 18, 18)
-                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(SHAB1)
                             .addComponent(SHAA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(SHAQ2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(SHAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(SHAB2))
                         .addGap(55, 55, 55))
-                    .addGroup(SHAPanelLayout.createSequentialGroup()
+                    .addGroup(SHA2PanelLayout.createSequentialGroup()
                         .addComponent(SHAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(51, 51, 51)))
                 .addComponent(jLabel21))
         );
 
-        MainPanel.add(SHAPanel, "card11");
+        MainPanel.add(SHA2Panel, "card11");
+
+        SHA3PanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        SHA3Intro.setBackground(new java.awt.Color(255, 255, 255));
+        SHA3Intro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        SHA3Intro.setForeground(new java.awt.Color(48, 87, 120));
+        SHA3Intro.setText("SHA-3");
+
+        ThemePicture12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        SHA3Des.setBackground(new java.awt.Color(77, 132, 155));
+        SHA3Des.setForeground(new java.awt.Color(255, 255, 255));
+        SHA3Des.setText("Description");
+        SHA3Des.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA3DesActionPerformed(evt);
+            }
+        });
+
+        SHA3Q.setBackground(new java.awt.Color(77, 132, 155));
+        SHA3Q.setForeground(new java.awt.Color(255, 255, 255));
+        SHA3Q.setText("Questions");
+        SHA3Q.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA3QActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout SHA3PanelWelcomeLayout = new javax.swing.GroupLayout(SHA3PanelWelcome);
+        SHA3PanelWelcome.setLayout(SHA3PanelWelcomeLayout);
+        SHA3PanelWelcomeLayout.setHorizontalGroup(
+            SHA3PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA3PanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture12)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(SHA3PanelWelcomeLayout.createSequentialGroup()
+                .addGroup(SHA3PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SHA3PanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(SHA3Des)
+                        .addGap(66, 66, 66)
+                        .addComponent(SHA3Q))
+                    .addGroup(SHA3PanelWelcomeLayout.createSequentialGroup()
+                        .addGap(372, 372, 372)
+                        .addComponent(SHA3Intro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        SHA3PanelWelcomeLayout.setVerticalGroup(
+            SHA3PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA3PanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(312, Short.MAX_VALUE)
+                .addComponent(SHA3Intro)
+                .addGap(18, 18, 18)
+                .addGroup(SHA3PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SHA3Des, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SHA3Q, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture12))
+        );
+
+        MainPanel.add(SHA3PanelWelcome, "card47");
+
+        SHA3Description.setBackground(new java.awt.Color(255, 255, 255));
+
+        SHADescriptionHeader1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        SHADescriptionHeader1.setForeground(new java.awt.Color(48, 87, 120));
+        SHADescriptionHeader1.setText("SHA-3");
+
+        SHA3Descrip.setBorder(null);
+        SHA3Descrip.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        SHA3Descrip.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        SHA_Des1.setEditable(false);
+        SHA_Des1.setColumns(20);
+        SHA_Des1.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        SHA_Des1.setRows(5);
+        SHA3Descrip.setViewportView(SHA_Des1);
+
+        Theme__6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        SHA3Back.setBackground(new java.awt.Color(77, 132, 155));
+        SHA3Back.setForeground(new java.awt.Color(255, 255, 255));
+        SHA3Back.setText("Return");
+        SHA3Back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA3BackActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout SHA3DescriptionLayout = new javax.swing.GroupLayout(SHA3Description);
+        SHA3Description.setLayout(SHA3DescriptionLayout);
+        SHA3DescriptionLayout.setHorizontalGroup(
+            SHA3DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA3DescriptionLayout.createSequentialGroup()
+                .addGroup(SHA3DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Theme__6)
+                    .addGroup(SHA3DescriptionLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(SHA3Back))
+                    .addGroup(SHA3DescriptionLayout.createSequentialGroup()
+                        .addGap(384, 384, 384)
+                        .addComponent(SHADescriptionHeader1))
+                    .addGroup(SHA3DescriptionLayout.createSequentialGroup()
+                        .addGap(107, 107, 107)
+                        .addComponent(SHA3Descrip, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(12, 12, 12))
+        );
+        SHA3DescriptionLayout.setVerticalGroup(
+            SHA3DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA3DescriptionLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(SHADescriptionHeader1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SHA3Descrip, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SHA3Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Theme__6))
+        );
+
+        MainPanel.add(SHA3Description, "card42");
+
+        SHA3Panel.setBackground(new java.awt.Color(255, 255, 255));
+
+        SHA3Header.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        SHA3Header.setForeground(new java.awt.Color(48, 87, 120));
+        SHA3Header.setText("SHA-3");
+
+        SHA3Return.setBackground(new java.awt.Color(77, 132, 155));
+        SHA3Return.setForeground(new java.awt.Color(255, 255, 255));
+        SHA3Return.setText("Return");
+        SHA3Return.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA3ReturnActionPerformed(evt);
+            }
+        });
+
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        javax.swing.GroupLayout SHA3PanelLayout = new javax.swing.GroupLayout(SHA3Panel);
+        SHA3Panel.setLayout(SHA3PanelLayout);
+        SHA3PanelLayout.setHorizontalGroup(
+            SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA3PanelLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(SHA3Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel23)
+            .addGroup(SHA3PanelLayout.createSequentialGroup()
+                .addGap(382, 382, 382)
+                .addComponent(SHA3Header))
+        );
+        SHA3PanelLayout.setVerticalGroup(
+            SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SHA3PanelLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(SHA3Header, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 335, Short.MAX_VALUE)
+                .addComponent(SHA3Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
+                .addComponent(jLabel23))
+        );
+
+        MainPanel.add(SHA3Panel, "card11");
 
         MD5PanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -2947,33 +3124,7 @@ public class Crypto2 extends javax.swing.JFrame {
 
         MainPanel.add(RSA_Validate, "card22");
 
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
-
         DigitalSignatures.setText("Digital Signatures");
-
-        Hashing.setText("Hashing");
-
-        SHA.setText("SHA");
-        SHA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SHAActionPerformed(evt);
-            }
-        });
-        Hashing.add(SHA);
-
-        MD5.setText("MD5");
-        MD5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MD5ActionPerformed(evt);
-            }
-        });
-        Hashing.add(MD5);
-
-        DigitalSignatures.add(Hashing);
 
         RSASignature.setText("RSA Signature");
         RSASignature.addActionListener(new java.awt.event.ActionListener() {
@@ -2984,6 +3135,38 @@ public class Crypto2 extends javax.swing.JFrame {
         DigitalSignatures.add(RSASignature);
 
         jMenuBar1.add(DigitalSignatures);
+
+        Hashing.setText("Hashing");
+
+        MD5.setText("MD5");
+        MD5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MD5ActionPerformed(evt);
+            }
+        });
+        Hashing.add(MD5);
+
+        SHA.setText("SHA");
+
+        SHA2.setText("SHA-2");
+        SHA2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA2ActionPerformed(evt);
+            }
+        });
+        SHA.add(SHA2);
+
+        SHA3.setText("SHA-3");
+        SHA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA3ActionPerformed(evt);
+            }
+        });
+        SHA.add(SHA3);
+
+        Hashing.add(SHA);
+
+        jMenuBar1.add(Hashing);
 
         PublicKey.setText("Public Key");
 
@@ -3033,17 +3216,13 @@ public class Crypto2 extends javax.swing.JFrame {
 
         jMenuBar1.add(PrivateKey);
 
-        jMenu3.setText("Part One");
-
-        jMenuItem1.setText("Return");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        Part1.setText("Part One");
+        Part1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                Part1ActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem1);
-
-        jMenuBar1.add(jMenu3);
+        jMenuBar1.add(Part1);
 
         setJMenuBar(jMenuBar1);
 
@@ -3064,11 +3243,6 @@ public class Crypto2 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        this.setVisible(false);
-        new Home().setVisible(true);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
    String sha256_return(String message) throws NoSuchAlgorithmException {
     
     MessageDigest digest = MessageDigest.getInstance("SHA-256");
@@ -3200,15 +3374,15 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_AESReturnActionPerformed
 
-    private void SHAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAActionPerformed
+    private void SHA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA2ActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(SHAPanelWelcome);
+        MainPanel.add(SHA2PanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
-    }//GEN-LAST:event_SHAActionPerformed
+    }//GEN-LAST:event_SHA2ActionPerformed
 
     private void MD5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5ActionPerformed
         MainPanel.removeAll();
@@ -3520,35 +3694,35 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_DH6_BackActionPerformed
 
-    private void SHADesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHADesActionPerformed
+    private void SHA2DesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA2DesActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(SHADescription);
+        MainPanel.add(SHA2Description);
         MainPanel.repaint();
         MainPanel.revalidate();
-    }//GEN-LAST:event_SHADesActionPerformed
+    }//GEN-LAST:event_SHA2DesActionPerformed
 
-    private void SHAQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAQActionPerformed
+    private void SHA2QActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA2QActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(SHAPanel);
+        MainPanel.add(SHA2Panel);
         MainPanel.repaint();
         MainPanel.revalidate();
-    }//GEN-LAST:event_SHAQActionPerformed
+    }//GEN-LAST:event_SHA2QActionPerformed
 
-    private void SHABBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHABBActionPerformed
+    private void SHA2BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA2BackActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(SHAPanelWelcome);
+        MainPanel.add(SHA2PanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
-    }//GEN-LAST:event_SHABBActionPerformed
+    }//GEN-LAST:event_SHA2BackActionPerformed
 
     private void SHA_TextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA_TextActionPerformed
         // TODO add your handling code here:
@@ -3585,7 +3759,7 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(SHAPanelWelcome);
+        MainPanel.add(SHA2PanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_SHAReturnActionPerformed
@@ -3774,6 +3948,37 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_Back_RSA2ActionPerformed
 
+    private void Part1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Part1ActionPerformed
+        this.setVisible(false);
+        new Home().setVisible(true);
+    }//GEN-LAST:event_Part1ActionPerformed
+
+    private void SHA3DesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3DesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHA3DesActionPerformed
+
+    private void SHA3QActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3QActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHA3QActionPerformed
+
+    private void SHA3BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3BackActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHA3BackActionPerformed
+
+    private void SHA3ReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3ReturnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SHA3ReturnActionPerformed
+
+    private void SHA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SHA3PanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_SHA3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -3931,6 +4136,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel MainPanel;
     private javax.swing.JLabel Message;
     private javax.swing.JLabel Message1;
+    private javax.swing.JMenu Part1;
     private javax.swing.JMenu PrivateKey;
     private javax.swing.JLabel Project;
     private javax.swing.JMenu PublicKey;
@@ -3968,26 +4174,40 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel RSA_Signature_1;
     private javax.swing.JPanel RSA_Signature_2;
     private javax.swing.JPanel RSA_Validate;
-    private javax.swing.JMenuItem SHA;
+    private javax.swing.JMenu SHA;
+    private javax.swing.JMenuItem SHA2;
+    private javax.swing.JButton SHA2Back;
+    private javax.swing.JButton SHA2Des;
+    private javax.swing.JPanel SHA2Description;
+    private javax.swing.JLabel SHA2DescriptionHeader;
+    private javax.swing.JLabel SHA2Intro;
+    private javax.swing.JPanel SHA2Panel;
+    private javax.swing.JPanel SHA2PanelWelcome;
+    private javax.swing.JButton SHA2Q;
+    private javax.swing.JMenuItem SHA3;
+    private javax.swing.JButton SHA3Back;
+    private javax.swing.JButton SHA3Des;
+    private javax.swing.JScrollPane SHA3Descrip;
+    private javax.swing.JPanel SHA3Description;
+    private javax.swing.JLabel SHA3Header;
+    private javax.swing.JLabel SHA3Intro;
+    private javax.swing.JPanel SHA3Panel;
+    private javax.swing.JPanel SHA3PanelWelcome;
+    private javax.swing.JButton SHA3Q;
+    private javax.swing.JButton SHA3Return;
     private javax.swing.JTextField SHAA1;
     private javax.swing.JTextField SHAA2;
     private javax.swing.JButton SHAB1;
     private javax.swing.JButton SHAB2;
-    private javax.swing.JButton SHABB;
-    private javax.swing.JButton SHADes;
     private javax.swing.JScrollPane SHADescrip;
     private javax.swing.JScrollPane SHADescrip1;
-    private javax.swing.JPanel SHADescription;
-    private javax.swing.JLabel SHADescriptionHeader;
-    private javax.swing.JLabel SHAIntro;
-    private javax.swing.JPanel SHAPanel;
-    private javax.swing.JPanel SHAPanelWelcome;
-    private javax.swing.JButton SHAQ;
+    private javax.swing.JLabel SHADescriptionHeader1;
     private javax.swing.JLabel SHAQ1;
     private javax.swing.JLabel SHAQ2;
     private javax.swing.JButton SHAReturn;
     private javax.swing.JButton SHA_Button;
     private javax.swing.JTextArea SHA_Des;
+    private javax.swing.JTextArea SHA_Des1;
     private javax.swing.JLabel SHA_Header1;
     private javax.swing.JLabel SHA_Output;
     private javax.swing.JLabel SHA_Questions;
@@ -4002,6 +4222,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel Theme;
     private javax.swing.JLabel ThemePicture10;
     private javax.swing.JLabel ThemePicture11;
+    private javax.swing.JLabel ThemePicture12;
     private javax.swing.JLabel ThemePicture13;
     private javax.swing.JLabel ThemePicture22;
     private javax.swing.JLabel ThemePicture23;
@@ -4016,6 +4237,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel Theme__3;
     private javax.swing.JLabel Theme__4;
     private javax.swing.JLabel Theme__5;
+    private javax.swing.JLabel Theme__6;
     private javax.swing.JLabel ValidateMessage;
     private javax.swing.JButton Verify_Submit;
     private javax.swing.JLabel Welcome;
@@ -4031,6 +4253,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -4044,11 +4267,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
