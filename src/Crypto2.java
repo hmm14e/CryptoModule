@@ -328,9 +328,9 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA2 = new javax.swing.JMenuItem();
         SHA3 = new javax.swing.JMenuItem();
         PublicKey = new javax.swing.JMenu();
+        DiffieHellman = new javax.swing.JMenuItem();
         RSA = new javax.swing.JMenuItem();
         ElGamal = new javax.swing.JMenuItem();
-        DiffieHellman = new javax.swing.JMenuItem();
         PrivateKey = new javax.swing.JMenu();
         Blowfish = new javax.swing.JMenuItem();
         AES = new javax.swing.JMenuItem();
@@ -3369,6 +3369,14 @@ public class Crypto2 extends javax.swing.JFrame {
 
         PublicKey.setText("Public Key");
 
+        DiffieHellman.setText("Diffie-Hellman");
+        DiffieHellman.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DiffieHellmanActionPerformed(evt);
+            }
+        });
+        PublicKey.add(DiffieHellman);
+
         RSA.setText("RSA");
         RSA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3384,14 +3392,6 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
         PublicKey.add(ElGamal);
-
-        DiffieHellman.setText("Diffie-Hellman");
-        DiffieHellman.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DiffieHellmanActionPerformed(evt);
-            }
-        });
-        PublicKey.add(DiffieHellman);
 
         jMenuBar1.add(PublicKey);
 

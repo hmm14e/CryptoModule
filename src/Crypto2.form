@@ -70,6 +70,14 @@
             <Property name="text" type="java.lang.String" value="Public Key"/>
           </Properties>
           <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="DiffieHellman">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Diffie-Hellman"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DiffieHellmanActionPerformed"/>
+              </Events>
+            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="RSA">
               <Properties>
                 <Property name="text" type="java.lang.String" value="RSA"/>
@@ -84,14 +92,6 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ElGamalActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="DiffieHellman">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Diffie-Hellman"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DiffieHellmanActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
