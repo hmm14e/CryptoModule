@@ -304,9 +304,24 @@ public class Crypto2 extends javax.swing.JFrame {
         ChoiceD = new javax.swing.JRadioButton();
         Verify_Submit = new javax.swing.JButton();
         Back_RSA2 = new javax.swing.JButton();
+        SchnorrPanelWelcome = new javax.swing.JPanel();
+        RSASigIntro2 = new javax.swing.JLabel();
+        ThemePicture14 = new javax.swing.JLabel();
+        RSASigDes1 = new javax.swing.JButton();
+        RSASigQ1 = new javax.swing.JButton();
+        SchnorrDescription = new javax.swing.JPanel();
+        RSASigIntro3 = new javax.swing.JLabel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jTextArea16 = new javax.swing.JTextArea();
+        Theme__7 = new javax.swing.JLabel();
+        Schnorr_Return = new javax.swing.JButton();
+        SchnorrPanel = new javax.swing.JPanel();
+        SigningAMessage2 = new javax.swing.JLabel();
+        SchnorrBack = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         DigitalSignatures = new javax.swing.JMenu();
         RSASignature = new javax.swing.JMenuItem();
+        Schnorr = new javax.swing.JMenuItem();
         Hashing = new javax.swing.JMenu();
         MD5 = new javax.swing.JMenuItem();
         SHA = new javax.swing.JMenu();
@@ -3124,6 +3139,175 @@ public class Crypto2 extends javax.swing.JFrame {
 
         MainPanel.add(RSA_Validate, "card22");
 
+        SchnorrPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        RSASigIntro2.setBackground(new java.awt.Color(255, 255, 255));
+        RSASigIntro2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        RSASigIntro2.setForeground(new java.awt.Color(48, 87, 120));
+        RSASigIntro2.setText("Schnorr Digital Signature");
+
+        ThemePicture14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        RSASigDes1.setBackground(new java.awt.Color(77, 132, 155));
+        RSASigDes1.setForeground(new java.awt.Color(255, 255, 255));
+        RSASigDes1.setText("Description");
+        RSASigDes1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSASigDes1ActionPerformed(evt);
+            }
+        });
+
+        RSASigQ1.setBackground(new java.awt.Color(77, 132, 155));
+        RSASigQ1.setForeground(new java.awt.Color(255, 255, 255));
+        RSASigQ1.setText("Questions");
+        RSASigQ1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSASigQ1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout SchnorrPanelWelcomeLayout = new javax.swing.GroupLayout(SchnorrPanelWelcome);
+        SchnorrPanelWelcome.setLayout(SchnorrPanelWelcomeLayout);
+        SchnorrPanelWelcomeLayout.setHorizontalGroup(
+            SchnorrPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SchnorrPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture14)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(SchnorrPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(SchnorrPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SchnorrPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(253, 253, 253)
+                        .addComponent(RSASigDes1)
+                        .addGap(80, 80, 80)
+                        .addComponent(RSASigQ1))
+                    .addGroup(SchnorrPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(218, 218, 218)
+                        .addComponent(RSASigIntro2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        SchnorrPanelWelcomeLayout.setVerticalGroup(
+            SchnorrPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SchnorrPanelWelcomeLayout.createSequentialGroup()
+                .addGap(243, 243, 243)
+                .addComponent(RSASigIntro2)
+                .addGap(18, 18, 18)
+                .addGroup(SchnorrPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RSASigDes1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RSASigQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 187, Short.MAX_VALUE)
+                .addComponent(ThemePicture14))
+        );
+
+        MainPanel.add(SchnorrPanelWelcome, "card49");
+
+        SchnorrDescription.setBackground(new java.awt.Color(255, 255, 255));
+
+        RSASigIntro3.setBackground(new java.awt.Color(255, 255, 255));
+        RSASigIntro3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        RSASigIntro3.setForeground(new java.awt.Color(48, 87, 120));
+        RSASigIntro3.setText("RSA Signature");
+
+        jScrollPane10.setBorder(null);
+
+        jTextArea16.setColumns(20);
+        jTextArea16.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
+        jTextArea16.setLineWrap(true);
+        jTextArea16.setRows(5);
+        jTextArea16.setText("1) Given two large prime numbers p and q, calculate n by finding the product of p and q.\n \n2) To find Φ(n), find the product of (p-1) and (q-1)\n\n3) Given e (a number between 1 and n and the greatest common divisor between e and n is 1) find the private key d by using the modular inverse. d ≡ e^(-1) mod Φ(n)\n\n4) To sign a message, convert the message to hex and compute, Message^d mod n\n\n5) To verify a message, compute Signature^e mod n");
+        jTextArea16.setWrapStyleWord(true);
+        jScrollPane10.setViewportView(jTextArea16);
+
+        Theme__7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        Schnorr_Return.setBackground(new java.awt.Color(77, 132, 155));
+        Schnorr_Return.setForeground(new java.awt.Color(255, 255, 255));
+        Schnorr_Return.setText("Return");
+        Schnorr_Return.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Schnorr_ReturnActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout SchnorrDescriptionLayout = new javax.swing.GroupLayout(SchnorrDescription);
+        SchnorrDescription.setLayout(SchnorrDescriptionLayout);
+        SchnorrDescriptionLayout.setHorizontalGroup(
+            SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
+                .addGroup(SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SchnorrDescriptionLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(Theme__7))
+                    .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
+                        .addGroup(SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
+                                .addGap(69, 69, 69)
+                                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
+                                .addGap(372, 372, 372)
+                                .addComponent(Schnorr_Return))
+                            .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
+                                .addGap(310, 310, 310)
+                                .addComponent(RSASigIntro3)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        SchnorrDescriptionLayout.setVerticalGroup(
+            SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(RSASigIntro3)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Schnorr_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Theme__7))
+        );
+
+        MainPanel.add(SchnorrDescription, "card82");
+
+        SchnorrPanel.setBackground(new java.awt.Color(255, 255, 255));
+        SchnorrPanel.setOpaque(false);
+
+        SigningAMessage2.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        SigningAMessage2.setForeground(new java.awt.Color(48, 87, 120));
+        SigningAMessage2.setText("Schnorr Digital Signature");
+
+        SchnorrBack.setBackground(new java.awt.Color(77, 132, 155));
+        SchnorrBack.setForeground(new java.awt.Color(255, 255, 255));
+        SchnorrBack.setText("Return");
+        SchnorrBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SchnorrBackActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout SchnorrPanelLayout = new javax.swing.GroupLayout(SchnorrPanel);
+        SchnorrPanel.setLayout(SchnorrPanelLayout);
+        SchnorrPanelLayout.setHorizontalGroup(
+            SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                .addGroup(SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                        .addGap(204, 204, 204)
+                        .addComponent(SigningAMessage2))
+                    .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(SchnorrBack, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(197, Short.MAX_VALUE))
+        );
+        SchnorrPanelLayout.setVerticalGroup(
+            SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(SigningAMessage2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 519, Short.MAX_VALUE)
+                .addComponent(SchnorrBack, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38))
+        );
+
+        MainPanel.add(SchnorrPanel, "card20");
+
         DigitalSignatures.setText("Digital Signatures");
 
         RSASignature.setText("RSA Signature");
@@ -3133,6 +3317,14 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
         DigitalSignatures.add(RSASignature);
+
+        Schnorr.setText("Schnorr Signature");
+        Schnorr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SchnorrActionPerformed(evt);
+            }
+        });
+        DigitalSignatures.add(Schnorr);
 
         jMenuBar1.add(DigitalSignatures);
 
@@ -3954,19 +4146,43 @@ public class Crypto2 extends javax.swing.JFrame {
     }//GEN-LAST:event_Part1ActionPerformed
 
     private void SHA3DesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3DesActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SHA3Description);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_SHA3DesActionPerformed
 
     private void SHA3QActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3QActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SHA3Panel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_SHA3QActionPerformed
 
     private void SHA3BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3BackActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SHA3PanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_SHA3BackActionPerformed
 
     private void SHA3ReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3ReturnActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SHA3PanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_SHA3ReturnActionPerformed
 
     private void SHA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3ActionPerformed
@@ -3978,6 +4194,56 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_SHA3ActionPerformed
+
+    private void SchnorrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SchnorrActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SchnorrPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_SchnorrActionPerformed
+
+    private void RSASigDes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSASigDes1ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SchnorrDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_RSASigDes1ActionPerformed
+
+    private void RSASigQ1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSASigQ1ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SchnorrPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_RSASigQ1ActionPerformed
+
+    private void Schnorr_ReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Schnorr_ReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SchnorrPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_Schnorr_ReturnActionPerformed
+
+    private void SchnorrBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SchnorrBackActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(SchnorrPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_SchnorrBackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4163,10 +4429,14 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel RSAQ1_3;
     private javax.swing.JButton RSAReturn;
     private javax.swing.JButton RSASigDes;
+    private javax.swing.JButton RSASigDes1;
     private javax.swing.JPanel RSASigDescription;
     private javax.swing.JLabel RSASigIntro;
     private javax.swing.JLabel RSASigIntro1;
+    private javax.swing.JLabel RSASigIntro2;
+    private javax.swing.JLabel RSASigIntro3;
     private javax.swing.JButton RSASigQ;
+    private javax.swing.JButton RSASigQ1;
     private javax.swing.JMenuItem RSASignature;
     private javax.swing.JPanel RSASignaturePanelWelcome;
     private javax.swing.JButton RSA_SigBack;
@@ -4212,9 +4482,16 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel SHA_Output;
     private javax.swing.JLabel SHA_Questions;
     private javax.swing.JTextField SHA_Text;
+    private javax.swing.JMenuItem Schnorr;
+    private javax.swing.JButton SchnorrBack;
+    private javax.swing.JPanel SchnorrDescription;
+    private javax.swing.JPanel SchnorrPanel;
+    private javax.swing.JPanel SchnorrPanelWelcome;
+    private javax.swing.JButton Schnorr_Return;
     private javax.swing.JTextField Signature;
     private javax.swing.JLabel SigningAMessage;
     private javax.swing.JLabel SigningAMessage1;
+    private javax.swing.JLabel SigningAMessage2;
     private javax.swing.JScrollPane Story;
     private javax.swing.JScrollPane Story1;
     private javax.swing.JTextArea Story_TextArea;
@@ -4224,6 +4501,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture11;
     private javax.swing.JLabel ThemePicture12;
     private javax.swing.JLabel ThemePicture13;
+    private javax.swing.JLabel ThemePicture14;
     private javax.swing.JLabel ThemePicture22;
     private javax.swing.JLabel ThemePicture23;
     private javax.swing.JLabel ThemePicture24;
@@ -4238,6 +4516,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel Theme__4;
     private javax.swing.JLabel Theme__5;
     private javax.swing.JLabel Theme__6;
+    private javax.swing.JLabel Theme__7;
     private javax.swing.JLabel ValidateMessage;
     private javax.swing.JButton Verify_Submit;
     private javax.swing.JLabel Welcome;
@@ -4268,6 +4547,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
@@ -4279,6 +4559,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
     private javax.swing.JTextArea jTextArea15;
+    private javax.swing.JTextArea jTextArea16;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea27;
     private javax.swing.JTextArea jTextArea28;
