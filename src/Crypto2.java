@@ -2277,12 +2277,15 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA3PanelLayout.setHorizontalGroup(
             SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHA3PanelLayout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(SHA3Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel23)
-            .addGroup(SHA3PanelLayout.createSequentialGroup()
-                .addGap(382, 382, 382)
-                .addComponent(SHA3Header))
+                .addGroup(SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SHA3PanelLayout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addComponent(SHA3Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(SHA3PanelLayout.createSequentialGroup()
+                        .addGap(382, 382, 382)
+                        .addComponent(SHA3Header)))
+                .addGap(419, 419, 419))
+            .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         SHA3PanelLayout.setVerticalGroup(
             SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2291,8 +2294,9 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addComponent(SHA3Header, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 335, Short.MAX_VALUE)
                 .addComponent(SHA3Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
-                .addComponent(jLabel23))
+                .addGap(45, 45, 45)
+                .addComponent(jLabel23)
+                .addContainerGap())
         );
 
         MainPanel.add(SHA3Panel, "card11");
@@ -3205,15 +3209,17 @@ public class Crypto2 extends javax.swing.JFrame {
         RSASigIntro3.setBackground(new java.awt.Color(255, 255, 255));
         RSASigIntro3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         RSASigIntro3.setForeground(new java.awt.Color(48, 87, 120));
-        RSASigIntro3.setText("RSA Signature");
+        RSASigIntro3.setText("Schnorr Digital Signature");
 
         jScrollPane10.setBorder(null);
+        jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane10.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea16.setColumns(20);
-        jTextArea16.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
+        jTextArea16.setFont(new java.awt.Font("Courier", 0, 14)); // NOI18N
         jTextArea16.setLineWrap(true);
         jTextArea16.setRows(5);
-        jTextArea16.setText("1) Given two large prime numbers p and q, calculate n by finding the product of p and q.\n \n2) To find Φ(n), find the product of (p-1) and (q-1)\n\n3) Given e (a number between 1 and n and the greatest common divisor between e and n is 1) find the private key d by using the modular inverse. d ≡ e^(-1) mod Φ(n)\n\n4) To sign a message, convert the message to hex and compute, Message^d mod n\n\n5) To verify a message, compute Signature^e mod n");
+        jTextArea16.setText("p: a prime number, usually 1024 bits\t\t[known publicly]\nq: a factor of p-1, typically 160-bits\t\t[known publicly]\na: a^q = 1 mod p\t\t\t\t[known publicly]\nv: a^(-s) mod q \t\t\t\t[public key]\ns: 0 < s < q \t\t\t\t\t[secret]\n\nSigning: \n1) Choose a random r, 0 < r < q\n2) Compute x = a^r mod p\n3) Concatenate e = H(M||x), where M is the message and H is a hash function\n4) Compute y = (r + se) mod q\nSend Message M with Signature (e, y)\n\nVerifying: \n1) Compute x' = a^(y) * v^(e) mod p\n2) Check if e = H(M||x'), if true, message is verified\n\n\t \n\t");
         jTextArea16.setWrapStyleWord(true);
         jScrollPane10.setViewportView(jTextArea16);
 
@@ -3243,25 +3249,26 @@ public class Crypto2 extends javax.swing.JFrame {
                                 .addGap(69, 69, 69)
                                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                                .addGap(372, 372, 372)
-                                .addComponent(Schnorr_Return))
-                            .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                                .addGap(310, 310, 310)
+                                .addGap(239, 239, 239)
                                 .addComponent(RSASigIntro3)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
+                .addGap(384, 384, 384)
+                .addComponent(Schnorr_Return)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SchnorrDescriptionLayout.setVerticalGroup(
             SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(12, Short.MAX_VALUE)
                 .addComponent(RSASigIntro3)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Schnorr_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Theme__7))
+                .addComponent(Theme__7, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         MainPanel.add(SchnorrDescription, "card82");
