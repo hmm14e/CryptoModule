@@ -2960,7 +2960,7 @@ public class Home extends javax.swing.JFrame {
 
         jTextArea37.setEditable(false);
         jTextArea37.setColumns(20);
-        jTextArea37.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea37.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         jTextArea37.setRows(5);
         jTextArea37.setText("- DES is a symmetric-key encryption scheme.\n- 56-bit keys (+ 8 parity bits).\n- 64-bit block size.\n- 16 rounds based on the feistel network.");
         DESDescription2.setViewportView(jTextArea37);
@@ -3188,9 +3188,9 @@ public class Home extends javax.swing.JFrame {
 
         jTextArea19.setEditable(false);
         jTextArea19.setColumns(20);
-        jTextArea19.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea19.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         jTextArea19.setRows(5);
-        jTextArea19.setText("\n");
+        jTextArea19.setText("\n- It uses a 112, 128 or 192-bit key\n- Block sizes are 64 bits\n- It is based off the Feistel Network\n- 48 DES-equivalent rounds\n");
         DESDescription.setViewportView(jTextArea19);
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
