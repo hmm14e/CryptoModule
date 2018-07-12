@@ -6072,7 +6072,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_DESActionPerformed
 
     private void DESRETURNB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESRETURNB1ActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DESPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_DESRETURNB1ActionPerformed
 
     private void DESDescripB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESDescripB1ActionPerformed
@@ -6096,7 +6102,13 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_DESQB1ActionPerformed
 
     private void DESBB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESBB2ActionPerformed
-        // TODO add your handling code here:
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DESPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_DESBB2ActionPerformed
 
     private void ReturnWelcomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReturnWelcomeActionPerformed
