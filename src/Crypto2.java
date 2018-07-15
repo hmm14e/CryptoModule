@@ -113,6 +113,21 @@ public class Crypto2 extends javax.swing.JFrame {
         jScrollPane9 = new javax.swing.JScrollPane();
         jTextArea30 = new javax.swing.JTextArea();
         jLabel31 = new javax.swing.JLabel();
+        ECCDescription = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        ThemePicture26 = new javax.swing.JLabel();
+        DHBB2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        ECCPanel = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        ThemePicture27 = new javax.swing.JLabel();
+        ECCR = new javax.swing.JButton();
+        ECCPanelWelcome = new javax.swing.JPanel();
+        ECCIntro = new javax.swing.JLabel();
+        ThemePicture15 = new javax.swing.JLabel();
+        ECCDes = new javax.swing.JButton();
+        ECCQ = new javax.swing.JButton();
         DHPanelWelcome = new javax.swing.JPanel();
         DH_intro = new javax.swing.JLabel();
         ThemePicture9 = new javax.swing.JLabel();
@@ -331,6 +346,7 @@ public class Crypto2 extends javax.swing.JFrame {
         DiffieHellman = new javax.swing.JMenuItem();
         RSA = new javax.swing.JMenuItem();
         ElGamal = new javax.swing.JMenuItem();
+        ECC = new javax.swing.JMenuItem();
         PrivateKey = new javax.swing.JMenu();
         Blowfish = new javax.swing.JMenuItem();
         AES = new javax.swing.JMenuItem();
@@ -1030,32 +1046,33 @@ public class Crypto2 extends javax.swing.JFrame {
         ELGamDescription.setLayout(ELGamDescriptionLayout);
         ELGamDescriptionLayout.setHorizontalGroup(
             ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ThemePicture25, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ELGamDescriptionLayout.createSequentialGroup()
-                .addComponent(ElGamalSteps)
-                .addGap(62, 62, 62))
             .addGroup(ELGamDescriptionLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ElGamalSteps, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(ELGamDescriptionLayout.createSequentialGroup()
-                        .addGap(370, 370, 370)
-                        .addComponent(jLabel4))
-                    .addGroup(ELGamDescriptionLayout.createSequentialGroup()
-                        .addGap(394, 394, 394)
-                        .addComponent(DHBB1)))
-                .addContainerGap())
+                        .addGroup(ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(ELGamDescriptionLayout.createSequentialGroup()
+                                .addGap(370, 370, 370)
+                                .addComponent(jLabel4))
+                            .addGroup(ELGamDescriptionLayout.createSequentialGroup()
+                                .addGap(394, 394, 394)
+                                .addComponent(DHBB1)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(ThemePicture25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         ELGamDescriptionLayout.setVerticalGroup(
             ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ELGamDescriptionLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(23, 23, 23)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ElGamalSteps)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DHBB1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ThemePicture25)
-                .addGap(45, 45, 45))
+                .addGap(18, 18, 18)
+                .addComponent(ThemePicture25, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE))
         );
 
         MainPanel.add(ELGamDescription, "card82");
@@ -1197,6 +1214,164 @@ public class Crypto2 extends javax.swing.JFrame {
 
         MainPanel.add(ElGamalPanel, "card10");
 
+        ECCDescription.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel5.setText("ECC");
+
+        ThemePicture26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        DHBB2.setBackground(new java.awt.Color(77, 132, 155));
+        DHBB2.setForeground(new java.awt.Color(255, 255, 255));
+        DHBB2.setText("Return");
+        DHBB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DHBB2ActionPerformed(evt);
+            }
+        });
+
+        jTextArea4.setColumns(20);
+        jTextArea4.setRows(5);
+        jScrollPane1.setViewportView(jTextArea4);
+
+        javax.swing.GroupLayout ECCDescriptionLayout = new javax.swing.GroupLayout(ECCDescription);
+        ECCDescription.setLayout(ECCDescriptionLayout);
+        ECCDescriptionLayout.setHorizontalGroup(
+            ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(ThemePicture26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(ECCDescriptionLayout.createSequentialGroup()
+                .addGroup(ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ECCDescriptionLayout.createSequentialGroup()
+                        .addGap(404, 404, 404)
+                        .addGroup(ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addComponent(DHBB2)))
+                    .addGroup(ECCDescriptionLayout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 784, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        ECCDescriptionLayout.setVerticalGroup(
+            ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ECCDescriptionLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel5)
+                .addGap(45, 45, 45)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
+                .addComponent(DHBB2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ThemePicture26, javax.swing.GroupLayout.PREFERRED_SIZE, 215, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(ECCDescription, "card82");
+
+        ECCPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel6.setText("ECC");
+
+        ThemePicture27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        ECCR.setBackground(new java.awt.Color(77, 132, 155));
+        ECCR.setForeground(new java.awt.Color(255, 255, 255));
+        ECCR.setText("Return");
+        ECCR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECCRActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ECCPanelLayout = new javax.swing.GroupLayout(ECCPanel);
+        ECCPanel.setLayout(ECCPanelLayout);
+        ECCPanelLayout.setHorizontalGroup(
+            ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(ThemePicture27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(ECCPanelLayout.createSequentialGroup()
+                .addGroup(ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ECCPanelLayout.createSequentialGroup()
+                        .addGap(404, 404, 404)
+                        .addComponent(jLabel6))
+                    .addGroup(ECCPanelLayout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(ECCR)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        ECCPanelLayout.setVerticalGroup(
+            ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ECCPanelLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel6)
+                .addGap(424, 424, 424)
+                .addComponent(ECCR, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ThemePicture27, javax.swing.GroupLayout.PREFERRED_SIZE, 215, Short.MAX_VALUE))
+        );
+
+        MainPanel.add(ECCPanel, "card82");
+
+        ECCPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        ECCIntro.setBackground(new java.awt.Color(255, 255, 255));
+        ECCIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        ECCIntro.setForeground(new java.awt.Color(48, 87, 120));
+        ECCIntro.setText("Eliptic Curve Cryptography");
+
+        ThemePicture15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        ECCDes.setBackground(new java.awt.Color(77, 132, 155));
+        ECCDes.setForeground(new java.awt.Color(255, 255, 255));
+        ECCDes.setText("Description");
+        ECCDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECCDesActionPerformed(evt);
+            }
+        });
+
+        ECCQ.setBackground(new java.awt.Color(77, 132, 155));
+        ECCQ.setForeground(new java.awt.Color(255, 255, 255));
+        ECCQ.setText("Questions");
+        ECCQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECCQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ECCPanelWelcomeLayout = new javax.swing.GroupLayout(ECCPanelWelcome);
+        ECCPanelWelcome.setLayout(ECCPanelWelcomeLayout);
+        ECCPanelWelcomeLayout.setHorizontalGroup(
+            ECCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ECCPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture15, javax.swing.GroupLayout.PREFERRED_SIZE, 890, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(ECCPanelWelcomeLayout.createSequentialGroup()
+                .addGap(206, 206, 206)
+                .addGroup(ECCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(ECCIntro)
+                    .addGroup(ECCPanelWelcomeLayout.createSequentialGroup()
+                        .addComponent(ECCDes)
+                        .addGap(72, 72, 72)
+                        .addComponent(ECCQ)
+                        .addGap(97, 97, 97)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        ECCPanelWelcomeLayout.setVerticalGroup(
+            ECCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ECCPanelWelcomeLayout.createSequentialGroup()
+                .addGap(179, 179, 179)
+                .addComponent(ECCIntro)
+                .addGap(18, 18, 18)
+                .addGroup(ECCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ECCDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ECCQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 194, Short.MAX_VALUE)
+                .addComponent(ThemePicture15))
+        );
+
+        MainPanel.add(ECCPanelWelcome, "card50");
+
         DHPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
         DH_intro.setBackground(new java.awt.Color(255, 255, 255));
@@ -1228,32 +1403,28 @@ public class Crypto2 extends javax.swing.JFrame {
         DHPanelWelcome.setLayout(DHPanelWelcomeLayout);
         DHPanelWelcomeLayout.setHorizontalGroup(
             DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(ThemePicture9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture9)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
+                .addGap(316, 316, 316)
                 .addGroup(DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(269, 269, 269)
+                    .addComponent(DH_intro)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanelWelcomeLayout.createSequentialGroup()
                         .addComponent(DHDes)
                         .addGap(66, 66, 66)
-                        .addComponent(DHQ))
-                    .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(306, 306, 306)
-                        .addComponent(DH_intro)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(DHQ)))
+                .addContainerGap(337, Short.MAX_VALUE))
         );
         DHPanelWelcomeLayout.setVerticalGroup(
             DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(512, Short.MAX_VALUE)
+                .addGap(191, 191, 191)
                 .addComponent(DH_intro)
                 .addGap(18, 18, 18)
                 .addGroup(DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DHDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DHQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(148, 148, 148)
-                .addComponent(ThemePicture9))
+                .addGap(67, 67, 67)
+                .addComponent(ThemePicture9, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanelWelcome, "card50");
@@ -3203,7 +3374,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGroup(SchnorrPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RSASigDes1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSASigQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 417, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 412, Short.MAX_VALUE)
                 .addComponent(ThemePicture14))
         );
 
@@ -3401,6 +3572,9 @@ public class Crypto2 extends javax.swing.JFrame {
         });
         PublicKey.add(ElGamal);
 
+        ECC.setText("jMenuItem1");
+        PublicKey.add(ECC);
+
         jMenuBar1.add(PublicKey);
 
         PrivateKey.setText("Private Key");
@@ -3437,13 +3611,13 @@ public class Crypto2 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 928, Short.MAX_VALUE)
+            .addGap(0, 885, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(MainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 885, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1037, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(MainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -4260,6 +4434,46 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_SchnorrBackActionPerformed
 
+    private void ECCDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCDesActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECCDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_ECCDesActionPerformed
+
+    private void ECCQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECCPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_ECCQActionPerformed
+
+    private void DHBB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DHBB2ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECCPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_DHBB2ActionPerformed
+
+    private void ECCRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCRActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECCPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_ECCRActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4356,6 +4570,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JButton DHB1;
     private javax.swing.JButton DHBB;
     private javax.swing.JButton DHBB1;
+    private javax.swing.JButton DHBB2;
     private javax.swing.JButton DHButton1;
     private javax.swing.JButton DHDes;
     private javax.swing.JPanel DHDescription;
@@ -4378,6 +4593,14 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JMenuItem DiffieHellman;
     private javax.swing.JMenu DigitalSignatures;
     private javax.swing.JLabel Directions;
+    private javax.swing.JMenuItem ECC;
+    private javax.swing.JButton ECCDes;
+    private javax.swing.JPanel ECCDescription;
+    private javax.swing.JLabel ECCIntro;
+    private javax.swing.JPanel ECCPanel;
+    private javax.swing.JPanel ECCPanelWelcome;
+    private javax.swing.JButton ECCQ;
+    private javax.swing.JButton ECCR;
     private javax.swing.JTextField EGA1_1;
     private javax.swing.JTextField EGA1_2;
     private javax.swing.JButton EGB1_1;
@@ -4517,10 +4740,13 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture12;
     private javax.swing.JLabel ThemePicture13;
     private javax.swing.JLabel ThemePicture14;
+    private javax.swing.JLabel ThemePicture15;
     private javax.swing.JLabel ThemePicture22;
     private javax.swing.JLabel ThemePicture23;
     private javax.swing.JLabel ThemePicture24;
     private javax.swing.JLabel ThemePicture25;
+    private javax.swing.JLabel ThemePicture26;
+    private javax.swing.JLabel ThemePicture27;
     private javax.swing.JLabel ThemePicture5;
     private javax.swing.JLabel ThemePicture6;
     private javax.swing.JLabel ThemePicture7;
@@ -4560,8 +4786,11 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -4581,6 +4810,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea29;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea30;
+    private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextArea jTextArea7;
