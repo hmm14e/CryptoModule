@@ -249,6 +249,11 @@ public class Home extends javax.swing.JFrame {
         FeistelReturn3 = new javax.swing.JButton();
         ConfusionNext1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
         FeistelDescripPanel = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -2594,6 +2599,21 @@ public class Home extends javax.swing.JFrame {
 
         jLabel8.setText("*Diffusion in cryptography is usually synonomous with permutation");
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setText("Which of the following is a permutation of 00110101:");
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton1.setText("01010100");
+
+        jButton6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton6.setText("00001111");
+
+        jButton7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton7.setText("11111000");
+
+        jButton8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton8.setText("10100010");
+
         javax.swing.GroupLayout FeistelPanel2Layout = new javax.swing.GroupLayout(FeistelPanel2);
         FeistelPanel2.setLayout(FeistelPanel2Layout);
         FeistelPanel2Layout.setHorizontalGroup(
@@ -2612,7 +2632,18 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(Feistel_Intro3))
                     .addGroup(FeistelPanel2Layout.createSequentialGroup()
                         .addGap(282, 282, 282)
-                        .addComponent(jLabel8)))
+                        .addComponent(jLabel8))
+                    .addGroup(FeistelPanel2Layout.createSequentialGroup()
+                        .addGap(231, 231, 231)
+                        .addGroup(FeistelPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addGroup(FeistelPanel2Layout.createSequentialGroup()
+                                .addGap(161, 161, 161)
+                                .addGroup(FeistelPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton6)
+                                    .addComponent(jButton1)
+                                    .addComponent(jButton7)
+                                    .addComponent(jButton8))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         FeistelPanel2Layout.setVerticalGroup(
@@ -2622,7 +2653,17 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(Feistel_Intro3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 339, Short.MAX_VALUE)
+                .addGap(47, 47, 47)
+                .addComponent(jLabel3)
+                .addGap(38, 38, 38)
+                .addComponent(jButton1)
+                .addGap(18, 18, 18)
+                .addComponent(jButton6)
+                .addGap(18, 18, 18)
+                .addComponent(jButton7)
+                .addGap(18, 18, 18)
+                .addComponent(jButton8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addGroup(FeistelPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(FeistelReturn3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ConfusionNext1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -6674,10 +6715,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel WelcomePanel;
     private javax.swing.ButtonGroup buttonGroup6;
     private javax.swing.JLabel inout;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -6698,6 +6743,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
