@@ -416,6 +416,22 @@ public class Home extends javax.swing.JFrame {
         CHAPReturn = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         CHAPPanel = new javax.swing.JPanel();
+        CHAPtitle = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        CHAPQuestions = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jButton9 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        CHAPA1 = new javax.swing.JTextField();
+        CHAPA2 = new javax.swing.JTextField();
+        CHAPA3 = new javax.swing.JTextField();
+        CHAPB1 = new javax.swing.JButton();
+        CHAPB2 = new javax.swing.JButton();
+        CHAPB3 = new javax.swing.JButton();
         KerberosPanelWelcome = new javax.swing.JPanel();
         KerberosIntro = new javax.swing.JLabel();
         ThemePicture3 = new javax.swing.JLabel();
@@ -4308,15 +4324,144 @@ public class Home extends javax.swing.JFrame {
 
         CHAPPanel.setBackground(new java.awt.Color(255, 255, 255));
 
+        CHAPtitle.setBackground(new java.awt.Color(255, 255, 255));
+        CHAPtitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        CHAPtitle.setForeground(new java.awt.Color(48, 87, 120));
+        CHAPtitle.setText("CHAP");
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        CHAPQuestions.setBorder(null);
+        CHAPQuestions.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        CHAPQuestions.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("For the following problems, assume EVE is preforming a MITM attack on this authentication\nscheme:\n\n1. What are the three things Eve will receive from this attack?\n\n2. What does the security of this scheme hinge on?\n\n3. Would a rainbow table be helpful for Eve in this attack?");
+        CHAPQuestions.setViewportView(jTextArea2);
+
+        jButton9.setBackground(new java.awt.Color(77, 132, 155));
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setText("Return");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jLabel21.setText("1.");
+
+        jLabel30.setText("2.");
+
+        jLabel32.setText("3.");
+
+        jLabel38.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel38.setText("Answers");
+
+        CHAPB1.setBackground(new java.awt.Color(77, 132, 155));
+        CHAPB1.setForeground(new java.awt.Color(255, 255, 255));
+        CHAPB1.setText("Enter");
+        CHAPB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CHAPB1ActionPerformed(evt);
+            }
+        });
+
+        CHAPB2.setBackground(new java.awt.Color(77, 132, 155));
+        CHAPB2.setForeground(new java.awt.Color(255, 255, 255));
+        CHAPB2.setText("Enter");
+        CHAPB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CHAPB2ActionPerformed(evt);
+            }
+        });
+
+        CHAPB3.setBackground(new java.awt.Color(77, 132, 155));
+        CHAPB3.setForeground(new java.awt.Color(255, 255, 255));
+        CHAPB3.setText("Enter");
+        CHAPB3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CHAPB3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout CHAPPanelLayout = new javax.swing.GroupLayout(CHAPPanel);
         CHAPPanel.setLayout(CHAPPanelLayout);
         CHAPPanelLayout.setHorizontalGroup(
             CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CHAPPanelLayout.createSequentialGroup()
+                .addComponent(jLabel22)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CHAPPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel38)
+                .addGap(432, 432, 432))
+            .addGroup(CHAPPanelLayout.createSequentialGroup()
+                .addGroup(CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CHAPPanelLayout.createSequentialGroup()
+                        .addGap(375, 375, 375)
+                        .addComponent(CHAPtitle))
+                    .addGroup(CHAPPanelLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jButton9)
+                        .addGap(406, 406, 406)
+                        .addComponent(jLabel31))
+                    .addGroup(CHAPPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(CHAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 721, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(CHAPPanelLayout.createSequentialGroup()
+                        .addGap(97, 97, 97)
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(CHAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CHAPB1)
+                        .addGap(117, 117, 117)
+                        .addComponent(jLabel30)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CHAPA2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CHAPB2)
+                        .addGap(108, 108, 108)
+                        .addComponent(jLabel32)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(CHAPA3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CHAPB3)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         CHAPPanelLayout.setVerticalGroup(
             CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(CHAPPanelLayout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(CHAPtitle)
+                .addGap(18, 18, 18)
+                .addComponent(CHAPQuestions, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel38)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(jLabel30)
+                    .addComponent(jLabel32)
+                    .addComponent(CHAPA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CHAPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CHAPA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CHAPB1)
+                    .addComponent(CHAPB2)
+                    .addComponent(CHAPB3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CHAPPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                        .addComponent(jButton9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel22))
+                    .addGroup(CHAPPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel31)
+                        .addContainerGap())))
         );
 
         MainPanel.add(CHAPPanel, "card35");
@@ -6307,6 +6452,48 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_ConfusionNext1ActionPerformed
 
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CHAPPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void CHAPB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHAPB1ActionPerformed
+        String hold = CHAPA1.getText();
+        hold = hold.toLowerCase();
+        
+        if((hold.contains("md5") || hold.contains("hash")) && hold.contains("id") && hold.contains("challenge") )
+        {
+            JOptionPane.showMessageDialog(null, "You are correct! Eve will have sniffed the MD5 hash, the ID of the user, and the challenge value", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
+        }
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_CHAPB1ActionPerformed
+
+    private void CHAPB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHAPB2ActionPerformed
+        String hold = CHAPA2.getText();
+        hold = hold.toLowerCase();
+        
+        if(hold.contains("password"))
+            JOptionPane.showMessageDialog(null, "You are correct! The security of this scheme in liu of a MITM attack hinges on the user's password strength", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_CHAPB2ActionPerformed
+
+    private void CHAPB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHAPB3ActionPerformed
+        String hold = CHAPA3.getText();
+        hold = hold.toLowerCase();
+        
+        if(hold.equals("no"))
+            JOptionPane.showMessageDialog(null, "You are correct! Rainbow tables are tables that contain pre-computed hashes.\nSince the md5 hash = md5(id||password||challenge) it's most likely a rainbow table wouldn't contain this hash.\n Also note, since the challenge is a random value, it makes it more likely that a rainbow table would'nt have this hash.", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);            
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_CHAPB3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -6393,6 +6580,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem CBC_MAC;
     private javax.swing.JLabel CBCtitle;
     private javax.swing.JMenuItem CHAP;
+    private javax.swing.JTextField CHAPA1;
+    private javax.swing.JTextField CHAPA2;
+    private javax.swing.JTextField CHAPA3;
+    private javax.swing.JButton CHAPB1;
+    private javax.swing.JButton CHAPB2;
+    private javax.swing.JButton CHAPB3;
     private javax.swing.JButton CHAPDes;
     private javax.swing.JScrollPane CHAPDescription;
     private javax.swing.JLabel CHAPLabel;
@@ -6400,8 +6593,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel CHAPPanelWelcome;
     private javax.swing.JLabel CHAPPicture;
     private javax.swing.JButton CHAPQ;
+    private javax.swing.JScrollPane CHAPQuestions;
     private javax.swing.JButton CHAPReturn;
     private javax.swing.JPanel CHAP_Description;
+    private javax.swing.JLabel CHAPtitle;
     private javax.swing.JMenuItem CTR;
     private javax.swing.JButton CTRDes;
     private javax.swing.JPanel CTRDescription;
@@ -6723,6 +6918,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -6736,6 +6932,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
@@ -6744,11 +6942,15 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
@@ -6776,6 +6978,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea17;
     private javax.swing.JTextArea jTextArea18;
     private javax.swing.JTextArea jTextArea19;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea20;
     private javax.swing.JTextArea jTextArea21;
     private javax.swing.JTextArea jTextArea22;
