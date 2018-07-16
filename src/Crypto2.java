@@ -117,6 +117,7 @@ public class Crypto2 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         ThemePicture26 = new javax.swing.JLabel();
         DHBB2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         ECCPanel = new javax.swing.JPanel();
@@ -1231,38 +1232,52 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Picture2.png"))); // NOI18N
+
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
+        jTextArea4.setText("- To the right is an elliptic curve an example\nof an elliptic curve in which ECC is based on.\n- The equation for ellpitic curves is as \nfollows: y^2 = x^3 + ax + b\n- The max dotted line represents the key\nlength which 256, and 384 bit length keys \nare the most common as of 2018.\n\n");
         jScrollPane1.setViewportView(jTextArea4);
 
         javax.swing.GroupLayout ECCDescriptionLayout = new javax.swing.GroupLayout(ECCDescription);
         ECCDescription.setLayout(ECCDescriptionLayout);
         ECCDescriptionLayout.setHorizontalGroup(
             ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ThemePicture26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(ECCDescriptionLayout.createSequentialGroup()
                 .addGroup(ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ThemePicture26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(ECCDescriptionLayout.createSequentialGroup()
-                        .addGap(404, 404, 404)
                         .addGroup(ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(DHBB2)))
-                    .addGroup(ECCDescriptionLayout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 784, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(ECCDescriptionLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(DHBB2))
+                            .addGroup(ECCDescriptionLayout.createSequentialGroup()
+                                .addGap(398, 398, 398)
+                                .addComponent(jLabel5)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ECCDescriptionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1)))
+                .addContainerGap())
         );
         ECCDescriptionLayout.setVerticalGroup(
             ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ECCDescriptionLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(14, 14, 14)
                 .addComponent(jLabel5)
-                .addGap(45, 45, 45)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
+                .addGroup(ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ECCDescriptionLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1))
+                    .addGroup(ECCDescriptionLayout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(7, 7, 7)
                 .addComponent(DHBB2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(ThemePicture26, javax.swing.GroupLayout.PREFERRED_SIZE, 215, Short.MAX_VALUE))
+                .addGap(22, 22, 22)
+                .addComponent(ThemePicture26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         MainPanel.add(ECCDescription, "card82");
@@ -4771,6 +4786,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
