@@ -181,6 +181,8 @@ public class Home extends javax.swing.JFrame {
         Correct_ECB = new javax.swing.JPanel();
         Correct_Pic = new javax.swing.JLabel();
         Correct1 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jLabel39 = new javax.swing.JLabel();
         CBCPanelWelcome = new javax.swing.JPanel();
         CBCIntro = new javax.swing.JLabel();
         ThemePicture19 = new javax.swing.JLabel();
@@ -286,6 +288,8 @@ public class Home extends javax.swing.JFrame {
         DESLabel1 = new javax.swing.JLabel();
         DESRETURNB1 = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
         DESPanelWelcome = new javax.swing.JPanel();
         DESIntro2 = new javax.swing.JLabel();
         ThemePicture29 = new javax.swing.JLabel();
@@ -400,8 +404,8 @@ public class Home extends javax.swing.JFrame {
         PAPUN = new javax.swing.JTextField();
         PAPP = new javax.swing.JTextField();
         SentUN = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
+        PAPA2 = new javax.swing.JTextField();
+        PAPB2 = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
         CHAPPanelWelcome = new javax.swing.JPanel();
         ChapIntro = new javax.swing.JLabel();
@@ -1891,28 +1895,47 @@ public class Home extends javax.swing.JFrame {
         Correct1.setForeground(new java.awt.Color(48, 87, 120));
         Correct1.setText("CORRECT!");
 
+        jButton10.setBackground(new java.awt.Color(77, 132, 155));
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
+        jButton10.setText("Return");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
         javax.swing.GroupLayout Correct_ECBLayout = new javax.swing.GroupLayout(Correct_ECB);
         Correct_ECB.setLayout(Correct_ECBLayout);
         Correct_ECBLayout.setHorizontalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Correct_ECBLayout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addComponent(jButton10)
+                .addGap(56, 56, 56)
                 .addGroup(Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Correct_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
-                        .addGap(198, 198, 198)
-                        .addComponent(Correct_Pic, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Correct_ECBLayout.createSequentialGroup()
-                        .addGap(326, 326, 326)
+                        .addGap(142, 142, 142)
                         .addComponent(Correct1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(Correct_ECBLayout.createSequentialGroup()
+                .addComponent(jLabel39)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         Correct_ECBLayout.setVerticalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Correct_ECBLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Correct1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Correct_Pic)
-                .addGap(127, 127, 127))
+            .addGroup(Correct_ECBLayout.createSequentialGroup()
+                .addContainerGap(30, Short.MAX_VALUE)
+                .addGroup(Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton10)
+                    .addGroup(Correct_ECBLayout.createSequentialGroup()
+                        .addComponent(Correct1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Correct_Pic)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel39))
         );
 
         MainPanel.add(Correct_ECB, "card7");
@@ -2090,10 +2113,20 @@ public class Home extends javax.swing.JFrame {
         CBCYes.setBackground(new java.awt.Color(77, 132, 155));
         CBCYes.setForeground(new java.awt.Color(255, 255, 255));
         CBCYes.setText("Yes");
+        CBCYes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCYesActionPerformed(evt);
+            }
+        });
 
         CBCNo.setBackground(new java.awt.Color(77, 132, 155));
         CBCNo.setForeground(new java.awt.Color(255, 255, 255));
         CBCNo.setText("No");
+        CBCNo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CBCNoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout CBCPanelLayout = new javax.swing.GroupLayout(CBCPanel);
         CBCPanel.setLayout(CBCPanelLayout);
@@ -2620,15 +2653,35 @@ public class Home extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton1.setText("01010100");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton6.setText("00001111");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton7.setText("11111000");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton8.setText("10100010");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout FeistelPanel2Layout = new javax.swing.GroupLayout(FeistelPanel2);
         FeistelPanel2.setLayout(FeistelPanel2Layout);
@@ -3002,24 +3055,37 @@ public class Home extends javax.swing.JFrame {
 
         jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jTextArea3.setText("1. The key in DES is 56-bits plus 8 parity bits. What are parity bits used for?\n\n2. ");
+        jScrollPane3.setViewportView(jTextArea3);
+
         javax.swing.GroupLayout DESPanelLayout = new javax.swing.GroupLayout(DESPanel);
         DESPanel.setLayout(DESPanelLayout);
         DESPanelLayout.setHorizontalGroup(
             DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DESPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(DESRETURNB1))
-            .addComponent(jLabel46)
-            .addGroup(DESPanelLayout.createSequentialGroup()
-                .addGap(373, 373, 373)
-                .addComponent(DESLabel1))
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(DESRETURNB1))
+                    .addComponent(jLabel46)
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(373, 373, 373)
+                        .addComponent(DESLabel1))
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 768, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(326, 326, 326))
         );
         DESPanelLayout.setVerticalGroup(
             DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DESPanelLayout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(DESLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 342, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 218, Short.MAX_VALUE)
                 .addComponent(DESRETURNB1)
                 .addGap(29, 29, 29)
                 .addComponent(jLabel46))
@@ -3643,7 +3709,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea14.setColumns(20);
         jTextArea14.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea14.setRows(5);
-        jTextArea14.setText("1. Suppose you have 8-bits of C' = 01011001, and also 8-bits of\nC''= 11100110. Both were xor encrypted with the same key-stream,\nis there anyway you can leak information? Yes/No\n\n\n2. Suppose C' is the encrypted P', and C'' is the encrypted P''. \nWhat is P' xor P''?");
+        jTextArea14.setText("1. Suppose you have 8-bits of C' = 01011001, and also 8-bits of\nC''= 11100110. Both were xor encrypted with the same key-stream,\nis there anyway you can leak information? Yes/No\n\n\n2. Suppose C' from the first problem is the encrypted P', and C'' \nis the encrypted P''. \nWhat is P' xor P''?");
         WEPQuestions.setViewportView(jTextArea14);
         jTextArea14.setEditable(false);
 
@@ -4072,9 +4138,14 @@ public class Home extends javax.swing.JFrame {
 
         SentUN.setText("Data being sent");
 
-        jButton5.setBackground(new java.awt.Color(77, 132, 155));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Enter");
+        PAPB2.setBackground(new java.awt.Color(77, 132, 155));
+        PAPB2.setForeground(new java.awt.Color(255, 255, 255));
+        PAPB2.setText("Enter");
+        PAPB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PAPB2ActionPerformed(evt);
+            }
+        });
 
         jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
@@ -4120,11 +4191,11 @@ public class Home extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(PAPA1)
-                            .addComponent(jTextField2))
+                            .addComponent(PAPA2))
                         .addGap(18, 18, 18)
                         .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(PAPB)
-                            .addComponent(jButton5))))
+                            .addComponent(PAPB2))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(PAPQPanelLayout.createSequentialGroup()
                 .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4185,8 +4256,8 @@ public class Home extends javax.swing.JFrame {
                                     .addComponent(PAPB))
                                 .addGap(31, 31, 31)
                                 .addGroup(PAPQPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton5))
+                                    .addComponent(PAPA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(PAPB2))
                                 .addGap(31, 31, 31)))))
                 .addComponent(jLabel28))
         );
@@ -4451,15 +4522,13 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(CHAPB1)
                     .addComponent(CHAPB2)
                     .addComponent(CHAPB3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
                 .addGroup(CHAPPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CHAPPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CHAPPanelLayout.createSequentialGroup()
                         .addComponent(jButton9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel22))
                     .addGroup(CHAPPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel31)
                         .addContainerGap())))
         );
@@ -5241,8 +5310,8 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_Answer1ActionPerformed
 
     private void ECB_EnterButton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECB_EnterButton
-        String val1 = Answer1.getText();
-        String val2 = "NEVER USE ECB";
+        String val1 = Answer1.getText().toLowerCase();
+        String val2 = "never use ecb";
         
         if(Objects.equals(val1, val2))
         {
@@ -6425,11 +6494,16 @@ public class Home extends javax.swing.JFrame {
     private void ConfusionBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfusionBActionPerformed
         String hold = ConfusionA.getText();
         
-        if(hold.equals("1"))
+        if(hold.equals("11011001"))
         {    
             ConfusionNext.setVisible(true);
-            System.out.print("Hi");
+            JOptionPane.showMessageDialog(null, "You are correct! You can continue on to diffusion", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
+
         }
+        
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+
     }//GEN-LAST:event_ConfusionBActionPerformed
 
     private void FeistelReturn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelReturn3ActionPerformed
@@ -6493,6 +6567,51 @@ public class Home extends javax.swing.JFrame {
         else
             JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_CHAPB3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        JOptionPane.showMessageDialog(null, "Correct!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECBPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void CBCYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCYesActionPerformed
+        JOptionPane.showMessageDialog(null, "Correct!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_CBCYesActionPerformed
+
+    private void CBCNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCNoActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_CBCNoActionPerformed
+
+    private void PAPB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PAPB2ActionPerformed
+        String hold = PAPA2.getText().toLowerCase();
+        
+        if(hold.equals("f"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+
+        else
+             JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+
+    }//GEN-LAST:event_PAPB2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -6767,9 +6886,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem OneTimePad;
     private javax.swing.JMenuItem PAP;
     private javax.swing.JTextField PAPA1;
+    private javax.swing.JTextField PAPA2;
     private javax.swing.JLabel PAPAS;
     private javax.swing.JLabel PAPArrow;
     private javax.swing.JButton PAPB;
+    private javax.swing.JButton PAPB2;
     private javax.swing.JLabel PAPComp;
     private javax.swing.JButton PAPDes;
     private javax.swing.JPanel PAPDescripPanel;
@@ -6911,10 +7032,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup6;
     private javax.swing.JLabel inout;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -6951,6 +7072,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
@@ -6969,6 +7091,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea12;
@@ -6987,6 +7110,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea25;
     private javax.swing.JTextArea jTextArea26;
     private javax.swing.JTextArea jTextArea27;
+    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea31;
     private javax.swing.JTextArea jTextArea32;
     private javax.swing.JTextArea jTextArea33;
@@ -6995,7 +7119,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea36;
     private javax.swing.JTextArea jTextArea37;
     private javax.swing.JTextArea jTextArea4;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel theme;
     private javax.swing.JLabel theme1;
     private javax.swing.JLabel theme2;

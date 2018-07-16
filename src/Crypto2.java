@@ -1072,14 +1072,11 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGroup(ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ElGamalSteps, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(ELGamDescriptionLayout.createSequentialGroup()
-                        .addGroup(ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(ELGamDescriptionLayout.createSequentialGroup()
-                                .addGap(370, 370, 370)
-                                .addComponent(jLabel4))
-                            .addGroup(ELGamDescriptionLayout.createSequentialGroup()
-                                .addGap(394, 394, 394)
-                                .addComponent(DHBB1)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addGap(370, 370, 370)
+                        .addComponent(jLabel4))
+                    .addGroup(ELGamDescriptionLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(DHBB1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(ThemePicture25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -1093,7 +1090,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DHBB1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(ThemePicture25, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE))
+                .addComponent(ThemePicture25, javax.swing.GroupLayout.PREFERRED_SIZE, 215, Short.MAX_VALUE))
         );
 
         MainPanel.add(ELGamDescription, "card82");
@@ -1447,7 +1444,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addComponent(DHDes)
                         .addGap(66, 66, 66)
                         .addComponent(DHQ)))
-                .addContainerGap(337, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DHPanelWelcomeLayout.setVerticalGroup(
             DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
