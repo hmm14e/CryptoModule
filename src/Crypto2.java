@@ -261,13 +261,13 @@ public class Crypto2 extends javax.swing.JFrame {
         MD5Return = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea10 = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        MD5B1 = new javax.swing.JButton();
+        MD5A1 = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jButton6 = new javax.swing.JButton();
-        jTextField4 = new javax.swing.JTextField();
-        jButton7 = new javax.swing.JButton();
+        MD5A2 = new javax.swing.JTextField();
+        MD5B2 = new javax.swing.JButton();
+        MD5A3 = new javax.swing.JTextField();
+        MD5B3 = new javax.swing.JButton();
         RSASignaturePanelWelcome = new javax.swing.JPanel();
         RSASigIntro = new javax.swing.JLabel();
         ThemePicture7 = new javax.swing.JLabel();
@@ -884,6 +884,11 @@ public class Crypto2 extends javax.swing.JFrame {
         RSAB1_1.setBackground(new java.awt.Color(77, 132, 155));
         RSAB1_1.setForeground(new java.awt.Color(255, 255, 255));
         RSAB1_1.setText("Enter");
+        RSAB1_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSAB1_1ActionPerformed(evt);
+            }
+        });
 
         RSAQ1_2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         RSAQ1_2.setText("2. Alice wants to send M = 7, what is C?");
@@ -891,6 +896,11 @@ public class Crypto2 extends javax.swing.JFrame {
         RSAB1_2.setBackground(new java.awt.Color(77, 132, 155));
         RSAB1_2.setForeground(new java.awt.Color(255, 255, 255));
         RSAB1_2.setText("Enter");
+        RSAB1_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSAB1_2ActionPerformed(evt);
+            }
+        });
 
         RSAQ1_3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         RSAQ1_3.setText("3. What is Bob’s private key? Format: (n,d)");
@@ -898,6 +908,11 @@ public class Crypto2 extends javax.swing.JFrame {
         RSAB1_3.setBackground(new java.awt.Color(77, 132, 155));
         RSAB1_3.setForeground(new java.awt.Color(255, 255, 255));
         RSAB1_3.setText("Enter");
+        RSAB1_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RSAB1_3ActionPerformed(evt);
+            }
+        });
 
         RSAReturn.setBackground(new java.awt.Color(77, 132, 155));
         RSAReturn.setForeground(new java.awt.Color(255, 255, 255));
@@ -1992,7 +2007,14 @@ public class Crypto2 extends javax.swing.JFrame {
 
         DHA1.setColumns(15);
 
+        DHB1.setBackground(new java.awt.Color(77, 132, 155));
+        DHB1.setForeground(new java.awt.Color(255, 255, 255));
         DHB1.setText("Submit");
+        DHB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DHB1ActionPerformed(evt);
+            }
+        });
 
         DH6_Back.setBackground(new java.awt.Color(77, 132, 155));
         DH6_Back.setForeground(new java.awt.Color(255, 255, 255));
@@ -2016,11 +2038,11 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(DHQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32))
             .addGroup(DHPanel6Layout.createSequentialGroup()
-                .addGap(133, 133, 133)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DHA1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(DHB1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(154, 154, 154)
                 .addComponent(DH6_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(100, 100, 100))
             .addGroup(DHPanel6Layout.createSequentialGroup()
@@ -2098,7 +2120,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addGap(66, 66, 66)
                         .addComponent(SHA2Q))
                     .addGroup(SHA2PanelWelcomeLayout.createSequentialGroup()
-                        .addGap(372, 372, 372)
+                        .addGap(329, 329, 329)
                         .addComponent(SHA2Intro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -2682,22 +2704,37 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea10.setEditable(false);
         jTextArea10.setColumns(20);
         jTextArea10.setRows(5);
-        jTextArea10.setText("1. MD5 produces 128-bit hash values, how many \nunique hashes can MD5 produce?\n\n2. What is the plaintext of this hash: \n527d60cd4715db174ad56cda34ab2dce\n\n3. Is MD5 a cryptographically secure hashing \nfunction? Y/N?");
+        jTextArea10.setText("1. MD5 produces 128-bit hash values, how many \nunique hashes can MD5 produce? notation: x^y\n\n2. What is the plaintext of this hash: \n527d60cd4715db174ad56cda34ab2dce\n\n3. Is MD5 a cryptographically secure hashing \nfunction? Y/N?");
         jScrollPane4.setViewportView(jTextArea10);
 
-        jButton1.setBackground(new java.awt.Color(77, 132, 155));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Enter");
+        MD5B1.setBackground(new java.awt.Color(77, 132, 155));
+        MD5B1.setForeground(new java.awt.Color(255, 255, 255));
+        MD5B1.setText("Enter");
+        MD5B1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MD5B1ActionPerformed(evt);
+            }
+        });
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        jButton6.setBackground(new java.awt.Color(77, 132, 155));
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Enter");
+        MD5B2.setBackground(new java.awt.Color(77, 132, 155));
+        MD5B2.setForeground(new java.awt.Color(255, 255, 255));
+        MD5B2.setText("Enter");
+        MD5B2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MD5B2ActionPerformed(evt);
+            }
+        });
 
-        jButton7.setBackground(new java.awt.Color(77, 132, 155));
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Enter");
+        MD5B3.setBackground(new java.awt.Color(77, 132, 155));
+        MD5B3.setForeground(new java.awt.Color(255, 255, 255));
+        MD5B3.setText("Enter");
+        MD5B3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MD5B3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout MD5PanelLayout = new javax.swing.GroupLayout(MD5Panel);
         MD5Panel.setLayout(MD5PanelLayout);
@@ -2725,17 +2762,17 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MD5PanelLayout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(MD5A1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1))
+                        .addComponent(MD5B1))
                     .addGroup(MD5PanelLayout.createSequentialGroup()
                         .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField3)
-                            .addComponent(jTextField4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(MD5A2, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                            .addComponent(MD5A3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton7)
-                            .addComponent(jButton6)))))
+                            .addComponent(MD5B3)
+                            .addComponent(MD5B2)))))
             .addComponent(jLabel22)
             .addGroup(MD5PanelLayout.createSequentialGroup()
                 .addContainerGap()
@@ -2764,16 +2801,16 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MD5PanelLayout.createSequentialGroup()
                         .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(MD5B1)
+                            .addComponent(MD5A1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(37, 37, 37)
                         .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton6))
+                            .addComponent(MD5A2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MD5B2))
                         .addGap(33, 33, 33)
                         .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton7)))
+                            .addComponent(MD5A3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MD5B3)))
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -3604,7 +3641,12 @@ public class Crypto2 extends javax.swing.JFrame {
         });
         PublicKey.add(ElGamal);
 
-        ECC.setText("jMenuItem1");
+        ECC.setText("ECC");
+        ECC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECCActionPerformed(evt);
+            }
+        });
         PublicKey.add(ECC);
 
         jMenuBar1.add(PublicKey);
@@ -4161,7 +4203,12 @@ public class Crypto2 extends javax.swing.JFrame {
     }//GEN-LAST:event_SHA_ButtonActionPerformed
 
     private void SHAB1SHA_Q1_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAB1SHA_Q1_Submit
-        // TODO add your handling code here:
+        String hold = SHAA1.getText();
+        
+        if(hold.contains("32"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_SHAB1SHA_Q1_Submit
 
     private void SHAA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAA2ActionPerformed
@@ -4169,7 +4216,12 @@ public class Crypto2 extends javax.swing.JFrame {
     }//GEN-LAST:event_SHAA2ActionPerformed
 
     private void SHAB2SHA_Q2_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAB2SHA_Q2_Submit
-        // TODO add your handling code here:
+        String hold = SHAA2.getText().toLowerCase();
+        
+        if(hold.equals("f"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_SHAB2SHA_Q2_Submit
 
     private void SHAA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHAA1ActionPerformed
@@ -4520,6 +4572,80 @@ public class Crypto2 extends javax.swing.JFrame {
         new Home().setVisible(true);
     }//GEN-LAST:event_Return2HomeActionPerformed
 
+    private void MD5B1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5B1ActionPerformed
+        String hold = MD5A1.getText();
+        
+        if(hold.equals("2^128"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+
+    }//GEN-LAST:event_MD5B1ActionPerformed
+
+    private void MD5B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5B2ActionPerformed
+        String hold = MD5A2.getText().toLowerCase();
+        
+        if(hold.equals("superman"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_MD5B2ActionPerformed
+
+    private void MD5B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5B3ActionPerformed
+        String hold = MD5A3.getText().toLowerCase();
+        
+        if(hold.equals("n"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_MD5B3ActionPerformed
+
+    private void ECCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECCPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_ECCActionPerformed
+
+    private void DHB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DHB1ActionPerformed
+        String hold = DHA1.getText().toLowerCase();
+        
+        if(hold.equals("n"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_DHB1ActionPerformed
+
+    private void RSAB1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAB1_1ActionPerformed
+        String hold = RSAA1_1.getText();
+        
+        if(hold.equals("(33,3)"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);        // TODO add your handling code here:
+    }//GEN-LAST:event_RSAB1_1ActionPerformed
+
+    private void RSAB1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAB1_2ActionPerformed
+        String hold = RSAA1_2.getText();
+        
+        if(hold.equals("13"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_RSAB1_2ActionPerformed
+
+    private void RSAB1_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAB1_3ActionPerformed
+        String hold = RSAA1_3.getText();
+        
+        if(hold.equals("(33,7)"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_RSAB1_3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4668,6 +4794,12 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JMenu Hashing;
     private javax.swing.JLabel Instructions;
     private javax.swing.JMenuItem MD5;
+    private javax.swing.JTextField MD5A1;
+    private javax.swing.JTextField MD5A2;
+    private javax.swing.JTextField MD5A3;
+    private javax.swing.JButton MD5B1;
+    private javax.swing.JButton MD5B2;
+    private javax.swing.JButton MD5B3;
     private javax.swing.JButton MD5Backk;
     private javax.swing.JButton MD5Des;
     private javax.swing.JPanel MD5Description;
@@ -4815,9 +4947,6 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JTextField d_input;
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
@@ -4866,9 +4995,6 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JTextArea jTextArea8;
     private javax.swing.JTextArea jTextArea9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JLabel n;
     private javax.swing.JLabel n1;
     private javax.swing.JTextField n_input;

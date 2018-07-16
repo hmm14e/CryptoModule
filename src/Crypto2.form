@@ -96,8 +96,11 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="ECC">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jMenuItem1"/>
+                <Property name="text" type="java.lang.String" value="ECC"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ECCActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -1239,6 +1242,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Enter"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RSAB1_1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="RSAQ1_2">
               <Properties>
@@ -1260,6 +1266,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Enter"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RSAB1_2ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="RSAQ1_3">
               <Properties>
@@ -1281,6 +1290,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Enter"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RSAB1_3ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="RSAReturn">
               <Properties>
@@ -3043,11 +3055,11 @@
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="DHA1" min="-2" pref="82" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       <Component id="DHB1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
                       <Component id="DH6_Back" min="-2" pref="97" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
                   </Group>
@@ -3160,8 +3172,17 @@
             </Component>
             <Component class="javax.swing.JButton" name="DHB1">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="9b" green="84" red="4d" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Submit"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DHB1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="DH6_Back">
               <Properties>
@@ -3207,14 +3228,14 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
                               <Component id="SHA2Des" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                               <Component id="SHA2Q" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="372" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="329" max="-2" attributes="0"/>
                               <Component id="SHA2Intro" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -4216,19 +4237,19 @@
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jTextField1" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="MD5A1" min="-2" pref="60" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <Component id="MD5B1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jTextField3" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField4" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="MD5A2" pref="60" max="32767" attributes="0"/>
+                                  <Component id="MD5A3" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton7" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MD5B3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MD5B2" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -4266,18 +4287,18 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MD5B1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MD5A1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MD5A2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MD5B2" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MD5A3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MD5B3" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="jScrollPane4" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
@@ -4394,12 +4415,12 @@
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="1. MD5 produces 128-bit hash values, how many &#xa;unique hashes can MD5 produce?&#xa;&#xa;2. What is the plaintext of this hash: &#xa;527d60cd4715db174ad56cda34ab2dce&#xa;&#xa;3. Is MD5 a cryptographically secure hashing &#xa;function? Y/N?"/>
+                    <Property name="text" type="java.lang.String" value="1. MD5 produces 128-bit hash values, how many &#xa;unique hashes can MD5 produce? notation: x^y&#xa;&#xa;2. What is the plaintext of this hash: &#xa;527d60cd4715db174ad56cda34ab2dce&#xa;&#xa;3. Is MD5 a cryptographically secure hashing &#xa;function? Y/N?"/>
                   </Properties>
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="MD5B1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="9b" green="84" red="4d" type="rgb"/>
@@ -4409,8 +4430,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Enter"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MD5B1ActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="MD5A1">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel22">
               <Properties>
@@ -4419,9 +4443,9 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField3">
+            <Component class="javax.swing.JTextField" name="MD5A2">
             </Component>
-            <Component class="javax.swing.JButton" name="jButton6">
+            <Component class="javax.swing.JButton" name="MD5B2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="9b" green="84" red="4d" type="rgb"/>
@@ -4431,10 +4455,13 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Enter"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MD5B2ActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField4">
+            <Component class="javax.swing.JTextField" name="MD5A3">
             </Component>
-            <Component class="javax.swing.JButton" name="jButton7">
+            <Component class="javax.swing.JButton" name="MD5B3">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="9b" green="84" red="4d" type="rgb"/>
@@ -4444,6 +4471,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Enter"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MD5B3ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

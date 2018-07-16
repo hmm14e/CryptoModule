@@ -6584,7 +6584,6 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="303" max="-2" attributes="0"/>
                               <Component id="PAPQB2" min="-2" pref="33" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
@@ -6630,10 +6629,6 @@
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="PAPQuestions" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="PAPA1" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="PAPB" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -6643,11 +6638,12 @@
                                           <Component id="PAPA2" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="PAPB2" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="PAPQuestions" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
+                      <EmptySpace min="14" max="32767" attributes="0"/>
                       <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
