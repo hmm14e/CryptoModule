@@ -352,6 +352,7 @@ public class Crypto2 extends javax.swing.JFrame {
         Blowfish = new javax.swing.JMenuItem();
         AES = new javax.swing.JMenuItem();
         Part1 = new javax.swing.JMenu();
+        Return2Home = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -3618,6 +3619,15 @@ public class Crypto2 extends javax.swing.JFrame {
                 Part1ActionPerformed(evt);
             }
         });
+
+        Return2Home.setText("Return");
+        Return2Home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Return2HomeActionPerformed(evt);
+            }
+        });
+        Part1.add(Return2Home);
+
         jMenuBar1.add(Part1);
 
         setJMenuBar(jMenuBar1);
@@ -4489,6 +4499,11 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_ECCRActionPerformed
 
+    private void Return2HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return2HomeActionPerformed
+        this.setVisible(false);
+        new Home().setVisible(true);
+    }//GEN-LAST:event_Return2HomeActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4697,6 +4712,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel RSA_Signature_1;
     private javax.swing.JPanel RSA_Signature_2;
     private javax.swing.JPanel RSA_Validate;
+    private javax.swing.JMenuItem Return2Home;
     private javax.swing.JMenu SHA;
     private javax.swing.JMenuItem SHA2;
     private javax.swing.JButton SHA2Back;
