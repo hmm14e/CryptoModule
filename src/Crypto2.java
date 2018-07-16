@@ -1266,9 +1266,14 @@ public class Crypto2 extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Picture2.png"))); // NOI18N
 
+        jScrollPane1.setBorder(null);
+
         jTextArea4.setColumns(20);
+        jTextArea4.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jTextArea4.setLineWrap(true);
         jTextArea4.setRows(5);
-        jTextArea4.setText("- To the right is an elliptic curve an example\nof an elliptic curve in which ECC is based on.\n- The equation for ellpitic curves is as \nfollows: y^2 = x^3 + ax + b\n- The max dotted line represents the key\nlength which 256, and 384 bit length keys \nare the most common as of 2018.\n\n");
+        jTextArea4.setText("- To the right is an elliptic curve an example of an elliptic curve in which ECC is based on.\n- The equation for elliptic curves is as follows: y^2 = x^3 + ax + b\n- The max dotted line represents the key length. 256 and 384-bit keys \nare the most common as of 2018.\n\n");
+        jTextArea4.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea4);
 
         javax.swing.GroupLayout ECCDescriptionLayout = new javax.swing.GroupLayout(ECCDescription);
@@ -1288,8 +1293,8 @@ public class Crypto2 extends javax.swing.JFrame {
                                 .addComponent(jLabel5)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ECCDescriptionLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(60, 60, 60)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel1)))
                 .addContainerGap())

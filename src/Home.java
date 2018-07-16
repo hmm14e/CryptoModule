@@ -594,7 +594,7 @@ public class Home extends javax.swing.JFrame {
 
         TOCLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         TOCLabel.setForeground(new java.awt.Color(48, 87, 120));
-        TOCLabel.setText("Crypto Tool: Table of Contents");
+        TOCLabel.setText("Table of Contents");
 
         TOC.setBorder(null);
         TOC.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -602,8 +602,9 @@ public class Home extends javax.swing.JFrame {
 
         jTextArea4.setEditable(false);
         jTextArea4.setColumns(20);
+        jTextArea4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         jTextArea4.setRows(5);
-        jTextArea4.setText("Part 1: \n- Ciphers\n o Substitution\n o Block\n o Stream\n o Entropy\n- Encryption Modes\n o ECB\n o CBC\n o CTR\n- Authentication\n o PAP\n o CHAP\n o Kerberos\n o CBC-Mac\n");
+        jTextArea4.setText("Part 1: \n- Ciphers\n    * Substitution\n   * Block\n   * Stream\n   * Entropy\n- Encryption Modes\n   * ECB\n   * CBC\n   * CTR\n- Authentication\n   * PAP\n   * CHAP\n   * Kerberos\n   * CBC-Mac\n");
         TOC.setViewportView(jTextArea4);
 
         ReturnWelcome.setBackground(new java.awt.Color(77, 132, 155));
@@ -622,14 +623,21 @@ public class Home extends javax.swing.JFrame {
 
         jTextArea27.setEditable(false);
         jTextArea27.setColumns(20);
+        jTextArea27.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         jTextArea27.setRows(5);
-        jTextArea27.setText("Part 2:\n- Digital Signatures\n o Hashing\n o RSA Signature\n- Public Key\n o RSA \n o El Gamal\n o Diffie Hellman\n- Private Key\n o Blowfish\n o AES");
+        jTextArea27.setText("Part 2:\n- Digital Signatures\n   * RSA \n   * Schnorr \n-Hashing\n   * MD5  \n   * SHA 2\n   * SHA 3\n- Public Key\n    * RSA \n    * El Gamal\n    * Diffie Hellman\n    * ECC \n- Private Key\n   * Blowfish\n   * AES");
         jScrollPane6.setViewportView(jTextArea27);
 
         javax.swing.GroupLayout TOCPanelLayout = new javax.swing.GroupLayout(TOCPanel);
         TOCPanel.setLayout(TOCPanelLayout);
         TOCPanelLayout.setHorizontalGroup(
             TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TOCPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(TOC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(158, 158, 158))
             .addGroup(TOCPanelLayout.createSequentialGroup()
                 .addGroup(TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel49)
@@ -637,15 +645,9 @@ public class Home extends javax.swing.JFrame {
                         .addGap(394, 394, 394)
                         .addComponent(ReturnWelcome))
                     .addGroup(TOCPanelLayout.createSequentialGroup()
-                        .addGap(204, 204, 204)
+                        .addGap(288, 288, 288)
                         .addComponent(TOCLabel)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TOCPanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(TOC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(208, 208, 208))
         );
         TOCPanelLayout.setVerticalGroup(
             TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -654,7 +656,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(TOCLabel)
                 .addGap(18, 18, 18)
                 .addGroup(TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
                     .addComponent(TOC))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ReturnWelcome)
@@ -1927,7 +1929,7 @@ public class Home extends javax.swing.JFrame {
         Correct_ECBLayout.setVerticalGroup(
             Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Correct_ECBLayout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(Correct_ECBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton10)
                     .addGroup(Correct_ECBLayout.createSequentialGroup()
@@ -3085,7 +3087,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(DESLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 218, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 240, Short.MAX_VALUE)
                 .addComponent(DESRETURNB1)
                 .addGap(29, 29, 29)
                 .addComponent(jLabel46))
