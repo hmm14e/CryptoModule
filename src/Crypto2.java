@@ -50,6 +50,8 @@ public class Crypto2 extends javax.swing.JFrame {
         BlowfishBB = new javax.swing.JButton();
         BlowfishPanel = new javax.swing.JPanel();
         BlowfishReturn = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         AESPanelWelcome = new javax.swing.JPanel();
         AESIntro = new javax.swing.JLabel();
         ThemePicture11 = new javax.swing.JLabel();
@@ -537,21 +539,38 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel2.setText("Blowfish");
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
         javax.swing.GroupLayout BlowfishPanelLayout = new javax.swing.GroupLayout(BlowfishPanel);
         BlowfishPanel.setLayout(BlowfishPanelLayout);
         BlowfishPanelLayout.setHorizontalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BlowfishPanelLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel7)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(BlowfishPanelLayout.createSequentialGroup()
+                .addGroup(BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BlowfishPanelLayout.createSequentialGroup()
+                        .addGap(358, 358, 358)
+                        .addComponent(jLabel2))
+                    .addGroup(BlowfishPanelLayout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         BlowfishPanelLayout.setVerticalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BlowfishPanelLayout.createSequentialGroup()
-                .addContainerGap(976, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 362, Short.MAX_VALUE)
                 .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel7))
         );
 
         MainPanel.add(BlowfishPanel, "card37");
@@ -4803,6 +4822,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -4820,6 +4840,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
