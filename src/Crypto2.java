@@ -50,8 +50,14 @@ public class Crypto2 extends javax.swing.JFrame {
         BlowfishBB = new javax.swing.JButton();
         BlowfishPanel = new javax.swing.JPanel();
         BlowfishReturn = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        BlowfishLabel = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        BlowFishQ = new javax.swing.JLabel();
+        QuestionsBold = new javax.swing.JLabel();
+        BlowFishA = new javax.swing.JTextField();
+        BlowFishB = new javax.swing.JButton();
+        BlowFishGo = new javax.swing.JButton();
+        BirthdayAttackQ = new javax.swing.JLabel();
         AESPanelWelcome = new javax.swing.JPanel();
         AESIntro = new javax.swing.JLabel();
         ThemePicture11 = new javax.swing.JLabel();
@@ -539,11 +545,33 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel2.setText("Blowfish");
+        BlowfishLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        BlowfishLabel.setForeground(new java.awt.Color(48, 87, 120));
+        BlowfishLabel.setText("Blowfish");
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        BlowFishQ.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        BlowFishQ.setText("1. Due to its small block size, it is succeptible to what kind of attack? Note: You may have to do some research to find the asnwer.");
+
+        QuestionsBold.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        QuestionsBold.setText("Questions:");
+
+        BlowFishB.setBackground(new java.awt.Color(77, 132, 155));
+        BlowFishB.setForeground(new java.awt.Color(255, 255, 255));
+        BlowFishB.setText("Enter");
+        BlowFishB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BlowFishBActionPerformed(evt);
+            }
+        });
+
+        BlowFishGo.setBackground(new java.awt.Color(77, 132, 155));
+        BlowFishGo.setForeground(new java.awt.Color(255, 255, 255));
+        BlowFishGo.setText("Go!");
+
+        BirthdayAttackQ.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        BirthdayAttackQ.setText("Birthday Attack Question:");
 
         javax.swing.GroupLayout BlowfishPanelLayout = new javax.swing.GroupLayout(BlowfishPanel);
         BlowfishPanel.setLayout(BlowfishPanelLayout);
@@ -556,18 +584,45 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGroup(BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(BlowfishPanelLayout.createSequentialGroup()
                         .addGap(358, 358, 358)
-                        .addComponent(jLabel2))
+                        .addComponent(BlowfishLabel))
                     .addGroup(BlowfishPanelLayout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BlowFishQ)
+                            .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(BlowfishPanelLayout.createSequentialGroup()
+                                .addComponent(BlowFishA, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BlowFishB))))
+                    .addGroup(BlowfishPanelLayout.createSequentialGroup()
+                        .addGap(381, 381, 381)
+                        .addComponent(QuestionsBold))
+                    .addGroup(BlowfishPanelLayout.createSequentialGroup()
+                        .addGap(330, 330, 330)
+                        .addComponent(BirthdayAttackQ))
+                    .addGroup(BlowfishPanelLayout.createSequentialGroup()
+                        .addGap(389, 389, 389)
+                        .addComponent(BlowFishGo)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         BlowfishPanelLayout.setVerticalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BlowfishPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 362, Short.MAX_VALUE)
+                .addComponent(BlowfishLabel)
+                .addGap(18, 18, 18)
+                .addComponent(QuestionsBold)
+                .addGap(33, 33, 33)
+                .addComponent(BlowFishQ)
+                .addGap(18, 18, 18)
+                .addGroup(BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BlowFishA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BlowFishB))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
+                .addComponent(BirthdayAttackQ)
+                .addGap(18, 18, 18)
+                .addComponent(BlowFishGo)
+                .addGap(33, 33, 33)
                 .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel7))
@@ -2408,7 +2463,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addGap(66, 66, 66)
                         .addComponent(SHA3Q))
                     .addGroup(SHA3PanelWelcomeLayout.createSequentialGroup()
-                        .addGap(372, 372, 372)
+                        .addGap(330, 330, 330)
                         .addComponent(SHA3Intro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -3779,6 +3834,8 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.revalidate();
 
         MainPanel.add(BlowfishPanel);
+        BlowFishGo.setVisible(false);
+        BirthdayAttackQ.setVisible(false);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_BlowfishQActionPerformed
@@ -4661,6 +4718,19 @@ public class Crypto2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_RSAB1_3ActionPerformed
 
+    private void BlowFishBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowFishBActionPerformed
+        String hold = BlowFishA.getText().toLowerCase();
+        
+        if(hold.contains("birthday"))
+        {    
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+            BlowFishGo.setVisible(true);
+            BirthdayAttackQ.setVisible(true);
+        }
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_BlowFishBActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4710,11 +4780,17 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel AEStitle;
     private javax.swing.JButton Back_RSA1;
     private javax.swing.JButton Back_RSA2;
+    private javax.swing.JLabel BirthdayAttackQ;
+    private javax.swing.JTextField BlowFishA;
+    private javax.swing.JButton BlowFishB;
+    private javax.swing.JButton BlowFishGo;
+    private javax.swing.JLabel BlowFishQ;
     private javax.swing.JMenuItem Blowfish;
     private javax.swing.JButton BlowfishBB;
     private javax.swing.JButton BlowfishDes;
     private javax.swing.JPanel BlowfishDescription;
     private javax.swing.JLabel BlowfishIntro;
+    private javax.swing.JLabel BlowfishLabel;
     private javax.swing.JPanel BlowfishPanel;
     private javax.swing.JPanel BlowfishPanelWelcome;
     private javax.swing.JButton BlowfishQ;
@@ -4837,6 +4913,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JMenu PrivateKey;
     private javax.swing.JLabel Project;
     private javax.swing.JMenu PublicKey;
+    private javax.swing.JLabel QuestionsBold;
     private javax.swing.JMenuItem RSA;
     private javax.swing.JTextField RSAA1_1;
     private javax.swing.JTextField RSAA1_2;
@@ -4963,7 +5040,6 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
