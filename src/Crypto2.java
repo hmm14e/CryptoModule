@@ -1117,7 +1117,7 @@ public class Crypto2 extends javax.swing.JFrame {
         ElGamalHeader.setText("ElGamal Practice Problems");
 
         EGQ1_1.setFont(new java.awt.Font("Lucida Sans", 0, 18)); // NOI18N
-        EGQ1_1.setText("1. What is Alice’s public key?");
+        EGQ1_1.setText("1. What is Alice’s public key? Format: Public(P,G,Y)");
 
         EGA1_1.setColumns(10);
         EGA1_1.addActionListener(new java.awt.event.ActionListener() {
@@ -1179,7 +1179,7 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea30.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jTextArea30.setLineWrap(true);
         jTextArea30.setRows(5);
-        jTextArea30.setText("2. Bob wants to send message M = 4 to Alice, he chooses a random integer k = 4. What is the encrypted message Bob sends?");
+        jTextArea30.setText("2. Bob wants to send message M = 4 to Alice, he chooses a random integer k = 4. What is the encrypted message Bob sends? Format: (C1, C2)");
         jTextArea30.setWrapStyleWord(true);
         jScrollPane9.setViewportView(jTextArea30);
 
@@ -3982,7 +3982,12 @@ public class Crypto2 extends javax.swing.JFrame {
     }//GEN-LAST:event_EGA1_1ActionPerformed
 
     private void EGB1_1ElGamal_Q1_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EGB1_1ElGamal_Q1_Submit
-        // TODO add your handling code here:
+        String hold = EGA1_1.getText();
+        
+        if(hold.contains("11,5,5") || hold.contains("11,5, 5") || hold.contains("11, 5, 5"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_EGB1_1ElGamal_Q1_Submit
 
     private void EGA1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EGA1_2ActionPerformed
@@ -3990,7 +3995,12 @@ public class Crypto2 extends javax.swing.JFrame {
     }//GEN-LAST:event_EGA1_2ActionPerformed
 
     private void EGB1_2ElGamal_Q2_Submit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EGB1_2ElGamal_Q2_Submit
-        // TODO add your handling code here:
+        String hold = EGA1_2.getText();
+        
+        if(hold.contains("9") || hold.contains("3"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_EGB1_2ElGamal_Q2_Submit
 
     private void ElGamReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ElGamReturnActionPerformed
