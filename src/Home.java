@@ -30,6 +30,7 @@ public class Home extends javax.swing.JFrame {
     
     public static class GlobalVariable{
         public static int OTPflag;
+        public static int hint_count;
     }
 
     /**
@@ -298,9 +299,11 @@ public class Home extends javax.swing.JFrame {
         DESB4 = new javax.swing.JButton();
         DESA4 = new javax.swing.JTextField();
         DESQ44 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
+        DESQ1 = new javax.swing.JLabel();
+        DESQ2 = new javax.swing.JLabel();
+        DESQ3 = new javax.swing.JLabel();
+        BruteForce = new javax.swing.JLabel();
+        BFGo = new javax.swing.JButton();
         DESPanelWelcome = new javax.swing.JPanel();
         DESIntro2 = new javax.swing.JLabel();
         ThemePicture29 = new javax.swing.JLabel();
@@ -312,6 +315,19 @@ public class Home extends javax.swing.JFrame {
         jTextArea37 = new javax.swing.JTextArea();
         jLabel48 = new javax.swing.JLabel();
         DESBB2 = new javax.swing.JButton();
+        BruteForcePanel = new javax.swing.JPanel();
+        BruteForceProb = new javax.swing.JLabel();
+        BFReturn = new javax.swing.JButton();
+        jLabel40 = new javax.swing.JLabel();
+        Hint2 = new javax.swing.JButton();
+        Hint3 = new javax.swing.JButton();
+        Hint4 = new javax.swing.JButton();
+        BFQP1 = new javax.swing.JLabel();
+        BFQP2 = new javax.swing.JLabel();
+        BFQP3 = new javax.swing.JLabel();
+        BFQA = new javax.swing.JLabel();
+        BFA = new javax.swing.JTextField();
+        BFB = new javax.swing.JButton();
         TripDESPanel = new javax.swing.JPanel();
         TripDESPic = new javax.swing.JLabel();
         TripDESLabel = new javax.swing.JLabel();
@@ -3071,6 +3087,8 @@ public class Home extends javax.swing.JFrame {
         DESQ.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         DESQ.setText("Questions:");
 
+        DESB1.setBackground(new java.awt.Color(77, 132, 155));
+        DESB1.setForeground(new java.awt.Color(255, 255, 255));
         DESB1.setText("Enter");
         DESB1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3081,6 +3099,8 @@ public class Home extends javax.swing.JFrame {
         DESA3.setMaximumSize(new java.awt.Dimension(59, 20));
         DESA3.setMinimumSize(new java.awt.Dimension(59, 20));
 
+        DESB2.setBackground(new java.awt.Color(77, 132, 155));
+        DESB2.setForeground(new java.awt.Color(255, 255, 255));
         DESB2.setText("Enter");
         DESB2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3088,6 +3108,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        DESB3.setBackground(new java.awt.Color(77, 132, 155));
+        DESB3.setForeground(new java.awt.Color(255, 255, 255));
         DESB3.setText("Enter");
         DESB3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3095,6 +3117,8 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        DESB4.setBackground(new java.awt.Color(77, 132, 155));
+        DESB4.setForeground(new java.awt.Color(255, 255, 255));
         DESB4.setText("Enter");
         DESB4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3105,14 +3129,26 @@ public class Home extends javax.swing.JFrame {
         DESQ44.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         DESQ44.setText("4. What is an attack against a small key size that is used to break DES?");
 
-        jLabel40.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
-        jLabel40.setText("1. The key in DES is 56-bits plus 8 parity bits. What are parity bits used for?");
+        DESQ1.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        DESQ1.setText("1. The key in DES is 56-bits plus 8 parity bits. What are parity bits used for?");
 
-        jLabel41.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
-        jLabel41.setText("2. What encryption scheme is the successor of DES?   ");
+        DESQ2.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        DESQ2.setText("2. What encryption scheme is the successor of DES?   ");
 
-        jLabel42.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
-        jLabel42.setText("3. Why has DES become depricated?   ");
+        DESQ3.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        DESQ3.setText("3. Why has DES become depricated?   ");
+
+        BruteForce.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        BruteForce.setText("Brute Force Practice:");
+
+        BFGo.setBackground(new java.awt.Color(77, 132, 155));
+        BFGo.setForeground(new java.awt.Color(255, 255, 255));
+        BFGo.setText("Go!");
+        BFGo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BFGoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout DESPanelLayout = new javax.swing.GroupLayout(DESPanel);
         DESPanel.setLayout(DESPanelLayout);
@@ -3133,15 +3169,11 @@ public class Home extends javax.swing.JFrame {
                         .addGap(33, 33, 33)
                         .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(DESQ44)
-                            .addComponent(jLabel40)
-                            .addComponent(jLabel41)
-                            .addComponent(jLabel42))
+                            .addComponent(DESQ1)
+                            .addComponent(DESQ2)
+                            .addComponent(DESQ3))
                         .addGap(34, 34, 34)
                         .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(DESPanelLayout.createSequentialGroup()
-                                .addComponent(DESA4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(DESB4))
                             .addGroup(DESPanelLayout.createSequentialGroup()
                                 .addComponent(DESA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3153,7 +3185,18 @@ public class Home extends javax.swing.JFrame {
                             .addGroup(DESPanelLayout.createSequentialGroup()
                                 .addComponent(DESA3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(DESB3)))))
+                                .addComponent(DESB3))
+                            .addGroup(DESPanelLayout.createSequentialGroup()
+                                .addComponent(DESA4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(DESB4))))
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGap(348, 348, 348)
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BruteForce)
+                            .addGroup(DESPanelLayout.createSequentialGroup()
+                                .addGap(45, 45, 45)
+                                .addComponent(BFGo)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DESPanelLayout.setVerticalGroup(
@@ -3173,19 +3216,23 @@ public class Home extends javax.swing.JFrame {
                         .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(DESA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(DESB2)
-                            .addComponent(jLabel41))
+                            .addComponent(DESQ2))
                         .addGap(18, 18, 18)
                         .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(DESA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(DESB3)
-                            .addComponent(jLabel42)))
-                    .addComponent(jLabel40))
+                            .addComponent(DESQ3)))
+                    .addComponent(DESQ1))
                 .addGap(18, 18, 18)
                 .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DESB4)
                     .addComponent(DESA4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DESQ44))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 202, Short.MAX_VALUE)
+                .addGap(53, 53, 53)
+                .addComponent(BruteForce)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BFGo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
                 .addComponent(DESRETURNB1)
                 .addGap(29, 29, 29)
                 .addComponent(jLabel46))
@@ -3311,6 +3358,138 @@ public class Home extends javax.swing.JFrame {
         );
 
         MainPanel.add(DESDescripPanel, "card42");
+
+        BruteForcePanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        BruteForceProb.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        BruteForceProb.setForeground(new java.awt.Color(48, 87, 120));
+        BruteForceProb.setText("Brute Force Problem");
+
+        BFReturn.setBackground(new java.awt.Color(77, 132, 155));
+        BFReturn.setForeground(new java.awt.Color(255, 255, 255));
+        BFReturn.setText("Return");
+        BFReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BFReturnActionPerformed(evt);
+            }
+        });
+
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        Hint2.setBackground(new java.awt.Color(77, 132, 155));
+        Hint2.setForeground(new java.awt.Color(255, 255, 255));
+        Hint2.setText("Hint 2");
+        Hint2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Hint2ActionPerformed(evt);
+            }
+        });
+
+        Hint3.setBackground(new java.awt.Color(77, 132, 155));
+        Hint3.setForeground(new java.awt.Color(255, 255, 255));
+        Hint3.setText("Hint 3");
+        Hint3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Hint3ActionPerformed(evt);
+            }
+        });
+
+        Hint4.setBackground(new java.awt.Color(77, 132, 155));
+        Hint4.setForeground(new java.awt.Color(255, 255, 255));
+        Hint4.setText("Hint 4");
+        Hint4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Hint4ActionPerformed(evt);
+            }
+        });
+
+        BFQP1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        BFQP1.setText("You are given the following bitstream: ");
+
+        BFQP2.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        BFQP2.setText("00000110 00010110 00010001 00010000 00000001 01000100 00000010 00001011 00010110 00000111 00000001");
+
+        BFQP3.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        BFQP3.setText("What is the original message in ASCII? Hint: The key is 8-bits thus making it possible for a brute force  attack (only 256 possible keys)");
+
+        BFQA.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BFQA.setText("Answer:");
+
+        BFB.setBackground(new java.awt.Color(77, 132, 155));
+        BFB.setForeground(new java.awt.Color(255, 255, 255));
+        BFB.setText("Enter");
+        BFB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BFBActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout BruteForcePanelLayout = new javax.swing.GroupLayout(BruteForcePanel);
+        BruteForcePanel.setLayout(BruteForcePanelLayout);
+        BruteForcePanelLayout.setHorizontalGroup(
+            BruteForcePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BruteForcePanelLayout.createSequentialGroup()
+                .addGroup(BruteForcePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BruteForcePanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(BFReturn))
+                    .addGroup(BruteForcePanelLayout.createSequentialGroup()
+                        .addGap(225, 225, 225)
+                        .addComponent(BruteForceProb))
+                    .addComponent(jLabel40))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(BruteForcePanelLayout.createSequentialGroup()
+                .addGroup(BruteForcePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BruteForcePanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(BruteForcePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BFQP2)
+                            .addComponent(BFQP1)
+                            .addGroup(BruteForcePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, BruteForcePanelLayout.createSequentialGroup()
+                                    .addComponent(Hint2)
+                                    .addGap(325, 325, 325)
+                                    .addComponent(Hint3)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(Hint4))
+                                .addComponent(BFQP3, javax.swing.GroupLayout.Alignment.LEADING))))
+                    .addGroup(BruteForcePanelLayout.createSequentialGroup()
+                        .addGap(311, 311, 311)
+                        .addComponent(BFQA)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(BFA, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BFB)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        BruteForcePanelLayout.setVerticalGroup(
+            BruteForcePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BruteForcePanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BruteForceProb)
+                .addGap(18, 18, 18)
+                .addComponent(BFQP1)
+                .addGap(18, 18, 18)
+                .addComponent(BFQP2)
+                .addGap(18, 18, 18)
+                .addComponent(BFQP3)
+                .addGap(66, 66, 66)
+                .addGroup(BruteForcePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Hint2)
+                    .addComponent(Hint3)
+                    .addComponent(Hint4))
+                .addGap(53, 53, 53)
+                .addGroup(BruteForcePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BFQA)
+                    .addComponent(BFA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BFB))
+                .addGap(85, 85, 85)
+                .addComponent(BFReturn)
+                .addGap(29, 29, 29)
+                .addComponent(jLabel40))
+        );
+
+        MainPanel.add(BruteForcePanel, "card25");
 
         TripDESPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -6502,6 +6681,8 @@ public class Home extends javax.swing.JFrame {
         DESQ44.setVisible(false);
         DESA4.setVisible(false);
         DESB4.setVisible(false);
+    //    BFGo.setVisible(false);
+    //    BruteForce.setVisible(false);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_DESActionPerformed
@@ -6752,11 +6933,74 @@ public class Home extends javax.swing.JFrame {
         String hold = DESA4.getText().toLowerCase();
         
         if(hold.contains("brute") || hold.contains("force"))
+        {    
             JOptionPane.showMessageDialog(null, "Correct!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
-
+            BruteForce.setVisible(true);
+            BFGo.setVisible(true);
+        }
         else
              JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_DESB4ActionPerformed
+
+    private void BFReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BFReturnActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DESPanel);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_BFReturnActionPerformed
+
+    private void BFGoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BFGoActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(BruteForcePanel);
+        Hint3.setVisible(false);
+        Hint4.setVisible(false);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_BFGoActionPerformed
+
+    private void Hint2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Hint2ActionPerformed
+        if(GlobalVariable.hint_count == 0)
+            GlobalVariable.hint_count += 1;
+        Hint3.setVisible(true);
+        JOptionPane.showMessageDialog(null, "Write a script to solve this!\nDoing it by hand would take to long.\nFor example in Python you can probably solve this with 5 lines of code or less!", "Hint 2", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_Hint2ActionPerformed
+
+    private void Hint3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Hint3ActionPerformed
+        if(GlobalVariable.hint_count == 1)
+            GlobalVariable.hint_count += 1;
+        Hint4.setVisible(true);
+        JOptionPane.showMessageDialog(null, "This was xor encrypted!", "Hint 3", JOptionPane.INFORMATION_MESSAGE);       
+    }//GEN-LAST:event_Hint3ActionPerformed
+
+    private void Hint4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Hint4ActionPerformed
+        if(GlobalVariable.hint_count == 2)
+            GlobalVariable.hint_count += 1; 
+        JOptionPane.showMessageDialog(null, "The 6th character in the plaintext is a space!", "Hint 3", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_Hint4ActionPerformed
+
+    private void BFBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BFBActionPerformed
+        String hold = BFA.getText().toLowerCase();
+        
+        if(hold.equals("brute force"))
+        {   
+            if(GlobalVariable.hint_count == 0)
+                JOptionPane.showMessageDialog(null, "Correct! Without any hints as well. Impressive!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+            if(GlobalVariable.hint_count == 1)
+                JOptionPane.showMessageDialog(null, "Correct! Only one hint used not too bad!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+            if(GlobalVariable.hint_count == 2)
+                JOptionPane.showMessageDialog(null, "Correct! With 2 hints used, nice!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+            if(GlobalVariable.hint_count == 3)
+                JOptionPane.showMessageDialog(null, "Correct! All three hints were used! But you still got it!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+        }
+        else
+             JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_BFBActionPerformed
 
     /**
      * @param args the command line arguments
@@ -6810,7 +7054,18 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton AtbashReturn1;
     private javax.swing.JLabel AtbashTitle;
     private javax.swing.JMenu Authentication;
+    private javax.swing.JTextField BFA;
+    private javax.swing.JButton BFB;
+    private javax.swing.JButton BFGo;
+    private javax.swing.JLabel BFQA;
+    private javax.swing.JLabel BFQP1;
+    private javax.swing.JLabel BFQP2;
+    private javax.swing.JLabel BFQP3;
+    private javax.swing.JButton BFReturn;
     private javax.swing.JMenu BlockCiphers;
+    private javax.swing.JLabel BruteForce;
+    private javax.swing.JPanel BruteForcePanel;
+    private javax.swing.JLabel BruteForceProb;
     private javax.swing.JMenuItem CBC;
     private javax.swing.JButton CBCBB;
     private javax.swing.JButton CBCDes;
@@ -6926,6 +7181,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel DESPanel;
     private javax.swing.JPanel DESPanelWelcome;
     private javax.swing.JLabel DESQ;
+    private javax.swing.JLabel DESQ1;
+    private javax.swing.JLabel DESQ2;
+    private javax.swing.JLabel DESQ3;
     private javax.swing.JLabel DESQ44;
     private javax.swing.JButton DESQB1;
     private javax.swing.ButtonGroup DESQuestion;
@@ -6991,6 +7249,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Feistel_Intro3;
     private javax.swing.JButton FesitelDescipB;
     private javax.swing.JMenu Help;
+    private javax.swing.JButton Hint2;
+    private javax.swing.JButton Hint3;
+    private javax.swing.JButton Hint4;
     private javax.swing.JMenu Home;
     private javax.swing.JMenuItem Kerberos;
     private javax.swing.JButton KerberosBB;
@@ -7230,8 +7491,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
