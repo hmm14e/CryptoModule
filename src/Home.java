@@ -288,8 +288,19 @@ public class Home extends javax.swing.JFrame {
         DESLabel1 = new javax.swing.JLabel();
         DESRETURNB1 = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
+        DESQ = new javax.swing.JLabel();
+        DESB1 = new javax.swing.JButton();
+        DESA1 = new javax.swing.JTextField();
+        DESA2 = new javax.swing.JTextField();
+        DESA3 = new javax.swing.JTextField();
+        DESB2 = new javax.swing.JButton();
+        DESB3 = new javax.swing.JButton();
+        DESB4 = new javax.swing.JButton();
+        DESA4 = new javax.swing.JTextField();
+        DESQ44 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
         DESPanelWelcome = new javax.swing.JPanel();
         DESIntro2 = new javax.swing.JLabel();
         ThemePicture29 = new javax.swing.JLabel();
@@ -3057,10 +3068,51 @@ public class Home extends javax.swing.JFrame {
 
         jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
-        jTextArea3.setText("1. The key in DES is 56-bits plus 8 parity bits. What are parity bits used for?\n\n2. ");
-        jScrollPane3.setViewportView(jTextArea3);
+        DESQ.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        DESQ.setText("Questions:");
+
+        DESB1.setText("Enter");
+        DESB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESB1ActionPerformed(evt);
+            }
+        });
+
+        DESA3.setMaximumSize(new java.awt.Dimension(59, 20));
+        DESA3.setMinimumSize(new java.awt.Dimension(59, 20));
+
+        DESB2.setText("Enter");
+        DESB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESB2ActionPerformed(evt);
+            }
+        });
+
+        DESB3.setText("Enter");
+        DESB3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESB3ActionPerformed(evt);
+            }
+        });
+
+        DESB4.setText("Enter");
+        DESB4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESB4ActionPerformed(evt);
+            }
+        });
+
+        DESQ44.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        DESQ44.setText("4. What is an attack against a small key size that is used to break DES?");
+
+        jLabel40.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        jLabel40.setText("1. The key in DES is 56-bits plus 8 parity bits. What are parity bits used for?");
+
+        jLabel41.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        jLabel41.setText("2. What encryption scheme is the successor of DES?   ");
+
+        jLabel42.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        jLabel42.setText("3. Why has DES become depricated?   ");
 
         javax.swing.GroupLayout DESPanelLayout = new javax.swing.GroupLayout(DESPanel);
         DESPanel.setLayout(DESPanelLayout);
@@ -3071,23 +3123,69 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(DESPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(DESRETURNB1))
-                    .addComponent(jLabel46)
                     .addGroup(DESPanelLayout.createSequentialGroup()
                         .addGap(373, 373, 373)
-                        .addComponent(DESLabel1))
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(DESQ)
+                            .addComponent(DESLabel1)))
+                    .addComponent(jLabel46)
                     .addGroup(DESPanelLayout.createSequentialGroup()
                         .addGap(33, 33, 33)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 768, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(326, 326, 326))
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(DESQ44)
+                            .addComponent(jLabel40)
+                            .addComponent(jLabel41)
+                            .addComponent(jLabel42))
+                        .addGap(34, 34, 34)
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(DESPanelLayout.createSequentialGroup()
+                                .addComponent(DESA4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(DESB4))
+                            .addGroup(DESPanelLayout.createSequentialGroup()
+                                .addComponent(DESA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(DESB1))
+                            .addGroup(DESPanelLayout.createSequentialGroup()
+                                .addComponent(DESA2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(DESB2))
+                            .addGroup(DESPanelLayout.createSequentialGroup()
+                                .addComponent(DESA3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(DESB3)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DESPanelLayout.setVerticalGroup(
             DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DESPanelLayout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(DESLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 240, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(DESQ)
+                .addGap(35, 35, 35)
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DESPanelLayout.createSequentialGroup()
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(DESB1)
+                            .addComponent(DESA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(DESA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DESB2)
+                            .addComponent(jLabel41))
+                        .addGap(18, 18, 18)
+                        .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(DESA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DESB3)
+                            .addComponent(jLabel42)))
+                    .addComponent(jLabel40))
+                .addGap(18, 18, 18)
+                .addGroup(DESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DESB4)
+                    .addComponent(DESA4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DESQ44))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 202, Short.MAX_VALUE)
                 .addComponent(DESRETURNB1)
                 .addGap(29, 29, 29)
                 .addComponent(jLabel46))
@@ -6401,6 +6499,9 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
 
         MainPanel.add(DESPanelWelcome);
+        DESQ44.setVisible(false);
+        DESA4.setVisible(false);
+        DESB4.setVisible(false);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_DESActionPerformed
@@ -6612,6 +6713,51 @@ public class Home extends javax.swing.JFrame {
 
     }//GEN-LAST:event_PAPB2ActionPerformed
 
+    private void DESB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESB1ActionPerformed
+        String hold = DESA1.getText().toLowerCase();
+        
+        if(hold.contains("check") || hold.contains("error") || hold.contains("correction"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+
+        else
+             JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_DESB1ActionPerformed
+
+    private void DESB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESB2ActionPerformed
+        String hold = DESA2.getText().toLowerCase();
+        
+        if(hold.contains("aes") || hold.contains("advanced encryption standard"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+
+        else
+             JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_DESB2ActionPerformed
+
+    private void DESB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESB3ActionPerformed
+        String hold = DESA3.getText().toLowerCase();
+        
+        if(hold.contains("key") || hold.contains("size") || hold.contains("small"))
+        {
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+        
+            DESQ44.setVisible(true);
+            DESA4.setVisible(true);
+            DESB4.setVisible(true);
+        }
+        else
+             JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_DESB3ActionPerformed
+
+    private void DESB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESB4ActionPerformed
+        String hold = DESA4.getText().toLowerCase();
+        
+        if(hold.contains("brute") || hold.contains("force"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+
+        else
+             JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_DESB4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -6755,6 +6901,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel Correct_ECB;
     private javax.swing.JLabel Correct_Pic;
     private javax.swing.JMenuItem DES;
+    private javax.swing.JTextField DESA1;
+    private javax.swing.JTextField DESA2;
+    private javax.swing.JTextField DESA3;
+    private javax.swing.JTextField DESA4;
+    private javax.swing.JButton DESB1;
+    private javax.swing.JButton DESB2;
+    private javax.swing.JButton DESB3;
+    private javax.swing.JButton DESB4;
     private javax.swing.JButton DESBB;
     private javax.swing.JButton DESBB1;
     private javax.swing.JButton DESBB2;
@@ -6771,6 +6925,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel DESLabel1;
     private javax.swing.JPanel DESPanel;
     private javax.swing.JPanel DESPanelWelcome;
+    private javax.swing.JLabel DESQ;
+    private javax.swing.JLabel DESQ44;
     private javax.swing.JButton DESQB1;
     private javax.swing.ButtonGroup DESQuestion;
     private javax.swing.JButton DESRETURNB1;
@@ -7073,6 +7229,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
@@ -7090,7 +7249,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea12;
@@ -7109,7 +7267,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea25;
     private javax.swing.JTextArea jTextArea26;
     private javax.swing.JTextArea jTextArea27;
-    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea31;
     private javax.swing.JTextArea jTextArea32;
     private javax.swing.JTextArea jTextArea33;
