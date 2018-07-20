@@ -553,7 +553,7 @@ public class Crypto2 extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         BlowFishQ.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        BlowFishQ.setText("1. Due to its small block size, it is succeptible to what kind of attack? Note: You may have to do some research to find the asnwer.");
+        BlowFishQ.setText("1. Due to its small block size, it is succeptible to what kind of attack? Note: You may have to do some research to find the answer.");
 
         QuestionsBold.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         QuestionsBold.setText("Questions:");

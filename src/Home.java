@@ -50,6 +50,7 @@ public class Home extends javax.swing.JFrame {
         buttonGroup6 = new javax.swing.ButtonGroup();
         jPasswordField1 = new javax.swing.JPasswordField();
         DESQuestion = new javax.swing.ButtonGroup();
+        KerberosMC = new javax.swing.ButtonGroup();
         MainPanel = new javax.swing.JPanel();
         WelcomePanel = new javax.swing.JPanel();
         Welcome = new javax.swing.JLabel();
@@ -478,6 +479,16 @@ public class Home extends javax.swing.JFrame {
         Kerberos_K = new javax.swing.JLabel();
         KerberosReturn = new javax.swing.JButton();
         jLabel29 = new javax.swing.JLabel();
+        KerbQ1 = new javax.swing.JLabel();
+        Kerb1 = new javax.swing.JRadioButton();
+        Kerb2 = new javax.swing.JRadioButton();
+        Kerb3 = new javax.swing.JRadioButton();
+        Kerb4 = new javax.swing.JRadioButton();
+        KerberosSubmit = new javax.swing.JButton();
+        KerbQ2 = new javax.swing.JLabel();
+        KerbHint = new javax.swing.JLabel();
+        KerbField = new javax.swing.JTextField();
+        KerberosSubmit1 = new javax.swing.JButton();
         CBCMACPanelWelcome = new javax.swing.JPanel();
         CBCMACIntro = new javax.swing.JLabel();
         ThemePicture4 = new javax.swing.JLabel();
@@ -4892,7 +4903,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea22.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea22.setLineWrap(true);
         jTextArea22.setRows(5);
-        jTextArea22.setText("1. A client sends a logon request to the KDC (Key Distribution Center). The request is encrypted with the date and time on the local computer. The user's password hash is the key. (The password has isn't send across the network)\n2. The KDC receives the encrypted package, which is the authentication request, and decrypts it with what it knows as the client's password hash. All password hashes are stored in the server, so they are not sent across the network. Upon authentication, it creates a TGT (Ticket-Granting Ticket). The KDC encrypts the tickets using the user’s password as the key, and sends the encrypted TGT back to the user.\n3. The user then will decrypt the TGT using the password he/she entered. The user then keeps the decrypted TGT, which indicates proof of clients identity. The TGT can be configured to expire after a specified time by the Network Admin\n4. Next, the client sends (to the KDC) the TGT with the name of Application Server it wants to connect to with a time stamped client ID. Upon verification, the KDC returns a service session key to use with the application server.  \n5. The client presents the service key and an authenticator,\n");
+        jTextArea22.setText("1. A client sends a logon request to the KDC (Key Distribution Center). The request is encrypted with the date and time on the local computer. The user's password hash is the key. (The password has isn't send across the network)\n2. The KDC receives the encrypted package, which is the authentication request, and decrypts it with what it knows as the client's password hash. All password hashes are stored in the server, so they are not sent across the network. Upon authentication, it creates a TGT (Ticket-Granting Ticket). The KDC encrypts the ticket and the time stamp using the user’s password as the key, and sends the encrypted TGT back to the user.\n3. The user then will decrypt the TGT using the password he/she entered. The user then keeps the decrypted TGT, which indicates proof of clients identity. The TGT can be configured to expire after a specified time by the Network Admin\n4. Next, the client sends (to the KDC) the TGT with the name of Application Server it wants to connect to with a time stamped client ID. Upon verification, the KDC returns a service session key to use with the application server.  \n5. The client presents the service key and an authenticator to the Application Server. Once it is authenticated, the client can connect. \n");
         jTextArea22.setWrapStyleWord(true);
         KerberosDescription.setViewportView(jTextArea22);
 
@@ -4913,36 +4924,38 @@ public class Home extends javax.swing.JFrame {
             KerberosDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
                 .addGroup(KerberosDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel16)
                     .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
-                        .addGap(394, 394, 394)
+                        .addContainerGap()
+                        .addComponent(jLabel16))
+                    .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
+                        .addGap(395, 395, 395)
                         .addComponent(KerberosBB))
                     .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
-                        .addGap(55, 55, 55)
+                        .addGap(76, 76, 76)
                         .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
-                        .addGap(330, 330, 330)
+                        .addGap(356, 356, 356)
                         .addComponent(KerberosDescripHeader)))
-                .addGap(12, 12, 12))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         KerberosDescripPanelLayout.setVerticalGroup(
             KerberosDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(35, 35, 35)
                 .addComponent(KerberosDescripHeader)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(KerberosDescription, javax.swing.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(KerberosBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         MainPanel.add(KerberosDescripPanel, "card42");
 
         KerberosPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        Kerberos_K.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        Kerberos_K.setFont(new java.awt.Font("Verdana", 0, 36)); // NOI18N
         Kerberos_K.setForeground(new java.awt.Color(48, 87, 120));
         Kerberos_K.setText("Kerberos Questions");
 
@@ -4957,31 +4970,142 @@ public class Home extends javax.swing.JFrame {
 
         jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
+        KerbQ1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        KerbQ1.setText("What element of Kerberos ticket makes it secure against replay attacks?  ");
+
+        KerberosMC.add(Kerb1);
+        Kerb1.setText("Multiple KDCs can exist in the same network.");
+        Kerb1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Kerb1ActionPerformed(evt);
+            }
+        });
+
+        KerberosMC.add(Kerb2);
+        Kerb2.setText("It requires the subject to claim an identity.");
+        Kerb2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Kerb2ActionPerformed(evt);
+            }
+        });
+
+        KerberosMC.add(Kerb3);
+        Kerb3.setText("A time stamp is added before being sent to the user.");
+        Kerb3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Kerb3ActionPerformed(evt);
+            }
+        });
+
+        KerberosMC.add(Kerb4);
+        Kerb4.setText("It is based on the hash of the password.");
+        Kerb4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Kerb4ActionPerformed(evt);
+            }
+        });
+
+        KerberosSubmit.setBackground(new java.awt.Color(77, 132, 155));
+        KerberosSubmit.setForeground(new java.awt.Color(255, 255, 255));
+        KerberosSubmit.setText("Submit");
+        KerberosSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KerberosSubmitActionPerformed(evt);
+            }
+        });
+
+        KerbQ2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        KerbQ2.setText("What kind of encryption does Kerberos use? (Hint: think about how it uses keys)");
+
+        KerbHint.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        KerbHint.setText("(Answer is one word)");
+
+        KerbField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KerbFieldActionPerformed(evt);
+            }
+        });
+
+        KerberosSubmit1.setBackground(new java.awt.Color(77, 132, 155));
+        KerberosSubmit1.setForeground(new java.awt.Color(255, 255, 255));
+        KerberosSubmit1.setText("Submit");
+        KerberosSubmit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KerberosSubmit1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout KerberosPanelLayout = new javax.swing.GroupLayout(KerberosPanel);
         KerberosPanel.setLayout(KerberosPanelLayout);
         KerberosPanelLayout.setHorizontalGroup(
             KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, KerberosPanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel29)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(KerberosPanelLayout.createSequentialGroup()
-                .addGap(238, 238, 238)
+                .addGroup(KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(KerberosPanelLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(KerbQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 749, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Kerb2)
+                            .addComponent(Kerb4)
+                            .addGroup(KerberosPanelLayout.createSequentialGroup()
+                                .addComponent(KerbHint)
+                                .addGap(117, 117, 117)
+                                .addComponent(KerbField, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(93, 93, 93)
+                                .addComponent(KerberosSubmit1))
+                            .addComponent(KerbQ2, javax.swing.GroupLayout.PREFERRED_SIZE, 749, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(KerberosPanelLayout.createSequentialGroup()
+                                .addGroup(KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Kerb3)
+                                    .addComponent(Kerb1))
+                                .addGap(205, 205, 205)
+                                .addComponent(KerberosSubmit))))
+                    .addGroup(KerberosPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel29)))
+                .addGap(0, 170, Short.MAX_VALUE))
+            .addGroup(KerberosPanelLayout.createSequentialGroup()
+                .addGap(248, 248, 248)
                 .addComponent(Kerberos_K)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(KerberosPanelLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         KerberosPanelLayout.setVerticalGroup(
             KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KerberosPanelLayout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(Kerberos_K)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(KerberosPanelLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(KerbField, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(KerberosSubmit1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(51, 51, 51)
+                        .addComponent(KerberosReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                    .addGroup(KerberosPanelLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(Kerberos_K)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(KerbQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Kerb2)
+                        .addGroup(KerberosPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(KerberosPanelLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Kerb1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Kerb3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Kerb4)
+                                .addGap(46, 46, 46)
+                                .addComponent(KerbQ2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(KerbHint, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE))
+                            .addGroup(KerberosPanelLayout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addComponent(KerberosSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addComponent(jLabel29))
         );
 
@@ -7013,6 +7137,46 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_WEPA2ActionPerformed
 
+    private void Kerb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Kerb1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Kerb1ActionPerformed
+
+    private void Kerb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Kerb2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Kerb2ActionPerformed
+
+    private void Kerb3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Kerb3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Kerb3ActionPerformed
+
+    private void Kerb4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Kerb4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Kerb4ActionPerformed
+
+    private void KerberosSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KerberosSubmitActionPerformed
+        if(Kerb3.isSelected()) 
+           JOptionPane.showMessageDialog(null, "You are correct!!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+       else
+           JOptionPane.showMessageDialog(null, "Try again", "INCORRECT", JOptionPane.ERROR_MESSAGE);
+
+    }//GEN-LAST:event_KerberosSubmitActionPerformed
+
+    private void KerberosSubmit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KerberosSubmit1ActionPerformed
+        String val1 = KerbField.getText().toLowerCase();
+        String val2 = "symmetric";
+        String val3 = "private";
+        
+        if(Objects.equals(val1, val2) || Objects.equals(val1, val3))
+            JOptionPane.showMessageDialog(null, "You got it!", "Correct", JOptionPane.INFORMATION_MESSAGE);
+        else
+            JOptionPane.showMessageDialog(null, "This is not correct. Try again.", "INCORRECT", JOptionPane.ERROR_MESSAGE);
+        
+    }//GEN-LAST:event_KerberosSubmit1ActionPerformed
+
+    private void KerbFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KerbFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KerbFieldActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7264,6 +7428,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton Hint3;
     private javax.swing.JButton Hint4;
     private javax.swing.JMenu Home;
+    private javax.swing.JRadioButton Kerb1;
+    private javax.swing.JRadioButton Kerb2;
+    private javax.swing.JRadioButton Kerb3;
+    private javax.swing.JRadioButton Kerb4;
+    private javax.swing.JTextField KerbField;
+    private javax.swing.JLabel KerbHint;
+    private javax.swing.JLabel KerbQ1;
+    private javax.swing.JLabel KerbQ2;
     private javax.swing.JMenuItem Kerberos;
     private javax.swing.JButton KerberosBB;
     private javax.swing.JButton KerberosDes;
@@ -7271,10 +7443,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel KerberosDescripPanel;
     private javax.swing.JScrollPane KerberosDescription;
     private javax.swing.JLabel KerberosIntro;
+    private javax.swing.ButtonGroup KerberosMC;
     private javax.swing.JPanel KerberosPanel;
     private javax.swing.JPanel KerberosPanelWelcome;
     private javax.swing.JButton KerberosQ;
     private javax.swing.JButton KerberosReturn;
+    private javax.swing.JButton KerberosSubmit;
+    private javax.swing.JButton KerberosSubmit1;
     private javax.swing.JLabel Kerberos_K;
     private javax.swing.JLabel LFSR;
     private javax.swing.JButton LFSRBack;
