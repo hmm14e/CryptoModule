@@ -326,6 +326,24 @@ public class Home extends javax.swing.JFrame {
         jTextArea37 = new javax.swing.JTextArea();
         jLabel48 = new javax.swing.JLabel();
         DESBB2 = new javax.swing.JButton();
+        DESDescrip3 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
+        TwoDes = new javax.swing.JPanel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        DESBB3 = new javax.swing.JButton();
         BruteForcePanel = new javax.swing.JPanel();
         BruteForceProb = new javax.swing.JLabel();
         BFReturn = new javax.swing.JButton();
@@ -3485,10 +3503,26 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        DESDescrip3.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
+        DESDescrip3.setText("Wondering why we don't use 2DES? Check it out");
+
+        jButton5.setBackground(new java.awt.Color(77, 132, 155));
+        jButton5.setFont(new java.awt.Font("Courier", 0, 14)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("here");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout DESDescripPanelLayout = new javax.swing.GroupLayout(DESDescripPanel);
         DESDescripPanel.setLayout(DESDescripPanelLayout);
         DESDescripPanelLayout.setHorizontalGroup(
             DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESDescripPanelLayout.createSequentialGroup()
+                .addComponent(DESDescription2, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(112, 112, 112))
             .addGroup(DESDescripPanelLayout.createSequentialGroup()
                 .addGroup(DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel48)
@@ -3497,11 +3531,13 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(DESBB2))
                     .addGroup(DESDescripPanelLayout.createSequentialGroup()
                         .addGap(380, 380, 380)
-                        .addComponent(DESDescrip2)))
+                        .addComponent(DESDescrip2))
+                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                        .addGap(104, 104, 104)
+                        .addComponent(DESDescrip3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(12, 12, 12))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESDescripPanelLayout.createSequentialGroup()
-                .addComponent(DESDescription2, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(112, 112, 112))
         );
         DESDescripPanelLayout.setVerticalGroup(
             DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3509,14 +3545,176 @@ public class Home extends javax.swing.JFrame {
                 .addGap(77, 77, 77)
                 .addComponent(DESDescrip2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(DESDescription2, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(DESDescription2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DESDescripPanelLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(DESDescrip3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESDescripPanelLayout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
                 .addComponent(DESBB2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel48))
         );
 
         MainPanel.add(DESDescripPanel, "card42");
+
+        TwoDes.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(48, 87, 120));
+        jLabel4.setText("2(DES) is no better than 1(DES)");
+
+        jLabel41.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel41.setText("<html>2DES = DES<sub><i>K2</i></sub>(DES<sub><i>K1</i></sub>(M))</html>");
+
+        jLabel42.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jLabel42.setText("Meet-In-The-Middle Key Attack on 2DES");
+
+        jLabel43.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel43.setText("<html>DES<sub><i>K1</i></sub>(M)  =  DES<sup>-1</sup><sub><i>K2</i></sub>(C<sub>1</sub>) </html> ");
+
+        jLabel44.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel44.setText("<html>DES<sub><i>K1</i></sub>(M) → C<sub>0</sub> → DES<sub><i>K2</i></sub>(C<sub>0</sub>) → C<sub>1</sub>");
+
+        jScrollPane3.setBorder(null);
+        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("1) Exhaust all possible keys for K1\n2) Compile a list of all possible C0's from the encryption of M\n\n2^56 keys");
+        jTextArea1.setWrapStyleWord(true);
+        jScrollPane3.setViewportView(jTextArea1);
+
+        jLabel51.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jLabel51.setText("<html>DES<sub><i>K1</i></sub>(M) </html> ");
+
+        jLabel52.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jLabel52.setText("<html>DES<sup>-1</sup><sub><i>K2</i></sub>(C<sub>1</sub>) </html> ");
+
+        jScrollPane4.setBorder(null);
+        jScrollPane4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea3.setColumns(20);
+        jTextArea3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        jTextArea3.setLineWrap(true);
+        jTextArea3.setRows(5);
+        jTextArea3.setText("1) Exhaust all possible keys for K2\n2) Compile a list of the results from the decryption of C1\n\n2^56 keys");
+        jTextArea3.setWrapStyleWord(true);
+        jScrollPane4.setViewportView(jTextArea3);
+
+        jLabel53.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel53.setText("<html>Therefore, a key attack on <strong>2DES</strong> is 2<sup>56</sup>+ 2<sup>56</sup> = 2<sup>57</sup> and a key attack on <strong>DES</strong> is 2<sup>56</sup></html> ");
+
+        jLabel54.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jLabel54.setText("Not much better. ");
+
+        DESBB3.setBackground(new java.awt.Color(77, 132, 155));
+        DESBB3.setForeground(new java.awt.Color(255, 255, 255));
+        DESBB3.setText("Return");
+        DESBB3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DESBB3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout TwoDesLayout = new javax.swing.GroupLayout(TwoDes);
+        TwoDes.setLayout(TwoDesLayout);
+        TwoDesLayout.setHorizontalGroup(
+            TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TwoDesLayout.createSequentialGroup()
+                .addGap(93, 93, 93)
+                .addGroup(TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(TwoDesLayout.createSequentialGroup()
+                        .addGap(72, 72, 72)
+                        .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TwoDesLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(211, 211, 211))
+                    .addGroup(TwoDesLayout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(TwoDesLayout.createSequentialGroup()
+                .addGroup(TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TwoDesLayout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(DESBB3)
+                        .addGap(58, 58, 58)
+                        .addComponent(jLabel4))
+                    .addGroup(TwoDesLayout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 740, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TwoDesLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TwoDesLayout.createSequentialGroup()
+                        .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(238, 238, 238))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TwoDesLayout.createSequentialGroup()
+                        .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(285, 285, 285))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TwoDesLayout.createSequentialGroup()
+                        .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(355, 355, 355))))
+            .addGroup(TwoDesLayout.createSequentialGroup()
+                .addGroup(TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel50)
+                    .addGroup(TwoDesLayout.createSequentialGroup()
+                        .addGap(344, 344, 344)
+                        .addComponent(jLabel54))
+                    .addGroup(TwoDesLayout.createSequentialGroup()
+                        .addGap(278, 278, 278)
+                        .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        TwoDesLayout.setVerticalGroup(
+            TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TwoDesLayout.createSequentialGroup()
+                .addGroup(TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TwoDesLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(TwoDesLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(DESBB3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addGroup(TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(TwoDesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel50)
+                .addContainerGap())
+        );
+
+        MainPanel.add(TwoDes, "card65");
 
         BruteForcePanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -7377,6 +7575,26 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_CDHelpActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(TwoDes);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void DESBB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESBB3ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(DESDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_DESBB3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7556,9 +7774,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton DESBB;
     private javax.swing.JButton DESBB1;
     private javax.swing.JButton DESBB2;
+    private javax.swing.JButton DESBB3;
     private javax.swing.JLabel DESDescrip;
     private javax.swing.JLabel DESDescrip1;
     private javax.swing.JLabel DESDescrip2;
+    private javax.swing.JLabel DESDescrip3;
     private javax.swing.JButton DESDescripB1;
     private javax.swing.JPanel DESDescripPanel;
     private javax.swing.JScrollPane DESDescription;
@@ -7820,6 +8040,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton TripDES_B;
     private javax.swing.JButton TripDES_Q;
     private javax.swing.JLabel True;
+    private javax.swing.JPanel TwoDes;
     private javax.swing.JLabel VIGPicture;
     private javax.swing.JLabel VigDescripHeader;
     private javax.swing.JPanel VigDescription;
@@ -7851,6 +8072,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -7888,13 +8110,23 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -7906,7 +8138,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea13;
     private javax.swing.JTextArea jTextArea14;
@@ -7923,6 +8158,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea25;
     private javax.swing.JTextArea jTextArea26;
     private javax.swing.JTextArea jTextArea27;
+    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea31;
     private javax.swing.JTextArea jTextArea32;
     private javax.swing.JTextArea jTextArea33;
