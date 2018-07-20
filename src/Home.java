@@ -3232,7 +3232,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(BruteForce)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(BFGo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(DESRETURNB1)
                 .addGap(29, 29, 29)
                 .addComponent(jLabel46))
@@ -3995,6 +3995,11 @@ public class Home extends javax.swing.JFrame {
         WEPA1.setColumns(8);
 
         WEPA2.setColumns(8);
+        WEPA2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WEPA2ActionPerformed(evt);
+            }
+        });
 
         WEPB1.setBackground(new java.awt.Color(77, 132, 155));
         WEPB1.setForeground(new java.awt.Color(255, 255, 255));
@@ -4885,8 +4890,10 @@ public class Home extends javax.swing.JFrame {
         jTextArea22.setEditable(false);
         jTextArea22.setColumns(20);
         jTextArea22.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea22.setLineWrap(true);
         jTextArea22.setRows(5);
-        jTextArea22.setText("1. A client attempts to log into windows sending a request for a ticket to the KDC \n(Key Distribution Center).\n2. The KDC then creates a TGT (Ticket-granting Ticket) for the user.\n3. The TGT encrypts the tickets using the user’s password as the key, and sends the encrypted\nTGT back to the user. Note: It encrypts the TGT with the given usernames password in AD.\n4. The user then will try to decrypt the TGT using the password the user entered.\n5. If the user had entered the correct password the TGT is decrypted.\n6. The user then keeps the decrypted TGT, which indicates proof of clients identity\n7. The TGT can be configured to expire after a specified time by the Network Admin\n");
+        jTextArea22.setText("1. A client sends a logon request to the KDC (Key Distribution Center). The request is encrypted with the date and time on the local computer. The user's password hash is the key. (The password has isn't send across the network)\n2. The KDC receives the encrypted package, which is the authentication request, and decrypts it with what it knows as the client's password hash. All password hashes are stored in the server, so they are not sent across the network. Upon authentication, it creates a TGT (Ticket-Granting Ticket). The KDC encrypts the tickets using the user’s password as the key, and sends the encrypted TGT back to the user.\n3. The user then will decrypt the TGT using the password he/she entered. The user then keeps the decrypted TGT, which indicates proof of clients identity. The TGT can be configured to expire after a specified time by the Network Admin\n4. Next, the client sends (to the KDC) the TGT with the name of Application Server it wants to connect to with a time stamped client ID. Upon verification, the KDC returns a service session key to use with the application server.  \n5. The client presents the service key and an authenticator,\n");
+        jTextArea22.setWrapStyleWord(true);
         KerberosDescription.setViewportView(jTextArea22);
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
@@ -4911,20 +4918,20 @@ public class Home extends javax.swing.JFrame {
                         .addGap(394, 394, 394)
                         .addComponent(KerberosBB))
                     .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
-                        .addGap(331, 331, 331)
-                        .addComponent(KerberosDescripHeader))
-                    .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
                         .addGap(55, 55, 55)
-                        .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
+                        .addGap(330, 330, 330)
+                        .addComponent(KerberosDescripHeader)))
                 .addGap(12, 12, 12))
         );
         KerberosDescripPanelLayout.setVerticalGroup(
             KerberosDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(KerberosDescripPanelLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
+                .addGap(24, 24, 24)
                 .addComponent(KerberosDescripHeader)
-                .addGap(18, 18, 18)
-                .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(KerberosDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(KerberosBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -7001,6 +7008,10 @@ public class Home extends javax.swing.JFrame {
         else
              JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_BFBActionPerformed
+
+    private void WEPA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WEPA2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_WEPA2ActionPerformed
 
     /**
      * @param args the command line arguments
