@@ -5697,7 +5697,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="364" max="32767" attributes="0"/>
+                      <EmptySpace pref="33" max="32767" attributes="0"/>
                       <Component id="RSASigIntro3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jScrollPane10" min="-2" pref="287" max="-2" attributes="0"/>
@@ -5746,7 +5746,7 @@
                     </Property>
                     <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="p: a prime number, usually 1024 bits&#x9;&#x9;[known publicly]&#xa;q: a factor of p-1, typically 160-bits&#x9;&#x9;[known publicly]&#xa;a: a^q = 1 mod p&#x9;&#x9;&#x9;&#x9;[known publicly]&#xa;v: a^(-s) mod q &#x9;&#x9;&#x9;&#x9;[public key]&#xa;s: 0 &lt; s &lt; q &#x9;&#x9;&#x9;&#x9;&#x9;[secret]&#xa;&#xa;Signing: &#xa;1) Choose a random r, 0 &lt; r &lt; q&#xa;2) Compute x = a^r mod p&#xa;3) Concatenate e = H(M||x), where M is the message and H is a hash function&#xa;4) Compute y = (r + se) mod q&#xa;Send Message M with Signature (e, y)&#xa;&#xa;Verifying: &#xa;1) Compute x&apos; = a^(y) * v^(e) mod p&#xa;2) Check if e = H(M||x&apos;), if true, message is verified&#xa;&#xa;&#x9; &#xa;&#x9;"/>
+                    <Property name="text" type="java.lang.String" value="p: A prime number, usually 1024 bits&#x9;&#x9;[global]&#xa;q: A factor of p-1, typically 160-bits&#x9;&#x9;[global]&#xa;a: Choose an a such that, a^q = 1 mod p&#x9;&#x9;[global]&#xa;v: Compute v = a^(-s) mod q &#x9;&#x9;&#x9;[public key]&#xa;s: 0 &lt; s &lt; q &#x9;&#x9;&#x9;&#x9;&#x9;[secret]&#xa;&#xa;Signing: &#xa;1) Choose a random r, 0 &lt; r &lt; q&#xa;2) Compute x = a^r mod p&#xa;3) Concatenate e = H(M||x), where M is the message and H is a hash function&#xa;4) Compute y = (r + se) mod q&#xa;Send Message M with Signature (e, y)&#xa;&#xa;Verifying: &#xa;1) Compute x&apos; = a^(y) * v^(e) mod p&#xa;2) Check if e = H(M||x&apos;), if true, message is verified&#xa;&#xa;&#x9; &#xa;&#x9;"/>
                     <Property name="wrapStyleWord" type="boolean" value="true"/>
                   </Properties>
                 </Component>

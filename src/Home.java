@@ -223,6 +223,37 @@ public class Home extends javax.swing.JFrame {
         ThemePicture20 = new javax.swing.JLabel();
         CTRDes = new javax.swing.JButton();
         CTRQ = new javax.swing.JButton();
+        CDPanelWelcome = new javax.swing.JPanel();
+        CDIntro = new javax.swing.JLabel();
+        ThemePicture5 = new javax.swing.JLabel();
+        CDDes = new javax.swing.JButton();
+        CDQ = new javax.swing.JButton();
+        CDDescription = new javax.swing.JPanel();
+        CDHeader = new javax.swing.JLabel();
+        CDDescr = new javax.swing.JScrollPane();
+        CDDescri = new javax.swing.JTextArea();
+        Theme__2 = new javax.swing.JLabel();
+        CDBack = new javax.swing.JButton();
+        CDPanel1 = new javax.swing.JPanel();
+        Feistel_Intro1 = new javax.swing.JLabel();
+        Theme_1 = new javax.swing.JLabel();
+        FeistelReturn1 = new javax.swing.JButton();
+        ConfusionNext = new javax.swing.JButton();
+        ConfusionImage = new javax.swing.JLabel();
+        ConfuQuestion = new javax.swing.JLabel();
+        ConfB = new javax.swing.JButton();
+        ConfA = new javax.swing.JButton();
+        CDPanel2 = new javax.swing.JPanel();
+        Feistel_Intro3 = new javax.swing.JLabel();
+        Theme_3 = new javax.swing.JLabel();
+        FeistelReturn3 = new javax.swing.JButton();
+        ConfusionNext1 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
         FeistelPanel = new javax.swing.JPanel();
         Feistel_Entry = new javax.swing.JTextField();
         Feistel_Button = new javax.swing.JButton();
@@ -235,35 +266,14 @@ public class Home extends javax.swing.JFrame {
         ThemePicture = new javax.swing.JLabel();
         FesitelDescipB = new javax.swing.JButton();
         FeistelQB = new javax.swing.JButton();
-        FeistelPanel1 = new javax.swing.JPanel();
-        Feistel_Intro1 = new javax.swing.JLabel();
-        Theme_1 = new javax.swing.JLabel();
-        FeistelReturn1 = new javax.swing.JButton();
-        inout = new javax.swing.JLabel();
-        SBOX = new javax.swing.JLabel();
-        ConfusionQuestion = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        ConfusionA = new javax.swing.JTextField();
-        ConfusionB = new javax.swing.JButton();
-        ConfusionNext = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        FeistelPanel2 = new javax.swing.JPanel();
-        Feistel_Intro3 = new javax.swing.JLabel();
-        Theme_3 = new javax.swing.JLabel();
-        FeistelReturn3 = new javax.swing.JButton();
-        ConfusionNext1 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
         FeistelDescripPanel = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea18 = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         FDPB = new javax.swing.JButton();
+        FSHelp = new javax.swing.JLabel();
+        CDHelp = new javax.swing.JButton();
         RC5PanelWelcome = new javax.swing.JPanel();
         RC5Intro = new javax.swing.JLabel();
         ThemePicture26 = new javax.swing.JLabel();
@@ -533,6 +543,7 @@ public class Home extends javax.swing.JFrame {
         Atbash = new javax.swing.JMenuItem();
         Vigenere = new javax.swing.JMenuItem();
         BlockCiphers = new javax.swing.JMenu();
+        ConfusionDiffusion = new javax.swing.JMenuItem();
         Feistel = new javax.swing.JMenuItem();
         DES_Menu = new javax.swing.JMenu();
         DES = new javax.swing.JMenuItem();
@@ -2410,6 +2421,355 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(CTRPanelWelcome, "card48");
 
+        CDPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
+
+        CDIntro.setBackground(new java.awt.Color(255, 255, 255));
+        CDIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        CDIntro.setForeground(new java.awt.Color(48, 87, 120));
+        CDIntro.setText("Confusion and Diffusion");
+
+        ThemePicture5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        CDDes.setBackground(new java.awt.Color(77, 132, 155));
+        CDDes.setForeground(new java.awt.Color(255, 255, 255));
+        CDDes.setText("Description");
+        CDDes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CDDesActionPerformed(evt);
+            }
+        });
+
+        CDQ.setBackground(new java.awt.Color(77, 132, 155));
+        CDQ.setForeground(new java.awt.Color(255, 255, 255));
+        CDQ.setText("Questions");
+        CDQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CDQActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout CDPanelWelcomeLayout = new javax.swing.GroupLayout(CDPanelWelcome);
+        CDPanelWelcome.setLayout(CDPanelWelcomeLayout);
+        CDPanelWelcomeLayout.setHorizontalGroup(
+            CDPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CDPanelWelcomeLayout.createSequentialGroup()
+                .addComponent(ThemePicture5)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(CDPanelWelcomeLayout.createSequentialGroup()
+                .addGroup(CDPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CDPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
+                        .addComponent(CDDes)
+                        .addGap(66, 66, 66)
+                        .addComponent(CDQ))
+                    .addGroup(CDPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(232, 232, 232)
+                        .addComponent(CDIntro)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        CDPanelWelcomeLayout.setVerticalGroup(
+            CDPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CDPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(231, Short.MAX_VALUE)
+                .addComponent(CDIntro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CDPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CDDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CDQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(148, 148, 148)
+                .addComponent(ThemePicture5))
+        );
+
+        MainPanel.add(CDPanelWelcome, "card46");
+
+        CDDescription.setBackground(new java.awt.Color(255, 255, 255));
+
+        CDHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        CDHeader.setForeground(new java.awt.Color(48, 87, 120));
+        CDHeader.setText("Confusion and Diffusion");
+
+        CDDescr.setBorder(null);
+        CDDescr.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        CDDescri.setEditable(false);
+        CDDescri.setColumns(20);
+        CDDescri.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        CDDescri.setLineWrap(true);
+        CDDescri.setRows(5);
+        CDDescri.setText("The principles of confusion and diffusion are the most essential concepts in the design of modern block ciphers - they defend against statistical attacks. \n\n- Diffusion dissipates stastical structure of plaintext over bulk of ciphertext. \n\t* Transposition for diffusion: If a single bit of the plaintext is changed then roughly \thalf of\tthe bits of the ciphertext change. \n\n\t* The statistical structure of the plaintext is dissipated into long-range statistics \t\tof the ciphertext\n\n- Confusion makes relationship between ciphertext and key as complex as possible\n\t* Substitution for confusion: Each bit of the ciphertext depends on several parts of \t\tthe encryption key\n\n\t* Makes the relationship between the stastics of the ciphertext and the key complex");
+        CDDescri.setWrapStyleWord(true);
+        CDDescr.setViewportView(CDDescri);
+
+        Theme__2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        CDBack.setBackground(new java.awt.Color(77, 132, 155));
+        CDBack.setForeground(new java.awt.Color(255, 255, 255));
+        CDBack.setText("Return");
+        CDBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CDBackActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout CDDescriptionLayout = new javax.swing.GroupLayout(CDDescription);
+        CDDescription.setLayout(CDDescriptionLayout);
+        CDDescriptionLayout.setHorizontalGroup(
+            CDDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CDDescriptionLayout.createSequentialGroup()
+                .addGroup(CDDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Theme__2)
+                    .addGroup(CDDescriptionLayout.createSequentialGroup()
+                        .addGap(394, 394, 394)
+                        .addComponent(CDBack))
+                    .addGroup(CDDescriptionLayout.createSequentialGroup()
+                        .addGap(243, 243, 243)
+                        .addComponent(CDHeader))
+                    .addGroup(CDDescriptionLayout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addComponent(CDDescr, javax.swing.GroupLayout.PREFERRED_SIZE, 765, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        CDDescriptionLayout.setVerticalGroup(
+            CDDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CDDescriptionLayout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addComponent(CDHeader)
+                .addGap(33, 33, 33)
+                .addComponent(CDDescr, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(CDBack, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Theme__2))
+        );
+
+        MainPanel.add(CDDescription, "card42");
+
+        CDPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        Feistel_Intro1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        Feistel_Intro1.setForeground(new java.awt.Color(48, 87, 120));
+        Feistel_Intro1.setText("Confusion");
+
+        Theme_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        FeistelReturn1.setBackground(new java.awt.Color(77, 132, 155));
+        FeistelReturn1.setForeground(new java.awt.Color(255, 255, 255));
+        FeistelReturn1.setText("Return");
+        FeistelReturn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeistelReturn1ActionPerformed(evt);
+            }
+        });
+
+        ConfusionNext.setBackground(new java.awt.Color(77, 132, 155));
+        ConfusionNext.setForeground(new java.awt.Color(255, 255, 255));
+        ConfusionNext.setText("Next");
+        ConfusionNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConfusionNextActionPerformed(evt);
+            }
+        });
+
+        ConfusionImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Confusion_Diffusion.png"))); // NOI18N
+
+        ConfuQuestion.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        ConfuQuestion.setText("Which highlighted path shows confusion in a Feistel Structure? ");
+
+        ConfB.setBackground(new java.awt.Color(77, 132, 155));
+        ConfB.setForeground(new java.awt.Color(255, 255, 255));
+        ConfB.setText("B");
+        ConfB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConfBActionPerformed(evt);
+            }
+        });
+
+        ConfA.setBackground(new java.awt.Color(77, 132, 155));
+        ConfA.setForeground(new java.awt.Color(255, 255, 255));
+        ConfA.setText("A");
+        ConfA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConfAActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout CDPanel1Layout = new javax.swing.GroupLayout(CDPanel1);
+        CDPanel1.setLayout(CDPanel1Layout);
+        CDPanel1Layout.setHorizontalGroup(
+            CDPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Theme_1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(CDPanel1Layout.createSequentialGroup()
+                .addGroup(CDPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CDPanel1Layout.createSequentialGroup()
+                        .addGap(327, 327, 327)
+                        .addComponent(Feistel_Intro1))
+                    .addGroup(CDPanel1Layout.createSequentialGroup()
+                        .addGap(169, 169, 169)
+                        .addComponent(ConfuQuestion)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(CDPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(CDPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CDPanel1Layout.createSequentialGroup()
+                        .addComponent(FeistelReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ConfusionNext, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(47, 47, 47))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CDPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(CDPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CDPanel1Layout.createSequentialGroup()
+                                .addComponent(ConfusionImage, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(218, 218, 218))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CDPanel1Layout.createSequentialGroup()
+                                .addComponent(ConfA, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(121, 121, 121)
+                                .addComponent(ConfB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(315, 315, 315))))))
+        );
+        CDPanel1Layout.setVerticalGroup(
+            CDPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CDPanel1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(Feistel_Intro1)
+                .addGap(76, 76, 76)
+                .addComponent(ConfuQuestion)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ConfusionImage)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CDPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ConfB)
+                    .addComponent(ConfA))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addGroup(CDPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FeistelReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ConfusionNext, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(49, 49, 49)
+                .addComponent(Theme_1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        MainPanel.add(CDPanel1, "card8");
+
+        CDPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        Feistel_Intro3.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        Feistel_Intro3.setForeground(new java.awt.Color(48, 87, 120));
+        Feistel_Intro3.setText("Diffusion");
+
+        Theme_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        FeistelReturn3.setBackground(new java.awt.Color(77, 132, 155));
+        FeistelReturn3.setForeground(new java.awt.Color(255, 255, 255));
+        FeistelReturn3.setText("Return");
+        FeistelReturn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FeistelReturn3ActionPerformed(evt);
+            }
+        });
+
+        ConfusionNext1.setBackground(new java.awt.Color(77, 132, 155));
+        ConfusionNext1.setForeground(new java.awt.Color(255, 255, 255));
+        ConfusionNext1.setText("Next");
+        ConfusionNext1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConfusionNext1ActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("*Diffusion in cryptography is usually synonomous with permutation");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setText("Which of the following is a permutation of 00110101:");
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton1.setText("01010100");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton6.setText("00001111");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        jButton7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton7.setText("11111000");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
+        jButton8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton8.setText("10100010");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout CDPanel2Layout = new javax.swing.GroupLayout(CDPanel2);
+        CDPanel2.setLayout(CDPanel2Layout);
+        CDPanel2Layout.setHorizontalGroup(
+            CDPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Theme_3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(CDPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(FeistelReturn3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ConfusionNext1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47))
+            .addGroup(CDPanel2Layout.createSequentialGroup()
+                .addGroup(CDPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CDPanel2Layout.createSequentialGroup()
+                        .addGap(354, 354, 354)
+                        .addComponent(Feistel_Intro3))
+                    .addGroup(CDPanel2Layout.createSequentialGroup()
+                        .addGap(231, 231, 231)
+                        .addGroup(CDPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addGroup(CDPanel2Layout.createSequentialGroup()
+                                .addGap(161, 161, 161)
+                                .addGroup(CDPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton6)
+                                    .addComponent(jButton1)
+                                    .addComponent(jButton7)
+                                    .addComponent(jButton8)))
+                            .addComponent(jLabel8))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        CDPanel2Layout.setVerticalGroup(
+            CDPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CDPanel2Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(Feistel_Intro3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel8)
+                .addGap(41, 41, 41)
+                .addComponent(jLabel3)
+                .addGap(38, 38, 38)
+                .addComponent(jButton1)
+                .addGap(18, 18, 18)
+                .addComponent(jButton6)
+                .addGap(18, 18, 18)
+                .addComponent(jButton7)
+                .addGap(18, 18, 18)
+                .addComponent(jButton8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                .addGroup(CDPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FeistelReturn3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ConfusionNext1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(49, 49, 49)
+                .addComponent(Theme_3, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        MainPanel.add(CDPanel2, "card8");
+
         FeistelPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         Feistel_Entry.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -2493,7 +2853,7 @@ public class Home extends javax.swing.JFrame {
 
         FeistelIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         FeistelIntro.setForeground(new java.awt.Color(48, 87, 120));
-        FeistelIntro.setText("Feistel Structure");
+        FeistelIntro.setText("Feistel Network");
 
         ThemePicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
@@ -2523,14 +2883,15 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(ThemePicture)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
-                .addGap(293, 293, 293)
-                .addGroup(FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(FeistelPanelWelcomeLayout.createSequentialGroup()
-                        .addComponent(FesitelDescipB)
-                        .addGap(92, 92, 92)
-                        .addComponent(FeistelQB))
-                    .addComponent(FeistelIntro))
+                .addGap(295, 295, 295)
+                .addComponent(FesitelDescipB)
+                .addGap(66, 66, 66)
+                .addComponent(FeistelQB)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanelWelcomeLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(FeistelIntro)
+                .addGap(326, 326, 326))
         );
         FeistelPanelWelcomeLayout.setVerticalGroup(
             FeistelPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2547,254 +2908,21 @@ public class Home extends javax.swing.JFrame {
 
         MainPanel.add(FeistelPanelWelcome, "card41");
 
-        FeistelPanel1.setBackground(new java.awt.Color(255, 255, 255));
-
-        Feistel_Intro1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        Feistel_Intro1.setForeground(new java.awt.Color(48, 87, 120));
-        Feistel_Intro1.setText("Confusion");
-
-        Theme_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        FeistelReturn1.setBackground(new java.awt.Color(77, 132, 155));
-        FeistelReturn1.setForeground(new java.awt.Color(255, 255, 255));
-        FeistelReturn1.setText("Return");
-        FeistelReturn1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FeistelReturn1ActionPerformed(evt);
-            }
-        });
-
-        inout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/TAble.png"))); // NOI18N
-
-        SBOX.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Sbox.png"))); // NOI18N
-
-        ConfusionQuestion.setBorder(null);
-        ConfusionQuestion.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        ConfusionQuestion.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("1. What's the output of the S box?");
-        ConfusionQuestion.setViewportView(jTextArea1);
-
-        ConfusionB.setBackground(new java.awt.Color(77, 132, 155));
-        ConfusionB.setForeground(new java.awt.Color(255, 255, 255));
-        ConfusionB.setText("Enter");
-        ConfusionB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConfusionBActionPerformed(evt);
-            }
-        });
-
-        ConfusionNext.setBackground(new java.awt.Color(77, 132, 155));
-        ConfusionNext.setForeground(new java.awt.Color(255, 255, 255));
-        ConfusionNext.setText("Next");
-        ConfusionNext.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConfusionNextActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("*Confusion in cryptography is usually synonomous with substitution with S-boxes as shown below");
-
-        javax.swing.GroupLayout FeistelPanel1Layout = new javax.swing.GroupLayout(FeistelPanel1);
-        FeistelPanel1.setLayout(FeistelPanel1Layout);
-        FeistelPanel1Layout.setHorizontalGroup(
-            FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Theme_1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(FeistelReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ConfusionNext, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FeistelPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(ConfusionQuestion, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(ConfusionA, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36)
-                        .addComponent(ConfusionB))
-                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                        .addComponent(SBOX)
-                        .addGap(151, 151, 151)
-                        .addComponent(inout)))
-                .addGap(189, 189, 189))
-            .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                        .addGap(327, 327, 327)
-                        .addComponent(Feistel_Intro1))
-                    .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                        .addGap(196, 196, 196)
-                        .addComponent(jLabel4)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        FeistelPanel1Layout.setVerticalGroup(
-            FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelPanel1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(Feistel_Intro1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(SBOX, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(inout, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ConfusionQuestion, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(ConfusionA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(ConfusionB)))
-                .addGap(18, 18, 18)
-                .addGroup(FeistelPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(FeistelReturn1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ConfusionNext, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49)
-                .addComponent(Theme_1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        MainPanel.add(FeistelPanel1, "card8");
-
-        FeistelPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
-        Feistel_Intro3.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        Feistel_Intro3.setForeground(new java.awt.Color(48, 87, 120));
-        Feistel_Intro3.setText("Diffusion");
-
-        Theme_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        FeistelReturn3.setBackground(new java.awt.Color(77, 132, 155));
-        FeistelReturn3.setForeground(new java.awt.Color(255, 255, 255));
-        FeistelReturn3.setText("Return");
-        FeistelReturn3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FeistelReturn3ActionPerformed(evt);
-            }
-        });
-
-        ConfusionNext1.setBackground(new java.awt.Color(77, 132, 155));
-        ConfusionNext1.setForeground(new java.awt.Color(255, 255, 255));
-        ConfusionNext1.setText("Next");
-        ConfusionNext1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConfusionNext1ActionPerformed(evt);
-            }
-        });
-
-        jLabel8.setText("*Diffusion in cryptography is usually synonomous with permutation");
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setText("Which of the following is a permutation of 00110101:");
-
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton1.setText("01010100");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton6.setText("00001111");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton7.setText("11111000");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-
-        jButton8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton8.setText("10100010");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout FeistelPanel2Layout = new javax.swing.GroupLayout(FeistelPanel2);
-        FeistelPanel2.setLayout(FeistelPanel2Layout);
-        FeistelPanel2Layout.setHorizontalGroup(
-            FeistelPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Theme_3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(FeistelPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(FeistelReturn3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ConfusionNext1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
-            .addGroup(FeistelPanel2Layout.createSequentialGroup()
-                .addGroup(FeistelPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(FeistelPanel2Layout.createSequentialGroup()
-                        .addGap(354, 354, 354)
-                        .addComponent(Feistel_Intro3))
-                    .addGroup(FeistelPanel2Layout.createSequentialGroup()
-                        .addGap(282, 282, 282)
-                        .addComponent(jLabel8))
-                    .addGroup(FeistelPanel2Layout.createSequentialGroup()
-                        .addGap(231, 231, 231)
-                        .addGroup(FeistelPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addGroup(FeistelPanel2Layout.createSequentialGroup()
-                                .addGap(161, 161, 161)
-                                .addGroup(FeistelPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButton6)
-                                    .addComponent(jButton1)
-                                    .addComponent(jButton7)
-                                    .addComponent(jButton8))))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        FeistelPanel2Layout.setVerticalGroup(
-            FeistelPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FeistelPanel2Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(Feistel_Intro3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
-                .addGap(47, 47, 47)
-                .addComponent(jLabel3)
-                .addGap(38, 38, 38)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton6)
-                .addGap(18, 18, 18)
-                .addComponent(jButton7)
-                .addGap(18, 18, 18)
-                .addComponent(jButton8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
-                .addGroup(FeistelPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(FeistelReturn3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ConfusionNext1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49)
-                .addComponent(Theme_3, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        MainPanel.add(FeistelPanel2, "card8");
-
         FeistelDescripPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel9.setText("Feistel");
+        jLabel9.setText("Feistel Structure");
 
         jScrollPane1.setBorder(null);
 
         jTextArea18.setEditable(false);
         jTextArea18.setColumns(20);
         jTextArea18.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea18.setLineWrap(true);
         jTextArea18.setRows(5);
-        jTextArea18.setText("- The Feistel structure is a symmetric structure used in the construction of\nblock ciphers.\n- One of the most popular block ciphers that uses Feistel is DES.\n- In Feistel, blocks are split in two, to create a left half of bits and a right\nhalf.\n- The right half of round N, becomes the left half of round N + 1.\n- Then, the right half of round N is also put through a mangler function, with a \nrandom key K. The output of this is XOR'd with the left half of round N. The \noutput of this xor becomes the right half of round N+1.\n- This sequence occurs for a pre-determined amount of rounds.\n\n*For a visual representation of one round of Feistel look at the questions section.");
+        jTextArea18.setText("- The Feistel structure is a symmetric structure used in the construction of\nblock ciphers.\n- One of the most popular block ciphers that uses Feistel is DES.\n- In Feistel, blocks are split in two, to create a left half of bits and a right\nhalf.\n- The right half of round N, becomes the left half of round N + 1.\n- Then, the right half of round N is also put through a mangler/round function, with a random key K. The output of this is XOR'd with the left half of round N. The \noutput of this xor becomes the right half of round N+1.\n- This sequence occurs for a pre-determined amount of rounds.\n\n* For a visual representation of one round of Feistel look at the questions section.\n");
+        jTextArea18.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea18);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
@@ -2808,32 +2936,52 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        FSHelp.setText("For information on confusion and diffusion in Feistel Structures click");
+
+        CDHelp.setBackground(new java.awt.Color(77, 132, 155));
+        CDHelp.setForeground(new java.awt.Color(255, 255, 255));
+        CDHelp.setText("here");
+        CDHelp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CDHelpActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout FeistelDescripPanelLayout = new javax.swing.GroupLayout(FeistelDescripPanel);
         FeistelDescripPanel.setLayout(FeistelDescripPanelLayout);
         FeistelDescripPanelLayout.setHorizontalGroup(
             FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
                 .addGroup(FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
-                        .addGap(374, 374, 374)
-                        .addComponent(jLabel9))
                     .addComponent(jLabel11)
                     .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
                         .addComponent(FDPB))
                     .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
                         .addGap(117, 117, 117)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 679, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                        .addGap(297, 297, 297)
+                        .addComponent(jLabel9))
+                    .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
+                        .addGap(186, 186, 186)
+                        .addComponent(FSHelp)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(CDHelp)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         FeistelDescripPanelLayout.setVerticalGroup(
             FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FeistelDescripPanelLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
+                .addGap(44, 44, 44)
                 .addComponent(jLabel9)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FSHelp)
+                    .addComponent(CDHelp))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FDPB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel11))
@@ -5064,7 +5212,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(KerberosPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel29)))
-                .addGap(0, 170, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(KerberosPanelLayout.createSequentialGroup()
                 .addGap(248, 248, 248)
                 .addComponent(Kerberos_K)
@@ -5100,12 +5248,11 @@ public class Home extends javax.swing.JFrame {
                                 .addGap(46, 46, 46)
                                 .addComponent(KerbQ2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(KerbHint, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE))
+                                .addComponent(KerbHint, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(KerberosPanelLayout.createSequentialGroup()
                                 .addGap(17, 17, 17)
-                                .addComponent(KerberosSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                .addComponent(KerberosSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel29))
         );
 
@@ -5486,6 +5633,14 @@ public class Home extends javax.swing.JFrame {
         Ciphers.add(SubstitutionCiphers);
 
         BlockCiphers.setText("Block Ciphers");
+
+        ConfusionDiffusion.setText("Confusion/Diffusion");
+        ConfusionDiffusion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConfusionDiffusionActionPerformed(evt);
+            }
+        });
+        BlockCiphers.add(ConfusionDiffusion);
 
         Feistel.setText("Feistel Network");
         Feistel.addActionListener(new java.awt.event.ActionListener() {
@@ -6179,7 +6334,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(FeistelPanel1);
+        MainPanel.add(FeistelPanel);
         MainPanel.repaint();
         MainPanel.revalidate();
         ConfusionNext.setVisible(false);
@@ -6888,7 +7043,7 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(FeistelPanelWelcome);
+        MainPanel.add(CDPanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_FeistelReturn1ActionPerformed
@@ -6898,32 +7053,17 @@ public class Home extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(FeistelPanel2);
+        MainPanel.add(CDPanel2);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_ConfusionNextActionPerformed
-
-    private void ConfusionBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfusionBActionPerformed
-        String hold = ConfusionA.getText();
-        
-        if(hold.equals("11011001"))
-        {    
-            ConfusionNext.setVisible(true);
-            JOptionPane.showMessageDialog(null, "You are correct! You can continue on to diffusion", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
-
-        }
-        
-        else
-            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
-
-    }//GEN-LAST:event_ConfusionBActionPerformed
 
     private void FeistelReturn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FeistelReturn3ActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
 
-        MainPanel.add(FeistelPanel1);
+        MainPanel.add(CDPanel1);
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_FeistelReturn3ActionPerformed
@@ -6957,7 +7097,7 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "You are correct! Eve will have sniffed the MD5 hash, the ID of the user, and the challenge value", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
         }
         else
-            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_CHAPB1ActionPerformed
 
     private void CHAPB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHAPB2ActionPerformed
@@ -6967,7 +7107,7 @@ public class Home extends javax.swing.JFrame {
         if(hold.contains("password"))
             JOptionPane.showMessageDialog(null, "You are correct! The security of this scheme in liu of a MITM attack hinges on the user's password strength", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
         else
-            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_CHAPB2ActionPerformed
 
     private void CHAPB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHAPB3ActionPerformed
@@ -6977,23 +7117,23 @@ public class Home extends javax.swing.JFrame {
         if(hold.equals("no"))
             JOptionPane.showMessageDialog(null, "You are correct! Rainbow tables are tables that contain pre-computed hashes.\nSince the md5 hash = md5(id||password||challenge) it's most likely a rainbow table wouldn't contain this hash.\n Also note, since the challenge is a random value, it makes it more likely that a rainbow table would'nt have this hash.", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);            
         else
-            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_CHAPB3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Incorrect, try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        JOptionPane.showMessageDialog(null, "Correct!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "You got it!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
@@ -7177,6 +7317,66 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_KerbFieldActionPerformed
 
+    private void CDDesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CDDesActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CDDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CDDesActionPerformed
+
+    private void CDQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CDQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CDPanel1);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CDQActionPerformed
+
+    private void CDBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CDBackActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CDPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CDBackActionPerformed
+
+    private void ConfAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfAActionPerformed
+        JOptionPane.showMessageDialog(null, "Try again!", "INCORRECT", JOptionPane.ERROR_MESSAGE);
+
+    }//GEN-LAST:event_ConfAActionPerformed
+
+    private void ConfBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfBActionPerformed
+        JOptionPane.showMessageDialog(null, "You got it!", "CORRECT", JOptionPane.INFORMATION_MESSAGE);
+
+    }//GEN-LAST:event_ConfBActionPerformed
+
+    private void ConfusionDiffusionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfusionDiffusionActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CDPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_ConfusionDiffusionActionPerformed
+
+    private void CDHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CDHelpActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(CDDescription);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_CDHelpActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7273,6 +7473,18 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton CBCYes;
     private javax.swing.JMenuItem CBC_MAC;
     private javax.swing.JLabel CBCtitle;
+    private javax.swing.JButton CDBack;
+    private javax.swing.JButton CDDes;
+    private javax.swing.JScrollPane CDDescr;
+    private javax.swing.JTextArea CDDescri;
+    private javax.swing.JPanel CDDescription;
+    private javax.swing.JLabel CDHeader;
+    private javax.swing.JButton CDHelp;
+    private javax.swing.JLabel CDIntro;
+    private javax.swing.JPanel CDPanel1;
+    private javax.swing.JPanel CDPanel2;
+    private javax.swing.JPanel CDPanelWelcome;
+    private javax.swing.JButton CDQ;
     private javax.swing.JMenuItem CHAP;
     private javax.swing.JTextField CHAPA1;
     private javax.swing.JTextField CHAPA2;
@@ -7322,11 +7534,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Ciphertext_Atbash;
     private javax.swing.JLabel Ciphertext_Caesar;
     private javax.swing.JLabel Ciphertext_Vigenere;
-    private javax.swing.JTextField ConfusionA;
-    private javax.swing.JButton ConfusionB;
+    private javax.swing.JButton ConfA;
+    private javax.swing.JButton ConfB;
+    private javax.swing.JLabel ConfuQuestion;
+    private javax.swing.JMenuItem ConfusionDiffusion;
+    private javax.swing.JLabel ConfusionImage;
     private javax.swing.JButton ConfusionNext;
     private javax.swing.JButton ConfusionNext1;
-    private javax.swing.JScrollPane ConfusionQuestion;
     private javax.swing.JLabel Correct1;
     private javax.swing.JPanel Correct_ECB;
     private javax.swing.JLabel Correct_Pic;
@@ -7404,14 +7618,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JRadioButton F4;
     private javax.swing.JRadioButton F5;
     private javax.swing.JButton FDPB;
+    private javax.swing.JLabel FSHelp;
     private javax.swing.JLabel False;
     private javax.swing.JMenuItem Feistel;
     private javax.swing.JPanel FeistelDescripPanel;
     private javax.swing.JLabel FeistelImage;
     private javax.swing.JLabel FeistelIntro;
     private javax.swing.JPanel FeistelPanel;
-    private javax.swing.JPanel FeistelPanel1;
-    private javax.swing.JPanel FeistelPanel2;
     private javax.swing.JPanel FeistelPanelWelcome;
     private javax.swing.JButton FeistelQB;
     private javax.swing.JButton FeistelReturn;
@@ -7543,7 +7756,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton RCReturn1;
     private javax.swing.JButton RCReturn2;
     private javax.swing.JButton ReturnWelcome;
-    private javax.swing.JLabel SBOX;
     private javax.swing.JLabel Seed;
     private javax.swing.JLabel SentPassword;
     private javax.swing.JLabel SentUN;
@@ -7584,11 +7796,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel ThemePicture29;
     private javax.swing.JLabel ThemePicture3;
     private javax.swing.JLabel ThemePicture4;
+    private javax.swing.JLabel ThemePicture5;
     private javax.swing.JLabel Theme_;
     private javax.swing.JLabel Theme_1;
     private javax.swing.JLabel Theme_3;
     private javax.swing.JLabel Theme__;
     private javax.swing.JLabel Theme__1;
+    private javax.swing.JLabel Theme__2;
     private javax.swing.JMenuItem TripDES;
     private javax.swing.JRadioButton TripDESA;
     private javax.swing.JRadioButton TripDESB;
@@ -7632,7 +7846,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Welcome;
     private javax.swing.JPanel WelcomePanel;
     private javax.swing.ButtonGroup buttonGroup6;
-    private javax.swing.JLabel inout;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
@@ -7675,7 +7888,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
@@ -7695,7 +7907,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea13;
     private javax.swing.JTextArea jTextArea14;

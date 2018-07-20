@@ -3531,7 +3531,7 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea16.setFont(new java.awt.Font("Courier", 0, 14)); // NOI18N
         jTextArea16.setLineWrap(true);
         jTextArea16.setRows(5);
-        jTextArea16.setText("p: a prime number, usually 1024 bits\t\t[known publicly]\nq: a factor of p-1, typically 160-bits\t\t[known publicly]\na: a^q = 1 mod p\t\t\t\t[known publicly]\nv: a^(-s) mod q \t\t\t\t[public key]\ns: 0 < s < q \t\t\t\t\t[secret]\n\nSigning: \n1) Choose a random r, 0 < r < q\n2) Compute x = a^r mod p\n3) Concatenate e = H(M||x), where M is the message and H is a hash function\n4) Compute y = (r + se) mod q\nSend Message M with Signature (e, y)\n\nVerifying: \n1) Compute x' = a^(y) * v^(e) mod p\n2) Check if e = H(M||x'), if true, message is verified\n\n\t \n\t");
+        jTextArea16.setText("p: A prime number, usually 1024 bits\t\t[global]\nq: A factor of p-1, typically 160-bits\t\t[global]\na: Choose an a such that, a^q = 1 mod p\t\t[global]\nv: Compute v = a^(-s) mod q \t\t\t[public key]\ns: 0 < s < q \t\t\t\t\t[secret]\n\nSigning: \n1) Choose a random r, 0 < r < q\n2) Compute x = a^r mod p\n3) Concatenate e = H(M||x), where M is the message and H is a hash function\n4) Compute y = (r + se) mod q\nSend Message M with Signature (e, y)\n\nVerifying: \n1) Compute x' = a^(y) * v^(e) mod p\n2) Check if e = H(M||x'), if true, message is verified\n\n\t \n\t");
         jTextArea16.setWrapStyleWord(true);
         jScrollPane10.setViewportView(jTextArea16);
 
@@ -3573,7 +3573,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SchnorrDescriptionLayout.setVerticalGroup(
             SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                .addContainerGap(364, Short.MAX_VALUE)
+                .addContainerGap(33, Short.MAX_VALUE)
                 .addComponent(RSASigIntro3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
