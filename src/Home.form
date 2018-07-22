@@ -4382,8 +4382,8 @@
                           <Component id="FSHelp" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="CDHelp" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="53" max="32767" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="243" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="284" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="FDPB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -4454,7 +4454,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="FSHelp">
               <Properties>
-                <Property name="text" type="java.lang.String" value="For information on confusion and diffusion in Feistel Structures click"/>
+                <Property name="text" type="java.lang.String" value="For information on confusion and diffusion in Feistel Structures go"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="CDHelp">

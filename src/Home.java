@@ -2954,7 +2954,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        FSHelp.setText("For information on confusion and diffusion in Feistel Structures click");
+        FSHelp.setText("For information on confusion and diffusion in Feistel Structures go");
 
         CDHelp.setBackground(new java.awt.Color(77, 132, 155));
         CDHelp.setForeground(new java.awt.Color(255, 255, 255));
@@ -2997,8 +2997,8 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(FeistelDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(FSHelp)
                     .addComponent(CDHelp))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 284, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FDPB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)

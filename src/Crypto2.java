@@ -335,7 +335,7 @@ public class Crypto2 extends javax.swing.JFrame {
         RSASigDes1 = new javax.swing.JButton();
         RSASigQ1 = new javax.swing.JButton();
         SchnorrDescription = new javax.swing.JPanel();
-        RSASigIntro3 = new javax.swing.JLabel();
+        SchnorrIntro = new javax.swing.JLabel();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTextArea16 = new javax.swing.JTextArea();
         Theme__7 = new javax.swing.JLabel();
@@ -343,6 +343,11 @@ public class Crypto2 extends javax.swing.JFrame {
         SchnorrPanel = new javax.swing.JPanel();
         SigningAMessage2 = new javax.swing.JLabel();
         SchnorrBack = new javax.swing.JButton();
+        PostQuantum = new javax.swing.JPanel();
+        SchnorrIntro1 = new javax.swing.JLabel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jTextArea17 = new javax.swing.JTextArea();
+        Theme__8 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         DigitalSignatures = new javax.swing.JMenu();
         RSASignature = new javax.swing.JMenuItem();
@@ -360,6 +365,8 @@ public class Crypto2 extends javax.swing.JFrame {
         PrivateKey = new javax.swing.JMenu();
         Blowfish = new javax.swing.JMenuItem();
         AES = new javax.swing.JMenuItem();
+        Misc = new javax.swing.JMenu();
+        PQ = new javax.swing.JMenuItem();
         Part1 = new javax.swing.JMenu();
         Return2Home = new javax.swing.JMenuItem();
 
@@ -3518,10 +3525,10 @@ public class Crypto2 extends javax.swing.JFrame {
 
         SchnorrDescription.setBackground(new java.awt.Color(255, 255, 255));
 
-        RSASigIntro3.setBackground(new java.awt.Color(255, 255, 255));
-        RSASigIntro3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        RSASigIntro3.setForeground(new java.awt.Color(48, 87, 120));
-        RSASigIntro3.setText("Schnorr Digital Signature");
+        SchnorrIntro.setBackground(new java.awt.Color(255, 255, 255));
+        SchnorrIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        SchnorrIntro.setForeground(new java.awt.Color(48, 87, 120));
+        SchnorrIntro.setText("Schnorr Digital Signature");
 
         jScrollPane10.setBorder(null);
         jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -3562,7 +3569,7 @@ public class Crypto2 extends javax.swing.JFrame {
                                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
                                 .addGap(239, 239, 239)
-                                .addComponent(RSASigIntro3)))
+                                .addComponent(SchnorrIntro)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
@@ -3574,7 +3581,7 @@ public class Crypto2 extends javax.swing.JFrame {
             SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
                 .addContainerGap(33, Short.MAX_VALUE)
-                .addComponent(RSASigIntro3)
+                .addComponent(SchnorrIntro)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3629,6 +3636,59 @@ public class Crypto2 extends javax.swing.JFrame {
         );
 
         MainPanel.add(SchnorrPanel, "card20");
+
+        PostQuantum.setBackground(new java.awt.Color(255, 255, 255));
+
+        SchnorrIntro1.setBackground(new java.awt.Color(255, 255, 255));
+        SchnorrIntro1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        SchnorrIntro1.setForeground(new java.awt.Color(48, 87, 120));
+        SchnorrIntro1.setText("Post-Quantum Cryptography");
+
+        jScrollPane11.setBorder(null);
+        jScrollPane11.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane11.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea17.setColumns(20);
+        jTextArea17.setFont(new java.awt.Font("Courier", 0, 14)); // NOI18N
+        jTextArea17.setLineWrap(true);
+        jTextArea17.setRows(5);
+        jTextArea17.setText("Two main algorithms associated with Post-Quantum Cryptography:\n\n1) Shor's Algorithm: Named after Peter Shor, it is an algorithm that finds prime factors of a given number. It runs in polynomial time. \n\n2) Grover's Algorithm: Named after Lov Grover, it is an algorithm that finds, with high probability, the unique input to a black box that produced a particular output value, using just O(√N) evaluations. \n\nCurrent popular cryptographic algorithms use the integer factorization problem, the discrete logarithm problem or the elliptc-curve discrete logarithm problem. However, a quantum computer running Shor's algorithm would break these problems. \n\nNot resistant to Quantum Computing:\n* Public Key Encryption (e.g RSA, ECDSA, DSA) \n* Key Exchanges using Diffie-Hellman \n\nResitant to Quantum Computing: \n* Hash-based signatures \n*");
+        jTextArea17.setWrapStyleWord(true);
+        jScrollPane11.setViewportView(jTextArea17);
+
+        Theme__8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        javax.swing.GroupLayout PostQuantumLayout = new javax.swing.GroupLayout(PostQuantum);
+        PostQuantum.setLayout(PostQuantumLayout);
+        PostQuantumLayout.setHorizontalGroup(
+            PostQuantumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PostQuantumLayout.createSequentialGroup()
+                .addGroup(PostQuantumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PostQuantumLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(Theme__8))
+                    .addGroup(PostQuantumLayout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(PostQuantumLayout.createSequentialGroup()
+                .addGap(209, 209, 209)
+                .addComponent(SchnorrIntro1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        PostQuantumLayout.setVerticalGroup(
+            PostQuantumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PostQuantumLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(SchnorrIntro1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(Theme__8, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        MainPanel.add(PostQuantum, "card44");
 
         DigitalSignatures.setText("Digital Signatures");
 
@@ -3738,7 +3798,24 @@ public class Crypto2 extends javax.swing.JFrame {
 
         jMenuBar1.add(PrivateKey);
 
-        Part1.setText("Part One");
+        Misc.setText("Misc.");
+        Misc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MiscActionPerformed(evt);
+            }
+        });
+
+        PQ.setText("Post Quantum");
+        PQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PQActionPerformed(evt);
+            }
+        });
+        Misc.add(PQ);
+
+        jMenuBar1.add(Misc);
+
+        Part1.setText("Part 1");
         Part1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Part1ActionPerformed(evt);
@@ -4745,6 +4822,20 @@ public class Crypto2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_BFB2ActionPerformed
 
+    private void MiscActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MiscActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MiscActionPerformed
+
+    private void PQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PQActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(PostQuantum);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_PQActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -4923,7 +5014,10 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel MainPanel;
     private javax.swing.JLabel Message;
     private javax.swing.JLabel Message1;
+    private javax.swing.JMenu Misc;
+    private javax.swing.JMenuItem PQ;
     private javax.swing.JMenu Part1;
+    private javax.swing.JPanel PostQuantum;
     private javax.swing.JMenu PrivateKey;
     private javax.swing.JLabel Project;
     private javax.swing.JMenu PublicKey;
@@ -4956,7 +5050,6 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel RSASigIntro;
     private javax.swing.JLabel RSASigIntro1;
     private javax.swing.JLabel RSASigIntro2;
-    private javax.swing.JLabel RSASigIntro3;
     private javax.swing.JButton RSASigQ;
     private javax.swing.JButton RSASigQ1;
     private javax.swing.JMenuItem RSASignature;
@@ -5008,6 +5101,8 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JMenuItem Schnorr;
     private javax.swing.JButton SchnorrBack;
     private javax.swing.JPanel SchnorrDescription;
+    private javax.swing.JLabel SchnorrIntro;
+    private javax.swing.JLabel SchnorrIntro1;
     private javax.swing.JPanel SchnorrPanel;
     private javax.swing.JPanel SchnorrPanelWelcome;
     private javax.swing.JButton Schnorr_Return;
@@ -5043,6 +5138,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel Theme__5;
     private javax.swing.JLabel Theme__6;
     private javax.swing.JLabel Theme__7;
+    private javax.swing.JLabel Theme__8;
     private javax.swing.JLabel ValidateMessage;
     private javax.swing.JButton Verify_Submit;
     private javax.swing.JLabel Welcome;
@@ -5077,6 +5173,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
@@ -5089,6 +5186,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea11;
     private javax.swing.JTextArea jTextArea15;
     private javax.swing.JTextArea jTextArea16;
+    private javax.swing.JTextArea jTextArea17;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea27;
     private javax.swing.JTextArea jTextArea28;
