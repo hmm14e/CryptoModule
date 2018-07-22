@@ -5915,9 +5915,9 @@
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                       <Component id="SchnorrIntro1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="27" max="32767" attributes="0"/>
-                      <Component id="jScrollPane11" min="-2" pref="323" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                      <Component id="Theme__8" min="-2" pref="288" max="-2" attributes="0"/>
+                      <Component id="jScrollPane11" min="-2" pref="360" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="Theme__8" min="-2" pref="231" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -5959,7 +5959,7 @@
                     </Property>
                     <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Two main algorithms associated with Post-Quantum Cryptography:&#xa;&#xa;1) Shor&apos;s Algorithm: Named after Peter Shor, it is an algorithm that finds prime factors of a given number. It runs in polynomial time. &#xa;&#xa;2) Grover&apos;s Algorithm: Named after Lov Grover, it is an algorithm that finds, with high probability, the unique input to a black box that produced a particular output value, using just O(&#x221a;N) evaluations. &#xa;&#xa;Current popular cryptographic algorithms use the integer factorization problem, the discrete logarithm problem or the elliptc-curve discrete logarithm problem. However, a quantum computer running Shor&apos;s algorithm would break these problems. &#xa;&#xa;Not resistant to Quantum Computing:&#xa;* Public Key Encryption (e.g RSA, ECDSA, DSA) &#xa;* Key Exchanges using Diffie-Hellman &#xa;&#xa;Resitant to Quantum Computing: &#xa;* Hash-based signatures &#xa;*"/>
+                    <Property name="text" type="java.lang.String" value="Two main algorithms associated with Post-Quantum Cryptography:&#xa;&#xa;1) Shor&apos;s Algorithm: Named after Peter Shor, it is an algorithm that finds prime factors of a given number. It runs in polynomial time. &#xa;&#xa;2) Grover&apos;s Algorithm: Named after Lov Grover, it is an algorithm that finds, with high probability, the unique input to a black box that produced a particular output value, using just O(&#x221a;N) evaluations. &#xa;&#xa;Current popular cryptographic algorithms use the integer factorization problem, the discrete logarithm problem or the elliptc-curve discrete logarithm problem. However, a quantum computer running Shor&apos;s algorithm would break these problems. &#xa;&#xa;Not resistant to Quantum Computing:&#xa;* Public Key Encryption (e.g RSA, ECDSA &amp; DSA) &#xa;* Public Key Exchanges (e.g Diffie-Hellman and ECDH)&#xa;&#xa;Resitant to Quantum Computing: &#xa;* Hash-based signatures (Output should be extended) &#xa;* Symmetric Key Encryption (Key length should be doubled according to Grover)&#xa;"/>
                     <Property name="wrapStyleWord" type="boolean" value="true"/>
                   </Properties>
                 </Component>
