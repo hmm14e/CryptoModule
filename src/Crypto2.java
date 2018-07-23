@@ -70,6 +70,18 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea28 = new javax.swing.JTextArea();
         ThemePicture24 = new javax.swing.JLabel();
         AESBack = new javax.swing.JButton();
+        AESPanel = new javax.swing.JPanel();
+        AESTitle = new javax.swing.JLabel();
+        AESReturn = new javax.swing.JButton();
+        FourSteps = new javax.swing.JLabel();
+        Instructionss = new javax.swing.JLabel();
+        Theme0 = new javax.swing.JLabel();
+        AES1 = new javax.swing.JButton();
+        AES2 = new javax.swing.JButton();
+        AES3 = new javax.swing.JButton();
+        AES4 = new javax.swing.JButton();
+        AESAnswer = new javax.swing.JTextField();
+        AESEnter = new javax.swing.JButton();
         RSAPanelWelcome = new javax.swing.JPanel();
         RSAIntro = new javax.swing.JLabel();
         ThemePicture13 = new javax.swing.JLabel();
@@ -129,6 +141,12 @@ public class Crypto2 extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         ThemePicture27 = new javax.swing.JLabel();
         ECCR = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea12 = new javax.swing.JTextArea();
+        ECC1 = new javax.swing.JButton();
+        ECC2 = new javax.swing.JButton();
+        ECC3 = new javax.swing.JButton();
+        ECC4 = new javax.swing.JButton();
         ECCPanelWelcome = new javax.swing.JPanel();
         ECCIntro = new javax.swing.JLabel();
         ThemePicture15 = new javax.swing.JLabel();
@@ -344,18 +362,6 @@ public class Crypto2 extends javax.swing.JFrame {
         jScrollPane11 = new javax.swing.JScrollPane();
         jTextArea17 = new javax.swing.JTextArea();
         Theme__8 = new javax.swing.JLabel();
-        AESPanel = new javax.swing.JPanel();
-        AESTitle = new javax.swing.JLabel();
-        AESReturn = new javax.swing.JButton();
-        FourSteps = new javax.swing.JLabel();
-        Instructionss = new javax.swing.JLabel();
-        Theme0 = new javax.swing.JLabel();
-        AES1 = new javax.swing.JButton();
-        AES2 = new javax.swing.JButton();
-        AES3 = new javax.swing.JButton();
-        AES4 = new javax.swing.JButton();
-        AESAnswer = new javax.swing.JTextField();
-        AESEnter = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         DigitalSignatures = new javax.swing.JMenu();
         RSASignature = new javax.swing.JMenuItem();
@@ -773,6 +779,147 @@ public class Crypto2 extends javax.swing.JFrame {
         );
 
         MainPanel.add(AESDescription, "card87");
+
+        AESPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        AESTitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        AESTitle.setForeground(new java.awt.Color(48, 87, 120));
+        AESTitle.setText("AES");
+
+        AESReturn.setBackground(new java.awt.Color(77, 132, 155));
+        AESReturn.setForeground(new java.awt.Color(255, 255, 255));
+        AESReturn.setText("Return");
+        AESReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AESReturnActionPerformed(evt);
+            }
+        });
+
+        FourSteps.setFont(new java.awt.Font("Lucida Grande", 0, 20)); // NOI18N
+        FourSteps.setText("There are 4 different processing steps that occur in AES ");
+
+        Instructionss.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        Instructionss.setText("<html>Select the step that <u>doesn't</u> occur in AES. Then, enter the correct processing step.");
+
+        Theme0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        AES1.setBackground(new java.awt.Color(48, 87, 120));
+        AES1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        AES1.setForeground(new java.awt.Color(255, 255, 255));
+        AES1.setText("Mix Columns");
+        AES1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AES1ActionPerformed(evt);
+            }
+        });
+
+        AES2.setBackground(new java.awt.Color(48, 87, 120));
+        AES2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        AES2.setForeground(new java.awt.Color(255, 255, 255));
+        AES2.setText("Shift Key");
+        AES2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AES2ActionPerformed(evt);
+            }
+        });
+
+        AES3.setBackground(new java.awt.Color(48, 87, 120));
+        AES3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        AES3.setForeground(new java.awt.Color(255, 255, 255));
+        AES3.setText("Add Round Key");
+        AES3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AES3ActionPerformed(evt);
+            }
+        });
+
+        AES4.setBackground(new java.awt.Color(48, 87, 120));
+        AES4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        AES4.setForeground(new java.awt.Color(255, 255, 255));
+        AES4.setText("Substitute Bytes");
+        AES4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AES4ActionPerformed(evt);
+            }
+        });
+
+        AESAnswer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AESAnswerActionPerformed(evt);
+            }
+        });
+
+        AESEnter.setBackground(new java.awt.Color(77, 132, 155));
+        AESEnter.setForeground(new java.awt.Color(255, 255, 255));
+        AESEnter.setText("Enter");
+        AESEnter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AESEnterActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AESPanelLayout = new javax.swing.GroupLayout(AESPanel);
+        AESPanel.setLayout(AESPanelLayout);
+        AESPanelLayout.setHorizontalGroup(
+            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AESPanelLayout.createSequentialGroup()
+                .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Theme0)
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(375, 375, 375)
+                        .addComponent(AESTitle))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(130, 130, 130)
+                        .addComponent(FourSteps, javax.swing.GroupLayout.PREFERRED_SIZE, 553, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(333, 333, 333)
+                        .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AES4)
+                            .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(AES3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(AES1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(AES2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(276, 276, 276)
+                        .addComponent(AESAnswer, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(AESEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addComponent(Instructionss, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        AESPanelLayout.setVerticalGroup(
+            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AESPanelLayout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addComponent(AESTitle)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(FourSteps, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Instructionss, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addComponent(AES1)
+                .addGap(18, 18, 18)
+                .addComponent(AES2)
+                .addGap(18, 18, 18)
+                .addComponent(AES3)
+                .addGap(18, 18, 18)
+                .addComponent(AES4)
+                .addGap(18, 18, 18)
+                .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AESAnswer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AESEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Theme0))
+        );
+
+        MainPanel.add(AESPanel, "card38");
 
         RSAPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -1369,6 +1516,49 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
+        jScrollPane2.setBorder(null);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea12.setColumns(20);
+        jTextArea12.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jTextArea12.setLineWrap(true);
+        jTextArea12.setRows(5);
+        jTextArea12.setText("ECC provides minimal overhead because of the low computing power necessary for encryption. What kind of platform is ECC commonly used with? ");
+        jTextArea12.setWrapStyleWord(true);
+        jScrollPane2.setViewportView(jTextArea12);
+
+        ECC1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        ECC1.setText("Mobile Phones");
+        ECC1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECC1ActionPerformed(evt);
+            }
+        });
+
+        ECC2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        ECC2.setText("TLS/SSL");
+        ECC2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECC2ActionPerformed(evt);
+            }
+        });
+
+        ECC3.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        ECC3.setText("Hashing");
+        ECC3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECC3ActionPerformed(evt);
+            }
+        });
+
+        ECC4.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        ECC4.setText("Digital Signatures");
+        ECC4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ECC4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ECCPanelLayout = new javax.swing.GroupLayout(ECCPanel);
         ECCPanel.setLayout(ECCPanelLayout);
         ECCPanelLayout.setHorizontalGroup(
@@ -1377,22 +1567,42 @@ public class Crypto2 extends javax.swing.JFrame {
             .addGroup(ECCPanelLayout.createSequentialGroup()
                 .addGroup(ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ECCPanelLayout.createSequentialGroup()
-                        .addGap(404, 404, 404)
+                        .addGap(32, 32, 32)
+                        .addComponent(ECCR))
+                    .addGroup(ECCPanelLayout.createSequentialGroup()
+                        .addGap(116, 116, 116)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ECCPanelLayout.createSequentialGroup()
+                        .addGap(395, 395, 395)
                         .addComponent(jLabel6))
                     .addGroup(ECCPanelLayout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(ECCR)))
+                        .addGap(342, 342, 342)
+                        .addGroup(ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(ECC1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ECC3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ECC4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ECC2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         ECCPanelLayout.setVerticalGroup(
             ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ECCPanelLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(23, 23, 23)
                 .addComponent(jLabel6)
-                .addGap(424, 424, 424)
+                .addGap(33, 33, 33)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ECC1)
+                .addGap(18, 18, 18)
+                .addComponent(ECC2)
+                .addGap(18, 18, 18)
+                .addComponent(ECC3)
+                .addGap(18, 18, 18)
+                .addComponent(ECC4)
+                .addGap(124, 124, 124)
                 .addComponent(ECCR, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ThemePicture27, javax.swing.GroupLayout.PREFERRED_SIZE, 215, Short.MAX_VALUE))
+                .addComponent(ThemePicture27, javax.swing.GroupLayout.PREFERRED_SIZE, 218, Short.MAX_VALUE))
         );
 
         MainPanel.add(ECCPanel, "card82");
@@ -3654,145 +3864,6 @@ public class Crypto2 extends javax.swing.JFrame {
 
         MainPanel.add(PostQuantum, "card44");
 
-        AESPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        AESTitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        AESTitle.setForeground(new java.awt.Color(48, 87, 120));
-        AESTitle.setText("AES");
-
-        AESReturn.setBackground(new java.awt.Color(77, 132, 155));
-        AESReturn.setForeground(new java.awt.Color(255, 255, 255));
-        AESReturn.setText("Return");
-        AESReturn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AESReturnActionPerformed(evt);
-            }
-        });
-
-        FourSteps.setFont(new java.awt.Font("Lucida Grande", 0, 20)); // NOI18N
-        FourSteps.setText("There are 4 different processing steps that occur in AES ");
-
-        Instructionss.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        Instructionss.setText("<html>Select the step that <u>doesn't</u> occur in AES. Then, enter the correct processing step.");
-
-        Theme0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        AES1.setBackground(new java.awt.Color(48, 87, 120));
-        AES1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        AES1.setForeground(new java.awt.Color(255, 255, 255));
-        AES1.setText("Mix Columns");
-        AES1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AES1ActionPerformed(evt);
-            }
-        });
-
-        AES2.setBackground(new java.awt.Color(48, 87, 120));
-        AES2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        AES2.setForeground(new java.awt.Color(255, 255, 255));
-        AES2.setText("Shift Key");
-        AES2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AES2ActionPerformed(evt);
-            }
-        });
-
-        AES3.setBackground(new java.awt.Color(48, 87, 120));
-        AES3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        AES3.setForeground(new java.awt.Color(255, 255, 255));
-        AES3.setText("Add Round Key");
-        AES3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AES3ActionPerformed(evt);
-            }
-        });
-
-        AES4.setBackground(new java.awt.Color(48, 87, 120));
-        AES4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        AES4.setForeground(new java.awt.Color(255, 255, 255));
-        AES4.setText("Substitute Bytes");
-        AES4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AES4ActionPerformed(evt);
-            }
-        });
-
-        AESAnswer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AESAnswerActionPerformed(evt);
-            }
-        });
-
-        AESEnter.setBackground(new java.awt.Color(77, 132, 155));
-        AESEnter.setForeground(new java.awt.Color(255, 255, 255));
-        AESEnter.setText("Enter");
-        AESEnter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AESEnterActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout AESPanelLayout = new javax.swing.GroupLayout(AESPanel);
-        AESPanel.setLayout(AESPanelLayout);
-        AESPanelLayout.setHorizontalGroup(
-            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AESPanelLayout.createSequentialGroup()
-                .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Theme0)
-                    .addGroup(AESPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AESPanelLayout.createSequentialGroup()
-                        .addGap(375, 375, 375)
-                        .addComponent(AESTitle))
-                    .addGroup(AESPanelLayout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addComponent(FourSteps, javax.swing.GroupLayout.PREFERRED_SIZE, 553, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AESPanelLayout.createSequentialGroup()
-                        .addGap(333, 333, 333)
-                        .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AES4)
-                            .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(AES3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(AES1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(AES2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(AESPanelLayout.createSequentialGroup()
-                        .addGap(276, 276, 276)
-                        .addComponent(AESAnswer, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35)
-                        .addComponent(AESEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(AESPanelLayout.createSequentialGroup()
-                        .addGap(69, 69, 69)
-                        .addComponent(Instructionss, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        AESPanelLayout.setVerticalGroup(
-            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AESPanelLayout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(AESTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(FourSteps, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Instructionss, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                .addComponent(AES1)
-                .addGap(18, 18, 18)
-                .addComponent(AES2)
-                .addGap(18, 18, 18)
-                .addComponent(AES3)
-                .addGap(18, 18, 18)
-                .addComponent(AES4)
-                .addGap(18, 18, 18)
-                .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AESAnswer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AESEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Theme0))
-        );
-
         DigitalSignatures.setText("Digital Signatures");
 
         RSASignature.setText("RSA Signature");
@@ -3941,22 +4012,13 @@ public class Crypto2 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(AESPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 885, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(MainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 885, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(MainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 885, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(AESPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(12, Short.MAX_VALUE)))
+                .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -4821,16 +4883,6 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_DHBB2ActionPerformed
 
-    private void ECCRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCRActionPerformed
-        MainPanel.removeAll();
-        MainPanel.repaint();
-        MainPanel.revalidate();
-
-        MainPanel.add(ECCPanelWelcome);
-        MainPanel.repaint();
-        MainPanel.revalidate();
-    }//GEN-LAST:event_ECCRActionPerformed
-
     private void Return2HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return2HomeActionPerformed
         this.setVisible(false);
         new Home().setVisible(true);
@@ -4967,13 +5019,39 @@ public class Crypto2 extends javax.swing.JFrame {
     }//GEN-LAST:event_AESAnswerActionPerformed
 
     private void AESEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESEnterActionPerformed
-        String x = AESAnswer.getText().toLowerCase();
+        String answer = AESAnswer.getText().toLowerCase();
         
-        if(x.equals("shift rows"))
-            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        if(answer.equals("shift rows"))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         else
             JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_AESEnterActionPerformed
+
+    private void ECCRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCRActionPerformed
+        MainPanel.removeAll();
+        MainPanel.repaint();
+        MainPanel.revalidate();
+
+        MainPanel.add(ECCPanelWelcome);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_ECCRActionPerformed
+
+    private void ECC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECC2ActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_ECC2ActionPerformed
+
+    private void ECC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECC1ActionPerformed
+        JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+    }//GEN-LAST:event_ECC1ActionPerformed
+
+    private void ECC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECC3ActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_ECC3ActionPerformed
+
+    private void ECC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECC4ActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_ECC4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -5107,6 +5185,10 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JMenu DigitalSignatures;
     private javax.swing.JLabel Directions;
     private javax.swing.JMenuItem ECC;
+    private javax.swing.JButton ECC1;
+    private javax.swing.JButton ECC2;
+    private javax.swing.JButton ECC3;
+    private javax.swing.JButton ECC4;
     private javax.swing.JButton ECCDes;
     private javax.swing.JPanel ECCDescription;
     private javax.swing.JLabel ECCIntro;
@@ -5321,6 +5403,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
@@ -5331,6 +5414,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;
+    private javax.swing.JTextArea jTextArea12;
     private javax.swing.JTextArea jTextArea15;
     private javax.swing.JTextArea jTextArea16;
     private javax.swing.JTextArea jTextArea17;
