@@ -803,7 +803,7 @@ public class Crypto2 extends javax.swing.JFrame {
 
         Theme0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        AES1.setBackground(new java.awt.Color(48, 87, 120));
+        AES1.setBackground(new java.awt.Color(77, 132, 155));
         AES1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         AES1.setForeground(new java.awt.Color(255, 255, 255));
         AES1.setText("Mix Columns");
@@ -813,7 +813,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        AES2.setBackground(new java.awt.Color(48, 87, 120));
+        AES2.setBackground(new java.awt.Color(77, 132, 155));
         AES2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         AES2.setForeground(new java.awt.Color(255, 255, 255));
         AES2.setText("Shift Key");
@@ -823,7 +823,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        AES3.setBackground(new java.awt.Color(48, 87, 120));
+        AES3.setBackground(new java.awt.Color(77, 132, 155));
         AES3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         AES3.setForeground(new java.awt.Color(255, 255, 255));
         AES3.setText("Add Round Key");
@@ -833,7 +833,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        AES4.setBackground(new java.awt.Color(48, 87, 120));
+        AES4.setBackground(new java.awt.Color(77, 132, 155));
         AES4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         AES4.setForeground(new java.awt.Color(255, 255, 255));
         AES4.setText("Substitute Bytes");
