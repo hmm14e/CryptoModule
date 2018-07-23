@@ -70,10 +70,6 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea28 = new javax.swing.JTextArea();
         ThemePicture24 = new javax.swing.JLabel();
         AESBack = new javax.swing.JButton();
-        AESPanel = new javax.swing.JPanel();
-        AESTitle = new javax.swing.JLabel();
-        AESReturn = new javax.swing.JButton();
-        jLabel32 = new javax.swing.JLabel();
         RSAPanelWelcome = new javax.swing.JPanel();
         RSAIntro = new javax.swing.JLabel();
         ThemePicture13 = new javax.swing.JLabel();
@@ -348,6 +344,18 @@ public class Crypto2 extends javax.swing.JFrame {
         jScrollPane11 = new javax.swing.JScrollPane();
         jTextArea17 = new javax.swing.JTextArea();
         Theme__8 = new javax.swing.JLabel();
+        AESPanel = new javax.swing.JPanel();
+        AESTitle = new javax.swing.JLabel();
+        AESReturn = new javax.swing.JButton();
+        FourSteps = new javax.swing.JLabel();
+        Instructionss = new javax.swing.JLabel();
+        Theme0 = new javax.swing.JLabel();
+        AES1 = new javax.swing.JButton();
+        AES2 = new javax.swing.JButton();
+        AES3 = new javax.swing.JButton();
+        AES4 = new javax.swing.JButton();
+        AESAnswer = new javax.swing.JTextField();
+        AESEnter = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         DigitalSignatures = new javax.swing.JMenu();
         RSASignature = new javax.swing.JMenuItem();
@@ -717,7 +725,7 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea28.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
         jTextArea28.setLineWrap(true);
         jTextArea28.setRows(5);
-        jTextArea28.setText("- AES was created by Vincent Rijmen and Joan Daemen who submitted a proposal to NIST during the AES selection process. \n- AES uses 10, 12 or 14 rounds for the 128, 192 and 256 bit key size, respectively. \n- AES is currently standard for the U.S government\n- It is a symmetric-key algorithm \n- While there have been proposals for AES attacks that are computationally faster than a brute-force attack, they are not computationally feasible.");
+        jTextArea28.setText("- AES was created by Vincent Rijmen and Joan Daemen who submitted a proposal to NIST during the AES selection process. \n- AES uses 10, 12 or 14 rounds for the 128, 192 and 256 bit key size, respectively. \n- It use a block size of 128 bits\n- AES is the current standard for the U.S government\n- It is a symmetric-key algorithm \n- While there have been proposals for AES attacks that are computationally faster than a brute-force attack, they are not computationally feasible.");
         jTextArea28.setWrapStyleWord(true);
         jScrollPane7.setViewportView(jTextArea28);
 
@@ -765,50 +773,6 @@ public class Crypto2 extends javax.swing.JFrame {
         );
 
         MainPanel.add(AESDescription, "card87");
-
-        AESPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        AESTitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        AESTitle.setForeground(new java.awt.Color(48, 87, 120));
-        AESTitle.setText("AES");
-
-        AESReturn.setBackground(new java.awt.Color(77, 132, 155));
-        AESReturn.setForeground(new java.awt.Color(255, 255, 255));
-        AESReturn.setText("Return");
-        AESReturn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AESReturnActionPerformed(evt);
-            }
-        });
-
-        jLabel32.setBackground(new java.awt.Color(77, 132, 155));
-        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
-
-        javax.swing.GroupLayout AESPanelLayout = new javax.swing.GroupLayout(AESPanel);
-        AESPanel.setLayout(AESPanelLayout);
-        AESPanelLayout.setHorizontalGroup(
-            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AESPanelLayout.createSequentialGroup()
-                .addGap(416, 416, 416)
-                .addComponent(AESTitle))
-            .addComponent(jLabel32)
-            .addGroup(AESPanelLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        AESPanelLayout.setVerticalGroup(
-            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AESPanelLayout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(AESTitle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(jLabel32))
-        );
-
-        MainPanel.add(AESPanel, "card38");
 
         RSAPanelWelcome.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -3652,7 +3616,7 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea17.setFont(new java.awt.Font("Courier", 0, 14)); // NOI18N
         jTextArea17.setLineWrap(true);
         jTextArea17.setRows(5);
-        jTextArea17.setText("Two main algorithms associated with Post-Quantum Cryptography:\n\n1) Shor's Algorithm: Named after Peter Shor, it is an algorithm that finds prime factors of a given number. It runs in polynomial time. \n\n2) Grover's Algorithm: Named after Lov Grover, it is an algorithm that finds, with high probability, the unique input to a black box that produced a particular output value, using just O(√N) evaluations. \n\nCurrent popular cryptographic algorithms use the integer factorization problem, the discrete logarithm problem or the elliptc-curve discrete logarithm problem. However, a quantum computer running Shor's algorithm would break these problems. \n\nNot resistant to Quantum Computing:\n* Public Key Encryption (e.g RSA, ECDSA & DSA) \n* Public Key Exchanges (e.g Diffie-Hellman and ECDH)\n\nResitant to Quantum Computing: \n* Hash-based signatures (Output should be extended) \n* Symmetric Key Encryption (Key length should be doubled according to Grover)\n");
+        jTextArea17.setText("Two main algorithms associated with Post-Quantum Cryptography:\n\n1) Shor's Algorithm: Named after Peter Shor, it is an algorithm that finds prime factors of a given number. It runs in polynomial time. \n\n2) Grover's Algorithm: Named after Lov Grover, it is an algorithm that finds, with high probability, the unique input to a black box that produced a particular output value, using just O(√N) evaluations. \n\nCurrent popular cryptographic algorithms use the integer factorization problem, the discrete logarithm problem or the elliptc-curve discrete logarithm problem. However, a quantum computer running Shor's algorithm would break these problems. \n\nNot resistant to Quantum Computing:\n* Public Key Encryption (e.g. RSA, ECDSA & DSA) \n* Public Key Exchanges (e.g. Diffie-Hellman and ECDH)\n\nResitant to Quantum Computing: \n* Hash-based signatures (Output should be extended. e.g. SHA2 and SHA3) \n* Symmetric Key Encryption (Key length should be doubled according to Grover)\n* MAC (GMAC & Poly1305)\n");
         jTextArea17.setWrapStyleWord(true);
         jScrollPane11.setViewportView(jTextArea17);
 
@@ -3689,6 +3653,145 @@ public class Crypto2 extends javax.swing.JFrame {
         );
 
         MainPanel.add(PostQuantum, "card44");
+
+        AESPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        AESTitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        AESTitle.setForeground(new java.awt.Color(48, 87, 120));
+        AESTitle.setText("AES");
+
+        AESReturn.setBackground(new java.awt.Color(77, 132, 155));
+        AESReturn.setForeground(new java.awt.Color(255, 255, 255));
+        AESReturn.setText("Return");
+        AESReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AESReturnActionPerformed(evt);
+            }
+        });
+
+        FourSteps.setFont(new java.awt.Font("Lucida Grande", 0, 20)); // NOI18N
+        FourSteps.setText("There are 4 different processing steps that occur in AES ");
+
+        Instructionss.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        Instructionss.setText("<html>Select the step that <u>doesn't</u> occur in AES. Then, enter the correct processing step.");
+
+        Theme0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
+        AES1.setBackground(new java.awt.Color(48, 87, 120));
+        AES1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        AES1.setForeground(new java.awt.Color(255, 255, 255));
+        AES1.setText("Mix Columns");
+        AES1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AES1ActionPerformed(evt);
+            }
+        });
+
+        AES2.setBackground(new java.awt.Color(48, 87, 120));
+        AES2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        AES2.setForeground(new java.awt.Color(255, 255, 255));
+        AES2.setText("Shift Key");
+        AES2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AES2ActionPerformed(evt);
+            }
+        });
+
+        AES3.setBackground(new java.awt.Color(48, 87, 120));
+        AES3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        AES3.setForeground(new java.awt.Color(255, 255, 255));
+        AES3.setText("Add Round Key");
+        AES3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AES3ActionPerformed(evt);
+            }
+        });
+
+        AES4.setBackground(new java.awt.Color(48, 87, 120));
+        AES4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        AES4.setForeground(new java.awt.Color(255, 255, 255));
+        AES4.setText("Substitute Bytes");
+        AES4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AES4ActionPerformed(evt);
+            }
+        });
+
+        AESAnswer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AESAnswerActionPerformed(evt);
+            }
+        });
+
+        AESEnter.setBackground(new java.awt.Color(77, 132, 155));
+        AESEnter.setForeground(new java.awt.Color(255, 255, 255));
+        AESEnter.setText("Enter");
+        AESEnter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AESEnterActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AESPanelLayout = new javax.swing.GroupLayout(AESPanel);
+        AESPanel.setLayout(AESPanelLayout);
+        AESPanelLayout.setHorizontalGroup(
+            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AESPanelLayout.createSequentialGroup()
+                .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Theme0)
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(375, 375, 375)
+                        .addComponent(AESTitle))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(130, 130, 130)
+                        .addComponent(FourSteps, javax.swing.GroupLayout.PREFERRED_SIZE, 553, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(333, 333, 333)
+                        .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AES4)
+                            .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(AES3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(AES1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(AES2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(276, 276, 276)
+                        .addComponent(AESAnswer, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(AESEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AESPanelLayout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addComponent(Instructionss, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        AESPanelLayout.setVerticalGroup(
+            AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AESPanelLayout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addComponent(AESTitle)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(FourSteps, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Instructionss, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addComponent(AES1)
+                .addGap(18, 18, 18)
+                .addComponent(AES2)
+                .addGap(18, 18, 18)
+                .addComponent(AES3)
+                .addGap(18, 18, 18)
+                .addComponent(AES4)
+                .addGap(18, 18, 18)
+                .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AESAnswer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AESEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Theme0))
+        );
 
         DigitalSignatures.setText("Digital Signatures");
 
@@ -3838,15 +3941,22 @@ public class Crypto2 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 885, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(AESPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 885, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(MainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 885, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(AESPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(MainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createSequentialGroup()
+                    .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(12, Short.MAX_VALUE)))
         );
 
         pack();
@@ -4732,7 +4842,7 @@ public class Crypto2 extends javax.swing.JFrame {
         if(hold.equals("2^128"))
             JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         else
-            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
 
     }//GEN-LAST:event_MD5B1ActionPerformed
 
@@ -4742,7 +4852,7 @@ public class Crypto2 extends javax.swing.JFrame {
         if(hold.equals("superman"))
             JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         else
-            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_MD5B2ActionPerformed
 
     private void MD5B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MD5B3ActionPerformed
@@ -4751,7 +4861,7 @@ public class Crypto2 extends javax.swing.JFrame {
         if(hold.equals("n"))
             JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         else
-            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_MD5B3ActionPerformed
 
     private void ECCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCActionPerformed
@@ -4770,7 +4880,7 @@ public class Crypto2 extends javax.swing.JFrame {
         if(hold.equals("n"))
             JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         else
-            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_DHB1ActionPerformed
 
     private void RSAB1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAB1_1ActionPerformed
@@ -4779,7 +4889,7 @@ public class Crypto2 extends javax.swing.JFrame {
         if(hold.equals("(33,3)"))
             JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         else
-            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);        // TODO add your handling code here:
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);        // TODO add your handling code here:
     }//GEN-LAST:event_RSAB1_1ActionPerformed
 
     private void RSAB1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAB1_2ActionPerformed
@@ -4788,7 +4898,7 @@ public class Crypto2 extends javax.swing.JFrame {
         if(hold.equals("13"))
             JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         else
-            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_RSAB1_2ActionPerformed
 
     private void RSAB1_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RSAB1_3ActionPerformed
@@ -4797,7 +4907,7 @@ public class Crypto2 extends javax.swing.JFrame {
         if(hold.equals("(33,7)"))
             JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         else
-            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_RSAB1_3ActionPerformed
 
     private void BlowFishBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlowFishBActionPerformed
@@ -4808,7 +4918,7 @@ public class Crypto2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         }
         else
-            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_BlowFishBActionPerformed
 
     private void BFB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BFB2ActionPerformed
@@ -4816,10 +4926,10 @@ public class Crypto2 extends javax.swing.JFrame {
         
         if(hold.contains("twofish"))
         {    
-            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
         }
         else
-            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_BFB2ActionPerformed
 
     private void MiscActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MiscActionPerformed
@@ -4835,6 +4945,35 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.repaint();
         MainPanel.revalidate();
     }//GEN-LAST:event_PQActionPerformed
+
+    private void AES4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AES4ActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_AES4ActionPerformed
+
+    private void AES2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AES2ActionPerformed
+        JOptionPane.showMessageDialog(null, "YOU GOT IT!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_AES2ActionPerformed
+
+    private void AES3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AES3ActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_AES3ActionPerformed
+
+    private void AES1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AES1ActionPerformed
+        JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_AES1ActionPerformed
+
+    private void AESAnswerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESAnswerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AESAnswerActionPerformed
+
+    private void AESEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AESEnterActionPerformed
+        String x = AESAnswer.getText().toLowerCase();
+        
+        if(x.equals("shift rows"))
+            JOptionPane.showMessageDialog(null, "Correct!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_AESEnterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4873,9 +5012,15 @@ public class Crypto2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem AES;
+    private javax.swing.JButton AES1;
+    private javax.swing.JButton AES2;
+    private javax.swing.JButton AES3;
+    private javax.swing.JButton AES4;
+    private javax.swing.JTextField AESAnswer;
     private javax.swing.JButton AESBack;
     private javax.swing.JButton AESDes;
     private javax.swing.JPanel AESDescription;
+    private javax.swing.JButton AESEnter;
     private javax.swing.JLabel AESIntro;
     private javax.swing.JPanel AESPanel;
     private javax.swing.JPanel AESPanelWelcome;
@@ -4987,8 +5132,10 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel Former;
     private javax.swing.JLabel Former1;
     private javax.swing.JLabel FormerSHA;
+    private javax.swing.JLabel FourSteps;
     private javax.swing.JMenu Hashing;
     private javax.swing.JLabel Instructions;
+    private javax.swing.JLabel Instructionss;
     private javax.swing.JMenuItem MD5;
     private javax.swing.JTextField MD5A1;
     private javax.swing.JTextField MD5A2;
@@ -5115,6 +5262,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JTextArea Story_TextArea;
     private javax.swing.JTextArea Story_TextArea1;
     private javax.swing.JLabel Theme;
+    private javax.swing.JLabel Theme0;
     private javax.swing.JLabel ThemePicture10;
     private javax.swing.JLabel ThemePicture11;
     private javax.swing.JLabel ThemePicture12;
@@ -5157,7 +5305,6 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
