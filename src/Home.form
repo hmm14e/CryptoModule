@@ -526,7 +526,7 @@
                       <Font name="Lucida Grande" size="14" style="0"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Part 1: &#xa;- Ciphers&#xa;    * Substitution&#xa;   * Block&#xa;   * Stream&#xa;   * Entropy&#xa;- Encryption Modes&#xa;   * ECB&#xa;   * CBC&#xa;   * CTR&#xa;- Authentication&#xa;   * PAP&#xa;   * CHAP&#xa;   * Kerberos&#xa;   * CBC-Mac&#xa;"/>
+                    <Property name="text" type="java.lang.String" value="Part 1: &#xa;- Ciphers&#xa;   * Substitution&#xa;   * Block&#xa;   * Stream&#xa;   * Entropy&#xa;- Encryption Modes&#xa;   * ECB&#xa;   * CBC&#xa;   * CTR&#xa;- Authentication&#xa;   * PAP&#xa;   * CHAP&#xa;   * Kerberos&#xa;   * CBC-Mac&#xa;"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -5349,7 +5349,7 @@
                               <Component id="jButton5" min="-2" pref="29" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="119" max="32767" attributes="0"/>
+                      <EmptySpace pref="100" max="32767" attributes="0"/>
                       <Component id="DESBB2" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel48" min="-2" max="-2" attributes="0"/>

@@ -671,7 +671,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea4.setColumns(20);
         jTextArea4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         jTextArea4.setRows(5);
-        jTextArea4.setText("Part 1: \n- Ciphers\n    * Substitution\n   * Block\n   * Stream\n   * Entropy\n- Encryption Modes\n   * ECB\n   * CBC\n   * CTR\n- Authentication\n   * PAP\n   * CHAP\n   * Kerberos\n   * CBC-Mac\n");
+        jTextArea4.setText("Part 1: \n- Ciphers\n   * Substitution\n   * Block\n   * Stream\n   * Entropy\n- Encryption Modes\n   * ECB\n   * CBC\n   * CTR\n- Authentication\n   * PAP\n   * CHAP\n   * Kerberos\n   * CBC-Mac\n");
         TOC.setViewportView(jTextArea4);
 
         ReturnWelcome.setBackground(new java.awt.Color(77, 132, 155));
@@ -3553,7 +3553,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESDescripPanelLayout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                 .addComponent(DESBB2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel48))
