@@ -259,6 +259,16 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA3Header = new javax.swing.JLabel();
         SHA3Return = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
+        SHA3Q1 = new javax.swing.JLabel();
+        SHA3Q2 = new javax.swing.JLabel();
+        SHA3Q3 = new javax.swing.JLabel();
+        SHA3A1 = new javax.swing.JTextField();
+        SHA3A2 = new javax.swing.JTextField();
+        SHA3A3 = new javax.swing.JTextField();
+        SHA3B1 = new javax.swing.JButton();
+        SHA3B2 = new javax.swing.JButton();
+        SHA3B3 = new javax.swing.JButton();
+        SHA3Hint = new javax.swing.JButton();
         MD5PanelWelcome = new javax.swing.JPanel();
         MD5Intro = new javax.swing.JLabel();
         ThemePicture6 = new javax.swing.JLabel();
@@ -2658,7 +2668,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA3PanelWelcomeLayout.setVerticalGroup(
             SHA3PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHA3PanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(512, Short.MAX_VALUE)
+                .addContainerGap(225, Short.MAX_VALUE)
                 .addComponent(SHA3Intro)
                 .addGap(18, 18, 18)
                 .addGroup(SHA3PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2725,7 +2735,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addComponent(SHADescriptionHeader1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(SHA3Descrip, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 316, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(SHA3Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Theme__6))
@@ -2750,31 +2760,111 @@ public class Crypto2 extends javax.swing.JFrame {
 
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
+        SHA3Q1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        SHA3Q1.setText("1. What constuction is used in SHA-3?");
+
+        SHA3Q2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        SHA3Q2.setText("2. SHA-3 can prevent what types of attacks?");
+
+        SHA3Q3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        SHA3Q3.setText("3. SHA-3 there have been no collisions found (as of 2018). What is a collision in regards to hashing?");
+
+        SHA3B1.setBackground(new java.awt.Color(77, 132, 155));
+        SHA3B1.setForeground(new java.awt.Color(255, 255, 255));
+        SHA3B1.setText("Enter");
+        SHA3B1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA3B1ActionPerformed(evt);
+            }
+        });
+
+        SHA3B2.setBackground(new java.awt.Color(77, 132, 155));
+        SHA3B2.setForeground(new java.awt.Color(255, 255, 255));
+        SHA3B2.setText("Enter");
+        SHA3B2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA3B2ActionPerformed(evt);
+            }
+        });
+
+        SHA3B3.setBackground(new java.awt.Color(77, 132, 155));
+        SHA3B3.setForeground(new java.awt.Color(255, 255, 255));
+        SHA3B3.setText("Enter");
+        SHA3B3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA3B3ActionPerformed(evt);
+            }
+        });
+
+        SHA3Hint.setBackground(new java.awt.Color(77, 132, 155));
+        SHA3Hint.setForeground(new java.awt.Color(255, 255, 255));
+        SHA3Hint.setText(" Hint");
+        SHA3Hint.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SHA3HintActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout SHA3PanelLayout = new javax.swing.GroupLayout(SHA3Panel);
         SHA3Panel.setLayout(SHA3PanelLayout);
         SHA3PanelLayout.setHorizontalGroup(
             SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel23)
             .addGroup(SHA3PanelLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
                 .addGroup(SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SHA3PanelLayout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(SHA3Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(SHA3A3, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(SHA3B3))
                     .addGroup(SHA3PanelLayout.createSequentialGroup()
-                        .addGap(382, 382, 382)
-                        .addComponent(SHA3Header)))
-                .addGap(419, 419, 419))
-            .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(SHA3A2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(SHA3B2))
+                    .addGroup(SHA3PanelLayout.createSequentialGroup()
+                        .addComponent(SHA3A1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(SHA3B1))
+                    .addComponent(SHA3Q1)
+                    .addComponent(SHA3Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(SHA3PanelLayout.createSequentialGroup()
+                        .addComponent(SHA3Q2)
+                        .addGap(18, 18, 18)
+                        .addComponent(SHA3Hint))
+                    .addComponent(SHA3Q3)))
+            .addGroup(SHA3PanelLayout.createSequentialGroup()
+                .addGap(382, 382, 382)
+                .addComponent(SHA3Header))
         );
         SHA3PanelLayout.setVerticalGroup(
             SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHA3PanelLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(SHA3Header, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 604, Short.MAX_VALUE)
+                .addGap(23, 23, 23)
+                .addComponent(SHA3Q1)
+                .addGap(18, 18, 18)
+                .addGroup(SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SHA3A1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SHA3B1))
+                .addGap(29, 29, 29)
+                .addGroup(SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SHA3Q2)
+                    .addComponent(SHA3Hint))
+                .addGap(18, 18, 18)
+                .addGroup(SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SHA3A2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SHA3B2))
+                .addGap(41, 41, 41)
+                .addComponent(SHA3Q3)
+                .addGap(18, 18, 18)
+                .addGroup(SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SHA3A3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SHA3B3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(SHA3Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
-                .addComponent(jLabel23)
-                .addContainerGap())
+                .addGap(56, 56, 56)
+                .addComponent(jLabel23))
         );
 
         MainPanel.add(SHA3Panel, "card11");
@@ -3312,9 +3402,7 @@ public class Crypto2 extends javax.swing.JFrame {
                                 .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(phi_n)
                                     .addComponent(n)
-                                    .addGroup(RSA_Signature_1Layout.createSequentialGroup()
-                                        .addGap(42, 42, 42)
-                                        .addComponent(d)))
+                                    .addComponent(d))
                                 .addGroup(RSA_Signature_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(RSA_Signature_1Layout.createSequentialGroup()
                                         .addGap(34, 34, 34)
@@ -5055,6 +5143,37 @@ public class Crypto2 extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_ECC4ActionPerformed
 
+    private void SHA3HintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3HintActionPerformed
+        JOptionPane.showMessageDialog(null, "This attack is usually performed on hashing algorithms based on the Merkle–Damgård construction", "Hint", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_SHA3HintActionPerformed
+
+    private void SHA3B1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3B1ActionPerformed
+        String answer = SHA3A1.getText().toLowerCase();
+        
+        if(answer.contains("sponge"))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_SHA3B1ActionPerformed
+
+    private void SHA3B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3B2ActionPerformed
+        String answer = SHA3A2.getText().toLowerCase();
+        
+        if(answer.contains("extension"))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_SHA3B2ActionPerformed
+
+    private void SHA3B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SHA3B3ActionPerformed
+        String answer = SHA3A3.getText().toLowerCase();
+        
+        if(answer.contains("two") || answer.contains("2"))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_SHA3B3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -5302,15 +5421,25 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel SHA2PanelWelcome;
     private javax.swing.JButton SHA2Q;
     private javax.swing.JMenuItem SHA3;
+    private javax.swing.JTextField SHA3A1;
+    private javax.swing.JTextField SHA3A2;
+    private javax.swing.JTextField SHA3A3;
+    private javax.swing.JButton SHA3B1;
+    private javax.swing.JButton SHA3B2;
+    private javax.swing.JButton SHA3B3;
     private javax.swing.JButton SHA3Back;
     private javax.swing.JButton SHA3Des;
     private javax.swing.JScrollPane SHA3Descrip;
     private javax.swing.JPanel SHA3Description;
     private javax.swing.JLabel SHA3Header;
+    private javax.swing.JButton SHA3Hint;
     private javax.swing.JLabel SHA3Intro;
     private javax.swing.JPanel SHA3Panel;
     private javax.swing.JPanel SHA3PanelWelcome;
     private javax.swing.JButton SHA3Q;
+    private javax.swing.JLabel SHA3Q1;
+    private javax.swing.JLabel SHA3Q2;
+    private javax.swing.JLabel SHA3Q3;
     private javax.swing.JButton SHA3Return;
     private javax.swing.JTextField SHAA1;
     private javax.swing.JTextField SHAA2;
