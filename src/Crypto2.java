@@ -367,6 +367,23 @@ public class Crypto2 extends javax.swing.JFrame {
         SchnorrPanel = new javax.swing.JPanel();
         SigningAMessage2 = new javax.swing.JLabel();
         SchnorrBack = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        SDSQ1 = new javax.swing.JLabel();
+        SDSQ2 = new javax.swing.JLabel();
+        SDSQ3 = new javax.swing.JLabel();
+        SDSQ4 = new javax.swing.JLabel();
+        SDSQ5 = new javax.swing.JLabel();
+        SDSA5 = new javax.swing.JTextField();
+        SDSA4 = new javax.swing.JTextField();
+        SDSA3 = new javax.swing.JTextField();
+        SDSA2 = new javax.swing.JTextField();
+        SDSA1 = new javax.swing.JTextField();
+        SDSB1 = new javax.swing.JButton();
+        SDSB2 = new javax.swing.JButton();
+        SDSB3 = new javax.swing.JButton();
+        SDSB4 = new javax.swing.JButton();
+        SDSB5 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
         PostQuantum = new javax.swing.JPanel();
         SchnorrIntro1 = new javax.swing.JLabel();
         jScrollPane11 = new javax.swing.JScrollPane();
@@ -3844,12 +3861,15 @@ public class Crypto2 extends javax.swing.JFrame {
         SchnorrDescriptionLayout.setVerticalGroup(
             SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                .addContainerGap(33, Short.MAX_VALUE)
+                .addContainerGap(68, Short.MAX_VALUE)
                 .addComponent(SchnorrIntro)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Schnorr_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
+                        .addGap(304, 304, 304)
+                        .addComponent(Schnorr_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Theme__7, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -3875,6 +3895,77 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel9.setText("Alice is given p = 7 and a = 3.");
+
+        SDSQ1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        SDSQ1.setText("1. Compute a:");
+
+        SDSQ2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        SDSQ2.setText("2. Given a random r = 4 compute x:");
+
+        SDSQ3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        SDSQ3.setText("3. Alice wants to send the message, \"Hi Bob!\" what is e? (For this problem use SHA-256 as the hash function):");
+
+        SDSQ4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        SDSQ4.setText("4. Besides M and e, what else does Alice need to send to Bob?:");
+
+        SDSQ5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        SDSQ5.setText("5. To verify Bob needs to compute x' which is equal to what?: ");
+
+        SDSA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SDSA1ActionPerformed(evt);
+            }
+        });
+
+        SDSB1.setBackground(new java.awt.Color(77, 132, 155));
+        SDSB1.setForeground(new java.awt.Color(255, 255, 255));
+        SDSB1.setText("Enter");
+        SDSB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SDSB1ActionPerformed(evt);
+            }
+        });
+
+        SDSB2.setBackground(new java.awt.Color(77, 132, 155));
+        SDSB2.setForeground(new java.awt.Color(255, 255, 255));
+        SDSB2.setText("Enter");
+        SDSB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SDSB2ActionPerformed(evt);
+            }
+        });
+
+        SDSB3.setBackground(new java.awt.Color(77, 132, 155));
+        SDSB3.setForeground(new java.awt.Color(255, 255, 255));
+        SDSB3.setText("Enter");
+        SDSB3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SDSB3ActionPerformed(evt);
+            }
+        });
+
+        SDSB4.setBackground(new java.awt.Color(77, 132, 155));
+        SDSB4.setForeground(new java.awt.Color(255, 255, 255));
+        SDSB4.setText("Enter");
+        SDSB4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SDSB4ActionPerformed(evt);
+            }
+        });
+
+        SDSB5.setBackground(new java.awt.Color(77, 132, 155));
+        SDSB5.setForeground(new java.awt.Color(255, 255, 255));
+        SDSB5.setText("Enter");
+        SDSB5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SDSB5ActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+
         javax.swing.GroupLayout SchnorrPanelLayout = new javax.swing.GroupLayout(SchnorrPanel);
         SchnorrPanel.setLayout(SchnorrPanelLayout);
         SchnorrPanelLayout.setHorizontalGroup(
@@ -3885,18 +3976,85 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addGap(215, 215, 215)
                         .addComponent(SigningAMessage2))
                     .addGroup(SchnorrPanelLayout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(SchnorrBack, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(321, 321, 321))
+                        .addGap(27, 27, 27)
+                        .addGroup(SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SDSQ1)
+                            .addComponent(SDSQ2)
+                            .addComponent(SDSQ3)
+                            .addComponent(SDSQ4)
+                            .addComponent(SDSQ5)
+                            .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                                .addComponent(SDSA1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(SDSB1))
+                            .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                                .addComponent(SDSA2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(SDSB2))
+                            .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                                .addComponent(SDSA3, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(SDSB3))
+                            .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                                .addComponent(SDSA4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(SDSB4))
+                            .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                                .addComponent(SDSA5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(SDSB5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 565, Short.MAX_VALUE)
+                                .addComponent(SchnorrBack, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                        .addGap(305, 305, 305)
+                        .addComponent(jLabel9)))
+                .addGap(68, 68, 68))
+            .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                .addComponent(jLabel10)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SchnorrPanelLayout.setVerticalGroup(
             SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SchnorrPanelLayout.createSequentialGroup()
                 .addGap(45, 45, 45)
                 .addComponent(SigningAMessage2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 419, Short.MAX_VALUE)
-                .addComponent(SchnorrBack, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(206, 206, 206))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel9)
+                .addGap(18, 18, 18)
+                .addComponent(SDSQ1)
+                .addGap(18, 18, 18)
+                .addGroup(SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SDSA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SDSB1))
+                .addGap(18, 18, 18)
+                .addComponent(SDSQ2)
+                .addGap(18, 18, 18)
+                .addGroup(SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SDSB2)
+                    .addGroup(SchnorrPanelLayout.createSequentialGroup()
+                        .addComponent(SDSA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(SDSQ3)
+                        .addGap(18, 18, 18)
+                        .addGroup(SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SDSA3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SDSB3))
+                        .addGap(18, 18, 18)
+                        .addComponent(SDSQ4)
+                        .addGap(18, 18, 18)
+                        .addGroup(SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SDSA4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SDSB4))
+                        .addGap(18, 18, 18)
+                        .addComponent(SDSQ5)
+                        .addGap(18, 18, 18)
+                        .addGroup(SchnorrPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SDSA5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SDSB5)
+                            .addComponent(SchnorrBack, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel10)
+                .addContainerGap())
         );
 
         MainPanel.add(SchnorrPanel, "card20");
@@ -4106,9 +4264,7 @@ public class Crypto2 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(MainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -5174,6 +5330,60 @@ public class Crypto2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_SHA3B3ActionPerformed
 
+    private void SDSA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SDSA1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SDSA1ActionPerformed
+
+    private void SDSB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SDSB1ActionPerformed
+        String answer = SDSA1.getText().toLowerCase();
+        
+        if(answer.contains("two") || answer.contains("2"))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_SDSB1ActionPerformed
+
+    private void SDSB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SDSB2ActionPerformed
+        String answer = SDSA2.getText().toLowerCase();
+        
+        if(answer.contains("two") || answer.contains("2"))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_SDSB2ActionPerformed
+
+    private void SDSB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SDSB3ActionPerformed
+        String answer = SDSA3.getText();
+        
+        if(answer.contains("86FC74A27738A37E81C48AC7CB5DB1922CD903F49CFC05454931E50FEAA9EC96"))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE);
+        
+        else if(answer.contains("CC799290A45F684C4D6C1A4ACB983600F9899D9D0EEAD21D81E8F59E1440638F"))
+            JOptionPane.showMessageDialog(null, "You're close though! Try removing a space (somewhere) before hashing", "INCORRECT!", JOptionPane.INFORMATION_MESSAGE);
+        
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_SDSB3ActionPerformed
+
+    private void SDSB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SDSB4ActionPerformed
+        String answer = SDSA4.getText().toLowerCase();
+        
+        if(answer.contains("y"))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_SDSB4ActionPerformed
+
+    private void SDSB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SDSB5ActionPerformed
+        String answer = SDSA5.getText().toLowerCase().replaceAll("\\s+","");
+        
+        if(answer.contains("a^r") || (answer.contains("a^y") && answer.contains("v^e")))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_SDSB5ActionPerformed
+
+   
     /**
      * @param args the command line arguments
      */
@@ -5410,6 +5620,21 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel RSA_Signature_2;
     private javax.swing.JPanel RSA_Validate;
     private javax.swing.JMenuItem Return2Home;
+    private javax.swing.JTextField SDSA1;
+    private javax.swing.JTextField SDSA2;
+    private javax.swing.JTextField SDSA3;
+    private javax.swing.JTextField SDSA4;
+    private javax.swing.JTextField SDSA5;
+    private javax.swing.JButton SDSB1;
+    private javax.swing.JButton SDSB2;
+    private javax.swing.JButton SDSB3;
+    private javax.swing.JButton SDSB4;
+    private javax.swing.JButton SDSB5;
+    private javax.swing.JLabel SDSQ1;
+    private javax.swing.JLabel SDSQ2;
+    private javax.swing.JLabel SDSQ3;
+    private javax.swing.JLabel SDSQ4;
+    private javax.swing.JLabel SDSQ5;
     private javax.swing.JMenu SHA;
     private javax.swing.JMenuItem SHA2;
     private javax.swing.JButton SHA2Back;
@@ -5511,6 +5736,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
@@ -5530,6 +5756,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
