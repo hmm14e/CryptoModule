@@ -155,6 +155,14 @@ public class Home extends javax.swing.JFrame {
         EntropyHeader = new javax.swing.JLabel();
         EntropyReturnB = new javax.swing.JButton();
         jLabel47 = new javax.swing.JLabel();
+        entropyQ1 = new javax.swing.JLabel();
+        EntropyAnswer1 = new javax.swing.JTextField();
+        jLabel55 = new javax.swing.JLabel();
+        EntropySubmit = new javax.swing.JButton();
+        entropyQ2 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        EntropyAnswer2 = new javax.swing.JTextField();
+        EntropySubmit1 = new javax.swing.JButton();
         EntropyDescription = new javax.swing.JPanel();
         EntropyTitle = new javax.swing.JLabel();
         EntropyDescrip = new javax.swing.JScrollPane();
@@ -1660,26 +1668,111 @@ public class Home extends javax.swing.JFrame {
 
         jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
+        entropyQ1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        entropyQ1.setText("If an adversary can predict an output with a certainty of 0.99, ");
+
+        EntropyAnswer1.setColumns(10);
+        EntropyAnswer1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EntropyAnswer1ActionPerformed(evt);
+            }
+        });
+
+        jLabel55.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel55.setText("what kind of entropy does the output have? ");
+
+        EntropySubmit.setBackground(new java.awt.Color(77, 132, 155));
+        EntropySubmit.setForeground(new java.awt.Color(255, 255, 255));
+        EntropySubmit.setText("Enter");
+        EntropySubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EntropySubmitActionPerformed(evt);
+            }
+        });
+
+        entropyQ2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        entropyQ2.setText("If a digital signature is based off of a time stamp, ");
+
+        jLabel56.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel56.setText("what kind of entropy does the output have? ");
+
+        EntropyAnswer2.setColumns(10);
+        EntropyAnswer2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EntropyAnswer2ActionPerformed(evt);
+            }
+        });
+
+        EntropySubmit1.setBackground(new java.awt.Color(77, 132, 155));
+        EntropySubmit1.setForeground(new java.awt.Color(255, 255, 255));
+        EntropySubmit1.setText("Enter");
+        EntropySubmit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EntropySubmit1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout EntropyPanelLayout = new javax.swing.GroupLayout(EntropyPanel);
         EntropyPanel.setLayout(EntropyPanelLayout);
         EntropyPanelLayout.setHorizontalGroup(
             EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EntropyPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(EntropyReturnB))
-            .addComponent(jLabel47)
-            .addGroup(EntropyPanelLayout.createSequentialGroup()
-                .addGap(339, 339, 339)
-                .addComponent(EntropyHeader))
+                .addGroup(EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(EntropyPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(EntropyReturnB))
+                    .addComponent(jLabel47)
+                    .addGroup(EntropyPanelLayout.createSequentialGroup()
+                        .addGap(367, 367, 367)
+                        .addComponent(EntropyHeader)))
+                .addContainerGap(53, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EntropyPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(entropyQ1)
+                    .addComponent(jLabel55)
+                    .addComponent(jLabel56)
+                    .addComponent(entropyQ2))
+                .addGap(40, 40, 40)
+                .addGroup(EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(EntropyAnswer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EntropyAnswer2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(EntropySubmit1)
+                    .addComponent(EntropySubmit))
+                .addGap(80, 80, 80))
         );
         EntropyPanelLayout.setVerticalGroup(
             EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EntropyPanelLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
+                .addGap(55, 55, 55)
                 .addComponent(EntropyHeader)
-                .addGap(359, 359, 359)
+                .addGroup(EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(EntropyPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(entropyQ1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel55)
+                        .addGap(30, 30, 30))
+                    .addGroup(EntropyPanelLayout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addGroup(EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(EntropyAnswer1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EntropySubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)))
+                .addGap(57, 57, 57)
+                .addGroup(EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(EntropyPanelLayout.createSequentialGroup()
+                        .addComponent(entropyQ2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel56))
+                    .addGroup(EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(EntropyAnswer2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(EntropySubmit1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(97, 97, 97)
                 .addComponent(EntropyReturnB, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel47))
         );
 
@@ -3137,7 +3230,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea31.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea31.setLineWrap(true);
         jTextArea31.setRows(5);
-        jTextArea31.setText("- RC5 is a symmetric-key block cipher that uses the structure of a Feistel-like network.\n- It has a variable block size (32, 64 or 128 bits)\n- It has a variable key size (0 to 2040 bits)\n- It has a variable number of rounds (0 to 255)\n- It uses data-dependent rotations\n- Rc5 uses a complex key schedule algorithm using a one-way functions with the binary expansions of both e and the golden ratio. ");
+        jTextArea31.setText("- RC5 is a symmetric-key block cipher that uses the structure of a Feistel-like network.\n- It has a variable block size (32, 64 or 128 bits)\n- It has a variable key size (0 to 2040 bits)\n- It has a variable number of rounds (0 to 255)\n- It uses data-dependent rotations\n- RC5 uses a complex key schedule algorithm using a one-way functions with the binary expansions of both e and the golden ratio. ");
         jTextArea31.setWrapStyleWord(true);
         RC5_Description.setViewportView(jTextArea31);
 
@@ -3553,7 +3646,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DESDescripPanelLayout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
                 .addComponent(DESBB2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel48))
@@ -7595,6 +7688,27 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_DESBB3ActionPerformed
 
+    private void EntropySubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EntropySubmitActionPerformed
+        String answer = EntropyAnswer1.getText().toLowerCase();
+        
+        if(answer.contains("low"))
+            JOptionPane.showMessageDialog(null, "You got it!", "CORRECT!", JOptionPane.INFORMATION_MESSAGE); 
+        else
+            JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_EntropySubmitActionPerformed
+
+    private void EntropyAnswer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EntropyAnswer1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EntropyAnswer1ActionPerformed
+
+    private void EntropyAnswer2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EntropyAnswer2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EntropyAnswer2ActionPerformed
+
+    private void EntropySubmit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EntropySubmit1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_EntropySubmit1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7821,6 +7935,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel EncryptImage;
     private javax.swing.JMenu EncryptionModes;
     private javax.swing.JMenuItem Entropy;
+    private javax.swing.JTextField EntropyAnswer1;
+    private javax.swing.JTextField EntropyAnswer2;
     private javax.swing.JButton EntropyDes;
     private javax.swing.JScrollPane EntropyDescrip;
     private javax.swing.JPanel EntropyDescription;
@@ -7831,6 +7947,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton EntropyQ;
     private javax.swing.JButton EntropyReturn;
     private javax.swing.JButton EntropyReturnB;
+    private javax.swing.JButton EntropySubmit;
+    private javax.swing.JButton EntropySubmit1;
     private javax.swing.JLabel EntropyTitle;
     private javax.swing.JRadioButton F1;
     private javax.swing.JRadioButton F2;
@@ -8067,6 +8185,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel Welcome;
     private javax.swing.JPanel WelcomePanel;
     private javax.swing.ButtonGroup buttonGroup6;
+    private javax.swing.JLabel entropyQ1;
+    private javax.swing.JLabel entropyQ2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
@@ -8127,6 +8247,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;

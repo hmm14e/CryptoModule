@@ -3896,7 +3896,7 @@ public class Crypto2 extends javax.swing.JFrame {
         });
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setText("Alice is given p = 7 and a = 3.");
+        jLabel9.setText("Alice is given p = 7 and q = 3.");
 
         SDSQ1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         SDSQ1.setText("1. Compute a:");
