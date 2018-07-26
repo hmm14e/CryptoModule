@@ -1725,7 +1725,7 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(EntropyPanelLayout.createSequentialGroup()
                         .addGap(367, 367, 367)
                         .addComponent(EntropyHeader)))
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EntropyPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(EntropyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

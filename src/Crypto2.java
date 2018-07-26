@@ -39,43 +39,43 @@ public class Crypto2 extends javax.swing.JFrame {
         Theme = new javax.swing.JLabel();
         BlowfishPanelWelcome = new javax.swing.JPanel();
         BlowfishIntro = new javax.swing.JLabel();
-        ThemePicture10 = new javax.swing.JLabel();
+        BlowfishTheme = new javax.swing.JLabel();
         BlowfishDes = new javax.swing.JButton();
         BlowfishQ = new javax.swing.JButton();
         BlowfishDescription = new javax.swing.JPanel();
         BlowfishTitle = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
+        BlowfishScroll = new javax.swing.JScrollPane();
         jTextArea27 = new javax.swing.JTextArea();
-        ThemePicture23 = new javax.swing.JLabel();
+        BlowfishTheme1 = new javax.swing.JLabel();
         BlowfishBB = new javax.swing.JButton();
         BlowfishPanel = new javax.swing.JPanel();
         BlowfishReturn = new javax.swing.JButton();
         BlowfishLabel = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        BlowFishQ = new javax.swing.JLabel();
+        BlowfishTheme2 = new javax.swing.JLabel();
+        BlowFishQ1 = new javax.swing.JLabel();
         QuestionsBold = new javax.swing.JLabel();
         BlowFishA = new javax.swing.JTextField();
         BlowFishB = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        BlowfishQ2 = new javax.swing.JLabel();
         BFA2 = new javax.swing.JTextField();
         BFB2 = new javax.swing.JButton();
         AESPanelWelcome = new javax.swing.JPanel();
         AESIntro = new javax.swing.JLabel();
-        ThemePicture11 = new javax.swing.JLabel();
+        AESTheme = new javax.swing.JLabel();
         AESDes = new javax.swing.JButton();
         AESQ = new javax.swing.JButton();
         AESDescription = new javax.swing.JPanel();
         AEStitle = new javax.swing.JLabel();
-        jScrollPane7 = new javax.swing.JScrollPane();
+        AESScroll = new javax.swing.JScrollPane();
         jTextArea28 = new javax.swing.JTextArea();
-        ThemePicture24 = new javax.swing.JLabel();
+        AESTheme1 = new javax.swing.JLabel();
         AESBack = new javax.swing.JButton();
         AESPanel = new javax.swing.JPanel();
         AESTitle = new javax.swing.JLabel();
         AESReturn = new javax.swing.JButton();
         FourSteps = new javax.swing.JLabel();
         Instructionss = new javax.swing.JLabel();
-        Theme0 = new javax.swing.JLabel();
+        AESTheme2 = new javax.swing.JLabel();
         AES1 = new javax.swing.JButton();
         AES2 = new javax.swing.JButton();
         AES3 = new javax.swing.JButton();
@@ -84,14 +84,14 @@ public class Crypto2 extends javax.swing.JFrame {
         AESEnter = new javax.swing.JButton();
         RSAPanelWelcome = new javax.swing.JPanel();
         RSAIntro = new javax.swing.JLabel();
-        ThemePicture13 = new javax.swing.JLabel();
+        RSATheme = new javax.swing.JLabel();
         RSADes = new javax.swing.JButton();
         RSAQ = new javax.swing.JButton();
         RSADescription = new javax.swing.JPanel();
         RSADescripHeader = new javax.swing.JLabel();
         RSADescrip = new javax.swing.JScrollPane();
         CaesarCipherDes3 = new javax.swing.JTextArea();
-        Theme__3 = new javax.swing.JLabel();
+        RSATheme1 = new javax.swing.JLabel();
         RSABB = new javax.swing.JButton();
         RSAPanel = new javax.swing.JPanel();
         RSAQ1 = new javax.swing.JLabel();
@@ -106,15 +106,15 @@ public class Crypto2 extends javax.swing.JFrame {
         RSAA1_3 = new javax.swing.JTextField();
         RSAB1_3 = new javax.swing.JButton();
         RSAReturn = new javax.swing.JButton();
-        jLabel30 = new javax.swing.JLabel();
+        RSATheme2 = new javax.swing.JLabel();
         ElGamalPanelWelcome = new javax.swing.JPanel();
         ElGamIntro = new javax.swing.JLabel();
-        ThemePicture8 = new javax.swing.JLabel();
+        EGTheme = new javax.swing.JLabel();
         ElGamDes = new javax.swing.JButton();
         ElGamQ = new javax.swing.JButton();
         ELGamDescription = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        ThemePicture25 = new javax.swing.JLabel();
+        ElGam = new javax.swing.JLabel();
+        EGTheme1 = new javax.swing.JLabel();
         DHBB1 = new javax.swing.JButton();
         ElGamalSteps = new javax.swing.JLabel();
         ElGamalPanel = new javax.swing.JPanel();
@@ -125,23 +125,23 @@ public class Crypto2 extends javax.swing.JFrame {
         EGA1_2 = new javax.swing.JTextField();
         EGB1_2 = new javax.swing.JButton();
         ElGamReturn = new javax.swing.JButton();
-        jScrollPane8 = new javax.swing.JScrollPane();
+        EGScroll1 = new javax.swing.JScrollPane();
         jTextArea29 = new javax.swing.JTextArea();
-        jScrollPane9 = new javax.swing.JScrollPane();
+        EGScroll2 = new javax.swing.JScrollPane();
         jTextArea30 = new javax.swing.JTextArea();
-        jLabel31 = new javax.swing.JLabel();
+        EGTheme2 = new javax.swing.JLabel();
         ECCDescription = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        ThemePicture26 = new javax.swing.JLabel();
-        DHBB2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        ECCTitle = new javax.swing.JLabel();
+        ECCTheme = new javax.swing.JLabel();
+        ECCBack = new javax.swing.JButton();
+        ECCImage = new javax.swing.JLabel();
+        ECCScroll = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         ECCPanel = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        ThemePicture27 = new javax.swing.JLabel();
-        ECCR = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
+        ECCTitle1 = new javax.swing.JLabel();
+        ECCTheme1 = new javax.swing.JLabel();
+        ECCBack1 = new javax.swing.JButton();
+        ECCScroll2 = new javax.swing.JScrollPane();
         jTextArea12 = new javax.swing.JTextArea();
         ECC1 = new javax.swing.JButton();
         ECC2 = new javax.swing.JButton();
@@ -149,19 +149,19 @@ public class Crypto2 extends javax.swing.JFrame {
         ECC4 = new javax.swing.JButton();
         ECCPanelWelcome = new javax.swing.JPanel();
         ECCIntro = new javax.swing.JLabel();
-        ThemePicture15 = new javax.swing.JLabel();
+        ECCTheme2 = new javax.swing.JLabel();
         ECCDes = new javax.swing.JButton();
         ECCQ = new javax.swing.JButton();
         DHPanelWelcome = new javax.swing.JPanel();
         DH_intro = new javax.swing.JLabel();
-        ThemePicture9 = new javax.swing.JLabel();
+        DHTheme = new javax.swing.JLabel();
         DHDes = new javax.swing.JButton();
         DHQ = new javax.swing.JButton();
         DHDescription = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
+        DHTitle = new javax.swing.JLabel();
+        DHScroll = new javax.swing.JScrollPane();
         jTextArea11 = new javax.swing.JTextArea();
-        ThemePicture22 = new javax.swing.JLabel();
+        DHTheme1 = new javax.swing.JLabel();
         DHBB = new javax.swing.JButton();
         DHPanel = new javax.swing.JPanel();
         DHDiagram1 = new javax.swing.JLabel();
@@ -169,42 +169,42 @@ public class Crypto2 extends javax.swing.JFrame {
         DHText = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         DHReturn = new javax.swing.JButton();
-        jLabel38 = new javax.swing.JLabel();
+        DHTheme2 = new javax.swing.JLabel();
         DHPanel1 = new javax.swing.JPanel();
         DH1Image = new javax.swing.JLabel();
         DH1_Next = new javax.swing.JButton();
         DH1Text = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         DH1_Back = new javax.swing.JButton();
-        jLabel39 = new javax.swing.JLabel();
+        DHTheme3 = new javax.swing.JLabel();
         DHPanel2 = new javax.swing.JPanel();
         DHImage2 = new javax.swing.JLabel();
         DH2Text = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
         DH2_Next = new javax.swing.JButton();
         DH2_Back = new javax.swing.JButton();
-        jLabel40 = new javax.swing.JLabel();
+        DHTheme4 = new javax.swing.JLabel();
         DHPanel3 = new javax.swing.JPanel();
         DH3Image = new javax.swing.JLabel();
         DH3Text = new javax.swing.JScrollPane();
         jTextArea5 = new javax.swing.JTextArea();
         DH3_Next = new javax.swing.JButton();
         DH3_Back = new javax.swing.JButton();
-        jLabel41 = new javax.swing.JLabel();
+        DHTheme5 = new javax.swing.JLabel();
         DHPanel4 = new javax.swing.JPanel();
         DH4Image = new javax.swing.JLabel();
         DH4Text = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
         DH4_Next = new javax.swing.JButton();
         DH4_Back = new javax.swing.JButton();
-        jLabel42 = new javax.swing.JLabel();
+        DHTheme6 = new javax.swing.JLabel();
         DHPanel5 = new javax.swing.JPanel();
         DH5Image = new javax.swing.JLabel();
         DH5Text = new javax.swing.JScrollPane();
         jTextArea7 = new javax.swing.JTextArea();
         DH5_Next = new javax.swing.JButton();
         DH5_Back = new javax.swing.JButton();
-        jLabel43 = new javax.swing.JLabel();
+        DHTheme7 = new javax.swing.JLabel();
         DHPanel6 = new javax.swing.JPanel();
         DH5Image1 = new javax.swing.JLabel();
         DH6Text = new javax.swing.JScrollPane();
@@ -215,17 +215,17 @@ public class Crypto2 extends javax.swing.JFrame {
         DHA1 = new javax.swing.JTextField();
         DHB1 = new javax.swing.JButton();
         DH6_Back = new javax.swing.JButton();
-        jLabel44 = new javax.swing.JLabel();
+        DHTheme8 = new javax.swing.JLabel();
         SHA2PanelWelcome = new javax.swing.JPanel();
         SHA2Intro = new javax.swing.JLabel();
-        ThemePicture5 = new javax.swing.JLabel();
+        SHA2Theme = new javax.swing.JLabel();
         SHA2Des = new javax.swing.JButton();
         SHA2Q = new javax.swing.JButton();
         SHA2Description = new javax.swing.JPanel();
         SHA2DescriptionHeader = new javax.swing.JLabel();
         SHADescrip = new javax.swing.JScrollPane();
         SHA_Des = new javax.swing.JTextArea();
-        Theme__2 = new javax.swing.JLabel();
+        SHA2Theme1 = new javax.swing.JLabel();
         SHA2Back = new javax.swing.JButton();
         SHA2Panel = new javax.swing.JPanel();
         SHA_Text = new javax.swing.JTextField();
@@ -243,22 +243,22 @@ public class Crypto2 extends javax.swing.JFrame {
         SHAB2 = new javax.swing.JButton();
         SHAA1 = new javax.swing.JTextField();
         SHAReturn = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
+        SHA2Theme2 = new javax.swing.JLabel();
         SHA3PanelWelcome = new javax.swing.JPanel();
         SHA3Intro = new javax.swing.JLabel();
-        ThemePicture12 = new javax.swing.JLabel();
+        SHA3Theme = new javax.swing.JLabel();
         SHA3Des = new javax.swing.JButton();
         SHA3Q = new javax.swing.JButton();
         SHA3Description = new javax.swing.JPanel();
         SHADescriptionHeader1 = new javax.swing.JLabel();
         SHA3Descrip = new javax.swing.JScrollPane();
         SHA_Des1 = new javax.swing.JTextArea();
-        Theme__6 = new javax.swing.JLabel();
+        SHA3Theme1 = new javax.swing.JLabel();
         SHA3Back = new javax.swing.JButton();
         SHA3Panel = new javax.swing.JPanel();
         SHA3Header = new javax.swing.JLabel();
         SHA3Return = new javax.swing.JButton();
-        jLabel23 = new javax.swing.JLabel();
+        SHA3Theme2 = new javax.swing.JLabel();
         SHA3Q1 = new javax.swing.JLabel();
         SHA3Q2 = new javax.swing.JLabel();
         SHA3Q3 = new javax.swing.JLabel();
@@ -271,14 +271,14 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA3Hint = new javax.swing.JButton();
         MD5PanelWelcome = new javax.swing.JPanel();
         MD5Intro = new javax.swing.JLabel();
-        ThemePicture6 = new javax.swing.JLabel();
+        MD5Theme = new javax.swing.JLabel();
         MD5Des = new javax.swing.JButton();
         MD5Q = new javax.swing.JButton();
         MD5Description = new javax.swing.JPanel();
         MD5Header = new javax.swing.JLabel();
         SHADescrip1 = new javax.swing.JScrollPane();
         CaesarCipherDes4 = new javax.swing.JTextArea();
-        Theme__4 = new javax.swing.JLabel();
+        MD5Theme1 = new javax.swing.JLabel();
         MD5Backk = new javax.swing.JButton();
         MD5Panel = new javax.swing.JPanel();
         MD5_Text = new javax.swing.JTextField();
@@ -294,21 +294,21 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea10 = new javax.swing.JTextArea();
         MD5B1 = new javax.swing.JButton();
         MD5A1 = new javax.swing.JTextField();
-        jLabel22 = new javax.swing.JLabel();
+        MD5Theme2 = new javax.swing.JLabel();
         MD5A2 = new javax.swing.JTextField();
         MD5B2 = new javax.swing.JButton();
         MD5A3 = new javax.swing.JTextField();
         MD5B3 = new javax.swing.JButton();
         RSASignaturePanelWelcome = new javax.swing.JPanel();
         RSASigIntro = new javax.swing.JLabel();
-        ThemePicture7 = new javax.swing.JLabel();
+        RSASigTheme = new javax.swing.JLabel();
         RSASigDes = new javax.swing.JButton();
         RSASigQ = new javax.swing.JButton();
         RSASigDescription = new javax.swing.JPanel();
         RSASigIntro1 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
+        RSASigScroll = new javax.swing.JScrollPane();
         jTextArea15 = new javax.swing.JTextArea();
-        Theme__5 = new javax.swing.JLabel();
+        RSASigTheme1 = new javax.swing.JLabel();
         RSA_Sig_Back = new javax.swing.JButton();
         RSA_Signature_1 = new javax.swing.JPanel();
         SigningAMessage = new javax.swing.JLabel();
@@ -355,14 +355,14 @@ public class Crypto2 extends javax.swing.JFrame {
         Back_RSA2 = new javax.swing.JButton();
         SchnorrPanelWelcome = new javax.swing.JPanel();
         RSASigIntro2 = new javax.swing.JLabel();
-        ThemePicture14 = new javax.swing.JLabel();
+        SchnorrTheme = new javax.swing.JLabel();
         RSASigDes1 = new javax.swing.JButton();
         RSASigQ1 = new javax.swing.JButton();
         SchnorrDescription = new javax.swing.JPanel();
         SchnorrIntro = new javax.swing.JLabel();
-        jScrollPane10 = new javax.swing.JScrollPane();
+        SchnorrScroll = new javax.swing.JScrollPane();
         jTextArea16 = new javax.swing.JTextArea();
-        Theme__7 = new javax.swing.JLabel();
+        SchnorrTheme1 = new javax.swing.JLabel();
         Schnorr_Return = new javax.swing.JButton();
         SchnorrPanel = new javax.swing.JPanel();
         SigningAMessage2 = new javax.swing.JLabel();
@@ -383,12 +383,12 @@ public class Crypto2 extends javax.swing.JFrame {
         SDSB3 = new javax.swing.JButton();
         SDSB4 = new javax.swing.JButton();
         SDSB5 = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
+        SchnorrTheme2 = new javax.swing.JLabel();
         PostQuantum = new javax.swing.JPanel();
-        SchnorrIntro1 = new javax.swing.JLabel();
-        jScrollPane11 = new javax.swing.JScrollPane();
+        PQTitle = new javax.swing.JLabel();
+        PQScroll = new javax.swing.JScrollPane();
         jTextArea17 = new javax.swing.JTextArea();
-        Theme__8 = new javax.swing.JLabel();
+        PQTheme = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         DigitalSignatures = new javax.swing.JMenu();
         RSASignature = new javax.swing.JMenuItem();
@@ -467,7 +467,7 @@ public class Crypto2 extends javax.swing.JFrame {
         BlowfishIntro.setForeground(new java.awt.Color(48, 87, 120));
         BlowfishIntro.setText("Blowfish");
 
-        ThemePicture10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        BlowfishTheme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         BlowfishDes.setBackground(new java.awt.Color(77, 132, 155));
         BlowfishDes.setForeground(new java.awt.Color(255, 255, 255));
@@ -492,7 +492,7 @@ public class Crypto2 extends javax.swing.JFrame {
         BlowfishPanelWelcomeLayout.setHorizontalGroup(
             BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture10)
+                .addComponent(BlowfishTheme)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(BlowfishPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(BlowfishPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -516,7 +516,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(BlowfishDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BlowfishQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148)
-                .addComponent(ThemePicture10))
+                .addComponent(BlowfishTheme))
         );
 
         MainPanel.add(BlowfishPanelWelcome, "card51");
@@ -527,9 +527,9 @@ public class Crypto2 extends javax.swing.JFrame {
         BlowfishTitle.setForeground(new java.awt.Color(48, 87, 120));
         BlowfishTitle.setText("Blowfish ");
 
-        jScrollPane6.setBorder(null);
-        jScrollPane6.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane6.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        BlowfishScroll.setBorder(null);
+        BlowfishScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        BlowfishScroll.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea27.setColumns(20);
         jTextArea27.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
@@ -537,9 +537,9 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea27.setRows(5);
         jTextArea27.setText("- Blowfish is a symmetric-key block cipher designed by Bruce Schneier\n- No effective crytanalysis of it has been found to date\n- It was originally designed as an alternative to DES\n- Like 3DES, it has 16 rounds and uses the Feistel Network\n- It uses block sizes of 64 bits and key sizes from 32-448 bits\n- However, Twofish is more widely used due to it's larger block sizes");
         jTextArea27.setWrapStyleWord(true);
-        jScrollPane6.setViewportView(jTextArea27);
+        BlowfishScroll.setViewportView(jTextArea27);
 
-        ThemePicture23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        BlowfishTheme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         BlowfishBB.setBackground(new java.awt.Color(77, 132, 155));
         BlowfishBB.setForeground(new java.awt.Color(255, 255, 255));
@@ -556,13 +556,13 @@ public class Crypto2 extends javax.swing.JFrame {
             BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
                 .addGroup(BlowfishDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ThemePicture23)
+                    .addComponent(BlowfishTheme1)
                     .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
                         .addGap(350, 350, 350)
                         .addComponent(BlowfishTitle))
                     .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
                         .addGap(23, 23, 23)
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(BlowfishScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(BlowfishDescriptionLayout.createSequentialGroup()
                         .addGap(377, 377, 377)
                         .addComponent(BlowfishBB)))
@@ -574,11 +574,11 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGap(62, 62, 62)
                 .addComponent(BlowfishTitle)
                 .addGap(69, 69, 69)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BlowfishScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62)
                 .addComponent(BlowfishBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ThemePicture23))
+                .addComponent(BlowfishTheme1))
         );
 
         MainPanel.add(BlowfishDescription, "card87");
@@ -598,10 +598,10 @@ public class Crypto2 extends javax.swing.JFrame {
         BlowfishLabel.setForeground(new java.awt.Color(48, 87, 120));
         BlowfishLabel.setText("Blowfish");
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        BlowfishTheme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        BlowFishQ.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        BlowFishQ.setText("1. Due to its small block size, it is succeptible to what kind of attack? Note: You may have to do some research to find the answer.");
+        BlowFishQ1.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        BlowFishQ1.setText("1. Due to its small block size, it is succeptible to what kind of attack? Note: You may have to do some research to find the answer.");
 
         QuestionsBold.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         QuestionsBold.setText("Questions:");
@@ -615,8 +615,8 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
-        jLabel2.setText("2. What is the successor to Blowfish?");
+        BlowfishQ2.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
+        BlowfishQ2.setText("2. What is the successor to Blowfish?");
 
         BFB2.setBackground(new java.awt.Color(77, 132, 155));
         BFB2.setForeground(new java.awt.Color(255, 255, 255));
@@ -632,7 +632,7 @@ public class Crypto2 extends javax.swing.JFrame {
         BlowfishPanelLayout.setHorizontalGroup(
             BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BlowfishPanelLayout.createSequentialGroup()
-                .addComponent(jLabel7)
+                .addComponent(BlowfishTheme2)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(BlowfishPanelLayout.createSequentialGroup()
                 .addGroup(BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -642,13 +642,13 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addGroup(BlowfishPanelLayout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addGroup(BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(BlowFishQ)
+                            .addComponent(BlowFishQ1)
                             .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(BlowfishPanelLayout.createSequentialGroup()
                                 .addComponent(BlowFishA, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(BlowFishB))
-                            .addComponent(jLabel2)
+                            .addComponent(BlowfishQ2)
                             .addGroup(BlowfishPanelLayout.createSequentialGroup()
                                 .addComponent(BFA2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -666,13 +666,13 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(QuestionsBold)
                 .addGap(33, 33, 33)
-                .addComponent(BlowFishQ)
+                .addComponent(BlowFishQ1)
                 .addGap(18, 18, 18)
                 .addGroup(BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BlowFishA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BlowFishB))
                 .addGap(33, 33, 33)
-                .addComponent(jLabel2)
+                .addComponent(BlowfishQ2)
                 .addGap(18, 18, 18)
                 .addGroup(BlowfishPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BFA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -680,7 +680,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 147, Short.MAX_VALUE)
                 .addComponent(BlowfishReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel7))
+                .addComponent(BlowfishTheme2))
         );
 
         MainPanel.add(BlowfishPanel, "card37");
@@ -692,7 +692,7 @@ public class Crypto2 extends javax.swing.JFrame {
         AESIntro.setForeground(new java.awt.Color(48, 87, 120));
         AESIntro.setText("AES");
 
-        ThemePicture11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        AESTheme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         AESDes.setBackground(new java.awt.Color(77, 132, 155));
         AESDes.setForeground(new java.awt.Color(255, 255, 255));
@@ -717,7 +717,7 @@ public class Crypto2 extends javax.swing.JFrame {
         AESPanelWelcomeLayout.setHorizontalGroup(
             AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture11)
+                .addComponent(AESTheme)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(AESPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(AESPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -741,7 +741,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(AESDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(AESQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148)
-                .addComponent(ThemePicture11))
+                .addComponent(AESTheme))
         );
 
         MainPanel.add(AESPanelWelcome, "card52");
@@ -752,7 +752,7 @@ public class Crypto2 extends javax.swing.JFrame {
         AEStitle.setForeground(new java.awt.Color(48, 87, 120));
         AEStitle.setText("Advanced Encryption Standard");
 
-        jScrollPane7.setBorder(null);
+        AESScroll.setBorder(null);
 
         jTextArea28.setColumns(20);
         jTextArea28.setFont(new java.awt.Font("Courier", 0, 16)); // NOI18N
@@ -760,9 +760,9 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea28.setRows(5);
         jTextArea28.setText("- AES was created by Vincent Rijmen and Joan Daemen who submitted a proposal to NIST during the AES selection process. \n- AES uses 10, 12 or 14 rounds for the 128, 192 and 256 bit key size, respectively. \n- It use a block size of 128 bits\n- AES is the current standard for the U.S government\n- It is a symmetric-key algorithm \n- While there have been proposals for AES attacks that are computationally faster than a brute-force attack, they are not computationally feasible.");
         jTextArea28.setWrapStyleWord(true);
-        jScrollPane7.setViewportView(jTextArea28);
+        AESScroll.setViewportView(jTextArea28);
 
-        ThemePicture24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        AESTheme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         AESBack.setBackground(new java.awt.Color(77, 132, 155));
         AESBack.setForeground(new java.awt.Color(255, 255, 255));
@@ -780,10 +780,10 @@ public class Crypto2 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AESDescriptionLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(AESDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ThemePicture24)
+                    .addComponent(AESTheme1)
                     .addGroup(AESDescriptionLayout.createSequentialGroup()
                         .addGap(23, 23, 23)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(AESScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(AESDescriptionLayout.createSequentialGroup()
                         .addGap(377, 377, 377)
                         .addComponent(AESBack))
@@ -798,11 +798,11 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGap(75, 75, 75)
                 .addComponent(AEStitle)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AESScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(AESBack, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ThemePicture24))
+                .addComponent(AESTheme1))
         );
 
         MainPanel.add(AESDescription, "card87");
@@ -828,7 +828,7 @@ public class Crypto2 extends javax.swing.JFrame {
         Instructionss.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         Instructionss.setText("<html>Select the step that <u>doesn't</u> occur in AES. Then, enter the correct processing step.");
 
-        Theme0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        AESTheme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         AES1.setBackground(new java.awt.Color(77, 132, 155));
         AES1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -891,7 +891,7 @@ public class Crypto2 extends javax.swing.JFrame {
             AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AESPanelLayout.createSequentialGroup()
                 .addGroup(AESPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Theme0)
+                    .addComponent(AESTheme2)
                     .addGroup(AESPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -943,7 +943,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(AESReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Theme0))
+                .addComponent(AESTheme2))
         );
 
         MainPanel.add(AESPanel, "card38");
@@ -955,7 +955,7 @@ public class Crypto2 extends javax.swing.JFrame {
         RSAIntro.setForeground(new java.awt.Color(48, 87, 120));
         RSAIntro.setText("RSA");
 
-        ThemePicture13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        RSATheme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         RSADes.setBackground(new java.awt.Color(77, 132, 155));
         RSADes.setForeground(new java.awt.Color(255, 255, 255));
@@ -980,7 +980,7 @@ public class Crypto2 extends javax.swing.JFrame {
         RSAPanelWelcomeLayout.setHorizontalGroup(
             RSAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSAPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture13)
+                .addComponent(RSATheme)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(RSAPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(RSAPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1004,7 +1004,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(RSADes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSAQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148)
-                .addComponent(ThemePicture13))
+                .addComponent(RSATheme))
         );
 
         MainPanel.add(RSAPanelWelcome, "card54");
@@ -1026,7 +1026,7 @@ public class Crypto2 extends javax.swing.JFrame {
         CaesarCipherDes3.setText("- RSA is a public-key encryption scheme.\n- Public-key encryption schemes have two keys, one for encryption, one for\ndecryption.\n- For RSA: choose two distinct primes P and Q. \n- Compute N = P * Q where N becomes the modulus for RSA. \n- Choose a public key E where 1 < E < *λ(N).\n- Compute D such that D ≡ E−1 (mod λ(N)). D is essentially the multiplicative\ninverse of E mod λ(N). D is now the private key for the owner.\n- To encrypt a message compute C ≡ M ^ E mod(N). To decrypt a message compute\n M ≡ E ^ D mod(N).\n\n\n*λ(N) is the totient function of the modulus N. The totient function yields the\nnumber of positive integers that are relatively prime to N.");
         RSADescrip.setViewportView(CaesarCipherDes3);
 
-        Theme__3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        RSATheme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         RSABB.setBackground(new java.awt.Color(77, 132, 155));
         RSABB.setForeground(new java.awt.Color(255, 255, 255));
@@ -1043,7 +1043,7 @@ public class Crypto2 extends javax.swing.JFrame {
             RSADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSADescriptionLayout.createSequentialGroup()
                 .addGroup(RSADescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Theme__3)
+                    .addComponent(RSATheme1)
                     .addGroup(RSADescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
                         .addComponent(RSABB))
@@ -1065,7 +1065,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(RSABB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Theme__3))
+                .addComponent(RSATheme1))
         );
 
         MainPanel.add(RSADescription, "card42");
@@ -1130,7 +1130,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        RSATheme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout RSAPanelLayout = new javax.swing.GroupLayout(RSAPanel);
         RSAPanel.setLayout(RSAPanelLayout);
@@ -1166,7 +1166,7 @@ public class Crypto2 extends javax.swing.JFrame {
                                 .addComponent(RSAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(RSAPanelLayout.createSequentialGroup()
-                .addComponent(jLabel30)
+                .addComponent(RSATheme2)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         RSAPanelLayout.setVerticalGroup(
@@ -1200,7 +1200,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSAPanelLayout.createSequentialGroup()
                         .addComponent(RSAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(46, 46, 46)))
-                .addComponent(jLabel30))
+                .addComponent(RSATheme2))
         );
 
         MainPanel.add(RSAPanel, "card9");
@@ -1212,7 +1212,7 @@ public class Crypto2 extends javax.swing.JFrame {
         ElGamIntro.setForeground(new java.awt.Color(48, 87, 120));
         ElGamIntro.setText("ElGamal");
 
-        ThemePicture8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        EGTheme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         ElGamDes.setBackground(new java.awt.Color(77, 132, 155));
         ElGamDes.setForeground(new java.awt.Color(255, 255, 255));
@@ -1237,7 +1237,7 @@ public class Crypto2 extends javax.swing.JFrame {
         ElGamalPanelWelcomeLayout.setHorizontalGroup(
             ElGamalPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ElGamalPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture8)
+                .addComponent(EGTheme)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(ElGamalPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(ElGamalPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1261,18 +1261,18 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(ElGamDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ElGamQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148)
-                .addComponent(ThemePicture8))
+                .addComponent(EGTheme))
         );
 
         MainPanel.add(ElGamalPanelWelcome, "card54");
 
         ELGamDescription.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel4.setText("ElGamal");
+        ElGam.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        ElGam.setForeground(new java.awt.Color(48, 87, 120));
+        ElGam.setText("ElGamal");
 
-        ThemePicture25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        EGTheme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         DHBB1.setBackground(new java.awt.Color(77, 132, 155));
         DHBB1.setForeground(new java.awt.Color(255, 255, 255));
@@ -1295,24 +1295,24 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(ElGamalSteps, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(ELGamDescriptionLayout.createSequentialGroup()
                         .addGap(370, 370, 370)
-                        .addComponent(jLabel4))
+                        .addComponent(ElGam))
                     .addGroup(ELGamDescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
                         .addComponent(DHBB1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(ThemePicture25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(EGTheme1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         ELGamDescriptionLayout.setVerticalGroup(
             ELGamDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ELGamDescriptionLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(jLabel4)
+                .addComponent(ElGam)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ElGamalSteps)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DHBB1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(ThemePicture25, javax.swing.GroupLayout.PREFERRED_SIZE, 215, Short.MAX_VALUE))
+                .addComponent(EGTheme1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, Short.MAX_VALUE))
         );
 
         MainPanel.add(ELGamDescription, "card82");
@@ -1366,9 +1366,9 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jScrollPane8.setBorder(null);
-        jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane8.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        EGScroll1.setBorder(null);
+        EGScroll1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        EGScroll1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea29.setColumns(20);
         jTextArea29.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
@@ -1376,11 +1376,11 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea29.setRows(5);
         jTextArea29.setText("Alice generates p and g where p = 11, and g = 5. Then, Alice selects a random number x = 3. Given this information solve the following problems:");
         jTextArea29.setWrapStyleWord(true);
-        jScrollPane8.setViewportView(jTextArea29);
+        EGScroll1.setViewportView(jTextArea29);
 
-        jScrollPane9.setBorder(null);
-        jScrollPane9.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane9.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        EGScroll2.setBorder(null);
+        EGScroll2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        EGScroll2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea30.setColumns(20);
         jTextArea30.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
@@ -1388,9 +1388,9 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea30.setRows(5);
         jTextArea30.setText("2. Bob wants to send message M = 4 to Alice, he chooses a random integer k = 4. What is the encrypted message Bob sends? Format: (C1, C2)");
         jTextArea30.setWrapStyleWord(true);
-        jScrollPane9.setViewportView(jTextArea30);
+        EGScroll2.setViewportView(jTextArea30);
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        EGTheme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout ElGamalPanelLayout = new javax.swing.GroupLayout(ElGamalPanel);
         ElGamalPanel.setLayout(ElGamalPanelLayout);
@@ -1402,7 +1402,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(ElGamalHeader))
                 .addGroup(ElGamalPanelLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 834, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(EGScroll1, javax.swing.GroupLayout.PREFERRED_SIZE, 834, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(ElGamalPanelLayout.createSequentialGroup()
                     .addGap(27, 27, 27)
                     .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1416,11 +1416,11 @@ public class Crypto2 extends javax.swing.JFrame {
                             .addGap(31, 31, 31)
                             .addComponent(EGB1_2))
                         .addGroup(ElGamalPanelLayout.createSequentialGroup()
-                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EGScroll2, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ElGamReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(31, 31, 31)))))
-            .addComponent(jLabel31)
+            .addComponent(EGTheme2)
         );
         ElGamalPanelLayout.setVerticalGroup(
             ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1428,7 +1428,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGap(51, 51, 51)
                 .addComponent(ElGamalHeader)
                 .addGap(37, 37, 37)
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(EGScroll1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(ElGamalPanelLayout.createSequentialGroup()
@@ -1439,7 +1439,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGroup(ElGamalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ElGamalPanelLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(EGScroll2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(ElGamalPanelLayout.createSequentialGroup()
                         .addGap(57, 57, 57)
@@ -1449,31 +1449,31 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(EGB1_2)
                     .addComponent(EGA1_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(48, 48, 48)
-                .addComponent(jLabel31))
+                .addComponent(EGTheme2))
         );
 
         MainPanel.add(ElGamalPanel, "card10");
 
         ECCDescription.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel5.setText("ECC");
+        ECCTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        ECCTitle.setForeground(new java.awt.Color(48, 87, 120));
+        ECCTitle.setText("ECC");
 
-        ThemePicture26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        ECCTheme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        DHBB2.setBackground(new java.awt.Color(77, 132, 155));
-        DHBB2.setForeground(new java.awt.Color(255, 255, 255));
-        DHBB2.setText("Return");
-        DHBB2.addActionListener(new java.awt.event.ActionListener() {
+        ECCBack.setBackground(new java.awt.Color(77, 132, 155));
+        ECCBack.setForeground(new java.awt.Color(255, 255, 255));
+        ECCBack.setText("Return");
+        ECCBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DHBB2ActionPerformed(evt);
+                ECCBackActionPerformed(evt);
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Picture2.png"))); // NOI18N
+        ECCImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Picture2.png"))); // NOI18N
 
-        jScrollPane1.setBorder(null);
+        ECCScroll.setBorder(null);
 
         jTextArea4.setColumns(20);
         jTextArea4.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
@@ -1481,7 +1481,7 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea4.setRows(5);
         jTextArea4.setText("- To the right is an elliptic curve an example of an elliptic curve in which ECC is based on.\n- The equation for elliptic curves is as follows: y^2 = x^3 + ax + b\n- The max dotted line represents the key length. 256 and 384-bit keys \nare the most common as of 2018.\n\n");
         jTextArea4.setWrapStyleWord(true);
-        jScrollPane1.setViewportView(jTextArea4);
+        ECCScroll.setViewportView(jTextArea4);
 
         javax.swing.GroupLayout ECCDescriptionLayout = new javax.swing.GroupLayout(ECCDescription);
         ECCDescription.setLayout(ECCDescriptionLayout);
@@ -1489,62 +1489,62 @@ public class Crypto2 extends javax.swing.JFrame {
             ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ECCDescriptionLayout.createSequentialGroup()
                 .addGroup(ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ThemePicture26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ECCTheme, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(ECCDescriptionLayout.createSequentialGroup()
                         .addGroup(ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(ECCDescriptionLayout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(DHBB2))
+                                .addComponent(ECCBack))
                             .addGroup(ECCDescriptionLayout.createSequentialGroup()
                                 .addGap(398, 398, 398)
-                                .addComponent(jLabel5)))
+                                .addComponent(ECCTitle)))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ECCDescriptionLayout.createSequentialGroup()
                         .addGap(60, 60, 60)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ECCScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)))
+                        .addComponent(ECCImage)))
                 .addContainerGap())
         );
         ECCDescriptionLayout.setVerticalGroup(
             ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ECCDescriptionLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jLabel5)
+                .addComponent(ECCTitle)
                 .addGroup(ECCDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ECCDescriptionLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel1))
+                        .addComponent(ECCImage))
                     .addGroup(ECCDescriptionLayout.createSequentialGroup()
                         .addGap(32, 32, 32)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(ECCScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(7, 7, 7)
-                .addComponent(DHBB2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ECCBack, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(22, 22, 22)
-                .addComponent(ThemePicture26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(ECCTheme, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         MainPanel.add(ECCDescription, "card82");
 
         ECCPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel6.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel6.setText("ECC");
+        ECCTitle1.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        ECCTitle1.setForeground(new java.awt.Color(48, 87, 120));
+        ECCTitle1.setText("ECC");
 
-        ThemePicture27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        ECCTheme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
-        ECCR.setBackground(new java.awt.Color(77, 132, 155));
-        ECCR.setForeground(new java.awt.Color(255, 255, 255));
-        ECCR.setText("Return");
-        ECCR.addActionListener(new java.awt.event.ActionListener() {
+        ECCBack1.setBackground(new java.awt.Color(77, 132, 155));
+        ECCBack1.setForeground(new java.awt.Color(255, 255, 255));
+        ECCBack1.setText("Return");
+        ECCBack1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ECCRActionPerformed(evt);
+                ECCBack1ActionPerformed(evt);
             }
         });
 
-        jScrollPane2.setBorder(null);
-        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        ECCScroll2.setBorder(null);
+        ECCScroll2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea12.setColumns(20);
         jTextArea12.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
@@ -1552,7 +1552,7 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea12.setRows(5);
         jTextArea12.setText("ECC provides minimal overhead because of the low computing power necessary for encryption. What kind of platform is ECC commonly used with? ");
         jTextArea12.setWrapStyleWord(true);
-        jScrollPane2.setViewportView(jTextArea12);
+        ECCScroll2.setViewportView(jTextArea12);
 
         ECC1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         ECC1.setText("Mobile Phones");
@@ -1590,18 +1590,18 @@ public class Crypto2 extends javax.swing.JFrame {
         ECCPanel.setLayout(ECCPanelLayout);
         ECCPanelLayout.setHorizontalGroup(
             ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ThemePicture27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(ECCTheme1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(ECCPanelLayout.createSequentialGroup()
                 .addGroup(ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ECCPanelLayout.createSequentialGroup()
                         .addGap(32, 32, 32)
-                        .addComponent(ECCR))
+                        .addComponent(ECCBack1))
                     .addGroup(ECCPanelLayout.createSequentialGroup()
                         .addGap(116, 116, 116)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(ECCScroll2, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(ECCPanelLayout.createSequentialGroup()
                         .addGap(395, 395, 395)
-                        .addComponent(jLabel6))
+                        .addComponent(ECCTitle1))
                     .addGroup(ECCPanelLayout.createSequentialGroup()
                         .addGap(342, 342, 342)
                         .addGroup(ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -1615,9 +1615,9 @@ public class Crypto2 extends javax.swing.JFrame {
             ECCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ECCPanelLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(jLabel6)
+                .addComponent(ECCTitle1)
                 .addGap(33, 33, 33)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ECCScroll2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(ECC1)
                 .addGap(18, 18, 18)
@@ -1627,9 +1627,9 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(ECC4)
                 .addGap(124, 124, 124)
-                .addComponent(ECCR, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ECCBack1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ThemePicture27, javax.swing.GroupLayout.PREFERRED_SIZE, 218, Short.MAX_VALUE))
+                .addComponent(ECCTheme1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, Short.MAX_VALUE))
         );
 
         MainPanel.add(ECCPanel, "card82");
@@ -1641,7 +1641,7 @@ public class Crypto2 extends javax.swing.JFrame {
         ECCIntro.setForeground(new java.awt.Color(48, 87, 120));
         ECCIntro.setText("Eliptic Curve Cryptography");
 
-        ThemePicture15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        ECCTheme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         ECCDes.setBackground(new java.awt.Color(77, 132, 155));
         ECCDes.setForeground(new java.awt.Color(255, 255, 255));
@@ -1666,7 +1666,7 @@ public class Crypto2 extends javax.swing.JFrame {
         ECCPanelWelcomeLayout.setHorizontalGroup(
             ECCPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ECCPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture15, javax.swing.GroupLayout.PREFERRED_SIZE, 890, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ECCTheme2, javax.swing.GroupLayout.PREFERRED_SIZE, 890, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(ECCPanelWelcomeLayout.createSequentialGroup()
                 .addGap(206, 206, 206)
@@ -1689,7 +1689,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(ECCDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ECCQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 194, Short.MAX_VALUE)
-                .addComponent(ThemePicture15))
+                .addComponent(ECCTheme2))
         );
 
         MainPanel.add(ECCPanelWelcome, "card50");
@@ -1701,7 +1701,7 @@ public class Crypto2 extends javax.swing.JFrame {
         DH_intro.setForeground(new java.awt.Color(48, 87, 120));
         DH_intro.setText("Diffie-Hellman");
 
-        ThemePicture9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        DHTheme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         DHDes.setBackground(new java.awt.Color(77, 132, 155));
         DHDes.setForeground(new java.awt.Color(255, 255, 255));
@@ -1725,7 +1725,7 @@ public class Crypto2 extends javax.swing.JFrame {
         DHPanelWelcome.setLayout(DHPanelWelcomeLayout);
         DHPanelWelcomeLayout.setHorizontalGroup(
             DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ThemePicture9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(DHTheme, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
                 .addGap(316, 316, 316)
                 .addGroup(DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1746,7 +1746,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(DHDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DHQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(67, 67, 67)
-                .addComponent(ThemePicture9, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE))
+                .addComponent(DHTheme, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE))
         );
 
         MainPanel.add(DHPanelWelcome, "card50");
@@ -1754,13 +1754,13 @@ public class Crypto2 extends javax.swing.JFrame {
         DHDescription.setBackground(new java.awt.Color(255, 255, 255));
         DHDescription.setForeground(new java.awt.Color(48, 87, 120));
 
-        jLabel3.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(48, 87, 120));
-        jLabel3.setText("Diffie-Hellman ");
+        DHTitle.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        DHTitle.setForeground(new java.awt.Color(48, 87, 120));
+        DHTitle.setText("Diffie-Hellman ");
 
-        jScrollPane3.setBorder(null);
-        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        DHScroll.setBorder(null);
+        DHScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        DHScroll.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea11.setColumns(20);
         jTextArea11.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
@@ -1768,9 +1768,9 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea11.setRows(5);
         jTextArea11.setText("If Alice and Bob are trying to exchange a key:\n\n1) Alice will choose two prime numbers g and n and sends them to Bob. These numbers can be public.\n2) Bob will chooses a secret number, called a, and compute g^a mod n, and send that result back to Alice. Let's call the result A. \n3) Alice will repeat step 2 by choosing a secret number, called b, and compute g^b mod n. She will send that result to Bob. Let's call the result B.\n4) Bob will then compute B^a mod n and Alice will compute A^b mod n.\n\nBoth Alice and Bob, will have the same result and can use this as their key.  \n\nThis is because:\n(g^a mod n)^b mod n = g^(ab) mod n\n(g^b mod n)^a mod n = g^(ba) mod n\n");
         jTextArea11.setWrapStyleWord(true);
-        jScrollPane3.setViewportView(jTextArea11);
+        DHScroll.setViewportView(jTextArea11);
 
-        ThemePicture22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        DHTheme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         DHBB.setBackground(new java.awt.Color(77, 132, 155));
         DHBB.setForeground(new java.awt.Color(255, 255, 255));
@@ -1787,29 +1787,29 @@ public class Crypto2 extends javax.swing.JFrame {
             DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHDescriptionLayout.createSequentialGroup()
                 .addGroup(DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ThemePicture22)
+                    .addComponent(DHTheme1)
                     .addGroup(DHDescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
                         .addComponent(DHBB))
                     .addGroup(DHDescriptionLayout.createSequentialGroup()
                         .addGap(303, 303, 303)
-                        .addComponent(jLabel3))
+                        .addComponent(DHTitle))
                     .addGroup(DHDescriptionLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(DHScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 856, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DHDescriptionLayout.setVerticalGroup(
             DHDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DHDescriptionLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
+                .addComponent(DHTitle)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DHScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23)
                 .addComponent(DHBB, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ThemePicture22))
+                .addComponent(DHTheme1))
         );
 
         MainPanel.add(DHDescription, "card82");
@@ -1848,7 +1848,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        DHTheme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout DHPanelLayout = new javax.swing.GroupLayout(DHPanel);
         DHPanel.setLayout(DHPanelLayout);
@@ -1868,7 +1868,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(71, 71, 71))
-            .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(DHTheme2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         DHPanelLayout.setVerticalGroup(
             DHPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1882,7 +1882,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(DHButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DHReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel38)
+                .addComponent(DHTheme2)
                 .addGap(185, 185, 185))
         );
 
@@ -1920,7 +1920,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        DHTheme3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout DHPanel1Layout = new javax.swing.GroupLayout(DHPanel1);
         DHPanel1.setLayout(DHPanel1Layout);
@@ -1939,7 +1939,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(75, 75, 75))
             .addGroup(DHPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel39)
+                .addComponent(DHTheme3)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         DHPanel1Layout.setVerticalGroup(
@@ -1954,7 +1954,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(DH1_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH1_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel39)
+                .addComponent(DHTheme3)
                 .addGap(202, 202, 202))
         );
 
@@ -1991,7 +1991,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        DHTheme4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout DHPanel2Layout = new javax.swing.GroupLayout(DHPanel2);
         DHPanel2.setLayout(DHPanel2Layout);
@@ -2012,7 +2012,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(78, 78, 78))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel40)
+                .addComponent(DHTheme4)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         DHPanel2Layout.setVerticalGroup(
@@ -2027,7 +2027,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(DH2_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH2_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel40)
+                .addComponent(DHTheme4)
                 .addGap(210, 210, 210))
         );
 
@@ -2064,7 +2064,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        DHTheme5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout DHPanel3Layout = new javax.swing.GroupLayout(DHPanel3);
         DHPanel3.setLayout(DHPanel3Layout);
@@ -2085,7 +2085,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addGap(97, 97, 97)))
                 .addGap(83, 83, 83))
             .addGroup(DHPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel41)
+                .addComponent(DHTheme5)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         DHPanel3Layout.setVerticalGroup(
@@ -2100,7 +2100,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(DH3_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH3_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
-                .addComponent(jLabel41)
+                .addComponent(DHTheme5)
                 .addGap(191, 191, 191))
         );
 
@@ -2137,7 +2137,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        DHTheme6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout DHPanel4Layout = new javax.swing.GroupLayout(DHPanel4);
         DHPanel4.setLayout(DHPanel4Layout);
@@ -2158,7 +2158,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(104, 104, 104))
             .addGroup(DHPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel42)
+                .addComponent(DHTheme6)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         DHPanel4Layout.setVerticalGroup(
@@ -2173,7 +2173,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(DH4_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH4_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel42)
+                .addComponent(DHTheme6)
                 .addGap(201, 201, 201))
         );
 
@@ -2210,7 +2210,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        DHTheme7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout DHPanel5Layout = new javax.swing.GroupLayout(DHPanel5);
         DHPanel5.setLayout(DHPanel5Layout);
@@ -2233,7 +2233,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addGap(86, 86, 86)))
                 .addGap(99, 99, 99))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DHPanel5Layout.createSequentialGroup()
-                .addComponent(jLabel43)
+                .addComponent(DHTheme7)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         DHPanel5Layout.setVerticalGroup(
@@ -2248,7 +2248,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(DH5_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DH5_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
-                .addComponent(jLabel43)
+                .addComponent(DHTheme7)
                 .addGap(181, 181, 181))
         );
 
@@ -2300,7 +2300,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        DHTheme8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout DHPanel6Layout = new javax.swing.GroupLayout(DHPanel6);
         DHPanel6.setLayout(DHPanel6Layout);
@@ -2328,7 +2328,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addGroup(DHPanel6Layout.createSequentialGroup()
                         .addGap(148, 148, 148)
                         .addComponent(DH5Image1))
-                    .addComponent(jLabel44))
+                    .addComponent(DHTheme8))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DHPanel6Layout.setVerticalGroup(
@@ -2348,7 +2348,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(DHB1)
                     .addComponent(DH6_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel44))
+                .addComponent(DHTheme8))
         );
 
         MainPanel.add(DHPanel6, "card12");
@@ -2360,7 +2360,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA2Intro.setForeground(new java.awt.Color(48, 87, 120));
         SHA2Intro.setText("SHA-2");
 
-        ThemePicture5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        SHA2Theme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         SHA2Des.setBackground(new java.awt.Color(77, 132, 155));
         SHA2Des.setForeground(new java.awt.Color(255, 255, 255));
@@ -2385,7 +2385,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA2PanelWelcomeLayout.setHorizontalGroup(
             SHA2PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHA2PanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture5)
+                .addComponent(SHA2Theme)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(SHA2PanelWelcomeLayout.createSequentialGroup()
                 .addGroup(SHA2PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2409,7 +2409,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(SHA2Des, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SHA2Q, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148)
-                .addComponent(ThemePicture5))
+                .addComponent(SHA2Theme))
         );
 
         MainPanel.add(SHA2PanelWelcome, "card47");
@@ -2431,7 +2431,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA_Des.setText("- Secure Hashing Algorithm - 2 (SHA-2) are a set of cryptographic hashing functions.\n- Built on the Merkle-Damgard structure.\n- The family consists of the following: SHA224, SHA256, SHA384, SHA512. The number \nafter 'SHA', is the size of message digest.\n- For example, if we were using SHA256, our message digest (the output) would be\n256 bits.");
         SHADescrip.setViewportView(SHA_Des);
 
-        Theme__2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        SHA2Theme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         SHA2Back.setBackground(new java.awt.Color(77, 132, 155));
         SHA2Back.setForeground(new java.awt.Color(255, 255, 255));
@@ -2448,7 +2448,7 @@ public class Crypto2 extends javax.swing.JFrame {
             SHA2DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHA2DescriptionLayout.createSequentialGroup()
                 .addGroup(SHA2DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Theme__2)
+                    .addComponent(SHA2Theme1)
                     .addGroup(SHA2DescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
                         .addComponent(SHA2Back))
@@ -2470,7 +2470,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(SHA2Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Theme__2))
+                .addComponent(SHA2Theme1))
         );
 
         MainPanel.add(SHA2Description, "card42");
@@ -2556,7 +2556,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        SHA2Theme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout SHA2PanelLayout = new javax.swing.GroupLayout(SHA2Panel);
         SHA2Panel.setLayout(SHA2PanelLayout);
@@ -2592,7 +2592,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addComponent(SHAA2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(SHAB2))))
-            .addComponent(jLabel21)
+            .addComponent(SHA2Theme2)
         );
         SHA2PanelLayout.setVerticalGroup(
             SHA2PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2631,7 +2631,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addGroup(SHA2PanelLayout.createSequentialGroup()
                         .addComponent(SHAReturn, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(51, 51, 51)))
-                .addComponent(jLabel21))
+                .addComponent(SHA2Theme2))
         );
 
         MainPanel.add(SHA2Panel, "card11");
@@ -2643,7 +2643,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA3Intro.setForeground(new java.awt.Color(48, 87, 120));
         SHA3Intro.setText("SHA-3");
 
-        ThemePicture12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        SHA3Theme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         SHA3Des.setBackground(new java.awt.Color(77, 132, 155));
         SHA3Des.setForeground(new java.awt.Color(255, 255, 255));
@@ -2668,7 +2668,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA3PanelWelcomeLayout.setHorizontalGroup(
             SHA3PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHA3PanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture12)
+                .addComponent(SHA3Theme)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(SHA3PanelWelcomeLayout.createSequentialGroup()
                 .addGroup(SHA3PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2692,7 +2692,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(SHA3Des, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SHA3Q, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148)
-                .addComponent(ThemePicture12))
+                .addComponent(SHA3Theme))
         );
 
         MainPanel.add(SHA3PanelWelcome, "card47");
@@ -2716,7 +2716,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA_Des1.setWrapStyleWord(true);
         SHA3Descrip.setViewportView(SHA_Des1);
 
-        Theme__6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        SHA3Theme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         SHA3Back.setBackground(new java.awt.Color(77, 132, 155));
         SHA3Back.setForeground(new java.awt.Color(255, 255, 255));
@@ -2733,7 +2733,7 @@ public class Crypto2 extends javax.swing.JFrame {
             SHA3DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SHA3DescriptionLayout.createSequentialGroup()
                 .addGroup(SHA3DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Theme__6)
+                    .addComponent(SHA3Theme1)
                     .addGroup(SHA3DescriptionLayout.createSequentialGroup()
                         .addGap(394, 394, 394)
                         .addComponent(SHA3Back))
@@ -2755,7 +2755,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(SHA3Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Theme__6))
+                .addComponent(SHA3Theme1))
         );
 
         MainPanel.add(SHA3Description, "card42");
@@ -2775,7 +2775,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        SHA3Theme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         SHA3Q1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         SHA3Q1.setText("1. What constuction is used in SHA-3?");
@@ -2826,7 +2826,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SHA3Panel.setLayout(SHA3PanelLayout);
         SHA3PanelLayout.setHorizontalGroup(
             SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel23)
+            .addComponent(SHA3Theme2)
             .addGroup(SHA3PanelLayout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(SHA3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2881,7 +2881,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(SHA3Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(56, 56, 56)
-                .addComponent(jLabel23))
+                .addComponent(SHA3Theme2))
         );
 
         MainPanel.add(SHA3Panel, "card11");
@@ -2893,7 +2893,7 @@ public class Crypto2 extends javax.swing.JFrame {
         MD5Intro.setForeground(new java.awt.Color(48, 87, 120));
         MD5Intro.setText("MD5");
 
-        ThemePicture6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        MD5Theme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         MD5Des.setBackground(new java.awt.Color(77, 132, 155));
         MD5Des.setForeground(new java.awt.Color(255, 255, 255));
@@ -2917,7 +2917,7 @@ public class Crypto2 extends javax.swing.JFrame {
         MD5PanelWelcome.setLayout(MD5PanelWelcomeLayout);
         MD5PanelWelcomeLayout.setHorizontalGroup(
             MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(ThemePicture6)
+            .addComponent(MD5Theme)
             .addGroup(MD5PanelWelcomeLayout.createSequentialGroup()
                 .addGap(298, 298, 298)
                 .addGroup(MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2932,14 +2932,14 @@ public class Crypto2 extends javax.swing.JFrame {
         MD5PanelWelcomeLayout.setVerticalGroup(
             MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MD5PanelWelcomeLayout.createSequentialGroup()
-                .addContainerGap(496, Short.MAX_VALUE)
+                .addContainerGap(209, Short.MAX_VALUE)
                 .addComponent(MD5Intro)
                 .addGap(18, 18, 18)
                 .addGroup(MD5PanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(MD5Des, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(MD5Q, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(164, 164, 164)
-                .addComponent(ThemePicture6))
+                .addComponent(MD5Theme))
         );
 
         MainPanel.add(MD5PanelWelcome, "card48");
@@ -2961,7 +2961,7 @@ public class Crypto2 extends javax.swing.JFrame {
         CaesarCipherDes4.setWrapStyleWord(true);
         SHADescrip1.setViewportView(CaesarCipherDes4);
 
-        Theme__4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        MD5Theme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         MD5Backk.setBackground(new java.awt.Color(77, 132, 155));
         MD5Backk.setForeground(new java.awt.Color(255, 255, 255));
@@ -2978,7 +2978,7 @@ public class Crypto2 extends javax.swing.JFrame {
             MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MD5DescriptionLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(Theme__4))
+                .addComponent(MD5Theme1))
             .addGroup(MD5DescriptionLayout.createSequentialGroup()
                 .addGap(376, 376, 376)
                 .addGroup(MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2999,7 +2999,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(MD5Backk, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(63, 63, 63)
-                .addComponent(Theme__4))
+                .addComponent(MD5Theme1))
             .addGroup(MD5DescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(MD5DescriptionLayout.createSequentialGroup()
                     .addGap(140, 140, 140)
@@ -3071,7 +3071,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        MD5Theme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         MD5B2.setBackground(new java.awt.Color(77, 132, 155));
         MD5B2.setForeground(new java.awt.Color(255, 255, 255));
@@ -3128,7 +3128,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addGroup(MD5PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(MD5B3)
                             .addComponent(MD5B2)))))
-            .addComponent(jLabel22)
+            .addComponent(MD5Theme2)
             .addGroup(MD5PanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -3170,7 +3170,7 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(MD5Return, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62)
-                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(MD5Theme2, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         MainPanel.add(MD5Panel, "card11");
@@ -3182,7 +3182,7 @@ public class Crypto2 extends javax.swing.JFrame {
         RSASigIntro.setForeground(new java.awt.Color(48, 87, 120));
         RSASigIntro.setText("RSA Signature");
 
-        ThemePicture7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        RSASigTheme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         RSASigDes.setBackground(new java.awt.Color(77, 132, 155));
         RSASigDes.setForeground(new java.awt.Color(255, 255, 255));
@@ -3207,7 +3207,7 @@ public class Crypto2 extends javax.swing.JFrame {
         RSASignaturePanelWelcomeLayout.setHorizontalGroup(
             RSASignaturePanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture7)
+                .addComponent(RSASigTheme)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(RSASignaturePanelWelcomeLayout.createSequentialGroup()
                 .addGap(269, 269, 269)
@@ -3229,7 +3229,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(RSASigDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSASigQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(148, 148, 148)
-                .addComponent(ThemePicture7))
+                .addComponent(RSASigTheme))
         );
 
         MainPanel.add(RSASignaturePanelWelcome, "card49");
@@ -3241,7 +3241,7 @@ public class Crypto2 extends javax.swing.JFrame {
         RSASigIntro1.setForeground(new java.awt.Color(48, 87, 120));
         RSASigIntro1.setText("RSA Signature");
 
-        jScrollPane5.setBorder(null);
+        RSASigScroll.setBorder(null);
 
         jTextArea15.setColumns(20);
         jTextArea15.setFont(new java.awt.Font("Courier", 0, 18)); // NOI18N
@@ -3249,9 +3249,9 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea15.setRows(5);
         jTextArea15.setText("1) Given two large prime numbers p and q, calculate n by finding the product of p and q.\n \n2) To find Φ(n), find the product of (p-1) and (q-1)\n\n3) Given e (a number between 1 and n and the greatest common divisor between e and n is 1) find the private key d by using the modular inverse. d ≡ e^(-1) mod Φ(n)\n\n4) To sign a message, convert the message to hex and compute, Message^d mod n\n\n5) To verify a message, compute Signature^e mod n");
         jTextArea15.setWrapStyleWord(true);
-        jScrollPane5.setViewportView(jTextArea15);
+        RSASigScroll.setViewportView(jTextArea15);
 
-        Theme__5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        RSASigTheme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         RSA_Sig_Back.setBackground(new java.awt.Color(77, 132, 155));
         RSA_Sig_Back.setForeground(new java.awt.Color(255, 255, 255));
@@ -3270,12 +3270,12 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGroup(RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RSASigDescriptionLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(Theme__5))
+                        .addComponent(RSASigTheme1))
                     .addGroup(RSASigDescriptionLayout.createSequentialGroup()
                         .addGroup(RSASigDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(RSASigDescriptionLayout.createSequentialGroup()
                                 .addGap(69, 69, 69)
-                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(RSASigScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(RSASigDescriptionLayout.createSequentialGroup()
                                 .addGap(372, 372, 372)
                                 .addComponent(RSA_Sig_Back))
@@ -3291,11 +3291,11 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(RSASigIntro1)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(RSASigScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(RSA_Sig_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Theme__5))
+                .addComponent(RSASigTheme1))
         );
 
         MainPanel.add(RSASigDescription, "card82");
@@ -3755,7 +3755,7 @@ public class Crypto2 extends javax.swing.JFrame {
         RSASigIntro2.setForeground(new java.awt.Color(48, 87, 120));
         RSASigIntro2.setText("Schnorr Digital Signature");
 
-        ThemePicture14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        SchnorrTheme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         RSASigDes1.setBackground(new java.awt.Color(77, 132, 155));
         RSASigDes1.setForeground(new java.awt.Color(255, 255, 255));
@@ -3780,7 +3780,7 @@ public class Crypto2 extends javax.swing.JFrame {
         SchnorrPanelWelcomeLayout.setHorizontalGroup(
             SchnorrPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SchnorrPanelWelcomeLayout.createSequentialGroup()
-                .addComponent(ThemePicture14)
+                .addComponent(SchnorrTheme)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(SchnorrPanelWelcomeLayout.createSequentialGroup()
                 .addGroup(SchnorrPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3804,7 +3804,7 @@ public class Crypto2 extends javax.swing.JFrame {
                     .addComponent(RSASigDes1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RSASigQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 412, Short.MAX_VALUE)
-                .addComponent(ThemePicture14))
+                .addComponent(SchnorrTheme))
         );
 
         MainPanel.add(SchnorrPanelWelcome, "card49");
@@ -3816,9 +3816,9 @@ public class Crypto2 extends javax.swing.JFrame {
         SchnorrIntro.setForeground(new java.awt.Color(48, 87, 120));
         SchnorrIntro.setText("Schnorr Digital Signature");
 
-        jScrollPane10.setBorder(null);
-        jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane10.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        SchnorrScroll.setBorder(null);
+        SchnorrScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        SchnorrScroll.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea16.setColumns(20);
         jTextArea16.setFont(new java.awt.Font("Courier", 0, 14)); // NOI18N
@@ -3826,9 +3826,9 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea16.setRows(5);
         jTextArea16.setText("p: A prime number, usually 1024 bits\t\t[global]\nq: A factor of p-1, typically 160-bits\t\t[global]\na: Choose an a such that, a^q = 1 mod p\t\t[global]\nv: Compute v = a^(-s) mod q \t\t\t[public key]\ns: 0 < s < q \t\t\t\t\t[secret]\n\nSigning: \n1) Choose a random r, 0 < r < q\n2) Compute x = a^r mod p\n3) Concatenate e = H(M||x), where M is the message and H is a hash function\n4) Compute y = (r + se) mod q\nSend Message M with Signature (e, y)\n\nVerifying: \n1) Compute x' = a^(y) * v^(e) mod p\n2) Check if e = H(M||x'), if true, message is verified\n\n\t \n\t");
         jTextArea16.setWrapStyleWord(true);
-        jScrollPane10.setViewportView(jTextArea16);
+        SchnorrScroll.setViewportView(jTextArea16);
 
-        Theme__7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        SchnorrTheme1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         Schnorr_Return.setBackground(new java.awt.Color(77, 132, 155));
         Schnorr_Return.setForeground(new java.awt.Color(255, 255, 255));
@@ -3844,13 +3844,13 @@ public class Crypto2 extends javax.swing.JFrame {
         SchnorrDescriptionLayout.setHorizontalGroup(
             SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                .addComponent(Theme__7)
+                .addComponent(SchnorrTheme1)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
                 .addGroup(SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
                         .addGap(62, 62, 62)
-                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(SchnorrScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(Schnorr_Return))
                     .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
@@ -3869,9 +3869,9 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addComponent(Schnorr_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(SchnorrScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Theme__7, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(SchnorrTheme1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         MainPanel.add(SchnorrDescription, "card82");
@@ -3964,7 +3964,7 @@ public class Crypto2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        SchnorrTheme2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout SchnorrPanelLayout = new javax.swing.GroupLayout(SchnorrPanel);
         SchnorrPanel.setLayout(SchnorrPanelLayout);
@@ -4010,7 +4010,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addComponent(jLabel9)))
                 .addGap(68, 68, 68))
             .addGroup(SchnorrPanelLayout.createSequentialGroup()
-                .addComponent(jLabel10)
+                .addComponent(SchnorrTheme2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SchnorrPanelLayout.setVerticalGroup(
@@ -4053,7 +4053,7 @@ public class Crypto2 extends javax.swing.JFrame {
                             .addComponent(SDSB5)
                             .addComponent(SchnorrBack, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel10)
+                .addComponent(SchnorrTheme2)
                 .addContainerGap())
         );
 
@@ -4061,14 +4061,14 @@ public class Crypto2 extends javax.swing.JFrame {
 
         PostQuantum.setBackground(new java.awt.Color(255, 255, 255));
 
-        SchnorrIntro1.setBackground(new java.awt.Color(255, 255, 255));
-        SchnorrIntro1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        SchnorrIntro1.setForeground(new java.awt.Color(48, 87, 120));
-        SchnorrIntro1.setText("Post-Quantum Cryptography");
+        PQTitle.setBackground(new java.awt.Color(255, 255, 255));
+        PQTitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        PQTitle.setForeground(new java.awt.Color(48, 87, 120));
+        PQTitle.setText("Post-Quantum Cryptography");
 
-        jScrollPane11.setBorder(null);
-        jScrollPane11.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane11.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        PQScroll.setBorder(null);
+        PQScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        PQScroll.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea17.setColumns(20);
         jTextArea17.setFont(new java.awt.Font("Courier", 0, 14)); // NOI18N
@@ -4076,9 +4076,9 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea17.setRows(5);
         jTextArea17.setText("Two main algorithms associated with Post-Quantum Cryptography:\n\n1) Shor's Algorithm: Named after Peter Shor, it is an algorithm that finds prime factors of a given number. It runs in polynomial time. \n\n2) Grover's Algorithm: Named after Lov Grover, it is an algorithm that finds, with high probability, the unique input to a black box that produced a particular output value, using just O(√N) evaluations. \n\nCurrent popular cryptographic algorithms use the integer factorization problem, the discrete logarithm problem or the elliptc-curve discrete logarithm problem. However, a quantum computer running Shor's algorithm would break these problems. \n\nNot resistant to Quantum Computing:\n* Public Key Encryption (e.g. RSA, ECDSA & DSA) \n* Public Key Exchanges (e.g. Diffie-Hellman and ECDH)\n\nResitant to Quantum Computing: \n* Hash-based signatures (Output should be extended. e.g. SHA2 and SHA3) \n* Symmetric Key Encryption (Key length should be doubled according to Grover)\n* MAC (GMAC & Poly1305)\n");
         jTextArea17.setWrapStyleWord(true);
-        jScrollPane11.setViewportView(jTextArea17);
+        PQScroll.setViewportView(jTextArea17);
 
-        Theme__8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
+        PQTheme.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
         javax.swing.GroupLayout PostQuantumLayout = new javax.swing.GroupLayout(PostQuantum);
         PostQuantum.setLayout(PostQuantumLayout);
@@ -4088,26 +4088,26 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGroup(PostQuantumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PostQuantumLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(Theme__8))
+                        .addComponent(PQTheme))
                     .addGroup(PostQuantumLayout.createSequentialGroup()
                         .addGap(69, 69, 69)
-                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(PQScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(PostQuantumLayout.createSequentialGroup()
                 .addGap(209, 209, 209)
-                .addComponent(SchnorrIntro1)
+                .addComponent(PQTitle)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PostQuantumLayout.setVerticalGroup(
             PostQuantumLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PostQuantumLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(SchnorrIntro1)
+                .addComponent(PQTitle)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(PQScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(63, 63, 63)
-                .addComponent(Theme__8, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(PQTheme, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         MainPanel.add(PostQuantum, "card44");
@@ -5119,7 +5119,7 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.revalidate();
     }//GEN-LAST:event_ECCQActionPerformed
 
-    private void DHBB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DHBB2ActionPerformed
+    private void ECCBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCBackActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -5127,7 +5127,7 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.add(ECCPanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
-    }//GEN-LAST:event_DHBB2ActionPerformed
+    }//GEN-LAST:event_ECCBackActionPerformed
 
     private void Return2HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Return2HomeActionPerformed
         this.setVisible(false);
@@ -5273,7 +5273,7 @@ public class Crypto2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_AESEnterActionPerformed
 
-    private void ECCRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCRActionPerformed
+    private void ECCBack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECCBack1ActionPerformed
         MainPanel.removeAll();
         MainPanel.repaint();
         MainPanel.revalidate();
@@ -5281,7 +5281,7 @@ public class Crypto2 extends javax.swing.JFrame {
         MainPanel.add(ECCPanelWelcome);
         MainPanel.repaint();
         MainPanel.revalidate();
-    }//GEN-LAST:event_ECCRActionPerformed
+    }//GEN-LAST:event_ECCBack1ActionPerformed
 
     private void ECC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ECC2ActionPerformed
         JOptionPane.showMessageDialog(null, "Incorrect try again!", "INCORRECT!", JOptionPane.ERROR_MESSAGE);
@@ -5435,6 +5435,10 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel AESPanelWelcome;
     private javax.swing.JButton AESQ;
     private javax.swing.JButton AESReturn;
+    private javax.swing.JScrollPane AESScroll;
+    private javax.swing.JLabel AESTheme;
+    private javax.swing.JLabel AESTheme1;
+    private javax.swing.JLabel AESTheme2;
     private javax.swing.JLabel AESTitle;
     private javax.swing.JLabel AEStitle;
     private javax.swing.JTextField BFA2;
@@ -5443,7 +5447,7 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JButton Back_RSA2;
     private javax.swing.JTextField BlowFishA;
     private javax.swing.JButton BlowFishB;
-    private javax.swing.JLabel BlowFishQ;
+    private javax.swing.JLabel BlowFishQ1;
     private javax.swing.JMenuItem Blowfish;
     private javax.swing.JButton BlowfishBB;
     private javax.swing.JButton BlowfishDes;
@@ -5453,7 +5457,12 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel BlowfishPanel;
     private javax.swing.JPanel BlowfishPanelWelcome;
     private javax.swing.JButton BlowfishQ;
+    private javax.swing.JLabel BlowfishQ2;
     private javax.swing.JButton BlowfishReturn;
+    private javax.swing.JScrollPane BlowfishScroll;
+    private javax.swing.JLabel BlowfishTheme;
+    private javax.swing.JLabel BlowfishTheme1;
+    private javax.swing.JLabel BlowfishTheme2;
     private javax.swing.JLabel BlowfishTitle;
     private javax.swing.JTextArea CaesarCipherDes3;
     private javax.swing.JTextArea CaesarCipherDes4;
@@ -5492,7 +5501,6 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JButton DHB1;
     private javax.swing.JButton DHBB;
     private javax.swing.JButton DHBB1;
-    private javax.swing.JButton DHBB2;
     private javax.swing.JButton DHButton1;
     private javax.swing.JButton DHDes;
     private javax.swing.JPanel DHDescription;
@@ -5510,7 +5518,18 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JScrollPane DHQ1;
     private javax.swing.JLabel DHQuestions;
     private javax.swing.JButton DHReturn;
+    private javax.swing.JScrollPane DHScroll;
     private javax.swing.JScrollPane DHText;
+    private javax.swing.JLabel DHTheme;
+    private javax.swing.JLabel DHTheme1;
+    private javax.swing.JLabel DHTheme2;
+    private javax.swing.JLabel DHTheme3;
+    private javax.swing.JLabel DHTheme4;
+    private javax.swing.JLabel DHTheme5;
+    private javax.swing.JLabel DHTheme6;
+    private javax.swing.JLabel DHTheme7;
+    private javax.swing.JLabel DHTheme8;
+    private javax.swing.JLabel DHTitle;
     private javax.swing.JLabel DH_intro;
     private javax.swing.JMenuItem DiffieHellman;
     private javax.swing.JMenu DigitalSignatures;
@@ -5520,19 +5539,34 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JButton ECC2;
     private javax.swing.JButton ECC3;
     private javax.swing.JButton ECC4;
+    private javax.swing.JButton ECCBack;
+    private javax.swing.JButton ECCBack1;
     private javax.swing.JButton ECCDes;
     private javax.swing.JPanel ECCDescription;
+    private javax.swing.JLabel ECCImage;
     private javax.swing.JLabel ECCIntro;
     private javax.swing.JPanel ECCPanel;
     private javax.swing.JPanel ECCPanelWelcome;
     private javax.swing.JButton ECCQ;
-    private javax.swing.JButton ECCR;
+    private javax.swing.JScrollPane ECCScroll;
+    private javax.swing.JScrollPane ECCScroll2;
+    private javax.swing.JLabel ECCTheme;
+    private javax.swing.JLabel ECCTheme1;
+    private javax.swing.JLabel ECCTheme2;
+    private javax.swing.JLabel ECCTitle;
+    private javax.swing.JLabel ECCTitle1;
     private javax.swing.JTextField EGA1_1;
     private javax.swing.JTextField EGA1_2;
     private javax.swing.JButton EGB1_1;
     private javax.swing.JButton EGB1_2;
     private javax.swing.JLabel EGQ1_1;
+    private javax.swing.JScrollPane EGScroll1;
+    private javax.swing.JScrollPane EGScroll2;
+    private javax.swing.JLabel EGTheme;
+    private javax.swing.JLabel EGTheme1;
+    private javax.swing.JLabel EGTheme2;
     private javax.swing.JPanel ELGamDescription;
+    private javax.swing.JLabel ElGam;
     private javax.swing.JButton ElGamDes;
     private javax.swing.JLabel ElGamIntro;
     private javax.swing.JButton ElGamQ;
@@ -5566,6 +5600,9 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel MD5PanelWelcome;
     private javax.swing.JButton MD5Q;
     private javax.swing.JButton MD5Return;
+    private javax.swing.JLabel MD5Theme;
+    private javax.swing.JLabel MD5Theme1;
+    private javax.swing.JLabel MD5Theme2;
     private javax.swing.JButton MD5_Button;
     private javax.swing.JLabel MD5_Header;
     private javax.swing.JLabel MD5_Output;
@@ -5576,6 +5613,9 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel Message1;
     private javax.swing.JMenu Misc;
     private javax.swing.JMenuItem PQ;
+    private javax.swing.JScrollPane PQScroll;
+    private javax.swing.JLabel PQTheme;
+    private javax.swing.JLabel PQTitle;
     private javax.swing.JMenu Part1;
     private javax.swing.JPanel PostQuantum;
     private javax.swing.JMenu PrivateKey;
@@ -5612,8 +5652,14 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel RSASigIntro2;
     private javax.swing.JButton RSASigQ;
     private javax.swing.JButton RSASigQ1;
+    private javax.swing.JScrollPane RSASigScroll;
+    private javax.swing.JLabel RSASigTheme;
+    private javax.swing.JLabel RSASigTheme1;
     private javax.swing.JMenuItem RSASignature;
     private javax.swing.JPanel RSASignaturePanelWelcome;
+    private javax.swing.JLabel RSATheme;
+    private javax.swing.JLabel RSATheme1;
+    private javax.swing.JLabel RSATheme2;
     private javax.swing.JButton RSA_SigBack;
     private javax.swing.JButton RSA_Sig_Back;
     private javax.swing.JPanel RSA_Signature_1;
@@ -5645,6 +5691,9 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JPanel SHA2Panel;
     private javax.swing.JPanel SHA2PanelWelcome;
     private javax.swing.JButton SHA2Q;
+    private javax.swing.JLabel SHA2Theme;
+    private javax.swing.JLabel SHA2Theme1;
+    private javax.swing.JLabel SHA2Theme2;
     private javax.swing.JMenuItem SHA3;
     private javax.swing.JTextField SHA3A1;
     private javax.swing.JTextField SHA3A2;
@@ -5666,6 +5715,9 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JLabel SHA3Q2;
     private javax.swing.JLabel SHA3Q3;
     private javax.swing.JButton SHA3Return;
+    private javax.swing.JLabel SHA3Theme;
+    private javax.swing.JLabel SHA3Theme1;
+    private javax.swing.JLabel SHA3Theme2;
     private javax.swing.JTextField SHAA1;
     private javax.swing.JTextField SHAA2;
     private javax.swing.JButton SHAB1;
@@ -5687,9 +5739,12 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JButton SchnorrBack;
     private javax.swing.JPanel SchnorrDescription;
     private javax.swing.JLabel SchnorrIntro;
-    private javax.swing.JLabel SchnorrIntro1;
     private javax.swing.JPanel SchnorrPanel;
     private javax.swing.JPanel SchnorrPanelWelcome;
+    private javax.swing.JScrollPane SchnorrScroll;
+    private javax.swing.JLabel SchnorrTheme;
+    private javax.swing.JLabel SchnorrTheme1;
+    private javax.swing.JLabel SchnorrTheme2;
     private javax.swing.JButton Schnorr_Return;
     private javax.swing.JTextField Signature;
     private javax.swing.JLabel SigningAMessage;
@@ -5700,31 +5755,6 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JTextArea Story_TextArea;
     private javax.swing.JTextArea Story_TextArea1;
     private javax.swing.JLabel Theme;
-    private javax.swing.JLabel Theme0;
-    private javax.swing.JLabel ThemePicture10;
-    private javax.swing.JLabel ThemePicture11;
-    private javax.swing.JLabel ThemePicture12;
-    private javax.swing.JLabel ThemePicture13;
-    private javax.swing.JLabel ThemePicture14;
-    private javax.swing.JLabel ThemePicture15;
-    private javax.swing.JLabel ThemePicture22;
-    private javax.swing.JLabel ThemePicture23;
-    private javax.swing.JLabel ThemePicture24;
-    private javax.swing.JLabel ThemePicture25;
-    private javax.swing.JLabel ThemePicture26;
-    private javax.swing.JLabel ThemePicture27;
-    private javax.swing.JLabel ThemePicture5;
-    private javax.swing.JLabel ThemePicture6;
-    private javax.swing.JLabel ThemePicture7;
-    private javax.swing.JLabel ThemePicture8;
-    private javax.swing.JLabel ThemePicture9;
-    private javax.swing.JLabel Theme__2;
-    private javax.swing.JLabel Theme__3;
-    private javax.swing.JLabel Theme__4;
-    private javax.swing.JLabel Theme__5;
-    private javax.swing.JLabel Theme__6;
-    private javax.swing.JLabel Theme__7;
-    private javax.swing.JLabel Theme__8;
     private javax.swing.JLabel ValidateMessage;
     private javax.swing.JButton Verify_Submit;
     private javax.swing.JLabel Welcome;
@@ -5735,40 +5765,10 @@ public class Crypto2 extends javax.swing.JFrame {
     private javax.swing.JTextField d_input;
     private javax.swing.JLabel e;
     private javax.swing.JLabel e1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane10;
-    private javax.swing.JScrollPane jScrollPane11;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea10;
     private javax.swing.JTextArea jTextArea11;

@@ -316,7 +316,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="ThemePicture10" min="-2" max="-2" attributes="0"/>
+                      <Component id="BlowfishTheme" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -347,7 +347,7 @@
                           <Component id="BlowfishQ" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
-                      <Component id="ThemePicture10" min="-2" max="-2" attributes="0"/>
+                      <Component id="BlowfishTheme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -367,7 +367,7 @@
                 <Property name="text" type="java.lang.String" value="Blowfish"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture10">
+            <Component class="javax.swing.JLabel" name="BlowfishTheme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -421,14 +421,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ThemePicture23" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="BlowfishTheme1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="350" max="-2" attributes="0"/>
                               <Component id="BlowfishTitle" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                              <Component id="jScrollPane6" min="-2" pref="856" max="-2" attributes="0"/>
+                              <Component id="BlowfishScroll" min="-2" pref="856" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="377" max="-2" attributes="0"/>
@@ -445,11 +445,11 @@
                       <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                       <Component id="BlowfishTitle" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                      <Component id="jScrollPane6" min="-2" pref="152" max="-2" attributes="0"/>
+                      <Component id="BlowfishScroll" min="-2" pref="152" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                       <Component id="BlowfishBB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="ThemePicture23" min="-2" max="-2" attributes="0"/>
+                      <Component id="BlowfishTheme1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -466,7 +466,7 @@
                 <Property name="text" type="java.lang.String" value="Blowfish "/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+            <Container class="javax.swing.JScrollPane" name="BlowfishScroll">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -494,7 +494,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="ThemePicture23">
+            <Component class="javax.swing.JLabel" name="BlowfishTheme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -533,7 +533,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <Component id="BlowfishTheme2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
@@ -545,14 +545,14 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="BlowFishQ" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BlowFishQ1" min="-2" max="-2" attributes="0"/>
                                   <Component id="BlowfishReturn" min="-2" pref="98" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="BlowFishA" min="-2" pref="60" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="BlowFishB" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BlowfishQ2" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="BFA2" min="-2" pref="60" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -577,14 +577,14 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="QuestionsBold" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="BlowFishQ" min="-2" max="-2" attributes="0"/>
+                      <Component id="BlowFishQ1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="BlowFishA" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="BlowFishB" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="BlowfishQ2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="BFA2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -593,7 +593,7 @@
                       <EmptySpace pref="147" max="32767" attributes="0"/>
                       <Component id="BlowfishReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <Component id="BlowfishTheme2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -624,14 +624,14 @@
                 <Property name="text" type="java.lang.String" value="Blowfish"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel7">
+            <Component class="javax.swing.JLabel" name="BlowfishTheme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="BlowFishQ">
+            <Component class="javax.swing.JLabel" name="BlowFishQ1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="13" style="0"/>
@@ -663,7 +663,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BlowFishBActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel2">
+            <Component class="javax.swing.JLabel" name="BlowfishQ2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="13" style="0"/>
@@ -705,7 +705,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="ThemePicture11" min="-2" max="-2" attributes="0"/>
+                      <Component id="AESTheme" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -736,7 +736,7 @@
                           <Component id="AESQ" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
-                      <Component id="ThemePicture11" min="-2" max="-2" attributes="0"/>
+                      <Component id="AESTheme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -756,7 +756,7 @@
                 <Property name="text" type="java.lang.String" value="AES"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture11">
+            <Component class="javax.swing.JLabel" name="AESTheme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -811,10 +811,10 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ThemePicture24" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="AESTheme1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                              <Component id="jScrollPane7" min="-2" pref="856" max="-2" attributes="0"/>
+                              <Component id="AESScroll" min="-2" pref="856" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="377" max="-2" attributes="0"/>
@@ -835,11 +835,11 @@
                       <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                       <Component id="AEStitle" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jScrollPane7" min="-2" pref="213" max="-2" attributes="0"/>
+                      <Component id="AESScroll" min="-2" pref="213" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="AESBack" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="ThemePicture24" min="-2" max="-2" attributes="0"/>
+                      <Component id="AESTheme1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -856,7 +856,7 @@
                 <Property name="text" type="java.lang.String" value="Advanced Encryption Standard"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+            <Container class="javax.swing.JScrollPane" name="AESScroll">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -882,7 +882,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="ThemePicture24">
+            <Component class="javax.swing.JLabel" name="AESTheme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -922,7 +922,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Theme0" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="AESTheme2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="AESReturn" min="-2" pref="98" max="-2" attributes="0"/>
@@ -986,7 +986,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="AESReturn" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Theme0" min="-2" max="-2" attributes="0"/>
+                      <Component id="AESTheme2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1033,7 +1033,7 @@
                 <Property name="text" type="java.lang.String" value="&lt;html&gt;Select the step that &lt;u&gt;doesn&apos;t&lt;/u&gt; occur in AES. Then, enter the correct processing step."/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="Theme0">
+            <Component class="javax.swing.JLabel" name="AESTheme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -1145,7 +1145,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="ThemePicture13" min="-2" max="-2" attributes="0"/>
+                      <Component id="RSATheme" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -1176,7 +1176,7 @@
                           <Component id="RSAQ" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
-                      <Component id="ThemePicture13" min="-2" max="-2" attributes="0"/>
+                      <Component id="RSATheme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1196,7 +1196,7 @@
                 <Property name="text" type="java.lang.String" value="RSA"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture13">
+            <Component class="javax.swing.JLabel" name="RSATheme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -1250,7 +1250,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Theme__3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="RSATheme1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
                               <Component id="RSABB" min="-2" max="-2" attributes="0"/>
@@ -1278,7 +1278,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="RSABB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Theme__3" min="-2" max="-2" attributes="0"/>
+                      <Component id="RSATheme1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1322,7 +1322,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="Theme__3">
+            <Component class="javax.swing.JLabel" name="RSATheme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -1398,7 +1398,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                      <Component id="RSATheme2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -1440,7 +1440,7 @@
                               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                      <Component id="RSATheme2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1554,7 +1554,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RSAReturnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel30">
+            <Component class="javax.swing.JLabel" name="RSATheme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -1579,7 +1579,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="ThemePicture8" min="-2" max="-2" attributes="0"/>
+                      <Component id="EGTheme" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -1610,7 +1610,7 @@
                           <Component id="ElGamQ" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
-                      <Component id="ThemePicture8" min="-2" max="-2" attributes="0"/>
+                      <Component id="EGTheme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1630,7 +1630,7 @@
                 <Property name="text" type="java.lang.String" value="ElGamal"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture8">
+            <Component class="javax.swing.JLabel" name="EGTheme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -1688,7 +1688,7 @@
                           <Component id="ElGamalSteps" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="370" max="-2" attributes="0"/>
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <Component id="ElGam" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
@@ -1697,26 +1697,26 @@
                       </Group>
                       <EmptySpace min="125" max="32767" attributes="0"/>
                   </Group>
-                  <Component id="ThemePicture25" alignment="0" max="32767" attributes="0"/>
+                  <Component id="EGTheme1" alignment="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <Component id="ElGam" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="ElGamalSteps" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="DHBB1" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="ThemePicture25" pref="215" max="32767" attributes="0"/>
+                      <Component id="EGTheme1" pref="215" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel4">
+            <Component class="javax.swing.JLabel" name="ElGam">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Lucida Grande" size="36" style="0"/>
@@ -1727,7 +1727,7 @@
                 <Property name="text" type="java.lang.String" value="ElGamal"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture25">
+            <Component class="javax.swing.JLabel" name="EGTheme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -1779,7 +1779,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane8" min="-2" pref="834" max="-2" attributes="0"/>
+                          <Component id="EGScroll1" min="-2" pref="834" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
@@ -1796,7 +1796,7 @@
                                   <Component id="EGB1_2" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jScrollPane9" min="-2" pref="565" max="-2" attributes="0"/>
+                                  <Component id="EGScroll2" min="-2" pref="565" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="ElGamReturn" min="-2" pref="98" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
@@ -1804,7 +1804,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="EGTheme2" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -1813,7 +1813,7 @@
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="ElGamalHeader" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                      <Component id="jScrollPane8" min="-2" max="-2" attributes="0"/>
+                      <Component id="EGScroll1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
@@ -1826,7 +1826,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jScrollPane9" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="EGScroll2" min="-2" pref="80" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -1840,7 +1840,7 @@
                           <Component id="EGA1_2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                      <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
+                      <Component id="EGTheme2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1920,7 +1920,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ElGamReturnActionPerformed"/>
               </Events>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane8">
+            <Container class="javax.swing.JScrollPane" name="EGScroll1">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -1948,7 +1948,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane9">
+            <Container class="javax.swing.JScrollPane" name="EGScroll2">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -1976,7 +1976,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="jLabel31">
+            <Component class="javax.swing.JLabel" name="EGTheme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -2002,25 +2002,25 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ThemePicture26" alignment="0" max="32767" attributes="0"/>
+                          <Component id="ECCTheme" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="DHBB2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ECCBack" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="398" max="-2" attributes="0"/>
-                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ECCTitle" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" min="-2" pref="327" max="-2" attributes="0"/>
+                              <Component id="ECCScroll" min="-2" pref="327" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <Component id="ECCImage" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -2031,27 +2031,27 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <Component id="ECCTitle" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <Component id="ECCImage" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" min="-2" pref="356" max="-2" attributes="0"/>
+                              <Component id="ECCScroll" min="-2" pref="356" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                      <Component id="DHBB2" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="ECCBack" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="ThemePicture26" max="32767" attributes="0"/>
+                      <Component id="ECCTheme" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel5">
+            <Component class="javax.swing.JLabel" name="ECCTitle">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Lucida Grande" size="36" style="0"/>
@@ -2062,14 +2062,14 @@
                 <Property name="text" type="java.lang.String" value="ECC"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture26">
+            <Component class="javax.swing.JLabel" name="ECCTheme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="DHBB2">
+            <Component class="javax.swing.JButton" name="ECCBack">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="9b" green="84" red="4d" type="rgb"/>
@@ -2080,17 +2080,17 @@
                 <Property name="text" type="java.lang.String" value="Return"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DHBB2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ECCBackActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel1">
+            <Component class="javax.swing.JLabel" name="ECCImage">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/Picture2.png"/>
                 </Property>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+            <Container class="javax.swing.JScrollPane" name="ECCScroll">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -2133,20 +2133,20 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="ThemePicture27" alignment="0" max="32767" attributes="0"/>
+                  <Component id="ECCTheme1" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                              <Component id="ECCR" min="-2" max="-2" attributes="0"/>
+                              <Component id="ECCBack1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
-                              <Component id="jScrollPane2" min="-2" pref="631" max="-2" attributes="0"/>
+                              <Component id="ECCScroll2" min="-2" pref="631" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="395" max="-2" attributes="0"/>
-                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <Component id="ECCTitle1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="342" max="-2" attributes="0"/>
@@ -2166,9 +2166,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <Component id="ECCTitle1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" min="-2" pref="75" max="-2" attributes="0"/>
+                      <Component id="ECCScroll2" min="-2" pref="75" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="ECC1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -2178,15 +2178,15 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="ECC4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
-                      <Component id="ECCR" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="ECCBack1" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="ThemePicture27" pref="218" max="32767" attributes="0"/>
+                      <Component id="ECCTheme1" pref="218" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel6">
+            <Component class="javax.swing.JLabel" name="ECCTitle1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Lucida Grande" size="36" style="0"/>
@@ -2197,14 +2197,14 @@
                 <Property name="text" type="java.lang.String" value="ECC"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture27">
+            <Component class="javax.swing.JLabel" name="ECCTheme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="ECCR">
+            <Component class="javax.swing.JButton" name="ECCBack1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="9b" green="84" red="4d" type="rgb"/>
@@ -2215,10 +2215,10 @@
                 <Property name="text" type="java.lang.String" value="Return"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ECCRActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ECCBack1ActionPerformed"/>
               </Events>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+            <Container class="javax.swing.JScrollPane" name="ECCScroll2">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -2307,7 +2307,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="ThemePicture15" min="-2" pref="890" max="-2" attributes="0"/>
+                      <Component id="ECCTheme2" min="-2" pref="890" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -2336,7 +2336,7 @@
                           <Component id="ECCQ" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="194" max="32767" attributes="0"/>
-                      <Component id="ThemePicture15" min="-2" max="-2" attributes="0"/>
+                      <Component id="ECCTheme2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2356,7 +2356,7 @@
                 <Property name="text" type="java.lang.String" value="Eliptic Curve Cryptography"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture15">
+            <Component class="javax.swing.JLabel" name="ECCTheme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -2408,7 +2408,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="ThemePicture9" alignment="1" max="32767" attributes="0"/>
+                  <Component id="DHTheme" alignment="1" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="316" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -2434,7 +2434,7 @@
                           <Component id="DHQ" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                      <Component id="ThemePicture9" pref="397" max="32767" attributes="0"/>
+                      <Component id="DHTheme" pref="397" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2454,7 +2454,7 @@
                 <Property name="text" type="java.lang.String" value="Diffie-Hellman"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture9">
+            <Component class="javax.swing.JLabel" name="DHTheme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -2511,18 +2511,18 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ThemePicture22" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="DHTheme1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
                               <Component id="DHBB" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="303" max="-2" attributes="0"/>
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <Component id="DHTitle" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jScrollPane3" min="-2" pref="856" max="-2" attributes="0"/>
+                              <Component id="DHScroll" min="-2" pref="856" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -2533,19 +2533,19 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTitle" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane3" min="-2" pref="374" max="-2" attributes="0"/>
+                      <Component id="DHScroll" min="-2" pref="374" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                       <Component id="DHBB" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ThemePicture22" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel3">
+            <Component class="javax.swing.JLabel" name="DHTitle">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Lucida Grande" size="36" style="0"/>
@@ -2556,7 +2556,7 @@
                 <Property name="text" type="java.lang.String" value="Diffie-Hellman "/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+            <Container class="javax.swing.JScrollPane" name="DHScroll">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -2584,7 +2584,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="ThemePicture22">
+            <Component class="javax.swing.JLabel" name="DHTheme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -2644,7 +2644,7 @@
                       </Group>
                       <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel38" alignment="0" max="32767" attributes="0"/>
+                  <Component id="DHTheme2" alignment="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -2660,7 +2660,7 @@
                           <Component id="DHReturn" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -2727,7 +2727,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DHReturnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel38">
+            <Component class="javax.swing.JLabel" name="DHTheme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -2771,7 +2771,7 @@
                       <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -2789,7 +2789,7 @@
                           <Component id="DH1_Next" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="202" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -2854,7 +2854,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DH1_BackActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel39">
+            <Component class="javax.swing.JLabel" name="DHTheme3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -2901,7 +2901,7 @@
                       <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -2919,7 +2919,7 @@
                           <Component id="DH2_Next" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel40" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="210" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -2983,7 +2983,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DH2_BackActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel40">
+            <Component class="javax.swing.JLabel" name="DHTheme4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -3030,7 +3030,7 @@
                       <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -3048,7 +3048,7 @@
                           <Component id="DH3_Next" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                      <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="191" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -3112,7 +3112,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DH3_BackActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel41">
+            <Component class="javax.swing.JLabel" name="DHTheme5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -3159,7 +3159,7 @@
                       <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -3177,7 +3177,7 @@
                           <Component id="DH4_Next" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -3241,7 +3241,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DH4_BackActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel42">
+            <Component class="javax.swing.JLabel" name="DHTheme6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -3290,7 +3290,7 @@
                       <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel43" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -3308,7 +3308,7 @@
                           <Component id="DH5_Next" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="jLabel43" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -3372,7 +3372,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DH5_BackActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel43">
+            <Component class="javax.swing.JLabel" name="DHTheme7">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -3423,7 +3423,7 @@
                               <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
                               <Component id="DH5Image1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jLabel44" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="DHTheme8" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -3447,7 +3447,7 @@
                           <Component id="DH6_Back" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
+                      <Component id="DHTheme8" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -3548,7 +3548,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DH6_BackActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel44">
+            <Component class="javax.swing.JLabel" name="DHTheme8">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -3573,7 +3573,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="ThemePicture5" min="-2" max="-2" attributes="0"/>
+                      <Component id="SHA2Theme" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
@@ -3604,7 +3604,7 @@
                           <Component id="SHA2Q" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
-                      <Component id="ThemePicture5" min="-2" max="-2" attributes="0"/>
+                      <Component id="SHA2Theme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -3624,7 +3624,7 @@
                 <Property name="text" type="java.lang.String" value="SHA-2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture5">
+            <Component class="javax.swing.JLabel" name="SHA2Theme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -3678,7 +3678,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Theme__2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="SHA2Theme1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
                               <Component id="SHA2Back" min="-2" max="-2" attributes="0"/>
@@ -3706,7 +3706,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="SHA2Back" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Theme__2" min="-2" max="-2" attributes="0"/>
+                      <Component id="SHA2Theme1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -3750,7 +3750,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="Theme__2">
+            <Component class="javax.swing.JLabel" name="SHA2Theme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -3826,7 +3826,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="SHA2Theme2" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -3874,7 +3874,7 @@
                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                      <Component id="SHA2Theme2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -4020,7 +4020,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SHAReturnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel21">
+            <Component class="javax.swing.JLabel" name="SHA2Theme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -4045,7 +4045,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="ThemePicture12" min="-2" max="-2" attributes="0"/>
+                      <Component id="SHA3Theme" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
@@ -4076,7 +4076,7 @@
                           <Component id="SHA3Q" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
-                      <Component id="ThemePicture12" min="-2" max="-2" attributes="0"/>
+                      <Component id="SHA3Theme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -4096,7 +4096,7 @@
                 <Property name="text" type="java.lang.String" value="SHA-3"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture12">
+            <Component class="javax.swing.JLabel" name="SHA3Theme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -4150,7 +4150,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Theme__6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="SHA3Theme1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
                               <Component id="SHA3Back" min="-2" max="-2" attributes="0"/>
@@ -4178,7 +4178,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="SHA3Back" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Theme__6" min="-2" max="-2" attributes="0"/>
+                      <Component id="SHA3Theme1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -4224,7 +4224,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="Theme__6">
+            <Component class="javax.swing.JLabel" name="SHA3Theme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -4262,7 +4262,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="SHA3Theme2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -4329,7 +4329,7 @@
                       <EmptySpace pref="43" max="32767" attributes="0"/>
                       <Component id="SHA3Return" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-                      <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                      <Component id="SHA3Theme2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -4360,7 +4360,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SHA3ReturnActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel23">
+            <Component class="javax.swing.JLabel" name="SHA3Theme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -4470,7 +4470,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="ThemePicture6" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="MD5Theme" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="298" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -4490,7 +4490,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="496" max="32767" attributes="0"/>
+                      <EmptySpace pref="209" max="32767" attributes="0"/>
                       <Component id="MD5Intro" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -4498,7 +4498,7 @@
                           <Component id="MD5Q" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="164" max="-2" attributes="0"/>
-                      <Component id="ThemePicture6" min="-2" max="-2" attributes="0"/>
+                      <Component id="MD5Theme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -4518,7 +4518,7 @@
                 <Property name="text" type="java.lang.String" value="MD5"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture6">
+            <Component class="javax.swing.JLabel" name="MD5Theme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -4572,7 +4572,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="Theme__4" min="-2" max="-2" attributes="0"/>
+                      <Component id="MD5Theme1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="376" max="-2" attributes="0"/>
@@ -4599,7 +4599,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="MD5Backk" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                      <Component id="Theme__4" min="-2" max="-2" attributes="0"/>
+                      <Component id="MD5Theme1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
@@ -4650,7 +4650,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="Theme__4">
+            <Component class="javax.swing.JLabel" name="MD5Theme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -4732,7 +4732,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Component id="jLabel22" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="MD5Theme2" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="MD5Return" min="-2" pref="98" max="-2" attributes="0"/>
@@ -4784,7 +4784,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="MD5Return" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                      <Component id="jLabel22" min="-2" pref="189" max="-2" attributes="0"/>
+                      <Component id="MD5Theme2" min="-2" pref="189" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -4914,7 +4914,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="MD5A1">
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel22">
+            <Component class="javax.swing.JLabel" name="MD5Theme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -4971,7 +4971,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="ThemePicture7" min="-2" max="-2" attributes="0"/>
+                      <Component id="RSASigTheme" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -4999,7 +4999,7 @@
                           <Component id="RSASigQ" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
-                      <Component id="ThemePicture7" min="-2" max="-2" attributes="0"/>
+                      <Component id="RSASigTheme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -5019,7 +5019,7 @@
                 <Property name="text" type="java.lang.String" value="RSA Signature"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture7">
+            <Component class="javax.swing.JLabel" name="RSASigTheme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -5075,13 +5075,13 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="Theme__5" min="-2" max="-2" attributes="0"/>
+                              <Component id="RSASigTheme1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane5" min="-2" pref="727" max="-2" attributes="0"/>
+                                      <Component id="RSASigScroll" min="-2" pref="727" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="372" max="-2" attributes="0"/>
@@ -5105,11 +5105,11 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="RSASigIntro1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jScrollPane5" min="-2" pref="287" max="-2" attributes="0"/>
+                      <Component id="RSASigScroll" min="-2" pref="287" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="RSA_Sig_Back" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Theme__5" min="-2" max="-2" attributes="0"/>
+                      <Component id="RSASigTheme1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -5129,7 +5129,7 @@
                 <Property name="text" type="java.lang.String" value="RSA Signature"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+            <Container class="javax.swing.JScrollPane" name="RSASigScroll">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -5155,7 +5155,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="Theme__5">
+            <Component class="javax.swing.JLabel" name="RSASigTheme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -5949,7 +5949,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="ThemePicture14" min="-2" max="-2" attributes="0"/>
+                      <Component id="SchnorrTheme" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
@@ -5980,7 +5980,7 @@
                           <Component id="RSASigQ1" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="412" max="32767" attributes="0"/>
-                      <Component id="ThemePicture14" min="-2" max="-2" attributes="0"/>
+                      <Component id="SchnorrTheme" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -6000,7 +6000,7 @@
                 <Property name="text" type="java.lang.String" value="Schnorr Digital Signature"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="ThemePicture14">
+            <Component class="javax.swing.JLabel" name="SchnorrTheme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -6053,14 +6053,14 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="Theme__7" min="-2" max="-2" attributes="0"/>
+                      <Component id="SchnorrTheme1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                              <Component id="jScrollPane10" min="-2" pref="727" max="-2" attributes="0"/>
+                              <Component id="SchnorrScroll" min="-2" pref="727" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="Schnorr_Return" min="-2" max="-2" attributes="0"/>
                           </Group>
@@ -6085,11 +6085,11 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jScrollPane10" min="-2" pref="338" max="-2" attributes="0"/>
+                              <Component id="SchnorrScroll" min="-2" pref="338" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Theme__7" min="-2" pref="288" max="-2" attributes="0"/>
+                      <Component id="SchnorrTheme1" min="-2" pref="288" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -6109,7 +6109,7 @@
                 <Property name="text" type="java.lang.String" value="Schnorr Digital Signature"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane10">
+            <Container class="javax.swing.JScrollPane" name="SchnorrScroll">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -6137,7 +6137,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="Theme__7">
+            <Component class="javax.swing.JLabel" name="SchnorrTheme1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -6236,7 +6236,7 @@
                       <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                      <Component id="SchnorrTheme2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -6287,7 +6287,7 @@
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                      <Component id="SchnorrTheme2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -6450,7 +6450,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SDSB5ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel10">
+            <Component class="javax.swing.JLabel" name="SchnorrTheme2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
@@ -6478,11 +6478,11 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="Theme__8" min="-2" max="-2" attributes="0"/>
+                              <Component id="PQTheme" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                              <Component id="jScrollPane11" min="-2" pref="727" max="-2" attributes="0"/>
+                              <Component id="PQScroll" min="-2" pref="727" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -6490,7 +6490,7 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="209" max="-2" attributes="0"/>
-                      <Component id="SchnorrIntro1" min="-2" max="-2" attributes="0"/>
+                      <Component id="PQTitle" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -6499,17 +6499,17 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                      <Component id="SchnorrIntro1" min="-2" max="-2" attributes="0"/>
+                      <Component id="PQTitle" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="27" max="32767" attributes="0"/>
-                      <Component id="jScrollPane11" min="-2" pref="360" max="-2" attributes="0"/>
+                      <Component id="PQScroll" min="-2" pref="360" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                      <Component id="Theme__8" min="-2" pref="231" max="-2" attributes="0"/>
+                      <Component id="PQTheme" min="-2" pref="231" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="SchnorrIntro1">
+            <Component class="javax.swing.JLabel" name="PQTitle">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -6523,7 +6523,7 @@
                 <Property name="text" type="java.lang.String" value="Post-Quantum Cryptography"/>
               </Properties>
             </Component>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane11">
+            <Container class="javax.swing.JScrollPane" name="PQScroll">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -6551,7 +6551,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="Theme__8">
+            <Component class="javax.swing.JLabel" name="PQTheme">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/resource/theme1.png"/>
