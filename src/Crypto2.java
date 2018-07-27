@@ -4909,8 +4909,10 @@ public class Crypto2 extends javax.swing.JFrame {
 
     private void Check_n_phi_dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Check_n_phi_dActionPerformed
 
-        //n = 192506C237D1, phin = 1925059F6840, d = E906B195201
-        if(n_input.getText().equals("1") && phi_n_input.getText().equals("1") && d_input.getText().equals("1")){
+        /* ---- Answers ----
+        n = 192506C237D1, phin = 1925059F6840, d = E906B195201
+        ------------------- */
+        if(n_input.getText().equals("192506C237D1") && phi_n_input.getText().equals("1925059F6840") && d_input.getText().equals("E906B195201")){
             MainPanel.removeAll();
             MainPanel.repaint();
             MainPanel.revalidate();
@@ -4940,7 +4942,7 @@ public class Crypto2 extends javax.swing.JFrame {
 
     private void Check_signatureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Check_signatureActionPerformed
         //signature = 1CC7D51826
-        if(Signature.getText().equals("1")){
+        if(Signature.getText().equals("1CC7D51826")){
             MainPanel.removeAll();
             MainPanel.repaint();
             MainPanel.revalidate();
