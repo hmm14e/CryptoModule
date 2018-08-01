@@ -390,6 +390,8 @@ public class Crypto2 extends javax.swing.JFrame {
         jTextArea17 = new javax.swing.JTextArea();
         PQTheme = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
+        Part1 = new javax.swing.JMenu();
+        Return2Home = new javax.swing.JMenuItem();
         DigitalSignatures = new javax.swing.JMenu();
         RSASignature = new javax.swing.JMenuItem();
         Schnorr = new javax.swing.JMenuItem();
@@ -408,8 +410,6 @@ public class Crypto2 extends javax.swing.JFrame {
         AES = new javax.swing.JMenuItem();
         Misc = new javax.swing.JMenu();
         PQ = new javax.swing.JMenuItem();
-        Part1 = new javax.swing.JMenu();
-        Return2Home = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1070,10 +1070,10 @@ public class Crypto2 extends javax.swing.JFrame {
 
         RSAPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        RSAQ1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        RSAQ1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         RSAQ1.setText("Alice wants to send a message to Bob. Given p = 3, q = 11, and e = 3 answer the following questions:");
 
-        RSAHeader.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        RSAHeader.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         RSAHeader.setForeground(new java.awt.Color(48, 87, 120));
         RSAHeader.setText("RSA Practice Problems");
 
@@ -1170,10 +1170,10 @@ public class Crypto2 extends javax.swing.JFrame {
         RSAPanelLayout.setVerticalGroup(
             RSAPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RSAPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(28, Short.MAX_VALUE)
                 .addComponent(RSAHeader)
-                .addGap(18, 18, 18)
-                .addComponent(RSAQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(RSAQ1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(RSAQ1_1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1723,7 +1723,6 @@ public class Crypto2 extends javax.swing.JFrame {
         DHPanelWelcome.setLayout(DHPanelWelcomeLayout);
         DHPanelWelcomeLayout.setHorizontalGroup(
             DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DHTheme, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(DHPanelWelcomeLayout.createSequentialGroup()
                 .addGap(316, 316, 316)
                 .addGroup(DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1733,6 +1732,7 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addGap(66, 66, 66)
                         .addComponent(DHQ)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(DHTheme, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         DHPanelWelcomeLayout.setVerticalGroup(
             DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1743,8 +1743,8 @@ public class Crypto2 extends javax.swing.JFrame {
                 .addGroup(DHPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DHDes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DHQ, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(67, 67, 67)
-                .addComponent(DHTheme, javax.swing.GroupLayout.DEFAULT_SIZE, 397, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 182, Short.MAX_VALUE)
+                .addComponent(DHTheme, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         MainPanel.add(DHPanelWelcome, "card50");
@@ -4111,6 +4111,23 @@ public class Crypto2 extends javax.swing.JFrame {
 
         MainPanel.add(PostQuantum, "card44");
 
+        Part1.setText("Part 1");
+        Part1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Part1ActionPerformed(evt);
+            }
+        });
+
+        Return2Home.setText("Return");
+        Return2Home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Return2HomeActionPerformed(evt);
+            }
+        });
+        Part1.add(Return2Home);
+
+        jMenuBar1.add(Part1);
+
         DigitalSignatures.setText("Digital Signatures");
 
         RSASignature.setText("RSA Signature");
@@ -4235,23 +4252,6 @@ public class Crypto2 extends javax.swing.JFrame {
         Misc.add(PQ);
 
         jMenuBar1.add(Misc);
-
-        Part1.setText("Part 1");
-        Part1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Part1ActionPerformed(evt);
-            }
-        });
-
-        Return2Home.setText("Return");
-        Return2Home.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Return2HomeActionPerformed(evt);
-            }
-        });
-        Part1.add(Return2Home);
-
-        jMenuBar1.add(Part1);
 
         setJMenuBar(jMenuBar1);
 
