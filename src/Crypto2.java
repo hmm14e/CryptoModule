@@ -413,9 +413,7 @@ public class Crypto2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMaximumSize(new java.awt.Dimension(885, 750));
         setMinimumSize(new java.awt.Dimension(885, 750));
-        setPreferredSize(new java.awt.Dimension(885, 750));
 
         MainPanel.setBackground(new java.awt.Color(255, 255, 255));
         MainPanel.setMaximumSize(new java.awt.Dimension(885, 750));
@@ -3854,23 +3852,24 @@ public class Crypto2 extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(Schnorr_Return))
                     .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                        .addGap(239, 239, 239)
+                        .addGap(230, 230, 230)
                         .addComponent(SchnorrIntro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SchnorrDescriptionLayout.setVerticalGroup(
             SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                .addContainerGap(68, Short.MAX_VALUE)
-                .addComponent(SchnorrIntro)
                 .addGroup(SchnorrDescriptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                        .addGap(304, 304, 304)
-                        .addComponent(Schnorr_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(SchnorrDescriptionLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(SchnorrScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addContainerGap(416, Short.MAX_VALUE)
+                        .addComponent(Schnorr_Return, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SchnorrDescriptionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(SchnorrIntro)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(SchnorrScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addComponent(SchnorrTheme1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
