@@ -455,12 +455,12 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel49" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
-                              <Component id="ReturnWelcome" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="288" max="-2" attributes="0"/>
                               <Component id="TOCLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="389" max="-2" attributes="0"/>
+                              <Component id="ReturnWelcome" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -477,9 +477,9 @@
                           <Component id="jScrollPane6" pref="306" max="32767" attributes="0"/>
                           <Component id="TOC" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Component id="ReturnWelcome" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel49" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -570,7 +570,7 @@
                       <Font name="Lucida Grande" size="14" style="0"/>
                     </Property>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Part 2:&#xa;- Digital Signatures&#xa;   * RSA &#xa;   * Schnorr &#xa;-Hashing&#xa;   * MD5  &#xa;   * SHA 2&#xa;   * SHA 3&#xa;- Public Key&#xa;    * RSA &#xa;    * El Gamal&#xa;    * Diffie Hellman&#xa;    * ECC &#xa;- Private Key&#xa;   * Blowfish&#xa;   * AES"/>
+                    <Property name="text" type="java.lang.String" value="Part 2:&#xa;- Digital Signatures&#xa;   * RSA &#xa;   * Schnorr &#xa;-Hashing&#xa;   * MD5  &#xa;   * SHA 2&#xa;   * SHA 3&#xa;- Public Key&#xa;    * RSA &#xa;    * El Gamal&#xa;    * Diffie Hellman&#xa;    * ECC &#xa;- Private Key&#xa;   * Blowfish&#xa;   * AES&#xa;- Miscellaneous&#xa;   * Post Quantum Cryptography "/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -596,14 +596,17 @@
                       <Component id="ThemePicture15" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="CaesarIntro" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
                               <Component id="CaesarDes" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                               <Component id="CaesarQ" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="298" max="-2" attributes="0"/>
+                              <Component id="CaesarIntro" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -638,7 +641,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="78" green="57" red="30" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Caesars Cipher"/>
+                <Property name="text" type="java.lang.String" value="Caesar Cipher"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="ThemePicture15">
@@ -1375,7 +1378,7 @@
                     </Property>
                     <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="- Vigenere is a polyalphabetic substitution cipher and a method of encoding plaintext by using a series of Caesar Ciphers based on a key.&#xa;- Ex. &#xa;&#x9;Plaintext: DEFEND WALL&#xa;&#x9;KEY: FLAG&#xa;&#xa;&#x9;1) Rewrite the key under the plaintext until it matches the length of the &#x9;&#x9;&#x9;&#x9;&#x9;Plaintext-&gt;&#x9; DEFENDWALL&#xa;&#x9;&#x9;&#x9;   &#x9; FLAGFLAGFL&#xa;&#xa;&#x9;2) Use the table to encode the ciphertext&#xa;&#x9;&#x9;Ciphertext -&gt;    IPFKSOWGQW&#xa;&#xa;"/>
+                    <Property name="text" type="java.lang.String" value="- Vigenere is a polyalphabetic substitution cipher and a method of encoding plaintext by using a series of Caesar Ciphers based on a key.&#xa;- Ex. &#xa;&#x9;Plaintext: DEFEND WALL&#xa;&#x9;KEY: FLAG&#xa;&#xa;1) Rewrite the key under the plaintext until it matches the length of the plaintext&#x9;&#xa;&#xa;Plaintext-&gt;&#x9; DEFENDWALL&#xa;&#x9;&#x9; FLAGFLAGFL&#xa;&#xa;2) Use the table to encode the ciphertext&#xa;&#xa;Ciphertext -&gt;    IPFKSOWGQW&#xa;"/>
                     <Property name="wrapStyleWord" type="boolean" value="true"/>
                   </Properties>
                 </Component>
@@ -3578,7 +3581,7 @@
                               <Component id="CTRQ" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="228" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
                               <Component id="CTRIntro" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -5332,7 +5335,7 @@
                           <Component id="DESDescrip3" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                           <Component id="jButton5" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="97" max="32767" attributes="0"/>
+                      <EmptySpace pref="116" max="32767" attributes="0"/>
                       <Component id="DESBB2" min="-2" pref="31" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel48" min="-2" max="-2" attributes="0"/>

@@ -692,7 +692,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea27.setColumns(20);
         jTextArea27.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
         jTextArea27.setRows(5);
-        jTextArea27.setText("Part 2:\n- Digital Signatures\n   * RSA \n   * Schnorr \n-Hashing\n   * MD5  \n   * SHA 2\n   * SHA 3\n- Public Key\n    * RSA \n    * El Gamal\n    * Diffie Hellman\n    * ECC \n- Private Key\n   * Blowfish\n   * AES");
+        jTextArea27.setText("Part 2:\n- Digital Signatures\n   * RSA \n   * Schnorr \n-Hashing\n   * MD5  \n   * SHA 2\n   * SHA 3\n- Public Key\n    * RSA \n    * El Gamal\n    * Diffie Hellman\n    * ECC \n- Private Key\n   * Blowfish\n   * AES\n- Miscellaneous\n   * Post Quantum Cryptography ");
         jScrollPane6.setViewportView(jTextArea27);
 
         javax.swing.GroupLayout TOCPanelLayout = new javax.swing.GroupLayout(TOCPanel);
@@ -709,11 +709,11 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel49)
                     .addGroup(TOCPanelLayout.createSequentialGroup()
-                        .addGap(394, 394, 394)
-                        .addComponent(ReturnWelcome))
-                    .addGroup(TOCPanelLayout.createSequentialGroup()
                         .addGap(288, 288, 288)
-                        .addComponent(TOCLabel)))
+                        .addComponent(TOCLabel))
+                    .addGroup(TOCPanelLayout.createSequentialGroup()
+                        .addGap(389, 389, 389)
+                        .addComponent(ReturnWelcome)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         TOCPanelLayout.setVerticalGroup(
@@ -725,9 +725,9 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(TOCPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
                     .addComponent(TOC))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ReturnWelcome)
                 .addGap(18, 18, 18)
+                .addComponent(ReturnWelcome)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel49))
         );
 
@@ -738,7 +738,7 @@ public class Home extends javax.swing.JFrame {
         CaesarIntro.setBackground(new java.awt.Color(255, 255, 255));
         CaesarIntro.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         CaesarIntro.setForeground(new java.awt.Color(48, 87, 120));
-        CaesarIntro.setText("Caesars Cipher");
+        CaesarIntro.setText("Caesar Cipher");
 
         ThemePicture15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/theme1.png"))); // NOI18N
 
@@ -768,13 +768,15 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(ThemePicture15)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
-                .addGap(269, 269, 269)
                 .addGroup(CaesarPanelWelcomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(CaesarIntro)
                     .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(269, 269, 269)
                         .addComponent(CaesarDes)
                         .addGap(66, 66, 66)
-                        .addComponent(CaesarQ)))
+                        .addComponent(CaesarQ))
+                    .addGroup(CaesarPanelWelcomeLayout.createSequentialGroup()
+                        .addGap(298, 298, 298)
+                        .addComponent(CaesarIntro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         CaesarPanelWelcomeLayout.setVerticalGroup(
@@ -1161,7 +1163,7 @@ public class Home extends javax.swing.JFrame {
         jTextArea24.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jTextArea24.setLineWrap(true);
         jTextArea24.setRows(5);
-        jTextArea24.setText("- Vigenere is a polyalphabetic substitution cipher and a method of encoding plaintext by using a series of Caesar Ciphers based on a key.\n- Ex. \n\tPlaintext: DEFEND WALL\n\tKEY: FLAG\n\n\t1) Rewrite the key under the plaintext until it matches the length of the \t\t\t\t\tPlaintext->\t DEFENDWALL\n\t\t\t   \t FLAGFLAGFL\n\n\t2) Use the table to encode the ciphertext\n\t\tCiphertext ->    IPFKSOWGQW\n\n");
+        jTextArea24.setText("- Vigenere is a polyalphabetic substitution cipher and a method of encoding plaintext by using a series of Caesar Ciphers based on a key.\n- Ex. \n\tPlaintext: DEFEND WALL\n\tKEY: FLAG\n\n1) Rewrite the key under the plaintext until it matches the length of the plaintext\t\n\nPlaintext->\t DEFENDWALL\n\t\t FLAGFLAGFL\n\n2) Use the table to encode the ciphertext\n\nCiphertext ->    IPFKSOWGQW\n");
         jTextArea24.setWrapStyleWord(true);
         AtbashDescrip1.setViewportView(jTextArea24);
 
@@ -2504,7 +2506,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(66, 66, 66)
                         .addComponent(CTRQ))
                     .addGroup(CTRPanelWelcomeLayout.createSequentialGroup()
-                        .addGap(228, 228, 228)
+                        .addGap(245, 245, 245)
                         .addComponent(CTRIntro)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -3551,7 +3553,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(DESDescripPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DESDescrip3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 116, Short.MAX_VALUE)
                 .addComponent(DESBB2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel48))
